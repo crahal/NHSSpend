@@ -1,0 +1,198 @@
+ccg_name;abrev;url;notes
+NHS Airedale, Wharfedale And Craven CCG;NHS_AWC_CCG;http://www.airedalewharfedalecravenccg.nhs.uk/about-us-/publication-scheme/what-we-spend-and-how-we-spend-it/; all csvs, bit weird in that its all on one page with other stuff, re-routes to a weird ftp server or something
+NHS Ashford CCG;NHS_ASH_CCG;https://www.ashfordccg.nhs.uk/about-us/publications/?categoryesctlfbbcc141-b9aa-4571-ae09-836255a7d538=9738&; have to scroll through the search pages, seems to be all xlsx
+NHS Barking And Dagenham CCG;NHS_BARK_CCG;http://www.barkingdagenhamccg.nhs.uk/About-us/expenditure.htm; all pdfs, wait for parser
+NHS Barnet CCG;NHS_BARNET_CCG;http://www.barnetccg.nhs.uk/about-us/expenditure.htm; all pdfs, wait for parser
+NHS Barnsley CCG;NHS_BARNS_CCG;http://www.barnsleyccg.nhs.uk/about-us/transparency---spend.htm|http://www.barnsleyccg.nhs.uk/about-us/spend-over-25k-archive.htm;all csvs, split into two pages -- current and archive
+NHS Basildon And Brentwood CCG;NHS_BAB_CCG;https://basildonandbrentwoodccg.nhs.uk/about-us/publications/publications-public/transparency/transactions-over-25k-2013-14|https://basildonandbrentwoodccg.nhs.uk/about-us/publications/publications-public/transparency/transactions-over-25k-2014-15|https://basildonandbrentwoodccg.nhs.uk/about-us/publications/publications-public/transparency/transactions-over-25k-2015-16|https://basildonandbrentwoodccg.nhs.uk/about-us/publications/publications-public/transparency/transactions-over-25k-2016-17|https://basildonandbrentwoodccg.nhs.uk/about-us/publications/publications-public/transparency/transactions-over-25-2017-18|https://basildonandbrentwoodccg.nhs.uk/about-us/publications/publications-public/transparency/transactions-over-25k-2018-19-1|https://basildonandbrentwoodccg.nhs.uk/about-us/publications/publications-public/transparency/transactions-over-25k-2019-20;files are just called files
+NHS Bassetlaw CCG; ??? ; ??? ; ??? horrible, come back to this
+NHS Bath And North East Somerset CCG??? ; ??? ; ??? horrible, come back to this;
+NHS Bedfordshire CCG;NHS_BED_CCG;https://www.bedfordshireccg.nhs.uk/page/?id=5556|https://www.bedfordshireccg.nhs.uk/page/?id=5505|https://www.bedfordshireccg.nhs.uk/page/?id=5504|https://www.bedfordshireccg.nhs.uk/page/?id=5503|https://www.bedfordshireccg.nhs.uk/page/?id=5502|https://www.bedfordshireccg.nhs.uk/page/?id=5501;split over several pages
+NHS Berkshire West CCG;NHS_BERK_CCG;https://www.berkshirewestccg.nhs.uk/about-us/our-responsibilities/finance/publication-of-spend-over-25-000/;all pdfs, wait for parser
+NHS Bexley CCG;NHS_BEX_CCG;https://www.bexleyccg.nhs.uk/expenditure.htm;mix of file formats, but all on one page
+NHS Birmingham And Solihull CCG;NHS_BIRM_CCG;https://www.birminghamandsolihullccg.nhs.uk/about-us/publications/expenditure/expenditure-2018|https://www.birminghamandsolihullccg.nhs.uk/about-us/publications/expenditure/expenditure-2019;only contains data from 2018 and 2019, and weird 500 forbidden on the page request for view source (with some strange comment from ~ 2011), could be 1 year rolling data moving?
+NHS Blackburn With Darwen CCG;NHS_BWD_CCG;http://www.blackburnwithdarwenccg.nhs.uk/about-us/spend-money/;all on one page, hrefs are direct links
+NHS Blackpool CCG;NHS_BLACK_CCG;https://www.fyldecoastccgs.nhs.uk/about-blackpool-ccg/corporate-information/expenditure-reporting/;shares a website with flyde -- do with them jointly
+NHS Bolton CCG;NHS_BOLT_CCG;https://www.boltonccg.nhs.uk/how-we-do-things/how-we-spend-your-money;seems nice
+NHS Bradford City CCG;NHS_BRAC_CCG;https://www.bradfordcityccg.nhs.uk/about-us/publication-scheme/what-we-spend-and-how-we-spend-it/;same as NHS_AWC_CCG
+NHS Bradford Districts CCG;NHS_BRAD_CCG;https://www.bradforddistrictsccg.nhs.uk/about-us/publication-scheme/what-we-spend-and-how-we-spend-it/; same as NHS_BRAC_CCG? with different exclusions
+NHS Brent CCG;NHS_BREN_CCG;http://brentccg.nhs.uk/en/publications/spend-over-25-000/cat_view/1-publications/557-finance/352-spend-over-25-000/508-2018-2019|http://brentccg.nhs.uk/en/publications/spend-over-25-000/cat_view/1-publications/557-finance/352-spend-over-25-000/474-2017-2018|http://brentccg.nhs.uk/en/publications/spend-over-25-000/cat_view/1-publications/557-finance/352-spend-over-25-000/359-2013-2014|http://brentccg.nhs.uk/en/publications/spend-over-25-000/cat_view/1-publications/557-finance/352-spend-over-25-000/363-2014-2015|http://brentccg.nhs.uk/en/publications/spend-over-25-000/cat_view/1-publications/557-finance/352-spend-over-25-000/360-2015-2016|http://brentccg.nhs.uk/en/publications/spend-over-25-000/cat_view/1-publications/557-finance/352-spend-over-25-000/408-2016-2017;unknown file extensions, come back to this
+NHS Brighton And Hove CCG;NHS_BAH_CCG;https://www.brightonandhoveccg.nhs.uk/publications/our-finances;weird naming in the hypers
+NHS Bristol, North Somerset And South Gloucestershire CCG;need to iterate over; need to iterate into each page;
+NHS Bromley CCG;NHS_BROM_CCG;https://www.bromleyccg.nhs.uk/25k-expenditure-reports.htm; need to iterate into each page
+NHS Buckinghamshire CCG;NHS_BUCKhttps://www.buckinghamshireccg.nhs.uk/public/about-us/publishing-information/what-we-spend-and-how-we-spend-it/; needs selenium ?!;
+NHS Bury CCG;NHS_BURY_CCG;NEED TO GO BACK ; AND REWRITE THIS NOT FOR THE DATA.GOV PAGE WHERE LINKS ARE WRONG BUT HOMEPAGE (I.E. CHECK MAY 2017)
+NHS Calderdale CCG;NHS_CALD_CCG;https://www.calderdaleccg.nhs.uk/spend-over-25000/;unknown file extensions but mostly pdfs i think
+NHS Cambridgeshire And Peterborough CCG;NHS_CAP_CCG;https://www.cambridgeshireandpeterboroughccg.nhs.uk/about-us/how-we-meet-our-duties/finance-and-performance/expenditure-over-25k/;hopefully these all stay as xls
+NHS Camden CCG;NHS_CAMD_CCG;http://www.camdenccg.nhs.uk/publications/expenditure-over-30000-201819/63783|http://www.camdenccg.nhs.uk/publications/expenditure-over-30000-201718/28353|http://www.camdenccg.nhs.uk/publications/expenditure-over-30000-201617/27781|http://www.camdenccg.nhs.uk/publications/expenditure-over-30000-201516/27780|http://www.camdenccg.nhs.uk/publications/expenditure-over-30000-201415/27779; this will one day need updating
+NHS Cannock Chase CCG;NHS_CANN;???; come back to this
+NHS Canterbury And Coastal CCG;NHS_CANT_CCG;https://www.canterburycoastalccg.nhs.uk/about-us/publications/?categoryesctl71283a83-64f0-429b-8103-a6b6f86dc058=9122&p=;range over the pages
+NHS Castle Point And Rochford CCG;NHS_CPR_CCG;https://castlepointandrochfordccg.nhs.uk/about-us/transparency/2018-19|https://castlepointandrochfordccg.nhs.uk/about-us/transparency/2017-18|https://castlepointandrochfordccg.nhs.uk/about-us/transparency/2016-17|https://castlepointandrochfordccg.nhs.uk/about-us/transparency/2015-16|https://castlepointandrochfordccg.nhs.uk/about-us/transparency/2014-15|https://castlepointandrochfordccg.nhs.uk/about-us/transparency/2013-14-archive;a lot of pages to link through...
+NHS Central London (Westminster) CCG;NHS_CLW_CCG;https://www.centrallondonccg.nhs.uk/news-publications/publications.aspx?n=2448|https://www.centrallondonccg.nhs.uk/news-publications/publications.aspx?n=2771|https://www.centrallondonccg.nhs.uk/news-publications/publications.aspx?n=5048|https://www.centrallondonccg.nhs.uk/news-publications/publications.aspx?n=5042;this will need updating when more links come online, could be generalized to read all the pages individually in a loop
+NHS Chorley And South Ribble CCG;NHS_CSR_CCG;???;website down
+NHS City And Hackney CCG;NHS_CAH_CCG;http://www.cityandhackneyccg.nhs.uk/about-us/ccg-expenditure.htm; all pdfs from one page
+NHS Coastal West Sussex CCG;NHS_CWS_CCG;https://www.coastalwestsussexccg.nhs.uk/spend-over-25000;seems clean
+NHS Corby CCG;NHS_COR_CCG;https://corbyccg.nhs.uk/expenditure-over-25k/; need to check anchors, also set up a clever thing to delete rows until department family is found (should this be how it is the main parse function?)
+NHS Coventry And Rugby CCG;NHS_CAR_CCG; ??? ; needs selenium i think
+NHS Crawley CCG;NHS_CRAW_CCG;https://www.crawleyccg.nhs.uk/about-us/publications-and-policies/?categoryesctl851dfae5-de49-4374-ba11-a02b4deb1f41=12045&p=1;horrible, need to loop over search
+NHS Croydon CCG;NHS_CRO_CCG;https://www.croydonccg.nhs.uk/news-publications/publications/Pages/A---Z-of-publications.aspx; this is horrible, and all pdfs?
+NHS Darlington CCG;NHS_DARL_CCG;https://www.darlingtonccg.nhs.uk/documents/payments-over-25000/; all pdfs, need to check href for 'expenditure'
+NHS Dartford, Gravesham And Swanley CCG;NHS_DGS_CCG;https://www.dartfordgraveshamswanleyccg.nhs.uk/about-dgs/publications/publication-scheme/what-we-spend-and-how-we-spend-it/expenditure-over-25000/; INCORRECT HTML CERTIFICATES
+NHS Derby And Derbyshire CCG;NHS_DAD_CCG; NEW -- MERGED RECENTLY, WAITING FOR WEBSITE;
+NHS Devon CCG;NHS_DEV_CCG;NEW -- MERGED RECENTLY, WAITING FOR WEBSITE;
+NHS Doncaster CCG;NHS_DONC_CCG;http://www.doncasterccg.nhs.uk/about-us/public-information/publications-scheme/spending/publication-of-expenditure-over-25000/;literally perfect?
+NHS Dorset CCG;NHS_DORS_CCG;https://www.dorsetccg.nhs.uk/ccg/about/how-we-spend/; these are on multiple pages of an excel file, absolutely disgusting
+NHS Dudley CCG;NHS_DUD_CCG;http://www.dudleyccg.nhs.uk/financial-statements-budgets-and-variance-reports/; seems ok, but a lot of unrelated files on this page
+NHS Durham Dales, Easington And Sedgefield CCG;NHS_DDES_CCG;https://www.durhamdaleseasingtonsedgefieldccg.nhs.uk/documents/payments-over-25000/;all pdfs, but all on one solitary page
+NHS Ealing CCG;NHS_EAL_CCG;https://www.ealingccg.nhs.uk/search?q=25k&p=;have to scroll through search, all pdfs
+NHS East And North Hertfordshire CCG;NHS_EANH_CCG;https://www.enhertsccg.nhs.uk/spend-over-25000;literally the best one?
+NHS East Berkshire CCG;NEW ; WAITING FOR DATA ; PAGE BLANK
+NHS East Lancashire CCG;NHS_EALA_CCG;https://eastlancsccg.nhs.uk/about-us/how-we-spend-your-money;totally ambiguous extensions?
+NHS East Leicestershire And Rutland CCG;NHS_ELAR_CCG;https://eastleicestershireandrutlandccg.nhs.uk/about-us/finances/spending-over-25000/;super duper
+NHS East Riding Of Yorkshire CCG ;NHS_ERY_CCG;http://www.eastridingofyorkshireccg.nhs.uk/spend-over-25k/201415/|http://www.eastridingofyorkshireccg.nhs.uk/spend-over-25k/201314/|http://www.eastridingofyorkshireccg.nhs.uk/spend-over-25k/201617/|http://www.eastridingofyorkshireccg.nhs.uk/spend-over-25k/201516/|http://www.eastridingofyorkshireccg.nhs.uk/spend-over-25k/201819/|http://www.eastridingofyorkshireccg.nhs.uk/spend-over-25k/201718/|http://www.eastridingofyorkshireccg.nhs.uk/spend-over-25k/201920/;lots of pages, seems ok though
+NHS East Staffordshire CCG;NHS_ESTA_CCG;http://eaststaffsccg.nhs.uk/publications/expenditure-reports-25k-1/;loop over the years in the url
+NHS East Surrey CCG;NHS_EASU_CCG;https://www.eastsurreyccg.nhs.uk/about-us/finances-and-expenditure/?p=;a lot of horrible unparseable data there
+NHS Eastbourne, Hailsham And Seaford CCG;NHS_EHS_CCG; https://www.eastbournehailshamandseafordccg.nhs.uk/about-us/publications; needs selenium
+NHS Eastern Cheshire CCG;NHS_EACH_CCG;http://www.eastcheshire.nhs.uk/About-The-Trust/Spend-over-25k%20at%20the%20trust.htm;seems perfect
+NHS Enfield CCG;NHS_ENF_CCG;http://www.enfieldccg.nhs.uk/about-us/expenditure-over-25k.htm; seems nice, need to exclude some!
+NHS Erewash CCG; MERGED INTO Derby And Derbyshire ;;
+NHS Fareham And Gosport CCG;NHS_FAG_CCG;https://www.farehamandgosportccg.nhs.uk/about-us/201819.htm|https://www.farehamandgosportccg.nhs.uk/about-us/201718.htm|https://www.farehamandgosportccg.nhs.uk/about-us/201617.htm|https://www.farehamandgosportccg.nhs.uk/about-us/new_page_3.htm|https://www.farehamandgosportccg.nhs.uk/about-us/expenditure-2.htm|https://www.farehamandgosportccg.nhs.uk/about-us/expenditure.htm;
+NHS Fylde & Wyre CCG;NHS_FW_CCG;https://www.fyldecoastccgs.nhs.uk/about-blackpool-ccg/corporate-information/expenditure-reporting/;requires a search function, do blackpool at the sametime
+NHS Gloucestershire CCG;NHS_GLOU_CCG;https://www.gloucestershireccg.nhs.uk/about-us/transparency/; all on one page, have to exclude a couple
+NHS Great Yarmouth And Waveney CCG;NHS_GYAW_CCG;http://www.greatyarmouthandwaveneyccg.nhs.uk/page.asp?fldArea=4&fldMenu=18&fldSubMenu=0&fldKey=455;all one page, but all pdf
+NHS Greater Huddersfield CCG;NHS_GHUD_CCG;https://www.greaterhuddersfieldccg.nhs.uk/freedom-of-information/publication-scheme/expenditure-over-25k/expenditure-log-2018-19/|https://www.greaterhuddersfieldccg.nhs.uk/freedom-of-information/publication-scheme/expenditure-over-25k/expenditure-log-201718/|https://www.greaterhuddersfieldccg.nhs.uk/freedom-of-information/publication-scheme/expenditure-over-25k/expenditure-log-201617/|https://www.greaterhuddersfieldccg.nhs.uk/freedom-of-information/publication-scheme/expenditure-over-25k/expenditure-logs-201516/|https://www.greaterhuddersfieldccg.nhs.uk/freedom-of-information/publication-scheme/expenditure-over-25k/expenditure-logs-201415/; seems ok, but the actual link to this on their site is a 404
+NHS Greater Preston CCG;NHS_GPRE_CCG;https://www.greaterprestonccg.nhs.uk/how-we-spend-your-money;the extension is hidden within the link...
+NHS Greenwich CCG;NHS_GREE_CCG;https://www.greenwichccg.nhs.uk/News-Publications/Pages/NHSGreenwich-Finance-Information.aspx;ok, but all pdfs
+NHS Guildford And Waverley CCG; ??? ; cant find the data?;
+NHS Halton CCG;NHS_HALT_CCG;http://www.haltonccg.nhs.uk/public-information/spending-reporting; great one page
+NHS Hambleton, Richmondshire And Whitby CCG;NHS_HRAW_CCG;https://www.hambletonrichmondshireandwhitbyccg.nhs.uk/2018/192|https://www.hambletonrichmondshireandwhitbyccg.nhs.uk/2017/181|https://www.hambletonrichmondshireandwhitbyccg.nhs.uk/2016/171|https://www.hambletonrichmondshireandwhitbyccg.nhs.uk/2015/16|https://www.hambletonrichmondshireandwhitbyccg.nhs.uk/2013/14; split over many pages
+NHS Hammersmith And Fulham CCG;NHS_HAF_CCG;https://www.hammersmithfulhamccg.nhs.uk/news,-publications-policies/publications-policies.aspx?n=8839|https://www.hammersmithfulhamccg.nhs.uk/news,-publications-policies/publications-policies.aspx?n=6519|https://www.hammersmithfulhamccg.nhs.uk/news,-publications-policies/publications-policies.aspx?n=3948|https://www.hammersmithfulhamccg.nhs.uk/news,-publications-policies/publications-policies.aspx?n=3480; have to update the pages
+NHS Hardwick CCG; MERGED INTO Derby And Derbyshire;;
+NHS Haringey CCG;NHS_HARI_CCG;http://www.haringeyccg.nhs.uk/about-us/how-we-spend-our-money.htm;seems ok, but like some files are missing maybe
+NHS Harrogate And Rural District CCG;NHS_HARD_CCG;https://www.harrogateandruraldistrictccg.nhs.uk/publications/publication-of-spend-over-25000/|https://www.harrogateandruraldistrictccg.nhs.uk/publication-of-spend-over-25000/201415/|https://www.harrogateandruraldistrictccg.nhs.uk/publication-of-spend-over-25000/20132014/;very very out of date
+NHS Harrow CCG;NHS_HARR_CCG;http://harrowccg.nhs.uk/publications?media_folder=337&root_folder=2013-2014#media-browser|http://harrowccg.nhs.uk/publications?media_folder=374&root_folder=2015-2016#media-browser|http://harrowccg.nhs.uk/publications?media_folder=821&root_folder=2016-2017#media-browser|http://harrowccg.nhs.uk/publications?media_folder=1140&root_folder=2017-2018#media-browser|http://harrowccg.nhs.uk/publications?media_folder=1323&root_folder=2018-2019#media-browser; ok...
+NHS Hartlepool And Stockton-On-Tees CCG;NHS_HAST_CCG;https://www.hartlepoolandstocktonccg.nhs.uk/media_category/payments-over-25000/;
+NHS Hastings And Rother CCG;NHS_HAR_CCG;https://www.hastingsandrotherccg.nhs.uk/about-us/publications/?categoryesctle5326aee-0fd7-4e0f-99ce-e3bc031eb39a=12307&p=;great, loop over search pages
+NHS Havering CCG;NHS_HAV_CCG;http://www.haveringccg.nhs.uk/About-us/expenditure.htm;all pdfs but ok
+NHS Herefordshire CCG;NHS_HERE_CCG;https://www.herefordshireccg.nhs.uk/who-we-are/publications/publication-scheme/expenditure-over-25-000/2013-2014-expenditure-over-25-000-reports|https://www.herefordshireccg.nhs.uk/who-we-are/publications/publication-scheme/expenditure-over-25-000/2014-2015-expenditure-over-25-000-reports|https://www.herefordshireccg.nhs.uk/who-we-are/publications/publication-scheme/expenditure-over-25-000/2015-2016-reports|https://www.herefordshireccg.nhs.uk/who-we-are/publications/publication-scheme/expenditure-over-25-000/2016-2017-reports|https://www.herefordshireccg.nhs.uk/who-we-are/publications/publication-scheme/expenditure-over-25-000/2017-2018-expenditure-over-25-000-reports|https://www.herefordshireccg.nhs.uk/who-we-are/publications/publication-scheme/expenditure-over-25-000/2018-2019-expenditure-over-25-000-reports|https://www.herefordshireccg.nhs.uk/who-we-are/publications/publication-scheme/expenditure-over-25-000/2019-2020-expenditure-over-25-000-report;actually ok
+NHS Herts Valleys CCG;NHS_HERT_CCG;https://hertsvalleysccg.nhs.uk/about-us/documents/corporate/topic/389/Publication_of_spend_over_%C2%A325%2C000/534;
+NHS Heywood, Middleton And Rochdale CCG;NHS_HMR_CCG;https://www.hmr.nhs.uk/policies-plans-and-reports/spend-over-25k;403 ERRORS
+NHS High Weald Lewes Havens CCG;???;???;impossible to scrape?
+NHS Hillingdon CCG;NHS_HILL_CCG;https://hillingdonccg.nhs.uk/publications2?media_folder=333&root_folder=2013-14#media-browser|https://hillingdonccg.nhs.uk/publications2?media_folder=388&root_folder=2014-15#media-browser|https://hillingdonccg.nhs.uk/publications2?media_folder=375&root_folder=2015-16#media-browser | https://hillingdonccg.nhs.uk/publications2?media_folder=822&root_folder=2016-17#media-browser | https://hillingdonccg.nhs.uk/publications2?media_folder=1165&root_folder=2017-18#media-browser|https://hillingdonccg.nhs.uk/publications2?media_folder=1324&root_folder=2018-19#media-browser|https://hillingdonccg.nhs.uk/publications2?media_folder=1465&root_folder=2019-20#media-browser;seems ok after a custom function
+NHS Horsham And Mid Sussex CCG;NHS_HAMS_CCG;https://www.horshamandmidsussexccg.nhs.uk/about-us/publications/?categoryesctl9945642=11964&assetdet8717055=395945&categoryesctl10660877=11967&categoryesctl9fc359ad-76c7-432a-8232-0a7e1ed231bf=11949&p=;same as one above
+NHS Hounslow CCG;NHS_HOUN_CCG;https://www.hounslowccg.nhs.uk/news,-publications-and-policies/publications.aspx?n=2858|https://www.hounslowccg.nhs.uk/news,-publications-and-policies/publications.aspx?n=3532|https://www.hounslowccg.nhs.uk/news,-publications-and-policies/publications.aspx?n=7688|https://www.hounslowccg.nhs.uk/news,-publications-and-policies/publications.aspx?n=7689|https://www.hounslowccg.nhs.uk/news,-publications-and-policies/publications.aspx?n=8660;
+NHS Hull CCG;NHS_HULL_CCG;https://www.hullccg.nhs.uk/performance-procurement-finance-and-tackling-fraud/our-spending/;easy peasy
+NHS Ipswich And East Suffolk CCG;NHS_IAES_CCG;http://www.ipswichandeastsuffolkccg.nhs.uk/Aboutus/Financeandperformance.aspx;single page but mostly pdfs
+NHS Isle Of Wight CCG;NHS_IOW_CCG;https://www.isleofwightccg.nhs.uk/about-us/good-governance-and-transparency/spending-reports/expenditure-over-25k-2014.htm|https://www.isleofwightccg.nhs.uk/about-us/good-governance-and-transparency/spending-reports/expenditure-over-25k-2015.htm|https://www.isleofwightccg.nhs.uk/about-us/good-governance-and-transparency/spending-reports/expenditure-over-25k-2016.htm|https://www.isleofwightccg.nhs.uk/about-us/good-governance-and-transparency/spending-reports/expenditure-over-25k-2017.htm|https://www.isleofwightccg.nhs.uk/about-us/good-governance-and-transparency/spending-reports/expenditure-over-25k-2018-3.htm|https://www.isleofwightccg.nhs.uk/about-us/good-governance-and-transparency/spending-reports/expenditure-over-25k-2019.htm;lots of pages, not good file formats
+NHS Islington CCG;NHS_ISL_CCG;http://www.islingtonccg.nhs.uk/about-us/publication-scheme.htm;a lot of non-pdfs on this page?
+NHS Kernow CCG;NHS_KERN_CCG;https://www.kernowccg.nhs.uk/about-us/what-we-spend-and-how-we-spend-it/transparency-in-public-expenditure/;could get the older data, cant figure out how
+NHS Kingston CCG;NHS_KING_CCG;https://www.kingstonccg.nhs.uk/about-us/Transparency;All pdfs?
+NHS Knowsley CCG;NHS_KNOW_CCG;http://www.knowsleyccg.nhs.uk/corporate-information/;All pdfs
+NHS Lambeth CCG;NHS_LAMB_CCG;https://www.lambethccg.nhs.uk/news-and-publications/publications/tenders-procurement-contracting/Pages/default.aspx?RootFolder=%2Fnews%2Dand%2Dpublications%2Fpublications%2Ftenders%2Dprocurement%2Dcontracting%2FData%20for%20invoices%20over%2025000%2F2014%20%2D%2015&FolderCTID=0x0120006D01F0EDF7F9E94DAB0D2EB8BC4A83C8&View=%7B8ADCAA4E%2D0AF5%2D4444%2DAC80%2D4327F1840F54%7D|https://www.lambethccg.nhs.uk/news-and-publications/publications/tenders-procurement-contracting/Pages/default.aspx?RootFolder=%2Fnews%2Dand%2Dpublications%2Fpublications%2Ftenders%2Dprocurement%2Dcontracting%2FData%20for%20invoices%20over%2025000%2F2015%20%2D%2016&FolderCTID=0x0120006D01F0EDF7F9E94DAB0D2EB8BC4A83C8&View=%7B8ADCAA4E%2D0AF5%2D4444%2DAC80%2D4327F1840F54%7D|https://www.lambethccg.nhs.uk/news-and-publications/publications/tenders-procurement-contracting/Pages/default.aspx?RootFolder=%2Fnews%2Dand%2Dpublications%2Fpublications%2Ftenders%2Dprocurement%2Dcontracting%2FData%20for%20invoices%20over%2025000%2F2016%20%2D%2017&FolderCTID=0x0120006D01F0EDF7F9E94DAB0D2EB8BC4A83C8&View=%7B8ADCAA4E%2D0AF5%2D4444%2DAC80%2D4327F1840F54%7D|https://www.lambethccg.nhs.uk/news-and-publications/publications/tenders-procurement-contracting/Pages/default.aspx?RootFolder=%2Fnews%2Dand%2Dpublications%2Fpublications%2Ftenders%2Dprocurement%2Dcontracting%2FData%20for%20invoices%20over%2025000%2F2017%20%2D%2018&FolderCTID=0x0120006D01F0EDF7F9E94DAB0D2EB8BC4A83C8&View=%7B8ADCAA4E%2D0AF5%2D4444%2DAC80%2D4327F1840F54%7D|https://www.lambethccg.nhs.uk/news-and-publications/publications/tenders-procurement-contracting/Pages/default.aspx?RootFolder=%2Fnews%2Dand%2Dpublications%2Fpublications%2Ftenders%2Dprocurement%2Dcontracting%2FData%20for%20invoices%20over%2025000%2F2018%20%2D%2019&FolderCTID=0x0120006D01F0EDF7F9E94DAB0D2EB8BC4A83C8&View=%7B8ADCAA4E%2D0AF5%2D4444%2DAC80%2D4327F1840F54%7D|https://www.lambethccg.nhs.uk/news-and-publications/publications/tenders-procurement-contracting/Pages/default.aspx?RootFolder=%2Fnews%2Dand%2Dpublications%2Fpublications%2Ftenders%2Dprocurement%2Dcontracting%2FData%20for%20invoices%20over%2025000%2F2019%2D20&FolderCTID=0x0120006D01F0EDF7F9E94DAB0D2EB8BC4A83C8&View=%7B8ADCAA4E%2D0AF5%2D4444%2DAC80%2D4327F1840F54%7D;WHACKY website
+NHS Leeds CCG;??? come back;??? come back;??? come back
+NHS Leicester City CCG;NHS_LEIC_CCG;https://www.leicestercityccg.nhs.uk/about-us/publication-scheme/what-we-spend-and-how-we-spend-it/;FORBIDDEN WITH SCRAPER
+NHS Lewisham CCG;NHS_LEWI_CCG;http://www.lewishamccg.nhs.uk/about-us/procurement-contracting/Pages/default.aspx;ALL PDFS
+NHS Lincolnshire East CCG;NHS_LINE_CCG;https://lincolnshireeastccg.nhs.uk/about-us/key-documents/finance/spend-over-25000-1?limit=100;Seems ok, in the future would need to be two pages
+NHS Lincolnshire West CCG;NHS_LINW_CCG;https://www.lincolnshirewestccg.nhs.uk/library/expenditure-over-25k/page/;seems ok, need to loop over pages
+NHS Liverpool CCG;NHS_LIVE_CCG;https://www.liverpoolccg.nhs.uk/about-us/publications/spending-reports/;Add year on end
+NHS Luton CCG;NHS_LUT_CCG;https://www.lutonccg.nhs.uk/page/?id=4049|https://www.lutonccg.nhs.uk/page/?id=4050|https://www.lutonccg.nhs.uk/page/?id=4051|https://www.lutonccg.nhs.uk/page/?id=4047|https://www.lutonccg.nhs.uk/page/?id=4108|https://www.lutonccg.nhs.uk/page/?id=4190|https://www.lutonccg.nhs.uk/page/?id=4302;need to loop over
+NHS Manchester CCG;NHS_MANC_CCG;https://manchesterccg.nhs.uk/central-manchester-ccg/|https://manchesterccg.nhs.uk/central-manchester-ccg/|https://manchesterccg.nhs.uk/north-manchester-ccg/;archives are a function of the ccgs merging
+NHS Mansfield And Ashfield CCG;NHS_MAA_CCG;https://www.mansfieldandashfieldccg.nhs.uk/about-us/finance/expenditure-over-30-000/;loop over years
+NHS Medway CCG;NHS_MED_CCG;https://www.medwayccg.nhs.uk/about-us/publishing-information/what-we-spend-and-how-we-spend-it/2148-expenditure-reports-2019|https://www.medwayccg.nhs.uk/about-us/publishing-information/what-we-spend-and-how-we-spend-it/2039-expenditure-reports-2018|https://www.medwayccg.nhs.uk/about-us/publishing-information/what-we-spend-and-how-we-spend-it/2038-expenditure-reports-2017|https://www.medwayccg.nhs.uk/about-us/publishing-information/what-we-spend-and-how-we-spend-it/2037-expenditure-reports-2016|https://www.medwayccg.nhs.uk/about-us/publishing-information/what-we-spend-and-how-we-spend-it/2036-expenditure-reports-2015|https://www.medwayccg.nhs.uk/about-us/publishing-information/what-we-spend-and-how-we-spend-it/2035-expenditure-reports-2014|https://www.medwayccg.nhs.uk/about-us/publishing-information/what-we-spend-and-how-we-spend-it/1823-expenditure-reports;cant find a pattern to loop over
+NHS Merton CCG;NHS_MERT_CCG;https://www.mertonccg.nhs.uk/News-Publications/Pages/Publications.aspx;almost certainly getting stuff it shouldnt be getting
+NHS Mid Essex CCG;NHS_MESS_CCG;https://midessexccg.nhs.uk/about-us/the-library/finance-related-information-1/transactions-over-25k-1/;loop over weird list
+NHS Milton Keynes CCG;NHS_MK_CCG;https://data.gov.uk/dataset/5ae9afff-7dae-4c62-8330-ba95b2227f23/expenditure-over-threshold-25-000;
+NHS Morecambe Bay CCG;NHS_MCB_CCG;https://www.morecambebayccg.nhs.uk/about-us/publications/how-we-spend-your-money?filter%5Bsearch%5D=&filter%5Bcategory%5D%5B%5D=74&limit=100;seems ok
+NHS Nene CCG;NHS_NENE_CCG;https://www.neneccg.nhs.uk/document-library/;seems ok loop over + .htm
+NHS Newark & Sherwood CCG;NHS_NAS_CCG;https://www.newarkandsherwoodccg.nhs.uk/about-us/finance/expenditure-over-30-000/;SEEMS OK LOOP OVER
+NHS Newcastle Gateshead CCG;NHS_NAG_CCG;https://www.newcastlegatesheadccg.nhs.uk/about-us/how-we-work/how-we-spend-our-money/;perfect
+NHS Newham CCG;NHS_NEWH_CCG;http://www.newhamccg.nhs.uk/aboutus/expenditure.htm;all pdfs
+NHS North Cumbria CCG;NHS_NORC_CCG;http://www.northcumbriaccg.nhs.uk/about-us/key-policies-and-documents/finance/financial-expenditure-over-25000.aspx;all pdfs
+NHS North Derbyshire CCG; MERGED INTO Derby And Derbyshire;;
+NHS North Durham CCG;NHS_NDUR_CCG;https://northdurhamccg.nhs.uk/payments-over-25k/;all pdfs
+NHS North East Essex CCG;NHS_NEES_CCG;https://www.neessexccg.nhs.uk/key-documents;some non-procurement data here
+NHS North East Hampshire And Farnham CCG;COME BACK TO THIS;https://www.northeasthampshireandfarnhamccg.nhs.uk/documents/class-2-what-we-spend-and-how-we-spend-it/expenditure-over-p25k/;COME BACK TO THIS
+NHS North East Lincolnshire CCG;NHS_NEL_CCG;https://www.northeastlincolnshireccg.nhs.uk/publications/p25000-plus-spend-1/|https://www.northeastlincolnshireccg.nhs.uk/p25000-plus-spend/publications-archive-2014/|https://www.northeastlincolnshireccg.nhs.uk/p25000-plus-spend/publications-archive-2013/;
+NHS North Hampshire CCG;NHS_NH_CCG;https://www.northhampshireccg.nhs.uk/about-us/what-we-spend-and-how-we-spend-it/2013-expenditure-over-25000/|https://www.northhampshireccg.nhs.uk/about-us/what-we-spend-and-how-we-spend-it/2016-expenditure-over-25000/|https://www.northhampshireccg.nhs.uk/about-us/what-we-spend-and-how-we-spend-it/2017-expenditure-over-25000/|https://www.northhampshireccg.nhs.uk/2018-expenditure-25000/|https://www.northhampshireccg.nhs.uk/2019-expenditure-over-25000/;BAD SSL CERTS
+NHS North Kirklees CCG;NHS_NK_CCG;https://www.northkirkleesccg.nhs.uk/finance-and-contracting/our-expenditure-over-250000/;
+NHS North Lincolnshire CCG;NHS_NL_CCG;https://northlincolnshireccg.nhs.uk/publication-scheme/what-we-spend-and-how-we-spend-it/;430 FORBIDDEN
+NHS North Norfolk CCG;NHS_NN_CCG;https://www.northnorfolkccg.nhs.uk/expenditure-over-%C2%A325000;seems good
+NHS North Staffordshire CCG;NHS_NOST_CCG;https://www.northstaffsccg.nhs.uk/governance/openness-and-transparency/expenditure-over-25k/;gotta loop over, then use a title trick
+NHS North Tyneside CCG;NHS_NT_CCG;https://www.northtynesideccg.nhs.uk/about-us/how-we-work/payments-over-25k/;ok?
+NHS North West Surrey CCG;NHS_NWS_CCG;https://www.nwsurreyccg.nhs.uk/about-us/our-finances/expenditure-over-25-000/;have to loop over
+NHS Northern, Eastern And Western Devon CCG; ; MERGED INTO DEVON CCG;
+NHS Northumberland CCG;NHS_NORT_CCG;https://www.northumberlandccg.nhs.uk/about-us/how-we-work/transparency/;all pdfs but ok
+NHS Norwich CCG;NHS_NORW_CCG;https://www.norwichccg.nhs.uk/about-us/spending-over-25-000?limit=20&limitstart=;loop over then find
+NHS Nottingham City CCG;NHS_NOCI_CCG;https://www.nottinghamcity.nhs.uk/your-ccg/key-publications/how-we-spend-our-money/;great?!
+NHS Nottingham North And East CCG;NHS_NNAE_CCG;http://www.nottinghamnortheastccg.nhs.uk/contact-us/freedom-of-information/;other additional crap on here
+NHS Nottingham West CCG;NHS_NW_CCG;https://www.nottinghamwestccg.nhs.uk/about-us/how-we-spend-our-money/;great? Template of the other nottingham one?
+NHS Oldham CCG;NHS_OLD_CCG;http://www.oldhamccg.nhs.uk/Publications/25k;perfect
+NHS Oxfordshire CCG;COME BACK TO THIS;COME BACK TO THIS;COME BACK TO THIS
+NHS Portsmouth CCG;NHS_PORT_CCG;https://www.portsmouthccg.nhs.uk/About-Us/Key-documents/;loop over but looks fine
+NHS Redbridge CCG;NHS_RED_CCG;http://www.redbridgeccg.nhs.uk/About-us/expenditure.htm;all pdfs but ok
+NHS Redditch And Bromsgrove CCG;NHS_RAD_CCG;http://www.redditchandbromsgroveccg.nhs.uk/contact-us/publication-scheme/publication-of-expenditure-over-25k/;strange site, maybe ok
+NHS Richmond CCG;COME BACK TO THIS;COME BACK TO THIS;COME BACK TO THIS
+NHS Rotherham CCG;NHS_ROTH_CCG;http://www.rotherhamccg.nhs.uk/over25000|http://www.rotherhamccg.nhs.uk/2016.htm|http://www.rotherhamccg.nhs.uk/2015.htm|http://www.rotherhamccg.nhs.uk/2014.htm|http://www.rotherhamccg.nhs.uk/2013.htm;seems ok
+NHS Rushcliffe CCG;NHS_RUSH_CCG;https://www.rushcliffeccg.nhs.uk/your-ccg/document-viewer/?id=;SEEMS OK
+NHS Salford CCG;NHS_SAL_CCG;https://www.salfordccg.nhs.uk/about-us/how-we-do-things/freedom-information/expenditure-over-lb25k?ccm_paging_p=;OK…
+NHS Sandwell And West Birmingham CCG;COME BACK TO THIS;;
+NHS Scarborough And Ryedale CCG;COME BACK TO THIS;;
+NHS Sheffield CCG;NHS_SHEF_CCG;https://www.sheffieldccg.nhs.uk/about-us/spending-over-25k.htm;SEEMS OK
+NHS Shropshire CCG;NHS_SHRO_CCG;http://www.shropshireccg.nhs.uk/policies-and-reports/performance-procurement-finance-and-fraud/expenditure-over-threshold-reports/;ZIPPED FILES?! COME BACK TO THIS!
+NHS Somerset CCG;COME BACK TO THIS;;
+NHS South Cheshire CCG;NHS_SCHE_CCG;http://www.southcheshireccg.nhs.uk/publication/categories/116?page=;need to loop and do a weird in href thng
+NHS South Devon And Torbay CCG;MERGED INTO DEVON CCG;;
+NHS South East Staffordshire And Seisdon Peninsula CCG;COME BACK TO THIS;COME BACK TO THIS;COME BACK TO THIS
+NHS South Eastern Hampshire CCG;NHS_SEH_CCG;https://www.southeasternhampshireccg.nhs.uk/about-us/201819.htm|https://www.southeasternhampshireccg.nhs.uk/about-us/201920.htm|https://www.southeasternhampshireccg.nhs.uk/about-us/201819.htm|https://www.southeasternhampshireccg.nhs.uk/about-us/201718.htm|https://www.southeasternhampshireccg.nhs.uk/about-us/201617.htm|https://www.southeasternhampshireccg.nhs.uk/about-us/new_page_3.htm|https://www.southeasternhampshireccg.nhs.uk/about-us/expenditure-2.htm|https://www.southeasternhampshireccg.nhs.uk/about-us/expenditure.htm;loop oversplits
+NHS South Kent Coast CCG;COME BACK TO THIS;;
+NHS South Lincolnshire CCG;NHS_SL_CCG;https://southlincolnshireccg.nhs.uk/about-us/key-documents/finance-3/spend-over-25000-1/spend-over-25k-;ITERATE OVER 2013 TO 2019
+NHS South Norfolk CCG;NHS_SN_CCG;https://www.southnorfolkccg.nhs.uk/expenditure-over-%C2%A325000/expenditure-over-%C2%A325000-2013-2014|https://www.southnorfolkccg.nhs.uk/expenditure-over-%C2%A325000-201314/expenditure-over-%C2%A325000-201516|https://www.southnorfolkccg.nhs.uk/expenditure-over-%C2%A325000/expenditure-over-%C2%A325000-2015-2016|https://www.southnorfolkccg.nhs.uk/expenditure-over-%C2%A325000/expenditure-over-%C2%A325000-2017-2018|https://www.southnorfolkccg.nhs.uk/expenditure-over-%C2%A325000/expenditure-over-%C2%A325000-2019-2020|https://www.southnorfolkccg.nhs.uk/expenditure-over-%C2%A325000/expenditure-over-%C2%A325000-2016-2017|https://www.southnorfolkccg.nhs.uk/expenditure-over-%C2%A325000/expenditure-over-%C2%A325000-2018-2019;loop and split
+NHS South Sefton CCG;NHS_SS_CCG;https://data.gov.uk/dataset/030d9db2-f7d8-496a-b343-7f31844d9823/spend-over-25-000-in-nhs-south-sefton-ccg;really old data only
+NHS South Tees CCG;NHS_SOTE_CCG;https://www.southteesccg.nhs.uk/media_category/payments-over-25000/;seems good but all pdfs
+NHS South Tyneside CCG;NHS_SOTY_CCG;https://www.southtynesideccg.nhs.uk/about-us/how-we-work/how-we-spend-our-money/;all pdfs?
+NHS South Warwickshire CCG;COME BACK TO THIS;COME BACK TO THIS;
+NHS South West Lincolnshire CCG;NHS_SWL_CCG;https://southwestlincolnshireccg.nhs.uk/about-us/finances/spend-over-25-000/;
+NHS South Worcestershire CCG;COME BACK TO THIS;COME BACK TO THIS;
+NHS Southampton CCG;NHS_SOT_CCG;https://www.southamptoncityccg.nhs.uk/documents?smbfolder=;ext in href
+NHS Southend CCG;NHS_SEND_CCG;https://southendccg.nhs.uk/about-us/key-documents/transparency/;
+NHS Southern Derbyshire CCG; MERGED INTO Derby And Derbyshire;;
+NHS Southport And Formby CCG;NHS_SAF_CCG;https://www.southportandformbyccg.nhs.uk/what-we-do/how-we-spend-our-money/;literally perfect
+NHS Southwark CCG;;;cant get data from this website
+NHS St Helens CCG;nhs_sthe;https://www.sthelensccg.nhs.uk/about-us/public-information/public-spending-and-reporting/;looks good
+NHS Stafford And Surrounds CCG;NHS_SAS_CCG;https://www.staffordsurroundsccg.nhs.uk/news-events/publications/expenditure/;
+NHS Stockport CCG;NHS_STOC_CCG;http://www.stockportccg.nhs.uk/about-us/publications/finance-reporting-spend-over-25000/;headers
+NHS Stoke On Trent CCG;NHS_STOK_CCG;https://www.stokeccg.nhs.uk/your-ccg-stoke/sot-publications/expenditure-over-25k-1/;SEEMS OK
+NHS Sunderland CCG;NHS_SUN_CCG;https://www.sunderlandccg.nhs.uk/about-us/how-we-work/our-budget/;all in one
+NHS Surrey Downs CCG;NHS_SD_CCG;https://www.surreydownsccg.nhs.uk/get-informed/policies-and-procedures/policies-documents/financial-information/spend-over-25k/;loop over and files
+NHS Surrey Heath CCG;NHS_SH_CCG;http://www.surreyheathccg.nhs.uk/policies-publications/over-25k-expenditure/over-25k-expenditure-;seems ok
+NHS Sutton CCG;;;“website is not a trusted source”
+NHS Swale CCG;NHS_SWAL_CCG;https://www.swaleccg.nhs.uk/about-swale-ccg/publications/publication-scheme/what-we-spend-and-how-we-spend-it/expenditure-over-25000/;403 to requests library
+NHS Swindon CCG;NHS_SWIN_CCG;https://www.swindonccg.nhs.uk/about-us/transparency-agenda;
+NHS Tameside And Glossop CCG;NHS_TAG_CCG;https://www.tamesideandglossopccg.org/corporate/what-we-spend-and-how-we-spend-it;
+NHS Telford And Wrekin CCG;NHS_TAW_CCG;https://www.telfordccg.nhs.uk/who-we-are/publications/expenditure-over-25k-and-contractual-sanctions/;
+NHS Thanet CCG;NHS_THAN_CCG;https://www.thanetccg.nhs.uk/about-us/publications/?categoryesctl8f69bb2e-477d-4a1d-9070-609ed325f716=16629&;
+NHS Thurrock CCG;NHS_THUR_CCG;https://thurrockccg.nhs.uk/about-us/document-library/transactions-over-25-000/transactions-over-25-000-;getting tired of making notes now
+NHS Tower Hamlets CCG;NHS_TH_CCG;http://www.towerhamletsccg.nhs.uk/aboutus/publications.htm;
+NHS Trafford CCG;NHS_TRAF_CCG;NO DATA;NO DATA
+NHS Vale Of York CCG;NHS_VOY_CCG;https://www.valeofyorkccg.nhs.uk/our-allocation-and-paying-for-services/transactions-over-p25k-2018-1/|https://www.valeofyorkccg.nhs.uk/our-allocation-and-paying-for-services/transactions-over-p25k-2018/|https://www.valeofyorkccg.nhs.uk/our-budget-and-what-we-spend/2017/|https://www.valeofyorkccg.nhs.uk/our-spending/2016/|https://www.valeofyorkccg.nhs.uk/our-spending/2015/https://www.valeofyorkccg.nhs.uk/our-spending/2013/|https://www.valeofyorkccg.nhs.uk/our-spending/2014/;split over pages
+NHS Vale Royal CCG;NHS_VOR_CCG;http://www.valeroyalccg.nhs.uk/publication/categories/116?page=;
+NHS Wakefield CCG;NHS_WAKE_CCG;https://www.wakefieldccg.nhs.uk/home/patient-in-wakefield/what-we-do/public-documents/publication-scheme/classes-of-information/what-we-spend-and-how-we-spend-it/expenditure-over-pound25k-per-month/;PERFECT
+NHS Walsall CCG;NHS_WALS_CCG;https://walsallccg.nhs.uk/publications/expenditure-over-25k-reports-;
+NHS Waltham Forest CCG;NHS_WALT_CCG;http://www.walthamforestccg.nhs.uk/about/publications.htm;PERFECT
+NHS Wandsworth CCG;COME BACK TO THIS;COME BACK TO THIS;COME BACK TO THIS
+NHS Warrington CCG;NHS_WARR_CCG;https://www.warringtonccg.nhs.uk/Images/Page%20Images/public-info/contracts.htm;a lot of junk files in there too
+NHS Warwickshire North CCG;COME BACK TO THIS;COME BACK TO THIS;COME BACK TO THIS
+NHS West Cheshire CCG;NHS_WC_CCG;https://www.westcheshireccg.nhs.uk/plans-and-reports/spending-reports/;seems ok
+NHS West Essex CCG;NHS_WESS_CCG;https://westessexccg.nhs.uk/news-and-publications/publications/disclosure-of-expenditure/;loop over file titles
+NHS West Hampshire CCG;NHS_WHAM_CCG;NO DATA;NO DATA
+NHS West Kent CCG;NHS_WKEN_CCG;https://www.westkentccg.nhs.uk/about-us/publications/?categoryesctl10103818=9859&categoryesctl10652175=11019&categoryesctl1a5cc360-7091-42ae-8890-a825dc169160=9721&p=;
+NHS West Lancashire CCG;NHS_WLAN_CCG;http://www.westlancashireccg.nhs.uk/about-us/how-we-spend-your-money/;PERFECT
+NHS West Leicestershire CCG;NHS_WLEI_CCG;https://www.westleicestershireccg.nhs.uk/publications/corporate-documents/registers/spend-over-25-000/;loop over and files
+NHS West London (K&C & Qpp) CCG;NHS_WL_CCG;https://www.westlondonccg.nhs.uk/publications-and-policies.aspx?p=2636&u=2635|https://www.westlondonccg.nhs.uk/publications-and-policies.aspx?p=2921&u=2635|https://www.westlondonccg.nhs.uk/publications-and-policies.aspx?p=5065&u=2635|https://www.westlondonccg.nhs.uk/publications-and-policies.aspx?p=5066&u=2635|https://www.westlondonccg.nhs.uk/publications-and-policies.aspx?p=5433&u=2635;gotta loop over all pdfs
+NHS West Norfolk CCG;NHS_WN_CCG;https://www.westnorfolkccg.nhs.uk/publications/financial/expenditure-over-%C2%A325000;all pdfs but ok
+NHS West Suffolk CCG;NHS_WS_CCG;https://www.westsuffolkccg.nhs.uk/about-us/finance-and-performance/;
+NHS Wigan Borough CCG;NHS_WAB_CCG;https://www.wiganboroughccg.nhs.uk/your-ccg/business-and-finance/financial-reports;bit of a custom parser required
+NHS Wiltshire CCG;NHS_WILT_CCG;http://www.wiltshireccg.nhs.uk/about-us/transparency;only has 2019 data
+NHS Wirral CCG;NHS_WIRR_CCG;https://www.wirralccg.nhs.uk/get-in-touch/freedom-of-information/publications-scheme/;ok
+NHS Wolverhampton CCG;NHS_WOLV_CCG;https://wolverhamptonccg.nhs.uk/publications/corporate/finance-3/expenditure-1/;ok
+NHS Wyre Forest CCG;NHS_WYRE_CCG;http://www.wyreforestccg.nhs.uk/contact-us/publications-scpublications-scheme-heme/publication-of-expenditure-over-25k/;
