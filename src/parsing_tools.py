@@ -187,23 +187,15 @@ def clean_df(df, list_, file_, filepath):
                 return df
         else:
             module_logger.info('No data in ' + ntpath.basename(file_) + '!')
-        print('this gives me a headache')
     except Exception as e:
         try:
-            print(traceback.format_exc())
             module_logger.debug('The columns: ' + str(df.columns.tolist()) + ' in ' + ntpath.basename(file_))
         except Exception as e:
             try:
                 module_logger.debug('The first row: ' + str(df.iloc[0]) + ' in ' + ntpath.basename(file_))
-                print('hi')
-                print(traceback.format_exc())
             except:
-                print('hello')
-                print(file_)
-                print(traceback.format_exc())
                 module_logger.debug('Problem with ' + ntpath.basename(file_) +
                                     ': ' + str(e))
-                print(traceback.format_exc())
 
 
 def parse_data(filepath, department, filestoskip=[]):

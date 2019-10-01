@@ -1,20 +1,12 @@
 '''
-Options:    scrapetrusts    :   scrape only data from NHS trusts
-            scrapeccgs      :   scrape only data from ccgs
-            scrapenationals :   scrape only national bodies\SHAs
-            noscrape        :   dont scrape anything (default: scrape all)
-            cleanrun        :   delete existing cache of data
-            OCAPI           :   reconcilewith the OpenCorporatesAPI
+Options: New options here.
 
 Links last updated: constantly.
 Links next updated: constantly.
 
-To do:
-    brackets indicate minus in amount field
-    unknown file extensions
-    add small sleeps
-    should flush out directory
+To do: New todo here
 '''
+
 
 import os
 import sys
@@ -22,7 +14,8 @@ import shutil
 import logging
 import pandas as pd
 from datetime import datetime
-from scrape_ccgs import scrape_ccg
+from scrape_and_parse_ccgs import scrape_ccg
+from merge_and_evaluate_tools import merge_and_evaluate_scrape
 
 
 def start_banner():
@@ -71,7 +64,14 @@ if __name__ == '__main__':
     #start_banner()
     rawpath = os.path.abspath(os.path.join(__file__, '../..', 'data',
                                            'data_nhsccgs', 'raw'))
+    cleanpath = os.path.abspath(os.path.join(__file__, '../..', 'data',
+                                           'data_nhsccgs', 'cleaned'))
+    mergepath = os.path.abspath(os.path.join(__file__, '../..', 'data',
+                                           'data_nhsccgs', 'merge'))
     logpath = os.path.abspath(os.path.join(__file__, '../..', 'logging'))
+    for path in [rawpath, cleanpath, mergepath, logpath]:
+        if os.path.exists(path) is False:
+            os.makedirs(path)
     logger = setup_logging(logpath)
     if 'cleanrun' in sys.argv:
         try:
@@ -80,8 +80,7 @@ if __name__ == '__main__':
             print('*** Doing a clean run! Lets go! ***')
         except OSError:
             logger.info('cleanrun option passed, but cannot delete folders.')
-    if os.path.exists(rawpath) is False:
-        os.makedirs(rawpath)
+
 
 #    ins_dict = pd.read_csv(os.path.abspath(
 #        os.path.join(
@@ -106,4 +105,10 @@ if __name__ == '__main__':
                          os.path.join(__file__,'../..', 'data',
                                       'data_support', 'ccg_list.txt')),
                          sep=';')
-    scrape_ccg(ccg_df)
+#    scrape_ccg(ccg_df)
+    merge_and_evaluate_scrape(cleanpath, mergepath)
+#    reconcile_companies()
+#    reconcile_charities()
+#    merge_and_evaluate_reconcile()
+#    output_for_dashboard()
+#    output_for_analysis()
