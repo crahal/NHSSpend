@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<head>
+     <title>About</title>
+</head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+<html>
+<body>
+<h1>
+  The Social Data Science of Healthcare Supply
+</h1>
+<br>
+<p><strong>Introduction:</strong> This project aims to harmonize data from across all Clinical Comissioning Groups. Clinical Commissioning Groups (CCGs) were created following the Health and Social Care Act in 2012, and replaced Primary Care Trusts on 1 April 2013. They are clinically-led statutory NHS bodies responsible for the planning and commissioning of health care services for their local area, essentially organising the delivery of NHS services in England. There have been approximately ten CCG mergers since 2015, and there currently remains 191 CCGs (down from 211 at the end of March 2013). <br>
+<br>
+
+As part of a renewed transparency drive, all CCG's are mandated by government to make available their spending above £25k. It was announced by David Cameron in <a href="https://www.gov.uk/government/news/letter-to-government-departments-on-opening-up-data">June 2010</a>, with <a href="https://assets.publishing.service.gov.uk/government/uploads/system/uploads/attachment_data/file/662332/guidance_for_publishing_spend.pdf">detailed guidance</a> outlining exactly what was expected, and from which public sector institutions. While the data is made available in a heterogenous, decentralised and un-harmonized way, it is possible with a range of tools to gain insight into the procurement process.
+<br>
+
+<br>
+NHS Spend is therefore a set of full-stack tools to undertake a number of functions. It firstly scrapes all data from each individual CCG website. It then cleans and harmonizes the data, retaining seven key peieces of infornmation about each element of procurement:
+
+<ul id="scrape-evaluation">
+  <li>1. Supplier Name: The name of the entity supplying the CCG.</li>
+  <li>2. Date of Spend: The date of spend.</li>
+  <li>3. Amount: total value of individual payment (either including or excluding VAT).</li>
+  <li>4. Expenses Area: the part of the entity that has spent the money.</li>
+  <li>5. Expense Type: the general nature of the expenditure being recorded.</li>
+  <li>6. Transaction Number: the system transaction number for the payment held by the institution.</li>
+  <li>7. CCG Name: The name of the CCG making the procurement.</li>
+</ul>
+</p>
+
+<br>
+<p><strong>Code and Maintenance:</strong>.
+The code is maintained on <a href="https://github.com/crahal/nhsspend">GitHub</a>. This work is licensed under the Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License (CC BY-NC-SA 4.0). The data itself is made available at source via an Open Government License (OGL), which facilitates the re-use of a wide range of public sector information free of charge. We welcome <i>all</i> contributions, so please feel free to fork the repository and suggest improvements. Please raise any issues on GitHub.
+</p>
+
+<br>
+<p><strong>Privacy Policy:</strong>
+Who we are: our website address is: https://www.digitalgendergaps.org/. We are an academic project studying procurement within the National Health Service and what this can tell us about public health, public finance, civic technology and contracting networks. We do not currently collect any data from visitors to our site. Default wordpress cookies may be set in your browser but they are not used by us to store or collect any data. Note that as with all cookies third-parties may be able to read them and their contents but there should not be any personal data in cookies from our site. Our site currently has no embedded content so other sites should not be able to track your visit here. We use google analytics for traffic analysis. Our site uses the <a href="https://www.monsterinsights.com">https://www.monsterinsights.com</a> EU compliance plugin to anonymise all tracking data before it is shared with google, ensuring that we do not collect, store or share any personal data via our analytics. If we held any of your personal data, you can request to receive an exported file of the personal data we hold about you, including any data you have provided to us. You can also request that we erase any personal data we hold about you. This does not include any data we are obliged to keep for administrative, legal, or security purposes. But we don't collect any data anyway. Please contact us via GitHub with any questiosn, concerns or data enquiries.
+</p>
+
+<br>
+<p><strong>Funders:</strong> This work is generously funded by the British Academy Postdoctoral Fellowship Scheme. </p>
+
+
+</body>
+</html>
