@@ -20,11 +20,49 @@ def create_html_from_sumstats(htmlpath, sumstats):
             pass
         with tag('html'):
             with tag('h1'):
-                text('Evaluating the Scrape and Parse of All CCGs')
+                text('Evaluating CCG Data')
             with tag('body'):
                 with tag('ul', id='grocery-list'):
-                    line('li', 'Salt')
-                    line('li', 'The number of raw rows is: ' + str(sumstats['rawrows']))
+                    line('li', 'Number of raw rows: ' +
+                               str(sumstats['rawrows']))
+                    line('li', 'Value of raw data is: £' +
+                               str(sumstats['rawvalue']) + 'bn')
+                    line('li', 'Number of unique suppliers in raw data : ' +
+                               str(sumstats['rawuniqsup']))
+                    line('li', 'Number of rows below £25k dropped : ' +
+                               str(sumstats['droppedbelow25krows']))
+                    line('li', 'Value of rows below £25k dropped: £' +
+                               str(sumstats['droppedbelow25kvalue']) + 'bn')
+                    line('li', 'Number of bad supplier rows dropped: ' +
+                               str(sumstats['droppedbadsuprows']))
+                    line('li', 'Value of bad supplier rows dropped: £' +
+                               str(sumstats['droppedbadsupamount'])+'bn')
+                    line('li', 'Number of redacted rows dropped: ' +
+                               str(sumstats['droppedredactrows']))
+                    line('li', 'Value of redacted rows dropped: £' +
+                               str(sumstats['droppedredactvalue']) +'m')
+                    line('li', 'Number of unique suppliers redacted: ' +
+                               str(sumstats['uniquesupredact']))
+                    line('li', 'Number rows containing "various": ' +
+                               str(sumstats['droppedvariousrows']))
+                    line('li', 'Value of rows containing "various": £' +
+                               str(sumstats['droppedvariousamount']))
+                    line('li', 'Number of unique "various" suppliers: ' +
+                               str(sumstats['uniquesupvarious']))
+                    line('li', 'Number of potentially duplicated rows: ' +
+                               str(sumstats['dropduplicrows']) + 'bn')
+                    line('li', 'Value of potentially duplicated rows: £' +
+                               str(sumstats['dropduplicvalue']))
+                    line('li', 'Total number of cleaned rows of data: ' +
+                               str(sumstats['totalcleanrows']))
+                    line('li', 'Total value of cleaned rows of data: £' +
+                               str(sumstats['totalcleanvalue']) + 'bn')
+                    line('li', 'Total number of unique suppliers in clean data: ' +
+                               str(sumstats['totalcleanuniqsup']))
+                    line('li', 'Total number of ccgs in cleaned data: ' +
+                               str(sumstats['totalcleanuniqdept']))
+                    line('li', 'Total number of unique files in cleaned data: ' +
+                               str(sumstats['totalcleanuniqfiles']))
         result = indent(doc.getvalue(), indent_text = True)
         with open(outpath, "w") as file:
             file.write(result)
@@ -34,12 +72,10 @@ def merge_and_evaluate_scrape(cleanpath, mergepath, htmlpath, datasummarypath):
     json_path = os.path.join(datasummarypath, 'scrape_and_parse_summary.json')
     merged_df = merge_files(cleanpath, mergepath)
     print(list(merged_df))
-#    merged_df, sumstats = evaluate_and_clean_merge(merged_df)
-    with open(json_path, encoding='utf8', errors='ignore') as json_file:
-        sumstats = json.load(json_file)
+    merged_df, sumstats = evaluate_and_clean_merge(merged_df)
     create_html_from_sumstats(htmlpath, sumstats)
-#    merged_df.to_csv(os.path.join(mergepath, 'merged_clean_spending.tsv'),
-#                     header=0, encoding='latin-1', sep='\t')
+    merged_df.to_csv(os.path.join(mergepath, 'merged_clean_spending.tsv'),
+                     encoding='latin-1', sep='\t')
     with open(json_path, 'w') as outfile:
         json.dump(sumstats, outfile)
 
@@ -82,8 +118,8 @@ def evaluate_and_clean_merge(df):
     sumstats['rawrows'] = len(df)
     print('** We have ' + str(sumstats['rawrows']) +
           ' total rows of payments data to begin with.')
-    sumstats['rawvalue'] = df['amount'].sum()
-    print('** We have £' + str(round(sumstats['rawvalue'] / 1000000000, 2)) +
+    sumstats['rawvalue'] = round(df['amount'].sum() / 1000000000, 2)
+    print('** We have £' + str(sumstats['rawvalue']) +
           'bn worth of data to begin with.')
     sumstats['rawuniqsup'] = len(df['supplier'].unique())
     print('** We have ' + str(sumstats['rawuniqsup']) +
@@ -103,10 +139,11 @@ def evaluate_and_clean_merge(df):
     sumstats['droppedbelow25krows'] = len(initial) - len(df)
     print('Dropped ' + str(sumstats['droppedbelow25krows']) +
           ' null, non-numeric and payment rows below £25k.')
-    sumstats['droppedbelow25kvalue'] = (initial['amount'].sum() -
-                                        df['amount'].sum())
+    sumstats['droppedbelow25kvalue'] = round((initial['amount'].sum() -
+                                              df['amount'].sum()) /
+                                              1000000000, 2)
     print('Dropped £' +
-          str(round((sumstats['droppedbelow25kvalue'] / 1000000000), 2)) +
+          str(sumstats['droppedbelow25kvalue']) +
           'bn null, non-numeric and payments below £25k in total summed value.')
     initial = df
     df = df[~pd.isnull(df['supplier'])]
@@ -123,8 +160,9 @@ def evaluate_and_clean_merge(df):
     sumstats['droppedbadsuprows'] = int(len(initial) - len(df))
     print('Dropped ' + str(sumstats['droppedbadsuprows']) +
           ' rows due to bad supplier or dates.')
-    sumstats['droppedbadsupamount'] = (initial['amount'].sum() -
-                                        df['amount'].sum())
+    sumstats['droppedbadsupamount'] = round((initial['amount'].sum() -
+                                             df['amount'].sum()) /
+                                             1000000000, 2)
     print('Dropped ' + str(sumstats['droppedbadsupamount']) +
           ' rows due to bad supplier or dates.')
     initial = df
@@ -136,10 +174,10 @@ def evaluate_and_clean_merge(df):
     sumstats['droppedredactrows'] = len(initial)-len(df)
     print('Dropped ' + str(sumstats['droppedredactrows']) +
           ' redacted payments.')
-    sumstats['droppedredactvalue'] = (initial['amount'].sum() -
-                                      df['amount'].sum())
+    sumstats['droppedredactvalue'] = round((initial['amount'].sum() -
+                                           df['amount'].sum())/ 1000000, 2)
     print('Dropped redacted payments worth £' +
-          str(round(sumstats['droppedredactvalue'] / 1000000000, 2)) + 'bn.')
+          str(sumstats['droppedredactvalue']) + 'm.')
     sumstats['uniquesupredact'] = (len(initial['supplier'].unique()) -
                                    len(df['supplier'].unique()))
     print('We identified ' + str(sumstats['uniquesupredact']) +
@@ -152,8 +190,8 @@ def evaluate_and_clean_merge(df):
     sumstats['droppedvariousamount'] = (initial['amount'].sum() -
                                          df['amount'].sum())
     print('Dropped "various" payments worth £' +
-          str(round(sumstats['droppedvariousamount'] / 1000000000, 2)) +
-          'bn.')
+          str(round(sumstats['droppedvariousamount'] / 1000000, 2)) +
+          'm.')
     sumstats['uniquesupvarious'] = (len(initial['supplier'].unique()) -
                                     len(df['supplier'].unique()))
     print('We identified ' + str(sumstats['uniquesupvarious']) +
@@ -177,16 +215,16 @@ def evaluate_and_clean_merge(df):
     sumstats['dropduplicrows'] = len(initial) - len(df)
     print('Dropped ' + str(sumstats['dropduplicrows']) +
           ' potential duplicates')
-    sumstats['dropduplicvalue'] = (initial['amount'].sum() -
-                                   df['amount'].sum())
+    sumstats['dropduplicvalue'] = round((initial['amount'].sum() -
+                                   df['amount'].sum())/ 1000000000, 2)
     print('Dropped duplicates worth £' +
-          str(round(sumstats['dropduplicvalue'] / 1000000000, 2)) + 'bn.')
+          str(sumstats['dropduplicvalue']) + 'bn.')
     sumstats['totalcleanrows'] = len(df)
     print('** We have ' + str(sumstats['totalcleanrows']) +
           ' total rows of data to finish with.')
-    sumstats['totalcleanvalue'] = df['amount'].sum()
+    sumstats['totalcleanvalue'] = round(df['amount'].sum()/ 1000000000, 2)
     print('** We have £' +
-          str(round(sumstats['totalcleanvalue'] / 1000000000, 2)) +
+          str(sumstats['totalcleanvalue']) +
           'bn worth of data to finish with.')
     sumstats['totalcleanuniqsup'] = len(df['supplier_upper'].unique())
     print('** We have ' + str(sumstats['totalcleanuniqsup']) +

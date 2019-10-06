@@ -5,7 +5,10 @@ Links last updated: constantly.
 Links next updated: constantly.
 
 To do: New todo here
+
+next to fix bury,  haf, sthe
 '''
+
 
 
 import os
@@ -16,7 +19,7 @@ import pandas as pd
 from datetime import datetime
 from scrape_and_parse_ccgs import scrape_ccg
 from merge_and_evaluate_tools import merge_and_evaluate_scrape
-
+from generate_output import output_for_dashboard
 
 def start_banner():
     print('**************************************************')
@@ -64,19 +67,26 @@ if __name__ == '__main__':
     #start_banner()
     rawpath = os.path.abspath(os.path.join(__file__, '../..', 'data',
                                            'data_nhsccgs', 'raw'))
+    datasummarypath = os.path.abspath(os.path.join(__file__, '../..', 'data',
+                                                   'data_summary'))
+    dashboardpath = os.path.abspath(os.path.join(__file__, '../..', 'data',
+                                                 'data_dashboard'))
     cleanpath = os.path.abspath(os.path.join(__file__, '../..', 'data',
                                            'data_nhsccgs', 'cleaned'))
     mergepath = os.path.abspath(os.path.join(__file__, '../..', 'data',
                                            'data_nhsccgs', 'merge'))
     logpath = os.path.abspath(os.path.join(__file__, '../..', 'logging'))
-    for path in [rawpath, cleanpath, mergepath, logpath]:
+    htmlpath = os.path.abspath(os.path.join(__file__, '../..', 'html_files'))
+    for path in [rawpath, cleanpath, mergepath, logpath,
+                 htmlpath, dashboardpath]:
         if os.path.exists(path) is False:
             os.makedirs(path)
     logger = setup_logging(logpath)
     if 'cleanrun' in sys.argv:
         try:
             for body in ['nationals', 'trusts', 'ccgs']:
-                shutil.rmtree(os.path.join(rawpath, body))('25k' in a["href"].lower())
+                shutil.rmtree(os.path.join(rawpath,
+                                           body))('25k' in a["href"].lower())
             print('*** Doing a clean run! Lets go! ***')
         except OSError:
             logger.info('cleanrun option passed, but cannot delete folders.')
@@ -106,9 +116,9 @@ if __name__ == '__main__':
                                       'data_support', 'ccg_list.txt')),
                          sep=';')
 #    scrape_ccg(ccg_df)
-    merge_and_evaluate_scrape(cleanpath, mergepath)
+#    merge_and_evaluate_scrape(cleanpath, mergepath, htmlpath, datasummarypath)
 #    reconcile_companies()
 #    reconcile_charities()
 #    merge_and_evaluate_reconcile()
-#    output_for_dashboard()
+    output_for_dashboard(mergepath, dashboardpath)
 #    output_for_analysis()

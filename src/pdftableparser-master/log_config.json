@@ -1,0 +1,57 @@
+{
+	"version": 1,
+	"formatters": {
+		"pdf_table_parser": {
+			"format": "%(asctime)s - %(name)s - %(levelname)s - %(message)s"
+		}
+	},
+	"handlers": {
+		"console": {
+			"class": "logging.StreamHandler",
+			"level": "DEBUG",
+			"formatter": "pdf_table_parser"
+		},
+		"file": {
+			"class": "logging.FileHandler",
+			"level": "DEBUG",
+			"formatter": "pdf_table_parser",
+			"filename": "%.log"
+		},
+		"null" : {
+			"class": "logging.NullHandler",
+			"level": "ERROR",
+			"formatter": "pdf_table_parser"
+		}
+	},
+	"loggers": {
+		"pdf_table_parser": {
+			"level": "DEBUG",
+			"handlers": ["console", "file"],
+			"propagate": false
+		},
+		"converter": {
+			"handlers": ["null"],
+			"propagate": false
+		},
+		"cmapdb": {
+			"handlers": ["null"],
+			"propagate": false
+		},
+		"lzw": {
+			"handlers": ["null"],
+			"propagate": false
+		},
+		"layout": {
+			"handlers": ["null"],
+			"propagate": false
+		},
+		"pdfinterp": {
+			"handlers": ["null"],
+			"propagate": false
+		},
+		"pdfparser": {
+			"handlers": ["null"],
+			"propagate": false
+		}
+	}
+}
