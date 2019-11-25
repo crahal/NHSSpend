@@ -9,8 +9,6 @@ To do: New todo here
 next to fix bury,  haf, sthe
 '''
 
-
-
 import os
 import sys
 import shutil
@@ -20,6 +18,8 @@ from datetime import datetime
 from scrape_and_parse_ccgs import scrape_ccg
 from merge_and_evaluate_tools import merge_and_evaluate_scrape
 from generate_output import output_for_dashboard
+from reconciliation import reconcile_general
+
 
 def start_banner():
     print('**************************************************')
@@ -75,6 +75,8 @@ if __name__ == '__main__':
                                            'data_nhsccgs', 'cleaned'))
     mergepath = os.path.abspath(os.path.join(__file__, '../..', 'data',
                                            'data_nhsccgs', 'merge'))
+    reconcilepath = os.path.abspath(os.path.join(__file__, '../..', 'data',
+                                                 'data_nhsccgs', 'reconciled'))
     logpath = os.path.abspath(os.path.join(__file__, '../..', 'logging'))
     htmlpath = os.path.abspath(os.path.join(__file__, '../..', 'html_files'))
     for path in [rawpath, cleanpath, mergepath, logpath,
@@ -112,13 +114,16 @@ if __name__ == '__main__':
     #   ('noscrape' not in sys.argv):
     # scrape_trusts(institution_dict)
     ccg_df = pd.read_csv(os.path.abspath(
-                         os.path.join(__file__,'../..', 'data',
+                         os.path.join(__file__, '../..', 'data',
                                       'data_support', 'ccg_list.txt')),
                          sep=';')
-#    scrape_ccg(ccg_df)
-#    merge_and_evaluate_scrape(cleanpath, mergepath, htmlpath, datasummarypath)
-#    reconcile_companies()
-#    reconcile_charities()
+    scrape_ccg(ccg_df)
+#    merge_and_evaluate_scrape(cleanpath, mergepath, htmlpath,
+#                              datasummarypath, logpath)
+#    reconcile_general(mergepath, reconcilepath,
+#                      'unique_unmatched_suppliers.tsv')
+#    reconcile_charities(mergepath, reconcilepath,
+#                       'unique_unmatched_suppliers.tsv')
 #    merge_and_evaluate_reconcile()
-    output_for_dashboard(mergepath, dashboardpath)
+#    output_for_dashboard(mergepath, dashboardpath)
 #    output_for_analysis()
