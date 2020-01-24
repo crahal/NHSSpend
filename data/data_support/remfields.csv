@@ -16,6 +16,7 @@ accountname
 itemtext
 period
 idepartment
+purchaseinvoice
 postalcode
 description
 entity
@@ -46,6 +47,7 @@ ponumber
 projectcode
 publishredact
 vatregistrationnum
+vatregistrationnumber
 lpc
 mg
 tlbcode
