@@ -1,5 +1,4 @@
 from bs4 import BeautifulSoup
-import time
 import requests
 import os
 import re
@@ -479,7 +478,7 @@ def NHS_BNSSG_CCG_scraper(ccg_df, ccg_data_path):
         parse_wrapper(ccg_data_path, filepath, abrev)
     except Exception as e:
         module_logger.debug(abrev + ' fails entirely: ' + str(e))
-		
+
 
 def NHS_BUCK_CCG_scraper(ccg_df, ccg_data_path):
     ''' not yet written'''

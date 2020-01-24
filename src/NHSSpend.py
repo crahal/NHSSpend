@@ -10,15 +10,13 @@ next to fix bury,  haf, sthe
 '''
 
 import os
-import sys
-import shutil
 import logging
 import pandas as pd
 from datetime import datetime
 from scrape_and_parse_ccgs import scrape_ccg
-from merge_and_evaluate_tools import merge_and_evaluate_scrape
+from merge_and_evaluate_tools import merge_eval_scrape, merge_eval_recon
 from generate_output import output_for_dashboard
-from reconciliation import reconcile_general
+from reconciliation import reconcile_general, reconcile_general_norm
 
 
 def start_banner():
@@ -64,7 +62,8 @@ def setup_logging(logpath):
 
 
 if __name__ == '__main__':
-    #start_banner()
+    start_banner()
+    datapath = os.path.abspath(os.path.join(__file__, '../..', 'data'))
     rawpath = os.path.abspath(os.path.join(__file__, '../..', 'data',
                                            'data_nhsccgs', 'raw'))
     datasummarypath = os.path.abspath(os.path.join(__file__, '../..', 'data',
@@ -72,11 +71,13 @@ if __name__ == '__main__':
     dashboardpath = os.path.abspath(os.path.join(__file__, '../..', 'data',
                                                  'data_dashboard'))
     cleanpath = os.path.abspath(os.path.join(__file__, '../..', 'data',
-                                           'data_nhsccgs', 'cleaned'))
+                                             'data_nhsccgs', 'cleaned'))
     mergepath = os.path.abspath(os.path.join(__file__, '../..', 'data',
-                                           'data_nhsccgs', 'merge'))
+                                             'data_nhsccgs', 'merge'))
     reconcilepath = os.path.abspath(os.path.join(__file__, '../..', 'data',
                                                  'data_nhsccgs', 'reconciled'))
+    norm_path = os.path.abspath(os.path.join(__file__, '../..', 'data',
+                                             'data_support', 'norm_dict.tsv'))
     logpath = os.path.abspath(os.path.join(__file__, '../..', 'logging'))
     htmlpath = os.path.abspath(os.path.join(__file__, '../..', 'html_files'))
     for path in [rawpath, cleanpath, mergepath, logpath,
@@ -84,46 +85,16 @@ if __name__ == '__main__':
         if os.path.exists(path) is False:
             os.makedirs(path)
     logger = setup_logging(logpath)
-    if 'cleanrun' in sys.argv:
-        try:
-            for body in ['nationals', 'trusts', 'ccgs']:
-                shutil.rmtree(os.path.join(rawpath,
-                                           body))('25k' in a["href"].lower())
-            print('*** Doing a clean run! Lets go! ***')
-        except OSError:
-            logger.info('cleanrun option passed, but cannot delete folders.')
-
-
-#    ins_dict = pd.read_csv(os.path.abspath(
-#        os.path.join(
-#            __file__, '../..', 'data', 'support',
-#            'institution_dict.csv')))
-#    scrape_nationals(ins_dict, rawpath)
-    #    if ('scrapetrusts' not in sys.argv) and
-    #        ('scrapeccgs' not in sys.argv) and
-    #        ('noscrape' not in sys.argv):
-    # scrape_shas(institution_dict)
-    # if ('scrapetrusts' not in sys.argv) and
-    #   ('scrapeshas' not in sys.argv) and
-    #   ('scrapenationals' not in sys.argv) and
-    #   ('noscrape' not in sys.argv):
-    # scrape_ccgs(institution_dict)
-    # if ('scrapeccgs' not in sys.argv) and
-    #   ('scrapeshas' not in sys.argv) and
-    #   ('scrapenationals' not in sys.argv) and
-    #   ('noscrape' not in sys.argv):
-    # scrape_trusts(institution_dict)
     ccg_df = pd.read_csv(os.path.abspath(
                          os.path.join(__file__, '../..', 'data',
                                       'data_support', 'ccg_list.txt')),
                          sep=';')
-    scrape_ccg(ccg_df)
-#    merge_and_evaluate_scrape(cleanpath, mergepath, htmlpath,
+#    scrape_ccg(ccg_df)
+#    merge_eval_scrape(cleanpath, mergepath, htmlpath,
 #                              datasummarypath, logpath)
-#    reconcile_general(mergepath, reconcilepath,
-#                      'unique_unmatched_suppliers.tsv')
-#    reconcile_charities(mergepath, reconcilepath,
-#                       'unique_unmatched_suppliers.tsv')
-#    merge_and_evaluate_reconcile()
-#    output_for_dashboard(mergepath, dashboardpath)
-#    output_for_analysis()
+    uniq_name = 'unique_unmatched_suppliers.tsv'
+#    reconcile_general(mergepath, reconcilepath, uniq_name)
+#    reconcile_general_norm(mergepath, reconcilepath, uniq_name, norm_path)
+    merge_eval_recon(reconcilepath, norm_path, datapath, mergepath, logpath)
+#    output_for_dashboard(mergepath, dashboardpath) # @TODO: add in reconciles
+#    output_for_analysis() # @TODO

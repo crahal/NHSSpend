@@ -1,9 +1,8 @@
 import pandas as pd
 import numpy as np
 import os
-import re
+import string
 import csv
-from cleanco import cleanco
 from tqdm import tqdm
 from elasticsearch import Elasticsearch
 from elasticsearch_dsl import Search
@@ -13,42 +12,40 @@ connections.create_connection(hosts=['localhost'], timeout=20)
 client = Elasticsearch()
 
 
-def company_normalizer(company_name):
-    if isinstance(company_name, str):
-        company_name = company_name.upper()
-        company_name = company_name.replace(',', '')
-        company_name = company_name.replace(' - ', ' ')
-        company_name = company_name.replace(r"\(.*\)","")
-        company_name = re.sub("[\(\[].*?[\)\]]", "", company_name)
-        company_name = company_name.replace(' AND ', ' & ')
-        company_name = company_name.strip()
-#        company_name = company_name.encode('utf-8')
-#        company_name = cleanco(company_name).clean_name()
-        company_name = company_name.replace('.', '')
-#        company_name = cleanco(company_name).clean_name()
-        return company_name
+def normalizer(name, norm_dict):
+    ''' normalise entity names with manually curated dict'''
+    if isinstance(name, str):
+        name = name.upper()
+        for key, value in norm_dict.items():
+            name = name.replace(key, value)
+        name = name.replace(r"\(.*\)", "")
+        name = "".join(l for l in name if l not in string.punctuation)
+        name = ' '.join(name.split())
+        name = name.strip()
+        return name
     else:
         return None
 
 
 def get_matches(matchlist, indexname, num_matches):
+    ''' get matches from ES indexname instance'''
     responses = []
     for match in tqdm(matchlist):
         s = Search(using=client, index=indexname).query("match", name=match)
         response = s.execute()
         result_row = {'query_string': match}
         for n, hit in enumerate(response):
-               if n<num_matches:
-                   result_row['match_{n}'.format(n=n)] = hit.name
-                   result_row['score_{n}'.format(n=n)] = hit.meta.score
-               else:
-                   break
+            if n < num_matches:
+                result_row['match_{n}'.format(n=n)] = hit.name
+                result_row['score_{n}'.format(n=n)] = hit.meta.score
+            else:
+                break
         responses += [result_row]
     return responses
 
 
 def save_to_csv(rows, filepath, num_matches):
-    """Save a list of dictionaries as a csv file"""
+    ''' reshape the ES output data'''
     matchlist = ['match_{n}'.format(n=n) for n in range(0, num_matches)]
     scorelist = ['score_{n}'.format(n=n) for n in range(0, num_matches)]
     fieldnames = ['query_string']
@@ -68,37 +65,24 @@ def save_to_csv(rows, filepath, num_matches):
         writer.writerows(outlist)
 
 
-#def get_companydata():
-#    ''' needs to be written'''
-
-
-#def reconcile_everything(datapath, reconcilepath,)
-
-
-# legacy code, now
-#def reconcile_charities(mergepath, reconcilepath, filename, num_matches=5):
-#    suppliers = pd.read_csv(os.path.join(mergepath, filename), sep='\t')
-#    matchlist = suppliers["supplier"].tolist()
-#    charity_responses = get_matches(matchlist, 'charities', num_matches)
-#    save_to_csv(charity_responses,
-#                os.path.join(reconcilepath, 'charity_matches.csv'),
-#                num_matches)
-
-
-# legacy code, now
-#def reconcile_companies(mergepath, reconcilepath, filename,  num_matches=5):
-#    suppliers = pd.read_csv(os.path.join(mergepath, filename), sep='\t')
-#    matchlist = suppliers["supplier"].tolist()
-#    company_responses = get_matches(matchlist, 'companies', num_matches)
-#    save_to_csv(company_responses,
-#                os.path.join(reconcilepath, 'company_matches.csv'),
-#                num_matches)
-
-
 def reconcile_general(mergepath, reconcilepath, filename,  num_matches=5):
+    ''' high level reconciliation function for raw names'''
     suppliers = pd.read_csv(os.path.join(mergepath, filename), sep='\t')
-    matchlist = suppliers["supplier"].tolist()
+    matchlist = suppliers["supplier"].unique().tolist()
     company_responses = get_matches(matchlist, 'general', num_matches)
-    save_to_csv(company_responses,
-                os.path.join(reconcilepath, 'general_matches.csv'),
-                num_matches)
+    save_path = os.path.join(reconcilepath, 'general_matches.csv')
+    save_to_csv(company_responses, save_path, num_matches)
+
+
+def reconcile_general_norm(mergepath, reconcilepath, filename,
+                           norm_path, num_matches=5):
+    ''' high level reconciliation function for normalised names'''
+    suppliers = pd.read_csv(os.path.join(mergepath, filename), sep='\t')
+    norm_df = pd.read_csv(norm_path, sep='\t')
+    norm_dict = dict(zip(norm_df['REPLACETHIS'], norm_df['WITHTHIS']))
+    suppliers['supplier'] = suppliers['supplier'].\
+        apply(lambda x: normalizer(x, norm_dict))
+    matchlist = suppliers["supplier"].unique().tolist()
+    company_responses = get_matches(matchlist, 'general_norm', num_matches)
+    save_path = os.path.join(reconcilepath, 'general_norm_matches.csv')
+    save_to_csv(company_responses, save_path, num_matches)
