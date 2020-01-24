@@ -1,0 +1,22 @@
+** Evaluating the merged dataset and sequentially cleaning it!**
+** We have 1582141 total rows of payments data to begin with.
+** We have £81711.3bn worth of data to begin with.
+** We have 20825 unique suppliers to begin with.
+Dropped 1068630 null, non-numeric and payment rows below £25k.
+Dropped £-3.67bn null, non-numeric and payments below £25k in total summed value.
+Dropped 24932 rows due to bad supplier or dates.
+Dropped 46.41 rows due to bad supplier or dates.
+Dropped 13 redacted payments.
+Dropped redacted payments worth £0.38m.
+We identified 1 unique redacted supplier variations.
+Dropped 0 "various" payments.
+Dropped "various" payments worth £0.0m.
+We identified 0 unique "various" supplier strings.
+Dropped 136792 potential duplicates
+Dropped 882 suppliers who have numbers in the name column.
+Dropped duplicates worth £81507.14bn.
+** We have 350892 total rows of data to finish with.
+** We have £161.42bn worth of data to finish with.
+** We have 10951 unique suppliers to finish with.
+** We merge from across 124 departments.
+** This data comes from: 4761 files.
