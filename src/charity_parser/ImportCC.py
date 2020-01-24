@@ -185,7 +185,7 @@ def to_file(bcpdata, csvpath, col_headers=None):
 
 def import_zip_stream(zip_file):
     zf = zipfile.ZipFile(zip_file, 'r')
-    print('Opened zip file: %s' % zip_file)
+#    print('Opened zip file: %s' % zip_file)
     for filename in cc_files:
         try:
             bcp_filename = filename + '.bcp'
@@ -212,15 +212,12 @@ def import_zip_stream(zip_file):
                         writer.writerow(col_headers)
                         for bcpfields in bcp.stream(bcpfile):
                             writer.writerow(bcpfields)
-
-            print('Converted: %s' % bcp_filename)
         except KeyError:
             print('ERROR: Did not find %s in zip file' % bcp_filename)
 
 def import_zip(zip_file, cc_path):
-    print(zip_file)
     zf = zipfile.ZipFile(zip_file, 'r')
-    print('Opened zip file: %s' % zip_file)
+#    print('Opened zip file: %s' % zip_file)
     for filename in cc_files:
         try:
             check_filename = filename + '.bcp'
@@ -235,7 +232,7 @@ def import_zip(zip_file, cc_path):
             bcpdata = bcpdata.decode('utf-8', errors="replace")
             bcpdata = bcp.convert(bcpdata)
             to_file(bcpdata, os.path.join(cc_path, csv_filename), col_headers=cc_files[filename])
-            print('Converted: %s' % bcp_filename)
+#            print('Converted: %s' % bcp_filename)
         except KeyError:
             print('ERROR: Did not find %s in zip file' % bcp_filename)
 
