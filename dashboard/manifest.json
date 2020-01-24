@@ -1,0 +1,16 @@
+{
+  "short_name": "NHS Dash",
+  "name": "NHS Dash",
+  "icons": [
+	{
+	  "src": "/wp-content/themes/nhsdash/assets/images/oxweb-logo-rect.svg",
+	  "type": "image/svg",
+	  "sizes": "192x192 512x512"
+	}
+  ],
+  "start_url": "/data/",
+  "background_color": "#b8daff",
+  "display": "standalone",
+  "scope": "/",
+  "theme_color": "#b8daff"
+}

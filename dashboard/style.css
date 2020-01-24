@@ -1,0 +1,29 @@
+/*
+Theme Name:  NHS Dash
+Theme URI:   https://
+Description:  Graphing and basic functions for NHS Dash project
+Version:      1.0
+Author:       Ian Knowles
+Author URI:   https://
+License:
+License URI:
+Text Domain:
+Domain Path:
+*/
+
+.footer-logo {
+  height: 86px;
+}
+
+.footer-logo-oxford {
+  background-color: #002147;
+}
+
+.top-0 {
+  top: 0px;
+}
+
+.front-page-jumbo
+{
+  background-color:#b8daff;
+}
