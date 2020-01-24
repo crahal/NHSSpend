@@ -1,0 +1,128 @@
+** Evaluating the reconciliation!**
+
+10953 entities to reconcile
+1294 named doctors
+9616 have no match
+
+Traversing the Levenshtein Distances!
+
+Matches with Levenshtein distance 0 or less:
+Matches with: 4
+Matches to NHS Digital: 0
+Matches to Companies House: 4
+Matches to Charity Commission: 0
+
+Matches with Levenshtein distance 1 or less:
+Matches with: 4
+Matches to NHS Digital: 0
+Matches to Companies House: 4
+Matches to Charity Commission: 0
+
+Matches with Levenshtein distance 2 or less:
+Matches with: 4
+Matches to NHS Digital: 0
+Matches to Companies House: 4
+Matches to Charity Commission: 0
+
+Matches with Levenshtein distance 3 or less:
+Matches with: 4
+Matches to NHS Digital: 0
+Matches to Companies House: 4
+Matches to Charity Commission: 0
+
+Matches with Levenshtein distance 4 or less:
+Matches with: 4
+Matches to NHS Digital: 0
+Matches to Companies House: 4
+Matches to Charity Commission: 0
+
+Matches with Levenshtein distance 5 or less:
+Matches with: 4
+Matches to NHS Digital: 0
+Matches to Companies House: 4
+Matches to Charity Commission: 0
+
+Matches with Levenshtein distance 6 or less:
+Matches with: 4
+Matches to NHS Digital: 0
+Matches to Companies House: 4
+Matches to Charity Commission: 0
+
+Matches with Levenshtein distance 7 or less:
+Matches with: 4
+Matches to NHS Digital: 0
+Matches to Companies House: 4
+Matches to Charity Commission: 0
+
+Matches with Levenshtein distance 8 or less:
+Matches with: 4
+Matches to NHS Digital: 0
+Matches to Companies House: 4
+Matches to Charity Commission: 0
+
+Matches with Levenshtein distance 9 or less:
+Matches with: 4
+Matches to NHS Digital: 0
+Matches to Companies House: 4
+Matches to Charity Commission: 0
+
+Matches with Levenshtein distance 10 or less:
+Matches with: 4
+Matches to NHS Digital: 0
+Matches to Companies House: 4
+Matches to Charity Commission: 0
+
+Matches with Levenshtein distance 11 or less:
+Matches with: 4
+Matches to NHS Digital: 0
+Matches to Companies House: 4
+Matches to Charity Commission: 0
+
+Matches with Levenshtein distance 12 or less:
+Matches with: 4
+Matches to NHS Digital: 0
+Matches to Companies House: 4
+Matches to Charity Commission: 0
+
+Matches with Levenshtein distance 13 or less:
+Matches with: 4
+Matches to NHS Digital: 0
+Matches to Companies House: 4
+Matches to Charity Commission: 0
+
+Matches with Levenshtein distance 14 or less:
+Matches with: 4
+Matches to NHS Digital: 0
+Matches to Companies House: 4
+Matches to Charity Commission: 0
+
+Matches with Levenshtein distance 15 or less:
+Matches with: 4
+Matches to NHS Digital: 0
+Matches to Companies House: 4
+Matches to Charity Commission: 0
+
+Matches with Levenshtein distance 16 or less:
+Matches with: 4
+Matches to NHS Digital: 0
+Matches to Companies House: 4
+Matches to Charity Commission: 0
+
+Matches with Levenshtein distance 17 or less:
+Matches with: 4
+Matches to NHS Digital: 0
+Matches to Companies House: 4
+Matches to Charity Commission: 0
+
+Matches with Levenshtein distance 18 or less:
+Matches with: 4
+Matches to NHS Digital: 0
+Matches to Companies House: 4
+Matches to Charity Commission: 0
+
+Matches with Levenshtein distance 19 or less:
+Matches with: 4
+Matches to NHS Digital: 0
+Matches to Companies House: 4
+Matches to Charity Commission: 0
+
