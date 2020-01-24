@@ -1,4 +1,4 @@
-<img src="https://github.com/crahal/NHSSpend/blob/master/papers/figures/match_distribution.png" width="800"/>
+<img src="https://github.com/crahal/NHSSpend/blob/master/papers/figures/match_distribution.png" width="900"/>
 
 # NHSSpend
 
