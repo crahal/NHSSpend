@@ -1,0 +1,15 @@
+@(elementID: String)
+<div class="input-group m-1">
+	<div class="input-group-prepend">
+		<label for="@elementID-select-date-from" class="input-group-text">
+			<span class="sr-only">Start year for graph data</span><span data-feather="calendar"></span>
+		</label>
+	</div>
+	<select id="@elementID-select-date-from" class="custom-select btn-outline-secondary h-100" data-style="btn-primary">
+	</select>
+	<label for="@elementID-select-date-to">
+		<span class="sr-only">End year for graph data</span>
+	</label>
+	<select id="@elementID-select-date-to" class="custom-select btn-outline-secondary h-100" data-style="btn-primary">
+	</select>
+</div>

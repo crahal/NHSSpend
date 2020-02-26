@@ -1,0 +1,36 @@
+@*
+* This template is called from the `index` template. This template
+* handles the rendering of the page header and body tags. It takes
+* two arguments, a `String` for the title of the page and an `Html`
+* object to insert into the body of the page.
+*@
+@(title: String)(content: Html)(implicit webJarsUtil: org.webjars.play.WebJarsUtil)
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	@* Here's where we render the page title `String`. *@
+	<title>@title</title>
+	<link rel="shortcut icon" type="image/png" href='@routes.Assets.versioned("images/favicon.png")'>
+
+	@webJarsUtil.locate("bootstrap.min.css").css()
+	@webJarsUtil.locate("c3.min.css").css()
+	<link rel="stylesheet" media="screen" href='@routes.Assets.versioned("stylesheets/main.css")'>
+</head>
+<body class="vh-100">
+@* And here's where we render the `Html` object containing
+* the page content. *@
+@content
+
+@* Icons *@
+@webJarsUtil.locate("feather.min.js").script()
+<script>feather.replace()</script>
+@webJarsUtil.locate("jquery.slim.min.js").script()
+<script src='@routes.Assets.versioned("javascripts/scrollfix.js")' type="text/javascript"></script>
+@webJarsUtil.locate("umd/popper.min.js").script()
+@webJarsUtil.locate("bootstrap.min.js").script()
+
+@webJarsUtil.locate("d3.min.js").script()
+@webJarsUtil.locate("c3.min.js").script()
+<script src='@routes.Assets.versioned("javascripts/time-series.js")' type="text/javascript"></script>
+</body>
+</html>

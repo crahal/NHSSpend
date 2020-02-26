@@ -1,0 +1,21 @@
+@(elementID: String)
+<div class="btn-group btn-group-sm m-1">
+	<button
+		id="@elementID-sharemail"
+		type="button"
+		class="btn btn-outline-secondary d-flex"
+		href="mailto:?to=&body=,&subject="
+		target="_blank"
+	>
+		<div class="m-1"><span data-feather="mail"></span></div>
+		<div class="m-1">Share</div>
+	</button>
+	<button
+		id="@elementID-csvlink"
+		type="button"
+		class="btn btn-outline-secondary d-flex"
+	>
+		<div class="m-1">Export</div>
+		<div class="m-1"><span data-feather="download"></span></div>
+	</button>
+</div>

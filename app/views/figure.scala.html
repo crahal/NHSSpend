@@ -1,0 +1,11 @@
+@(elementID: String)
+<figure class="position-relative map-contain h-100">
+	<div id="@elementID-shade" class="background-color-sea position-absolute w-100 h-100 d-flex justify-content-center align-items-center"><span class="spinner-border"></span></div>
+	<div class="row h-100">
+		<div class="col-12 col-lg-12 d-lg-flex flex-lg-column pr-lg-0" style="min-height: 39vw;">
+			<div id="@elementID-chart-area" class="border background-color-sea h-100 c3" style="max-height: 748.797px; position: relative;">
+			</div>
+		</div>
+	</div>
+	<figcaption class="sr-only">Time series chart</figcaption>
+</figure>

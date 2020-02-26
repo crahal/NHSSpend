@@ -1,0 +1,18 @@
+@()(implicit webJarsUtil: org.webjars.play.WebJarsUtil)
+
+@main("UK Child maltreatment") {
+@* <!--<main class="col-12 ml-sm-auto px-0">--> *@
+<div class="d-flex flex-column justify-content-between h-100 px-0">
+	<div class="p-4 h-100">
+		<div class="d-flex justify-content-between align-items-end flex-wrap pb-2 mb-3 border-bottom">
+			<div class="btn-toolbar mt-2 mb-0 mr-sm-2 flex-column flex-lg-row">
+				@time_series_picker("timeseries")
+				@time_series_controls("timeseries")
+				@data_controls("timeseries")
+			</div>
+		</div>
+		@figure("timeseries")
+	</div>
+</div>
+@**@
+}

@@ -1,0 +1,20 @@
+@(elementID: String)
+<div class="input-group m-1">
+	<div class="input-group-prepend">
+		<label for="@elementID-report-picker" class="input-group-text">
+			<span class="sr-only">Time series picker</span><span data-feather="bar-chart-2"></span>
+		</label>
+	</div>
+	@*
+	* //TODO generate options from list of items
+	*@
+	<select id="@elementID-report-picker" class="custom-select btn-outline-secondary h-100" data-style="btn-primary">
+		<option value="time_series_criminal_database.json">Criminality</option>
+		<option value="time_series_childrenincare_database.json">Children in Care</option>
+		<option value="time_series_childprotection_database.json">Child Protection</option>
+		<option value="time_series_homicide_database.json">Homicide</option>
+		<option value="time_series_mortality_database.json">Mortality</option>
+		<option value="time_series_nspcc_database.json">NSPCC</option>
+		<option value="time_series_models.json">Combined</option>
+	</select>
+</div>
