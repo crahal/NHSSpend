@@ -1,0 +1,12 @@
+@(person: Person)
+<div class="card m-2 front-page-jumbo text-dark">
+	<div class="card-body">
+		<h1 class="card-title">@person.name</h1>
+		<p><img class="rounded float-right m-2" style='height: 100%; width: 25%; object-fit: cover' alt="@person.name" src="@person.imageurl"></p>
+		<p class="card-text">@person.desc</p>
+		<p>
+		@for(link <- person.links) {
+			<span data-feather="@link.icon"></span> <a class="card-link" href="@link.url" target="_blank" rel="noopener">@link.text</a>
+		}
+		</p></div>
+</div>
