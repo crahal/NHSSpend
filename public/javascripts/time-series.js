@@ -21,6 +21,7 @@ function change_report() {
 }
 
 function fetch_json() {
+	d3.select(`#${mapName}-data-link`).attr('href', `/assets/data/${timeseriesfile}`)
 	d3.select(`#${mapName}-shade`).attr('class', 'shade shade-on background-color-sea')
 	d3.json(`/assets/data/${timeseriesfile}`).then(timeseries);
 }
