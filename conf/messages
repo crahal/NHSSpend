@@ -1,9 +1,9 @@
 # https://www.playframework.com/documentation/latest/ScalaI18N
-site.title=UK Child Protection Outcomes
+site.title=Child Maltreatment in the UK
 
 index.title=Home
-index.jumbo.title=A data resource for child protection outcomes
-index.jumbo.desc=A collection of historic UK data on child protection efficacy.
+index.jumbo.title=A data resource for measuring child maltreatment
+index.jumbo.desc=A collection of historic data on indicators of child maltreatment in England and Wales.
 
 team.title=Team
 team.desc=Meet the project members.
