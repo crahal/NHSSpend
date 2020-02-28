@@ -1,1 +1,19 @@
 # https://www.playframework.com/documentation/latest/ScalaI18N
+site.title=UK Child Protection Outcomes
+
+index.title=Home
+index.jumbo.title=A data resource for child protection outcomes
+index.jumbo.desc=A collection of historic UK data on child protection efficacy.
+
+team.title=Team
+team.desc=Meet the project members.
+
+dash.title=Data
+dash.desc=View the data collection.
+
+project.title=Project
+project.desc=See the background of the project, and an overview of the data sources.
+
+nav.about.title=About
+privacy.title=Privacy Policy
+contact.title=Contact Us
