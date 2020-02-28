@@ -1,18 +1,66 @@
-@()(implicit webJarsUtil: org.webjars.play.WebJarsUtil)
+@()(implicit webJarsUtil: org.webjars.play.WebJarsUtil, messages: Messages)
 
-@main("UK Child maltreatment") {
-@* <!--<main class="col-12 ml-sm-auto px-0">--> *@
-<div class="d-flex flex-column justify-content-between h-100 px-0">
-	<div class="p-4 h-100">
-		<div class="d-flex justify-content-between align-items-end flex-wrap pb-2 mb-3 border-bottom">
-			<div class="btn-toolbar mt-2 mb-0 mr-sm-2 flex-column flex-lg-row">
-				@time_series_picker("timeseries")
-				@time_series_controls("timeseries")
-				@data_controls("timeseries")
-			</div>
-		</div>
-		@figure("timeseries")
+@main(s"${messages("site.title")}") {
+<div class="jumbotron front-page-jumbo text-dark">
+	<div class="container">
+		<h1 class="display-4 d-none d-md-block">@messages("index.jumbo.title")</h1>
+		<h1 class="h4 d-block d-md-none">@messages("index.jumbo.title")</h1>
+		<p>@messages("index.jumbo.desc")</p>
 	</div>
 </div>
-@**@
-}
+<div class="container">
+	<div class="row">
+		<div class="col-md-4 py-2 py-md-0">
+			<div class="row">
+				<div class="col">
+					<h2 class="d-none d-md-block">@messages("dash.title")</h2>
+					<h2 class="h5 d-block d-md-none">@messages("dash.title")</h2>
+					<p>@messages("dash.desc")</p>
+				</div>
+			</div>
+			<div class="row d-flex d-md-none">
+				<div class="col">
+					<a class="btn btn-secondary" href="@routes.HomeController.dash" role="button">@messages("dash.title") &raquo;</a>
+				</div>
+			</div>
+		</div>
+		<div class="col-md-4 py-2 py-md-0">
+			<div class="row">
+				<div class="col">
+					<h2 class="d-none d-md-block">@messages("project.title")</h2>
+					<h2 class="h5 d-block d-md-none">@messages("project.title")</h2>
+					<p>@messages("project.desc")</p>
+				</div>
+			</div>
+			<div class="row d-flex d-md-none">
+				<div class="col">
+					<a class="btn btn-secondary" href="@routes.HomeController.project" role="button">@messages("project.title") &raquo;</a>
+				</div>
+			</div>
+		</div>
+		<div class="col-md-4 py-2 py-md-0">
+			<div class="row"><div class="col">
+				<h2 class="d-none d-md-block">@messages("team.title")</h2>
+				<h2 class="h5 d-block d-md-none">@messages("team.title")</h2>
+				<p>@messages("team.desc")</p>
+			</div></div>
+			<div class="row d-flex d-md-none">
+				<div class="col">
+					<a class="btn btn-secondary" href="@routes.HomeController.team" role="button">@messages("team.title") &raquo;</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="row d-none d-md-flex">
+		<div class="col-md-4">
+			<a class="btn btn-secondary" href="@routes.HomeController.dash" role="button">@messages("dash.title") &raquo;</a>
+		</div>
+		<div class="col-md-4">
+			<a class="btn btn-secondary" href="@routes.HomeController.project" role="button">@messages("project.title") &raquo;</a>
+		</div>
+		<div class="col-md-4">
+			<a class="btn btn-secondary" href="@routes.HomeController.team" role="button">@messages("team.title") &raquo;</a>
+		</div>
+	</div>
+</div>
+}{ }
