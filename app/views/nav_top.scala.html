@@ -1,4 +1,4 @@
-@()(implicit messages: Messages)
+@()(implicit messages: Messages, request: Request[AnyContent])
 <nav id="nav-header" class="navbar navbar-expand-md navbar-dark fixed-top bg-dark flex-md-nowrap p-0 shadow align-items-end">
 	<a class="navbar-brand col-12 col-md-6 mr-0 mr-md-3" href="/">
 		<h1 class="my-0 d-none d-md-block">@messages("site.title")</h1>

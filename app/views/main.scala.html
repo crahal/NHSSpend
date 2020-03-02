@@ -4,7 +4,7 @@
 * two arguments, a `String` for the title of the page and an `Html`
 * object to insert into the body of the page.
 *@
-@(title: String)(content: Html)(scripts: Html)(implicit webJarsUtil: org.webjars.play.WebJarsUtil, messages: Messages)
+@(title: String)(content: Html)(scripts: Html)(implicit webJarsUtil: org.webjars.play.WebJarsUtil, messages: Messages, request: Request[AnyContent])
 <!DOCTYPE html>
 <html lang="en">
 <head>

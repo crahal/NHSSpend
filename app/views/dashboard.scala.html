@@ -1,4 +1,4 @@
-@()(implicit webJarsUtil: org.webjars.play.WebJarsUtil, messages: Messages)
+@()(implicit webJarsUtil: org.webjars.play.WebJarsUtil, messages: Messages, request: Request[AnyContent])
 
 @main(s"${messages("dash.title")} - ${messages("site.title")}") {
 <div class="d-flex justify-content-between align-items-end flex-wrap pb-2 mb-3 border-bottom">

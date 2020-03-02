@@ -1,4 +1,4 @@
-@()(implicit webJarsUtil: org.webjars.play.WebJarsUtil, messages: Messages)
+@()(implicit webJarsUtil: org.webjars.play.WebJarsUtil, messages: Messages, request: Request[AnyContent])
 @main(s"${messages("project.title")} - ${messages("site.title")}") {
 <a href="https://osf.io/cf7mv/" target="_blank" rel="noopener">https://osf.io/cf7mv/</a>
 }{ }

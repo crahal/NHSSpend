@@ -1,4 +1,4 @@
-@()(implicit webJarsUtil: org.webjars.play.WebJarsUtil, messages: Messages)
+@()(implicit webJarsUtil: org.webjars.play.WebJarsUtil, messages: Messages, request: Request[AnyContent])
 
 @main(s"${messages("site.title")}") {
 <div class="jumbotron front-page-jumbo text-dark">
