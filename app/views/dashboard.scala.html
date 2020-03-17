@@ -1,9 +1,9 @@
-@()(implicit webJarsUtil: org.webjars.play.WebJarsUtil, messages: Messages, request: Request[AnyContent])
+@(files: List[FileOption])(implicit webJarsUtil: org.webjars.play.WebJarsUtil, messages: Messages, request: Request[AnyContent])
 
 @main(s"${messages("dash.title")} - ${messages("site.title")}") {
 <div class="d-flex justify-content-between align-items-end flex-wrap pb-2 mb-3 border-bottom">
 	<div class="btn-toolbar mt-2 mb-0 mr-sm-2 flex-column flex-lg-row">
-		@time_series_picker("timeseries")
+		@time_series_picker("timeseries", files)
 		@time_series_controls("timeseries")
 		@data_controls("timeseries")
 	</div>

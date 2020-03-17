@@ -1,7 +1,7 @@
 package controllers
 
 import javax.inject._
-import models.Team
+import models.{FileOption, Team}
 import play.api._
 import play.api.i18n._
 import play.api.mvc._
@@ -11,7 +11,7 @@ import play.api.mvc._
  * application's home page.
  */
 @Singleton
-class HomeController @Inject()(val controllerComponents: ControllerComponents)(implicit webJarsUtil: org.webjars.play.WebJarsUtil) extends BaseController with I18nSupport {
+class HomeController @Inject() (val controllerComponents: ControllerComponents, config: Configuration)(implicit webJarsUtil: org.webjars.play.WebJarsUtil) extends BaseController with I18nSupport {
 
 	/**
 	 * Create an Action to render an HTML page.
@@ -25,7 +25,14 @@ class HomeController @Inject()(val controllerComponents: ControllerComponents)(i
 	}
 
 	def dash(): Action[AnyContent] = Action { implicit request: Request[AnyContent] =>
-		Ok(views.html.dashboard())
+		//TODO should use the directory listing to filter for files present
+		Environment.simple().getFile("public/data").listFiles()
+
+		//TODO the config loader is a lot of boilerplate, fetching the node as a js object or string then json parsing would
+		// allow use of the auto json convert and avoid the boilerplate
+		val files: Seq[FileOption] = config.get[Seq[FileOption]]("graph_files")
+
+		Ok(views.html.dashboard(files.toList))
 	}
 
 	def about(): Action[AnyContent] = TODO

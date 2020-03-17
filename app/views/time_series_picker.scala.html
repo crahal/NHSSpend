@@ -1,4 +1,4 @@
-@(elementID: String)(implicit messages: Messages)
+@(elementID: String, options: List[FileOption])(implicit messages: Messages)
 @defining(s"$elementID-report-picker") { selectID =>
 <div class="input-group m-1">
 	<div class="input-group-prepend">
@@ -6,17 +6,10 @@
 			<span class="sr-only">@messages("controls.reportpicker.label")</span><span data-feather="bar-chart-2"></span>
 		</label>
 	</div>
-	@*
-	* //TODO generate options from list of items
-	*@
 	<select id=@selectID class="custom-select btn-outline-secondary h-100" data-style="btn-primary">
-		<option value="time_series_criminal_database.json">Criminality</option>
-		<option value="time_series_childrenincare_database.json">Children in Care</option>
-		<option value="time_series_childprotection_database.json">Child Protection</option>
-		<option value="time_series_homicide_database.json">Homicide</option>
-		<option value="time_series_mortality_database.json">Mortality</option>
-		<option value="time_series_nspcc_database.json">NSPCC</option>
-		<option value="time_series_models.json">Combined</option>
+		@for(file <- options) {
+		<option value="@file.filename">@file.label</option>
+		}
 	</select>
 </div>
 }
