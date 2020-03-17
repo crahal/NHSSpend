@@ -1,8 +1,8 @@
-@(elementID: String)
+@(elementID: String)(implicit messages: Messages)
 <div class="input-group m-1">
 	<div class="input-group-prepend">
 		<label for="@elementID-report-picker" class="input-group-text">
-			<span class="sr-only">Time series picker</span><span data-feather="bar-chart-2"></span>
+			<span class="sr-only">@messages("controls.reportpicker.label")</span><span data-feather="bar-chart-2"></span>
 		</label>
 	</div>
 	@*

@@ -21,6 +21,8 @@ nav.currentPageIndicator=Current
 privacy.title=Privacy Policy
 contact.title=Contact Us
 
+controls.reportpicker.label=Time series picker
+
 controls.timespan.from=Start year for graph
 controls.timespan.to=End year for graph
 
