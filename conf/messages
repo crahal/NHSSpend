@@ -1,5 +1,7 @@
 # https://www.playframework.com/documentation/latest/ScalaI18N
 site.title=Child Maltreatment in the UK
+site.desc=site.desc
+project.name=project.name
 
 index.title=Home
 index.jumbo.title=A data resource for measuring child maltreatment
