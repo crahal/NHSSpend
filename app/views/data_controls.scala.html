@@ -1,4 +1,4 @@
-@(elementID: String)
+@(elementID: String)(implicit messages: Messages)
 <div class="btn-group btn-group-sm m-1">
 	<button
 		id="@elementID-sharemail"
@@ -8,7 +8,7 @@
 		target="_blank"
 	>
 		<div class="m-1"><span data-feather="mail"></span></div>
-		<div class="m-1">Share</div>
+		<div class="m-1">@messages("controls.data.share")</div>
 	</button>
 	<a
 		id="@elementID-data-link"
@@ -16,7 +16,7 @@
 		class="btn btn-outline-secondary d-flex"
 		target="_blank"
 	>
-		<div class="m-1">Export</div>
+		<div class="m-1">@messages("controls.data.download")</div>
 		<div class="m-1"><span data-feather="download"></span></div>
 	</a>
 </div>

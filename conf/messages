@@ -23,3 +23,6 @@ contact.title=Contact Us
 
 controls.timespan.from=Start year for graph
 controls.timespan.to=End year for graph
+
+controls.data.share=Share
+controls.data.download=Download
