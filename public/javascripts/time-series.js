@@ -131,10 +131,10 @@ function timeseries(data) {
 		chart = c3.generate({
 			bindto: `#${mapName}-chart-area`,
 			data: {
-				json: data.data,
+				json: daterangefilter,
 				keys: {
 					x: 'year',
-					value: data.values
+					value: selectedvalues
 				}
 			},
 			axis: {
