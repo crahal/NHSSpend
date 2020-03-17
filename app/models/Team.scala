@@ -9,6 +9,10 @@ object Team {
 			"", routes.Assets.versioned("images/mde.jpg"), List(
 			new Link("user", "https://www.spi.ox.ac.uk/people/michelle-degli-esposti", "contact details")
 		)),
+		new Person("Cheryl Koh", "Research Assistant\n" +
+			"Cheryl is supporting the project as Research Assistant. She helps identify and screen datasets that support the data tool, and co-ordinates subsequent data requests and ethics approvals.\n\n\n\nCheryl is currently a graduate student in the Department of Social Policy and Intervention. She is interested in the population health consequences of experiencing excessive stress (‘toxic stress’) in childhood and adolescence as a result of maltreatment, and interventions aiming to improve child and maternal health. Prior to Oxford, Cheryl had worked closely with government and not-for-profit child protection organisations in Australia as a management consultant." +
+			"", routes.Assets.versioned("images/cheryl.png"), List()
+		),
 		new Person("Ian Knowles", "DevOp\n" +
 			"Ian is a freelance data engineer with an academic background and wide-ranging experience in industry. He has development experience in most major languages and has worked on projects that range from embedded device firmware and applications, to desktop and mobile applications, and on to full stack web server development and operations.\n" +
 			"He developed the website backend, frontend, and data visualisations", routes.Assets.versioned("images/ian.jpg"), List(
