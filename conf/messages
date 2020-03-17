@@ -17,3 +17,6 @@ project.desc=See the background of the project, and an overview of the data sour
 nav.about.title=About
 privacy.title=Privacy Policy
 contact.title=Contact Us
+
+controls.timespan.from=Start year for graph
+controls.timespan.to=End year for graph
