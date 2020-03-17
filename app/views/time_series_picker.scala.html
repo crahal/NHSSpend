@@ -1,14 +1,15 @@
 @(elementID: String)(implicit messages: Messages)
+@defining(s"$elementID-report-picker") { selectID =>
 <div class="input-group m-1">
 	<div class="input-group-prepend">
-		<label for="@elementID-report-picker" class="input-group-text">
+		<label for=@selectID class="input-group-text">
 			<span class="sr-only">@messages("controls.reportpicker.label")</span><span data-feather="bar-chart-2"></span>
 		</label>
 	</div>
 	@*
 	* //TODO generate options from list of items
 	*@
-	<select id="@elementID-report-picker" class="custom-select btn-outline-secondary h-100" data-style="btn-primary">
+	<select id=@selectID class="custom-select btn-outline-secondary h-100" data-style="btn-primary">
 		<option value="time_series_criminal_database.json">Criminality</option>
 		<option value="time_series_childrenincare_database.json">Children in Care</option>
 		<option value="time_series_childprotection_database.json">Child Protection</option>
@@ -18,3 +19,4 @@
 		<option value="time_series_models.json">Combined</option>
 	</select>
 </div>
+}
