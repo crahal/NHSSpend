@@ -15,6 +15,7 @@ project.title=Project
 project.desc=See the background of the project, and an overview of the data sources.
 
 nav.about.title=About
+nav.currentPageIndicator=Current
 privacy.title=Privacy Policy
 contact.title=Contact Us
 
