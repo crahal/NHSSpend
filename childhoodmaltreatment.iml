@@ -12,12 +12,57 @@
       <sourceFolder url="file://$MODULE_DIR$/target/scala-2.13/routes/main" isTestSource="false" generated="true" />
       <sourceFolder url="file://$MODULE_DIR$/target/scala-2.13/twirl/main" isTestSource="false" generated="true" />
       <excludeFolder url="file://$MODULE_DIR$/target" />
+      <excludeFolder url="file://$MODULE_DIR$/target/childhoodmaltreatment-1.0-SNAPSHOT" />
       <excludeFolder url="file://$MODULE_DIR$/target/streams" />
+      <excludeFolder url="file://$MODULE_DIR$/target/universal" />
       <excludeFolder url="file://$MODULE_DIR$/target/web" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="library" name="sbt: aopalliance:aopalliance:1.0:jar" level="project" />
+    <orderEntry type="module-library">
+      <library name="sbt: unmanaged-sources-and-docs">
+        <CLASSES />
+        <JAVADOC>
+          <root url="jar://$USER_HOME$/AppData/Local/Coursier/cache/v1/https/repo1.maven.org/maven2/org/sonatype/sisu/sisu-guice/3.1.0/sisu-guice-3.1.0-javadoc.jar!/" />
+        </JAVADOC>
+        <SOURCES>
+          <root url="jar://$USER_HOME$/AppData/Local/Coursier/cache/v1/https/repo1.maven.org/maven2/org/sonatype/sisu/sisu-guice/3.1.0/sisu-guice-3.1.0-sources.jar!/" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="library" name="sbt: org.vafer:jdeb:1.3:jar" level="project" />
+    <orderEntry type="library" name="sbt: org.tukaani:xz:1.4:jar" level="project" />
+    <orderEntry type="library" name="sbt: org.sonatype.sisu:sisu-guice:3.1.0:no_aop:jar" level="project" />
+    <orderEntry type="library" name="sbt: org.sonatype.plexus:plexus-sec-dispatcher:1.3:jar" level="project" />
+    <orderEntry type="library" name="sbt: org.sonatype.plexus:plexus-cipher:1.4:jar" level="project" />
+    <orderEntry type="library" name="sbt: org.eclipse.sisu:org.eclipse.sisu.plexus:0.0.0.M5:jar" level="project" />
+    <orderEntry type="library" name="sbt: org.eclipse.sisu:org.eclipse.sisu.inject:0.0.0.M5:jar" level="project" />
+    <orderEntry type="library" name="sbt: org.eclipse.aether:aether-util:0.9.0.M2:jar" level="project" />
+    <orderEntry type="library" name="sbt: org.eclipse.aether:aether-spi:0.9.0.M2:jar" level="project" />
+    <orderEntry type="library" name="sbt: org.eclipse.aether:aether-impl:0.9.0.M2:jar" level="project" />
+    <orderEntry type="library" name="sbt: org.eclipse.aether:aether-api:0.9.0.M2:jar" level="project" />
+    <orderEntry type="library" name="sbt: org.codehaus.plexus:plexus-utils:3.0.17:jar" level="project" />
+    <orderEntry type="library" name="sbt: org.codehaus.plexus:plexus-interpolation:1.19:jar" level="project" />
+    <orderEntry type="library" name="sbt: org.codehaus.plexus:plexus-component-annotations:1.5.5:jar" level="project" />
+    <orderEntry type="library" name="sbt: org.codehaus.plexus:plexus-classworlds:2.5.1:jar" level="project" />
+    <orderEntry type="library" name="sbt: org.bouncycastle:bcprov-jdk15on:1.51:jar" level="project" />
+    <orderEntry type="library" name="sbt: org.bouncycastle:bcpg-jdk15on:1.51:jar" level="project" />
+    <orderEntry type="library" name="sbt: org.apache.maven:maven-settings-builder:3.2.2:jar" level="project" />
+    <orderEntry type="library" name="sbt: org.apache.maven:maven-settings:3.2.2:jar" level="project" />
+    <orderEntry type="library" name="sbt: org.apache.maven:maven-repository-metadata:3.2.2:jar" level="project" />
+    <orderEntry type="library" name="sbt: org.apache.maven:maven-plugin-api:3.2.2:jar" level="project" />
+    <orderEntry type="library" name="sbt: org.apache.maven:maven-model-builder:3.2.2:jar" level="project" />
+    <orderEntry type="library" name="sbt: org.apache.maven:maven-model:3.2.2:jar" level="project" />
+    <orderEntry type="library" name="sbt: org.apache.maven:maven-core:3.2.2:jar" level="project" />
+    <orderEntry type="library" name="sbt: org.apache.maven:maven-artifact:3.2.2:jar" level="project" />
+    <orderEntry type="library" name="sbt: org.apache.maven:maven-aether-provider:3.2.2:jar" level="project" />
+    <orderEntry type="library" name="sbt: org.apache.commons:commons-compress:1.7:jar" level="project" />
+    <orderEntry type="library" name="sbt: org.apache.ant:ant-launcher:1.9.3:jar" level="project" />
+    <orderEntry type="library" name="sbt: org.apache.ant:ant:1.9.3:jar" level="project" />
+    <orderEntry type="library" name="sbt: javax.enterprise:cdi-api:1.0:jar" level="project" />
+    <orderEntry type="library" name="sbt: javax.annotation:jsr250-api:1.0:jar" level="project" />
+    <orderEntry type="library" name="sbt: commons-io:commons-io:2.6:jar" level="project" />
     <orderEntry type="library" name="sbt: org.webjars:webjars-play_2.13:2.8.0:jar" level="project" />
     <orderEntry type="library" name="sbt: org.webjars:webjars-locator-core:0.43:jar" level="project" />
     <orderEntry type="library" name="sbt: org.webjars:webjars-locator:0.38:jar" level="project" />
@@ -86,7 +131,6 @@
     <orderEntry type="library" name="sbt: io.jsonwebtoken:jjwt:0.9.1:jar" level="project" />
     <orderEntry type="library" scope="TEST" name="sbt: commons-net:commons-net:3.6:jar" level="project" />
     <orderEntry type="library" scope="TEST" name="sbt: commons-logging:commons-logging:1.2:jar" level="project" />
-    <orderEntry type="library" scope="TEST" name="sbt: commons-io:commons-io:2.6:jar" level="project" />
     <orderEntry type="library" scope="TEST" name="sbt: commons-codec:commons-codec:1.11:jar" level="project" />
     <orderEntry type="library" name="sbt: com.typesafe.play:twirl-api_2.13:1.5.0:jar" level="project" />
     <orderEntry type="library" scope="TEST" name="sbt: com.typesafe.play:shaded-oauth:2.1.2:jar" level="project" />
@@ -151,7 +195,7 @@
     <orderEntry type="library" name="sbt: org.webjars:jquery:3.4.1:jar" level="project" />
     <orderEntry type="library" name="sbt: org.webjars:popper.js:1.15.0:jar" level="project" />
     <orderEntry type="library" name="sbt: org.webjars.npm:classnames:2.2.6:jar" level="project" />
-    <orderEntry type="library" name="sbt: org.webjars.npm:core-js:3.6.1:jar" level="project" />
     <orderEntry type="library" name="sbt: org.webjars.npm:feather-icons:4.24.1:jar" level="project" />
+    <orderEntry type="library" name="sbt: org.webjars.npm:core-js:3.6.4:jar" level="project" />
   </component>
 </module>
