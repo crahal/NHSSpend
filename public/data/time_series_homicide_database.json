@@ -1,4 +1,99 @@
 {
+	"row": "year",
+	"cols": {
+		"homicides_males": {
+			"gender": "males",
+			"agerange": "all"
+		},
+		"homicides_females": {
+			"gender": "females",
+			"agerange": "all"
+		},
+		"homicides_unknowngender": {
+			"gender": "unknown",
+			"agerange": "all"
+		},
+		"homicides_total": {
+			"gender": "all",
+			"agerange": "all"
+		},
+		"homicides_unknownage": {
+			"gender": "all",
+			"agerange": "unknown"
+		},
+		"homicides_males_under1": {
+			"gender": "males",
+			"agerange": "under1"
+		},
+		"homicides_females_under1": {
+			"gender": "females",
+			"agerange": "under1"
+		},
+		"homicides_total_under1": {
+			"gender": "all",
+			"agerange": "under1"
+		},
+		"homicides_males_1to4": {
+			"gender": "males",
+			"agerange": "1to4"
+		},
+		"homicides_females_1to4": {
+			"gender": "females",
+			"agerange": "1to4"
+		},
+		"homicides_total_1to4": {
+			"gender": "all",
+			"agerange": "1to4"
+		},
+		"homicides_males_under5": {
+			"gender": "males",
+			"agerange": "under5"
+		},
+		"homicides_females_under5": {
+			"gender": "females",
+			"agerange": "under5"
+		},
+		"homicides_total_under5": {
+			"gender": "all",
+			"agerange": "under5"
+		},
+		"homicides_males_5to15": {
+			"gender": "males",
+			"agerange": "5to15"
+		},
+		"homicides_females_5to15": {
+			"gender": "females",
+			"agerange": "5to15"
+		},
+		"homicides_total_5to15": {
+			"gender": "all",
+			"agerange": "5to15"
+		},
+		"homicides_males_0to15": {
+			"gender": "males",
+			"agerange": "0to15"
+		},
+		"homicides_females_0to15": {
+			"gender": "females",
+			"agerange": "0to15"
+		},
+		"homicides_total_0to15": {
+			"gender": "all",
+			"agerange": "0to15"
+		},
+		"homicides_males_16over": {
+			"gender": "males",
+			"agerange": "16over"
+		},
+		"homicides_females_16over": {
+			"gender": "females",
+			"agerange": "16over"
+		},
+		"homicides_total_16over": {
+			"gender": "all",
+			"agerange": "16over"
+		}
+	},
 	"data": [
 		{
 			"year": "1977",

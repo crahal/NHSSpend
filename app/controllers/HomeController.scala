@@ -37,6 +37,11 @@ class HomeController @Inject() (val controllerComponents: ControllerComponents, 
 
 	def about(): Action[AnyContent] = TODO
 
+	def donut(): Action[AnyContent] = Action { implicit request: Request[AnyContent] =>
+		val files: Seq[FileOption] = config.get[Seq[FileOption]]("graph_files")
+		Ok(views.html.donut(files.toList))
+	}
+
 	def project(): Action[AnyContent] = Action { implicit request: Request[AnyContent] =>
 		Ok(views.html.project())
 	}

@@ -1,4 +1,367 @@
 {
+	"row": "year",
+	"cols": {
+		"deaths_homicide_males_under1": {
+			"type": "homicide",
+			"gender": "males",
+			"agerange": "under1"
+		},
+		"deaths_homicide_males_1to4": {
+			"type": "homicide",
+			"gender": "males",
+			"agerange": "1to4"
+		},
+		"deaths_homicide_males_5to9": {
+			"type": "homicide",
+			"gender": "males",
+			"agerange": "5to9"
+		},
+		"deaths_homicide_males_10to14": {
+			"type": "homicide",
+			"gender": "males",
+			"agerange": "10to14"
+		},
+		"deaths_homicide_males_15to19": {
+			"type": "homicide",
+			"gender": "males",
+			"agerange": "15to19"
+		},
+		"deaths_homicide_males_20to24": {
+			"type": "homicide",
+			"gender": "males",
+			"agerange": "20to24"
+		},
+		"deaths_homicide_males_25to34": {
+			"type": "homicide",
+			"gender": "males",
+			"agerange": "25to34"
+		},
+		"deaths_homicide_males_35to44": {
+			"type": "homicide",
+			"gender": "males",
+			"agerange": "35to44"
+		},
+		"deaths_homicide_males_45to54": {
+			"type": "homicide",
+			"gender": "males",
+			"agerange": "45to54"
+		},
+		"deaths_homicide_males_55to64": {
+			"type": "homicide",
+			"gender": "males",
+			"agerange": "55to64"
+		},
+		"deaths_homicide_males_65to74": {
+			"type": "homicide",
+			"gender": "males",
+			"agerange": "65to74"
+		},
+		"deaths_homicide_males_75over": {
+			"type": "homicide",
+			"gender": "males",
+			"agerange": "75over"
+		},
+		"deaths_homicide_females_under1": {
+			"type": "homicide",
+			"gender": "females",
+			"agerange": "under1"
+		},
+		"deaths_homicide_females_1to4": {
+			"type": "homicide",
+			"gender": "females",
+			"agerange": "1to4"
+		},
+		"deaths_homicide_females_5to9": {
+			"type": "homicide",
+			"gender": "females",
+			"agerange": "5to9"
+		},
+		"deaths_homicide_females_10to14": {
+			"type": "homicide",
+			"gender": "females",
+			"agerange": "10to14"
+		},
+		"deaths_homicide_females_15to19": {
+			"type": "homicide",
+			"gender": "females",
+			"agerange": "15to19"
+		},
+		"deaths_homicide_females_20to24": {
+			"type": "homicide",
+			"gender": "females",
+			"agerange": "20to24"
+		},
+		"deaths_homicide_females_25to34": {
+			"type": "homicide",
+			"gender": "females",
+			"agerange": "25to34"
+		},
+		"deaths_homicide_females_35to44": {
+			"type": "homicide",
+			"gender": "females",
+			"agerange": "35to44"
+		},
+		"deaths_homicide_females_45to54": {
+			"type": "homicide",
+			"gender": "females",
+			"agerange": "45to54"
+		},
+		"deaths_homicide_females_55to64": {
+			"type": "homicide",
+			"gender": "females",
+			"agerange": "55to64"
+		},
+		"deaths_homicide_females_65to74": {
+			"type": "homicide",
+			"gender": "females",
+			"agerange": "65to74"
+		},
+		"deaths_homicide_females_75over": {
+			"type": "homicide",
+			"gender": "females",
+			"agerange": "75over"
+		},
+		"deaths_unknown_males_under1": {
+			"type": "unknown",
+			"gender": "males",
+			"agerange": "under1"
+		},
+		"deaths_unknown_males_1to4": {
+			"type": "unknown",
+			"gender": "males",
+			"agerange": "1to4"
+		},
+		"deaths_unknown_males_5to9": {
+			"type": "unknown",
+			"gender": "males",
+			"agerange": "5to9"
+		},
+		"deaths_unknown_males_10to14": {
+			"type": "unknown",
+			"gender": "males",
+			"agerange": "10to14"
+		},
+		"deaths_unknown_males_15to19": {
+			"type": "unknown",
+			"gender": "males",
+			"agerange": "15to19"
+		},
+		"deaths_unknown_males_20to24": {
+			"type": "unknown",
+			"gender": "males",
+			"agerange": "20to24"
+		},
+		"deaths_unknown_males_25to34": {
+			"type": "unknown",
+			"gender": "males",
+			"agerange": "25to34"
+		},
+		"deaths_unknown_males_35to44": {
+			"type": "unknown",
+			"gender": "males",
+			"agerange": "35to44"
+		},
+		"deaths_unknown_males_45to54": {
+			"type": "unknown",
+			"gender": "males",
+			"agerange": "45to54"
+		},
+		"deaths_unknown_males_55to64": {
+			"type": "unknown",
+			"gender": "males",
+			"agerange": "55to64"
+		},
+		"deaths_unknown_males_65to74": {
+			"type": "unknown",
+			"gender": "males",
+			"agerange": "65to74"
+		},
+		"deaths_unknown_males_75over": {
+			"type": "unknown",
+			"gender": "males",
+			"agerange": "75over"
+		},
+		"deaths_unknown_females_under1": {
+			"type": "unknown",
+			"gender": "females",
+			"agerange": "under1"
+		},
+		"deaths_unknown_females_1to4": {
+			"type": "unknown",
+			"gender": "females",
+			"agerange": "1to4"
+		},
+		"deaths_unknown_females_5to9": {
+			"type": "unknown",
+			"gender": "females",
+			"agerange": "5to9"
+		},
+		"deaths_unknown_females_10to14": {
+			"type": "unknown",
+			"gender": "females",
+			"agerange": "10to14"
+		},
+		"deaths_unknown_females_15to19": {
+			"type": "unknown",
+			"gender": "females",
+			"agerange": "15to19"
+		},
+		"deaths_unknown_females_20to24": {
+			"type": "unknown",
+			"gender": "females",
+			"agerange": "20to24"
+		},
+		"deaths_unknown_females_25to34": {
+			"type": "unknown",
+			"gender": "females",
+			"agerange": "25to34"
+		},
+		"deaths_unknown_females_35to44": {
+			"type": "unknown",
+			"gender": "females",
+			"agerange": "35to44"
+		},
+		"deaths_unknown_females_45to54": {
+			"type": "unknown",
+			"gender": "females",
+			"agerange": "45to54"
+		},
+		"deaths_unknown_females_55to64": {
+			"type": "unknown",
+			"gender": "females",
+			"agerange": "55to64"
+		},
+		"deaths_unknown_females_65to74": {
+			"type": "unknown",
+			"gender": "females",
+			"agerange": "65to74"
+		},
+		"deaths_unknown_females_75over": {
+			"type": "unknown",
+			"gender": "females",
+			"agerange": "75over"
+		},
+		"deaths_undetermined_males_under1": {
+			"type": "undetermined",
+			"gender": "males",
+			"agerange": "under1"
+		},
+		"deaths_undetermined_males_1to4": {
+			"type": "undetermined",
+			"gender": "males",
+			"agerange": "1to4"
+		},
+		"deaths_undetermined_males_5to9": {
+			"type": "undetermined",
+			"gender": "males",
+			"agerange": "5to9"
+		},
+		"deaths_undetermined_males_10to14": {
+			"type": "undetermined",
+			"gender": "males",
+			"agerange": "10to14"
+		},
+		"deaths_undetermined_males_15to19": {
+			"type": "undetermined",
+			"gender": "males",
+			"agerange": "15to19"
+		},
+		"deaths_undetermined_males_20to24": {
+			"type": "undetermined",
+			"gender": "males",
+			"agerange": "20to24"
+		},
+		"deaths_undetermined_males_25to34": {
+			"type": "undetermined",
+			"gender": "males",
+			"agerange": "25to34"
+		},
+		"deaths_undetermined_males_35to44": {
+			"type": "undetermined",
+			"gender": "males",
+			"agerange": "35to44"
+		},
+		"deaths_undetermined_males_45to54": {
+			"type": "undetermined",
+			"gender": "males",
+			"agerange": "45to54"
+		},
+		"deaths_undetermined_males_55to64": {
+			"type": "undetermined",
+			"gender": "males",
+			"agerange": "55to64"
+		},
+		"deaths_undetermined_males_65to74": {
+			"type": "undetermined",
+			"gender": "males",
+			"agerange": "65to74"
+		},
+		"deaths_undetermined_males_75over": {
+			"type": "undetermined",
+			"gender": "males",
+			"agerange": "75over"
+		},
+		"deaths_undetermined_females_under1": {
+			"type": "undetermined",
+			"gender": "females",
+			"agerange": "under1"
+		},
+		"deaths_undetermined_females_1to4": {
+			"type": "undetermined",
+			"gender": "females",
+			"agerange": "1to4"
+		},
+		"deaths_undetermined_females_5to9": {
+			"type": "undetermined",
+			"gender": "females",
+			"agerange": "5to9"
+		},
+		"deaths_undetermined_females_10to14": {
+			"type": "undetermined",
+			"gender": "females",
+			"agerange": "10to14"
+		},
+		"deaths_undetermined_females_15to19": {
+			"type": "undetermined",
+			"gender": "females",
+			"agerange": "15to19"
+		},
+		"deaths_undetermined_females_20to24": {
+			"type": "undetermined",
+			"gender": "females",
+			"agerange": "20to24"
+		},
+		"deaths_undetermined_females_25to34": {
+			"type": "undetermined",
+			"gender": "females",
+			"agerange": "25to34"
+		},
+		"deaths_undetermined_females_35to44": {
+			"type": "undetermined",
+			"gender": "females",
+			"agerange": "35to44"
+		},
+		"deaths_undetermined_females_45to54": {
+			"type": "undetermined",
+			"gender": "females",
+			"agerange": "45to54"
+		},
+		"deaths_undetermined_females_55to64": {
+			"type": "undetermined",
+			"gender": "females",
+			"agerange": "55to64"
+		},
+		"deaths_undetermined_females_65to74": {
+			"type": "undetermined",
+			"gender": "females",
+			"agerange": "65to74"
+		},
+		"deaths_undetermined_females_75over": {
+			"type": "undetermined",
+			"gender": "females",
+			"agerange": "75over"
+		}
+	},
 	"data": [
 		{
 			"year": "1858",

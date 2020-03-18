@@ -1,4 +1,223 @@
 {
+	"row": "year",
+	"cols": {
+		"incare_males_england": {
+			"care_category": "incare",
+			"gender": "males",
+			"agerange": "all",
+			"country": "england"
+		},
+		"incare_males_wales": {
+			"care_category": "incare",
+			"gender": "males",
+			"agerange": "all",
+			"country": "wales"
+		},
+		"incare_males_ew": {
+			"care_category": "incare",
+			"gender": "males",
+			"agerange": "all",
+			"country": "ew"
+		},
+		"incare_females_england": {
+			"care_category": "incare",
+			"gender": "females",
+			"agerange": "all",
+			"country": "england"
+		},
+		"incare_females_wales": {
+			"care_category": "incare",
+			"gender": "females",
+			"agerange": "all",
+			"country": "wales"
+		},
+		"incare_females_ew": {
+			"care_category": "incare",
+			"gender": "females",
+			"agerange": "all",
+			"country": "ew"
+		},
+		"incare_total_england": {
+			"care_category": "incare",
+			"gender": "all",
+			"agerange": "all",
+			"country": "england"
+		},
+		"incare_total_wales": {
+			"care_category": "incare",
+			"gender": "all",
+			"agerange": "all",
+			"country": "wales"
+		},
+		"incare_total_ew": {
+			"care_category": "incare",
+			"gender": "all",
+			"agerange": "all",
+			"country": "ew"
+		},
+		"incare_under1_england": {
+			"care_category": "incare",
+			"gender": "all",
+			"agerange": "under1",
+			"country": "england"
+		},
+		"incare_under1_wales": {
+			"care_category": "incare",
+			"gender": "all",
+			"agerange": "under1",
+			"country": "wales"
+		},
+		"incare_under1_ew": {
+			"care_category": "incare",
+			"gender": "all",
+			"agerange": "under1",
+			"country": "ew"
+		},
+		"incare_ 1to4_england": {
+			"care_category": "incare",
+			"gender": "all",
+			"agerange": "1to4",
+			"country": "england"
+		},
+		"incare_ 1to4_wales": {
+			"care_category": "incare",
+			"gender": "all",
+			"agerange": "1to4",
+			"country": "wales"
+		},
+		"incare_ 1to4_ew": {
+			"care_category": "incare",
+			"gender": "all",
+			"agerange": "1to4",
+			"country": "ew"
+		},
+		"incare_ under5_england": {
+			"care_category": "incare",
+			"gender": "all",
+			"agerange": "under5",
+			"country": "england"
+		},
+		"incare_ under5_wales": {
+			"care_category": "incare",
+			"gender": "all",
+			"agerange": "under5",
+			"country": "wales"
+		},
+		"incare_ under5_ew": {
+			"care_category": "incare",
+			"gender": "all",
+			"agerange": "under5",
+			"country": "ew"
+		},
+		"incare_ 5to9_england": {
+			"care_category": "incare",
+			"gender": "all",
+			"agerange": "5to9",
+			"country": "england"
+		},
+		"incare_ 5to9_wales": {
+			"care_category": "incare",
+			"gender": "all",
+			"agerange": "5to9",
+			"country": "wales"
+		},
+		"incare_ 5to9_ew": {
+			"care_category": "incare",
+			"gender": "all",
+			"agerange": "5to9",
+			"country": "ew"
+		},
+		"incare_ 10to15_england": {
+			"care_category": "incare",
+			"gender": "all",
+			"agerange": "10to15",
+			"country": "england"
+		},
+		"incare_ 10to15_wales": {
+			"care_category": "incare",
+			"gender": "all",
+			"agerange": "10to15",
+			"country": "wales"
+		},
+		"incare_ 10to15_ew": {
+			"care_category": "incare",
+			"gender": "all",
+			"agerange": "10to15",
+			"country": "ew"
+		},
+		"incare_ 5to15_england": {
+			"care_category": "incare",
+			"gender": "all",
+			"agerange": "5to15",
+			"country": "england"
+		},
+		"incare_ 5to15_wales": {
+			"care_category": "incare",
+			"gender": "all",
+			"agerange": "5to15",
+			"country": "wales"
+		},
+		"incare_ 5to15_ew": {
+			"care_category": "incare",
+			"gender": "all",
+			"agerange": "5to15",
+			"country": "ew"
+		},
+		"incare_ 16over_england": {
+			"care_category": "incare",
+			"gender": "all",
+			"agerange": "16over",
+			"country": "england"
+		},
+		"incare_ 16over_wales": {
+			"care_category": "incare",
+			"gender": "all",
+			"agerange": "16over",
+			"country": "wales"
+		},
+		"incare_ 16over_ew": {
+			"care_category": "incare",
+			"gender": "all",
+			"agerange": "16over",
+			"country": "ew"
+		},
+		"careperiods_england": {
+			"care_category": "careperiods",
+			"gender": "all",
+			"agerange": "all",
+			"country": "england"
+		},
+		"careperiods_wales": {
+			"care_category": "careperiods",
+			"gender": "all",
+			"agerange": "all",
+			"country": "wales"
+		},
+		"careperiods_ew": {
+			"care_category": "careperiods",
+			"gender": "all",
+			"agerange": "all",
+			"country": "ew"
+		},
+		"children_england": {
+			"care_category": "children",
+			"gender": "all",
+			"agerange": "all",
+			"country": "england"
+		},
+		"children_wales": {
+			"care_category": "children",
+			"gender": "all",
+			"agerange": "all",
+			"country": "wales"
+		},
+		"children_ew": {
+			"care_category": "children",
+			"gender": "all",
+			"agerange": "all",
+			"country": "ew"
+		}
+	},
 	"data": [
 		{
 			"year": "1949",

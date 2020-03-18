@@ -1,4 +1,700 @@
 {
+	"row": "year",
+	"cols": {
+		"register_total_england": {
+			"registration_status": "register",
+			"registration_categories": "all",
+			"gender": "all",
+			"agerange": "all",
+			"country": "england"
+		},
+		"register_total_wales": {
+			"registration_status": "register",
+			"registration_categories": "all",
+			"gender": "all",
+			"agerange": "all",
+			"country": "wales"
+		},
+		"register_total_ew": {
+			"registration_status": "register",
+			"registration_categories": "all",
+			"gender": "all",
+			"agerange": "all",
+			"country": "ew"
+		},
+		"register_males_england": {
+			"registration_status": "register",
+			"registration_categories": "all",
+			"gender": "males",
+			"agerange": "all",
+			"country": "england"
+		},
+		"register_males_wales": {
+			"registration_status": "register",
+			"registration_categories": "all",
+			"gender": "males",
+			"agerange": "all",
+			"country": "wales"
+		},
+		"register_males_ew": {
+			"registration_status": "register",
+			"registration_categories": "all",
+			"gender": "males",
+			"agerange": "all",
+			"country": "ew"
+		},
+		"register_females_england": {
+			"registration_status": "register",
+			"registration_categories": "all",
+			"gender": "females",
+			"agerange": "all",
+			"country": "england"
+		},
+		"register_females_wales": {
+			"registration_status": "register",
+			"registration_categories": "all",
+			"gender": "females",
+			"agerange": "all",
+			"country": "wales"
+		},
+		"register_females_ew": {
+			"registration_status": "register",
+			"registration_categories": "all",
+			"gender": "females",
+			"agerange": "all",
+			"country": "ew"
+		},
+		"register_unknowngender_england": {
+			"registration_status": "register",
+			"registration_categories": "all",
+			"gender": "unknown",
+			"agerange": "all",
+			"country": "england"
+		},
+		"register_unknowngender_wales": {
+			"registration_status": "register",
+			"registration_categories": "all",
+			"gender": "unknown",
+			"agerange": "all",
+			"country": "wales"
+		},
+		"register_unknowngender_ew": {
+			"registration_status": "register",
+			"registration_categories": "all",
+			"gender": "unknown",
+			"agerange": "all",
+			"country": "ew"
+		},
+		"register_unborn_england": {
+			"registration_status": "register",
+			"registration_categories": "all",
+			"gender": "all",
+			"agerange": "unborn",
+			"country": "england"
+		},
+		"register_unborn_wales": {
+			"registration_status": "register",
+			"registration_categories": "all",
+			"gender": "all",
+			"agerange": "unborn",
+			"country": "wales"
+		},
+		"register_unborn_ew": {
+			"registration_status": "register",
+			"registration_categories": "all",
+			"gender": "all",
+			"agerange": "unborn",
+			"country": "ew"
+		},
+		"register_under1_england": {
+			"registration_status": "register",
+			"registration_categories": "all",
+			"gender": "all",
+			"agerange": "under1",
+			"country": "england"
+		},
+		"register_under1_wales": {
+			"registration_status": "register",
+			"registration_categories": "all",
+			"gender": "all",
+			"agerange": "under1",
+			"country": "wales"
+		},
+		"register_under1_ew": {
+			"registration_status": "register",
+			"registration_categories": "all",
+			"gender": "all",
+			"agerange": "under1",
+			"country": "ew"
+		},
+		"register_1to4_england": {
+			"registration_status": "register",
+			"registration_categories": "all",
+			"gender": "all",
+			"agerange": "1to4",
+			"country": "england"
+		},
+		"register_1to4_wales": {
+			"registration_status": "register",
+			"registration_categories": "all",
+			"gender": "all",
+			"agerange": "1to4",
+			"country": "wales"
+		},
+		"register_1to4_ew": {
+			"registration_status": "register",
+			"registration_categories": "all",
+			"gender": "all",
+			"agerange": "1to4",
+			"country": "ew"
+		},
+		"register_5to9_england": {
+			"registration_status": "register",
+			"registration_categories": "all",
+			"gender": "all",
+			"agerange": "5to9",
+			"country": "england"
+		},
+		"register_5to9_wales": {
+			"registration_status": "register",
+			"registration_categories": "all",
+			"gender": "all",
+			"agerange": "5to9",
+			"country": "wales"
+		},
+		"register_5to9_ew": {
+			"registration_status": "register",
+			"registration_categories": "all",
+			"gender": "all",
+			"agerange": "5to9",
+			"country": "ew"
+		},
+		"register_10to15_england": {
+			"registration_status": "register",
+			"registration_categories": "all",
+			"gender": "all",
+			"agerange": "10to15",
+			"country": "england"
+		},
+		"register_10to15_wales": {
+			"registration_status": "register",
+			"registration_categories": "all",
+			"gender": "all",
+			"agerange": "10to15",
+			"country": "wales"
+		},
+		"register_10to15_ew": {
+			"registration_status": "register",
+			"registration_categories": "all",
+			"gender": "all",
+			"agerange": "10to15",
+			"country": "ew"
+		},
+		"register_16over_england": {
+			"registration_status": "register",
+			"registration_categories": "all",
+			"gender": "all",
+			"agerange": "16over",
+			"country": "england"
+		},
+		"register_16over_wales": {
+			"registration_status": "register",
+			"registration_categories": "all",
+			"gender": "all",
+			"agerange": "16over",
+			"country": "wales"
+		},
+		"register_16over_ew": {
+			"registration_status": "register",
+			"registration_categories": "all",
+			"gender": "all",
+			"agerange": "16over",
+			"country": "ew"
+		},
+		"register_neglectonly_england": {
+			"registration_status": "register",
+			"registration_categories": "neglectonly",
+			"gender": "all",
+			"agerange": "all",
+			"country": "england"
+		},
+		"register_neglectonly_wales": {
+			"registration_status": "register",
+			"registration_categories": "neglectonly",
+			"gender": "all",
+			"agerange": "all",
+			"country": "wales"
+		},
+		"register_neglectonly_ew": {
+			"registration_status": "register",
+			"registration_categories": "neglectonly",
+			"gender": "all",
+			"agerange": "all",
+			"country": "ew"
+		},
+		"register_physicalonly_england": {
+			"registration_status": "register",
+			"registration_categories": "physicalonly",
+			"gender": "all",
+			"agerange": "all",
+			"country": "england"
+		},
+		"register_physicalonly_wales": {
+			"registration_status": "register",
+			"registration_categories": "physicalonly",
+			"gender": "all",
+			"agerange": "all",
+			"country": "wales"
+		},
+		"register_physicalonly_ew": {
+			"registration_status": "register",
+			"registration_categories": "physicalonly",
+			"gender": "all",
+			"agerange": "all",
+			"country": "ew"
+		},
+		"register_sexualonly_england": {
+			"registration_status": "register",
+			"registration_categories": "sexualonly",
+			"gender": "all",
+			"agerange": "all",
+			"country": "england"
+		},
+		"register_sexualonly_wales": {
+			"registration_status": "register",
+			"registration_categories": "sexualonly",
+			"gender": "all",
+			"agerange": "all",
+			"country": "wales"
+		},
+		"register_sexualonly_ew": {
+			"registration_status": "register",
+			"registration_categories": "sexualonly",
+			"gender": "all",
+			"agerange": "all",
+			"country": "ew"
+		},
+		"register_emotionalonly_england": {
+			"registration_status": "register",
+			"registration_categories": "emotionalonly",
+			"gender": "all",
+			"agerange": "all",
+			"country": "england"
+		},
+		"register_emotionalonly_wales": {
+			"registration_status": "register",
+			"registration_categories": "emotionalonly",
+			"gender": "all",
+			"agerange": "all",
+			"country": "wales"
+		},
+		"register_emotionalonly_ew": {
+			"registration_status": "register",
+			"registration_categories": "emotionalonly",
+			"gender": "all",
+			"agerange": "all",
+			"country": "ew"
+		},
+		"register_graveconcern_england": {
+			"registration_status": "register",
+			"registration_categories": "graveconcern",
+			"gender": "all",
+			"agerange": "all",
+			"country": "england"
+		},
+		"register_graveconcern_wales": {
+			"registration_status": "register",
+			"registration_categories": "graveconcern",
+			"gender": "all",
+			"agerange": "all",
+			"country": "wales"
+		},
+		"register_graveconcern_ew": {
+			"registration_status": "register",
+			"registration_categories": "graveconcern",
+			"gender": "all",
+			"agerange": "all",
+			"country": "ew"
+		},
+		"register_neglectphysicalsexual_england": {
+			"registration_status": "register",
+			"registration_categories": "neglectphysicalsexual",
+			"gender": "all",
+			"agerange": "all",
+			"country": "england"
+		},
+		"register_neglectphysicalsexual_wales": {
+			"registration_status": "register",
+			"registration_categories": "neglectphysicalsexual",
+			"gender": "all",
+			"agerange": "all",
+			"country": "wales"
+		},
+		"register_neglectphysicalsexual_ew": {
+			"registration_status": "register",
+			"registration_categories": "neglectphysicalsexual",
+			"gender": "all",
+			"agerange": "all",
+			"country": "ew"
+		},
+		"register_neglectphysical_england": {
+			"registration_status": "register",
+			"registration_categories": "neglectphysical",
+			"gender": "all",
+			"agerange": "all",
+			"country": "england"
+		},
+		"register_neglectphysical_wales": {
+			"registration_status": "register",
+			"registration_categories": "neglectphysical",
+			"gender": "all",
+			"agerange": "all",
+			"country": "wales"
+		},
+		"register_neglectphysical_ew": {
+			"registration_status": "register",
+			"registration_categories": "neglectphysical",
+			"gender": "all",
+			"agerange": "all",
+			"country": "ew"
+		},
+		"register_neglectsexual_england": {
+			"registration_status": "register",
+			"registration_categories": "neglectsexual",
+			"gender": "all",
+			"agerange": "all",
+			"country": "england"
+		},
+		"register_neglectsexual_wales": {
+			"registration_status": "register",
+			"registration_categories": "neglectsexual",
+			"gender": "all",
+			"agerange": "all",
+			"country": "wales"
+		},
+		"register_neglectsexual_ew": {
+			"registration_status": "register",
+			"registration_categories": "neglectsexual",
+			"gender": "all",
+			"agerange": "all",
+			"country": "ew"
+		},
+		"register_physicalsexual_england": {
+			"registration_status": "register",
+			"registration_categories": "physicalsexual",
+			"gender": "all",
+			"agerange": "all",
+			"country": "england"
+		},
+		"register_physicalsexual_wales": {
+			"registration_status": "register",
+			"registration_categories": "physicalsexual",
+			"gender": "all",
+			"agerange": "all",
+			"country": "wales"
+		},
+		"register_physicalsexual_ew": {
+			"registration_status": "register",
+			"registration_categories": "physicalsexual",
+			"gender": "all",
+			"agerange": "all",
+			"country": "ew"
+		},
+		"register_neglectmixed_england": {
+			"registration_status": "register",
+			"registration_categories": "neglectmixed",
+			"gender": "all",
+			"agerange": "all",
+			"country": "england"
+		},
+		"register_neglectmixed_wales": {
+			"registration_status": "register",
+			"registration_categories": "neglectmixed",
+			"gender": "all",
+			"agerange": "all",
+			"country": "wales"
+		},
+		"register_neglectmixed_ew": {
+			"registration_status": "register",
+			"registration_categories": "neglectmixed",
+			"gender": "all",
+			"agerange": "all",
+			"country": "ew"
+		},
+		"register_physicalmixed_england": {
+			"registration_status": "register",
+			"registration_categories": "physicalmixed",
+			"gender": "all",
+			"agerange": "all",
+			"country": "england"
+		},
+		"register_physicalmixed_wales": {
+			"registration_status": "register",
+			"registration_categories": "physicalmixed",
+			"gender": "all",
+			"agerange": "all",
+			"country": "wales"
+		},
+		"register_physicalmixed_ew": {
+			"registration_status": "register",
+			"registration_categories": "physicalmixed",
+			"gender": "all",
+			"agerange": "all",
+			"country": "ew"
+		},
+		"register_sexualmixed_england": {
+			"registration_status": "register",
+			"registration_categories": "sexualmixed",
+			"gender": "all",
+			"agerange": "all",
+			"country": "england"
+		},
+		"register_sexualmixed_wales": {
+			"registration_status": "register",
+			"registration_categories": "sexualmixed",
+			"gender": "all",
+			"agerange": "all",
+			"country": "wales"
+		},
+		"register_sexualmixed_ew": {
+			"registration_status": "register",
+			"registration_categories": "sexualmixed",
+			"gender": "all",
+			"agerange": "all",
+			"country": "ew"
+		},
+		"register_emotionalmixed_england": {
+			"registration_status": "register",
+			"registration_categories": "emotionalmixed",
+			"gender": "all",
+			"agerange": "all",
+			"country": "england"
+		},
+		"register_emotionalmixed_wales": {
+			"registration_status": "register",
+			"registration_categories": "emotionalmixed",
+			"gender": "all",
+			"agerange": "all",
+			"country": "wales"
+		},
+		"register_emotionalmixed_ew": {
+			"registration_status": "register",
+			"registration_categories": "emotionalmixed",
+			"gender": "all",
+			"agerange": "all",
+			"country": "ew"
+		},
+		"registrations_total_england": {
+			"registration_status": "registrations",
+			"registration_categories": "all",
+			"gender": "all",
+			"agerange": "all",
+			"country": "england"
+		},
+		"registrations_total_wales": {
+			"registration_status": "registrations",
+			"registration_categories": "all",
+			"gender": "all",
+			"agerange": "all",
+			"country": "wales"
+		},
+		"registrations_total_ew": {
+			"registration_status": "registrations",
+			"registration_categories": "all",
+			"gender": "all",
+			"agerange": "all",
+			"country": "ew"
+		},
+		"registrations_males_england": {
+			"registration_status": "registrations",
+			"registration_categories": "all",
+			"gender": "males",
+			"agerange": "all",
+			"country": "england"
+		},
+		"registrations_females_england": {
+			"registration_status": "registrations",
+			"registration_categories": "all",
+			"gender": "females",
+			"agerange": "all",
+			"country": "england"
+		},
+		"registrations_unknowngender_england": {
+			"registration_status": "registrations",
+			"registration_categories": "all",
+			"gender": "unknown",
+			"agerange": "all",
+			"country": "england"
+		},
+		"registrations_under1_england": {
+			"registration_status": "registrations",
+			"registration_categories": "all",
+			"gender": "all",
+			"agerange": "under1",
+			"country": "england"
+		},
+		"registrations_1to4_england": {
+			"registration_status": "registrations",
+			"registration_categories": "all",
+			"gender": "all",
+			"agerange": "1to4",
+			"country": "england"
+		},
+		"registrations_5to9_england": {
+			"registration_status": "registrations",
+			"registration_categories": "all",
+			"gender": "all",
+			"agerange": "5to9",
+			"country": "england"
+		},
+		"registrations_10to15_england": {
+			"registration_status": "registrations",
+			"registration_categories": "all",
+			"gender": "all",
+			"agerange": "10to15",
+			"country": "england"
+		},
+		"registrations_16over_england": {
+			"registration_status": "registrations",
+			"registration_categories": "all",
+			"gender": "all",
+			"agerange": "16over",
+			"country": "england"
+		},
+		"registrations_neglectonly_england": {
+			"registration_status": "registrations",
+			"registration_categories": "neglectonly",
+			"gender": "all",
+			"agerange": "all",
+			"country": "england"
+		},
+		"registrations_physicalonly_england": {
+			"registration_status": "registrations",
+			"registration_categories": "physicalonly",
+			"gender": "all",
+			"agerange": "all",
+			"country": "england"
+		},
+		"registrations_sexualonly_england": {
+			"registration_status": "registrations",
+			"registration_categories": "sexualonly",
+			"gender": "all",
+			"agerange": "all",
+			"country": "england"
+		},
+		"registrations_emotionalonly_england": {
+			"registration_status": "registrations",
+			"registration_categories": "emotionalonly",
+			"gender": "all",
+			"agerange": "all",
+			"country": "england"
+		},
+		"registrations_graveconcern_england": {
+			"registration_status": "registrations",
+			"registration_categories": "graveconcern",
+			"gender": "all",
+			"agerange": "all",
+			"country": "england"
+		},
+		"registrations_neglectphysicalsexual_england": {
+			"registration_status": "registrations",
+			"registration_categories": "neglectphysicalsexual",
+			"gender": "all",
+			"agerange": "all",
+			"country": "england"
+		},
+		"registrations_neglectphysical_england": {
+			"registration_status": "registrations",
+			"registration_categories": "neglectphysical",
+			"gender": "all",
+			"agerange": "all",
+			"country": "england"
+		},
+		"registrations_neglectsexual_england": {
+			"registration_status": "registrations",
+			"registration_categories": "neglectsexual",
+			"gender": "all",
+			"agerange": "all",
+			"country": "england"
+		},
+		"registrations_physicalsexual_england": {
+			"registration_status": "registrations",
+			"registration_categories": "physicalsexual",
+			"gender": "all",
+			"agerange": "all",
+			"country": "england"
+		},
+		"registrations_neglectmixed_england": {
+			"registration_status": "registrations",
+			"registration_categories": "neglectmixed",
+			"gender": "all",
+			"agerange": "all",
+			"country": "england"
+		},
+		"registrations_physicalmixed_england": {
+			"registration_status": "registrations",
+			"registration_categories": "physicalmixed",
+			"gender": "all",
+			"agerange": "all",
+			"country": "england"
+		},
+		"registrations_sexualmixed_england": {
+			"registration_status": "registrations",
+			"registration_categories": "sexualmixed",
+			"gender": "all",
+			"agerange": "all",
+			"country": "england"
+		},
+		"registrations_emotionalmixed_england": {
+			"registration_status": "registrations",
+			"registration_categories": "emotionalmixed",
+			"gender": "all",
+			"agerange": "all",
+			"country": "england"
+		},
+		"deregistrations_total_england": {
+			"registration_status": "deregistrations",
+			"registration_categories": "all",
+			"gender": "all",
+			"agerange": "all",
+			"country": "england"
+		},
+		"deregistrations_total_wales": {
+			"registration_status": "deregistrations",
+			"registration_categories": "all",
+			"gender": "all",
+			"agerange": "all",
+			"country": "wales"
+		},
+		"deregistrations_total_ew": {
+			"registration_status": "deregistrations",
+			"registration_categories": "all",
+			"gender": "all",
+			"agerange": "all",
+			"country": "ew"
+		},
+		"deregistrations_males_england": {
+			"registration_status": "deregistrations",
+			"registration_categories": "all",
+			"gender": "males",
+			"agerange": "all",
+			"country": "england"
+		},
+		"deregistrations_females_england": {
+			"registration_status": "deregistrations",
+			"registration_categories": "all",
+			"gender": "females",
+			"agerange": "all",
+			"country": "england"
+		},
+		"deregistrations_unknowngender_england": {
+			"registration_status": "deregistrations",
+			"registration_categories": "all",
+			"gender": "unknown",
+			"agerange": "all",
+			"country": "england"
+		}
+	},
 	"data": [
 		{
 			"year": "1987/88",
