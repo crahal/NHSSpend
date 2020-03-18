@@ -1,4 +1,4 @@
-@()(implicit webJarsUtil: org.webjars.play.WebJarsUtil, messages: Messages, request: Request[AnyContent])
+@(message: String)(implicit webJarsUtil: org.webjars.play.WebJarsUtil, messages: Messages, request: Request[AnyContent])
 
 @main(s"${messages("site.title")}") {
 <div class="jumbotron front-page-jumbo text-dark">
@@ -20,7 +20,7 @@
 			</div>
 			<div class="row d-flex d-md-none">
 				<div class="col">
-					<a class="btn btn-secondary" href="@routes.HomeController.dash" role="button">@messages("dash.title") &raquo;</a>
+					<a class="btn btn-secondary" href="@graphs.controllers.routes.HomeController.dash" role="button">@messages("dash.title") &raquo;</a>
 				</div>
 			</div>
 		</div>
@@ -34,7 +34,7 @@
 			</div>
 			<div class="row d-flex d-md-none">
 				<div class="col">
-					<a class="btn btn-secondary" href="@routes.HomeController.project" role="button">@messages("project.title") &raquo;</a>
+					<a class="btn btn-secondary" href="@graphs.controllers.routes.HomeController.project" role="button">@messages("project.title") &raquo;</a>
 				</div>
 			</div>
 		</div>
@@ -46,21 +46,25 @@
 			</div></div>
 			<div class="row d-flex d-md-none">
 				<div class="col">
-					<a class="btn btn-secondary" href="@routes.HomeController.team" role="button">@messages("team.title") &raquo;</a>
+					<a class="btn btn-secondary" href="@graphs.controllers.routes.HomeController.team" role="button">@messages("team.title") &raquo;</a>
 				</div>
 			</div>
 		</div>
 	</div>
 	<div class="row d-none d-md-flex">
 		<div class="col-md-4">
-			<a class="btn btn-secondary" href="@routes.HomeController.dash" role="button">@messages("dash.title") &raquo;</a>
+			<a class="btn btn-secondary" href="@graphs.controllers.routes.HomeController.dash" role="button">@messages("dash.title") &raquo;</a>
 		</div>
 		<div class="col-md-4">
-			<a class="btn btn-secondary" href="@routes.HomeController.project" role="button">@messages("project.title") &raquo;</a>
+			<a class="btn btn-secondary" href="@graphs.controllers.routes.HomeController.project" role="button">@messages("project.title") &raquo;</a>
 		</div>
 		<div class="col-md-4">
-			<a class="btn btn-secondary" href="@routes.HomeController.team" role="button">@messages("team.title") &raquo;</a>
+			<a class="btn btn-secondary" href="@graphs.controllers.routes.HomeController.team" role="button">@messages("team.title") &raquo;</a>
 		</div>
 	</div>
 </div>
+<ul>
+	<li>Play shouts out: <em>@message</em></li>
+	<li>Scala.js shouts out: <em id="scalajsShoutOut"></em></li>
+</ul>
 }{ }

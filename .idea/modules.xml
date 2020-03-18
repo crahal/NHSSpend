@@ -4,6 +4,11 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/childhoodmaltreatment.iml" filepath="$PROJECT_DIR$/childhoodmaltreatment.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/childhoodmaltreatment-build.iml" filepath="$PROJECT_DIR$/.idea/modules/childhoodmaltreatment-build.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/childhoodmaltreatment-sources.iml" filepath="$PROJECT_DIR$/.idea/modules/childhoodmaltreatment-sources.iml" group="shared" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/client.iml" filepath="$PROJECT_DIR$/.idea/modules/client.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/server.iml" filepath="$PROJECT_DIR$/.idea/modules/server.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/sharedJS.iml" filepath="$PROJECT_DIR$/.idea/modules/sharedJS.iml" group="shared" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/sharedJVM.iml" filepath="$PROJECT_DIR$/.idea/modules/sharedJVM.iml" group="shared" />
     </modules>
   </component>
 </project>

@@ -1,4 +1,4 @@
-logs
+server/logs
 target
 .idea/workspace.xml
 .idea/usage.statistics.xml

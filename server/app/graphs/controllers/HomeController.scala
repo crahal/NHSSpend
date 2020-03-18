@@ -1,10 +1,11 @@
-package controllers
+package graphs.controllers
 
 import javax.inject._
 import models.{FileOption, Team}
 import play.api._
 import play.api.i18n._
 import play.api.mvc._
+import graphs.shared.SharedMessages
 
 /**
  * This controller creates an `Action` to handle HTTP requests to the
@@ -21,7 +22,7 @@ class HomeController @Inject() (val controllerComponents: ControllerComponents, 
 	 * a path of `/`.
 	 */
 	def index(): Action[AnyContent] = Action { implicit request: Request[AnyContent] =>
-		Ok(views.html.index())
+		Ok(views.html.index(SharedMessages.itWorks))
 	}
 
 	def dash(): Action[AnyContent] = Action { implicit request: Request[AnyContent] =>
