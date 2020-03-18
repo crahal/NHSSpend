@@ -20,6 +20,7 @@
 @nav_top()
 @* And here's where we render the `Html` object containing
 * the page content. *@
+@* TESTING removing the outer container has caused the footer to run over the content, this shouldnt happen *@
 <div class="container-fluid position-absolute top-0 h-100">
 	<div class="row h-100">
 		<main class="col-12 col-md-12 ml-sm-auto px-0 bg-dark text-light" role="main">
@@ -27,7 +28,7 @@
 				<div class="p-4 h-100">
 					@content
 				</div>
-				<div class="mt-4">
+				<div>
 					@authorship()
 				</div>
 			</div>
