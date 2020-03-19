@@ -43,6 +43,7 @@
 @webJarsUtil.locate("umd/popper.min.js").script()
 @webJarsUtil.locate("bootstrap.min.js").script()
 @scalajs.html.scripts("client", routes.Assets.versioned(_).toString, name => getClass.getResource(s"/public/$name") != null)
+@scalajs.html.scripts("clientGraphing", routes.Assets.versioned(_).toString, name => getClass.getResource(s"/public/$name") != null)
 @scripts
 </body>
 </html>

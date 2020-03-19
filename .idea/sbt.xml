@@ -8,6 +8,7 @@
           <set>
             <option value="$PROJECT_DIR$" />
             <option value="$PROJECT_DIR$/client" />
+            <option value="$PROJECT_DIR$/clientGraphing" />
             <option value="$PROJECT_DIR$/project" />
             <option value="$PROJECT_DIR$/server" />
             <option value="$PROJECT_DIR$/shared" />

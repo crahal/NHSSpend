@@ -11,7 +11,7 @@ version := "1.0-SNAPSHOT"
 lazy val server = (project in file("server"))
 	.settings(commonSettings)
 	.settings(
-		scalaJSProjects := Seq(client),
+		scalaJSProjects := Seq(client, clientGraphing),
 		pipelineStages in Assets := Seq(scalaJSPipeline),
 		pipelineStages := Seq(digest, gzip),
 		// triggers scalaJSPipeline when using compile or continuous compilation
@@ -42,6 +42,18 @@ lazy val client = (project in file("client"))
 	.settings(
 		scalaJSUseMainModuleInitializer := true,
 		mainClass in compile := Some("graphs.Main"),
+		libraryDependencies ++= Seq(
+			"org.scala-js" %%% "scalajs-dom" % "1.0.0"
+		),
+	)
+	.enablePlugins(ScalaJSPlugin, ScalaJSWeb)
+	.dependsOn(sharedJs)
+
+lazy val clientGraphing = (project in file("clientGraphing"))
+	.settings(commonSettings)
+	.settings(
+		scalaJSUseMainModuleInitializer := true,
+		mainClass in compile := Some("graphs.Graphing"),
 		libraryDependencies ++= Seq(
 			"org.scala-js" %%% "scalajs-dom" % "1.0.0"
 		),

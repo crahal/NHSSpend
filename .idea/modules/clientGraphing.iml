@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<module external.linked.project.id="client [file:/C:/Users/Ian/IntelliJIDEAProjects/childhoodmaltreatment/]" external.linked.project.path="$MODULE_DIR$/../../client" external.root.project.path="$MODULE_DIR$/../.." external.system.id="SBT" type="JAVA_MODULE" version="4">
+<module external.linked.project.id="clientGraphing [file:/C:/Users/Ian/IntelliJIDEAProjects/childhoodmaltreatment/]" external.linked.project.path="$MODULE_DIR$/../../clientGraphing" external.root.project.path="$MODULE_DIR$/../.." external.system.id="SBT" type="JAVA_MODULE" version="4">
   <component name="NewModuleRootManager" LANGUAGE_LEVEL="JDK_12">
-    <output url="file://$MODULE_DIR$/../../client/target/scala-2.13/classes" />
-    <output-test url="file://$MODULE_DIR$/../../client/target/scala-2.13/test-classes" />
+    <output url="file://$MODULE_DIR$/../../clientGraphing/target/scala-2.13/classes" />
+    <output-test url="file://$MODULE_DIR$/../../clientGraphing/target/scala-2.13/test-classes" />
     <exclude-output />
-    <content url="file://$MODULE_DIR$/../../client">
-      <sourceFolder url="file://$MODULE_DIR$/../../client/src/main/scala" isTestSource="false" />
-      <excludeFolder url="file://$MODULE_DIR$/../../client/target" />
+    <content url="file://$MODULE_DIR$/../../clientGraphing">
+      <sourceFolder url="file://$MODULE_DIR$/../../clientGraphing/src/main/scala" isTestSource="false" />
+      <excludeFolder url="file://$MODULE_DIR$/../../clientGraphing/target" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
