@@ -5,7 +5,7 @@ import org.scalajs.dom
 import org.scalajs.dom.raw.{Element, Event, HTMLElement}
 
 object Main {
-	def anchorScroll(fragment: String) {
+	def anchorScroll(fragment: String): Unit = {
 		val amount: Int = dom.document.getElementById("nav-header").clientHeight
 		val ttarget: Element = dom.document.getElementById(fragment)
 		ttarget match {
@@ -20,7 +20,7 @@ object Main {
 		}
 	}
 
-	def scrollToWindowHash(event: Event) {
+	def scrollToWindowHash(event: Event): Unit = {
 		if (dom.window.location.hash != "") {
 			val fragment: String = dom.window.location.hash.substring(1)
 			anchorScroll(fragment)
