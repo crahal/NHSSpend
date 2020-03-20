@@ -8,6 +8,7 @@
       <parameters>
         <parameter value="-P:scalajs:mapSourceURI:file:/C:/Users/Ian/IntelliJIDEAProjects/childhoodmaltreatment/client/src/main/scala/-&gt;a4229b00a015af7a5a9b/" />
         <parameter value="-Xfatal-warnings" />
+        <parameter value="-target:11" />
       </parameters>
       <plugins>
         <plugin path="C:\Users\Ian\AppData\Local\Coursier\cache\v1\https\repo1.maven.org\maven2\org\scala-js\scalajs-compiler_2.13.1\1.0.0\scalajs-compiler_2.13.1-1.0.0.jar" />
@@ -21,6 +22,7 @@
         <parameter value="-encoding" />
         <parameter value="utf8" />
         <parameter value="-Xfatal-warnings" />
+        <parameter value="-target:11" />
       </parameters>
     </profile>
     <profile name="sbt 3" modules="childhoodmaltreatment" />
@@ -29,6 +31,7 @@
       <option name="featureWarnings" value="true" />
       <parameters>
         <parameter value="-Xfatal-warnings" />
+        <parameter value="-target:11" />
       </parameters>
       <plugins>
         <plugin path="C:\Users\Ian\AppData\Local\Coursier\cache\v1\https\repo1.maven.org\maven2\org\scala-js\scalajs-compiler_2.13.1\1.0.0\scalajs-compiler_2.13.1-1.0.0.jar" />
@@ -40,6 +43,7 @@
       <parameters>
         <parameter value="-P:scalajs:mapSourceURI:file:/C:/Users/Ian/IntelliJIDEAProjects/childhoodmaltreatment/clientGraphing/src/main/scala/-&gt;c53a48c1cf314834b16b/" />
         <parameter value="-Xfatal-warnings" />
+        <parameter value="-target:11" />
       </parameters>
       <plugins>
         <plugin path="C:\Users\Ian\AppData\Local\Coursier\cache\v1\https\repo1.maven.org\maven2\org\scala-js\scalajs-compiler_2.13.1\1.0.0\scalajs-compiler_2.13.1-1.0.0.jar" />
@@ -50,6 +54,7 @@
       <option name="featureWarnings" value="true" />
       <parameters>
         <parameter value="-Xfatal-warnings" />
+        <parameter value="-target:11" />
       </parameters>
     </profile>
   </component>

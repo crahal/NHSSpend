@@ -77,7 +77,8 @@ lazy val commonSettings = Seq(
 	scalacOptions ++= Seq(
 		"-feature",
 		"-deprecation",
-		"-Xfatal-warnings"
+		"-Xfatal-warnings",
+		"-target:11"
 	)
 )
 
