@@ -70,7 +70,12 @@ lazy val sharedJs = shared.js
 
 lazy val commonSettings = Seq(
 	scalaVersion := "2.13.1",
-	organization := "com.imknowles"
+	organization := "com.imknowles",
+	scalacOptions ++= Seq(
+		"-feature",
+		"-deprecation",
+		"-Xfatal-warnings"
+	)
 )
 
 // loads the server project at sbt startup
