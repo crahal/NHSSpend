@@ -1,0 +1,17 @@
+@(people: Seq[Person])(implicit webJarsUtil: org.webjars.play.WebJarsUtil, messages: Messages, request: Request[AnyContent])
+
+@import helper._
+
+@main("People") {
+<section id="content">
+	<table class="wrapper doc">
+		@for(n <- people) {
+		<tr>
+			<td><a href="">@n.id</a></td>
+			<td>@n.name</td>
+			<td>@n.age</td>
+		</tr>
+		}
+	</table>
+</section>
+}()

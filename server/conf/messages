@@ -30,3 +30,8 @@ controls.graph.category=Filter by characteristic
 
 controls.data.share=Share
 controls.data.download=Download
+
+name = Name
+age = Age
+
+user.created = You have successfully created a user!
