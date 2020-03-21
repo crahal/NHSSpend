@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <bytecodeTargetLevel>
+      <module name="client" target="11" />
+      <module name="clientGraphing" target="11" />
+      <module name="server" target="11" />
+      <module name="sharedJS" target="11" />
+      <module name="sharedJVM" target="11" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

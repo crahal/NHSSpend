@@ -79,7 +79,8 @@ lazy val commonSettings = Seq(
 		"-deprecation",
 		"-Xfatal-warnings",
 		"-target:11"
-	)
+	),
+	javacOptions ++= Seq("-target", "11")
 )
 
 // loads the server project at sbt startup
