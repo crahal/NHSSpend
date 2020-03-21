@@ -1,11 +1,11 @@
 # https://www.playframework.com/documentation/latest/ScalaI18N
-site.title=Child Maltreatment in the UK
-site.desc=site.desc
-project.name=project.name
+site.title=COVID-19 Demography
+site.desc=A collection of visualisations and data for demographic risks of COVID-19
+project.name=COVID-19 dashboard
 
 index.title=Home
-index.jumbo.title=A data resource for measuring child maltreatment
-index.jumbo.desc=A collection of historic data on indicators of child maltreatment in England and Wales.
+index.jumbo.title=COVID-19 Demography
+index.jumbo.desc=A collection of visualisations and data for demographic risks of COVID-19
 
 team.title=Team
 team.desc=Meet the project members.

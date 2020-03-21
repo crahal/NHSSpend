@@ -9,6 +9,8 @@
       <sourceFolder url="file://$MODULE_DIR$/../../server/test" isTestSource="true" />
       <sourceFolder url="file://$MODULE_DIR$/../../server/conf" type="java-resource" />
       <sourceFolder url="file://$MODULE_DIR$/../../server/public" type="java-resource" />
+      <sourceFolder url="file://$MODULE_DIR$/../../server/target/scala-2.13/routes/main" isTestSource="false" generated="true" />
+      <sourceFolder url="file://$MODULE_DIR$/../../server/target/scala-2.13/twirl/main" isTestSource="false" generated="true" />
       <excludeFolder url="" />
     </content>
     <orderEntry type="inheritedJdk" />
