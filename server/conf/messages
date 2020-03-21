@@ -10,12 +10,15 @@ index.jumbo.desc=A collection of historic data on indicators of child maltreatme
 team.title=Team
 team.desc=Meet the project members.
 
-dash.title=Data
+dash.title=Time series
 dash.desc=View the data collection.
+
+donut.title=Donut
 
 project.title=Project
 project.desc=See the background of the project, and an overview of the data sources.
 
+nav.data.title=Data
 nav.about.title=About
 nav.currentPageIndicator=Current
 privacy.title=Privacy Policy
