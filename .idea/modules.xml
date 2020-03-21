@@ -2,15 +2,15 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/childhoodmaltreatment.iml" filepath="$PROJECT_DIR$/childhoodmaltreatment.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/childhoodmaltreatment-build.iml" filepath="$PROJECT_DIR$/.idea/modules/childhoodmaltreatment-build.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/childhoodmaltreatment-sources.iml" filepath="$PROJECT_DIR$/.idea/modules/childhoodmaltreatment-sources.iml" group="shared" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/childhoodmaltreatment.clientGraphing.iml" filepath="$PROJECT_DIR$/.idea/modules/childhoodmaltreatment.clientGraphing.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/client.iml" filepath="$PROJECT_DIR$/.idea/modules/client.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/clientGraphing.iml" filepath="$PROJECT_DIR$/.idea/modules/clientGraphing.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/server.iml" filepath="$PROJECT_DIR$/.idea/modules/server.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/sharedJS.iml" filepath="$PROJECT_DIR$/.idea/modules/sharedJS.iml" group="shared" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/sharedJVM.iml" filepath="$PROJECT_DIR$/.idea/modules/sharedJVM.iml" group="shared" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/covid19dash.iml" filepath="$PROJECT_DIR$/.idea/modules/covid19dash.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/covid19dash-build.iml" filepath="$PROJECT_DIR$/.idea/modules/covid19dash-build.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/covid19dash-sources.iml" filepath="$PROJECT_DIR$/.idea/modules/covid19dash-sources.iml" group="covid_19_shared" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/covid_19_client.iml" filepath="$PROJECT_DIR$/.idea/modules/covid_19_client.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/covid_19_clientGraphing.iml" filepath="$PROJECT_DIR$/.idea/modules/covid_19_clientGraphing.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/covid_19_server.iml" filepath="$PROJECT_DIR$/.idea/modules/covid_19_server.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/covid_19_sharedJS.iml" filepath="$PROJECT_DIR$/.idea/modules/covid_19_sharedJS.iml" group="covid_19_shared" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/covid_19_sharedJVM.iml" filepath="$PROJECT_DIR$/.idea/modules/covid_19_sharedJVM.iml" group="covid_19_shared" />
     </modules>
   </component>
 </project>

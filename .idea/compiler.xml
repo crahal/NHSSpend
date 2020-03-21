@@ -4,6 +4,11 @@
     <bytecodeTargetLevel>
       <module name="client" target="11" />
       <module name="clientGraphing" target="11" />
+      <module name="covid_19_client" target="11" />
+      <module name="covid_19_clientGraphing" target="11" />
+      <module name="covid_19_server" target="11" />
+      <module name="covid_19_sharedJS" target="11" />
+      <module name="covid_19_sharedJVM" target="11" />
       <module name="server" target="11" />
       <module name="sharedJS" target="11" />
       <module name="sharedJVM" target="11" />

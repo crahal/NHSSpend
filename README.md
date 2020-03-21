@@ -1,3 +1,5 @@
-# childprotectiondata
+# covid19dash
 
-A Play Framework backend for UK Child Protection Data.
+A data dashboard for Covid-19 demography.
+A Play Framework backend with Scala.js frontend and database support. Based on work on the UK child protection data
+dashboard https://github.com/ianknowles/childprotectiondata

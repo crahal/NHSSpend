@@ -6,7 +6,7 @@
       <option name="deprecationWarnings" value="true" />
       <option name="featureWarnings" value="true" />
       <parameters>
-        <parameter value="-P:scalajs:mapSourceURI:file:/C:/Users/Ian/IntelliJIDEAProjects/childhoodmaltreatment/client/src/main/scala/-&gt;a4229b00a015af7a5a9b/" />
+        <parameter value="-P:scalajs:mapSourceURI:file:/C:/Users/Ian/IntelliJIDEAProjects/covid19dash/covid-19-client/src/main/scala/-&gt;26a07026d655de3a2e3c/" />
         <parameter value="-Xfatal-warnings" />
         <parameter value="-target:11" />
       </parameters>
@@ -14,7 +14,7 @@
         <plugin path="C:\Users\Ian\AppData\Local\Coursier\cache\v1\https\repo1.maven.org\maven2\org\scala-js\scalajs-compiler_2.13.1\1.0.0\scalajs-compiler_2.13.1-1.0.0.jar" />
       </plugins>
     </profile>
-    <profile name="sbt 2" modules="server">
+    <profile name="sbt 2" modules="covid_19_server,server">
       <option name="deprecationWarnings" value="true" />
       <option name="uncheckedWarnings" value="true" />
       <option name="featureWarnings" value="true" />
@@ -25,8 +25,8 @@
         <parameter value="-target:11" />
       </parameters>
     </profile>
-    <profile name="sbt 3" modules="childhoodmaltreatment" />
-    <profile name="sbt 4" modules="sharedJS">
+    <profile name="sbt 3" modules="childhoodmaltreatment,covid19dash" />
+    <profile name="sbt 4" modules="covid_19_sharedJS,sharedJS">
       <option name="deprecationWarnings" value="true" />
       <option name="featureWarnings" value="true" />
       <parameters>
@@ -41,7 +41,7 @@
       <option name="deprecationWarnings" value="true" />
       <option name="featureWarnings" value="true" />
       <parameters>
-        <parameter value="-P:scalajs:mapSourceURI:file:/C:/Users/Ian/IntelliJIDEAProjects/childhoodmaltreatment/clientGraphing/src/main/scala/-&gt;c53a48c1cf314834b16b/" />
+        <parameter value="-P:scalajs:mapSourceURI:file:/C:/Users/Ian/IntelliJIDEAProjects/covid19dash/covid-19-clientGraphing/src/main/scala/-&gt;898ceb9650f1f9449b85/" />
         <parameter value="-Xfatal-warnings" />
         <parameter value="-target:11" />
       </parameters>
@@ -49,13 +49,37 @@
         <plugin path="C:\Users\Ian\AppData\Local\Coursier\cache\v1\https\repo1.maven.org\maven2\org\scala-js\scalajs-compiler_2.13.1\1.0.0\scalajs-compiler_2.13.1-1.0.0.jar" />
       </plugins>
     </profile>
-    <profile name="sbt 6" modules="sharedJVM">
+    <profile name="sbt 6" modules="covid_19_sharedJVM,sharedJVM">
       <option name="deprecationWarnings" value="true" />
       <option name="featureWarnings" value="true" />
       <parameters>
         <parameter value="-Xfatal-warnings" />
         <parameter value="-target:11" />
       </parameters>
+    </profile>
+    <profile name="sbt 7" modules="covid_19_client">
+      <option name="deprecationWarnings" value="true" />
+      <option name="featureWarnings" value="true" />
+      <parameters>
+        <parameter value="-P:scalajs:mapSourceURI:file:/C:/Users/Ian/IntelliJIDEAProjects/covid19dash/client/src/main/scala/-&gt;452e86d96cd8c35054bf/" />
+        <parameter value="-Xfatal-warnings" />
+        <parameter value="-target:11" />
+      </parameters>
+      <plugins>
+        <plugin path="C:\Users\Ian\AppData\Local\Coursier\cache\v1\https\repo1.maven.org\maven2\org\scala-js\scalajs-compiler_2.13.1\1.0.0\scalajs-compiler_2.13.1-1.0.0.jar" />
+      </plugins>
+    </profile>
+    <profile name="sbt 8" modules="covid_19_clientGraphing">
+      <option name="deprecationWarnings" value="true" />
+      <option name="featureWarnings" value="true" />
+      <parameters>
+        <parameter value="-P:scalajs:mapSourceURI:file:/C:/Users/Ian/IntelliJIDEAProjects/covid19dash/clientGraphing/src/main/scala/-&gt;4712a3f69d27cfe68bc6/" />
+        <parameter value="-Xfatal-warnings" />
+        <parameter value="-target:11" />
+      </parameters>
+      <plugins>
+        <plugin path="C:\Users\Ian\AppData\Local\Coursier\cache\v1\https\repo1.maven.org\maven2\org\scala-js\scalajs-compiler_2.13.1\1.0.0\scalajs-compiler_2.13.1-1.0.0.jar" />
+      </plugins>
     </profile>
   </component>
 </project>
