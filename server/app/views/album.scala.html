@@ -1,0 +1,23 @@
+@(files: List[Image])(implicit webJarsUtil: org.webjars.play.WebJarsUtil, messages: Messages, request: Request[AnyContent])
+
+@main(s"${messages("album.title")} - ${messages("site.title")}") {
+	<section class="jumbotron text-center">
+		<div class="container">
+			<h1 class="text-dark">Capacity maps</h1>
+			<p class="lead text-muted">A collection of capacity maps</p>
+			<p>
+				<a href="#" class="btn btn-primary my-2">Download collection</a>
+				<a href="#" class="btn btn-secondary my-2">View other collections</a>
+			</p>
+		</div>
+	</section>
+	<div class="album py-5 bg-light">
+		<div class="container">
+			<div class="row">
+				@for(file <- files) {
+				@views.html.albumImage(file)
+				}
+			</div>
+		</div>
+	</div>
+}()

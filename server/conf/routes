@@ -11,6 +11,7 @@ GET     /about                      graphs.controllers.HomeController.about
 GET     /project                    graphs.controllers.HomeController.project
 GET     /team                       graphs.controllers.HomeController.team
 GET     /privacy                    graphs.controllers.HomeController.privacy
+GET     /album                      graphs.controllers.HomeController.album
 
 GET     /addPerson                  graphs.controllers.PersonController.index
 POST    /person                     graphs.controllers.PersonController.addPerson
