@@ -12,6 +12,7 @@
       <sourceFolder url="file://$MODULE_DIR$/../../server/target/scala-2.13/routes/main" isTestSource="false" generated="true" />
       <sourceFolder url="file://$MODULE_DIR$/../../server/target/scala-2.13/twirl/main" isTestSource="false" generated="true" />
       <excludeFolder url="" />
+      <excludeFolder url="file://$MODULE_DIR$/../../server/target" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
