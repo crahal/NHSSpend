@@ -28,6 +28,8 @@ class HomeController @Inject() (val controllerComponents: ControllerComponents, 
 		Ok(views.html.index(SharedMessages.itWorks))
 	}
 
+	def coming_soon(): Action[AnyContent] = TODO
+
 	def dash(): Action[AnyContent] = Action { implicit request: Request[AnyContent] =>
 		//TODO should use the directory listing to filter for files present
 		Environment.simple().getFile("server/public/data").listFiles()

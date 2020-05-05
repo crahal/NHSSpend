@@ -4,7 +4,8 @@
 # ~~~~
 
 # An example controller showing a sample home page
-GET     /                           graphs.controllers.HomeController.index
+GET     /                           graphs.controllers.HomeController.coming_soon
+GET     /home                       graphs.controllers.HomeController.index
 GET     /dash                       graphs.controllers.HomeController.dash
 GET     /donut                      graphs.controllers.HomeController.donut
 GET     /about                      graphs.controllers.HomeController.about
