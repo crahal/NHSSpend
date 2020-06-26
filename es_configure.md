@@ -1,6 +1,6 @@
 <img src="https://github.com/crahal/NHSSpend/blob/master/papers/figures/matching_summary.png" width="900"/>
----
-# Configuring ES for NHSSpend
+
+# Configuring Elasticsearch for NHSSpend
 
 This is a readme to detail how to set up the elastic search functionality associated with the NHSSpend repo (where the figure header shows the match performance from the entire library). It represents an extremely high level implementation for approximate string matching of procurement suppliers with institutional registers (NHS Digital, Companies House and the Charity Commission).
 
