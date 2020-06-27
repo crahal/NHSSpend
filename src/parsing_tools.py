@@ -18,13 +18,13 @@ logging.getLogger().setLevel(logging.ERROR)
 
 
 async def process_path(ccg_data_path, abrev):
-    results = []
     for (dirpath, dirnames, filenames) in os.walk(os.path.join(ccg_data_path,
                                                                abrev)):
         for filename in filenames:
             name, file_type = os.path.splitext(os.path.join(ccg_data_path,
                                                             abrev))
-            if filename.endswith('.pdf'):
+
+            if (filename.endswith('.pdf')):
                 if os.path.exists(
                    os.path.join(ccg_data_path, abrev, filename+'.csv')) is False:
                     try:
@@ -125,8 +125,20 @@ def createdir(filepath, ins_type, ins):
     module_logger.info('Working on ' + ins + '.')
 
 
+def remove_null_files(filepath, abrev):
+    remList = ['annual','report','map','guide', 'fact', 'govern', 'leadership']
+    allFiles = glob.glob(os.path.join(filepath, abrev, '*'))
+    for file_ in allFiles:
+        if file_.endswith('.pdf'):
+            for word in remList:
+                if word in file_:
+                    os.remove(file_)
+                    break
+
+
 def parse_wrapper(ccg_data_path, filepath, abrev):
     try:
+        remove_null_files(ccg_data_path, abrev)
         asyncio.run(process_path(ccg_data_path, abrev))
         df = parse_data(ccg_data_path, abrev)
         df.to_csv(os.path.join(filepath, '../..', 'cleaned',
@@ -186,6 +198,8 @@ def clean_df(df, list_, file_, filepath):
         while (((any("supplier" in str(s).lower() for s in list(df.iloc[0]))) is False)
                and ((any("merchant" in str(s).lower() for s in list(df.iloc[0]))) is False)
                and ((any("merchant name" in str(s).lower() for s in list(df.iloc[0]))) is False)
+               and ((any("vendor name" in str(s).lower() for s in list(df.iloc[0]))) is False)
+               and ((any("suppidt)" in str(s).lower() for s in list(df.iloc[0]))) is False)
                and ((any("supplier name" in str(s).lower() for s in list(df.iloc[0]))) is False)) \
             or (((any("amount" in str(s).lower() for s in list(df.iloc[0]))) is False)
                     and ((any("total" in str(s).lower() for s in list(df.iloc[0]))) is False)
@@ -202,6 +216,29 @@ def clean_df(df, list_, file_, filepath):
                                     ntpath.basename(file_) +
                                     '. ' + str(e))
         df.columns = heading_replacer(list(df.iloc[0]), filepath)
+        if file_.endswith('.pdf.csv'):
+            counter = 0
+            amount_count = np.nan
+            vat_count = np.nan
+            trans_count = np.nan
+            for col in df.columns.tolist():
+                counter = counter + 1
+                if 'vat' in col.lower():
+                    vat_count = counter
+                if 'amount' in col.lower():
+                    amount_count = counter
+                if amount_count == vat_count-1:
+                    df['amount'] = np.nan
+                    break
+            for col in df.columns.tolist():
+                counter = counter + 1
+                if 'trans' in col.lower():
+                    trans_count = counter
+                if 'amount' in col.lower():
+                    amount_count = counter
+                if (amount_count == trans_count-1) or  (amount_count == trans_count+1):
+                    df = df[~(df['transactionnumber'].isnull())]
+                    break
         if len(df.columns.tolist()) != len(set(df.columns.tolist())):
             df = df.loc[:, ~df.columns.duplicated()]
         df = df.iloc[1:]
@@ -256,7 +293,8 @@ def parse_data(filepath, department, filestoskip=[]):
         filepath, '..', '..', 'data_support', 'remfields.csv'),
         names=['replacement'])['replacement'].values.tolist()
     for file_ in allFiles:
-        if ntpath.basename(file_).split('.')[0] not in filenames:
+        if (', '.join(ntpath.basename(file_).split('.')[0]) not in filenames) and \
+           (ntpath.basename(file_).endswith('.pdf') is False):
             filenames.append(ntpath.basename(file_).split('.')[0])
             if ntpath.basename(file_) in [x.lower() for x in filestoskip]:
                 module_logger.info(ntpath.basename(file_) +
@@ -266,7 +304,7 @@ def parse_data(filepath, department, filestoskip=[]):
                 module_logger.debug(ntpath.basename(
                     file_) + ' is 0b: skipping')
                 continue
-            if file_.lower().endswith(tuple(['.csv', '.xls',
+            if file_.lower().endswith(tuple(['.csv', '.xls', '.tsv',
                                              '.xlsx', '.ods'])) is False:
                 module_logger.debug(ntpath.basename(file_) +
                                     ': not csv, xls, xlsx or ods: ' +
@@ -278,26 +316,33 @@ def parse_data(filepath, department, filestoskip=[]):
                 try:
                     df = load_excel(file_)
                 except Exception as e:
-                    module_logger.debug('cant read ' + str(file_) +
-                                        ' as .xls')
+                    try:
+                        df = load_text(file_)
+                        module_logger.debug('cant read ' + str(file_) + ' as' +
+                                            ' .xls, but can read a text file')
+                    except:
+                       module_logger.debug('cant read ' + str(file_) +
+                                          ' as .xls or a text file')
             elif (file_.lower().endswith('.csv')) or\
                  (file_.lower().endswith('.tsv')):
                 try:
                     df = load_text(file_)
                 except Exception as f:
-                        module_logger.debug('cant read ' + str(file_) +
-                                            ' as csv/tsv')
-                        print(traceback.format_exc())
+                    module_logger.debug('cant read ' + str(file_) +
+                                        ' as csv/tsv')
+                    print(traceback.format_exc())
             elif (file_.lower().endswith('.ods')):
                 df = read_ods(file_)
                 df.index = df.index + 1  # shifting index
                 df = df.sort_index()
-            if not df.empty:
-                df = clean_df(df, list_, file_, filepath)
-                try:
+            else:
+                print('???')
+            try:
+                if not df.empty:
+                    df = clean_df(df, list_, file_, filepath)
                     list_.append(df)
-                except:
-                    pass
+            except Exception as e:
+                print(e)
             else:
                 continue
     frame = pd.concat(list_, sort=False)
@@ -325,33 +370,32 @@ def read_ods(filename, sheet_no=0, header=0):
     return df.T.reset_index(drop=False).T
 
 
-def merge_files(rawpath):
-    frame = pd.DataFrame()
-    list_ = []
-    for file_ in glob.glob(os.path.join(rawpath, '..', 'output',
-                                        'mergeddepts', '*.csv')):
-        df = pd.read_csv(file_, index_col=None, low_memory=False,
-                         header=0, encoding='latin-1',
-                         dtype={'transactionnumber': str,
-                                'amount': float,
-                                'supplier': str,
-                                'date': str,
-                                'expensearea': str,
-                                'expensetype': str,
-                                'file': str})
-
-        df['dept'] = ntpath.basename(file_)[:-4]
-        list_.append(df)
-    frame = pd.concat(list_, sort=False)
-    frame.dropna(thresh=0.90 * len(df), axis=1, inplace=True)
-    if pd.to_numeric(frame['date'], errors='coerce').notnull().all():
-        frame['date'] = pd.to_datetime(frame['date'].apply(read_date),
-                                       dayfirst=True,
-                                       errors='coerce')
-    else:
-        df['date'] = pd.to_datetime(df['date'],
-                                    dayfirst=True,
-                                    errors='coerce')
-    frame['transactionnumber'] = frame['transactionnumber'].str.replace('[^\w\s]', '')
-    frame['transactionnumber'] = frame['transactionnumber'].str.strip("0")
-    return frame
+#def merge_files(rawpath):
+#    frame = pd.DataFrame()
+#    list_ = []
+#    for file_ in glob.glob(os.path.join(rawpath, '..', 'output',
+#                                        'mergeddepts', '*.csv')):
+#        df = pd.read_csv(file_, index_col=None, low_memory=False,
+#                         header=0, encoding='latin-1',
+#                         dtype={'transactionnumber': str,
+#                                'amount': float,
+#                                'supplier': str,
+#                                'date': str,
+#                                'expensearea': str,
+#                                'expensetype': str,
+#                                'file': str})
+#        df['dept'] = ntpath.basename(file_)[:-4]
+#        list_.append(df)
+#    frame = pd.concat(list_, sort=False)
+#    frame.dropna(thresh=0.90 * len(df), axis=1, inplace=True)
+#    if pd.to_numeric(frame['date'], errors='coerce').notnull().all():
+#        frame['date'] = pd.to_datetime(frame['date'].apply(read_date),
+#                                       dayfirst=True,
+#                                       errors='coerce')
+#    else:
+#        df['date'] = pd.to_datetime(df['date'],
+#                                    dayfirst=True,
+#                                    errors='coerce')
+#    frame['transactionnumber'] = frame['transactionnumber'].str.replace('[^\w\s]', '')
+#    frame['transactionnumber'] = frame['transactionnumber'].str.strip("0")
+#    return frame

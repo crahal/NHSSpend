@@ -13,7 +13,7 @@ from pdfminer.layout import LTTextBoxHorizontal
 from pdfminer.layout import LTRect, LTChar
 from pdfminer.layout import LTAnon, LTComponent
 from pdfminer.pdfinterp import PDFResourceManager, PDFPageInterpreter
-from pdfminer.pdfinterp import PDFTextExtractionNotAllowed
+#from pdfminer.pdfinterp import PDFTextExtractionNotAllowed
 from pdfminer.pdfparser import PDFParser, PDFDocument
 #from log_setup import logging_setup
 

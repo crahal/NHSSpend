@@ -12,7 +12,7 @@ connections.create_connection(hosts=['localhost'], timeout=20)
 client = Elasticsearch()
 
 
-def normalizer(name, norm_dict):
+def normalizer(name, norm_dict={}):
     ''' normalise entity names with manually curated dict'''
     if isinstance(name, str):
         name = name.upper()
@@ -67,8 +67,10 @@ def save_to_csv(rows, filepath, num_matches):
 
 def reconcile_general(mergepath, reconcilepath, filename,  num_matches=5):
     ''' high level reconciliation function for raw names'''
-    suppliers = pd.read_csv(os.path.join(mergepath, filename), sep='\t')
-    matchlist = suppliers["supplier"].unique().tolist()
+    suppliers_ccg = pd.read_csv(os.path.join(mergepath, filename[0]), sep='\t')
+    suppliers_trust = pd.read_csv(os.path.join(mergepath, filename[1]), sep='\t')
+    matchlist = suppliers_ccg["supplier"].tolist()+suppliers_trust["supplier"].tolist()
+    matchlist = list(set(matchlist))
     company_responses = get_matches(matchlist, 'general', num_matches)
     save_path = os.path.join(reconcilepath, 'general_matches.csv')
     save_to_csv(company_responses, save_path, num_matches)
@@ -77,12 +79,16 @@ def reconcile_general(mergepath, reconcilepath, filename,  num_matches=5):
 def reconcile_general_norm(mergepath, reconcilepath, filename,
                            norm_path, num_matches=5):
     ''' high level reconciliation function for normalised names'''
-    suppliers = pd.read_csv(os.path.join(mergepath, filename), sep='\t')
+    suppliers_ccg = pd.read_csv(os.path.join(mergepath, filename[0]), sep='\t')
     norm_df = pd.read_csv(norm_path, sep='\t')
     norm_dict = dict(zip(norm_df['REPLACETHIS'], norm_df['WITHTHIS']))
-    suppliers['supplier'] = suppliers['supplier'].\
+    suppliers_ccg['supplier'] = suppliers_ccg['supplier'].\
         apply(lambda x: normalizer(x, norm_dict))
-    matchlist = suppliers["supplier"].unique().tolist()
+    suppliers_trust = pd.read_csv(os.path.join(mergepath, filename[1]), sep='\t')
+    suppliers_trust['supplier'] = suppliers_trust['supplier'].\
+        apply(lambda x: normalizer(x, norm_dict))
+    matchlist = suppliers_ccg["supplier"].tolist()+suppliers_trust["supplier"].tolist()
+    matchlist = list(set(matchlist))
     company_responses = get_matches(matchlist, 'general_norm', num_matches)
     save_path = os.path.join(reconcilepath, 'general_norm_matches.csv')
     save_to_csv(company_responses, save_path, num_matches)
