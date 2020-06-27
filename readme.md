@@ -30,7 +30,9 @@ This code is made available under an MIT License.
 
 ## TODO:
 
-* Complete analysis notebooks for figure creation and general content for inclusion into the initial two papers
+* Complete analysis notebooks for figure creation and general content for inclusion into the initial two academic papers
 * Clean up and review the scrapers and debug fully the scraping and parsing pipeline
+* Finalise dashboar release
+* Docstrings for src
 
 Last updated: 2020-01-24
