@@ -1,4 +1,4 @@
-<img src="https://github.com/crahal/NHSSpend/blob/master/papers/figures/nhs_spending_macro.png" width="900"/>
+<img src="https://github.com/crahal/NHSSpend/blob/master/papers/figures/nhs_spending_macro_header.png" width="900"/>
 
 # NHSSpend
 
