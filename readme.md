@@ -21,7 +21,7 @@ The procurement data itself is provided under an [Open Government License](http:
 
 ## Reconciliation
 
-The `es_configure.md` describes the recocniliation approach. These recocniliations are then manually verified and merged back into the procurement data.
+The `es_configure.md` describes the reconciliation approach. These recocniliations are then manually verified and merged back into the procurement data.
 
 
 ## Licensing
