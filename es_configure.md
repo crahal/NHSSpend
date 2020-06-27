@@ -1,4 +1,4 @@
-<img src="https://github.com/crahal/NHSSpend/blob/master/papers/figures/matching_summary.png" width="900"/>
+<img src="https://github.com/crahal/NHSSpend/blob/master/papers/figures/matching_summary_header.png" width="900"/>
 
 # Configuring Elasticsearch for NHSSpend
 
