@@ -32,26 +32,26 @@ Repo structure is based on the ```tree``` [utility](https://en.wikipedia.org/wik
 ├── requirements.txt  
 ├── src  
     └── charity_parser  
-    │   charity_analysis_notebook.ipynb  
-    │   general_analysis_functions.py  
-    │   helper_functions.py  
-    │   charity_analysis_functions.py  
+        │   charity_analysis_notebook.ipynb  
+        │   general_analysis_functions.py  
+        │   helper_functions.py  
+        │   charity_analysis_functions.py  
     └── analysis  
-    │   charity_analysis_notebook.ipynb  
-    │   general_analysis_functions.py  
-    │   helper_functions.py  
-    │   charity_analysis_functions.py  
-    └── dashboard  
-│   scrape_and_parse_ccgs.py  
-│   scrape_and_parse_trusts.py  
-│   scraping_tools.py  
-│   generate_output.py  
-│   ingest_everything.py  
-│   merge_and_evaluate_tools.py  
-│   NHSSpend.py  
-│   parsing_tools.py  
-│   pdf_table_parser.py  
-│   reconciliation.py  
+        │   charity_analysis_notebook.ipynb  
+        │   general_analysis_functions.py  
+        │   helper_functions.py  
+        │   charity_analysis_functions.py  
+        └── dashboard  
+    │   scrape_and_parse_ccgs.py  
+    │   scrape_and_parse_trusts.py  
+    │   scraping_tools.py  
+    │   generate_output.py  
+    │   ingest_everything.py  
+    │   merge_and_evaluate_tools.py  
+    │   NHSSpend.py  
+    │   parsing_tools.py  
+    │   pdf_table_parser.py  
+    │   reconciliation.py  
 ├── data  
     └── data_support/*  
     └── data_cc/*  
@@ -66,13 +66,14 @@ Repo structure is based on the ```tree``` [utility](https://en.wikipedia.org/wik
     └── data_shapefiles/*  
     └── data_summary/*  
 ├── papers  
-│   corporate_networks  
-│   figures  
-│   tables  
-│   third_sector  
-├── logging  
-│   nhsspend.log  
-└── eval_logs  
+    │   corporate_networks  
+    │   figures  
+    │   tables  
+    │   third_sector  
+    ├── logging  
+├── logging
+    │   nhsspend.log  
+    └── eval_logs  
 ├── tokens  
 
 ## Licensing
