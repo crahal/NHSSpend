@@ -31,11 +31,11 @@ Repo structure is based on the ```tree``` [utility](https://en.wikipedia.org/wik
 ├ es_configure.md  
 ├ requirements.txt  
 ├ src  
-  └ analysis  
-    │ charity_analysis_notebook.ipynb  
-     general_analysis_functions.py  
-    │ helper_functions.py  
-    │ charity_analysis_functions.py  
+│   └ analysis  
+│   │   ├─ charity_analysis_notebook.ipynb  
+│   │   ├─ general_analysis_functions.py  
+│   │   ├─ helper_functions.py  
+│   │   ├─ charity_analysis_functions.py  
   └ dashboard  
   │ scrape_and_parse_ccgs.py  
   │ scrape_and_parse_trusts.py  
