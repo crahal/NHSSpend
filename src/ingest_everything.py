@@ -31,11 +31,11 @@ def get_ch_data(url, path):
         soup = BeautifulSoup(r.text, features="html.parser")
         for a in soup.find_all('a', href=True):
             if 'BasicCompanyDataAsOneFile' in a['href']:
-                filename = a['href']
+                filename = 'BasicCompanyDataAsOneFile-2020-03-01.zip'#a['href']
                 url = 'http://download.companieshouse.gov.uk/' + filename
-                if os.path.exists(os.path.join(path, filename)) is False:
-                    with urllib.request.urlopen(url) as response, open(os.path.join(path, filename), 'wb') as out_file:
-                        shutil.copyfileobj(response, out_file)
+#                if os.path.exists(os.path.join(path, filename)) is False:
+#                    with urllib.request.urlopen(url) as response, open(os.path.join(path, filename), 'wb') as out_file:
+#                        shutil.copyfileobj(response, out_file)
     return os.path.join(path, filename)
 
 
@@ -45,24 +45,23 @@ def get_cc_data(cc_url, outputpath):
     r = requests.get(cc_url)
     zip_counter = 0
     list_of_zips = []
-    if r.ok:
-        soup = BeautifulSoup(r.text, features="html.parser")
-        for a in soup.find_all('a', href=True):
-            if '.zip' in str(a['href']):
-                filename = str(a['href']).split('/')[-1]
-                list_of_zips.append(filename)
-                zip_counter += 1
-                if zip_counter < 4:
-                    if os.path.exists(os.path.join(outputpath,
-                                                   filename)) is False:
-                        with urllib.request.urlopen(a['href']) as response,\
-                            open(os.path.join(outputpath,
-                                              filename), 'wb') as out_file:
-                            shutil.copyfileobj(response, out_file)
-                else:
-                    break
-    ImportCC.import_zip(os.path.join(outputpath, list_of_zips[0]), outputpath)
-    return os.path.join(outputpath, 'extract_name.csv')
+#    if r.ok:
+#        soup = BeautifulSoup(r.text, features="html.parser")
+#        for a in soup.find_all('a', href=True):
+#            if '.zip' in str(a['href']):
+#                filename = str(a['href']).split('/')[-1]
+#                list_of_zips.append(filename)
+#                zip_counter += 1
+#                if zip_counter < 4:
+#                    if os.path.exists(os.path.join(outputpath,
+#                                                   filename)) is False:
+#                        with urllib.request.urlopen(a['href']) as response,\
+#                            open(os.path.join(outputpath,
+#                                              filename), 'wb') as out_file:
+#                            shutil.copyfileobj(response, out_file)
+#                else:
+#                    break
+#    ImportCC.import_zip(os.path.join(outputpath, list_of_zips[0]), outputpath)
 
 
 def grab_nhsdigital_file(url, org_type, path):
@@ -94,13 +93,13 @@ def grab_all_nhsdigital(nhs_url, nhsdigital_path):
                     'schools': nhs_url+'eschools.zip',
                     'localauths': nhs_url+'Lauth.zip',
                     'prisons': nhs_url+'eprison.zip'}
-    master_df = pd.DataFrame()
-    for org_type, url in digital_dict.items():
-        master_df = master_df.append(grab_nhsdigital_file(url, org_type,
-                                                          nhsdigital_path))
-    master_df = master_df.reset_index()
-    master_df[['name', 'org_type']].to_csv(os.path.join(nhsdigital_path,
-                                                        'all_subdatasets.csv'))
+#    master_df = pd.DataFrame()
+#    for org_type, url in digital_dict.items():
+#        master_df = master_df.append(grab_nhsdigital_file(url, org_type,
+#                                                          nhsdigital_path))
+#    master_df = master_df.reset_index()
+#    master_df[['name', 'org_type']].to_csv(os.path.join(nhsdigital_path,
+#                                                        'all_subdatasets.csv'))
     return os.path.join(nhsdigital_path, 'all_subdatasets.csv')
 
 
@@ -122,8 +121,16 @@ def make_master_list(datapath, cc_path, ch_path, nhs_path):
                  drop_duplicates()).to_csv(os.path.abspath(
                                            os.path.join(ch_path, '..',
                                                         'ch_uniq_norm.csv')))
-    cc_df = pd.read_csv(cc_path, error_bad_lines=False,
-                        usecols=['name'], index_col=None)
+    cc_name = pd.read_csv(os.path.join(cc_path, 'extract_name.csv'),
+                          error_bad_lines=False, usecols=['name', 'regno', 'subno'],
+                          index_col=None)
+    cc_remdate = pd.read_csv(os.path.join(cc_path, 'extract_registration.csv'),
+                             error_bad_lines=False, usecols=['regno', 'subno', 'remdate'],
+                             index_col=None, parse_dates=['remdate'], warn_bad_lines=False)
+    cc_df = pd.merge(cc_name, cc_remdate, how='left',
+                     left_on=['regno', 'subno'], right_on=['regno', 'subno'])
+    cc_df = cc_df[(cc_df['remdate'].dt.year > 2010) |
+                  (cc_df['remdate'].isnull())]
     cc_df['name_norm'] = cc_df['name'].apply(lambda x:
                                              normalizer(x, norm_dict))
     pd.DataFrame(cc_df['name'].
@@ -150,12 +157,15 @@ def make_master_list(datapath, cc_path, ch_path, nhs_path):
                                     cc_df['name'].tolist() +
                                     nhs_df['name'].tolist()))
     df = pd.DataFrame(data={"name": combined_unique_list})
+    df['name'] = df['name'].str.strip()
+    df = df[df['name'].notnull()]    
     df = df.sort_values(by=['name'], ascending=True)
     df.to_csv(os.path.join(datapath, 'data_masteringest',
                            'combined_unique_list.csv'), sep=',',
               index=False)
     df_norm = ch_df.append(cc_df).append(nhs_df)
     df_norm['name'] = df_norm['name'].apply(lambda x: normalizer(x, norm_dict))
+    df_norm['name'] = df_norm['name'].str.strip()
     df_norm = df_norm[df_norm['name'].notnull()]
     df_norm = df_norm.sort_values(by=['name'], ascending=True)
     df_norm = df_norm.drop_duplicates()
@@ -250,7 +260,7 @@ def setup_general_index(combi_uni_list_path):
     ''' set up the raw entity index for querying'''
     print("Setting up the 'general' Index")
     i = Index('general')
-    i.delete()
+#    i.delete()
     general_ingest(combi_uni_list_path)
 
 
@@ -264,8 +274,8 @@ def setup_general_norm_index(combi_uni_list_norm_path):
 
 if __name__ == "__main__":
     cc_url = 'http://data.charitycommission.gov.uk/'
-    cc_filepath = get_cc_data(cc_url, os.path.abspath(
-                              os.path.join('..', 'data', 'data_cc')))
+    cc_path = os.path.abspath(os.path.join('..', 'data', 'data_cc'))
+    get_cc_data(cc_url, cc_path)
     ch_url = 'http://download.companieshouse.gov.uk/en_output.html'
     ch_filepath = get_ch_data(ch_url, os.path.abspath(
                               os.path.join('..', 'data', 'data_ch')))
@@ -275,7 +285,7 @@ if __name__ == "__main__":
                                                     'data_nhsdigital')))
     raw_path, norm_path = make_master_list(os.path.abspath(
                                            os.path.join('..', 'data')),
-                                           cc_filepath, ch_filepath,
+                                           cc_path, ch_filepath,
                                            nhs_filepath)
-    setup_general_index(raw_path)
+#    setup_general_index(raw_path)
     setup_general_norm_index(norm_path)

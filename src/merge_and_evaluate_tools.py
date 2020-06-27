@@ -11,8 +11,8 @@ from reconciliation import normalizer
 from Levenshtein import distance
 
 
-def create_html_from_sumstats(htmlpath, sumstats):
-    outpath = os.path.join(htmlpath, 'scrape_and_parse_evaluate.html')
+def create_html_from_sumstats(htmlpath, sumstats, type):
+    outpath = os.path.join(htmlpath, type + 'scrape_and_parse_evaluate.html')
     doc, tag, text, line = Doc().ttl()
     doc.asis('<!DOCTYPE html>')
     with tag('head'):
@@ -74,13 +74,13 @@ def create_html_from_sumstats(htmlpath, sumstats):
 
 
 def merge_eval_scrape(cleanpath, mergepath, htmlpath,
-                      datasummarypath, logpath):
-    json_path = os.path.join(datasummarypath, 'scrape_and_parse_summary.json')
+                      datasummarypath, logpath, type):
+    json_path = os.path.join(datasummarypath, type+'scrape_and_parse_summary.json')
     merged_df = merge_files(cleanpath, mergepath)
-    merged_df, sumstats = evaluate_and_clean_merge(merged_df, logpath)
-    create_html_from_sumstats(htmlpath, sumstats)
-    merged_df.to_csv(os.path.join(mergepath, 'merged_clean_spending.tsv'),
-                     encoding='latin-1', sep='\t')
+    merged_df, sumstats = evaluate_and_clean_merge(merged_df, logpath, type)
+    create_html_from_sumstats(htmlpath, sumstats, type)
+    merged_df.to_csv(os.path.join(mergepath, type + 'merged_clean_spending.tsv'),
+                     encoding='latin-1', sep='\t', index=False)
     sup_count = pd.DataFrame(merged_df.groupby('supplier')['supplier'].
                              count()).rename({'supplier': 'num_pay'}, axis=1)
     sup_value = pd.DataFrame(merged_df.groupby('supplier')['amount'].
@@ -88,25 +88,35 @@ def merge_eval_scrape(cleanpath, mergepath, htmlpath,
     sup_merge = pd.merge(sup_count, sup_value,
                          left_index=True, right_index=True)
     sup_merge = sup_merge.sort_values(by='num_pay', ascending=False)
-    sup_merge.to_csv(os.path.join(mergepath, 'unique_unmatched_suppliers.tsv'),
+    sup_merge.to_csv(os.path.join(mergepath, type + 'unique_unmatched_suppliers.tsv'),
                      encoding='latin-1', sep='\t')
     with open(json_path, 'w') as outfile:
         json.dump(sumstats, outfile)
 
 
+def read_date(date):
+    return xlrd.xldate.xldate_as_datetime(date, 0)
+
+
 def merge_files(cleanpath, mergepath):
     frame = pd.DataFrame()
     list_ = []
+    tokeep = ['date', 'expensetype', 'expensearea', 'supplier',
+              'transactionnumber', 'amount', 'file', 'negative', 'dept']
     for file_ in glob.glob(os.path.join(cleanpath, '*')):
         df = pd.read_csv(file_, index_col=None,
                          header=0, encoding='latin-1', engine='python',
                          dtype={'transactionnumber': str,
-                                'amount': float,
                                 'supplier': str,
                                 'date': str,
                                 'expensearea': str,
                                 'expensetype': str,
                                 'file': str})
+        if 'amount' in df:
+            df['amount'] = pd.to_numeric(df['amount'], errors='coerce')
+        for column in df.columns.tolist():
+            if column not in tokeep:
+                df = df.drop(column, 1)
         df['dept'] = ntpath.basename(file_)[:-4]
         list_.append(df)
     frame = pd.concat(list_, sort=False)
@@ -116,19 +126,20 @@ def merge_files(cleanpath, mergepath):
                                        dayfirst=True,
                                        errors='coerce')
     else:
-        df['date'] = pd.to_datetime(df['date'],
+        frame['date'] = pd.to_datetime(frame['date'],
                                     dayfirst=True,
                                     errors='coerce')
+    frame[(frame['date'] > '2010-01-01') & (frame['date'] < '2020-04-01')]
     frame['transactionnumber'] = frame['transactionnumber'].str.\
         replace('[^\w\s]', '')
     frame['transactionnumber'] = frame['transactionnumber'].str.strip("0")
     return frame
 
 
-def evaluate_and_clean_merge(df, logpath):
+def evaluate_and_clean_merge(df, logpath, type):
     sumstats = {}
     with open(os.path.join(logpath, 'eval_logs', 'clean',
-                           datetime.now().strftime('Eval_clean_%Y_%m_%d') +
+                           type + datetime.now().strftime('Eval_clean_%Y_%m_%d') +
                            '.txt'), 'w') as the_file:
         df = df.reset_index().drop('index', axis=1)
         the_file.write('** Evaluating the merged dataset and' +
@@ -172,9 +183,13 @@ def evaluate_and_clean_merge(df, logpath):
         df = df[df['supplier'].str.len() > 3]
         df = df[(df['supplier'].notnull()) &
                 (df['amount'].notnull())]
+        df['date'] = df['date'].astype(str).apply(
+            lambda x: unidecode(x))
         df['date'] = df['date'].apply(pd.to_datetime,
                                       dayfirst=True,
                                       errors='coerce')
+        # probably need a sumstat about this
+        df = df[(df['date'] > '2010-01-01') & (df['date'] < '2020-04-01')]
         df = df[~pd.isnull(df['date'])]
         sumstats['droppedbadsuprows'] = int(len(initial) - len(df))
         the_file.write('Dropped ' + str(sumstats['droppedbadsuprows']) +
@@ -186,10 +201,12 @@ def evaluate_and_clean_merge(df, logpath):
                        ' rows due to bad supplier or dates.\n')
         initial = df
         poss_redacts = ['redacted', 'redaction', 'xxxxxx', 'named individual',
-                        'personal expense', 'name withheld', 'name removed']
-        for column in ['supplier', 'expensetype', 'expensearea']:
-            for term in poss_redacts:
-                df = df[~df[column].str.contains(term, na=False)]
+                        'personal expense', 'name withheld', 'name removed',
+                        'personal health']
+        for term in poss_redacts:
+            df = df[~df['supplier'].str.lower().str.contains(term, na=False)]
+            df = df[~df['expensetype'].str.lower().str.contains(term, na=False)]
+            df = df[~df['expensearea'].str.lower().str.contains(term, na=False)]
         sumstats['droppedredactrows'] = len(initial)-len(df)
         the_file.write('Dropped ' + str(sumstats['droppedredactrows']) +
                        ' redacted payments.\n')
@@ -212,11 +229,55 @@ def evaluate_and_clean_merge(df, logpath):
         the_file.write('Dropped "various" payments worth £' +
                        str(round(sumstats['droppedvariousamount'] /
                                  1000000, 2)) + 'm.\n')
+        initial = df
+        df = df[df['supplier'].str.lower() != 'trust']
+        sumstats['dropped_suppliertrust_count'] = len(initial) - len(df)
+        the_file.write('Dropped ' + str(sumstats['dropped_suppliertrust_count']) +
+                       ' "various" payments.\n')
+        sumstats['dropped_suppliertrust_amount'] = (initial['amount'].sum() -
+                                                    df['amount'].sum())
+        the_file.write('Dropped "various" payments worth £' +
+                       str(round(sumstats['dropped_suppliertrust_amount'] /
+                                 1000000, 2)) + 'm.\n')
+        initial = df
+        df = df[df['amount']<1000000000]
+        sumstats['dropped_100m_count'] = len(initial) - len(df)
+        the_file.write('Dropped ' + str(sumstats['dropped_100m_count']) +
+                       ' payments greater than 100m payments.\n')
+        sumstats['dropped_100m_amount'] = (initial['amount'].sum() -
+                                            df['amount'].sum())
+        the_file.write('Dropped payments greater than 100m worth £' +
+                       str(round(sumstats['dropped_100m_amount'] /
+                                 1000000, 2)) + 'm.\n')
+        initial = df
+        df = df[~((df['supplier'].str.lower().str.contains('chc ')) |
+                  (df['supplier'].str.lower().str.startswith('chc')))]
+        sumstats['dropped_chc_count'] = len(initial) - len(df)
+        the_file.write('Dropped ' + str(sumstats['dropped_chc_count']) +
+                       ' "various" payments.\n')
+        sumstats['dropped_chc_amount'] = (initial['amount'].sum() -
+                                          df['amount'].sum())
+        the_file.write('Dropped "various" payments worth £' +
+                       str(round(sumstats['dropped_chc_amount'] /
+                                 1000000, 2)) + 'm.\n')
+
+#        initial = df
+#        df = df[~((df['file'].str.contains('.pdf.csv')) &
+#                (df['transactionnumber'].isnull()))]
+#        sumstats['bad_parse_rows'] = len(initial) - len(df)
+#        the_file.write('Dropped ' + str(sumstats['bad_parse_rows']) +
+#                       ' "various" payments.\n')
+#        sumstats['bad_parse_amount'] = (initial['amount'].sum() -
+#                                        df['amount'].sum())
+#        the_file.write('Dropped "various" payments worth £' +
+#                       str(round(sumstats['bad_parse_amount'] /
+#                                 1000000, 2)) + 'm.\n')
         sumstats['uniquesupvarious'] = (len(initial['supplier'].unique()) -
                                         len(df['supplier'].unique()))
         the_file.write('We identified ' + str(sumstats['uniquesupvarious']) +
                        ' unique "various" supplier strings.\n')
         initial = df
+
         df['supplier'] = df['supplier'].str.replace('\t', '')
         df['supplier'] = df['supplier'].str.replace('\n', '')
         df['supplier'] = df['supplier'].str.replace('\r', '')
@@ -321,11 +382,13 @@ def clean_recon(recon_df, ch_set, cc_set, nhs_set, max_len=3):
     return recon_df
 
 
-def merge_matches_with_payments(clean_matches, raw_payments, mergepath):
+def merge_matches_with_payments(clean_matches, raw_payments, mergepath, type):
+    ''' merge the matches and the payments dataset'''
     merged_df = pd.merge(raw_payments, clean_matches, how='left',
                          left_on='supplier', right_on='query_string')
-    merged_df.to_csv(os.path.join(mergepath, 'merged_with_recon.tsv'),
-                     sep='\t')
+    merged_df = merged_df.drop('query_string', 1)
+    merged_df.to_csv(os.path.join(mergepath, type + 'merged_with_recon.tsv'),
+                     sep='\t', index=False)
     return merged_df
 
 
@@ -387,7 +450,50 @@ def gen_df_for_verification(verif_df, recon_path):
                             sep='\t', index=False)
 
 
+def clean_verif_in(verif_df, all_sups, data_path):
+    new_df = verif_df[verif_df['query_string_n'].isin(all_sups)]
+    from rapidfuzz import process
+    new_df['best_lev_internal_score'] = np.nan
+    new_df['best_lev_internal_match'] = np.nan
+    matchlist = verif_df[verif_df['verif_match'] !=
+                         'No Match']['verif_match'].tolist()
+    from tqdm import tqdm
+    for index, row in tqdm(new_df.iterrows(), total=new_df.shape[0]):
+        query = new_df.at[index, 'query_string_n']
+        best = process.extract(query, matchlist, limit=15)
+        new_df.loc[index, 'best_lev_internal_match'] = best[0][0]
+        new_df.loc[index, 'best_lev_internal_score'] = best[0][1]
+    new_df.to_csv(os.path.join(data_path, 'data_support',
+                               'verif_df_in.csv'), index=False)
+
+
+def load_ccname(cc_path, norm_path):
+    cc_name = pd.read_csv(os.path.join(cc_path, 'extract_name.csv'),
+                          warn_bad_lines=False, error_bad_lines=False)
+    cc_regdate = pd.read_csv(os.path.join(cc_path,
+                                          'extract_registration.csv'),
+                             parse_dates=['regdate', 'remdate'],
+                             warn_bad_lines=False, error_bad_lines=False)
+    cc_name = pd.merge(cc_name, cc_regdate, how='left',
+                       left_on=['regno', 'subno'],
+                       right_on=['regno', 'subno'])
+    norm_df = pd.read_csv(norm_path, sep='\t')
+    norm_dict = dict(zip(norm_df['REPLACETHIS'], norm_df['WITHTHIS']))
+    cc_name['norm_name'] = cc_name['name'].\
+                           apply(lambda x: normalizer(x, norm_dict))
+    cc_name = cc_name[(cc_name['remdate'].dt.year > 2010) |
+                      (cc_name['remdate'].isnull())]
+    cc_name = cc_name.drop_duplicates(['norm_name', 'regno'], keep='first')
+    cc_name = cc_name.drop_duplicates(['norm_name', 'remdate'], keep=False)
+    cc_name = cc_name.sort_values('remdate').drop_duplicates('norm_name',
+                                                             keep='last')
+    cc_name = cc_name.drop_duplicates(subset='norm_name', keep=False)
+    # note a lot of duplicates here to report on
+    return cc_name
+
+
 def merge_eval_recon(recon_path, norm_path, data_path, mergepath, logpath):
+    cc_path = os.path.join(data_path, 'data_cc')
     recon_short = build_reconciled_df(recon_path, norm_path)
     ch_df = pd.read_csv(os.path.join(data_path, 'data_ch', 'ch_uniq_norm.csv'))
     ch_set = set(ch_df['name_norm'].tolist())
@@ -400,10 +506,11 @@ def merge_eval_recon(recon_path, norm_path, data_path, mergepath, logpath):
     nhs_set = set(nhs_df['name_norm'].tolist())
     nhs_set = set(filter(lambda x: x == x, nhs_set))
     verif_df = pd.read_csv(os.path.join(data_path, 'data_support',
-                                        'verif_df.csv'), sep=',')
+                                        'verif_df_in.csv'), sep=',')
+    verif_df = verif_df[['query_string_n', 'verif_match']]
     diffs = len(verif_df) - len(verif_df['query_string_n'].unique())
     if diffs > 0:
-        print(f'Danger! There are {diffs} duplicates in our manual verification file!')
+        print(f'Danger! {diffs} duplicates in our manual verification file!')
     verif_df = pd.merge(recon_short, verif_df, how='left',
                         left_on='query_string_n', right_on='query_string_n')
     verif_df = clean_recon(verif_df, ch_set, cc_set, nhs_set)
@@ -424,16 +531,58 @@ def merge_eval_recon(recon_path, norm_path, data_path, mergepath, logpath):
     totalmatched = len(verif_df[verif_df['verif_match'].notnull()])
     print(f'{totalmatched} rows of matched supplier data.')
     gen_df_for_verification(verif_df, recon_path)
-    raw_payments = pd.read_csv(os.path.join(mergepath,
-                                            'merged_clean_spending.tsv'),
-                               index_col=None, encoding='latin-1', sep='\t',
-                               engine='python', error_bad_lines=False,
-                               dtype={'transactionnumber': str, 'date': str,
-                                      'amount': float, 'supplier': str,
-                                      'file': str, 'expensearea': str,
-                                      'expensetype': str})
-    merge_matches_with_payments(verif_df[['query_string',
-                                          'query_string_n',
-                                          'verif_match',
-                                          'match_type']],
-                                raw_payments, mergepath)
+    ccg_raw_payments = pd.read_csv(os.path.join(mergepath,
+                                   'ccgs_merged_clean_spending.tsv'),
+                                   index_col=None, encoding='latin-1', sep='\t',
+                                   engine='python', error_bad_lines=False,
+                                   dtype={'transactionnumber': str, 'date': str,
+                                          'amount': float, 'supplier': str,
+                                          'file': str, 'expensearea': str,
+                                          'expensetype': str})
+    trust_raw_payments = pd.read_csv(os.path.join(mergepath,
+                                                  'trusts_merged_clean_spending.tsv'),
+                                     index_col=None, encoding='latin-1', sep='\t',
+                                     engine='python', error_bad_lines=False,
+                                     dtype={'transactionnumber': str, 'date': str,
+                                            'amount': float, 'supplier': str,
+                                            'file': str, 'expensearea': str,
+                                            'expensetype': str})
+    ccg_merged = merge_matches_with_payments(verif_df[['query_string',
+                                                       'query_string_n',
+                                                       'verif_match',
+                                                       'match_type']],
+                                             ccg_raw_payments, mergepath,
+                                             'ccg_')
+    trust_merged = merge_matches_with_payments(verif_df[['query_string',
+                                                         'query_string_n',
+                                                         'verif_match',
+                                                         'match_type']],
+                                               trust_raw_payments, mergepath,
+                                               'trust_')
+    all_sups = list(set(trust_merged['query_string_n'].tolist() +
+                        ccg_merged['query_string_n'].tolist()))
+    if len(all_sups) != len(verif_df['query_string_n'].unique()):
+        print('Length of verif_df != length unique supplier list')
+    else:
+        print('Phew! Length of verif_df == length unique supplier list')
+    cc_name = load_ccname(cc_path, norm_path)
+    verif_df = pd.merge(verif_df, cc_name[['regno', 'norm_name']], how='left',
+                        left_on = 'verif_match',
+                        right_on = 'norm_name')
+    verif_df = verif_df.drop('norm_name', 1)
+    verif_df.to_csv(os.path.join(data_path, 'data_support',
+                                 'verif_df_out.csv'))
+    verif_df = verif_df.sort_values(by='regno', ascending=False)
+    verif_df[['query_string',
+              'query_string_n',
+              'verif_match',
+              'match_type',
+              'regno']].to_csv(os.path.join(data_path, 'data_support',
+                                            'verif_df_out_JM.csv')
+                                            , index=False)
+    verif_df_in = pd.read_csv(os.path.join(data_path, 'data_support',
+                                           'verif_df_in.csv'), sep=',')
+    verif_df_noES = verif_df[verif_df['match_0_n'].isnull()]
+    verif_df_noES = verif_df_noES[['query_string_n', 'verif_match']]
+    verif_df_in = verif_df_in.append(verif_df_noES)
+    clean_verif_in(verif_df_in, all_sups, data_path)

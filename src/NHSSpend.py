@@ -1,12 +1,5 @@
 '''
-Options: New options here.
 
-Links last updated: constantly.
-Links next updated: constantly.
-
-To do: New todo here
-
-next to fix bury,  haf, sthe
 '''
 
 import os
@@ -14,6 +7,7 @@ import logging
 import pandas as pd
 from datetime import datetime
 from scrape_and_parse_ccgs import scrape_ccg
+from scrape_and_parse_trusts import scrape_trust
 from merge_and_evaluate_tools import merge_eval_scrape, merge_eval_recon
 from generate_output import output_for_dashboard
 from reconciliation import reconcile_general, reconcile_general_norm
@@ -70,31 +64,41 @@ if __name__ == '__main__':
                                                    'data_summary'))
     dashboardpath = os.path.abspath(os.path.join(__file__, '../..', 'data',
                                                  'data_dashboard'))
-    cleanpath = os.path.abspath(os.path.join(__file__, '../..', 'data',
-                                             'data_nhsccgs', 'cleaned'))
+    cleanpath_ccgs = os.path.abspath(os.path.join(__file__, '../..', 'data',
+                                                  'data_nhsccgs', 'cleaned'))
+    cleanpath_trusts = os.path.abspath(os.path.join(__file__, '../..', 'data',
+                                                  'data_nhstrusts', 'cleaned'))
     mergepath = os.path.abspath(os.path.join(__file__, '../..', 'data',
-                                             'data_nhsccgs', 'merge'))
+                                             'data_merge'))
     reconcilepath = os.path.abspath(os.path.join(__file__, '../..', 'data',
-                                                 'data_nhsccgs', 'reconciled'))
+                                                 'data_reconciled'))
     norm_path = os.path.abspath(os.path.join(__file__, '../..', 'data',
                                              'data_support', 'norm_dict.tsv'))
     logpath = os.path.abspath(os.path.join(__file__, '../..', 'logging'))
     htmlpath = os.path.abspath(os.path.join(__file__, '../..', 'html_files'))
-    for path in [rawpath, cleanpath, mergepath, logpath,
+    for path in [rawpath, cleanpath_ccgs, cleanpath_trusts, mergepath, logpath,
                  htmlpath, dashboardpath]:
         if os.path.exists(path) is False:
             os.makedirs(path)
     logger = setup_logging(logpath)
-    ccg_df = pd.read_csv(os.path.abspath(
-                         os.path.join(__file__, '../..', 'data',
-                                      'data_support', 'ccg_list.txt')),
-                         sep=';')
-#    scrape_ccg(ccg_df)
-#    merge_eval_scrape(cleanpath, mergepath, htmlpath,
-#                              datasummarypath, logpath)
-    uniq_name = 'unique_unmatched_suppliers.tsv'
-#    reconcile_general(mergepath, reconcilepath, uniq_name)
-#    reconcile_general_norm(mergepath, reconcilepath, uniq_name, norm_path)
+    ccg_df = pd.read_excel(os.path.abspath(
+                           os.path.join(__file__, '../..', 'data',
+                                        'data_support', 'ccg_list.xls')),
+                           encoding='latin-1')
+    trust_df = pd.read_excel(os.path.abspath(
+                             os.path.join(__file__, '../..', 'data',
+                                          'data_support', 'trust_list.xls')),
+                             encoding='latin-1')
+#    scrape_ccg(ccg_df, False, True)
+#    scrape_trust(trust_df, False, True)
+    merge_eval_scrape(cleanpath_ccgs, mergepath, htmlpath,
+                      datasummarypath, logpath, 'ccgs_')
+    merge_eval_scrape(cleanpath_trusts, mergepath, htmlpath,
+                      datasummarypath, logpath, 'trusts_')
+    uniq_name = ['ccgs_unique_unmatched_suppliers.tsv',
+                 'trusts_unique_unmatched_suppliers.tsv']
+    reconcile_general(mergepath, reconcilepath, uniq_name)
+    reconcile_general_norm(mergepath, reconcilepath, uniq_name, norm_path)
     merge_eval_recon(reconcilepath, norm_path, datapath, mergepath, logpath)
 #    output_for_dashboard(mergepath, dashboardpath) # @TODO: add in reconciles
 #    output_for_analysis() # @TODO

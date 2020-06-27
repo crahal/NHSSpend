@@ -1,36 +1,45 @@
 import requests
+import time
 import traceback
 import os
 import ntpath
-import time
+import re
 from bs4 import BeautifulSoup
 import logging
+import shutil
 module_logger = logging.getLogger('nhsspend_application')
 
 
 def createdir(filepath, institution):
     ''' check if the necessary subdirectory, and if not, make it'''
-    if os.path.exists(os.path.join(filepath, institution)) is False:
-        os.makedirs(os.path.join(filepath, institution))
+    shutil.rmtree(os.path.join(filepath, institution))
+    os.makedirs(os.path.join(filepath, institution))
     print('Working on ' + institution + '.')
     module_logger.info('Working on ' + institution + '.')
 
 
 def get_url(df, abrev):
-    df = df[df['ccg_abrev'] == abrev]
+    df = df[df['abrev'] == abrev]
     url = df['url'].tolist()[0]
     return url
 
 
-def get_all_files_one_page(loading_url, filepath, base_url='', exceptions=[]):
+def request_wrapper(url):
+    headers = {'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.2171.95 Safari/537.36'}
     try:
-        r = requests.get(loading_url)
+        r = requests.get(url, headers=headers, verify=True)
     except requests.exceptions.SSLError:
-        module_logger.warn('VERIFY FALSE! BAD SSL CERTS!')
-        return
-    soup = BeautifulSoup(r.content, 'lxml')
-    for a in soup.find_all("a", href=True):
-        try:
+        r = requests.get(url, headers=headers, verify=False)
+        module_logger.warn('Bad SSL certs for: ' + str(url))
+    return r
+
+
+def get_all_files_one_page(loading_url, filepath, base_url='', exceptions=[]):
+    r = request_wrapper(loading_url)
+    try:
+        counter = 0
+        soup = BeautifulSoup(r.content, 'lxml')
+        for a in soup.find_all("a", href=True):
             if not any(x in a["href"] for x in ['.csv',
                                                 '.xls',
                                                 '.xlsx',
@@ -46,23 +55,28 @@ def get_all_files_one_page(loading_url, filepath, base_url='', exceptions=[]):
                 name = name + '.xls'
             elif ('.pdf' in a["href"]) and (a["href"].endswith('.pdf') is False):
                 name = name + '.pdf'
+            name = str(counter) + '_' + name
+            temp = a["href"].replace(' ', '%20').replace('../', '')
             if name not in exceptions:
-                temp = a["href"].replace(' ', '%20')
+                time.sleep(.5)
                 if 'http' in temp:
-                    r = requests.get(temp)
+                    r = request_wrapper(temp)
                 else:
-                    r = requests.get(base_url + temp)
-# do not like this... do not remember why it went in...
-#                counter = 0
-#                while os.path.exists(os.path.join(filepath, name)) is True:
-#                    counter = counter + 1
-#                    name = str(counter) + '_' + name
-                with open(os.path.join(filepath, name), "wb") as csvfile:
-                    csvfile.write(r.content)
-                module_logger.info('Downloaded file: ' + str(name))
-        except Exception:
-            module_logger.debug('Problem downloading: ' +
-                                traceback.format_exc())
+                    r = request_wrapper(base_url + temp)
+                if "Content-Disposition" in r.headers.keys():
+                    name = str(counter) + '_' + re.findall("filename=(.+)",
+                        r.headers["Content-Disposition"])[0].replace("\"", '')
+                if name not in exceptions:
+                    if os.path.exists(os.path.join(filepath, name.split('.')[0]+'.csv')) is False and \
+                       os.path.exists(os.path.join(filepath, name.split('.')[0]+'.xlsx')) is False and \
+                       os.path.exists(os.path.join(filepath, name.split('.')[0]+'.xls')) is False:
+                        with open(os.path.join(filepath, name.lower()), "wb") as csvfile:
+                            csvfile.write(r.content)
+                            counter = counter+1
+                        module_logger.info('Downloaded file: ' + str(name))
+    except Exception:
+        module_logger.debug('Problem downloading: ' +
+                            traceback.format_exc())
 
 
 def get_data(datalocations, filepath, abrev, exclusions=[]):
