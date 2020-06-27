@@ -7,7 +7,7 @@
 
 ## Introduction
 
-This is a library to scrape and reconcile all payments made by a hiarcharcy of NHS institutions over time. It is the final of three projects on public procurement data (the first two of which were [centgovspend](https://github.com/crahal/centgovspend) and [TSRC-NCVO-CSDP](https://github.com/crahal/TSRC-NCVO-CSDP)). Code for an interactive dashboard is hosted in src/dashboard (and access to the prototype of the dashboard is available on request). Links to open-access (OSF) versions of the two headline academic papers (`The Role ofthe Third Sector in Public Health Service Provision: Evidence from 37,125 heterogeneous procurement datasets` and `Private networks of healthcare supply`) will be hosted on the Open Science Framework (OSF) in due course. If you would like to collaborate on these papers, please don't hestiate to get in touch.
+This is a library to scrape and reconcile all payments made by a hiarcharcy of NHS institutions over time. It is the final of three projects on public procurement data (the first two of which were [centgovspend](https://github.com/crahal/centgovspend) and [TSRC-NCVO-CSDP](https://github.com/crahal/TSRC-NCVO-CSDP)). Code for an interactive dashboard is hosted in src/dashboard, with the help of [Ian M. Knowles](https://github.com/ianknowles) (and access to the prototype of the dashboard is available on request). Links to open-access (OSF) versions of the two headline academic papers (`The Role ofthe Third Sector in Public Health Service Provision: Evidence from 37,125 heterogeneous procurement datasets` and `Private networks of healthcare supply`) will be hosted on the Open Science Framework (OSF) in due course. If you would like to collaborate on these papers, please don't hestiate to get in touch.
 
 ## Pre-reqs
 
@@ -15,7 +15,7 @@ NHSSpend tries to minimize the number of pre-requisite installations outside of 
 
 ## Data Origination
 
-The data originates from one of two lists of recognised NHS institutions. These lists are used to create mappings to websites, and update on the status of the data  (data/data_support/ccg_list.xlsx and data/data_support/trust_list.xlsx) with a number of different parametres fed into the scraper (src\NHSscraper.py). The data curation exercise has stopped as of April 2020 in order to focus on the writing of academic papers, with datasets from those papers being hosted on OSF following their publication. This is also partly due to the Covid-19 pandemic and the restructuring of Clinical Commissioning groups more generally (where 18 mergers took the number of CCGs from 191 to 136). However, please do raise issues on here if you think any of those institutions are mislabelled, outdated. If you wanted to update this list (and the subsequent scrapers), please do raise an issue\get in touch (this is a constant ongoing work in progress until there is a centrally covened resource provided by the Government Data Service).
+The data originates from one of two lists of recognised NHS institutions. These lists are used to create mappings to websites, and update on the status of the data  (data/data_support/ccg_list.xlsx and data/data_support/trust_list.xlsx) with a number of different parametres fed into the scraper (src\NHSscraper.py). The data curation exercise has stopped as of April 2020 in order to focus on the writing of academic papers, with datasets from those papers being hosted on OSF following their publication (an archive of the entire data/* subdirectory). This is also partly due to the Covid-19 pandemic and the restructuring of Clinical Commissioning groups more generally (where 18 mergers took the number of CCGs from 191 to 136). However, please do raise issues on here if you think any of those institutions are mislabelled, outdated. If you want to update this list (and the subsequent scrapers), please do raise an issue\get in touch (this is a constant ongoing work in progress until there is a centrally covened resource provided by the Government Data Service).
 
 The procurement data itself is provided under an [Open Government License](http://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/) (OGL). Guidance for publishing spend over £25,000 is published by [HM Treasury](https://www.gov.uk/government/publications/guidance-for-publishing-spend-over-25000).
 
@@ -23,6 +23,7 @@ The procurement data itself is provided under an [Open Government License](http:
 
 The `es_configure.md` describes the reconciliation approach. These recocniliations are then manually verified and merged back into the procurement data.
 
+## Structure
 
 ## Licensing
 
@@ -35,4 +36,4 @@ This code is made available under an MIT License.
 * Finalise dashboar release
 * Docstrings for src
 
-Last updated: 2020-01-24
+Last updated: 2020-06-27
