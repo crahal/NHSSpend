@@ -25,6 +25,56 @@ The `es_configure.md` describes the reconciliation approach. These recocniliatio
 
 ## Structure
 
+Repo structure is based on the ```tree``` [utility](https://en.wikipedia.org/wiki/Tree_%28Unix%29).
+
+├── readme.mdes_configure.md  
+├── es_configure.md  
+├── requirements.txt  
+├── src  
+    └── charity_parser  
+    │   charity_analysis_notebook.ipynb  
+    │   general_analysis_functions.py  
+    │   helper_functions.py  
+    │   charity_analysis_functions.py  
+    └── analysis  
+    │   charity_analysis_notebook.ipynb  
+    │   general_analysis_functions.py  
+    │   helper_functions.py  
+    │   charity_analysis_functions.py  
+    └── dashboard  
+│   scrape_and_parse_ccgs.py  
+│   scrape_and_parse_trusts.py  
+│   scraping_tools.py  
+│   generate_output.py  
+│   ingest_everything.py  
+│   merge_and_evaluate_tools.py  
+│   NHSSpend.py  
+│   parsing_tools.py  
+│   pdf_table_parser.py  
+│   reconciliation.py  
+├── data  
+    └── data_support/*  
+    └── data_cc/*  
+    └── data_ch/*  
+    └── data_dashboard/*  
+    └── data_masteringest/*  
+    └── data_merge/*  
+    └── data_nhsccgs/*  
+    └── data_nhsdigital/*  
+    └── data_nhstrusts/*  
+    └── data_reconciled/*  
+    └── data_shapefiles/*  
+    └── data_summary/*  
+├── papers  
+│   corporate_networks  
+│   figures  
+│   tables  
+│   third_sector  
+├── logging  
+│   nhsspend.log  
+└── eval_logs  
+├── tokens  
+
 ## Licensing
 
 This code is made available under an MIT License.
