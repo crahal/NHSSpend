@@ -10,9 +10,8 @@
 This is a library to scrape and reconcile all payments made by a hiarcharcy of NHS institutions over time. It is the final of three projects on public procurement data (the first two of which were [centgovspend](https://github.com/crahal/centgovspend) and [TSRC-NCVO-CSDP](https://github.com/crahal/TSRC-NCVO-CSDP)). Code for an interactive dashboard:
 <p align="center">
   <b>Some Links:</b><br>
-  <a href="#">http://nhsspend.org/</a> |
+  <a href="#">http://nhsspend.org/</a>
   <br><br>
-  <img src="http://s.4cdn.org/image/title/105.gif">
 </p>
 
 is hosted in src/dashboard, with the help of [Ian M. Knowles](https://github.com/ianknowles) (and access to the prototype of the dashboard is available on request). Links to open-access (OSF) versions of the two headline academic papers (`The Role ofthe Third Sector in Public Health Service Provision: Evidence from 37,125 heterogeneous procurement datasets` and `Private networks of healthcare supply`) will be hosted on the Open Science Framework (OSF) in due course. If you would like to collaborate on these papers, please don't hestiate to get in touch.
