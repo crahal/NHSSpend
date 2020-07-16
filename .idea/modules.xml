@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/childhoodmaltreatment.clientGraphing.iml" filepath="$PROJECT_DIR$/.idea/modules/childhoodmaltreatment.clientGraphing.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/covid19dash.iml" filepath="$PROJECT_DIR$/.idea/modules/covid19dash.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/covid19dash-build.iml" filepath="$PROJECT_DIR$/.idea/modules/covid19dash-build.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/covid19dash-sources.iml" filepath="$PROJECT_DIR$/.idea/modules/covid19dash-sources.iml" group="covid_19_shared" />

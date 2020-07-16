@@ -25,7 +25,7 @@
         <parameter value="-target:11" />
       </parameters>
     </profile>
-    <profile name="sbt 3" modules="childhoodmaltreatment,covid19dash" />
+    <profile name="sbt 3" modules="covid19dash" />
     <profile name="sbt 4" modules="covid_19_sharedJS,sharedJS">
       <option name="deprecationWarnings" value="true" />
       <option name="featureWarnings" value="true" />
