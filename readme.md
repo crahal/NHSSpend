@@ -73,7 +73,7 @@ Repo structure is based on the ```tree``` [utility](https://en.wikipedia.org/wik
 ├ logging  
 │   │   ├ nhsspend.log  
 │   └ eval_logs  
-├─ tokens  
+├ tokens  
 
 ## Licensing
 
