@@ -1,0 +1,36 @@
+icnpo,icnpo_group,count,amount,count_ccg,amount_ccg,count_trust,amount_trust
+1100,Culture and sport,2.36,0.54,1.5,0.59,3.08,0.42
+1200,Culture and sport,1.11,0.18,1.39,0.14,0.85,0.3
+1300,Culture and sport,0.07,0.0,0.11,0.0,0.0,0.0
+2100,Education,0.81,0.13,0.32,0.01,1.37,0.46
+2120,Education,0.29,0.06,0.11,0.03,0.51,0.13
+2130,Education,0.29,0.23,0.11,0.01,0.51,0.81
+2200,Education,0.52,0.23,0.43,0.23,1.03,0.21
+2300,Education,1.55,0.44,1.07,0.07,2.39,1.43
+2400,Education,1.11,0.26,0.54,0.07,1.88,0.76
+2410,Education,1.62,1.42,0.86,0.08,2.74,4.94
+3100,Health,6.71,19.4,4.39,19.39,10.94,19.45
+3200,Health,10.1,24.26,13.29,32.56,6.5,2.37
+3210,Health,0.15,0.19,0.21,0.26,0.0,0.0
+3300,Health,9.59,7.4,10.5,7.54,9.57,7.04
+3400,Health,4.2,14.91,3.22,13.81,5.98,17.81
+4100,Social Services,27.73,15.22,32.37,13.45,20.17,19.88
+4110,Social Services,0.22,0.01,0.21,0.01,0.17,0.02
+4150,Social Services,0.66,0.13,0.43,0.05,0.85,0.34
+4160,Social Services,0.59,0.03,0.75,0.03,0.17,0.01
+4170,Social Services,0.22,0.02,0.32,0.03,0.0,0.0
+4180,Social Services,0.29,0.44,0.32,0.6,0.17,0.0
+4200,Social Services,0.59,0.02,0.43,0.02,0.68,0.04
+4300,Social Services,0.74,0.74,0.54,0.21,0.85,2.13
+5100,Environment and animals,1.18,0.07,0.75,0.05,1.54,0.13
+5200,Environment and animals,0.22,0.01,0.11,0.0,0.34,0.03
+6100,"Community, employment and housing",3.61,2.11,3.64,0.47,3.25,6.44
+6200,"Community, employment and housing",5.31,6.18,6.11,5.58,4.79,7.77
+6300,"Community, employment and housing",1.47,0.24,1.07,0.06,2.39,0.69
+7100,"Law, advocacy and politics",2.36,0.71,2.36,0.76,2.39,0.58
+7200,"Law, advocacy and politics",2.51,0.59,2.36,0.62,2.22,0.51
+8100,Philanthropy and volunteering,2.14,0.44,1.71,0.35,2.56,0.66
+8200,Philanthropy and volunteering,5.01,1.42,5.36,1.75,3.76,0.55
+9100,International aid,0.29,0.02,0.21,0.0,0.34,0.05
+10100,Religion,2.65,1.6,2.14,0.95,2.74,3.31
+11200,Business and professional,1.03,0.25,0.75,0.22,1.71,0.33
