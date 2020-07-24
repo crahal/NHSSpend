@@ -1,4 +1,5 @@
 import glob
+import itertools
 import os
 import numpy as np
 import pandas as pd
@@ -379,6 +380,32 @@ def clean_recon(recon_df, ch_set, cc_set, nhs_set, max_len=3):
         elif typelist == '':
             typelist = 'No Match'
         recon_df.at[index, 'match_type'] = typelist
+
+    # implement function checker here
+    list_to_check = []
+    list_of_strings = ['NHS FOUNDATION', 'FOUNDATION TRUST',
+                       'HOSPITAL TRUST', 'NHS TRUST',
+                       'PRIMARY CARE TRUST', 'NHSFT',
+                       'ROYAL BOURNEMOUTH AND CHRISTCHURCH HOSPITALS']
+    checker_df = recon_df[(recon_df['match_type'].str.contains('Compani')) |
+                          (recon_df['match_type'].str.contains('Charit'))]
+    for checker in list_of_strings:
+        list_to_check.append(checker_df[(checker_df['verif_match'].str.contains(checker)) &
+                                        ~((checker_df['verif_match'].str.contains('CHARIT')) |
+                                          (checker_df['verif_match'].str.contains('FUND')) |
+                                          (checker_df['verif_match'].str.contains('COMPA')) |
+                                          (checker_df['verif_match'].str.contains('LIMITED')) |
+                                          (checker_df['verif_match'].str.contains('LTD')) |
+                                          ((checker_df['verif_match'].str.contains('NETWORK'))))
+                                       ]['verif_match'].unique().tolist())
+    list_to_check = list(itertools.chain.from_iterable(list_to_check))
+    for check in list_to_check:
+        for index, row in recon_df.iterrows():
+            if recon_df.loc[index, 'verif_match'] == check:
+                recon_df.at[index, 'match_type'] = 'NHS Digital'
+    for index, row in recon_df.iterrows(): # this would be more efficient as an np.where()
+        if recon_df.loc[index, 'verif_match'] == 'NHS SUPPLY CHAIN':
+            recon_df.at[index, 'match_type'] = 'NHS Digital'
     return recon_df
 
 
