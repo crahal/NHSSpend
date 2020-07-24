@@ -820,34 +820,12 @@ def NHS_DGT_Trust_scraper(trust_df, trust_data_path, scrape, parse):
 
 def NHS_DCH_Trust_scraper(trust_df, trust_data_path, scrape, parse):
     try:
-        base_url = 'https://www.dgt.nhs.uk/about-us/'
         abrev = 'NHS_DCH_Trust'
-        url = get_url(trust_df, abrev)
         filepath = os.path.join(trust_data_path, abrev)
-        if scrape is True:
-            createdir(trust_data_path, abrev)
-            list_to_ignore = []
-            r = request_wrapper(url)
-            soup = BeautifulSoup(r.content, 'lxml')
-            for a in soup.find_all("a"):
-                if ('download_file' in str(a["href"].lower())):
-                    if a.text not in list_to_ignore:
-                        try:
-                            r = request_wrapper(a["href"])
-                            name = a.text + '.csv'
-                            with open(os.path.join(filepath, name),
-                                      "wb") as csvfile:
-                                csvfile.write(r.content)
-                            module_logger.info('Downloaded file: ' +
-                                               str(name))
-                        except Exception as e:
-                            module_logger.debug('Problem download: ' +
-                                                str(e))
         if parse is True:
             parse_wrapper(trust_data_path, filepath, abrev)
     except Exception as e:
-        module_logger.debug('The entire thing fails: ' + str(e))
-
+        module_logger.debug(abrev + ' fails entirely: ' + str(e))
 
 def NHS_DHC_Trust_scraper(trust_df, trust_data_path, scrape, parse):
     try:
@@ -4975,7 +4953,8 @@ def scrape_trust(trust_df, scrape, parse):
     trust_data_path = os.path.abspath(
                       os.path.join(__file__, '../..', 'data', 'data_nhstrusts',
                                    'raw'))
-    for scraper in trust_df['abrev'].tolist()[203:204]:
+    for scraper in trust_df['abrev'].tolist()[46:47]:
+        print(scraper)
         try:
             globals()[str(scraper)+'_scraper'](trust_df, trust_data_path,
                                                scrape, parse)
