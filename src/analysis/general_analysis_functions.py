@@ -338,10 +338,12 @@ def plot_macro_overview(data_path, figure_path):
     sns.despine(ax=ax4)
     sns.despine(ax=ax5)
     plt.tight_layout(True)
-    plt.subplots_adjust(hspace=500)
-    plt.savefig(os.path.join(figure_path, 'nhs_spending_macro.pdf'))
-    plt.savefig(os.path.join(figure_path, 'nhs_spending_macro.png'), dpi=500)
-    plt.savefig(os.path.join(figure_path, 'nhs_spending_macro.svg'))
+    plt.savefig(os.path.join(figure_path, 'nhs_spending_macro.pdf'),
+                bbox_inches='tight')
+    plt.savefig(os.path.join(figure_path, 'nhs_spending_macro.png'), dpi=500,
+                bbox_inches='tight')
+    plt.savefig(os.path.join(figure_path, 'nhs_spending_macro.svg'),
+                bbox_inches='tight')
 
 def load_suppliers(sup_path):
     sup_df = pd.read_csv(sup_path, sep='\t')
@@ -428,10 +430,10 @@ def summarize_payments(pay_df, payment_type):
     value_dept = pay_df.groupby('dept')['amount'].sum().sort_values(ascending=False)
     print('Highest value payments is:', value_dept.index[0],
           '(£'+ str(int(value_dept[0])) + ')')
-    most_supp = pay_df.groupby(['supplier']).size().sort_values(ascending=False)
+    most_supp = pay_df.groupby(['verif_match']).size().sort_values(ascending=False)
     print('Most payments:', most_supp.index[0],
           '('+ str(most_supp[0]) + ')')
-    value_supp = pay_df.groupby('supplier')['amount'].sum().sort_values(ascending=False)
+    value_supp = pay_df.groupby('verif_match')['amount'].sum().sort_values(ascending=False)
     print('Highest value of payments is:', value_supp.index[0],
           '('+ str(value_supp[0]) + ')')
     print('Number of organisations in clean dataset is: ' +\
@@ -606,212 +608,253 @@ def scoring_figures(sup_df, figure_path, figsizetuple):
     plt.savefig(os.path.join(figure_path, 'matching_summary.svg'))
     plt.show()
 
+def make_vennlist(payments):
+    uniq_sups = payments.drop_duplicates(subset=['verif_match'])
+    uniq_sups = uniq_sups[['verif_match', 'match_type']]
+    char_num = len(uniq_sups[uniq_sups['match_type'] == 'Charity Commission'])
+    char_num_two = len(uniq_sups[(uniq_sups['match_type'].str.
+                               contains('Charity Commission')) &
+                              (uniq_sups['match_type'].str.count(':') == 1)])
+    char_num_three = len(uniq_sups[(uniq_sups['match_type'].str.
+                                 contains('Charity Commission')) &
+                                (uniq_sups['match_type'].str.count(':') == 2)])
+    comp_num = len(uniq_sups[uniq_sups['match_type'] == 'Companies House'])
+    comp_num_two = len(uniq_sups[(uniq_sups['match_type'].str.
+                               contains('Companies House')) &
+                              (uniq_sups['match_type'].str.count(':') == 1)])
+    comp_num_three = len(uniq_sups[(uniq_sups['match_type'].str.
+                                 contains('Companies House')) &
+                                (uniq_sups['match_type'].str.count(':') == 2)])
+    nhs_num = len(uniq_sups[uniq_sups['match_type'] == 'NHS Digital'])
+    nhs_num_two = len(uniq_sups[(uniq_sups['match_type'].str.
+                              contains('NHS Digital')) &
+                             (uniq_sups['match_type'].str.count(':') == 1)])
+    nhs_num_three = len(uniq_sups[(uniq_sups['match_type'].str.
+                                contains('NHS Digital')) &
+                                (uniq_sups['match_type'].str.count(':') == 2)])
+    dr_num = len(uniq_sups[uniq_sups['match_type'] == 'Named Doctor'])
+    per_num = len(uniq_sups[uniq_sups['match_type'] == 'Named Person'])
+    none_num = len(uniq_sups[uniq_sups['match_type'] == 'No Match'])
+    charcom_num = len(uniq_sups[(uniq_sups['match_type'].str.
+                              contains('Charity Commission')) &
+                             (uniq_sups['match_type'].str.
+                              contains('Companies House'))])
+    charnhs_num = len(uniq_sups[(uniq_sups['match_type'].str.
+                              contains('Charity Commission')) &
+                             (uniq_sups['match_type'].str.
+                              contains('NHS Digital'))])
+    comnhs_num = len(uniq_sups[(uniq_sups['match_type'].str.
+                             contains('Companies House')) &
+                            (uniq_sups['match_type'].str.
+                             contains('NHS Digital'))])
+    venn_list = [char_num, comp_num, charcom_num, nhs_num,
+                 charnhs_num, comnhs_num, char_num_three]
+    return venn_list
 
-def plot_match_distribution(sup_df, pay_df, figure_path, figsize_tuple):
-    #  legend_fontsize = 10
-    fig = plt.figure(figsize=figsize_tuple)
-    ax1 = plt.subplot2grid((2, 2), (0, 0), colspan=1)
-    ax2 = plt.subplot2grid((2, 2), (0, 1), colspan=1)
-    ax3 = plt.subplot2grid((2, 6), (1, 0), colspan=1)
-    ax4 = plt.subplot2grid((2, 6), (1, 1), colspan=1)
-    ax5 = plt.subplot2grid((2, 6), (1, 2), colspan=1)
-    ax6 = plt.subplot2grid((2, 6), (1, 3), colspan=1)
-    ax7 = plt.subplot2grid((2, 6), (1, 4), colspan=1)
-    ax8 = plt.subplot2grid((2, 6), (1, 5), colspan=1)
+
+def make_match_df(payments):
+    uniq_sups = payments[['query_string_n','verif_match', 'match_type']].drop_duplicates(subset=['query_string_n'])
     index = range(0, 18)
-#    index = ['Charity', 'Company', 'NHS', 'Named', 'Doctor', 'No Match']
     cols = ['Type', 'Identification', 'Number Suppliers',
             'Payment Value', 'Number Payments']
     df = pd.DataFrame(columns=cols, index=index)
-    char_num = len(sup_df[sup_df['match_type'] == 'Charity Commission'])
-    char_count = len(pay_df[pay_df['match_type'] == 'Charity Commission'])
-    char_val = pay_df[pay_df['match_type'] == 'Charity Commission']['amount'].sum()
+    char_num = len(uniq_sups[uniq_sups['match_type'] == 'Charity Commission'])
+    char_count = len(payments[payments['match_type'] == 'Charity Commission'])
+    char_val = payments[payments['match_type'] == 'Charity Commission']['amount'].sum()
     df.at[0, 'Type'] = 'Charity'
     df.at[0, 'Identification'] = 'Unique'
     df.at[0, 'Number Suppliers'] = char_num
     df.at[0, 'Number Payments'] = char_count
     df.at[0, 'Payment Value'] = char_val
-    char_num_two = len(sup_df[(sup_df['match_type'].str.
+    char_num_two = len(uniq_sups[(uniq_sups['match_type'].str.
                                contains('Charity Commission')) &
-                              (sup_df['match_type'].str.count(':') == 1)])
-    char_count_two = len(pay_df[(pay_df['match_type'].str.
+                              (uniq_sups['match_type'].str.count(':') == 1)])
+    char_count_two = len(payments[(payments['match_type'].str.
                                contains('Charity Commission')) &
-                              (pay_df['match_type'].str.count(':') == 1)])
-    char_val_two = pay_df[(pay_df['match_type'].str.
+                              (payments['match_type'].str.count(':') == 1)])
+    char_val_two = payments[(payments['match_type'].str.
                            contains('Charity Commission')) &
-                          (pay_df['match_type'].str.count(':') == 1)]['amount'].sum()
+                          (payments['match_type'].str.count(':') == 1)]['amount'].sum()
     df.at[1, 'Type'] = 'Charity'
     df.at[1, 'Identification'] = 'Two Registers'
     df.at[1, 'Number Suppliers'] = char_num_two
     df.at[1, 'Number Payments'] = char_count_two
     df.at[1, 'Payment Value'] = char_val_two
-    char_num_three = len(sup_df[(sup_df['match_type'].str.
+    char_num_three = len(uniq_sups[(uniq_sups['match_type'].str.
                                  contains('Charity Commission')) &
-                                (sup_df['match_type'].str.count(':') == 2)])
-    char_count_three = len(pay_df[(pay_df['match_type'].str.
+                                (uniq_sups['match_type'].str.count(':') == 2)])
+    char_count_three = len(payments[(payments['match_type'].str.
                                    contains('Charity Commission')) &
-                                  (pay_df['match_type'].str.count(':') == 2)])
-    char_val_three = pay_df[(pay_df['match_type'].str.
+                                  (payments['match_type'].str.count(':') == 2)])
+    char_val_three = payments[(payments['match_type'].str.
                              contains('Charity Commission')) &
-                            (pay_df['match_type'].str.count(':') == 2)]['amount'].sum()
+                            (payments['match_type'].str.count(':') == 2)]['amount'].sum()
     df.at[2, 'Type'] = 'Charity'
     df.at[2, 'Identification'] = 'Three Registers'
     df.at[2, 'Number Suppliers'] = char_num_three
     df.at[2, 'Number Payments'] = char_count_three
     df.at[2, 'Payment Value'] = char_val_three
-
-    comp_num = len(sup_df[sup_df['match_type'] == 'Companies House'])
-    comp_count = len(pay_df[pay_df['match_type'] == 'Companies House'])
-    comp_val = pay_df[pay_df['match_type'] == 'Companies House']['amount'].sum()
+    comp_num = len(uniq_sups[uniq_sups['match_type'] == 'Companies House'])
+    comp_count = len(payments[payments['match_type'] == 'Companies House'])
+    comp_val = payments[payments['match_type'] == 'Companies House']['amount'].sum()
     df.at[3, 'Type'] = 'Company'
     df.at[3, 'Identification'] = 'Unique'
     df.at[3, 'Number Suppliers'] = comp_num
     df.at[3, 'Number Payments'] = comp_count
     df.at[3, 'Payment Value'] = comp_val
-    comp_num_two = len(sup_df[(sup_df['match_type'].str.
+    comp_num_two = len(uniq_sups[(uniq_sups['match_type'].str.
                                contains('Companies House')) &
-                              (sup_df['match_type'].str.count(':') == 1)])
-    comp_count_two = len(pay_df[(pay_df['match_type'].str.
+                              (uniq_sups['match_type'].str.count(':') == 1)])
+    comp_count_two = len(payments[(payments['match_type'].str.
                                contains('Companies House')) &
-                              (pay_df['match_type'].str.count(':') == 1)])
-    comp_val_two = pay_df[(pay_df['match_type'].str.
+                              (payments['match_type'].str.count(':') == 1)])
+    comp_val_two = payments[(payments['match_type'].str.
                            contains('Companies House')) &
-                          (pay_df['match_type'].str.count(':') == 1)]['amount'].sum()
+                          (payments['match_type'].str.count(':') == 1)]['amount'].sum()
     df.at[4, 'Type'] = 'Company'
     df.at[4, 'Identification'] = 'Three Registers'
     df.at[4, 'Number Suppliers'] = comp_num_two
     df.at[4, 'Number Payments'] = comp_count_two
     df.at[4, 'Payment Value'] = comp_val_two
-    comp_num_three = len(sup_df[(sup_df['match_type'].str.
+    comp_num_three = len(uniq_sups[(uniq_sups['match_type'].str.
                                  contains('Companies House')) &
-                                (sup_df['match_type'].str.count(':') == 2)])
-    comp_count_three = len(pay_df[(pay_df['match_type'].str.
+                                (uniq_sups['match_type'].str.count(':') == 2)])
+    comp_count_three = len(payments[(payments['match_type'].str.
                                    contains('Companies House')) &
-                                  (pay_df['match_type'].str.count(':') == 2)])
-    comp_val_three = pay_df[(pay_df['match_type'].str.
+                                  (payments['match_type'].str.count(':') == 2)])
+    comp_val_three = payments[(payments['match_type'].str.
                              contains('Companies House')) &
-                            (pay_df['match_type'].str.count(':') == 2)]['amount'].sum()
+                            (payments['match_type'].str.count(':') == 2)]['amount'].sum()
     df.at[5, 'Type'] = 'Company'
     df.at[5, 'Identification'] = 'Two Registers'
     df.at[5, 'Number Suppliers'] = comp_num_three
     df.at[5, 'Number Payments'] = comp_count_three
     df.at[5, 'Payment Value'] = comp_val_three
-
-    nhs_num = len(sup_df[sup_df['match_type'] == 'NHS Digital'])
-    nhs_count = len(pay_df[pay_df['match_type'] == 'NHS Digital'])
-    nhs_val = pay_df[pay_df['match_type'] == 'NHS Digital']['amount'].sum()
+    nhs_num = len(uniq_sups[uniq_sups['match_type'] == 'NHS Digital'])
+    nhs_count = len(payments[payments['match_type'] == 'NHS Digital'])
+    nhs_val = payments[payments['match_type'] == 'NHS Digital']['amount'].sum()
     df.at[6, 'Type'] = 'NHS'
     df.at[6, 'Identification'] = 'Unique'
     df.at[6, 'Number Suppliers'] = nhs_num
     df.at[6, 'Number Payments'] = nhs_count
     df.at[6, 'Payment Value'] = nhs_val
-    nhs_num_two = len(sup_df[(sup_df['match_type'].str.
+    nhs_num_two = len(uniq_sups[(uniq_sups['match_type'].str.
                               contains('NHS Digital')) &
-                             (sup_df['match_type'].str.count(':') == 1)])
-    nhs_count_two = len(pay_df[(pay_df['match_type'].str.
+                             (uniq_sups['match_type'].str.count(':') == 1)])
+    nhs_count_two = len(payments[(payments['match_type'].str.
                                contains('NHS Digital')) &
-                              (pay_df['match_type'].str.count(':') == 1)])
-    nhs_val_two = pay_df[(pay_df['match_type'].str.
+                              (payments['match_type'].str.count(':') == 1)])
+    nhs_val_two = payments[(payments['match_type'].str.
                            contains('NHS Digital')) &
-                          (pay_df['match_type'].str.count(':') == 1)]['amount'].sum()
+                          (payments['match_type'].str.count(':') == 1)]['amount'].sum()
     df.at[7, 'Type'] = 'NHS'
     df.at[7, 'Identification'] = 'Two Registers'
     df.at[7, 'Number Suppliers'] = nhs_num_two
     df.at[7, 'Number Payments'] = nhs_count_two
     df.at[7, 'Payment Value'] = nhs_val_two
-    nhs_num_three = len(sup_df[(sup_df['match_type'].str.
+    nhs_num_three = len(uniq_sups[(uniq_sups['match_type'].str.
                                 contains('NHS Digital')) &
-                                (sup_df['match_type'].str.count(':') == 2)])
-    nhs_count_three = len(pay_df[(pay_df['match_type'].str.
+                                (uniq_sups['match_type'].str.count(':') == 2)])
+    nhs_count_three = len(payments[(payments['match_type'].str.
                                    contains('NHS Digital')) &
-                                  (pay_df['match_type'].str.count(':') == 2)])
-    nhs_val_three = pay_df[(pay_df['match_type'].str.
+                                  (payments['match_type'].str.count(':') == 2)])
+    nhs_val_three = payments[(payments['match_type'].str.
                              contains('NHS Digital')) &
-                            (pay_df['match_type'].str.count(':') == 2)]['amount'].sum()
+                            (payments['match_type'].str.count(':') == 2)]['amount'].sum()
     df.at[8, 'Type'] = 'NHS'
     df.at[8, 'Identification'] = 'Three Registers'
     df.at[8, 'Number Suppliers'] = nhs_num_three
     df.at[8, 'Number Payments'] = nhs_count_three
     df.at[8, 'Payment Value'] = nhs_val_three
-
-    dr_num = len(sup_df[sup_df['match_type'] == 'Named Doctor'])
-    dr_count = len(pay_df[pay_df['match_type'] == 'Named Doctor'])
-    dr_val = pay_df[pay_df['match_type'] == 'Named Doctor']['amount'].sum()
+    dr_num = len(uniq_sups[uniq_sups['match_type'] == 'Named Doctor'])
+    dr_count = len(payments[payments['match_type'] == 'Named Doctor'])
+    dr_val = payments[payments['match_type'] == 'Named Doctor']['amount'].sum()
     df.at[9, 'Type'] = 'Doctor'
     df.at[9, 'Identification'] = 'Unique'
     df.at[9, 'Number Suppliers'] = dr_num
     df.at[9, 'Number Payments'] = dr_count
     df.at[9, 'Payment Value'] = dr_val
-
     df.at[10, 'Type'] = 'Doctor'
     df.at[10, 'Identification'] = 'Two Registers'
     df.at[10, 'Number Suppliers'] = 0
     df.at[10, 'Number Payments'] = 0
     df.at[10, 'Payment Value'] = 0
-
     df.at[11, 'Type'] = 'Doctor'
     df.at[11, 'Identification'] = 'Three Registers'
     df.at[11, 'Number Suppliers'] = 0
     df.at[11, 'Number Payments'] = 0
     df.at[11, 'Payment Value'] = 0
-
-    per_num = len(sup_df[sup_df['match_type'] == 'Named Person'])
-    per_count = len(pay_df[pay_df['match_type'] == 'Named Person'])
-    per_val = pay_df[pay_df['match_type'] == 'Named Person']['amount'].sum()
+    per_num = len(uniq_sups[uniq_sups['match_type'] == 'Named Person'])
+    per_count = len(payments[payments['match_type'] == 'Named Person'])
+    per_val = payments[payments['match_type'] == 'Named Person']['amount'].sum()
     df.at[12, 'Type'] = 'Person'
     df.at[12, 'Identification'] = 'Unique'
     df.at[12, 'Number Suppliers'] = per_num
     df.at[12, 'Number Payments'] = per_count
     df.at[12, 'Payment Value'] = per_val
-
     df.at[13, 'Type'] = 'Person'
     df.at[13, 'Identification'] = 'Two Registers'
     df.at[13, 'Number Suppliers'] = 0
     df.at[13, 'Number Payments'] = 0
     df.at[13, 'Payment Value'] = 0
-
     df.at[14, 'Type'] = 'Person'
     df.at[14, 'Identification'] = 'Three Registers'
     df.at[14, 'Number Suppliers'] = 0
     df.at[14, 'Number Payments'] = 0
     df.at[14, 'Payment Value'] = 0
-
-    none_num = len(sup_df[sup_df['match_type'] == 'No Match'])
-    none_count = len(pay_df[pay_df['match_type'] == 'No Match'])
-    none_val = pay_df[pay_df['match_type'] == 'No Match']['amount'].sum()
+    none_num = len(uniq_sups[uniq_sups['match_type'] == 'No Match'])
+    none_count = len(payments[payments['match_type'] == 'No Match'])
+    none_val = payments[payments['match_type'] == 'No Match']['amount'].sum()
     df.at[15, 'Type'] = 'No Match'
     df.at[15, 'Identification'] = 'Unique'
     df.at[15, 'Number Suppliers'] = none_num
     df.at[15, 'Number Payments'] = none_count
     df.at[15, 'Payment Value'] = none_val
-
     df.at[16, 'Type'] = 'No Match'
     df.at[16, 'Identification'] = 'Two Registers'
     df.at[16, 'Number Suppliers'] = 0
     df.at[16, 'Number Payments'] = 0
     df.at[16, 'Payment Value'] = 0
-
     df.at[17, 'Type'] = 'No Match'
     df.at[17, 'Identification'] = 'Three Registers'
     df.at[17, 'Number Suppliers'] = 0
     df.at[17, 'Number Payments'] = 0
     df.at[17, 'Payment Value'] = 0
+    return df
 
-    charcom_num = len(sup_df[(sup_df['match_type'].str.
-                              contains('Charity Commission')) &
-                             (sup_df['match_type'].str.
-                              contains('Companies House'))])
-    charnhs_num = len(sup_df[(sup_df['match_type'].str.
-                              contains('Charity Commission')) &
-                             (sup_df['match_type'].str.
-                              contains('NHS Digital'))])
-    comnhs_num = len(sup_df[(sup_df['match_type'].str.
-                             contains('Companies House')) &
-                            (sup_df['match_type'].str.
-                             contains('NHS Digital'))])
 
-    v = venn3(subsets=(char_num, comp_num, charcom_num, nhs_num,
-                       charnhs_num, comnhs_num, char_num_three),
+def plot_match_distribution(sup_df, trust_pay_df, ccg_pay_df, figure_path, figsize_tuple):
+    csfont = {'fontname':'Helvetica'}
+    hfont = {'fontname':'Helvetica'}
+    pay_df = pd.concat([trust_pay_df, ccg_pay_df])
+    fig = plt.figure(figsize=figsize_tuple)
+    ax1 = plt.subplot2grid((18, 2), (0, 0), colspan=1, rowspan=7)
+    ax2 = plt.subplot2grid((18, 2), (0, 1), colspan=1, rowspan=7)
+    axfake1 = plt.subplot2grid((18, 2), (7, 1), colspan=1, rowspan=1)
+    ax3 = plt.subplot2grid((18, 6), (8, 0), colspan=1, rowspan=5)
+    ax4 = plt.subplot2grid((18, 6), (8, 1), colspan=1, rowspan=5)
+    ax5 = plt.subplot2grid((18, 6), (8, 2), colspan=1, rowspan=5)
+    ax6 = plt.subplot2grid((18, 6), (8, 3), colspan=1, rowspan=5)
+    ax7 = plt.subplot2grid((18, 6), (8, 4), colspan=1, rowspan=5)
+    ax8 = plt.subplot2grid((18, 6), (8, 5), colspan=1, rowspan=5)
+#    axfake2 = plt.subplot2grid((19, 2), (13, 1), colspan=1, rowspan=1)
+    ax9 = plt.subplot2grid((18, 6), (13, 0), colspan=1, rowspan=5)
+    ax10 = plt.subplot2grid((18, 6), (13, 1), colspan=1, rowspan=5)
+    ax12 = plt.subplot2grid((18, 6), (13, 3), colspan=1, rowspan=5)
+    ax13 = plt.subplot2grid((18, 6), (13, 4), colspan=1, rowspan=5)
+    ax11 = plt.subplot2grid((18, 6), (13, 2), colspan=1, rowspan=5)
+    ax14 = plt.subplot2grid((18, 6), (13, 5), colspan=1, rowspan=5)
+    full_df = make_match_df(pay_df)
+    ccg_df = make_match_df(ccg_pay_df)
+    trust_df = make_match_df(trust_pay_df)
+    full_venn = make_vennlist(pay_df)
+    trust_venn = make_vennlist(trust_pay_df)
+    ccg_venn = make_vennlist(ccg_pay_df)
+
+    #make venn
+    v = venn3(subsets=(full_venn[0], full_venn[1], full_venn[2],
+                       full_venn[3], full_venn[4], full_venn[5],
+                       full_venn[6]),
               set_labels=('Charity Commission',
                           'Companies House',
                           'NHS Digital'), alpha=0.8, ax=ax2)
@@ -827,107 +870,166 @@ def plot_match_distribution(sup_df, pay_df, figure_path, figsize_tuple):
         t.set_fontsize(10)
     for t in v.subset_labels:
         t.set_fontsize(8)
-    c = venn3_circles(subsets=(char_num, comp_num, charcom_num,
-                               nhs_num, charnhs_num, comnhs_num,
-                               char_num_three),
+    c = venn3_circles(subsets=(full_venn[0], full_venn[1], full_venn[2],
+                               full_venn[3], full_venn[4], full_venn[5],
+                               full_venn[6]),
                       linestyle='--', linewidth=1, ax=ax2,  color="k")
 #    v.get_label_by_id("100").set_position((35.1, 122.2))
 #    print(dir(v.get_label_by_id('010')))
-    ax2.annotate(str(char_num_three) + ' suppliers on\nall three registers',
+    ax2.annotate(str(full_venn[6]) + ' suppliers on\nall three registers',
                  xy=v.get_label_by_id('111').get_position(),
-                 fontsize=9, xytext=(+100, -70),
+                 fontsize=9, xytext=(+85, -80), **csfont,
                  ha='center', textcoords='offset points',
                  bbox=dict(boxstyle='round,pad=0.5', ec='k', fc='w', alpha=1),
                  arrowprops=dict(arrowstyle='->', color='k', linewidth=0.75,
-                                 connectionstyle='arc3,rad=-0.4'))
-    ax2.set_title('B. Institutional overlap', fontsize=16,y=1.05)
-#    df['Payment Value'] = df['Payment Value']/pay_df['amount'].sum()
-#    df['Number Suppliers'] = df['Number Suppliers']/len(sup_df)
-#    df['Number Payments'] = df['Number Payments']/len(pay_df)
+                                 connectionstyle='arc3,rad=-0.75'))
+    ax2.set_title('B.', fontsize=17, y=1.02, **csfont, loc='left')
+    ax2.set_title('Unique institutional overlap', fontsize=16,y=1.025, **csfont, loc='right')
 
-
+    # make bars
     sns.set_style("ticks")
     colors = ['#377eb8', '#ff7f00', '#ffeda0']
-    short_df = df.groupby(['Type'])['Number Suppliers',
-                                    'Payment Value',
-                                    'Number Payments'].agg('sum')
-    short_df = short_df.T
-    short_df = short_df*100
-    short_df = (short_df.div(short_df.sum(axis=1), axis=0))*100
-    a = short_df['NHS'].plot(kind='bar', color=colors, alpha=0.575,
-                             linewidth=1.25, width=0.65, edgecolor='k', ax=ax3)
-    b = short_df['No Match'].plot(kind='bar', color=colors, alpha=0.575,
-                                  linewidth=1.25, width=0.65, edgecolor='k',
-                             ax=ax4)
-    c = short_df['Company'].plot(kind='bar', color=colors, alpha=0.575,
-                                 linewidth=1.25, width=0.65, edgecolor='k',
-                                 ax=ax5)
-    d = short_df['Doctor'].plot(kind='bar', color=colors, alpha=0.575,
-                                linewidth=1.25, width=0.65, edgecolor='k',
-                                ax=ax6)
-    e = short_df['Charity'].plot(kind='bar', color=colors, alpha=0.575,
-                                 linewidth=1.25, width=0.65, edgecolor='k',
-                                 ax=ax7)
-    f = short_df['Person'].plot(kind='bar', color=colors, alpha=0.575,
-                                linewidth=1.25, width=0.65, edgecolor='k',
-                                ax=ax8)
+    short_df_trust = trust_df.groupby(['Type'])['Number Suppliers',
+                                                'Payment Value',
+                                                'Number Payments'].agg('sum')
+    short_df_ccg = ccg_df.groupby(['Type'])['Number Suppliers',
+                                            'Payment Value',
+                                            'Number Payments'].agg('sum')
+    short_df_full = full_df.groupby(['Type'])['Number Suppliers',
+                                              'Payment Value',
+                                              'Number Payments'].agg('sum')
+    short_df_trust = short_df_trust.T
+    short_df_ccg = short_df_ccg.T
+    short_df_full = short_df_full.T
+    short_df_full = short_df_full*100
+    short_df_ccg = short_df_ccg*100
+    short_df_trust = short_df_trust*100
+    short_df_full = (short_df_full.div(short_df_full.sum(axis=1), axis=0))*100
+    short_df_trust = (short_df_trust.div(short_df_trust.sum(axis=1), axis=0))*100
+    short_df_ccg = (short_df_ccg.div(short_df_ccg.sum(axis=1), axis=0))*100
+    #make first set of bars: ccgs
+    a = short_df_ccg['NHS'].plot(kind='bar', color=colors, alpha=0.575,
+                                 linewidth=1.25, width=0.65, edgecolor='k', ax=ax3)
+    b = short_df_ccg['No Match'].plot(kind='bar', color=colors, alpha=0.575,
+                                      linewidth=1.25, width=0.65, edgecolor='k',
+                                      ax=ax4)
+    c = short_df_ccg['Company'].plot(kind='bar', color=colors, alpha=0.575,
+                                     linewidth=1.25, width=0.65, edgecolor='k',
+                                     ax=ax5)
+    d = short_df_ccg['Doctor'].plot(kind='bar', color=colors, alpha=0.575,
+                                    linewidth=1.25, width=0.65, edgecolor='k',
+                                    ax=ax6)
+    e = short_df_ccg['Charity'].plot(kind='bar', color=colors, alpha=0.575,
+                                     linewidth=1.25, width=0.65, edgecolor='k',
+                                     ax=ax7)
+    f = short_df_ccg['Person'].plot(kind='bar', color=colors, alpha=0.575,
+                                    linewidth=1.25, width=0.65, edgecolor='k',
+                                    ax=ax8)
     sup = patches.Patch(facecolor=colors[0], label='Number Suppliers',
                        alpha=0.575,edgecolor='k',linewidth=1)
     val = patches.Patch(facecolor=colors[1], label='Payment Value',
                           alpha=0.575,edgecolor='k',linewidth=1)
     count = patches.Patch(facecolor=colors[2], label='Number Payments',
                           alpha=0.575,edgecolor='k',linewidth=1)
-    plt.legend(handles=[sup, val, count], loc=2,fontsize=11, edgecolor='k',
+    ax8.legend(handles=[sup, val, count], loc=2,fontsize=11, edgecolor='k',
                frameon=False)#, fancybox=True, framealpha=1)
-    a.set_xlabel("C. NHS",fontsize=15,labelpad=8)
-    b.set_xlabel("D. No Match",fontsize=15,labelpad=8)
-    c.set_xlabel("E. Company",fontsize=15,labelpad=8)
-    d.set_xlabel("F. Doctor",fontsize=15,labelpad=8)
-    e.set_xlabel("G. Charity",fontsize=15,labelpad=8)
-    f.set_xlabel("H. Person",fontsize=15,labelpad=8)
     for axy in [a, b, c, d, e, f]:
-        axy.set_ylim(0, short_df.max().max()+2)
+        axy.set_ylim(0, short_df_ccg.max().max()+2)
         axy.get_xaxis().set_ticks([])
         for p in axy.patches:
-            axy.annotate(str(round(p.get_height(),2))+'%', (p.get_x(),
+            axy.annotate(str(round(p.get_height(),1))+'%', (p.get_x(),
                                                             p.get_height() + 1.6), fontsize=8)
         if axy!=a:
             sns.despine(ax=axy, left=True, bottom = False, right = True)
             axy.get_yaxis().set_visible(False)
         else:
             sns.despine(ax=axy, left=False, bottom = False, right = True)
-            axy.set_ylabel("Percent of Total (%)",fontsize=12)
+            axy.set_ylabel("CCG Dataset",fontsize=12)
             axy.yaxis.set_major_formatter(ticker.PercentFormatter())
-#            vals = axy.get_yticks()/100
-#            print(vals)
-#            axy.set_yticklabels(['{:,.0%}'.format(x) for x in axy.get_yticks()],fontsize=12)
-#    ax3.set_title('C. NHS Digital', fontsize=13, y = 1.075)
-#    ax4.set_title('D. Unmatched', fontsize=13, y = 1.075)
-#    ax5.set_title('E. Companies', fontsize=13, y = 1.075)
-#    ax6.set_title('F. Doctor', fontsize=13, y = 1.075)
-#    ax7.set_title('G. Charity', fontsize=13, y = 1.075)
-#    ax8.set_title('H. Individual', fontsize=13, y = 1.075)
-    short_df = short_df[['Charity', 'Company', 'Doctor', 'NHS', 'Person', 'No Match']]
+    # make trusts
+    g = short_df_trust['NHS'].plot(kind='bar', color=colors, alpha=0.575,
+                                 linewidth=1.25, width=0.65, edgecolor='k', ax=ax9)
+    h = short_df_trust['No Match'].plot(kind='bar', color=colors, alpha=0.575,
+                                      linewidth=1.25, width=0.65, edgecolor='k',
+                                      ax=ax10)
+    i = short_df_trust['Company'].plot(kind='bar', color=colors, alpha=0.575,
+                                     linewidth=1.25, width=0.65, edgecolor='k',
+                                     ax=ax11)
+    j = short_df_trust['Doctor'].plot(kind='bar', color=colors, alpha=0.575,
+                                    linewidth=1.25, width=0.65, edgecolor='k',
+                                    ax=ax12)
+    k = short_df_trust['Charity'].plot(kind='bar', color=colors, alpha=0.575,
+                                     linewidth=1.25, width=0.65, edgecolor='k',
+                                     ax=ax13)
+    l = short_df_trust['Person'].plot(kind='bar', color=colors, alpha=0.575,
+                                    linewidth=1.25, width=0.65, edgecolor='k',
+                                    ax=ax14)
+    sup = patches.Patch(facecolor=colors[0], label='Number Suppliers',
+                       alpha=0.575,edgecolor='k',linewidth=1)
+    val = patches.Patch(facecolor=colors[1], label='Payment Value',
+                          alpha=0.575,edgecolor='k',linewidth=1)
+    count = patches.Patch(facecolor=colors[2], label='Number Payments',
+                          alpha=0.575,edgecolor='k',linewidth=1)
+    g.set_xlabel("NHS",fontsize=15,labelpad=8)
+    h.set_xlabel("No Match",fontsize=15,labelpad=8)
+    i.set_xlabel("Company",fontsize=15,labelpad=8)
+    j.set_xlabel("Doctor",fontsize=15,labelpad=8)
+    k.set_xlabel("Charity",fontsize=15,labelpad=8)
+    l.set_xlabel("Person",fontsize=15,labelpad=8)
+    for axy in [g, h, i, j, k, l]:
+        axy.set_ylim(0, short_df_trust.max().max()+2)
+        axy.get_xaxis().set_ticks([])
+        for p in axy.patches:
+            axy.annotate(str(round(p.get_height(),1))+'%', (p.get_x(),
+                                                            p.get_height() + 1.6), fontsize=8)
+        if axy!=g:
+            sns.despine(ax=axy, left=True, bottom = False, right = True)
+            axy.get_yaxis().set_visible(False)
+        else:
+            sns.despine(ax=axy, left=False, bottom = False, right = True)
+            axy.set_ylabel("Trust Dataset",fontsize=12)
+            axy.yaxis.set_major_formatter(ticker.PercentFormatter())
+    ax14.legend(handles=[sup, val, count], loc=2,fontsize=11, edgecolor='k',
+               frameon=False)#, fancybox=True, framealpha=1)
+    ax3.set_title('C.', fontsize=17, y=1.025, **csfont, loc='left')
+    ax5.set_title('Payments mapped to a single register',
+                  fontsize=16, y=1.05, **csfont, loc='center', x=1.1)
+#    ax9.set_title('D.', fontsize=17, y=1.025, **csfont, loc='left')
+#    ax11.set_title('Trust payments to institutions mapped to one register',
+#                   fontsize=16,y=1.05, **csfont, loc='center', x=1.5)
+
+    # make pie
+    short_df_full = short_df_full[['Charity', 'Company', 'Doctor', 'NHS', 'Person', 'No Match']]
     labels = []
-    for col in short_df.columns:
+    for col in short_df_full.columns:
         labels.append(col + ' (£)')
-    sizes = short_df.loc['Payment Value', :].tolist()
+    sizes = short_df_full.loc['Payment Value', :].tolist()
     colors = ['#b3e2cd', '#cbd5e8', '#f4cae4', '#fdcdac', '#e6f5c9', '#fff2ae']
     explode = (0.25, 0.05, 0.05, 0.05, 0.05, 0.05)
     ax1.pie(sizes, explode=explode, labels=labels, colors=colors,
             wedgeprops=dict(width=0.25), autopct='%1.1f%%', shadow=False,
             pctdistance=0.5)
-    ax1.set_title('A. Value based distribution', fontsize=16,y=1.05)
+
+    ax1.set_title('A.', fontsize=17, y=1.025, **csfont, loc='left')
+    ax1.set_title('Value based distribution', fontsize=16,
+                  y=1.03, **csfont, loc='center')
     wedges = [patch for patch in ax1.patches if isinstance(patch, patches.Wedge)]
     for w in wedges:
         w.set_linewidth(0.52)
-        #w.set_alpha(0.75)
         w.set_edgecolor('k')
     centre_circle = plt.Circle((0,0), 0.75, color='black', fc='white',linewidth=.25)
-
     ax1.axis('equal')
+    sns.despine(ax=axfake1, top=True, left=True, right=True, bottom=True)
+    #sns.despine(ax=axfake2, top=True, left=True, right=True, bottom=True)
+    axfake1.set_xticks([])
+    axfake1.set_yticks([])
+    fig.subplots_adjust(hspace=25)
     plt.tight_layout(True)
-    plt.savefig(os.path.join(figure_path, 'match_distribution.png'), dpi=600)
-    plt.savefig(os.path.join(figure_path, 'match_distribution.pdf'))
-    plt.savefig(os.path.join(figure_path, 'match_distribution.svg'))
+
+#    axfake2.set_xticks([])
+#    axfake2.set_yticks([])
+    plt.savefig(os.path.join(figure_path, 'match_distribution.png'),
+                bbox_inches='tight', dpi=600)
+    plt.savefig(os.path.join(figure_path, 'match_distribution.pdf'), bbox_inches='tight')
+    plt.savefig(os.path.join(figure_path, 'match_distribution.svg'), bbox_inches='tight')
     plt.show()
