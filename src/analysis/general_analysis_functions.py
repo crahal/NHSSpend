@@ -136,9 +136,9 @@ def calc_total_files(raw_ccg_path):
 
 
 def plot_macro_overview(data_path, figure_path):
-    titlefont = 19
-    letterfont = 20
-    labelfont = 14
+    titlefont = 17
+    letterfont = 18
+    labelfont = 12
     mpl.rc('font',family='Helvetica')
     cwd = os.getcwd()
     csfont = {'fontname':'Helvetica'}
@@ -174,7 +174,7 @@ def plot_macro_overview(data_path, figure_path):
     alloc = pd.read_csv(os.path.join(data_path, 'ccg_allocations.csv'))
     alloc['Final allocation'] = alloc['Final allocation']/1000
 
-    fig = plt.figure(figsize=(14, 13))
+    fig = plt.figure(figsize=(14, 12))
     ax1 = plt.subplot2grid((12, 2), (0, 0), colspan=1, rowspan=6)
     ax2 = plt.subplot2grid((12, 2), (0, 1), colspan=1, rowspan=6)
     ax3 = plt.subplot2grid((12, 2), (6, 0), colspan=1, rowspan=6)
@@ -184,14 +184,14 @@ def plot_macro_overview(data_path, figure_path):
     trusts_above = trusts[trusts['actual']>0][['plan', 'actual']]
     trusts_below = trusts[trusts['actual']<=0][['plan', 'actual']]
     ee = trusts_above[['plan', 'actual']].plot.scatter(x='plan', y='actual',
-                                                 ax=ax1, edgecolor='k',
-                                                 s=50, alpha=0.5,
-                                                 label='NHS Trust in Deficit')
+                                                       ax=ax1, edgecolor='k',
+                                                       s=100, alpha=0.55, color='#377eb8',
+                                                       label='NHS Trust in Surplus')
     ee = trusts_below[['plan', 'actual']].plot.scatter(x='plan', y='actual',
                                                  ax=ax1, edgecolor='k',
-                                                 s=50, alpha=0.5,
-                                                 color='r',
-                                                 label='NHS Trust in Surplus')
+                                                 s=100, alpha=0.55,
+                                                 color='#ff5148',
+                                                 label='NHS Trust in Deficit')
     ee.axhline(y=0.0, color='k', linestyle='--', alpha=0.3, linewidth=0.8)
     ee.axvline(x=0.0, color='k', linestyle='--', alpha=0.3, linewidth=0.8)
     ee.xaxis.set_ticks_position('none')
@@ -213,13 +213,13 @@ def plot_macro_overview(data_path, figure_path):
                             #bbox_to_anchor=(0, 0 ,50, 25),
                             loc='upper left')
     inset_axes.hist(trusts_above['plan']-trusts_above['actual'],
-                    edgecolor='k', alpha=0.5, bins=14,
+                    edgecolor='k', alpha=0.55, bins=14,
                     label='Overspend',
-                    color='#e50000')
+                    color='#ff5148')
     inset_axes.yaxis.set_label_position('right')
     inset_axes.set_ylabel('Frequency')
-    inset_axes.patches[-1].set_color('#4C72B0')
-    inset_axes.patches[-1].set_alpha(0.5)
+    inset_axes.patches[-1].set_color('#377eb8')
+    inset_axes.patches[-1].set_alpha(0.55)
     inset_axes.patches[-1].set_label('Underspend')
     inset_axes.patches[-1].set_edgecolor('k')
     lines, labels = inset_axes.get_legend_handles_labels()
@@ -253,8 +253,8 @@ def plot_macro_overview(data_path, figure_path):
         counter = counter+1
     formatter = ticker.FormatStrFormatter('£%1.0fk')
     ff.yaxis.set_major_formatter(formatter)
-    vals = ff.get_yticks()
-    ff.set_yticklabels(['{:,.2%}'.format(x/100) for x in vals])
+    vals = ff.get_xticks()
+    ff.set_xticklabels(['{:,.2%}'.format(x/100) for x in vals])
 
     gg = overtime[0:9].plot(ax=ax3, x='time_index',
                        y='pesa_merged_pc', color='#0087DC',
@@ -302,27 +302,31 @@ def plot_macro_overview(data_path, figure_path):
               edgecolor='w',
               fontsize=labelfont-2, loc='upper left')
     hh = sns.distplot(alloc['Final allocation'], ax=ax4,
-                      kde_kws={"color": "#fc8d62",
+                      kde_kws={"color": '#ffb94e',
                       "lw": 2, "label": "Kernel Density Estimate",
                       "alpha": 1},
                      hist_kws={"alpha": 0.5,
+                               "color": '#377eb8',
                                "label": "Frequency",
                                'edgecolor': 'k'})
     hh.set_xlabel('', **hfont, fontsize=12)
     ii = sns.distplot(alloc['Per capita allocation'],
                       ax=ax5,
-                      kde_kws={"color": "#fc8d62", "lw": 2,
+                      kde_kws={"color": '#ffb94e', "lw": 2,
                                "label": "Kernel Density Estimate",
                                "alpha": 1},
                      hist_kws={"alpha": 0.5, "label": "Frequency",
-                               'edgecolor': 'k'})
+                               'edgecolor': 'k',
+                               "color": '#377eb8'})
+    hh.set_ylabel("Density", **hfont, fontsize=labelfont)
+    ii.set_ylabel("Density", **hfont, fontsize=labelfont)
     formatter = ticker.FormatStrFormatter('%.3f')
     hh.yaxis.set_major_formatter(formatter)
     formatter = ticker.FormatStrFormatter('£%1.0fm')
     hh.xaxis.set_major_formatter(formatter)
     ii.legend(edgecolor='w', fontsize=labelfont-1)
     hh.legend(edgecolor='w', fontsize=labelfont-1)
-    hh.set_title('Distribution of CCG allocations: 2019/2020',
+    hh.set_title('CCG allocations: 2019/2020',
                  fontsize=titlefont,y=1.01)
     hh.set_title('D.', fontsize=letterfont, loc='left')
     ii.set_title('CCG allocations per capita: 2019/2020', fontsize=titlefont,y=1.01)
@@ -332,12 +336,13 @@ def plot_macro_overview(data_path, figure_path):
     formatter = ticker.FormatStrFormatter('£%1.0f')
     ii.xaxis.set_major_formatter(formatter)
 
-    sns.despine(ax=ax1, left=True, bottom=True)
+    sns.despine(ax=ax1)
     sns.despine(ax=ax2)
     sns.despine(ax=gg)
     sns.despine(ax=ax4)
     sns.despine(ax=ax5)
     plt.tight_layout(True)
+    plt.subplots_adjust(hspace=50, wspace=0.25)
     plt.savefig(os.path.join(figure_path, 'nhs_spending_macro.pdf'),
                 bbox_inches='tight')
     plt.savefig(os.path.join(figure_path, 'nhs_spending_macro.png'), dpi=500,
@@ -486,7 +491,7 @@ def scoring_figures(sup_df, figure_path, figsizetuple):
 
     a = sns.distplot(sup_df[sup_df['score_0'].notnull()]['score_0'], ax=ax4,
                      kde_kws={'gridsize': 500,
-                              'color': '#ff7f00', 'alpha': 0.8,
+                              'color': '#ffb94e', 'alpha': 0.8,
                               'linestyle': '--'},
                      hist=False, label='ES$^1_r$', bins=np.arange(0, 60, 1))
     a = sns.distplot(sup_df[sup_df['score_0_n'].notnull()]['score_0_n'],
@@ -501,7 +506,7 @@ def scoring_figures(sup_df, figure_path, figsizetuple):
     ax4.set_ylabel('Probability Density', fontsize=legend_fontsize)
     b = sns.distplot(sup_df[sup_df['match_0_lev'].notnull()]['match_0_lev'],
                      kde_kws={'gridsize': 500,
-                              'color': '#ff7f00', 'linestyle': '--',
+                              'color': '#ffb94e', 'linestyle': '--',
                               'alpha': 0.8},
                      hist=False, label=r'$\mathcal{L}^1_r$',
                      bins=np.arange(0, 100, 1), ax=ax5)
@@ -518,7 +523,7 @@ def scoring_figures(sup_df, figure_path, figsizetuple):
     ax5.set_ylabel('Probability Density', fontsize=legend_fontsize)
 #    c = sns.distplot(sup_df[sup_df['score_1'].notnull()]['score_1'],
 #                     kde_kws={'gridsize': 500,
-#                              'color': '#ff7f00',
+#                              'color': '#ffb94e',
 #                              'linestyle': '--',
 #                              'alpha': 0.8},
 #                     hist=False, ax=ax6, label=r'ES$^2_r$',
@@ -536,7 +541,7 @@ def scoring_figures(sup_df, figure_path, figsizetuple):
 #    ax6.set_ylabel('Probability Density', fontsize=legend_fontsize)
 #    d = sns.distplot(sup_df[sup_df['match_1_lev'].notnull()]['match_1_lev'],
 #                     kde_kws={'gridsize': 500,
-#                              'color':'#ff7f00',
+#                              'color':'#ffb94e',
 #                              'linestyle': '--',
 #                              'alpha': 0.8},
 #                     hist=False, ax=ax7, label=r'$\mathcal{L}^2_r$',
@@ -554,7 +559,7 @@ def scoring_figures(sup_df, figure_path, figsizetuple):
 #    d.set_xlim(0, 175)
 
     ax8.set_title('2nd Match: ES', fontsize=legend_fontsize+4, y=1.01)
-    ax8.set_title('H.', fontsize=legend_fontsize+6, loc='left', y=1.025)
+    ax8.set_title('F.', fontsize=legend_fontsize+6, loc='left', y=1.025)
     axins8 = inset_axes(ax8,
                         width="25%",  # width = 50% of parent_bbox width
                         height="5%",  # height : 5%
@@ -575,7 +580,7 @@ def scoring_figures(sup_df, figure_path, figsizetuple):
     fig.colorbar(im9, cax=axins9, orientation="horizontal")
     axins9.xaxis.set_ticks_position("top")
     ax9.set_title('2nd Match: Lev.', fontsize=legend_fontsize+4, y=1.01)
-    ax9.set_title('I.', fontsize=legend_fontsize+6, loc='left', y=1.025)
+    ax9.set_title('G.', fontsize=legend_fontsize+6, loc='left', y=1.025)
     ax9.set_xlabel(r'$\mathcal{L}^2_r$', fontsize=legend_fontsize)
     ax9.set_ylabel(r'$\mathcal{L}^2_n$', fontsize=legend_fontsize)
 #    ax9.set_xlim(0, 150)
@@ -589,7 +594,7 @@ def scoring_figures(sup_df, figure_path, figsizetuple):
     fig.colorbar(im10, cax=axins10, orientation="horizontal")
     axins10.xaxis.set_ticks_position("top")
     ax10.set_title('2nd Match: Lev. vs ES', fontsize=legend_fontsize+4, y=1.01)
-    ax10.set_title('J.', fontsize=legend_fontsize+6, loc='left', y=1.025)
+    ax10.set_title('H.', fontsize=legend_fontsize+6, loc='left', y=1.025)
     ax10.set_ylabel('ES$^2_n$', fontsize=legend_fontsize)
     ax10.set_xlabel(r'$\mathcal{L}^2_n$', fontsize=legend_fontsize)
     for ax in [ax1, ax2, ax3, ax4, ax5,# ax6, ax7,
@@ -888,7 +893,7 @@ def plot_match_distribution(sup_df, trust_pay_df, ccg_pay_df, figure_path, figsi
 
     # make bars
     sns.set_style("ticks")
-    colors = ['#377eb8', '#ff7f00', '#ffeda0']
+    colors = ['#377eb8', '#ffb94e', '#ffeda0']
     short_df_trust = trust_df.groupby(['Type'])['Number Suppliers',
                                                 'Payment Value',
                                                 'Number Payments'].agg('sum')
