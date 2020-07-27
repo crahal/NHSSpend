@@ -85,22 +85,22 @@ def plot_temporal(ts_ccg_annual, ts_trust_annual, ts_ccg_monthly,
              color='#377eb8', alpha=0.8, marker='o', markersize=8, markerfacecolor='w',
              label='CCGs')
     ax1a = ax1.twinx()
-    ax1a.plot(ts_trust_month['Year-Month'][6:], ts_trust_month['Amount'][6:], color='#ff7f00', alpha=0.8,
+    ax1a.plot(ts_trust_month['Year-Month'][6:], ts_trust_month['Amount'][6:], color='#ffb94e', alpha=0.8,
               marker='o', markersize=8, markerfacecolor='w', label='NHS Trusts')
-    ax1.plot(np.nan, np.nan, color='#ff7f00', alpha=0.8,
+    ax1.plot(np.nan, np.nan, color='#ffb94e', alpha=0.8,
               marker='o', markersize=8, markerfacecolor='w', label='NHS Trusts')
 
     ax2.plot(ts_ccg_month['Year-Month'][6:], ts_ccg_month['Count'][6:], color='#377eb8', alpha=0.8,
              marker='o', markersize=8, markerfacecolor='w', label='CCGs')
     ax2a = ax2.twinx()
-    ax2a.plot(ts_trust_month['Year-Month'][6:], ts_trust_month['Count'][6:], color='#ff7f00',
+    ax2a.plot(ts_trust_month['Year-Month'][6:], ts_trust_month['Count'][6:], color='#ffb94e',
              alpha=0.65,marker='o', markersize=8, markerfacecolor='w', label='NHS Trusts')
-    ax2.plot(np.nan, np.nan, color='#ff7f00',
+    ax2.plot(np.nan, np.nan, color='#ffb94e',
              alpha=0.65,marker='o', markersize=8, markerfacecolor='w', label='NHS Trusts')
 
     width=0.375
     rects1 = ax3.bar(np.arange(len(ts_trust_annual)), ts_trust_annual['Count'],
-                     width, color='#ff7f00', label='NHS Trusts', alpha=0.6, edgecolor='k',
+                     width, color='#ffb94e', label='NHS Trusts', alpha=0.6, edgecolor='k',
                      linewidth=0.75)
     rects2 = ax3.bar(np.arange(len(ts_ccg_annual))+width, ts_ccg_annual['Count'],
                      width, color='#377eb8', label='CCGs', alpha=0.6, edgecolor='k',
@@ -110,7 +110,7 @@ def plot_temporal(ts_ccg_annual, ts_trust_annual, ts_ccg_monthly,
     ax3.legend(loc='upper right', edgecolor='k', frameon=False, fontsize=10, ncol=1)
 
     rects3 = ax4.bar(np.arange(len(ts_trust_annual)), ts_trust_annual['Amount'],
-            width, color='#ff7f00', label='NHS Trusts', alpha=0.6, edgecolor='k',
+            width, color='#ffb94e', label='NHS Trusts', alpha=0.6, edgecolor='k',
             linewidth=0.75)
     rects4 = ax4.bar(np.arange(len(ts_ccg_annual))+width, ts_ccg_annual['Amount'],
             width, color='#377eb8', label='CCGs', alpha=0.6, edgecolor='k',
@@ -121,7 +121,7 @@ def plot_temporal(ts_ccg_annual, ts_trust_annual, ts_ccg_monthly,
     months = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun',
               'Jul', 'Aug', 'Sept', 'Octo', 'Nov', 'Dec']
     rects5 = ax5.bar(np.arange(len(ts_trust_monthly)), ts_trust_monthly['Count'],
-            width, color='#ff7f00', label='NHS Trusts', alpha=0.6, edgecolor='k',
+            width, color='#ffb94e', label='NHS Trusts', alpha=0.6, edgecolor='k',
             linewidth=0.75)
     rects6 = ax5.bar(np.arange(len(ts_ccg_monthly))+width, ts_ccg_monthly['Count'],
             width, color='#377eb8', label='CCGs', alpha=0.6, edgecolor='k',
@@ -131,7 +131,7 @@ def plot_temporal(ts_ccg_annual, ts_trust_annual, ts_ccg_monthly,
     ax5.legend(loc='upper right', edgecolor='k', frameon=False, fontsize=10, ncol=1)
 
     rects7 = ax6.bar(np.arange(len(ts_trust_monthly)), ts_trust_monthly['Amount'],
-            width, color='#ff7f00', label='NHS Trusts', alpha=0.6, edgecolor='k',
+            width, color='#ffb94e', label='NHS Trusts', alpha=0.6, edgecolor='k',
             linewidth=0.75)
     rects8 = ax6.bar(np.arange(len(ts_ccg_monthly))+width, ts_ccg_monthly['Amount'],
             width, color='#377eb8', label='CCGs', alpha=0.6, edgecolor='k',
@@ -635,9 +635,9 @@ def charity_age(cc_pay_df, cc_sup, cc_name, cc_class, figure_path):
     titlesize = 15
     csfont = {'fontname': 'Helvetica'}
     hfont = {'fontname': 'Helvetica'}
-    ccgdata_regdate = cc_sup[cc_sup['regdate'].notnull()]['regdate'].\
+    ccgdata_regdate = cc_sup[cc_sup['regdate'].notnull()].drop_duplicates(subset=['regno'])['regdate'].\
         astype(str).str[0:4].astype(float)
-    cc_regdate = cc_name[cc_name['regdate'].notnull()]['regdate'].\
+    cc_regdate = cc_name[cc_name['regdate'].notnull()].drop_duplicates(subset=['regno'])['regdate'].\
         astype(str).str[0:4].astype(float)
     cc_pay_df_with_cc = pd.merge(cc_pay_df, cc_name, how='left',
                                  left_on='verif_match', right_on='norm_name')
@@ -645,7 +645,7 @@ def charity_age(cc_pay_df, cc_sup, cc_name, cc_class, figure_path):
                                   left_on='regno', right_on='regno')
     cc_pay_adv = cc_pay_classtext[cc_pay_classtext['classtext']=='The Advancement Of Health Or Saving Of Lives']
 
-    cc_adv_date = cc_pay_adv[cc_pay_adv['regdate'].notnull()]['regdate'].\
+    cc_adv_date = cc_pay_adv[cc_pay_adv['regdate'].notnull()].drop_duplicates(subset=['regno'])['regdate'].\
         astype(str).str[0:4].astype(float)
     f, ((ax1, ax2), (ax3, ax4)) = plt.subplots(2, 2, figsize=(14, 12))
     g = sns.distplot(ccgdata_regdate, ax=ax1, kde_kws={'gridsize': 500},
@@ -653,21 +653,21 @@ def charity_age(cc_pay_df, cc_sup, cc_name, cc_class, figure_path):
                                'edgecolor': 'k'}, label='NHS Suppliers',
                      bins=np.arange(1950, 2020, 3))
     g = sns.distplot(cc_regdate, ax=ax1, kde_kws={'gridsize': 500},
-                     hist_kws={'color': '#ff7f00', 'alpha': 0.35,
+                     hist_kws={'color': '#ffb94e', 'alpha': 0.35,
                                'edgecolor': 'k'},
                      label='All CC', bins=np.arange(1950, 2020, 3))
     ax1.set_ylabel("Normalized Frequency", fontsize=12)
     ax1.set_xlabel("Charity Registration Year", fontsize=12)
-    ax1.set_ylim(0, 0.048)
+#    ax1.set_ylim(0, 0.048)
     ax1.set_title('Distributions of Registration Years',
                   **csfont, fontsize=titlesize, y=1.02)
     ax1.set_title('A.', **csfont, fontsize=titlesize+5, loc='left', y=1.01)
     sns.despine()
     g.legend(loc='upper left', edgecolor='k', frameon=False, fontsize=10)
 
-    a = cc_sup[cc_sup['regdate'].notnull()]['regdate'].\
+    a = cc_sup[cc_sup['regdate'].notnull()].drop_duplicates(subset=['regno'])['regdate'].\
         astype(str).str[0:4].astype(float)
-    b = cc_name[cc_name['regdate'].notnull()]['regdate'].\
+    b = cc_name[cc_name['regdate'].notnull()].drop_duplicates(subset=['regno'])['regdate'].\
         astype(str).str[0:4].astype(float)
     percs = np.linspace(0, 100, 40)
     qn_a = np.percentile(a, percs)
@@ -695,7 +695,7 @@ def charity_age(cc_pay_df, cc_sup, cc_name, cc_class, figure_path):
 
     x1, y1 = ecdf(cc_regdate)
     ax3.plot(x1, y1, label='All Charity Commission',
-             color='#ff7f00', alpha=0.7)
+             color='#ffb94e', alpha=0.7)
     x2, y2 = ecdf(ccgdata_regdate)
     ax3.plot(x2, y2, label='NHS Suppliers', color='#377eb8', alpha=0.7)
     x3, y3 = ecdf(cc_adv_date)
@@ -714,7 +714,7 @@ def charity_age(cc_pay_df, cc_sup, cc_name, cc_class, figure_path):
                                'edgecolor': 'k'}, label='NHS Suppliers',
                      bins=np.arange(1950, 2020, 3))
     h = sns.distplot(cc_adv_date, ax=ax4, kde_kws={'gridsize': 500},
-                     hist_kws={'color': '#ff7f00', 'alpha': 0.35,
+                     hist_kws={'color': '#ffb94e', 'alpha': 0.35,
                                'edgecolor': 'k'},
                      label='All Advancement of Health', bins=np.arange(1950, 2020, 3))
     ax4.set_ylabel("Normalized Frequency", fontsize=12)
@@ -735,8 +735,6 @@ def charity_age(cc_pay_df, cc_sup, cc_name, cc_class, figure_path):
                 bbox_inches='tight', dpi=500)
     plt.savefig(os.path.join(figure_path, 'age_distributions.pdf'),
                 bbox_inches='tight')
-
-
 
 
 def plot_choropleths_trusts(support_path, shape_path, figure_path,
@@ -864,9 +862,9 @@ def plot_choropleths_trusts(support_path, shape_path, figure_path,
     ee.set_xlabel("")
 
     count_array = gdf[gdf['pc_amount']!='No Data']['pc_amount'].astype(float)
-    ff = sns.distplot(count_array, ax=ax4, kde_kws={'color': '#ff7f00', 'alpha':0.9,
+    ff = sns.distplot(count_array, ax=ax4, kde_kws={'color': '#ffb94e', 'alpha':0.9,
                                                     'label':'KDE'},
-                      hist_kws={'color': '#ff7f00', 'alpha': 0.5,
+                      hist_kws={'color': '#ffb94e', 'alpha': 0.5,
                                'edgecolor': 'k', 'label': 'Histogram'},
                       bins=20)
     ff.set_xlim(0, None)
@@ -885,7 +883,9 @@ def plot_choropleths_trusts(support_path, shape_path, figure_path,
     plt.savefig(os.path.join(figure_path, 'choropleth_map_trusts.png'),
                 bbox_inches='tight', dpi=600)
     print('\nThe top 5 Trusts by %to VCS are: \n')
-    print(gdf[['dept', 'charity_amount', 'pc_amount']].sort_values(by='pc_amount', ascending=False)[0:5])
+    print(gdf[['dept', 'charity_amount',
+               'pc_amount', 'charity_count']].sort_values(by='pc_amount',
+                                                          ascending=False)[0:5])
 
 
 def plot_choropleths_ccg(gdf, figure_path):
@@ -973,9 +973,9 @@ def plot_choropleths_ccg(gdf, figure_path):
 
 #    g.legend(loc='upper left', edgecolor='k', frameon=False, fontsize=10)
     count_array = gdf[gdf['amount_pc_cc']!='No Data']['amount_pc_cc'].astype(float)
-    ff = sns.distplot(count_array, ax=ax4, kde_kws={'color': '#ff7f00', 'alpha':0.9,
+    ff = sns.distplot(count_array, ax=ax4, kde_kws={'color': '#ffb94e', 'alpha':0.9,
                                                     'label':'KDE'},
-                      hist_kws={'color': '#ff7f00', 'alpha': 0.5,
+                      hist_kws={'color': '#ffb94e', 'alpha': 0.5,
                                'edgecolor': 'k', 'label': 'Histogram'},
                                bins=20)
     ff.set_xlim(0, None)
@@ -994,7 +994,9 @@ def plot_choropleths_ccg(gdf, figure_path):
     plt.savefig(os.path.join(figure_path, 'choropleth_map_ccgs.png'),
                 bbox_inches='tight', dpi=600)
     print('\nThe top 5 Trusts by %to VCS are: \n')
-    print(gdf[['dept', 'amount_cc', 'amount_pc_cc']].sort_values(by='amount_pc_cc', ascending=False)[0:5])
+    print(gdf[['dept', 'amount_cc',
+               'amount_pc_cc', 'count_cc']].sort_values(by='amount_pc_cc',
+                                                        ascending=False)[0:5])
 
 
 def make_ccg_to_gdf(pay_df, pay_df_cc, support_path):
