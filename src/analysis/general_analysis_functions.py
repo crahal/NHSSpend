@@ -6,6 +6,7 @@ from tempfile import NamedTemporaryFile
 from urllib.request import urlopen
 import matplotlib.ticker as ticker
 import matplotlib as mpl
+import string
 import os
 from matplotlib_venn import venn3, venn3_circles
 import matplotlib.patches as patches
@@ -14,20 +15,84 @@ import matplotlib as mpl
 np.warnings.filterwarnings('ignore')
 plt.rcParams['patch.edgecolor'] = 'k'
 plt.rcParams['patch.linewidth'] = 0.25
-
-github_url = 'https://github.com/google/roboto/blob/master/src/hinted/Roboto-Light.ttf'
-
-url = github_url + '?raw=true'  # You want the actual file, not some html
-
-response = urlopen(url)
-f = NamedTemporaryFile(delete=False, suffix='.ttf')
-f.write(response.read())
-f.close()
-
 mpl.rc('font', family='sans-serif')
-mpl.rc('font', serif=f.name)
 mpl.rc('text', usetex='false')
 #matplotlib.rcParams.update({'font.size': 20})
+
+
+def make_dfs_for_coauthors(ccg_pay_df, trust_pay_df, nhsengland_pay_df,
+                           cc_name, merge_path, ch_path, data_path):
+
+    def make_df(in_df, ch_df, norm_df, out_path):
+        out_df = pd.merge(in_df, ch_df, how='left',
+                          left_on='verif_match', right_on='company_norm')
+        out_df = pd.merge(out_df, cc_name[['norm_name', 'regno',
+                                           'subno', 'nameno', 'name']],
+                          how='left', left_on='verif_match', right_on='norm_name')
+        out_df = out_df.rename({' CompanyNumber': 'CompanyNumber'}, axis=1)
+        out_df = out_df.rename({'regno': 'CharityRegNo'}, axis=1)
+        out_df = out_df.rename({'nameno': 'CharityNameNo'}, axis=1)
+        out_df = out_df.rename({'subno': 'CharitySubNo'}, axis=1)
+        out_df = out_df.rename({'name': 'CharityName'}, axis=1)
+        out_df = out_df.drop('company_norm', axis=1)
+        out_df = out_df.drop('norm_name', axis=1)
+        out_df.to_csv(os.path.join(out_path))
+        return out_df
+
+    ch_df = pd.read_csv(os.path.join(ch_path, 'BasicCompanyDataAsOneFile-2020-03-01.csv'),
+                        usecols=['CompanyName', ' CompanyNumber'])
+    norm_file = os.path.join(data_path, 'data_support', 'norm_dict.tsv')
+    norm_df = pd.read_csv(norm_file, sep='\t')
+    norm_dict = dict(zip(norm_df['REPLACETHIS'], norm_df['WITHTHIS']))
+    ch_df['company_norm'] = ch_df['CompanyName'].apply(lambda x:
+                                                       normalizer(x, norm_dict))
+    ch_df = ch_df.drop_duplicates(subset=['company_norm'], keep=False)
+    make_df(ccg_pay_df, ch_df, norm_df,
+            os.path.join(merge_path, 'ccg_for_coauthors.csv'))
+    make_df(trust_pay_df, ch_df, norm_df,
+            os.path.join(merge_path, 'trust_for_coauthors.csv'))
+    make_df(nhsengland_pay_df, ch_df, norm_df,
+            os.path.join(merge_path, 'nhsengland_for_coauthors.csv'))
+    merged_coauth = make_df(pd.concat([ccg_pay_df, trust_pay_df, nhsengland_pay_df]), ch_df, norm_df,
+                            os.path.join(merge_path, 'concatenateddata_for_coauthors.csv'))
+    merged_coauth = merged_coauth[merged_coauth['match_type'].str.contains('Chari')]
+    merged_coauth = merged_coauth.drop_duplicates(subset=['supplier'], keep='first')
+    merged_coauth = merged_coauth[['supplier', 'query_string_n', 'verif_match',
+                                   'match_type', 'CompanyName', 'CompanyNumber',
+                                   'CharityRegNo','CharitySubNo',
+                                   'CharityNameNo', 'CharityName']]
+    merged_coauth.to_csv(os.path.join(merge_path, 'charities_for_checking.csv'))
+
+
+def normalizer(name, norm_dict={}):
+    ''' normalise entity names with manually curated dict'''
+    if isinstance(name, str):
+        name = name.upper()
+        for key, value in norm_dict.items():
+            name = name.replace(key, value)
+        name = name.replace(r"\(.*\)", "")
+        name = "".join(l for l in name if l not in string.punctuation)
+        name = ' '.join(name.split())
+        name = name.strip()
+        return name
+    else:
+        return None
+
+
+def overlapping_summary(trust_pay_df, ccg_pay_df, nhsengland_pay_df):
+    ch_nhstrust = trust_pay_df[trust_pay_df['match_type'].str.contains('Comp')]['amount'].sum()/trust_pay_df['amount'].sum()
+    print('Percent value of overlapping payments to CH in NHS Trust data:', round(ch_nhstrust*100,2))
+    ch_ccg = ccg_pay_df[ccg_pay_df['match_type'].str.contains('Comp')]['amount'].sum()/ccg_pay_df['amount'].sum()
+    print('Percent value of overlapping payments to CC in CCG data:', round(ch_ccg*100,2))
+    ch_nhsengland = nhsengland_pay_df[nhsengland_pay_df['match_type'].str.contains('Comp')]['amount'].sum()/nhsengland_pay_df['amount'].sum()
+    print('Percent value of overlapping payments to CH in NHS England data:', round(ch_nhsengland*100,2))
+    print('\n')
+    cc_nhstrust = trust_pay_df[trust_pay_df['match_type'].str.contains('Char')]['amount'].sum()/trust_pay_df['amount'].sum()
+    print('Percent value of overlapping payments to CC in NHS Trust data:', round(cc_nhstrust*100,2))
+    cc_ccg = ccg_pay_df[ccg_pay_df['match_type'].str.contains('Char')]['amount'].sum()/ccg_pay_df['amount'].sum()
+    print('Percent value of overlapping payments to CC in CCG data:', round(cc_ccg*100,2))
+    cc_nhsengland = nhsengland_pay_df[nhsengland_pay_df['match_type'].str.contains('Char')]['amount'].sum()/nhsengland_pay_df['amount'].sum()
+    print('Percent value of overlapping payments to CC in NHS England data:', round(cc_nhsengland*100,2))
 
 
 def make_onetable(df):
@@ -65,8 +130,12 @@ def make_onetable(df):
     return table
 
 
-def check_payments(df, filecheck_path, data_path, orgtype, number_to_check=25):
-    checker = pd.read_csv(filecheck_path)
+def check_payments(df, filecheck_path, data_path,
+                   orgtype, number_to_check=25):
+    if os.path.exists(filecheck_path):
+        checker = pd.read_csv(filecheck_path)
+    else:
+        checker = pd.DataFrame()
     pd.set_option('display.expand_frame_repr', False)
     order_df = df.sort_values(by='amount', ascending=False)
     order_df = order_df.reset_index()[['file', 'dept']].\
@@ -114,10 +183,70 @@ def check_payments(df, filecheck_path, data_path, orgtype, number_to_check=25):
         print('Cool! No more ' + str(orgtype) + ' payments to check by groupby...')
 
 
-def make_table_one(ccg_pay_df, trust_pay_df, table_path):
+
+
+
+def check_payments_abs(df, filecheck_path, data_path,
+                   orgtype, number_to_check=25):
+    if os.path.exists(filecheck_path):
+        checker = pd.read_csv(filecheck_path)
+    else:
+        checker = pd.DataFrame()
+    pd.set_option('display.expand_frame_repr', False)
+    df['abs_amount'] = df['amount'].abs()
+    order_df = df.sort_values(by='abs_amount', ascending=False)
+    order_df = order_df.reset_index()[['file', 'dept']].\
+        drop_duplicates()[0:number_to_check]
+    order_df = pd.merge(order_df, checker, how='left',
+                        left_on='file', right_on = 'file')
+    if (len(order_df[order_df['checked']!=1])) > 0:
+        print('Danger! There are still ' +
+              str(len(order_df[order_df['checked']!=1])) +
+              ' ' + str(orgtype) + ' absolute amount payments to check by order!')
+        print('Theyre being stored at ' +
+              str(os.path.join(data_path, 'data_support',
+                               orgtype + '_abs_ordered_to_check.csv')))
+        order_df.to_csv(os.path.join(data_path, 'data_support',
+                                     orgtype + '_abs_ordered_to_check.csv'))
+    else:
+        print('Cool! No more ' + str(orgtype) + ' absolute amount payments to check by order...')
+    grouped_df = df.sort_values(by='abs_amount',
+                                ascending=False)[0:20000]
+#    print(grouped_df)
+    grouped_df_sum = grouped_df.groupby(['file'])['abs_amount'].sum()
+    grouped_df_count = grouped_df.groupby(['file'])['file'].count()
+    grouped_df_merge = pd.merge(grouped_df_sum, grouped_df_count,
+                                how='left', left_index=True,
+                                right_index=True)
+    grouped_df_merge = grouped_df_merge.rename({'file':'count'}, axis=1)
+    grouped_df_merge = grouped_df_merge[grouped_df_merge['count']>=5]
+    grouped_df_merge = grouped_df_merge.sort_values(by='count',
+                                                    ascending=False)[0:number_to_check]
+    grouped_df_merge = pd.merge(grouped_df_merge, df[['file', 'dept']].drop_duplicates(subset=['file']),
+                                how='left', left_index = True,
+                                right_on = 'file')
+    grouped_df_merge = pd.merge(grouped_df_merge, checker, how='left',
+                                left_on='file', right_on = 'file')
+    if (len(grouped_df_merge[grouped_df_merge['checked']!=1]))>0:
+        print('Danger! There are still ' +
+              str(len(grouped_df_merge[grouped_df_merge['checked']!=1])) +
+              ' ' + str(orgtype) + ' absolute amount payment files to check after groupby!')
+        print('Theyre being stored at ' +
+              str(os.path.join(data_path, 'data_support',
+                               orgtype + 'abs_grouped_to_check.csv')))
+        grouped_df_merge.to_csv(os.path.join(data_path, 'data_support',
+                                             orgtype + 'abs_grouped_to_check.csv'))
+    else:
+        print('Cool! No more ' + str(orgtype) + ' absolute amount payments to check by groupby...')
+
+
+
+def make_table_one(ccg_pay_df, trust_pay_df, nhsengland_pay_df, table_path):
     ccg_clean = make_onetable(ccg_pay_df)
     trusts_clean = make_onetable(trust_pay_df)
-    df_out = pd.concat([ccg_clean, trusts_clean], axis=1)
+    nhsengland_clean = make_onetable(nhsengland_pay_df)
+    all_clean = make_onetable(pd.concat([ccg_pay_df, trust_pay_df, nhsengland_pay_df]))
+    df_out = pd.concat([ccg_clean, trusts_clean, nhsengland_clean, all_clean], axis=1)
     df_out.to_csv(os.path.join(table_path, 'Table1.csv'))
 
 
@@ -435,11 +564,13 @@ def summarize_payments(pay_df, payment_type):
     value_dept = pay_df.groupby('dept')['amount'].sum().sort_values(ascending=False)
     print('Highest value payments is:', value_dept.index[0],
           '(£'+ str(int(value_dept[0])) + ')')
-    most_supp = pay_df.groupby(['verif_match']).size().sort_values(ascending=False)
-    print('Most payments:', most_supp.index[0],
+    most_supp = pay_df[(pay_df['verif_match'] != 'No Match') &
+                       (pay_df['verif_match'] != 'Named Doctor')].groupby(['verif_match']).size().sort_values(ascending=False)
+    print('Most payments (other than "no match"):', most_supp.index[0],
           '('+ str(most_supp[0]) + ')')
-    value_supp = pay_df.groupby('verif_match')['amount'].sum().sort_values(ascending=False)
-    print('Highest value of payments is:', value_supp.index[0],
+    value_supp = pay_df[(pay_df['verif_match'] != 'No Match') &
+                       (pay_df['verif_match'] != 'Named Doctor')].groupby('verif_match')['amount'].sum().sort_values(ascending=False)
+    print('Highest value of payments (other than "no match") is:', value_supp.index[0],
           '('+ str(value_supp[0]) + ')')
     print('Number of organisations in clean dataset is: ' +\
           str(len(pay_df['dept'].unique())))
@@ -468,13 +599,13 @@ def scoring_figures(sup_df, figure_path, figsizetuple):
     axins1.xaxis.set_ticks_position("top")
     ax1.set_xlabel('ES$^1_r$', fontsize=legend_fontsize)
     ax1.set_ylabel('ES$^1_n$', fontsize=legend_fontsize)
-    ax1.set_title('Best Match: ES', fontsize=legend_fontsize+4, y=1.01)
-    ax1.set_title('A.', fontsize=legend_fontsize+6, loc='left', y=1.025)
+    ax1.set_title('Best Match: ES', fontsize=legend_fontsize+4, y=1.025)
+    ax1.set_title('A.', fontsize=legend_fontsize+6, loc='left', y=1.01)
     axins2 = inset_axes(ax2, width="25%", height="5%", loc='lower right')
     im2 = ax2.hexbin(sup_df['match_0_lev'], sup_df['match_0_n_lev'],
                      cmap='Oranges', gridsize=28, bins='log', mincnt=1)
-    ax2.set_title('Best Match: Lev.', fontsize=legend_fontsize+4, y=1.01)
-    ax2.set_title('B.', fontsize=legend_fontsize+6, loc='left', y=1.025)
+    ax2.set_title('Best Match: Lev.', fontsize=legend_fontsize+4, y=1.025)
+    ax2.set_title('B.', fontsize=legend_fontsize+6, loc='left', y=1.01)
     ax2.set_xlabel(r'$\mathcal{L}^1_r$', fontsize=legend_fontsize)
     ax2.set_ylabel(r'$\mathcal{L}^1_n$', fontsize=legend_fontsize)
     fig.colorbar(im2, cax=axins2, orientation="horizontal")
@@ -483,42 +614,42 @@ def scoring_figures(sup_df, figure_path, figsizetuple):
     im3 = ax3.hexbin(sup_df['score_0_n'], sup_df['match_0_n_lev'],
                      cmap='Oranges', gridsize=28, bins='log', mincnt=1)
     ax3.set_xlabel(r'ES$^1_n$', fontsize=legend_fontsize+4, y=1.01)
-    ax3.set_title('Best Match: Lev. vs. ES', fontsize=legend_fontsize, y=1.01)
-    ax3.set_title('C.', fontsize=legend_fontsize+6, loc='left', y=1.025)
+    ax3.set_title('Best Match: Lev. vs. ES', fontsize=legend_fontsize, y=1.025)
+    ax3.set_title('C.', fontsize=legend_fontsize+6, loc='left', y=1.01)
     ax3.set_ylabel(r'$\mathcal{L}^1_n$', fontsize=legend_fontsize)
     fig.colorbar(im3, cax=axins3, orientation="horizontal")
     axins3.xaxis.set_ticks_position("top")
 
     a = sns.distplot(sup_df[sup_df['score_0'].notnull()]['score_0'], ax=ax4,
                      kde_kws={'gridsize': 500,
-                              'color': '#ffb94e', 'alpha': 0.8,
+                              'color': '#ffb94e', 'alpha': 1,
                               'linestyle': '--'},
                      hist=False, label='ES$^1_r$', bins=np.arange(0, 60, 1))
     a = sns.distplot(sup_df[sup_df['score_0_n'].notnull()]['score_0_n'],
                      ax=ax4, hist=False, label='ES$^1_n$',
                      kde_kws={'gridsize': 500, 'linestyle': '-',
-                              'color': '#377eb8', 'alpha': 0.8},
+                              'color': '#377eb8', 'alpha': 1},
                      bins=np.arange(0, 60, 1))
     a.set_xlim(0, 50)
-    ax4.set_title('Best Match: Elastic Search', fontsize=legend_fontsize+4, y=1.01)
-    ax4.set_title('E.', fontsize=legend_fontsize+6, loc='left', y=1.025)
+    ax4.set_title('Best Match: Elastic Search', fontsize=legend_fontsize+4, y=1.025)
+    ax4.set_title('E.', fontsize=legend_fontsize+6, loc='left', y=1.01)
     ax4.set_xlabel('Elasticsearch Score', fontsize=legend_fontsize)
     ax4.set_ylabel('Probability Density', fontsize=legend_fontsize)
     b = sns.distplot(sup_df[sup_df['match_0_lev'].notnull()]['match_0_lev'],
                      kde_kws={'gridsize': 500,
                               'color': '#ffb94e', 'linestyle': '--',
-                              'alpha': 0.8},
+                              'alpha': 1},
                      hist=False, label=r'$\mathcal{L}^1_r$',
                      bins=np.arange(0, 100, 1), ax=ax5)
     b = sns.distplot(sup_df[sup_df['match_0_n_lev'].notnull()]['match_0_n_lev'],
                      ax=ax5, kde_kws={'gridsize': 500,
                                       'color': '#377eb8', 'linestyle': '-',
-                                      'alpha': 0.8},
+                                      'alpha': 1},
                      hist=False, label=r'$\mathcal{L}^1_n$',
                      bins=np.arange(0, 100, 1))
     b.set_xlim(0, 150)
-    ax5.set_title('Best Match: Levenshtein Distance', fontsize=legend_fontsize+4, y=1.01)
-    ax5.set_title('D.', fontsize=legend_fontsize+6, loc='left', y=1.025)
+    ax5.set_title('Best Match: Levenshtein Distance', fontsize=legend_fontsize+4, y=1.025)
+    ax5.set_title('D.', fontsize=legend_fontsize+6, loc='left', y=1.01)
     ax5.set_xlabel('Levenshtein Distance', fontsize=legend_fontsize)
     ax5.set_ylabel('Probability Density', fontsize=legend_fontsize)
 #    c = sns.distplot(sup_df[sup_df['score_1'].notnull()]['score_1'],
@@ -558,8 +689,8 @@ def scoring_figures(sup_df, figure_path, figsizetuple):
 #    ax7.set_ylabel('Probability Density', fontsize=legend_fontsize)
 #    d.set_xlim(0, 175)
 
-    ax8.set_title('2nd Match: ES', fontsize=legend_fontsize+4, y=1.01)
-    ax8.set_title('F.', fontsize=legend_fontsize+6, loc='left', y=1.025)
+    ax8.set_title('2nd Match: ES', fontsize=legend_fontsize+4, y=1.025)
+    ax8.set_title('F.', fontsize=legend_fontsize+6, loc='left', y=1.01)
     axins8 = inset_axes(ax8,
                         width="25%",  # width = 50% of parent_bbox width
                         height="5%",  # height : 5%
@@ -579,8 +710,8 @@ def scoring_figures(sup_df, figure_path, figsizetuple):
                      cmap='Blues', gridsize=28, bins='log', mincnt=1)
     fig.colorbar(im9, cax=axins9, orientation="horizontal")
     axins9.xaxis.set_ticks_position("top")
-    ax9.set_title('2nd Match: Lev.', fontsize=legend_fontsize+4, y=1.01)
-    ax9.set_title('G.', fontsize=legend_fontsize+6, loc='left', y=1.025)
+    ax9.set_title('2nd Match: Lev.', fontsize=legend_fontsize+4, y=1.025)
+    ax9.set_title('G.', fontsize=legend_fontsize+6, loc='left', y=1.01)
     ax9.set_xlabel(r'$\mathcal{L}^2_r$', fontsize=legend_fontsize)
     ax9.set_ylabel(r'$\mathcal{L}^2_n$', fontsize=legend_fontsize)
 #    ax9.set_xlim(0, 150)
@@ -593,8 +724,8 @@ def scoring_figures(sup_df, figure_path, figsizetuple):
                      cmap='Blues', gridsize=28, bins='log', mincnt=1)
     fig.colorbar(im10, cax=axins10, orientation="horizontal")
     axins10.xaxis.set_ticks_position("top")
-    ax10.set_title('2nd Match: Lev. vs ES', fontsize=legend_fontsize+4, y=1.01)
-    ax10.set_title('H.', fontsize=legend_fontsize+6, loc='left', y=1.025)
+    ax10.set_title('2nd Match: Lev. vs ES', fontsize=legend_fontsize+4, y=1.025)
+    ax10.set_title('H.', fontsize=legend_fontsize+6, loc='left', y=1.01)
     ax10.set_ylabel('ES$^2_n$', fontsize=legend_fontsize)
     ax10.set_xlabel(r'$\mathcal{L}^2_n$', fontsize=legend_fontsize)
     for ax in [ax1, ax2, ax3, ax4, ax5,# ax6, ax7,
@@ -828,30 +959,40 @@ def make_match_df(payments):
     return df
 
 
-def plot_match_distribution(sup_df, trust_pay_df, ccg_pay_df, figure_path, figsize_tuple):
+def plot_match_distribution(sup_df, trust_pay_df, ccg_pay_df, nhsengland_pay_df,
+                            figure_path, figsize_tuple):
     csfont = {'fontname':'Helvetica'}
     hfont = {'fontname':'Helvetica'}
     pay_df = pd.concat([trust_pay_df, ccg_pay_df])
     fig = plt.figure(figsize=figsize_tuple)
-    ax1 = plt.subplot2grid((18, 2), (0, 0), colspan=1, rowspan=7)
-    ax2 = plt.subplot2grid((18, 2), (0, 1), colspan=1, rowspan=7)
-    axfake1 = plt.subplot2grid((18, 2), (7, 1), colspan=1, rowspan=1)
-    ax3 = plt.subplot2grid((18, 6), (8, 0), colspan=1, rowspan=5)
-    ax4 = plt.subplot2grid((18, 6), (8, 1), colspan=1, rowspan=5)
-    ax5 = plt.subplot2grid((18, 6), (8, 2), colspan=1, rowspan=5)
-    ax6 = plt.subplot2grid((18, 6), (8, 3), colspan=1, rowspan=5)
-    ax7 = plt.subplot2grid((18, 6), (8, 4), colspan=1, rowspan=5)
-    ax8 = plt.subplot2grid((18, 6), (8, 5), colspan=1, rowspan=5)
+    ax1 = plt.subplot2grid((20, 2), (0, 0), colspan=1, rowspan=7)
+    ax2 = plt.subplot2grid((20, 2), (0, 1), colspan=1, rowspan=7)
+    axfake1 = plt.subplot2grid((20, 2), (7, 1), colspan=1, rowspan=1)
+    ax3 = plt.subplot2grid((20, 6), (8, 0), colspan=1, rowspan=4)
+    ax4 = plt.subplot2grid((20, 6), (8, 1), colspan=1, rowspan=4)
+    ax5 = plt.subplot2grid((20, 6), (8, 2), colspan=1, rowspan=4)
+    ax6 = plt.subplot2grid((20, 6), (8, 3), colspan=1, rowspan=4)
+    ax7 = plt.subplot2grid((20, 6), (8, 4), colspan=1, rowspan=4)
+    ax8 = plt.subplot2grid((20, 6), (8, 5), colspan=1, rowspan=4)
 #    axfake2 = plt.subplot2grid((19, 2), (13, 1), colspan=1, rowspan=1)
-    ax9 = plt.subplot2grid((18, 6), (13, 0), colspan=1, rowspan=5)
-    ax10 = plt.subplot2grid((18, 6), (13, 1), colspan=1, rowspan=5)
-    ax12 = plt.subplot2grid((18, 6), (13, 3), colspan=1, rowspan=5)
-    ax13 = plt.subplot2grid((18, 6), (13, 4), colspan=1, rowspan=5)
-    ax11 = plt.subplot2grid((18, 6), (13, 2), colspan=1, rowspan=5)
-    ax14 = plt.subplot2grid((18, 6), (13, 5), colspan=1, rowspan=5)
+    ax9 = plt.subplot2grid((20, 6), (12, 0), colspan=1, rowspan=4)
+    ax10 = plt.subplot2grid((20, 6), (12, 1), colspan=1, rowspan=4)
+    ax11 = plt.subplot2grid((20, 6), (12, 2), colspan=1, rowspan=4)
+    ax12 = plt.subplot2grid((20, 6), (12, 3), colspan=1, rowspan=4)
+    ax13 = plt.subplot2grid((20, 6), (12, 4), colspan=1, rowspan=4)
+    ax14 = plt.subplot2grid((20, 6), (12, 5), colspan=1, rowspan=4)
+
+    ax15 = plt.subplot2grid((20, 6), (16, 0), colspan=1, rowspan=4)
+    ax16 = plt.subplot2grid((20, 6), (16, 1), colspan=1, rowspan=4)
+    ax17 = plt.subplot2grid((20, 6), (16, 2), colspan=1, rowspan=4)
+    ax18 = plt.subplot2grid((20, 6), (16, 3), colspan=1, rowspan=4)
+    ax19 = plt.subplot2grid((20, 6), (16, 4), colspan=1, rowspan=4)
+    ax20 = plt.subplot2grid((20, 6), (16, 5), colspan=1, rowspan=4)
+
     full_df = make_match_df(pay_df)
     ccg_df = make_match_df(ccg_pay_df)
     trust_df = make_match_df(trust_pay_df)
+    nhsengland_df = make_match_df(nhsengland_pay_df)
     full_venn = make_vennlist(pay_df)
     trust_venn = make_vennlist(trust_pay_df)
     ccg_venn = make_vennlist(ccg_pay_df)
@@ -889,7 +1030,7 @@ def plot_match_distribution(sup_df, trust_pay_df, ccg_pay_df, figure_path, figsi
                  arrowprops=dict(arrowstyle='->', color='k', linewidth=0.75,
                                  connectionstyle='arc3,rad=-0.75'))
     ax2.set_title('B.', fontsize=17, y=1.02, **csfont, loc='left')
-    ax2.set_title('Unique institutional overlap', fontsize=16,y=1.025, **csfont, loc='right')
+    ax2.set_title('Institutional overlap', fontsize=16,y=1.025, **csfont, loc='right')
 
     # make bars
     sns.set_style("ticks")
@@ -900,18 +1041,26 @@ def plot_match_distribution(sup_df, trust_pay_df, ccg_pay_df, figure_path, figsi
     short_df_ccg = ccg_df.groupby(['Type'])['Number Suppliers',
                                             'Payment Value',
                                             'Number Payments'].agg('sum')
+
+    short_df_nhsengland = nhsengland_df.groupby(['Type'])['Number Suppliers',
+                                                          'Payment Value',
+                                                          'Number Payments'].agg('sum')
+
     short_df_full = full_df.groupby(['Type'])['Number Suppliers',
                                               'Payment Value',
                                               'Number Payments'].agg('sum')
     short_df_trust = short_df_trust.T
     short_df_ccg = short_df_ccg.T
+    short_df_nhsengland = short_df_nhsengland.T
     short_df_full = short_df_full.T
     short_df_full = short_df_full*100
     short_df_ccg = short_df_ccg*100
     short_df_trust = short_df_trust*100
+    short_df_nhsengland = short_df_nhsengland*100
     short_df_full = (short_df_full.div(short_df_full.sum(axis=1), axis=0))*100
     short_df_trust = (short_df_trust.div(short_df_trust.sum(axis=1), axis=0))*100
     short_df_ccg = (short_df_ccg.div(short_df_ccg.sum(axis=1), axis=0))*100
+    short_df_nhsengland = (short_df_nhsengland.div(short_df_nhsengland.sum(axis=1), axis=0))*100
     #make first set of bars: ccgs
     a = short_df_ccg['NHS'].plot(kind='bar', color=colors, alpha=0.575,
                                  linewidth=1.25, width=0.65, edgecolor='k', ax=ax3)
@@ -936,8 +1085,8 @@ def plot_match_distribution(sup_df, trust_pay_df, ccg_pay_df, figure_path, figsi
                           alpha=0.575,edgecolor='k',linewidth=1)
     count = patches.Patch(facecolor=colors[2], label='Number Payments',
                           alpha=0.575,edgecolor='k',linewidth=1)
-    ax8.legend(handles=[sup, val, count], loc=2,fontsize=11, edgecolor='k',
-               frameon=False)#, fancybox=True, framealpha=1)
+#    ax8.legend(handles=[sup, val, count], loc=2,fontsize=11, edgecolor='k',
+#               frameon=False)#, fancybox=True, framealpha=1)
     for axy in [a, b, c, d, e, f]:
         axy.set_ylim(0, short_df_ccg.max().max()+2)
         axy.get_xaxis().set_ticks([])
@@ -949,8 +1098,9 @@ def plot_match_distribution(sup_df, trust_pay_df, ccg_pay_df, figure_path, figsi
             axy.get_yaxis().set_visible(False)
         else:
             sns.despine(ax=axy, left=False, bottom = False, right = True)
-            axy.set_ylabel("CCG Dataset",fontsize=12)
+            axy.set_ylabel("CCG",fontsize=12)
             axy.yaxis.set_major_formatter(ticker.PercentFormatter())
+
     # make trusts
     g = short_df_trust['NHS'].plot(kind='bar', color=colors, alpha=0.575,
                                  linewidth=1.25, width=0.65, edgecolor='k', ax=ax9)
@@ -975,12 +1125,6 @@ def plot_match_distribution(sup_df, trust_pay_df, ccg_pay_df, figure_path, figsi
                           alpha=0.575,edgecolor='k',linewidth=1)
     count = patches.Patch(facecolor=colors[2], label='Number Payments',
                           alpha=0.575,edgecolor='k',linewidth=1)
-    g.set_xlabel("NHS",fontsize=15,labelpad=8)
-    h.set_xlabel("No Match",fontsize=15,labelpad=8)
-    i.set_xlabel("Company",fontsize=15,labelpad=8)
-    j.set_xlabel("Doctor",fontsize=15,labelpad=8)
-    k.set_xlabel("Charity",fontsize=15,labelpad=8)
-    l.set_xlabel("Person",fontsize=15,labelpad=8)
     for axy in [g, h, i, j, k, l]:
         axy.set_ylim(0, short_df_trust.max().max()+2)
         axy.get_xaxis().set_ticks([])
@@ -992,13 +1136,65 @@ def plot_match_distribution(sup_df, trust_pay_df, ccg_pay_df, figure_path, figsi
             axy.get_yaxis().set_visible(False)
         else:
             sns.despine(ax=axy, left=False, bottom = False, right = True)
-            axy.set_ylabel("Trust Dataset",fontsize=12)
+            axy.set_ylabel("NHS Trust",fontsize=12)
             axy.yaxis.set_major_formatter(ticker.PercentFormatter())
-    ax14.legend(handles=[sup, val, count], loc=2,fontsize=11, edgecolor='k',
+#    ax14.legend(handles=[sup, val, count], loc=2,fontsize=11, edgecolor='k',
+#               frameon=False)#, fancybox=True, framealpha=1)
+    ax3.set_title('C.', fontsize=17, y=1.025, **csfont, loc='left')
+    ax5.set_title('Payments mapped to a single register',
+                  fontsize=16, y=1.05, **csfont, loc='center', x=1.1)
+
+
+    # make nhsengland
+    m = short_df_nhsengland['NHS'].plot(kind='bar', color=colors, alpha=0.575,
+                                 linewidth=1.25, width=0.65, edgecolor='k', ax=ax15)
+    n = short_df_nhsengland['No Match'].plot(kind='bar', color=colors, alpha=0.575,
+                                      linewidth=1.25, width=0.65, edgecolor='k',
+                                      ax=ax16)
+    o = short_df_nhsengland['Company'].plot(kind='bar', color=colors, alpha=0.575,
+                                     linewidth=1.25, width=0.65, edgecolor='k',
+                                     ax=ax17)
+    p = short_df_nhsengland['Doctor'].plot(kind='bar', color=colors, alpha=0.575,
+                                    linewidth=1.25, width=0.65, edgecolor='k',
+                                    ax=ax18)
+    q = short_df_nhsengland['Charity'].plot(kind='bar', color=colors, alpha=0.575,
+                                     linewidth=1.25, width=0.65, edgecolor='k',
+                                     ax=ax19)
+    r = short_df_nhsengland['Person'].plot(kind='bar', color=colors, alpha=0.575,
+                                    linewidth=1.25, width=0.65, edgecolor='k',
+                                    ax=ax20)
+    sup = patches.Patch(facecolor=colors[0], label='Number Suppliers',
+                       alpha=0.575,edgecolor='k',linewidth=1)
+    val = patches.Patch(facecolor=colors[1], label='Payment Value',
+                          alpha=0.575,edgecolor='k',linewidth=1)
+    count = patches.Patch(facecolor=colors[2], label='Number Payments',
+                          alpha=0.575,edgecolor='k',linewidth=1)
+    m.set_xlabel("NHS",fontsize=15,labelpad=8)
+    n.set_xlabel("No Match",fontsize=15,labelpad=8)
+    o.set_xlabel("Company",fontsize=15,labelpad=8)
+    p.set_xlabel("Doctor",fontsize=15,labelpad=8)
+    q.set_xlabel("Charity",fontsize=15,labelpad=8)
+    r.set_xlabel("Person",fontsize=15,labelpad=8)
+    for axy in [m, n, o, p, q, r]:
+        axy.set_ylim(0, short_df_nhsengland.max().max()+2)
+        axy.get_xaxis().set_ticks([])
+        for p in axy.patches:
+            axy.annotate(str(round(p.get_height(),1))+'%', (p.get_x(),
+                                                            p.get_height() + 1.6), fontsize=8)
+        if axy!=m:
+            sns.despine(ax=axy, left=True, bottom = False, right = True)
+            axy.get_yaxis().set_visible(False)
+        else:
+            sns.despine(ax=axy, left=False, bottom = False, right = True)
+            axy.set_ylabel("NHS England",fontsize=12)
+            axy.yaxis.set_major_formatter(ticker.PercentFormatter())
+    ax20.legend(handles=[sup, val, count], loc=2,fontsize=11, edgecolor='k',
                frameon=False)#, fancybox=True, framealpha=1)
     ax3.set_title('C.', fontsize=17, y=1.025, **csfont, loc='left')
     ax5.set_title('Payments mapped to a single register',
                   fontsize=16, y=1.05, **csfont, loc='center', x=1.1)
+
+
 #    ax9.set_title('D.', fontsize=17, y=1.025, **csfont, loc='left')
 #    ax11.set_title('Trust payments to institutions mapped to one register',
 #                   fontsize=16,y=1.05, **csfont, loc='center', x=1.5)
