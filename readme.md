@@ -61,7 +61,7 @@ Repo structure is based on the ```tree``` [utility](https://en.wikipedia.org/wik
 │   └ data_merge/*  
 │   └ data_nhsccgs/*  
 │   └ data_nhsdigital/*  
-│   └ data_nhsengland/*
+│   └ data_nhsengland/*  
 │   └ data_nhstrusts/*  
 │   └ data_reconciled/*  
 │   └ data_shapefiles/*  
