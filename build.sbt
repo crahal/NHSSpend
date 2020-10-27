@@ -24,6 +24,7 @@ lazy val nhsdash_server = (project in file("server"))
 			"org.webjars" %% "webjars-play" % "2.8.0",
 			"org.webjars" % "bootstrap" % "4.4.1",
 			"org.webjars" % "d3js" % "5.9.7",
+			"org.webjars.npm" % "topojson" % "3.0.2",
 			"org.webjars" % "jquery" % "3.4.1",
 			"org.webjars" % "popper.js" % "1.15.0",
 			"org.webjars" % "c3" % "0.6.6",
