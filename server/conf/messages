@@ -1,11 +1,11 @@
 # https://www.playframework.com/documentation/latest/ScalaI18N
-site.title=COVID-19 Demography
-site.desc=A collection of visualisations and data for demographic risks of COVID-19
-project.name=COVID-19 dashboard
+site.title=NHS Spend
+site.desc=The Role of the VCS in the NHS
+project.name=NHS Spend dashboard
 
 index.title=Home
-index.jumbo.title=COVID-19 Demography
-index.jumbo.desc=A collection of visualisations and data for demographic risks of COVID-19
+index.jumbo.title=NHS Spend
+index.jumbo.desc=The Role of the VCS in the NHS
 
 team.title=Team
 team.desc=Meet the project members.
