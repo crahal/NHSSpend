@@ -1,4 +1,4 @@
-name := """covid19dash"""
+name := """nhsspenddash"""
 
 version := "1.0-SNAPSHOT"
 
@@ -8,10 +8,10 @@ version := "1.0-SNAPSHOT"
 // Adds additional packages into conf/routes
 // play.sbt.routes.RoutesKeys.routesImport += "com.example.binders._"
 
-lazy val covid_19_server = (project in file("server"))
+lazy val nhsdash_server = (project in file("server"))
 	.settings(commonSettings)
 	.settings(
-		scalaJSProjects := Seq(covid_19_client, covid_19_clientGraphing),
+		scalaJSProjects := Seq(nhsdash_client, nhsdash_clientGraphing),
 		pipelineStages in Assets := Seq(scalaJSPipeline),
 		pipelineStages := Seq(digest, gzip),
 		// triggers scalaJSPipeline when using compile or continuous compilation
@@ -33,14 +33,14 @@ lazy val covid_19_server = (project in file("server"))
 			"com.h2database" % "h2" % "1.4.199",
 ),
 		maintainer in Linux := "Ian Knowles <ian@imknowles.co.uk>",
-		packageSummary in Linux := "Webserver for Covid-19 data",
-		packageDescription := "Webserver for Covid-19 data",
+		packageSummary in Linux := "Webserver for nhs spend data",
+		packageDescription := "Webserver for nhs spend data",
 		debianPackageDependencies := Seq("openjdk-11-jre-headless"),
 	)
 	.enablePlugins(PlayScala, JDebPackaging)
-	.dependsOn(covid_19_sharedJvm)
+	.dependsOn(nhsdash_sharedJvm)
 
-lazy val covid_19_client = (project in file("client"))
+lazy val nhsdash_client = (project in file("client"))
 	.settings(commonSettings)
 	.settings(
 		scalaJSUseMainModuleInitializer := true,
@@ -50,9 +50,9 @@ lazy val covid_19_client = (project in file("client"))
 		),
 	)
 	.enablePlugins(ScalaJSPlugin, ScalaJSWeb)
-	.dependsOn(covid_19_sharedJs)
+	.dependsOn(nhsdash_sharedJs)
 
-lazy val covid_19_clientGraphing = (project in file("clientGraphing"))
+lazy val nhsdash_clientGraphing = (project in file("clientGraphing"))
 	.settings(commonSettings)
 	.settings(
 		scalaJSUseMainModuleInitializer := true,
@@ -62,14 +62,14 @@ lazy val covid_19_clientGraphing = (project in file("clientGraphing"))
 		),
 	)
 	.enablePlugins(ScalaJSPlugin, ScalaJSWeb)
-	.dependsOn(covid_19_sharedJs)
+	.dependsOn(nhsdash_sharedJs)
 
-lazy val covid_19_shared = crossProject(JSPlatform, JVMPlatform)
+lazy val nhsdash_shared = crossProject(JSPlatform, JVMPlatform)
 	.crossType(CrossType.Pure)
 	.in(file("shared"))
 	.settings(commonSettings)
-lazy val covid_19_sharedJvm = covid_19_shared.jvm
-lazy val covid_19_sharedJs = covid_19_shared.js
+lazy val nhsdash_sharedJvm = nhsdash_shared.jvm
+lazy val nhsdash_sharedJs = nhsdash_shared.js
 
 lazy val commonSettings = Seq(
 	scalaVersion := "2.13.1",
@@ -84,4 +84,4 @@ lazy val commonSettings = Seq(
 )
 
 // loads the server project at sbt startup
-onLoad in Global := (onLoad in Global).value.andThen(state => "project covid_19_server" :: state)
+onLoad in Global := (onLoad in Global).value.andThen(state => "project nhsdash_server" :: state)
