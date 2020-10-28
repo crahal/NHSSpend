@@ -1,11 +1,12 @@
-@(elementID: String)
-<figure class="position-relative map-contain h-100">
-	<div id="@elementID-shade" class="background-color-sea position-absolute w-100 h-100 d-flex justify-content-center align-items-center"><span class="spinner-border"></span></div>
+@(elementID: String, caption: String = "", capclass: String = "", chartheight: Integer = 49, chartclass: String = "")
+<figure class="position-relative">
+	<div id="@elementID-shade" class="position-absolute w-100 h-100 d-flex justify-content-center align-items-center"><span class="spinner-border"></span></div>
 	<div class="row h-100">
-		<div class="col-12 col-lg-12 d-lg-flex flex-lg-column pr-lg-0" style="min-height: 39vw;">
-			<div id="@elementID-chart-area" class="border background-color-sea h-100 c3 text-dark" style="max-height: 748.797px; position: relative;">
+		<div class="col-12 col-lg-12 " style="min-height: @{chartheight}vh;">
+			<div id="@elementID-chart-area" class="border h-100 @chartclass text-dark bg-light" style="max-height: @{chartheight}vh; position: relative;">
+				<svg id="ccg_map" width="100%" height="100%"></svg>
 			</div>
 		</div>
 	</div>
-	<figcaption class="sr-only">Time series chart</figcaption>
+<figcaption id="@elementID-chart-caption" class="@capclass font-weight-bold d-flex">@caption</figcaption>
 </figure>
