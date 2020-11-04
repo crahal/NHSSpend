@@ -1,0 +1,62 @@
+@(elementID: String)(implicit messages: Messages)
+<div class="d-flex justify-content-between align-items-end flex-wrap pb-2 mb-3">
+	<div class="btn-toolbar mt-2 mb-0 mr-sm-2 flex-column flex-lg-row">
+		<div class="input-group m-1">
+			<div class="input-group-prepend">
+				<label for="@elementID-select-tab" class="input-group-text">
+					<span class="sr-only">Model prediction picker for map</span><span data-feather="folder"></span>
+				</label>
+			</div>
+			<select id="@elementID-select-tab" class="custom-select btn-outline-secondary h-100" data-style="btn-primary">
+				<option value="ccg" selected="selected">Clinical Commissioning Groups</option>
+				<option value="trust">Trusts</option>
+			</select>
+		</div>
+		@*<div class="input-group m-1">
+			<div class="input-group-prepend">
+				<label for="@elementID-report-picker" class="input-group-text">
+					<span class="sr-only">Report picker</span><span data-feather="calendar"></span>
+				</label>
+			</div>
+			<select id="@elementID-report-picker" class="custom-select btn-outline-secondary h-100" data-style="btn-primary">
+				<option value="latest">Latest<span class="spinner-border spinner-border-sm"></span></option>
+				<option value="latest">2018-05</option>
+				<option value="latest">2018-06-05</option>
+			</select>
+		</div>*@
+		<div class="input-group m-1">
+			<div class="input-group-prepend">
+				<label for="@elementID-select-column" class="input-group-text">
+					<span class="sr-only">Model prediction picker for map</span><span data-feather="bar-chart-2"></span>
+				</label>
+			</div>
+			<select id="@elementID-select-column" class="custom-select btn-outline-secondary h-100" data-style="btn-primary">
+				<option value="Value to VCS (%)" selected="selected">Value to VCS (%)</option>
+				<option value="Count to VCS (%)">Count to VCS (%)</option>
+				<option value="Value of Payments (m)">Value of Payments (millions)</option>
+			</select>
+		</div>
+		<div class="btn-group btn-group-sm m-1">
+			<button
+					id="@elementID-sharemail"
+					type="button"
+					class="btn btn-outline-secondary d-flex"
+					href="mailto:?to=&body=,&subject="
+					target="_blank"
+					style="display:none ! important"
+			>
+				<div class="m-1"><span data-feather="mail"></span></div>
+				<div class="m-1">Share</div>
+			</button>
+			<button
+					id="@elementID-csvlink"
+					type="button"
+					class="btn btn-outline-secondary d-flex"
+			>
+				<div class="m-1">Export</div>
+				<div class="m-1"><span data-feather="download"></span></div>
+			</button>
+		</div>
+	</div>
+	<div class="pt-4">This prototype is still under development</div>
+</div>

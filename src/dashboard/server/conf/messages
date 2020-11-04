@@ -1,0 +1,40 @@
+# https://www.playframework.com/documentation/latest/ScalaI18N
+site.title=NHS Spend
+site.desc=The Role of the VCS in the NHS
+project.name=NHS Spend dashboard
+
+index.title=Home
+index.jumbo.title=NHS Spend
+index.jumbo.desc=The Role of the VCS in the NHS
+
+team.title=Team
+team.desc=Meet the project members.
+
+dash.title=Time series
+dash.desc=View the data collection.
+
+donut.title=Donut
+
+project.title=Project
+project.desc=See the background of the project, and an overview of the data sources.
+
+nav.data.title=Data
+nav.about.title=About
+nav.currentPageIndicator=Current
+privacy.title=Privacy Policy
+contact.title=Contact Us
+
+controls.reportpicker.label=Time series picker
+
+controls.timespan.from=Start year for graph
+controls.timespan.to=End year for graph
+
+controls.graph.category=Filter by characteristic
+
+controls.data.share=Share
+controls.data.download=Download
+
+name = Name
+age = Age
+
+user.created = You have successfully created a user!
