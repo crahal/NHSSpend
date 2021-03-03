@@ -7,12 +7,12 @@
 
 ## Introduction
 
-This is a library to scrape and reconcile all payments made by a hiarcharcy of NHS institutions over time. It is the final of three projects on public procurement data (the first two of which were [centgovspend](https://github.com/crahal/centgovspend) and [TSRC-NCVO-CSDP](https://github.com/crahal/TSRC-NCVO-CSDP)). Code for an interactive dashboard is found at src/dashboard, and the dashboard itself is at:
+This is a library to scrape and reconcile all payments made by a hiarcharcy of NHS institutions over time. It is the final of three projects on public procurement data (the first two of which were [centgovspend](https://github.com/crahal/centgovspend) and [TSRC-NCVO-CSDP](https://github.com/crahal/TSRC-NCVO-CSDP)). Code for an interactive dashboard is found at src/dashboard, and an **extremely unfinished prototype** of the dashboard itself is at:
 <p align="center">
   <a href="#">http://nhsspend.org/</a>
 </p>
 
-, with the help of [Ian M. Knowles](https://github.com/ianknowles). Links to open-access (OSF) versions of the two headline academic papers (`The Role of Non-Profits in Public Health Service Provision: Evidence from 25,338 heterogeneous procurement datasets` and `Private networks of healthcare supply`) will be hosted on the Open Science Framework (OSF) in due course, and linked here. If you would like to collaborate on these papers or related, please don't hestiate to get in touch.
+with the help of [Ian M. Knowles](https://github.com/ianknowles). Links to open-access (OSF) versions of the two headline academic papers (`The Role of Non-Profits in Public Health Service Provision: Evidence from 25,338 heterogeneous procurement datasets` and `Private networks of healthcare supply`) will be hosted on the Open Science Framework (OSF) in due course, and linked here. If you would like to collaborate on these papers or related, please don't hestiate to get in touch.
 
 ## Pre-reqs
 
