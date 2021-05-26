@@ -1,0 +1,571 @@
+date,expensetype,expensearea,supplier,amount,file,negative,transactionnumber
+23/04/2020,Main Works Contract  ( Education Facility 28th April 2020 ),Capital,Caledonian Modular Ltd,736200.0,WHIT 01 - April.csv,1,
+21/04/2020,Pfi Service Charge (1/03/2020 - 31/03/2020 ),Trust Finance,Whittington Facilities Ltd,583363.0,WHIT 01 - April.csv,1,
+02/04/2020,Main Works Contract  ( Education Facility 28th March 2020 ),Capital,Caledonian Modular Ltd,391155.0,WHIT 01 - April.csv,1,
+17/04/2020,Main Works Contract           28th April 2020,Capital,Caledonian Modular Ltd,356298.0,WHIT 01 - April.csv,1,
+17/04/2020,Mes Service Charge (01/03/2020 - 31/03/2020),Trust Finance,Assetco Healthcare Whittington Ltd,277937.0,WHIT 01 - April.csv,1,
+23/04/2020,Software/Licence Computer,Capital,System C Healthcare Ltd,265800.0,WHIT 01 - April.csv,1,
+21/04/2020,Drugs Issued-High Tech,Pharmacy Medicine,Whittington Pharmacy Cic,251305.0,WHIT 01 - April.csv,1,
+09/04/2020,Med Equ: Short Life  5 Yrs (3 Dimensions Memmography ),Capital,Hologic Ltd,247800.0,WHIT 01 - April.csv,1,
+21/04/2020,Drugs Issued-High Tech,Pharmacy Medicine,Whittington Pharmacy Cic,231285.0,WHIT 01 - April.csv,1,
+23/04/2020,Main Works Contract (Fire Remediation Works - Application 16),Capital,Hanevo Ltd,136240.0,WHIT 01 - April.csv,1,
+17/04/2020,Med Equ: Med Life 10 Yrs,Capital,Arthrex Ltd,135377.0,WHIT 01 - April.csv,1,
+17/04/2020,Network Management Service,Technical Services,Datrix Limited,123446.0,WHIT 01 - April.csv,1,
+23/04/2020,Consultant Fees,Capital,Forest Gate Construction Co Ltd,123132.0,WHIT 01 - April.csv,1,
+09/04/2020,Electricity,Environment,Edf Energy,122970.0,WHIT 01 - April.csv,1,
+02/04/2020,Main Works Contract (Fire Remediation Works - Application 15),Capital,Hanevo Ltd,88014.0,WHIT 01 - April.csv,1,
+17/04/2020,Software Maintenance,Procurement Shared Service,Elcom Systems Ltd,82590.0,WHIT 01 - April.csv,1,
+23/04/2020,Stock-Pharmacy,Control,The Ucl Hospitals Nhs Foundation Trust,82161.0,WHIT 01 - April.csv,1,
+09/04/2020,General Building Work,C&I Enabling,Norstead Ltd,78524.0,WHIT 01 - April.csv,1,
+17/04/2020,Professional Services,Staff Side Support,Pulse Healthcare,77342.0,WHIT 01 - April.csv,1,
+09/04/2020,Main Works Contract,Capital,Erith Contractors Ltd,68462.0,WHIT 01 - April.csv,1,
+23/04/2020,Main Works Contract Block H (Nurses Home) Refurbishment - Application 14,Capital,Hanevo Ltd,67132.0,WHIT 01 - April.csv,1,
+09/04/2020,Main Works Contract (Block H (Nurses Home) Refurbishment - Application 13),Capital,Hanevo Ltd,61324.0,WHIT 01 - April.csv,1,
+09/04/2020,Gas ( Jan 20 ),Environment,Corona Energy Retail Ltd,52181.0,WHIT 01 - April.csv,1,
+09/04/2020,Clinical Waste Disposal,Environmental Mang'T,Leeds Teaching Hospitals Nhs Trust,49689.0,WHIT 01 - April.csv,1,
+09/04/2020,Main Works Contract Block H (Nurses Home) Refurbishment - Application 12,Capital,Hanevo Ltd,49672.0,WHIT 01 - April.csv,1,
+17/04/2020,Software/Licence Computer,Capital,Huntleigh Healthcare Ltd,49233.0,WHIT 01 - April.csv,1,
+17/04/2020,Ext Contract Estate/Facility (WEEKEND 22 MAR 2020 ),Generic Workers,Buzz Housekeeping Services,48643.0,WHIT 01 - April.csv,1,
+23/04/2020,Ext Contract Estate/Facility (WEEKEND 29 MAR 2020 ),Generic Workers,Buzz Housekeeping Services,47959.0,WHIT 01 - April.csv,1,
+09/04/2020,Gas ( Mar 20 15087269 ),Environment,Corona Energy Retail Ltd,44242.0,WHIT 01 - April.csv,1,
+09/04/2020,Clinical Waste Disposal,Environmental Mang'T,Leeds Teaching Hospitals Nhs Trust,42536.0,WHIT 01 - April.csv,1,
+09/04/2020,Gas (Mar 20 15087233 ),Environment,Corona Energy Retail Ltd,41260.0,WHIT 01 - April.csv,1,
+02/04/2020,Med Equ: Short Life  5 Yrs (SECUVIEW - DX 12000 ),Capital,Hologic Ltd,40200.0,WHIT 01 - April.csv,1,
+02/04/2020,Ext Contract Estate/Facility (WEEKEND 29 MAR 2020 ),Generic Workers,Buzz Housekeeping Services,39805.0,WHIT 01 - April.csv,1,
+17/04/2020,Legal Fees,Director Facilities,Capsticks Solicitors,36745.0,WHIT 01 - April.csv,1,
+02/04/2020,Med Equ: Short Life  5 Yrs ASY-08109 :I-VIEW CONTRAST ENHANCED 2D,Capital,Hologic Ltd,36000.0,WHIT 01 - April.csv,1,
+09/04/2020,Estate & Facility,Estates-Northern Hc,Cordant Cleaning Ltd,32915.0,WHIT 01 - April.csv,1,
+23/04/2020,Consultant Fees,Capital,Forest Gate Construction Co Ltd,31490.0,WHIT 01 - April.csv,1,
+02/04/2020,Software Maintenance,Patient Systems,Cis Oncology Ltd,31347.0,WHIT 01 - April.csv,1,
+09/04/2020,Software Purchase,Procurement Shared Service,Waltec Solutions Ltd,29714.0,WHIT 01 - April.csv,1,
+23/04/2020,Other Ext General Services,Fatigue & Facilities Payments,Foleys Builders Ltd,28506.0,WHIT 01 - April.csv,1,
+17/04/2020,Legal Fees,Director Facilities,Capsticks Solicitors,26650.0,WHIT 01 - April.csv,1,
+23/04/2020,Internal Audit Fee 19/20 Qtr 4,Finance Director,Grant Thornton Uk Llp,25387.0,WHIT 01 - April.csv,1,
+16/05/2020,NHSLA (AAPV7044ST1150),Risk Management,NHS Litigation Authority,1014642.0,WHIT 02 - May.csv,1,
+26/05/2020,Pfi Service Charge (01/04/2020 - 30/04/2020 ),Trust Finance,Whittington Facilities Ltd,576845.0,WHIT 02 - May.csv,1,1162531
+28/05/2020,Building Lease,Estates Projects Main,Community Health Partnerships Ltd,522759.0,WHIT 02 - May.csv,1,822369
+07/05/2020,Computer Hardware,Capital,Insight Direct (Uk) Ltd,464028.0,WHIT 02 - May.csv,1,1156809
+28/05/2020,Software Maintenance RiO Support & Maintenance Apr - Jun 20,Patient Systems,System C Healthcare Ltd,277782.0,WHIT 02 - May.csv,1,1163286
+28/05/2020,Software Maintenance Year 7 Support & Maintenance Apr - Jun 20,Patient Systems,System C Healthcare Ltd,275566.0,WHIT 02 - May.csv,1,1160467
+07/05/2020,Rents Q1 2019/20,Estates-St Ann'S Hospital,Barnet Enfield & Haringey Mental Health Nhs T,257607.0,WHIT 02 - May.csv,1,1158302
+07/05/2020,Rents Q2 2019/20,Estates-St Ann'S Hospital,Barnet Enfield & Haringey Mental Health Nhs T,257607.0,WHIT 02 - May.csv,1,1158303
+07/05/2020,Rents Q3 2019/20,Estates-St Ann'S Hospital,Barnet Enfield & Haringey Mental Health Nhs T,257607.0,WHIT 02 - May.csv,1,1158304
+14/05/2020,Rents Q4 2019/20,Estates-St Ann'S Hospital,Barnet Enfield & Haringey Mental Health Nhs T,257607.0,WHIT 02 - May.csv,1,1158305
+07/05/2020,Transport Maint & Exps ( February 2020 ),Med Front Of House& Transp,Dhl Supply Chain - Uk&I,164274.0,WHIT 02 - May.csv,1,1149145
+28/05/2020,Nhs Logistics Stock Issues 20/03/2020,Control,Supply Chain Coordination Ltd,145804.0,WHIT 02 - May.csv,1,1152945
+01/05/2020,Blood Products Apr 2020,Blood Recharge,Nhs Blood And Transplant,127232.0,WHIT 02 - May.csv,1,1154999
+21/05/2020,Blood Products May 2020,Blood Recharge,Nhs Blood And Transplant,127232.0,WHIT 02 - May.csv,1,1158370
+21/05/2020,Blood Products Jun 2020,Blood Recharge,Nhs Blood And Transplant,127232.0,WHIT 02 - May.csv,1,1164533
+14/05/2020,Blood Transfusion Service Mar 20,Blood Recharge,Nhs Blood And Transplant,114112.0,WHIT 02 - May.csv,1,1163816
+28/05/2020,Nhs Logistics Stock Issues,Control,Supply Chain Coordination Ltd,112689.0,WHIT 02 - May.csv,1,1151077
+14/05/2020,Med Equ: Med Life 10 Yrs,Capital,Hamilton Medical Ltd,111623.0,WHIT 02 - May.csv,1,1163923
+07/05/2020,Transport Maint & Exps (Mar 2020 ),Med Front Of House& Transp,Dhl Supply Chain - Uk&I,109800.0,WHIT 02 - May.csv,1,1159153
+07/05/2020,Teaching/Training Expenditure,Director Of Strategy,Federated4health,109079.0,WHIT 02 - May.csv,1,1161773
+28/05/2020,Nhs Logistics Stock Issues,Control,Supply Chain Coordination Ltd,109041.0,WHIT 02 - May.csv,1,1154741
+28/05/2020,Rents,Estates-Camden Partnership,Community Health Partnerships Ltd,101428.0,WHIT 02 - May.csv,1,1136984
+14/05/2020,Boiler & Calorifiers,Estates-Simmons House,Gas Group Services Ltd,96991.0,WHIT 02 - May.csv,1,1161657
+14/05/2020,Electricity,Estates-Hornsey Rise Hc,Edf Energy,95396.0,WHIT 02 - May.csv,1,1163755
+28/05/2020,Nhs Logistics Stock Issues,Control,Supply Chain Coordination Ltd,95368.0,WHIT 02 - May.csv,1,1159042
+28/05/2020,Nhs Logistics Stock Issues,Control,Supply Chain Coordination Ltd,95026.0,WHIT 02 - May.csv,1,1149135
+14/05/2020,Miscellaneous Expenses,Trust Finance,Nhs Business Serv Auth,89061.0,WHIT 02 - May.csv,1,1120051
+28/05/2020,Nhs Logistics Stock Issues,Control,Supply Chain Coordination Ltd,88441.0,WHIT 02 - May.csv,1,1147807
+28/05/2020,Building Lease,Estates-Holloway Hc Hornsey St,Community Health Partnerships Ltd,79598.0,WHIT 02 - May.csv,1,1066003
+28/05/2020,Nhs Logistics Stock Issues,Control,Supply Chain Coordination Ltd,77537.0,WHIT 02 - May.csv,1,1145638
+01/05/2020,General Building Work,C&I Enabling,Norstead Ltd,71169.0,WHIT 02 - May.csv,1,1156572
+28/05/2020,Building Lease,Estates-Lordship Lane Clinic,Community Health Partnerships Ltd,67410.0,WHIT 02 - May.csv,1,1065990
+28/05/2020,Nhs Logistics Stock Issues,Control,Supply Chain Coordination Ltd,65579.0,WHIT 02 - May.csv,1,1157718
+14/05/2020,License Fees,Patient Systems,Csc Computer Services Ltd,64521.0,WHIT 02 - May.csv,1,1163217
+14/05/2020,Cleaning Contracts,Sterile Services (Cont Out),Ihss Ltd,61535.0,WHIT 02 - May.csv,1,1106152
+14/05/2020,Main Works Contract,Capital,Hanevo Ltd,60187.0,WHIT 02 - May.csv,1,1163207
+01/05/2020,Software Maintenance (01/10/2019 to 30/09/2020) Qty 1 eFinancials Requisitioning Maintenance,Finance Director,Advanced Business Solutions,58087.0,WHIT 02 - May.csv,1,1123814
+01/05/2020,Software Maintenance 01/10/2019 to 30/09/2020 Qty 1 Maintenance: V1 (SME) Authorise - Concurre,Finance Director,Advanced Business Solutions,57192.0,WHIT 02 - May.csv,1,1143244
+01/05/2020,Laundry Service,Laundry,Berendsen Uk Ltd,56785.0,WHIT 02 - May.csv,1,1155023
+28/05/2020,Cleaning Contracts,Generic Workers,Buzz Housekeeping Services,56272.0,WHIT 02 - May.csv,1,1166080
+28/05/2020,Building Lease,Estates-Hornsey Central Hc,Community Health Partnerships Ltd,53753.0,WHIT 02 - May.csv,1,1065987
+21/05/2020,Computer Hardware,Capital,Insight Direct (Uk) Ltd,53573.0,WHIT 02 - May.csv,1,1163326
+21/05/2020,Laundry Service,Laundry,Berendsen Uk Ltd,52910.0,WHIT 02 - May.csv,1,1162029
+14/05/2020,Cleaning Contracts,Generic Workers,Buzz Housekeeping Services,52608.0,WHIT 02 - May.csv,1,1161039
+01/05/2020,Funeral Expenses,Covid 19,Floyd And Son Independent Funeral Dprectors,52000.0,WHIT 02 - May.csv,1,1155816
+01/05/2020,Non Nhs Clinical Services,Covid 19,Deanway Builders Ltd,51660.0,WHIT 02 - May.csv,1,1155959
+01/05/2020,Cleaning Contracts,Generic Workers,Buzz Housekeeping Services,50493.0,WHIT 02 - May.csv,1,1156536
+28/05/2020,Nhs Logistics Stock Issues,Control,Supply Chain Coordination Ltd,50104.0,WHIT 02 - May.csv,1,1162415
+28/05/2020,Cleaning Contracts,Generic Workers,Buzz Housekeeping Services,48759.0,WHIT 02 - May.csv,1,1165199
+01/05/2020,Med Equ: Short Life  5 Yrs,Capital,Bard Ltd,48000.0,WHIT 02 - May.csv,1,1160872
+28/05/2020,Nhs Logistics Stock Issues,Control,Supply Chain Coordination Ltd,47143.0,WHIT 02 - May.csv,1,1155041
+28/05/2020,Clinical Waste Disposal,Environmental Mang'T,Leeds Teaching Hospitals Nhs Trust,46996.0,WHIT 02 - May.csv,1,1166536
+14/05/2020,Electricity,Environment,Corona Energy Retail Ltd,46661.0,WHIT 02 - May.csv,1,1163753
+28/05/2020,Cleaning Contracts,Generic Workers,Buzz Housekeeping Services,46461.0,WHIT 02 - May.csv,1,1166530
+28/05/2020,Clinical Waste Disposal,Environmental Mang'T,Leeds Teaching Hospitals Nhs Trust,45881.0,WHIT 02 - May.csv,1,1162168
+07/05/2020,Legal Fees,Hr Operations,Dac Beachcroft,44803.0,WHIT 02 - May.csv,1,1156792
+28/05/2020,Nhs Logistics Stock Issues,Control,Supply Chain Coordination Ltd,44273.0,WHIT 02 - May.csv,1,1163659
+28/05/2020,Nhs Logistics Stock Issues,Control,Supply Chain Coordination Ltd,44221.0,WHIT 02 - May.csv,1,1162618
+28/05/2020,Nhs Logistics Stock Issues,Control,Supply Chain Coordination Ltd,43260.0,WHIT 02 - May.csv,1,1156797
+01/05/2020,Consultant Fees,Capital,Me Construction Ltd,41097.0,WHIT 02 - May.csv,1,1159273
+01/05/2020,Med & Surg Equip Purchase,Covid 19,Armstrong Medical,40849.0,WHIT 02 - May.csv,1,1154176
+07/05/2020,Computer Hardware,Capital,Insight Direct (Uk) Ltd,38794.0,WHIT 02 - May.csv,1,1158203
+21/05/2020,Cleaning Contracts,Estates-Bounds Green Hc,Cordant Cleaning Ltd,36925.0,WHIT 02 - May.csv,1,1165342
+21/05/2020,Software Purchase,Imaging,Sectra Ltd,36316.0,WHIT 02 - May.csv,1,1132308
+14/05/2020,Main Works Contract,Capital,Hanevo Ltd,35708.0,WHIT 02 - May.csv,1,1163206
+07/05/2020,Fittings,Capital,Forest Gate Construction Co Ltd,35175.0,WHIT 02 - May.csv,1,1157300
+14/05/2020,Works Costs,Capital,Hanevo Ltd,34486.0,WHIT 02 - May.csv,1,1163205
+14/05/2020,Professional Services,Hr Operations,Connected Tech Group Ltd,34080.0,WHIT 02 - May.csv,1,1163997
+14/05/2020,Hardware Maintenance,Technical Services,Dell Computer Corp.Ltd,33964.0,WHIT 02 - May.csv,1,1154788
+21/05/2020,Cleaning Contracts,Estates-Bounds Green Hc,Cordant Cleaning Ltd,32915.0,WHIT 02 - May.csv,1,1156423
+28/05/2020,Building Lease,Estates-Bingfield Hc,Community Health Partnerships Ltd,32915.0,WHIT 02 - May.csv,1,1065998
+21/05/2020,Staff Meals,Covid 19,Xlnt-Cafe Fresco,30619.0,WHIT 02 - May.csv,1,1165130
+01/05/2020,Blood Analysers,Integrated Blood Science,Ibg Immucor Ltd,29853.0,WHIT 02 - May.csv,1,1160975
+21/05/2020,Blood Products,Blood Recharge,Nhs Blood And Transplant,28263.0,WHIT 02 - May.csv,1,1141439
+01/05/2020,Professional Services ,Procurement (Whittington),Dhl Supply Chain - Uk&I,28185.0,WHIT 02 - May.csv,1,1152988
+28/05/2020,Vat Recovery Expenditure,Trust Finance,Crs Vat Consulting,28012.0,WHIT 02 - May.csv,1,1099114
+07/05/2020,Uniforms,Covid 19,Miss Tilly'S Ltd,27500.0,WHIT 02 - May.csv,1,1160898
+07/05/2020,Furn & Fittings Purchases,Fatigue & Facilities Payments,Foleys Builders Ltd,27120.0,WHIT 02 - May.csv,1,1154797
+21/05/2020,Internet Connections,Technical Services,Wifi Spark Ltd,26568.0,WHIT 02 - May.csv,1,1149656
+01/05/2020,Hardware Purchases,Procurement Shared Service,Waltec Solutions Ltd,26100.0,WHIT 02 - May.csv,1,1159726
+28/05/2020,Transport Maint & Exps,Transport,Aon Ltd,25632.0,WHIT 02 - May.csv,1,1165445
+14/05/2020,Estate & Facility 01 April 2020,Photocopying - Zerox,Xerox Uk Ltd,25496.0,WHIT 02 - May.csv,1,1163826
+21/05/2020,Band 8a Nurse/Midwife,Obstetrics & Gynae,University College London,25195.0,WHIT 02 - May.csv,1,1163976
+16/06/2020,NHSLA (AAPV7044ST1150),Risk Management,NHS Litigation Authority,1014642.0,WHIT 03 - June.csv,1,
+25/06/2020,Main Works Contract,Capital,Erith Contractors Ltd,309983.0,WHIT 03 - June.csv,1,
+04/06/2020,X-Ray Equip Purchase (01/05/2020 - 31/05/2020),Trust Finance,Assetco Healthcare Whittington Ltd,284602.0,WHIT 03 - June.csv,1,
+04/06/2020,X-Ray Equip Purchase (01/04/2020 - 30/04/2020),Trust Finance,Assetco Healthcare Whittington Ltd,284460.0,WHIT 03 - June.csv,1,
+11/06/2020,Nhs Clinical Services,Dir Nur & Clin Dev,Care Quality Commission,225255.0,WHIT 03 - June.csv,1,
+18/06/2020,Consultant Fees 15/06/2020,Capital,Forest Gate Construction Co Ltd,222514.0,WHIT 03 - June.csv,1,
+11/06/2020,Consultant Fees 07/05/2020,Capital,Forest Gate Construction Co Ltd,199529.0,WHIT 03 - June.csv,1,
+18/06/2020,Main Works Contract,Capital,Hanevo Ltd,195538.0,WHIT 03 - June.csv,1,
+25/06/2020,Computer Hardware,Capital,Insight Direct (Uk) Ltd,183295.0,WHIT 03 - June.csv,1,
+11/06/2020,Main Works Contract,Capital,Erith Contractors Ltd,155361.0,WHIT 03 - June.csv,1,
+18/06/2020,Transport Maint & Exps,Med Front Of House& Transp,Dhl Supply Chain - Uk&I,151222.0,WHIT 03 - June.csv,1,
+25/06/2020,Consultants,Better Care - Icat Islington,The Ucl Hospitals Nhs Foundation Trust,150305.0,WHIT 03 - June.csv,1,
+25/06/2020,Transport Maint & Exps,Med Front Of House& Transp,Dhl Supply Chain - Uk&I,141765.0,WHIT 03 - June.csv,1,
+25/06/2020,Electricity,Environment,Edf Energy,132642.0,WHIT 03 - June.csv,1,
+25/06/2020,Electricity,Environment,Edf Energy,127949.0,WHIT 03 - June.csv,1,
+25/06/2020,Building Lease,Estates-Holloway Hc Hornsey St,Community Health Partnerships Ltd,102126.0,WHIT 03 - June.csv,1,
+25/06/2020,Sla-Liaison Psychiatry M01 19/20,Accident & Emergency,Camden & Islington Nhs Foundation Trust,94924.0,WHIT 03 - June.csv,1,
+25/06/2020,Sla-Liaison Psychiatry M02 19/20,Accident & Emergency,Camden & Islington Nhs Foundation Trust,94924.0,WHIT 03 - June.csv,1,
+25/06/2020,Sla-Liaison Psychiatry M03 19/20,Accident & Emergency,Camden & Islington Nhs Foundation Trust,94924.0,WHIT 03 - June.csv,1,
+25/06/2020,Sla-Liaison Psychiatry M05 19/20,Accident & Emergency,Camden & Islington Nhs Foundation Trust,94924.0,WHIT 03 - June.csv,1,
+25/06/2020,Sla-Liaison Psychiatry M06 19/20,Accident & Emergency,Camden & Islington Nhs Foundation Trust,94924.0,WHIT 03 - June.csv,1,
+25/06/2020,Sla-Liaison Psychiatry M04 19/20,Accident & Emergency,Camden & Islington Nhs Foundation Trust,94924.0,WHIT 03 - June.csv,1,
+25/06/2020,Sla-Liaison Psychiatry M07 19/20,Accident & Emergency,Camden & Islington Nhs Foundation Trust,94924.0,WHIT 03 - June.csv,1,
+25/06/2020,Sla-Liaison Psychiatry M08 19/20,Accident & Emergency,Camden & Islington Nhs Foundation Trust,94924.0,WHIT 03 - June.csv,1,
+25/06/2020,Sla-Liaison Psychiatry M09 19/20,Accident & Emergency,Camden & Islington Nhs Foundation Trust,94924.0,WHIT 03 - June.csv,1,
+25/06/2020,Sla-Liaison Psychiatry M010 19/20,Accident & Emergency,Camden & Islington Nhs Foundation Trust,94924.0,WHIT 03 - June.csv,1,
+25/06/2020,Legal Fees,Director Facilities,Capsticks Solicitors,79639.0,WHIT 03 - June.csv,1,
+25/06/2020,Building Lease,Other Properties,Community Health Partnerships Ltd,79603.0,WHIT 03 - June.csv,1,
+18/06/2020,Internal Audit,Finance Director,Grant Thornton Uk Llp,75429.0,WHIT 03 - June.csv,1,
+25/06/2020,Estate & Facility,Estates-Holloway Hc Hornsey St,Community Health Partnerships Ltd,74721.0,WHIT 03 - June.csv,1,
+04/06/2020,Rents,Estates Management,Metrus Property Advisors Ltd,72856.0,WHIT 03 - June.csv,1,
+25/06/2020,Other Ext General Services,Integrated Comm Equip Services,Islington Council,70212.0,WHIT 03 - June.csv,1,
+25/06/2020,Building Lease,Estates-Hornsey Rise Hc,Community Health Partnerships Ltd,65782.0,WHIT 03 - June.csv,1,
+18/06/2020,Estate & Facility,Other Properties,Community Health Partnerships Ltd,64395.0,WHIT 03 - June.csv,1,
+25/06/2020,Sho (Mar 2020),Acute Paediatrics,Royal Free London Nhs Foundation Trust,63600.0,WHIT 03 - June.csv,1,
+25/06/2020,Consultant Fees 23/06/2020,Capital,Forest Gate Construction Co Ltd,63307.0,WHIT 03 - June.csv,1,
+25/06/2020,Nhs Logistics Stock Issues,Control,Supply Chain Coordination Ltd,63256.0,WHIT 03 - June.csv,1,
+04/06/2020,Ihss Base Service Payment (IHSN011439) Oct 19,Sterile Services (Cont Out),Ihss Ltd,61535.0,WHIT 03 - June.csv,1,
+04/06/2020,Ihss Base Service Payment (IHSN011499) Nov 19,Sterile Services (Cont Out),Ihss Ltd,61535.0,WHIT 03 - June.csv,1,
+04/06/2020,Ihss Base Service Payment (IHSN011639) Jan 20,Sterile Services (Cont Out),Ihss Ltd,61535.0,WHIT 03 - June.csv,1,
+18/06/2020,Cleaning Contracts (IHSN011768 ) Mar 20,Sterile Services (Cont Out),Ihss Ltd,61535.0,WHIT 03 - June.csv,1,
+18/06/2020,Cleaning Contracts Feb 20,Sterile Services (Cont Out),Ihss Ltd,61535.0,WHIT 03 - June.csv,1,
+18/06/2020,Main Works Contract,Capital,Hanevo Ltd,59988.0,WHIT 03 - June.csv,1,
+11/06/2020,Main Works Contract,Capital,Erith Contractors Ltd,56175.0,WHIT 03 - June.csv,1,
+18/06/2020,Estate & Facility (Oct 2019/20),Other Properties,Community Health Partnerships Ltd,54828.0,WHIT 03 - June.csv,1,
+18/06/2020,Estate & Facility (Nov 2019/20),Other Properties,Community Health Partnerships Ltd,54828.0,WHIT 03 - June.csv,1,
+18/06/2020,Estate & Facility (Dec 2019/20),Other Properties,Community Health Partnerships Ltd,54828.0,WHIT 03 - June.csv,1,
+18/06/2020,Estate & Facility (Jan 2019/20),Other Properties,Community Health Partnerships Ltd,54828.0,WHIT 03 - June.csv,1,
+25/06/2020,Main Works Contract,Capital,Whittington Facilities Ltd,48458.0,WHIT 03 - June.csv,1,
+25/06/2020,Nhs Logistics Stock Issues,Control,Supply Chain Coordination Ltd,47912.0,WHIT 03 - June.csv,1,
+04/06/2020,Cleaning Contracts ( Weekending 31/05/2020),Generic Workers,Buzz Housekeeping Services,47656.0,WHIT 03 - June.csv,1,
+25/06/2020,Main Works Contract,Capital,Whittington Facilities Ltd,46569.0,WHIT 03 - June.csv,1,
+18/06/2020,Laundry Service,Laundry,Berendsen Uk Ltd,45952.0,WHIT 03 - June.csv,1,
+18/06/2020,Clinical Waste Disposal,Environmental Mang'T,Mitie Waste & Environmental Services Ltd,45351.0,WHIT 03 - June.csv,1,
+18/06/2020,Nhs Logistics Stock Issues,Control,Supply Chain Coordination Ltd,45299.0,WHIT 03 - June.csv,1,
+04/06/2020,Uniforms,Covid 19,Bates Office Services Ltd,45250.0,WHIT 03 - June.csv,1,
+11/06/2020,Nhs Logistics Stock Issues,Control,Supply Chain Coordination Ltd,44226.0,WHIT 03 - June.csv,1,
+25/06/2020,Cleaning Contracts (Weekending 20/06/2020 ),Generic Workers,Buzz Housekeeping Services,43523.0,WHIT 03 - June.csv,1,
+11/06/2020,Cleaning Contracts (Weekending 06/06/2020 ),Generic Workers,Buzz Housekeeping Services,43214.0,WHIT 03 - June.csv,1,
+11/06/2020,Internal Audit,Finance Director,Grant Thornton Uk Llp,43128.0,WHIT 03 - June.csv,1,
+25/06/2020,Main Works Contract,Capital,Whittington Facilities Ltd,39514.0,WHIT 03 - June.csv,1,
+25/06/2020,Building Lease,Estates-Bingfield Hc,Community Health Partnerships Ltd,36508.0,WHIT 03 - June.csv,1,
+04/06/2020,Pfi Service Charge,Trust Finance,Whittington Facilities Ltd,35113.0,WHIT 03 - June.csv,1,
+18/06/2020,Consultants,Neurology,The Ucl Hospitals Nhs Foundation Trust,33878.0,WHIT 03 - June.csv,1,
+04/06/2020,Nhs Logistics Stock Issues,Control,Supply Chain Coordination Ltd,32799.0,WHIT 03 - June.csv,1,
+04/06/2020,Membership Subscriptions,Simmons House,East London Nhs Foundation Trust,32500.0,WHIT 03 - June.csv,1,
+04/06/2020,Consultants,General Surgery,The Ucl Hospitals Nhs Foundation Trust,31424.0,WHIT 03 - June.csv,1,
+25/06/2020,Building Lease,Other Properties,Community Health Partnerships Ltd,30099.0,WHIT 03 - June.csv,1,
+25/06/2020,Building Lease,Estates-Simmons House,Camden & Islington Nhs Foundation Trust,30000.0,WHIT 03 - June.csv,1,
+18/06/2020,Software Purchase,Neo-Natal Icu,Clevermed Ltd,29681.0,WHIT 03 - June.csv,1,
+25/06/2020,Gas,Environment,Corona Energy Retail Ltd,27945.0,WHIT 03 - June.csv,1,
+25/06/2020,Gas,Environment,Corona Energy Retail Ltd,26389.0,WHIT 03 - June.csv,1,
+25/06/2020,Nhs Logistics Stock Issues,Control,Supply Chain Coordination Ltd,26362.0,WHIT 03 - June.csv,1,
+11/06/2020,Photcopying & Printing,Portering,Xerox Uk Ltd,25394.0,WHIT 03 - June.csv,1,
+16/07/2020,NHSLA (AAPV7044ST1150),Risk Management,NHS Litigation Authority,1014642.0,WHIT 04 - July.csv,1,
+29/07/2020,Band 3 Hca,Ophthalmology,Royal Free London Nhs Foundation Trust,543770.0,WHIT 04 - July.csv,1,1102734
+30/07/2020,Med & Surg Equip Mtce,Integrated Blood Science,Roche Diagnostics Ltd,502006.0,WHIT 04 - July.csv,1,1175075
+30/07/2020,Software/Licence Computer,Capital,System C Healthcare Ltd,442371.0,WHIT 04 - July.csv,1,1177607
+16/07/2020,Band 5 A&C,Sift,University College London,376822.0,WHIT 04 - July.csv,1,1160397
+02/07/2020,X-Ray Equip Purchase,Trust Finance,Assetco Healthcare Whittington Ltd,282148.0,WHIT 04 - July.csv,1,1169381
+30/07/2020,Med & Surg Equip Mtce,Med Physics Diag,Supply Chain Coordination Ltd,229119.0,WHIT 04 - July.csv,1,1171047
+23/07/2020,Transport Maint & Exps,Med Front Of House& Transp,Dhl Supply Chain - Uk&I,141765.0,WHIT 04 - July.csv,1,1165457
+23/07/2020,Main Works Contract,Capital,Erith Contractors Ltd,138652.0,WHIT 04 - July.csv,1,1176688
+23/07/2020,Blood Products (July 2020),Blood Recharge,Nhs Blood And Transplant,127232.0,WHIT 04 - July.csv,1,1170162
+23/07/2020,Blood Products (Aug 2020),Blood Recharge,Nhs Blood And Transplant,127232.0,WHIT 04 - July.csv,1,1176640
+16/07/2020,Band 5 A&C,Sift,University College London,121202.0,WHIT 04 - July.csv,1,1168005
+23/07/2020,Legal Fees,Director Facilities,Capsticks Solicitors,120240.0,WHIT 04 - July.csv,1,1176724
+23/07/2020,Clinical Waste Disposal ( Q1 19/20 ),Integrated Comm Equip Services,Islington Council,112500.0,WHIT 04 - July.csv,1,1104099
+23/07/2020,Other Ext General Services ( Q2 19/20  ),Integrated Comm Equip Services,Islington Council,112500.0,WHIT 04 - July.csv,1,1095201
+23/07/2020,Other Ext General Services  (Q3 19/20 ),Integrated Comm Equip Services,Islington Council,112500.0,WHIT 04 - July.csv,1,1146717
+23/07/2020,Other Ext General Services ( Q4 19/20 ),Integrated Comm Equip Services,Islington Council,112500.0,WHIT 04 - July.csv,1,1176892
+29/07/2020,Band 3 Hca,Ophthalmology,Royal Free London Nhs Foundation Trust,108754.0,WHIT 04 - July.csv,1,1102741
+02/07/2020,Building Lease,Estates-Holloway Hc Hornsey St,Community Health Partnerships Ltd,102126.0,WHIT 04 - July.csv,1,1163709
+29/07/2020,Consultants,Ophthalmology,Royal Free London Nhs Foundation Trust,100022.0,WHIT 04 - July.csv,1,1155867
+30/07/2020,Planned Maintenance,Planned Maintenance,Supply Chain Coordination Ltd,97554.0,WHIT 04 - July.csv,1,1173601
+16/07/2020,Estate & Facility  ( July 19/20 ),Estates-Holloway Hc Hornsey St,Community Health Partnerships Ltd,94821.0,WHIT 04 - July.csv,1,1174478
+16/07/2020,Estate & Facility  (Sept 19/20 ),Estates-Holloway Hc Hornsey St,Community Health Partnerships Ltd,94821.0,WHIT 04 - July.csv,1,1174481
+30/07/2020,Estate & Facility  ( Mar 19/20 ),Estates-Holloway Hc Hornsey St,Community Health Partnerships Ltd,94821.0,WHIT 04 - July.csv,1,1146178
+30/07/2020,Estate & Facility  (Oct 19/20 ),Estates-Holloway Hc Hornsey St,Community Health Partnerships Ltd,94821.0,WHIT 04 - July.csv,1,1174483
+23/07/2020,Software Purchase,Patient Systems,Open Text Uk Ltd,94706.0,WHIT 04 - July.csv,1,1172243
+02/07/2020,Internal Audit,Finance Director,Grant Thornton Uk Llp,90826.0,WHIT 04 - July.csv,1,1172898
+30/07/2020,Consultant Fees,Capital,Forest Gate Construction Co Ltd,87606.0,WHIT 04 - July.csv,1,1178031
+02/07/2020,Legal Fees,Director Facilities,Capsticks Solicitors,85942.0,WHIT 04 - July.csv,1,1171814
+09/07/2020,Main Works Contract,Capital,Hanevo Ltd,79880.0,WHIT 04 - July.csv,1,1174126
+02/07/2020,Building Lease  (June 19/20),Other Properties,Community Health Partnerships Ltd,79603.0,WHIT 04 - July.csv,1,1167167
+02/07/2020,Building Lease( May 19/20 ),Other Properties,Community Health Partnerships Ltd,79603.0,WHIT 04 - July.csv,1,1167564
+02/07/2020,Building Lease  (Apr 19/20),Other Properties,Community Health Partnerships Ltd,79603.0,WHIT 04 - July.csv,1,1167579
+02/07/2020,Building Lease  (May 20/21),Other Properties,Community Health Partnerships Ltd,79603.0,WHIT 04 - July.csv,1,1163715
+29/07/2020,Nhs Clinical Services,Integrated Blood Science,Royal Free London Nhs Foundation Trust,78495.0,WHIT 04 - July.csv,1,1144021
+02/07/2020,Staff Meals,Covid 19,Xlnt-Cafe Fresco,72918.0,WHIT 04 - July.csv,1,1165131
+29/07/2020,Sho ( Mar 19 ),Acute Paediatrics,Royal Free London Nhs Foundation Trust,68846.0,WHIT 04 - July.csv,1,1130193
+29/07/2020,Sho  (Jan 19 ),Acute Paediatrics,Royal Free London Nhs Foundation Trust,67960.0,WHIT 04 - July.csv,1,1130191
+29/07/2020,Sho (Jan 20 ),Acute Paediatrics,Royal Free London Nhs Foundation Trust,66875.0,WHIT 04 - July.csv,1,1146169
+29/07/2020,Sho (Nov 18 ),Acute Paediatrics,Royal Free London Nhs Foundation Trust,66840.0,WHIT 04 - July.csv,1,1046311
+29/07/2020,Sho ( Dec 18 ),Acute Paediatrics,Royal Free London Nhs Foundation Trust,66440.0,WHIT 04 - July.csv,1,1050139
+30/07/2020,Software Maintenance,Patient Systems,Softcat Ltd,66000.0,WHIT 04 - July.csv,1,1178194
+02/07/2020,Building Lease Jun 2020/21 Rent Hornsey Neighbourhood Health,Estates-Hornsey Rise Hc,Community Health Partnerships Ltd,65786.0,WHIT 04 - July.csv,1,1167157
+02/07/2020,Building Lease May 2020/21 Rent Hornsey Neighbourhood,Estates-Hornsey Rise Hc,Community Health Partnerships Ltd,65786.0,WHIT 04 - July.csv,1,1167571
+29/07/2020,Sho,Acute Paediatrics,Royal Free London Nhs Foundation Trust,64803.0,WHIT 04 - July.csv,1,1130192
+29/07/2020,Sho,Acute Paediatrics,Royal Free London Nhs Foundation Trust,64590.0,WHIT 04 - July.csv,1,1168630
+29/07/2020,Sho,Acute Paediatrics,Royal Free London Nhs Foundation Trust,63600.0,WHIT 04 - July.csv,1,1147960
+29/07/2020,Sho,Acute Paediatrics,Royal Free London Nhs Foundation Trust,63227.0,WHIT 04 - July.csv,1,1166024
+29/07/2020,Sho,Acute Paediatrics,Royal Free London Nhs Foundation Trust,63002.0,WHIT 04 - July.csv,1,1170311
+30/07/2020,Consultants,Tb Services,The Ucl Hospitals Nhs Foundation Trust,62762.0,WHIT 04 - July.csv,1,1128761
+30/07/2020,Ihss Base Service Payment,Sterile Services (Cont Out),Ihss Ltd,61535.0,WHIT 04 - July.csv,1,1160964
+23/07/2020,Legal Fees,Director Facilities,Capsticks Solicitors,57860.0,WHIT 04 - July.csv,1,1156542
+02/07/2020,Cleaning Contracts,Generic Workers,Buzz Housekeeping Services,54130.0,WHIT 04 - July.csv,1,1159659
+09/07/2020,Miscellaneous Expenses,Patient Experience,Iqvia Technology Services Ltd,53337.0,WHIT 04 - July.csv,1,1173566
+16/07/2020,Nhs Logistics Stock Issues,Control,Supply Chain Coordination Ltd,52611.0,WHIT 04 - July.csv,1,1175715
+02/07/2020,Software Purchase,Im & T Information,Draper & Dash Ltd,52309.0,WHIT 04 - July.csv,1,1172837
+02/07/2020,Cleaning Contracts,Generic Workers,Buzz Housekeeping Services,51283.0,WHIT 04 - July.csv,1,1162533
+30/07/2020,Nhs Logistics Stock Issues,Control,Supply Chain Coordination Ltd,51178.0,WHIT 04 - July.csv,1,1177966
+02/07/2020,Nhs Logistics Stock Issues,Control,Supply Chain Coordination Ltd,50851.0,WHIT 04 - July.csv,1,1172876
+02/07/2020,Cleaning Contracts,Generic Workers,Buzz Housekeeping Services,50183.0,WHIT 04 - July.csv,1,1165242
+23/07/2020,Main Works Contract,Capital,Hanevo Ltd,49671.0,WHIT 04 - July.csv,1,1174125
+02/07/2020,Cleaning Contracts,Generic Workers,Buzz Housekeeping Services,48725.0,WHIT 04 - July.csv,1,1172751
+02/07/2020,Uniforms,Covid 19,Bates Office Services Ltd,48500.0,WHIT 04 - July.csv,1,1167071
+30/07/2020,Cleaning Contracts,Generic Workers,Buzz Housekeeping Services,48146.0,WHIT 04 - July.csv,1,1178167
+07/07/2020,Software Purchase 31/07/2019 to 30/07/2020,Patient Systems,Advanced Health And Care Limited,48000.0,WHIT 04 - July.csv,1,1147746
+16/07/2020,Software Maintenance From 31/07/2020 to 30/07/2021,Patient Systems,Advanced Health And Care Limited,48000.0,WHIT 04 - July.csv,1,1170476
+02/07/2020,Cleaning Contracts,Catering Contract,Buzz Housekeeping Services,45098.0,WHIT 04 - July.csv,1,1151330
+09/07/2020,Nhs Logistics Stock Issues,Control,Supply Chain Coordination Ltd,44556.0,WHIT 04 - July.csv,1,1174028
+30/07/2020,Nhs Clinical Services,Endoscopy,The Ucl Hospitals Nhs Foundation Trust,43604.0,WHIT 04 - July.csv,1,1063012
+09/07/2020,Laundry Service,Laundry,Berendsen Uk Ltd,43088.0,WHIT 04 - July.csv,1,1173030
+02/07/2020,Cleaning Contracts,Generic Workers,Buzz Housekeeping Services,42930.0,WHIT 04 - July.csv,1,1170167
+29/07/2020,Consultants,Nephrology,Royal Free London Nhs Foundation Trust,41319.0,WHIT 04 - July.csv,1,1102743
+30/07/2020,Nhs Logistics Stock Issues,Control,Supply Chain Coordination Ltd,40674.0,WHIT 04 - July.csv,1,1176713
+30/07/2020,Nhs Clinical Services,Clinical Haematology,The Ucl Hospitals Nhs Foundation Trust,40105.0,WHIT 04 - July.csv,1,1013146
+23/07/2020,Professional Services,Finance Director,Kpmg Llp,39690.0,WHIT 04 - July.csv,1,1169038
+30/07/2020,Consultants,Neurology,The Ucl Hospitals Nhs Foundation Trust,38927.0,WHIT 04 - July.csv,1,1163891
+02/07/2020,Building Lease Jun 2020/21 Rent Bingfield Primary Care Centre,Estates-Bingfield Hc,Community Health Partnerships Ltd,36508.0,WHIT 04 - July.csv,1,1167159
+02/07/2020,Building Lease May 2020/21 Rent Bingfield Primary Care Centre,Estates-Bingfield Hc,Community Health Partnerships Ltd,36508.0,WHIT 04 - July.csv,1,1167565
+02/07/2020,Building Lease Apr 2020/21 Rent Bingfield Primary Care Centre,Estates-Bingfield Hc,Community Health Partnerships Ltd,36508.0,WHIT 04 - July.csv,1,1167576
+23/07/2020,Main Works Contract,Capital,Caledonian Modular Ltd,35172.0,WHIT 04 - July.csv,1,1176717
+23/07/2020,Cleaning Contracts,Covid 19,Cordant Cleaning Ltd,34920.0,WHIT 04 - July.csv,1,1170749
+23/07/2020,Cleaning Contracts,Covid 19,Cordant Cleaning Ltd,34920.0,WHIT 04 - July.csv,1,1175793
+29/07/2020,Consultants,Nephrology,Royal Free London Nhs Foundation Trust,34377.0,WHIT 04 - July.csv,1,1102744
+09/07/2020,Fp 10'S,Accident & Emergency,Nhs Business Serv Auth,33682.0,WHIT 04 - July.csv,1,1131149
+23/07/2020,Cleaning Contracts,Covid 19,Cordant Cleaning Ltd,32915.0,WHIT 04 - July.csv,1,1140639
+09/07/2020,Main Works Contract,Capital,Becton Dickinson Uk Ltd,31896.0,WHIT 04 - July.csv,1,1174105
+02/07/2020,Building Lease,Estates-Holloway Hc Hornsey St,Community Health Partnerships Ltd,31147.0,WHIT 04 - July.csv,1,1124200
+09/07/2020,Fp 10'S,Accident & Emergency,Nhs Business Serv Auth,31112.0,WHIT 04 - July.csv,1,1153196
+09/07/2020,Fp 10'S,Accident & Emergency,Nhs Business Serv Auth,30548.0,WHIT 04 - July.csv,1,1145752
+02/07/2020,Building Lease May 2020/21 Rent Partnership Primary Care,Other Properties,Community Health Partnerships Ltd,30099.0,WHIT 04 - July.csv,1,1163717
+02/07/2020,Building Lease Jun 2020/21 Rent Partnership Primary Care,Other Properties,Community Health Partnerships Ltd,30099.0,WHIT 04 - July.csv,1,1167168
+02/07/2020,Building Lease Apr 2020/21 Rent Partnership Primary Care,Other Properties,Community Health Partnerships Ltd,30099.0,WHIT 04 - July.csv,1,1167580
+30/07/2020,Nhs Clinical Services,Trust Finance,The Ucl Hospitals Nhs Foundation Trust,29877.0,WHIT 04 - July.csv,1,1013143
+30/07/2020,Estate & Facility Q1 2019,Estates-Highbury Grange Hc,London Borough Of Islington,29500.0,WHIT 04 - July.csv,1,1162445
+02/07/2020,Consultant Fees,Capital,Clinisys Solutions Ltd,29040.0,WHIT 04 - July.csv,1,1171067
+16/07/2020,Managed Equipment Service,Microbiology,Becton Dickinson (Cme) U.K. Ltd,28920.0,WHIT 04 - July.csv,1,1170982
+30/07/2020,Works Costs,Capital,Capital Water Treatments,28782.0,WHIT 04 - July.csv,1,1177558
+30/07/2020,Building Lease,Estates-Holloway Hc Hornsey St,Community Health Partnerships Ltd,28057.0,WHIT 04 - July.csv,1,1124207
+02/07/2020,Software Purchase,Hr Operations,Softcat Ltd,27244.0,WHIT 04 - July.csv,1,1172263
+30/07/2020,Consultant Fees,Capital,Deanway Builders Ltd,26934.0,WHIT 04 - July.csv,1,1172927
+30/07/2020,Consultants (Apr-Jun 2019),Tb Services,The Ucl Hospitals Nhs Foundation Trust,26898.0,WHIT 04 - July.csv,1,1128793
+30/07/2020,Consultants (Aug-Oct 2019),Tb Services,The Ucl Hospitals Nhs Foundation Trust,26898.0,WHIT 04 - July.csv,1,1128822
+02/07/2020,Staff Meals,Covid 19,Xlnt-Cafe Fresco,25671.0,WHIT 04 - July.csv,1,1165132
+15/08/2020,NHSLA (AAPV7044ST1150),Risk Management,NHS Litigation Authority,1014642.0,WHIT 05 - August.csv,1,
+13/08/2020,X-Ray Equip Purchase,Trust Finance,Assetco Healthcare Whittington Ltd,934422.0,WHIT 05 - August.csv,1,1179532
+20/08/2020,Med & Surg Equip Mtce,Integrated Blood Science,Roche Diagnostics Ltd,502006.0,WHIT 05 - August.csv,1,1181511
+06/08/2020,Med & Surg Equip Mtce,Med Physics Diag,Supply Chain Coordination Ltd,229120.0,WHIT 05 - August.csv,1,1173602
+20/08/2020,Main Works Contract,Capital,Hanevo Ltd,195306.0,WHIT 05 - August.csv,1,1180839
+13/08/2020,Transport Maint & Exps (June 2020 ),Med Front Of House& Transp,Dhl Supply Chain - Uk&I,141765.0,WHIT 05 - August.csv,1,1180634
+27/08/2020,Transport Maint & Exps ( July 2020 ),Med Front Of House& Transp,Dhl Supply Chain - Uk&I,141765.0,WHIT 05 - August.csv,1,1182473
+20/08/2020,Blood Products,Blood Recharge,Nhs Blood And Transplant,127232.0,WHIT 05 - August.csv,1,1182025
+13/08/2020,Software Maintenance,Patient Systems,Clinisys Solutions Ltd,122980.0,WHIT 05 - August.csv,1,1179960
+20/08/2020,Main Works Contract,Capital,Erith Contractors Ltd,117768.0,WHIT 05 - August.csv,1,1181544
+27/08/2020,Legal Fees,Director Facilities,Capsticks Solicitors,114545.0,WHIT 05 - August.csv,1,1180858
+06/08/2020,Software Purchase,Hr Operations,Softcat Ltd,96570.0,WHIT 05 - August.csv,1,1179478
+20/08/2020,General Building Work,C&I Enabling,Capri Mechanical Services Ltd,90930.0,WHIT 05 - August.csv,1,1181541
+27/08/2020,Estate & Facility,Pfi Fires,Arcadis Consulting Uk Ltd,75066.0,WHIT 05 - August.csv,1,1182988
+13/08/2020,Professional Services,Covid 19,Abm Aviation Uk Ltd,70647.0,WHIT 05 - August.csv,1,1178478
+13/08/2020,Internal Audit,Finance Director,Grant Thornton Uk Llp,64597.0,WHIT 05 - August.csv,1,1178859
+27/08/2020,Professional Services,Procurement Shared Service,Tenwell Finance Ltd T/A Ecovate,62340.0,WHIT 05 - August.csv,1,1182474
+27/08/2020,Rents,Community Dental Lot 1,Community Health Partnerships Ltd,58783.0,WHIT 05 - August.csv,1,1174025
+20/08/2020,Nhs Logistics Stock Issues,Control,Supply Chain Coordination Ltd,56603.0,WHIT 05 - August.csv,1,1181594
+06/08/2020,Nhs Logistics Stock Issues,Control,Supply Chain Coordination Ltd,54054.0,WHIT 05 - August.csv,1,1179951
+20/08/2020,Med & Surg Equip Purchase,Med Physics Diag,Smith & Nephew Healthcare,53881.0,WHIT 05 - August.csv,1,1144049
+27/08/2020,Clinical Waste Disposal,Environmental Mang'T,Mitie Waste & Environmental Services Ltd,52128.0,WHIT 05 - August.csv,1,1182424
+06/08/2020,Clinical Waste Disposal,Environmental Mang'T,Mitie Waste & Environmental Services Ltd,49145.0,WHIT 05 - August.csv,1,1176722
+13/08/2020,Cleaning Contracts,Generic Workers,Buzz Housekeeping Services,48972.0,WHIT 05 - August.csv,1,1176651
+13/08/2020,Boiler & Calorifiers,Estates-Hornsey Rise Hc,Gas Group Services Ltd,48532.0,WHIT 05 - August.csv,1,1167790
+06/08/2020,Laundry Service,Laundry,Berendsen Uk Ltd,48016.0,WHIT 05 - August.csv,1,1179406
+13/08/2020,Cleaning Contracts,Generic Workers,Buzz Housekeeping Services,47577.0,WHIT 05 - August.csv,1,1180829
+13/08/2020,Software/Licence Computer,Capital,Isosec Ltd,46680.0,WHIT 05 - August.csv,1,1180644
+27/08/2020,Cleaning Contracts,Generic Workers,Buzz Housekeeping Services,46314.0,WHIT 05 - August.csv,1,1183397
+06/08/2020,Cleaning Contracts,Generic Workers,Buzz Housekeeping Services,46297.0,WHIT 05 - August.csv,1,1174181
+13/08/2020,Nhs Logistics Stock Issues,Control,Supply Chain Coordination Ltd,46000.0,WHIT 05 - August.csv,1,1180789
+13/08/2020,Cleaning Contracts,Generic Workers,Buzz Housekeeping Services,45076.0,WHIT 05 - August.csv,1,1175725
+13/08/2020,Legal Fees,Director Facilities,Capsticks Solicitors,40188.0,WHIT 05 - August.csv,1,1180703
+25/08/2020,Nhs Logistics Stock Issues,Control,Supply Chain Coordination Ltd,37400.0,WHIT 05 - August.csv,1,1182841
+13/08/2020,Telecoms,Capital,Multitone Electronics Plc,37132.0,WHIT 05 - August.csv,1,1178758
+13/08/2020,Professional Services,Covid 19,Abm Aviation Uk Ltd,34410.0,WHIT 05 - August.csv,1,1178475
+06/08/2020,Fp 10'S,Accident & Emergency,Nhs Business Serv Auth,29857.0,WHIT 05 - August.csv,1,1165245
+27/08/2020,Med & Surg Equip Purchase,Community Midwifery Team,Limbs & Things,27080.0,WHIT 05 - August.csv,1,1182946
+06/08/2020,Fp 10'S,Accident & Emergency,Nhs Business Serv Auth,25793.0,WHIT 05 - August.csv,1,1162551
+20/08/2020,Internal Audit,Finance Director,Grant Thornton Uk Llp,25006.0,WHIT 05 - August.csv,1,1170803
+15/09/2020,NHSLA (AAPV7044ST1150),Risk Management,NHS Litigation Authority,1014642.0,WHIT 06 - September.csv,1,
+03/09/2020,X-Ray Equip Purchase (July 2020),Trust Finance,Assetco Healthcare Whittington Ltd,282862.0,WHIT 06 - September.csv,1,1176881
+03/09/2020,X-Ray Equip Purchase (Aug 2020),Trust Finance,Assetco Healthcare Whittington Ltd,284509.0,WHIT 06 - September.csv,1,1182984
+24/09/2020,X-Ray Equip Purchase (Sep 2020),Trust Finance,Assetco Healthcare Whittington Ltd,282790.0,WHIT 06 - September.csv,1,1187651
+10/09/2020,Software Maintenance,Patient Systems,System C Healthcare Ltd,277782.0,WHIT 06 - September.csv,1,1184153
+10/09/2020,Software/Licence Computer,Capital,System C Healthcare Ltd,244500.0,WHIT 06 - September.csv,1,1185346
+24/09/2020,Nhs Logistics Stock Issues,Control,Supply Chain Coordination Ltd,225281.0,WHIT 06 - September.csv,1,1186760
+10/09/2020,Sla-Liaison Psychiatry,Accident & Emergency,Camden & Islington Nhs Foundation Trust,189833.0,WHIT 06 - September.csv,1,1167109
+24/09/2020,Rates-General,Estates Management,London Borough Of Camden,156940.0,WHIT 06 - September.csv,1,1170759
+10/09/2020,Transport Maint & Exps,Med Front Of House& Transp,Dhl Supply Chain - Uk&I,141765.0,WHIT 06 - September.csv,1,1185643
+10/09/2020,Electricity,Environment,Edf Energy,135739.0,WHIT 06 - September.csv,1,1184581
+10/09/2020,Electricity,Environment,Edf Energy,131448.0,WHIT 06 - September.csv,1,1184579
+24/09/2020,Blood Products,Blood Recharge,Nhs Blood And Transplant,127232.0,WHIT 06 - September.csv,1,1186956
+24/09/2020,Planned Maintenance,Planned Maintenance,Fes Fm Ltd,86420.0,WHIT 06 - September.csv,1,1186754
+17/09/2020,Main Works Contract,Capital,Hanevo Ltd,74931.0,WHIT 06 - September.csv,1,1185913
+10/09/2020,Rents,Estates Management,Metrus Property Advisors Ltd,72856.0,WHIT 06 - September.csv,1,1185274
+24/09/2020,Building Lease,Estates-Holloway Hc Hornsey St,Community Health Partnerships Ltd,70550.0,WHIT 06 - September.csv,1,1173658
+24/09/2020,Nhs Logistics Stock Issues,Control,Supply Chain Coordination Ltd,68815.0,WHIT 06 - September.csv,1,1187883
+10/09/2020,Ext Contract Estate/Facility (Jan-19 to Mar-19),Estates-Simmons House,Camden & Islington Nhs Foundation Trust,67165.0,WHIT 06 - September.csv,1,1066112
+10/09/2020,Rates-General (Apr-20 to Jun-20),Estates-Simmons House,Camden & Islington Nhs Foundation Trust,67165.0,WHIT 06 - September.csv,1,1167113
+17/09/2020,Building Mtce Contracts (Jan-20 to Mar-20),Estates-Simmons House,Camden & Islington Nhs Foundation Trust,67165.0,WHIT 06 - September.csv,1,1136997
+24/09/2020,Building Lease,Estates-Hornsey Rise Hc,Community Health Partnerships Ltd,57845.0,WHIT 06 - September.csv,1,1173630
+10/09/2020,Nhs Logistics Stock Issues,Control,Supply Chain Coordination Ltd,57182.0,WHIT 06 - September.csv,1,1185279
+10/09/2020,Cleaning Contracts,Generic Workers,Buzz Housekeeping Services,49434.0,WHIT 06 - September.csv,1,1179516
+03/09/2020,Cleaning Contracts,Generic Workers,Buzz Housekeeping Services,49133.0,WHIT 06 - September.csv,1,1182817
+10/09/2020,Cleaning Contracts,Generic Workers,Buzz Housekeeping Services,49118.0,WHIT 06 - September.csv,1,1185389
+17/09/2020,Med Equ: Med Life 10 Yrs,Capital,Olympus Keymed,47353.0,WHIT 06 - September.csv,1,1185802
+17/09/2020,Cleaning Contracts,Generic Workers,Buzz Housekeeping Services,46772.0,WHIT 06 - September.csv,1,1186969
+17/09/2020,Software Purchase,Technical Services,Trustmarque Solutions Ltd,44788.0,WHIT 06 - September.csv,1,1185481
+10/09/2020,Consultant Fees,Capital,Forest Gate Construction Co Ltd,44251.0,WHIT 06 - September.csv,1,1184821
+10/09/2020,Cleaning Contracts,Generic Workers,Buzz Housekeeping Services,43264.0,WHIT 06 - September.csv,1,1185384
+24/09/2020,Rents (Apr-20 to Jun-20),Estates-Finsbury Hc,Nhs Property Services Ltd,40675.0,WHIT 06 - September.csv,1,1174099
+24/09/2020,Rents (Jul-20 to Sep-20),Estates-Finsbury Hc,Nhs Property Services Ltd,40675.0,WHIT 06 - September.csv,1,1174472
+10/09/2020,Nhs Logistics Stock Issues,Control,Supply Chain Coordination Ltd,37464.0,WHIT 06 - September.csv,1,1184119
+17/09/2020,Building Lease,Estates-Holloway Hc Hornsey St,Community Health Partnerships Ltd,36554.0,WHIT 06 - September.csv,1,1173652
+03/09/2020,Software Purchase (Jan-20 to Mar-20),Imaging,Sectra Ltd,36316.0,WHIT 06 - September.csv,1,1149146
+03/09/2020,Software Purchase (Apr-20 to Jun-20),Imaging,Sectra Ltd,36316.0,WHIT 06 - September.csv,1,1172828
+17/09/2020,Cleaning Contracts,Estates-Bounds Green Hc,Cordant Cleaning Ltd,34920.0,WHIT 06 - September.csv,1,1184510
+24/09/2020,Planned Maintenance,Planned Maintenance,Fes Fm Ltd,34837.0,WHIT 06 - September.csv,1,1186756
+24/09/2020,Building Lease,Estates-Holloway Hc Hornsey St,Community Health Partnerships Ltd,33302.0,WHIT 06 - September.csv,1,1173656
+17/09/2020,Building Lease,Estates-Holloway Hc Hornsey St,Community Health Partnerships Ltd,31673.0,WHIT 06 - September.csv,1,1173657
+24/09/2020,Rents,Community Dental Lot 2,Community Health Partnerships Ltd,31358.0,WHIT 06 - September.csv,1,1174026
+10/09/2020,Software Maintenance,Telecomunications,Elitetele.Complc T/A Elite Company,30378.0,WHIT 06 - September.csv,1,1185431
+10/09/2020,Rates-General,Estates-Simmons House,Camden & Islington Nhs Foundation Trust,30000.0,WHIT 06 - September.csv,1,1167112
+17/09/2020,Estate & Facility ,Estates-Highbury Grange Hc,London Borough Of Islington,29500.0,WHIT 06 - September.csv,1,1178157
+24/09/2020,Med & Surg Equip Mtce,Med Physics Diag,Supply Chain Coordination Ltd,29202.0,WHIT 06 - September.csv,1,1187166
+10/09/2020,Consultant Fees,Capital,Ryder Architecture Ltd,28767.0,WHIT 06 - September.csv,1,1184638
+17/09/2020,Stock-Pharmacy,Control,Seqirus Uk Ltd,28468.0,WHIT 06 - September.csv,1,1186650
+24/09/2020,Building Lease,Estates-Holloway Hc Hornsey St,Community Health Partnerships Ltd,28382.0,WHIT 06 - September.csv,1,1173655
+03/09/2020,Med Equ: Med Life 10 Yrs,Capital,Djb Labcare Ltd,25355.0,WHIT 06 - September.csv,1,1170483
+15/10/2020,NHSLA (AAPV7044ST1150),Risk Management,NHS Litigation Authority,1016374.0,WHIT 07 - October.csv,1,
+23/10/2020,Main Works Contract,Capital,Erith Contractors Ltd,341487.0,WHIT 07 - October.csv,1,1192744
+29/10/2020,Telephone & Pager Maintenance,Technical Services,Virgin Media Business,288213.0,WHIT 07 - October.csv,1,1196251
+12/10/2020,Drugs Issued-High Tech,Pharmacy Subsidiary,Whittington Pharmacy Cic,281373.0,WHIT 07 - October.csv,1,1187922
+29/10/2020,Software Maintenance,Patient Systems,System C Healthcare Ltd,277782.0,WHIT 07 - October.csv,1,1191753
+23/10/2020,General Building Work,C&I Enabling,Capri Mechanical Services Ltd,277020.0,WHIT 07 - October.csv,1,1192461
+23/10/2020,General Building Work,C&I Enabling,Capri Mechanical Services Ltd,180389.0,WHIT 07 - October.csv,1,1192196
+12/10/2020,High Cost Chemo Pass Th'Ro Dru,Pharmacy Subsidiary,Whittington Pharmacy Cic,172386.0,WHIT 07 - October.csv,1,1187923
+23/10/2020,Non-Emer Patient Transport,Med Front Of House& Transp,Dhl Supply Chain - Uk&I,141765.0,WHIT 07 - October.csv,1,1192578
+23/10/2020,Electricity,Environment,Edf Energy,137652.0,WHIT 07 - October.csv,1,1192717
+23/10/2020,Electricity,Environment,Edf Energy,128014.0,WHIT 07 - October.csv,1,1192732
+29/10/2020,Blood Products,Blood Recharge,Nhs Blood And Transplant,127232.0,WHIT 07 - October.csv,1,1192707
+23/10/2020,Other Ext General Services,Integrated Comm Equip Services,Islington Council,112500.0,WHIT 07 - October.csv,1,1171498
+29/10/2020,Building Lease,Estates-Holloway Hc Hornsey St,Community Health Partnerships Ltd,102126.0,WHIT 07 - October.csv,1,1167165
+29/10/2020,Estate & Facility (July 19/20),Estates-Holloway Hc Hornsey St,Community Health Partnerships Ltd,101428.0,WHIT 07 - October.csv,1,1090244
+29/10/2020,Estate & Facility (Sept 19/20),Estates-Holloway Hc Hornsey St,Community Health Partnerships Ltd,101428.0,WHIT 07 - October.csv,1,1135898
+29/10/2020,Estate & Facility (Oct 19/20),Estates-Holloway Hc Hornsey St,Community Health Partnerships Ltd,101428.0,WHIT 07 - October.csv,1,1135903
+12/10/2020,Non Nhs Clinical Services,Pharmacy Subsidiary,Whittington Pharmacy Cic,100000.0,WHIT 07 - October.csv,1,1187924
+23/10/2020,Med Equ: Med Life 10 Yrs,Capital,Optos Plc,90186.0,WHIT 07 - October.csv,1,1190537
+15/10/2020,Nhs Logistics Stock Issues,Control,Supply Chain Coordination Ltd,89605.0,WHIT 07 - October.csv,1,1191468
+01/10/2020,Med Equ: Med Life 10 Yrs,Capital,Arthrex Ltd,86000.0,WHIT 07 - October.csv,1,1184151
+29/10/2020,Nhs Logistics Stock Issues,Control,Supply Chain Coordination Ltd,84275.0,WHIT 07 - October.csv,1,1193191
+01/10/2020,Software/Licence Computer,Capital,Trustmarque Solutions Ltd,82377.0,WHIT 07 - October.csv,1,1188610
+23/10/2020,Software Purchase,Procurement Shared Service,Adb Multiquote Ltd,82080.0,WHIT 07 - October.csv,1,1192185
+01/10/2020,Estate & Facility,Pfi Fires,Arcadis Consulting Uk Ltd,80430.0,WHIT 07 - October.csv,1,1185640
+15/10/2020,Med & Surg Equip Purchase,Covid 19,Philips Healthcare,78500.0,WHIT 07 - October.csv,1,1189532
+01/10/2020,Building Lease,Estates-Holloway Hc Hornsey St,Community Health Partnerships Ltd,78319.0,WHIT 07 - October.csv,1,1173651
+29/10/2020,Nhs Logistics Stock Issues,Control,Supply Chain Coordination Ltd,75652.0,WHIT 07 - October.csv,1,1195729
+29/10/2020,Works Costs,Capital,Althea Services Ltd,75609.0,WHIT 07 - October.csv,1,1189586
+01/10/2020,Nhs Logistics Stock Issues,Control,Supply Chain Coordination Ltd,74936.0,WHIT 07 - October.csv,1,1189036
+20/10/2020,Inland Revenue - 247 Ltd,Control,Hmrc (247),72306.0,WHIT 07 - October.csv,1,1193211
+08/10/2020,Nhs Logistics Stock Issues,Control,Supply Chain Coordination Ltd,71131.0,WHIT 07 - October.csv,1,1190275
+23/10/2020,Main Works Contract,Capital,Hanevo Ltd,70242.0,WHIT 07 - October.csv,1,1191732
+23/10/2020,Rates-General,Estates-Simmons House,Camden & Islington Nhs Foundation Trust,67165.0,WHIT 07 - October.csv,1,1193838
+29/10/2020,Building Lease,Estates-Hornsey Rise Hc,Community Health Partnerships Ltd,65786.0,WHIT 07 - October.csv,1,1167577
+01/10/2020,Software Maintenance,Telecomunications,Elitetele.Complc T/A Elite Company,65050.0,WHIT 07 - October.csv,1,1188545
+15/10/2020,Estate & Facility,Other Properties,Community Health Partnerships Ltd,64395.0,WHIT 07 - October.csv,1,1146180
+23/10/2020,Bulk Stores Carriage Charges,Capital,Ausdiagnostics Uk Ltd,63744.0,WHIT 07 - October.csv,1,1193709
+23/10/2020,Legal Fees,Director Facilities,Capsticks Solicitors,63667.0,WHIT 07 - October.csv,1,1191869
+01/10/2020,Miscellaneous Expenses,District Nursing Snr Team & Pd,Softcat Ltd,62371.0,WHIT 07 - October.csv,1,1188691
+15/10/2020,Main Works Contract,Capital,Hanevo Ltd,59163.0,WHIT 07 - October.csv,1,1185912
+23/10/2020,Rents,Community Dental Lot 1,Community Health Partnerships Ltd,58783.0,WHIT 07 - October.csv,1,1192161
+12/10/2020,Drugs Issued-High Tech,Pharmacy Subsidiary,Whittington Pharmacy Cic,56649.0,WHIT 07 - October.csv,1,1187925
+29/10/2020,Works Costs,Capital,Hanevo Ltd,55526.0,WHIT 07 - October.csv,1,1191731
+01/10/2020,Building Lease,Estates-Bingfield Hc,Community Health Partnerships Ltd,53941.0,WHIT 07 - October.csv,1,1173645
+01/10/2020,Legal Fees,Director Facilities,Capsticks Solicitors,53233.0,WHIT 07 - October.csv,1,1185555
+23/10/2020,Gas,Environment,Corona Energy Retail Ltd,53197.0,WHIT 07 - October.csv,1,1192725
+29/10/2020,Building Lease,Other Properties,Community Health Partnerships Ltd,49740.0,WHIT 07 - October.csv,1,1173639
+01/10/2020,Clinical Waste Disposal,Environmental Mang'T,Mitie Waste & Environmental Services Ltd,49012.0,WHIT 07 - October.csv,1,1188058
+15/10/2020,Stock-Pharmacy,Control,Roche  And  Products Ltd,48816.0,WHIT 07 - October.csv,1,1191111
+29/10/2020,Cleaning Contracts,Generic Workers,Buzz Housekeeping Services,48568.0,WHIT 07 - October.csv,1,1196259
+29/10/2020,Rents,Estates-The Laurels Hc,Nhs Property Services Ltd,48489.0,WHIT 07 - October.csv,1,888277
+23/10/2020,Software Maintenance,Patient Systems,Advanced Health And Care Limited,48000.0,WHIT 07 - October.csv,1,1174203
+23/10/2020,Cleaning Contracts,Generic Workers,Buzz Housekeeping Services,47554.0,WHIT 07 - October.csv,1,1190945
+15/10/2020,Cleaning Contracts,Generic Workers,Buzz Housekeeping Services,46341.0,WHIT 07 - October.csv,1,1190969
+01/10/2020,Building Lease,Other Properties,Community Health Partnerships Ltd,46314.0,WHIT 07 - October.csv,1,1173638
+23/10/2020,Gas,Environment,Corona Energy Retail Ltd,46108.0,WHIT 07 - October.csv,1,1192724
+15/10/2020,Laundry Service,Laundry,Berendsen Uk Ltd,45789.0,WHIT 07 - October.csv,1,1190026
+23/10/2020,Gas,Environment,Corona Energy Retail Ltd,45013.0,WHIT 07 - October.csv,1,1192723
+08/10/2020,Laundry Service,Laundry,Berendsen Uk Ltd,43802.0,WHIT 07 - October.csv,1,1184190
+23/10/2020,Gas,Environment,Corona Energy Retail Ltd,41273.0,WHIT 07 - October.csv,1,1192728
+29/10/2020,Building Lease,Other Properties,Community Health Partnerships Ltd,39756.0,WHIT 07 - October.csv,1,1173650
+08/10/2020,Band 5 A&C,Sift,University College London,39634.0,WHIT 07 - October.csv,1,1161719
+29/10/2020,Rents,Estates-Pine St Michael Palin,Nhs Property Services Ltd,37653.0,WHIT 07 - October.csv,1,884882
+15/10/2020,Estate & Facility,Estates-Bingfield Hc,Community Health Partnerships Ltd,35683.0,WHIT 07 - October.csv,1,1146189
+23/10/2020,Cleaning Contracts,Estates-Bounds Green Hc,Cordant Cleaning Ltd,34920.0,WHIT 07 - October.csv,1,1191755
+29/10/2020,Computer Hardware,Capital,Dell Computer Corp.Ltd,34850.0,WHIT 07 - October.csv,1,1196126
+15/10/2020,Building Lease,Estates - Kentish Town,Community Health Partnerships Ltd,34479.0,WHIT 07 - October.csv,1,1175146
+01/10/2020,Building Lease,Other Properties,Community Health Partnerships Ltd,34447.0,WHIT 07 - October.csv,1,1173635
+01/10/2020,Rents,Community Dental Lot 1,Community Health Partnerships Ltd,33314.0,WHIT 07 - October.csv,1,1172689
+01/10/2020,Software Maintenance,Finance Director,Advanced Business Solutions,32355.0,WHIT 07 - October.csv,1,1188528
+01/10/2020,Building Lease,Estates-Bingfield Hc,Community Health Partnerships Ltd,30323.0,WHIT 07 - October.csv,1,1173646
+23/10/2020,Rates-General,Estates-Simmons House,Camden & Islington Nhs Foundation Trust,30000.0,WHIT 07 - October.csv,1,1193837
+23/10/2020,Sewerage Rates,Environment,Castle Water Ltd,28610.0,WHIT 07 - October.csv,1,1192729
+29/10/2020,Stock-Pharmacy,Control,Abbvie Ltd,27643.0,WHIT 07 - October.csv,1,1195982
+01/10/2020,Software Maintenance,Finance Director,Advanced Business Solutions,27623.0,WHIT 07 - October.csv,1,1188527
+01/10/2020,Estate & Facility (Oct 19/20),Estates-Camden Partnership,Community Health Partnerships Ltd,26706.0,WHIT 07 - October.csv,1,1174468
+08/10/2020,Estate & Facility (Sept 19/20),Estates-Camden Partnership,Community Health Partnerships Ltd,26706.0,WHIT 07 - October.csv,1,1174470
+15/10/2020,Estate & Facility (July 19/20),Estates-Camden Partnership,Community Health Partnerships Ltd,26706.0,WHIT 07 - October.csv,1,1174479
+23/10/2020,Sewerage Rates,Environment,Castle Water Ltd,26437.0,WHIT 07 - October.csv,1,1192730
+01/10/2020,Building Lease,Other Properties,Community Health Partnerships Ltd,26365.0,WHIT 07 - October.csv,1,1173640
+01/10/2020,Rents (Q2 20/21),Community Dental Lot 2,Community Health Partnerships Ltd,26091.0,WHIT 07 - October.csv,1,1173678
+23/10/2020,Rents (Q3 20/21),Community Dental Lot 2,Community Health Partnerships Ltd,26091.0,WHIT 07 - October.csv,1,1192178
+29/10/2020,Building Lease,Estates-Hornsey Rise Hc,Community Health Partnerships Ltd,25471.0,WHIT 07 - October.csv,1,1173618
+01/10/2020,Building Lease,Estates-Bingfield Hc,Community Health Partnerships Ltd,25261.0,WHIT 07 - October.csv,1,1173647
+08/10/2020,Debt Collection Services,Finance Director,Grant Thornton Uk Llp,25006.0,WHIT 07 - October.csv,1,1188036
+16/11/2020,NHSLA (AAPV7044ST1150),Risk Management,NHS Litigation Authority,1016374.0,WHIT 08 - November.csv,1,
+05/11/2020,Med & Surg Equip Purchase,Endoscopy Recovery,Supply Chain Coordination Limited,1027265.0,WHIT 08 - November.csv,1,1193469
+05/11/2020,Med & Surg Equip Mtce,Integrated Blood Science,Roche Diagnostics Ltd,502006.0,WHIT 08 - November.csv,1,1190033
+26/11/2020,X-Ray Equip Purchase,Trust Finance,Assetco Healthcare Whittington Ltd,284263.0,WHIT 08 - November.csv,1,1201966
+12/11/2020,X-Ray Equip Purchase,Trust Finance,Assetco Healthcare Whittington Ltd,283897.0,WHIT 08 - November.csv,1,1192603
+12/11/2020,Sla-Liaison Psychiatry,Accident & Emergency,Camden & Islington Nhs Foundation Trust,194000.0,WHIT 08 - November.csv,1,1138493
+12/11/2020,Band 3 Hca,Ophthalmology,Royal Free London Nhs Foundation Trust,153836.0,WHIT 08 - November.csv,1,1171429
+23/11/2020,Estate & Facility (03/09/2020 - 02/10/2020),Pfi Fires,Fes Fm Ltd,137589.0,WHIT 08 - November.csv,1,1201347
+26/11/2020,Building Mtce Contracts (03/10/2020 - 01/11/2020),Pfi Fires,Fes Fm Ltd,137589.0,WHIT 08 - November.csv,1,1202136
+12/11/2020,Software Maintenance,Whittington Pharmacy,Jac Computer Services Ltd,132342.0,WHIT 08 - November.csv,1,1182445
+19/11/2020,Blood Products,Blood Recharge,Nhs Blood And Transplant,127232.0,WHIT 08 - November.csv,1,1200716
+05/11/2020,General Practioner Agency April to June 2020,Accident & Emergency,Wish Health Ltd,122499.0,WHIT 08 - November.csv,1,1174488
+05/11/2020,General Practioner Agency (July to September 2020),Accident & Emergency,Wish Health Ltd,122499.0,WHIT 08 - November.csv,1,1196976
+05/11/2020,Main Works Contract,Capital,Erith Contractors Ltd,117034.0,WHIT 08 - November.csv,1,1197440
+12/11/2020,Sla-Liaison Psychiatry,Accident & Emergency,Camden & Islington Nhs Foundation Trust,95507.0,WHIT 08 - November.csv,1,1167110
+05/11/2020,Nhs Logistics Stock Issues,Control,Supply Chain Coordination Ltd,86717.0,WHIT 08 - November.csv,1,1197387
+12/11/2020,Med & Surg Equip Purchase,Covid 19,Arjo Uk Ltd,85353.0,WHIT 08 - November.csv,1,1197587
+19/11/2020,Nhs Logistics Stock Issues,Control,Supply Chain Coordination Ltd,82027.0,WHIT 08 - November.csv,1,1200501
+26/11/2020,Building Lease,Estates-Holloway Hc Hornsey St,Community Health Partnerships Ltd,78319.0,WHIT 08 - November.csv,1,1199333
+19/11/2020,Main Works Contract,Capital,Hanevo Ltd,77589.0,WHIT 08 - November.csv,1,1199994
+12/11/2020,Sho,Acute Paediatrics,Royal Free London Nhs Foundation Trust,76337.0,WHIT 08 - November.csv,1,1184819
+12/11/2020,Software/Licence Computer,Capital,Insight Direct (Uk) Ltd,75725.0,WHIT 08 - November.csv,1,1195683
+12/11/2020,Nhs Logistics Stock Issues,Control,Supply Chain Coordination Ltd,74206.0,WHIT 08 - November.csv,1,1198759
+26/11/2020,Building Lease,Estates-Holloway Hc Hornsey St,Community Health Partnerships Ltd,70550.0,WHIT 08 - November.csv,1,1199338
+19/11/2020,Main Works Contract,Capital,Friargreen Construction Limited,69504.0,WHIT 08 - November.csv,1,1196072
+19/11/2020,Rates-General,Estates-Simmons House,Camden & Islington Nhs Foundation Trust,67165.0,WHIT 08 - November.csv,1,1199443
+12/11/2020,Band 8d Senior Manager,Chief Operating Officer,Camden & Islington Nhs Foundation Trust,64927.0,WHIT 08 - November.csv,1,1055113
+19/11/2020,Legal Fees,Director Facilities,Capsticks Solicitors,58353.0,WHIT 08 - November.csv,1,1199192
+19/11/2020,Building Lease,Estates-Hornsey Rise Hc,Community Health Partnerships Ltd,57845.0,WHIT 08 - November.csv,1,1199351
+26/11/2020,Clinical Waste Disposal,Environmental Mang'T,Mitie Waste & Environmental Services Ltd,57720.0,WHIT 08 - November.csv,1,1200672
+26/11/2020,Nhs Logistics Stock Issues,Control,Supply Chain Coordination Ltd,57241.0,WHIT 08 - November.csv,1,1201873
+26/11/2020,Clinical Waste Disposal,Environmental Mang'T,Mitie Waste & Environmental Services Ltd,55993.0,WHIT 08 - November.csv,1,1192748
+12/11/2020,Sla-Liaison Psychiatry,Accident & Emergency,Camden & Islington Nhs Foundation Trust,55352.0,WHIT 08 - November.csv,1,1062927
+12/11/2020,Sla-Liaison Psychiatry (19/20 M01),Accident & Emergency,Camden & Islington Nhs Foundation Trust,54496.0,WHIT 08 - November.csv,1,1069032
+12/11/2020,Sla-Liaison Psychiatry (19/20 M02),Accident & Emergency,Camden & Islington Nhs Foundation Trust,54496.0,WHIT 08 - November.csv,1,1090260
+12/11/2020,Sla-Liaison Psychiatry (19/20 M03),Accident & Emergency,Camden & Islington Nhs Foundation Trust,54496.0,WHIT 08 - November.csv,1,1090262
+12/11/2020,Sla-Liaison Psychiatry (19/20 M05),Accident & Emergency,Camden & Islington Nhs Foundation Trust,54496.0,WHIT 08 - November.csv,1,1102612
+12/11/2020,Sla-Liaison Psychiatry (19/20 M08),Accident & Emergency,Camden & Islington Nhs Foundation Trust,54496.0,WHIT 08 - November.csv,1,1119954
+12/11/2020,Sla-Liaison Psychiatry (19/20 M11),Accident & Emergency,Camden & Islington Nhs Foundation Trust,54496.0,WHIT 08 - November.csv,1,1140730
+12/11/2020,Sla-Liaison Psychiatry (19/20 M6),Accident & Emergency,Camden & Islington Nhs Foundation Trust,54496.0,WHIT 08 - November.csv,1,1110378
+12/11/2020,Sla-Liaison Psychiatry (09/20) M07,Accident & Emergency,Camden & Islington Nhs Foundation Trust,54496.0,WHIT 08 - November.csv,1,1119951
+12/11/2020,Sla-Liaison Psychiatry (19/20 M09),Accident & Emergency,Camden & Islington Nhs Foundation Trust,54496.0,WHIT 08 - November.csv,1,1128941
+12/11/2020,Sla-Liaison Psychiatry (19/20 M10),Accident & Emergency,Camden & Islington Nhs Foundation Trust,54496.0,WHIT 08 - November.csv,1,1131682
+12/11/2020,Sla-Liaison Psychiatry,Accident & Emergency,Camden & Islington Nhs Foundation Trust,54496.0,WHIT 08 - November.csv,1,1119949
+19/11/2020,Building Lease,Estates-Bingfield Hc,Community Health Partnerships Ltd,53941.0,WHIT 08 - November.csv,1,1199354
+26/11/2020,Building Lease,Other Properties,Community Health Partnerships Ltd,49740.0,WHIT 08 - November.csv,1,1199353
+12/11/2020,Cleaning Contracts,Generic Workers,Buzz Housekeeping Services,49029.0,WHIT 08 - November.csv,1,1191896
+12/11/2020,Sla-Liaison Psychiatry (20/21 Q1),Accident & Emergency,Camden & Islington Nhs Foundation Trust,48500.0,WHIT 08 - November.csv,1,1185485
+12/11/2020,Sla-Liaison Psychiatry (20/21 Q2),Accident & Emergency,Camden & Islington Nhs Foundation Trust,48500.0,WHIT 08 - November.csv,1,1185486
+12/11/2020,Sla-Liaison Psychiatry (20/21 M6),Accident & Emergency,Camden & Islington Nhs Foundation Trust,47754.0,WHIT 08 - November.csv,1,1186344
+12/11/2020,Sla-Liaison Psychiatry (20/21 M7),Accident & Emergency,Camden & Islington Nhs Foundation Trust,47754.0,WHIT 08 - November.csv,1,1198052
+12/11/2020,Sla-Liaison Psychiatry (20/21 M4),Accident & Emergency,Camden & Islington Nhs Foundation Trust,47753.0,WHIT 08 - November.csv,1,1181577
+12/11/2020,Sla-Liaison Psychiatry (20/21 M3),Accident & Emergency,Camden & Islington Nhs Foundation Trust,47753.0,WHIT 08 - November.csv,1,1181578
+12/11/2020,Sla-Liaison Psychiatry (20/21 M5),Accident & Emergency,Camden & Islington Nhs Foundation Trust,47753.0,WHIT 08 - November.csv,1,1181580
+12/11/2020,Cleaning Contracts,Generic Workers,Buzz Housekeeping Services,46588.0,WHIT 08 - November.csv,1,1197989
+12/11/2020,Cleaning Contracts,Catering Contract,Buzz Housekeeping Services,46553.0,WHIT 08 - November.csv,1,1188201
+26/11/2020,Building Lease,Other Properties,Community Health Partnerships Ltd,46314.0,WHIT 08 - November.csv,1,1199352
+26/11/2020,Band 8a Nurse/Midwife,Obstetrics & Gynae,Middlesex University,41935.0,WHIT 08 - November.csv,1,1175736
+12/11/2020,Main Works Contract,Capital,Caledonian Modular Ltd,41490.0,WHIT 08 - November.csv,1,1193486
+19/11/2020,Building Lease,Other Properties,Community Health Partnerships Ltd,39756.0,WHIT 08 - November.csv,1,1199332
+12/11/2020,Professional Services,Covid 19,Abm Aviation Uk Ltd,39438.0,WHIT 08 - November.csv,1,1198404
+26/11/2020,Building Lease,Estates-Holloway Hc Hornsey St,Community Health Partnerships Ltd,36554.0,WHIT 08 - November.csv,1,1199356
+12/11/2020,Building Service Charges,Dental Ordnance Road,Nhs Property Services Ltd,35019.0,WHIT 08 - November.csv,1,987416
+19/11/2020,Cleaning Contracts,Estates-Bounds Green Hc,Cordant Cleaning Ltd,34920.0,WHIT 08 - November.csv,1,1199283
+23/11/2020,Consultancy Fees,Pfi Fires,Fes Fm Ltd,34837.0,WHIT 08 - November.csv,1,1201348
+05/11/2020,Software Purchase,Imaging,Sectra Ltd,34664.0,WHIT 08 - November.csv,1,1189831
+26/11/2020,Building Lease,Other Properties,Community Health Partnerships Ltd,34447.0,WHIT 08 - November.csv,1,1199319
+26/11/2020,Band 8c Pharmacist,Joint Formulary Committee,The Ucl Hospitals Nhs Foundation Trust,34040.0,WHIT 08 - November.csv,1,1182809
+19/11/2020,Estate & Facility,C&I Enabling,Friargreen Construction Limited,34015.0,WHIT 08 - November.csv,1,1198822
+05/11/2020,Managed Equipment Service,Microbiology,Becton Dickinson (Cme) U.K. Ltd,33707.0,WHIT 08 - November.csv,1,1154927
+19/11/2020,Med Equ: Med Life 10 Yrs,Capital,Otodynamics Ltd,33372.0,WHIT 08 - November.csv,1,1191496
+12/11/2020,Rents,Community Dental Lot 1,Community Health Partnerships Ltd,33314.0,WHIT 08 - November.csv,1,1198310
+26/11/2020,Building Lease,Estates-Holloway Hc Hornsey St,Community Health Partnerships Ltd,33302.0,WHIT 08 - November.csv,1,1199336
+19/11/2020,Consultant Fees,Capital,Artelia Projects Uk Ltd,32814.0,WHIT 08 - November.csv,1,1199126
+26/11/2020,Building Lease,Estates-Holloway Hc Hornsey St,Community Health Partnerships Ltd,31673.0,WHIT 08 - November.csv,1,1199337
+12/11/2020,Rents,Community Dental Lot 2,Community Health Partnerships Ltd,31358.0,WHIT 08 - November.csv,1,1198311
+05/11/2020,Blood Analysers,Integrated Blood Science,Ibg Immucor Ltd,31028.0,WHIT 08 - November.csv,1,1197451
+19/11/2020,Legal Fees,Hr Operations,Dac Beachcroft,30642.0,WHIT 08 - November.csv,1,1199597
+19/11/2020,Legal Fees,Hr Operations,Dac Beachcroft,30565.0,WHIT 08 - November.csv,1,1199596
+19/11/2020,Building Lease,Estates-Bingfield Hc,Community Health Partnerships Ltd,30323.0,WHIT 08 - November.csv,1,1199328
+19/11/2020,Rates-General,Estates-Simmons House,Camden & Islington Nhs Foundation Trust,30000.0,WHIT 08 - November.csv,1,1199442
+26/11/2020,Research & Development Exp,R&D Infrastructure,University College London,29596.0,WHIT 08 - November.csv,1,1202267
+26/11/2020,Building Lease,Estates-Holloway Hc Hornsey St,Community Health Partnerships Ltd,28382.0,WHIT 08 - November.csv,1,1199335
+19/11/2020,Fp 10'S,Acute Paediatrics,Nhs Business Serv Auth,28372.0,WHIT 08 - November.csv,1,1182468
+12/11/2020,Med & Surg Equip Purchase,Endoscopy Recovery,Erbe Medical Uk Ltd,28201.0,WHIT 08 - November.csv,1,1197612
+12/11/2020,Main Works Contract,Capital,Caledonian Modular Ltd,27126.0,WHIT 08 - November.csv,1,1198300
+12/11/2020,Stock-Pharmacy,Control,Janssen-Cilag Ltd,26956.0,WHIT 08 - November.csv,1,1198446
+19/11/2020,Fp 10'S,Accident & Emergency,Nhs Business Serv Auth,26533.0,WHIT 08 - November.csv,1,1174189
+26/11/2020,Building Lease,Other Properties,Community Health Partnerships Ltd,26365.0,WHIT 08 - November.csv,1,1199323
+26/11/2020,General Equip Purchase& Repair,Photocopying - Zerox,Xerox Uk Ltd,25734.0,WHIT 08 - November.csv,1,1197675
+19/11/2020,Building Lease,Estates-Hornsey Rise Hc,Community Health Partnerships Ltd,25471.0,WHIT 08 - November.csv,1,1199306
+19/11/2020,Building Lease,Estates-Bingfield Hc,Community Health Partnerships Ltd,25261.0,WHIT 08 - November.csv,1,1199355

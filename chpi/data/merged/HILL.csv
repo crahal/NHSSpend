@@ -1,0 +1,1276 @@
+date,expensetype,expensearea,supplier,transactionnumber,amount,file,negative
+2019-12-19 00:00:00,STAFF TRAINING EXPENSES,People And Development,Imperial College Healthcare Nhs Trust,61401,45000.0,HILL 00-03 - Nov 2019 to June 2020.xlsx,1
+2019-12-19 00:00:00,SPECIALTY REG CT/ST 1/2,Corporate,Royal Free London Nhs Foundation Trust,62991,70430.0,HILL 00-03 - Nov 2019 to June 2020.xlsx,1
+2019-12-12 00:00:00,NWL PATHOLOGY COST OF SERVICES,Pathology,North West London Pathology,63042,716777.0,HILL 00-03 - Nov 2019 to June 2020.xlsx,1
+2019-12-12 00:00:00,DRUGS,Pharmacy,East & North Herts Nhs Trust,63051,75733.0,HILL 00-03 - Nov 2019 to June 2020.xlsx,1
+2019-12-12 00:00:00,DRUGS,Pharmacy,East & North Herts Nhs Trust,63052,85249.0,HILL 00-03 - Nov 2019 to June 2020.xlsx,1
+2019-12-12 00:00:00,RADIOPHARMACEUTICALS,X Ray,East & North Herts Nhs Trust,63201,35071.0,HILL 00-03 - Nov 2019 to June 2020.xlsx,1
+2019-12-12 00:00:00,DRUGS,Pharmacy,East & North Herts Nhs Trust,63225,82521.0,HILL 00-03 - Nov 2019 to June 2020.xlsx,1
+2019-12-12 00:00:00,NWL PATHOLOGY COST OF SERVICES,Pathology,North West London Pathology,63256,237866.0,HILL 00-03 - Nov 2019 to June 2020.xlsx,1
+2019-12-04 00:00:00,BUSINESS RATES,Estates,London Borough Of Hillingdon,1486503,44460.0,HILL 00-03 - Nov 2019 to June 2020.xlsx,1
+2019-12-12 00:00:00,BUSINESS RATES,Estates,London Borough Of Hillingdon,1486504,44460.0,HILL 00-03 - Nov 2019 to June 2020.xlsx,1
+2019-12-19 00:00:00,BUSINESS RATES,Estates,London Borough Of Hillingdon,1505813,43053.0,HILL 00-03 - Nov 2019 to June 2020.xlsx,1
+2019-12-19 00:00:00,M.R.I.,X Ray,Alliance Medical Ltd,1541677,43823.0,HILL 00-03 - Nov 2019 to June 2020.xlsx,1
+2019-12-19 00:00:00,SSD RECHARGE,Corporate,Ihss Limited,1541795,67940.0,HILL 00-03 - Nov 2019 to June 2020.xlsx,1
+2019-12-19 00:00:00,SSD RECHARGE,Corporate,Ihss Limited,1541796,25496.0,HILL 00-03 - Nov 2019 to June 2020.xlsx,1
+2019-12-12 00:00:00,LICENCING AND MAINT. ICT INFRA,Ict Directorate,European Electronique Ltd,1542273,46951.0,HILL 00-03 - Nov 2019 to June 2020.xlsx,1
+2019-12-04 00:00:00,WATER,Estates,Advanced Demand Side Mngt Ltd,1544567,38772.0,HILL 00-03 - Nov 2019 to June 2020.xlsx,1
+2019-12-19 00:00:00,SSD RECHARGE,Corporate,Ihss Limited,1545213,67940.0,HILL 00-03 - Nov 2019 to June 2020.xlsx,1
+2019-12-04 00:00:00,STORES CONTROL,Corporate,Nhs Supply Chain Roarp,1547388,96481.0,HILL 00-03 - Nov 2019 to June 2020.xlsx,1
+2019-12-12 00:00:00,CT SCANNING,X Ray,Radiology Reporting Online,1547656,44532.0,HILL 00-03 - Nov 2019 to June 2020.xlsx,1
+2019-12-12 00:00:00,M.R.I.,X Ray,Radiology Reporting Online,1547656,29.0,HILL 00-03 - Nov 2019 to June 2020.xlsx,1
+2019-12-04 00:00:00,MED EQUIP MAINTENANCE CONTRCTS,Ict Directorate,Logicalis Uk Ltd,1547881,39808.0,HILL 00-03 - Nov 2019 to June 2020.xlsx,1
+2019-12-19 00:00:00,FINANCE LEASE,Corporate,Siemens Financial Services Ltd,1548731,16835.0,HILL 00-03 - Nov 2019 to June 2020.xlsx,1
+2019-12-19 00:00:00,MED EQUIP MAINTENANCE CONTRCTS,Medical Specialties,Siemens Financial Services Ltd,1548731,10283.0,HILL 00-03 - Nov 2019 to June 2020.xlsx,1
+2019-12-19 00:00:00,SYSMEX REAGENTS,Pathology,Sysmex Uk Ltd,1549132,190113.0,HILL 00-03 - Nov 2019 to June 2020.xlsx,1
+2019-12-19 00:00:00,STORES CONTROL,Corporate,Nhs Supply Chain Roarp,1549268,74616.0,HILL 00-03 - Nov 2019 to June 2020.xlsx,1
+2019-12-19 00:00:00,SSD RECHARGE,Corporate,Ihss Limited,1549453,67940.0,HILL 00-03 - Nov 2019 to June 2020.xlsx,1
+2019-12-12 00:00:00,BAXTERS CYTOTOXICS,Pharmacy,Baxter Shared Service & Competencies Ltd,1550999,30801.0,HILL 00-03 - Nov 2019 to June 2020.xlsx,1
+2019-12-19 00:00:00,STORES CONTROL,Corporate,Nhs Supply Chain Roarp,1551268,126514.0,HILL 00-03 - Nov 2019 to June 2020.xlsx,1
+2019-12-04 00:00:00,PROFESSIONAL FEES,Project Management Office,Pa Consulting,1551784,284521.0,HILL 00-03 - Nov 2019 to June 2020.xlsx,1
+2019-12-19 00:00:00,FINANCE LEASE,Corporate,Siemens Financial Services Ltd,1552659,45789.0,HILL 00-03 - Nov 2019 to June 2020.xlsx,1
+2019-12-19 00:00:00,WATER,Estates,Advanced Demand Side Mngt Ltd,1553265,38830.0,HILL 00-03 - Nov 2019 to June 2020.xlsx,1
+2019-12-19 00:00:00,DRUGS,Corporate,Novartis Pharmaceuticals Uk Ltd,1553328,67370.0,HILL 00-03 - Nov 2019 to June 2020.xlsx,1
+2019-12-04 00:00:00,FINANCE LEASE,Corporate,Bhh Lift Accommodation Services Ltd,1553408,225994.0,HILL 00-03 - Nov 2019 to June 2020.xlsx,1
+2019-12-19 00:00:00,CAPITAL BUILDINGS,Capital,E S Moss (Watford) Ltd,1553593,34465.0,HILL 00-03 - Nov 2019 to June 2020.xlsx,1
+2019-12-12 00:00:00,ELECTRICITY,Estates,Edf Energy,1553984,26424.0,HILL 00-03 - Nov 2019 to June 2020.xlsx,1
+2019-12-19 00:00:00,BECKMAN COULTER CONTRACT,Pathology,Beckman Coulter United Kingdom Ltd,1555179,173452.0,HILL 00-03 - Nov 2019 to June 2020.xlsx,1
+2019-12-19 00:00:00,DRUGS,Corporate,Novartis Pharmaceuticals Uk Ltd,1555530,57697.0,HILL 00-03 - Nov 2019 to June 2020.xlsx,1
+2019-12-19 00:00:00,PROFESSIONAL FEES,Corporate,Mbi Healthcare Technologies Ltd,1556500,101142.0,HILL 00-03 - Nov 2019 to June 2020.xlsx,1
+2019-12-12 00:00:00,ELECTRICITY,Estates,Edf Energy,1556882,166366.0,HILL 00-03 - Nov 2019 to June 2020.xlsx,1
+2019-12-04 00:00:00,NON-NHS AMBULANCE SERVICES,Facilities,Hats Group Ltd,1557303,40031.0,HILL 00-03 - Nov 2019 to June 2020.xlsx,1
+2019-12-04 00:00:00,CAPITAL BUILDINGS,Capital,Arco Environmental Limited,1558139,132240.0,HILL 00-03 - Nov 2019 to June 2020.xlsx,1
+2019-12-04 00:00:00,DRUGS,Corporate,Novartis Pharmaceuticals Uk Ltd,1559048,57783.0,HILL 00-03 - Nov 2019 to June 2020.xlsx,1
+2019-12-19 00:00:00,CONSULTANCY FEES,Corporate,Biz Think Ltd,1560239,36000.0,HILL 00-03 - Nov 2019 to June 2020.xlsx,1
+2019-12-19 00:00:00,PROFESSIONAL FEES,Project Management Office,Pa Consulting,1560248,298740.0,HILL 00-03 - Nov 2019 to June 2020.xlsx,1
+2019-12-19 00:00:00,CAPITAL BUILDINGS,Capital,T & B (Contractors) Ltd,1561795,190123.0,HILL 00-03 - Nov 2019 to June 2020.xlsx,1
+2019-12-31 00:00:00,PROFESSIONAL FEES,Project Management Office,Pa Consulting,1562840,280898.0,HILL 00-03 - Nov 2019 to June 2020.xlsx,1
+2019-12-19 00:00:00,CAPITAL BUILDINGS,Capital,Arthur Pollard Ltd,1563208,44289.0,HILL 00-03 - Nov 2019 to June 2020.xlsx,1
+2019-12-31 00:00:00,RECRUITMENT,People And Development,Uk Border Agency Visa,1568029,121562.0,HILL 00-03 - Nov 2019 to June 2020.xlsx,1
+2019-12-31 00:00:00,RECRUITMENT,People And Development,Uk Border Agency Visa,1568030,27203.0,HILL 00-03 - Nov 2019 to June 2020.xlsx,1
+2019-12-31 00:00:00,RECRUITMENT,People And Development,Uk Border Agency Visa,1568033,29880.0,HILL 00-03 - Nov 2019 to June 2020.xlsx,1
+2019-11-25 00:00:00,CNST PREMIUM,Nursing,Nhs Resolution,63581,1127332.0,HILL 00-03 - Nov 2019 to June 2020.xlsx,1
+2019-11-07 00:00:00,BUSINESS RATES,Estates,London Borough Of Hillingdon,1486499,44460.0,HILL 00-03 - Nov 2019 to June 2020.xlsx,1
+2019-11-28 00:00:00,BUSINESS RATES,Estates,London Borough Of Hillingdon,1486501,44460.0,HILL 00-03 - Nov 2019 to June 2020.xlsx,1
+2019-11-07 00:00:00,BUSINESS RATES,Estates,London Borough Of Hillingdon,1505812,43053.0,HILL 00-03 - Nov 2019 to June 2020.xlsx,1
+2019-11-07 00:00:00,AMBULANCE CONTRACT ECJ,Facilities,Hats Group Ltd,1507636,37943.0,HILL 00-03 - Nov 2019 to June 2020.xlsx,1
+2019-11-07 00:00:00,AMBULANCE CONTRACT ECJ,Facilities,Hats Group Ltd,1513402,27243.0,HILL 00-03 - Nov 2019 to June 2020.xlsx,1
+2019-11-28 00:00:00,NBS BLOCK CONTRACT,Pathology,Nhs Blood And Transplant,1531169,88715.0,HILL 00-03 - Nov 2019 to June 2020.xlsx,1
+2019-11-15 00:00:00,DRUGS,Corporate,Bayer Plc,1536693,52440.0,HILL 00-03 - Nov 2019 to June 2020.xlsx,1
+2019-11-28 00:00:00,DRUGS,Corporate,Csl Behring,1536695,31710.0,HILL 00-03 - Nov 2019 to June 2020.xlsx,1
+2019-11-28 00:00:00,DRUGS,Corporate,Octapharma Ltd,1536729,27300.0,HILL 00-03 - Nov 2019 to June 2020.xlsx,1
+2019-11-07 00:00:00,FINANCE LEASE,Corporate,Siemens Financial Services Ltd,1537515,31231.0,HILL 00-03 - Nov 2019 to June 2020.xlsx,1
+2019-11-07 00:00:00,MED EQUIP MAINTENANCE CONTRCTS,X Ray,Siemens Healthcare Limited,1539528,104138.0,HILL 00-03 - Nov 2019 to June 2020.xlsx,1
+2019-11-14 00:00:00,Medical Equipment,Capital,Philips Healthcare,1540089,45000.0,HILL 00-03 - Nov 2019 to June 2020.xlsx,1
+2019-11-07 00:00:00,NON-NHS AMBULANCE SERVICES,Facilities,Hats Group Ltd,1540960,117373.0,HILL 00-03 - Nov 2019 to June 2020.xlsx,1
+2019-11-28 00:00:00,PMS RENTAL,Ict Directorate,Silverlink Software Ltd,1541148,105658.0,HILL 00-03 - Nov 2019 to June 2020.xlsx,1
+2019-11-28 00:00:00,PMS RENTAL,Ict Directorate,Silverlink Software Ltd,1541154,36613.0,HILL 00-03 - Nov 2019 to June 2020.xlsx,1
+2019-11-06 00:00:00,STORES CONTROL,Corporate,Nhs Supply Chain Roarp,1541357,87637.0,HILL 00-03 - Nov 2019 to June 2020.xlsx,1
+2019-11-15 00:00:00,DRUGS,Corporate,Bayer Plc,1542136,52440.0,HILL 00-03 - Nov 2019 to June 2020.xlsx,1
+2019-11-14 00:00:00,STORES CONTROL,Corporate,Nhs Supply Chain Roarp,1543856,101747.0,HILL 00-03 - Nov 2019 to June 2020.xlsx,1
+2019-11-28 00:00:00,SYNERGY LAUNDRY CONTRACT,Facilities,Synergy Health Managed Services Ltd,1544387,61485.0,HILL 00-03 - Nov 2019 to June 2020.xlsx,1
+2019-11-07 00:00:00,LICENCES & SUBSCRIPTIONS,Corporate,Brunel University,1544603,26000.0,HILL 00-03 - Nov 2019 to June 2020.xlsx,1
+2019-11-14 00:00:00,BAXTERS CYTOTOXICS,Pharmacy,Baxter Shared Service & Competencies Ltd,1545338,34611.0,HILL 00-03 - Nov 2019 to June 2020.xlsx,1
+2019-11-28 00:00:00,STORES CONTROL,Corporate,Nhs Supply Chain Roarp,1545340,77565.0,HILL 00-03 - Nov 2019 to June 2020.xlsx,1
+2019-11-28 00:00:00,DRUGS,Corporate,Csl Behring,1545636,46830.0,HILL 00-03 - Nov 2019 to June 2020.xlsx,1
+2019-11-14 00:00:00,CAPITAL BUILDINGS,Capital,E S Moss (Watford) Ltd,1545740,25662.0,HILL 00-03 - Nov 2019 to June 2020.xlsx,1
+2019-11-28 00:00:00,CONSULTANCY FEES,Corporate,Mbi Healthcare Technologies Ltd,1545839,133135.0,HILL 00-03 - Nov 2019 to June 2020.xlsx,1
+2019-11-07 00:00:00,BECKMAN COULTER CONTRACT,Pathology,Beckman Coulter United Kingdom Ltd,1547213,173452.0,HILL 00-03 - Nov 2019 to June 2020.xlsx,1
+2019-11-28 00:00:00,BAXTERS CYTOTOXICS,Pharmacy,Baxter Shared Service & Competencies Ltd,1547617,73481.0,HILL 00-03 - Nov 2019 to June 2020.xlsx,1
+2019-11-07 00:00:00,CAPITAL BUILDINGS,Capital,Hodgkinson Bennis Ltd,1547921,34761.0,HILL 00-03 - Nov 2019 to June 2020.xlsx,1
+2019-11-28 00:00:00,DRUGS,Corporate,Bayer Plc,1547975,52440.0,HILL 00-03 - Nov 2019 to June 2020.xlsx,1
+2019-11-22 00:00:00,EXTRA CONTRACTUAL JOURNEYS,Facilities,Hats Group Ltd,1549279,25142.0,HILL 00-03 - Nov 2019 to June 2020.xlsx,1
+2019-11-28 00:00:00,PROFESSIONAL FEES,Medicine General Management,Chs Healthcare,1549486,30720.0,HILL 00-03 - Nov 2019 to June 2020.xlsx,1
+2019-11-14 00:00:00,CONSULTANCY FEES,Corporate,Biz Think Ltd,1549505,34200.0,HILL 00-03 - Nov 2019 to June 2020.xlsx,1
+2019-11-28 00:00:00,PC SOFTWARE,Project Management Office,Softcat Ltd,1549949,28436.0,HILL 00-03 - Nov 2019 to June 2020.xlsx,1
+2019-11-28 00:00:00,CAPITAL BUILDINGS,Capital,Procare Group Limited,1549952,27327.0,HILL 00-03 - Nov 2019 to June 2020.xlsx,1
+2019-11-28 00:00:00,DRUGS,Corporate,Bayer Plc,1550116,104880.0,HILL 00-03 - Nov 2019 to June 2020.xlsx,1
+2019-11-28 00:00:00,NON-NHS AMBULANCE SERVICES,Facilities,Hats Group Ltd,1550657,117373.0,HILL 00-03 - Nov 2019 to June 2020.xlsx,1
+2019-11-25 00:00:00,PROFESSIONAL FEES,Corporate,Ggi Development And Research Llp,1551558,36000.0,HILL 00-03 - Nov 2019 to June 2020.xlsx,1
+2019-11-14 00:00:00,PROFESSIONAL FEES,Corporate,Ggi Development And Research Llp,1551564,33510.0,HILL 00-03 - Nov 2019 to June 2020.xlsx,1
+2019-11-28 00:00:00,CAPITAL IT,Capital,Bytes Software Services Ltd,1552260,56208.0,HILL 00-03 - Nov 2019 to June 2020.xlsx,1
+2019-11-07 00:00:00,CAPITAL BUILDINGS,Capital,T & B (Contractors) Ltd,1553407,585383.0,HILL 00-03 - Nov 2019 to June 2020.xlsx,1
+2019-11-28 00:00:00,CAPITAL BUILDINGS,Capital,Shj Hospital Pipelines Ltd,1553570,60000.0,HILL 00-03 - Nov 2019 to June 2020.xlsx,1
+2019-11-25 00:00:00,ENERGY EFFICIENCY,Estates,Redshaw Advisers Ltd,1554232,52264.0,HILL 00-03 - Nov 2019 to June 2020.xlsx,1
+2019-11-25 00:00:00,ENERGY EFFICIENCY,Estates,Redshaw Advisers Ltd,1554237,103430.0,HILL 00-03 - Nov 2019 to June 2020.xlsx,1
+2019-11-28 00:00:00,CAPITAL BUILDINGS,Capital,Middlesex Flooring Ltd,1554728,80548.0,HILL 00-03 - Nov 2019 to June 2020.xlsx,1
+2019-11-28 00:00:00,CAPITAL BUILDINGS,Capital,Arthur Pollard Ltd,1554732,82466.0,HILL 00-03 - Nov 2019 to June 2020.xlsx,1
+2019-11-28 00:00:00,CAPITAL BUILDINGS,Capital,Ramsden Pipework Services Ltd,1557062,67634.0,HILL 00-03 - Nov 2019 to June 2020.xlsx,1
+2020-05-28 00:00:00,RECH. FROM E&N HERTS PHARMACY,Pharmacy,East & North Herts Nhs Trust,64421,30131.0,HILL 00-03 - Nov 2019 to June 2020.xlsx,1
+2020-05-28 00:00:00,RADIOPHARMACEUTICALS,X Ray,East & North Herts Nhs Trust,64541,27238.0,HILL 00-03 - Nov 2019 to June 2020.xlsx,1
+2020-05-15 00:00:00,MH A&E LIAISON,Corporate,Cnwl Nhs Foundation Trust,64663,395639.0,HILL 00-03 - Nov 2019 to June 2020.xlsx,1
+2020-05-07 00:00:00,CQC REGISTRATION FEES,Nursing,Care Quality Commission,64947,171252.0,HILL 00-03 - Nov 2019 to June 2020.xlsx,1
+2020-05-19 00:00:00,CNST PREMIUM,Nursing,Nhs Resolution,65102,1111542.0,HILL 00-03 - Nov 2019 to June 2020.xlsx,1
+2020-05-19 00:00:00,LTPS PREMIUM,Corporate,Nhs Resolution,65102,12537.0,HILL 00-03 - Nov 2019 to June 2020.xlsx,1
+2020-05-19 00:00:00,PES PREMIUM,Estates,Nhs Resolution,65102,1846.0,HILL 00-03 - Nov 2019 to June 2020.xlsx,1
+2020-05-28 00:00:00,CONSULTANCY FEES,Corporate,Mbi Healthcare Technologies Ltd,1569868,101556.0,HILL 00-03 - Nov 2019 to June 2020.xlsx,1
+2020-05-21 00:00:00,SYSMEX REAGENTS,Pathology,Sysmex Uk Ltd,1579549,190113.0,HILL 00-03 - Nov 2019 to June 2020.xlsx,1
+2020-05-21 00:00:00,SYSMEX REAGENTS,Pathology,Sysmex Uk Ltd,1584108,-286108.0,HILL 00-03 - Nov 2019 to June 2020.xlsx,-1
+2020-05-21 00:00:00,SYSMEX REAGENTS,Pathology,Sysmex Uk Ltd,1588815,62913.0,HILL 00-03 - Nov 2019 to June 2020.xlsx,1
+2020-05-15 00:00:00,CAPITAL IT,Capital,Bytes Software Services Ltd,1589153,57779.0,HILL 00-03 - Nov 2019 to June 2020.xlsx,1
+2020-05-28 00:00:00,NON-NHS AMBULANCE SERVICES,Facilities,Hats Group Ltd,1591165,141686.0,HILL 00-03 - Nov 2019 to June 2020.xlsx,1
+2020-05-28 00:00:00,CAPITAL BUILDINGS,Capital,Ridge & Partners,1592401,30349.0,HILL 00-03 - Nov 2019 to June 2020.xlsx,1
+2020-05-14 00:00:00,Medical Equipment,Capital,Cardiac Services Ltd.,1592429,29635.0,HILL 00-03 - Nov 2019 to June 2020.xlsx,1
+2020-05-07 00:00:00,LICENCING AND MAINT. ICT INFRA,Covid-19 Costs,Bytes Software Services Ltd,1593461,64576.0,HILL 00-03 - Nov 2019 to June 2020.xlsx,1
+2020-05-07 00:00:00,NBS BLOCK CONTRACT,Pathology,Nhs Blood And Transplant,1593495,97041.0,HILL 00-03 - Nov 2019 to June 2020.xlsx,1
+2020-05-14 00:00:00,Medical Equipment,Capital,Gama Healthcare Ltd,1593515,33600.0,HILL 00-03 - Nov 2019 to June 2020.xlsx,1
+2020-05-07 00:00:00,STORES CONTROL,Corporate,Nhs Supply Chain Roarp,1594471,58425.0,HILL 00-03 - Nov 2019 to June 2020.xlsx,1
+2020-05-07 00:00:00,CAPITAL BUILDINGS,Capital,Mott Macdonald Ltd,1594521,45000.0,HILL 00-03 - Nov 2019 to June 2020.xlsx,1
+2020-05-07 00:00:00,BUSINESS RATES,Estates,London Borough Of Hillingdon,1594671,55328.0,HILL 00-03 - Nov 2019 to June 2020.xlsx,1
+2020-05-28 00:00:00,BUSINESS RATES,Estates,London Borough Of Hillingdon,1594672,55328.0,HILL 00-03 - Nov 2019 to June 2020.xlsx,1
+2020-05-07 00:00:00,BUSINESS RATES,Estates,London Borough Of Hillingdon,1594680,46018.0,HILL 00-03 - Nov 2019 to June 2020.xlsx,1
+2020-05-28 00:00:00,BUSINESS RATES,Estates,London Borough Of Hillingdon,1594681,46018.0,HILL 00-03 - Nov 2019 to June 2020.xlsx,1
+2020-05-07 00:00:00,DRUGS,Corporate,Novartis Pharmaceuticals Uk Ltd,1594877,57697.0,HILL 00-03 - Nov 2019 to June 2020.xlsx,1
+2020-05-07 00:00:00,CAPITAL IT,Capital,Apira Ltd,1595283,68430.0,HILL 00-03 - Nov 2019 to June 2020.xlsx,1
+2020-05-07 00:00:00,CAPITAL BUILDINGS,Capital,Desm,1595284,40128.0,HILL 00-03 - Nov 2019 to June 2020.xlsx,1
+2020-05-14 00:00:00,STORES CONTROL,Corporate,Nhs Supply Chain Roarp,1595373,67598.0,HILL 00-03 - Nov 2019 to June 2020.xlsx,1
+2020-05-14 00:00:00,PACS MAINTENANCE,Ict Directorate,Sectra Ltd,1596132,104947.0,HILL 00-03 - Nov 2019 to June 2020.xlsx,1
+2020-05-28 00:00:00,CT SCANNING,X Ray,Radiology Reporting Online,1596665,42004.0,HILL 00-03 - Nov 2019 to June 2020.xlsx,1
+2020-05-28 00:00:00,M.R.I.,X Ray,Radiology Reporting Online,1596665,5135.0,HILL 00-03 - Nov 2019 to June 2020.xlsx,1
+2020-05-21 00:00:00,CAPITAL BUILDINGS,Capital,Ibi Group (Uk)Ltd,1596669,30211.0,HILL 00-03 - Nov 2019 to June 2020.xlsx,1
+2020-05-21 00:00:00,CAPITAL BUILDINGS,Capital,Ibi Group (Uk)Ltd,1596670,67173.0,HILL 00-03 - Nov 2019 to June 2020.xlsx,1
+2020-05-14 00:00:00,M.R.I.,X Ray,Alliance Medical Ltd,1596677,43823.0,HILL 00-03 - Nov 2019 to June 2020.xlsx,1
+2020-05-21 00:00:00,STORES CONTROL,Corporate,Nhs Supply Chain Roarp,1596690,58438.0,HILL 00-03 - Nov 2019 to June 2020.xlsx,1
+2020-05-07 00:00:00,CAPITAL BUILDINGS,Capital,E S Moss (Watford) Ltd,1597060,32859.0,HILL 00-03 - Nov 2019 to June 2020.xlsx,1
+2020-05-14 00:00:00,PC HARDWARE,Covid-19 Costs,Ox It Solutions Ltd,1597228,188940.0,HILL 00-03 - Nov 2019 to June 2020.xlsx,1
+2020-05-21 00:00:00,STAFF UNIFORMS,Covid-19 Costs,Bender International Ltd,1597381,480000.0,HILL 00-03 - Nov 2019 to June 2020.xlsx,1
+2020-05-14 00:00:00,PACS MAINTENANCE,Ict Directorate,Sectra Ltd,1597675,108982.0,HILL 00-03 - Nov 2019 to June 2020.xlsx,1
+2020-05-07 00:00:00,LEASE CAR INSURANCE,Facilities,Brian Johnston & Co (Insurance Brokers) Ltd,1598102,33464.0,HILL 00-03 - Nov 2019 to June 2020.xlsx,1
+2020-05-28 00:00:00,STORES CONTROL,Corporate,Nhs Supply Chain Roarp,1598499,38957.0,HILL 00-03 - Nov 2019 to June 2020.xlsx,1
+2020-05-28 00:00:00,CAPITAL IT,Capital,Cdw Ltd,1598811,39363.0,HILL 00-03 - Nov 2019 to June 2020.xlsx,1
+2020-05-28 00:00:00,ADDITIONAL EQUIPMENT,Covid-19 Costs,Philips Healthcare,1599574,33456.0,HILL 00-03 - Nov 2019 to June 2020.xlsx,1
+2020-05-21 00:00:00,SYSMEX REAGENTS,Pathology,Sysmex Uk Ltd,1599587,179821.0,HILL 00-03 - Nov 2019 to June 2020.xlsx,1
+2020-05-28 00:00:00,SYNERGY LAUNDRY CONTRACT,Facilities,Synergy Health Managed Services Ltd,1600071,40204.0,HILL 00-03 - Nov 2019 to June 2020.xlsx,1
+2020-05-21 00:00:00,CLINICAL WASTE COLLECTION,Estates,Srcl Ltd,1600184,38862.0,HILL 00-03 - Nov 2019 to June 2020.xlsx,1
+2020-05-28 00:00:00,DRUGS,Corporate,Bayer Plc,1600298,52440.0,HILL 00-03 - Nov 2019 to June 2020.xlsx,1
+2020-05-28 00:00:00,BECKMAN COULTER CONTRACT,Pathology,Beckman Coulter United Kingdom Ltd,1600337,173452.0,HILL 00-03 - Nov 2019 to June 2020.xlsx,1
+2020-05-28 00:00:00,DRUGS,Corporate,Janssen-Cilag Ltd,1601024,32450.0,HILL 00-03 - Nov 2019 to June 2020.xlsx,1
+2020-05-14 00:00:00,LICENCES & SUBSCRIPTIONS,Corporate,Brunel University,1601801,26000.0,HILL 00-03 - Nov 2019 to June 2020.xlsx,1
+2020-05-28 00:00:00,NON-NHS AMBULANCE SERVICES,Facilities,Hats Group Ltd,1603547,-141686.0,HILL 00-03 - Nov 2019 to June 2020.xlsx,-1
+2020-03-05 00:00:00,FEES FOR TESTS,Medical Specialties,Royal Brompton & Harefield Nhs Ft,63422,59966.0,HILL 00-03 - Nov 2019 to June 2020.xlsx,1
+2020-03-19 00:00:00,DRUGS,Pharmacy,East & North Herts Nhs Trust,63480,78130.0,HILL 00-03 - Nov 2019 to June 2020.xlsx,1
+2020-03-12 00:00:00,NWL PATHOLOGY COST OF SERVICES,Pathology,North West London Pathology,63502,716777.0,HILL 00-03 - Nov 2019 to June 2020.xlsx,1
+2020-03-05 00:00:00,FEES FOR TESTS,Medical Specialties,Royal Brompton & Harefield Nhs Ft,63606,59036.0,HILL 00-03 - Nov 2019 to June 2020.xlsx,1
+2020-03-19 00:00:00,NWL PATHOLOGY COST OF SERVICES,Pathology,North West London Pathology,63783,237866.0,HILL 00-03 - Nov 2019 to June 2020.xlsx,1
+2020-03-19 00:00:00,NWL PATHOLOGY COST OF SERVICES,Pathology,North West London Pathology,63784,716777.0,HILL 00-03 - Nov 2019 to June 2020.xlsx,1
+2020-03-19 00:00:00,DRUGS,Pharmacy,East & North Herts Nhs Trust,63928,76579.0,HILL 00-03 - Nov 2019 to June 2020.xlsx,1
+2020-03-05 00:00:00,FEES FOR TESTS,Medical Specialties,Royal Brompton & Harefield Nhs Ft,63954,57079.0,HILL 00-03 - Nov 2019 to June 2020.xlsx,1
+2020-03-05 00:00:00,FEES FOR TESTS,Medical Specialties,Royal Brompton & Harefield Nhs Ft,63983,-26697.0,HILL 00-03 - Nov 2019 to June 2020.xlsx,-1
+2020-03-19 00:00:00,NWL PATHOLOGY COST OF SERVICES,Pathology,North West London Pathology,63987,716777.0,HILL 00-03 - Nov 2019 to June 2020.xlsx,1
+2020-03-19 00:00:00,NWL PATHOLOGY COST OF SERVICES,Pathology,North West London Pathology,63988,237866.0,HILL 00-03 - Nov 2019 to June 2020.xlsx,1
+2020-03-12 00:00:00,NBS BLOCK CONTRACT,Pathology,Nhs Blood And Transplant,1541673,88715.0,HILL 00-03 - Nov 2019 to June 2020.xlsx,1
+2020-03-12 00:00:00,NBS BLOCK CONTRACT,Pathology,Nhs Blood And Transplant,1557136,88715.0,HILL 00-03 - Nov 2019 to June 2020.xlsx,1
+2020-03-05 00:00:00,M.R.I.,X Ray,Alliance Medical Ltd,1559096,49553.0,HILL 00-03 - Nov 2019 to June 2020.xlsx,1
+2020-03-05 00:00:00,M.R.I.,X Ray,Alliance Medical Ltd,1567715,40452.0,HILL 00-03 - Nov 2019 to June 2020.xlsx,1
+2020-03-19 00:00:00,CT SCANNING,X Ray,Radiology Reporting Online,1572678,54575.0,HILL 00-03 - Nov 2019 to June 2020.xlsx,1
+2020-03-05 00:00:00,M.R.I.,X Ray,Alliance Medical Ltd,1572800,31013.0,HILL 00-03 - Nov 2019 to June 2020.xlsx,1
+2020-03-19 00:00:00,STORES CONTROL,Corporate,Nhs Supply Chain Roarp,1572804,96445.0,HILL 00-03 - Nov 2019 to June 2020.xlsx,1
+2020-03-19 00:00:00,NBS BLOCK CONTRACT,Pathology,Nhs Blood And Transplant,1572962,88715.0,HILL 00-03 - Nov 2019 to June 2020.xlsx,1
+2020-03-05 00:00:00,DRUGS,Corporate,Bayer Plc,1573912,31464.0,HILL 00-03 - Nov 2019 to June 2020.xlsx,1
+2020-03-19 00:00:00,STORES CONTROL,Corporate,Nhs Supply Chain Roarp,1574677,95891.0,HILL 00-03 - Nov 2019 to June 2020.xlsx,1
+2020-03-05 00:00:00,BAXTERS CYTOTOXICS,Pharmacy,Baxter Shared Service & Competencies Ltd,1574698,37426.0,HILL 00-03 - Nov 2019 to June 2020.xlsx,1
+2020-03-12 00:00:00,CAPITAL BUILDINGS,Capital,Ground Engineering Ltd,1575458,38085.0,HILL 00-03 - Nov 2019 to June 2020.xlsx,1
+2020-03-19 00:00:00,MED EQUIP MAINTENANCE CONTRCTS,Medical Specialties,Siemens Financial Services Ltd,1576557,24507.0,HILL 00-03 - Nov 2019 to June 2020.xlsx,1
+2020-03-19 00:00:00,OP LEASE ENDOSCOPY EQUIPMENT,Medical Specialties,Siemens Financial Services Ltd,1576557,65517.0,HILL 00-03 - Nov 2019 to June 2020.xlsx,1
+2020-03-19 00:00:00,FINANCE LEASE,Corporate,Siemens Financial Services Ltd,1577117,45789.0,HILL 00-03 - Nov 2019 to June 2020.xlsx,1
+2020-03-19 00:00:00,DRUGS,Corporate,Bayer Plc,1577195,62928.0,HILL 00-03 - Nov 2019 to June 2020.xlsx,1
+2020-03-19 00:00:00,DRUGS,Corporate,Csl Behring,1577209,46830.0,HILL 00-03 - Nov 2019 to June 2020.xlsx,1
+2020-03-05 00:00:00,DRUGS,Corporate,Novartis Pharmaceuticals Uk Ltd,1577265,90820.0,HILL 00-03 - Nov 2019 to June 2020.xlsx,1
+2020-03-05 00:00:00,DRUGS,Corporate,Enh Pharma Ltd,1577638,47753.0,HILL 00-03 - Nov 2019 to June 2020.xlsx,1
+2020-03-19 00:00:00,STORES CONTROL,Corporate,Nhs Supply Chain Roarp,1577679,106007.0,HILL 00-03 - Nov 2019 to June 2020.xlsx,1
+2020-03-12 00:00:00,FINANCE LEASE,Corporate,Bhh Lift Accommodation Services Ltd,1577988,218461.0,HILL 00-03 - Nov 2019 to June 2020.xlsx,1
+2020-03-19 00:00:00,SYNERGY LAUNDRY CONTRACT,Facilities,Synergy Health Managed Services Ltd,1578021,69112.0,HILL 00-03 - Nov 2019 to June 2020.xlsx,1
+2020-03-19 00:00:00,LICENCING AND MAINT. ICT INFRA,Ict Directorate,Dacoll Ltd,1578438,101347.0,HILL 00-03 - Nov 2019 to June 2020.xlsx,1
+2020-03-05 00:00:00,CAPITAL BUILDINGS,Capital,T & B (Contractors) Ltd,1579172,241464.0,HILL 00-03 - Nov 2019 to June 2020.xlsx,1
+2020-03-05 00:00:00,STORES CONTROL,Corporate,Nhs Supply Chain Roarp,1579216,100495.0,HILL 00-03 - Nov 2019 to June 2020.xlsx,1
+2020-03-26 00:00:00,STORES CONTROL,Corporate,Nhs Supply Chain Roarp,1579389,91817.0,HILL 00-03 - Nov 2019 to June 2020.xlsx,1
+2020-03-12 00:00:00,BECKMAN COULTER CONTRACT,Pathology,Beckman Coulter United Kingdom Ltd,1579705,173452.0,HILL 00-03 - Nov 2019 to June 2020.xlsx,1
+2020-03-19 00:00:00,GAS,Estates,Advanced Demand Side Mngt Ltd,1580095,27473.0,HILL 00-03 - Nov 2019 to June 2020.xlsx,1
+2020-03-26 00:00:00,STORES CONTROL,Corporate,Nhs Supply Chain Roarp,1580897,107274.0,HILL 00-03 - Nov 2019 to June 2020.xlsx,1
+2020-03-19 00:00:00,CONSULTANCY FEES,Corporate,Pa Consulting,1580899,177175.0,HILL 00-03 - Nov 2019 to June 2020.xlsx,1
+2020-03-26 00:00:00,CT SCANNING,X Ray,Radiology Reporting Online,1580900,49824.0,HILL 00-03 - Nov 2019 to June 2020.xlsx,1
+2020-03-26 00:00:00,M.R.I.,X Ray,Radiology Reporting Online,1580900,382.0,HILL 00-03 - Nov 2019 to June 2020.xlsx,1
+2020-03-05 00:00:00,CAPITAL BUILDINGS,Capital,Shl Refractories (Uk) Ltd,1581316,54429.0,HILL 00-03 - Nov 2019 to June 2020.xlsx,1
+2020-03-05 00:00:00,CAPITAL BUILDINGS,Capital,Mtx Contracts Limited,1581407,175507.0,HILL 00-03 - Nov 2019 to June 2020.xlsx,1
+2020-03-26 00:00:00,DRUGS,Corporate,Bayer Plc,1581907,104880.0,HILL 00-03 - Nov 2019 to June 2020.xlsx,1
+2020-03-26 00:00:00,BAXTERS CYTOTOXICS,Pharmacy,Baxter Shared Service & Competencies Ltd,1582146,34338.0,HILL 00-03 - Nov 2019 to June 2020.xlsx,1
+2020-03-26 00:00:00,CAPITAL BUILDINGS,Capital,Middlesex Flooring Ltd,1582632,29901.0,HILL 00-03 - Nov 2019 to June 2020.xlsx,1
+2020-03-12 00:00:00,CAPITAL BUILDINGS,Capital,Pcp Limited,1582633,54642.0,HILL 00-03 - Nov 2019 to June 2020.xlsx,1
+2020-03-26 00:00:00,NON-NHS AMBULANCE SERVICES,Facilities,Hats Group Ltd,1583064,117373.0,HILL 00-03 - Nov 2019 to June 2020.xlsx,1
+2020-03-06 00:00:00,CAPITAL BUILDINGS,Capital,Signrite Services,1583141,41940.0,HILL 00-03 - Nov 2019 to June 2020.xlsx,1
+2020-03-26 00:00:00,STORES CONTROL,Corporate,Nhs Supply Chain Roarp,1583270,97582.0,HILL 00-03 - Nov 2019 to June 2020.xlsx,1
+2020-03-05 00:00:00,INTERNAL AUDIT,Finance Department,Kpmg Llp,1583322,26694.0,HILL 00-03 - Nov 2019 to June 2020.xlsx,1
+2020-03-26 00:00:00,DRUGS,Corporate,Novartis Pharmaceuticals Uk Ltd,1584845,90820.0,HILL 00-03 - Nov 2019 to June 2020.xlsx,1
+2020-03-19 00:00:00,CONSULTANCY FEES,Corporate,Biz Think Ltd,1584984,57600.0,HILL 00-03 - Nov 2019 to June 2020.xlsx,1
+2020-03-26 00:00:00,SYNERGY LAUNDRY CONTRACT,Facilities,Synergy Health Managed Services Ltd,1585214,56185.0,HILL 00-03 - Nov 2019 to June 2020.xlsx,1
+2020-03-26 00:00:00,CAPITAL BUILDINGS,Capital,Middlesex Flooring Ltd,1585668,25064.0,HILL 00-03 - Nov 2019 to June 2020.xlsx,1
+2020-03-05 00:00:00,LOSS & COMP - NHSLA,Estates,Irvings Solicitors,1585752,38305.0,HILL 00-03 - Nov 2019 to June 2020.xlsx,1
+2020-03-26 00:00:00,STORES CONTROL,Corporate,Nhs Supply Chain Roarp,1586332,84913.0,HILL 00-03 - Nov 2019 to June 2020.xlsx,1
+2020-03-19 00:00:00,CLINICAL WASTE COLLECTION,Estates,Srcl Ltd,1586341,38212.0,HILL 00-03 - Nov 2019 to June 2020.xlsx,1
+2020-03-26 00:00:00,FINANCE LEASE,Corporate,Siemens Financial Services Ltd,1586370,31195.0,HILL 00-03 - Nov 2019 to June 2020.xlsx,1
+2020-03-19 00:00:00,MED EQUIP MAINTENANCE CONTRCTS,Facilities,Cannon Medical Systems,1586411,60198.0,HILL 00-03 - Nov 2019 to June 2020.xlsx,1
+2020-03-26 00:00:00,RENT,Ambulatory Care Services,Threadneedle Uk Property Trust,1586416,35097.0,HILL 00-03 - Nov 2019 to June 2020.xlsx,1
+2020-03-19 00:00:00,CAPITAL BUILDINGS,Capital,Pcp Limited,1586423,110939.0,HILL 00-03 - Nov 2019 to June 2020.xlsx,1
+2020-03-26 00:00:00,STORES CONTROL,Corporate,Nhs Supply Chain Roarp,1586447,86982.0,HILL 00-03 - Nov 2019 to June 2020.xlsx,1
+2020-03-26 00:00:00,CONSULTANCY FEES,Corporate,Pa Consulting,1586456,174992.0,HILL 00-03 - Nov 2019 to June 2020.xlsx,1
+2020-03-19 00:00:00,CAPITAL BUILDINGS,Capital,Pcp Limited,1586653,126556.0,HILL 00-03 - Nov 2019 to June 2020.xlsx,1
+2020-03-26 00:00:00,CAPITAL BUILDINGS,Capital,T & B (Contractors) Ltd,1586733,46593.0,HILL 00-03 - Nov 2019 to June 2020.xlsx,1
+2020-03-26 00:00:00,CAPITAL BUILDINGS,Capital,T & B (Contractors) Ltd,1586734,156000.0,HILL 00-03 - Nov 2019 to June 2020.xlsx,1
+2020-03-19 00:00:00,CAPITAL BUILDINGS,Capital,Tenwell Innovations Ltd,1586866,33600.0,HILL 00-03 - Nov 2019 to June 2020.xlsx,1
+2020-03-19 00:00:00,PROFESSIONAL FEES,Purchasing And Supplies,Tenwell Innovations Ltd,1586867,33600.0,HILL 00-03 - Nov 2019 to June 2020.xlsx,1
+2020-03-19 00:00:00,CAPITAL BUILDINGS,Capital,Tenwell Innovations Ltd,1586868,33600.0,HILL 00-03 - Nov 2019 to June 2020.xlsx,1
+2020-03-19 00:00:00,PROFESSIONAL FEES,Purchasing And Supplies,Tenwell Innovations Ltd,1586869,33600.0,HILL 00-03 - Nov 2019 to June 2020.xlsx,1
+2020-03-26 00:00:00,Medical Equipment,Capital,Spacelabs Healthcare Ltd,1586961,79926.0,HILL 00-03 - Nov 2019 to June 2020.xlsx,1
+2020-03-12 00:00:00,CAPITAL BUILDINGS,Capital,Mtx Contracts Limited,1586977,651385.0,HILL 00-03 - Nov 2019 to June 2020.xlsx,1
+2020-03-20 00:00:00,CAPITAL BUILDINGS,Capital,Portalplanquest Limited,1590160,29094.0,HILL 00-03 - Nov 2019 to June 2020.xlsx,1
+2020-03-26 00:00:00,CAPITAL BUILDINGS,Capital,Ic2 Cctv & Security Specialists Uk Ltd,1590234,53340.0,HILL 00-03 - Nov 2019 to June 2020.xlsx,1
+2020-03-26 00:00:00,CAPITAL BUILDINGS,Capital,E S Moss (Watford) Ltd,1590235,32034.0,HILL 00-03 - Nov 2019 to June 2020.xlsx,1
+2020-03-31 00:00:00,Medical Equipment,Capital,Nhs Supply Chain Capital,1590559,459085.0,HILL 00-03 - Nov 2019 to June 2020.xlsx,1
+2020-03-30 00:00:00,Medical Equipment,Capital,Hologic Uk Ltd,1590574,60000.0,HILL 00-03 - Nov 2019 to June 2020.xlsx,1
+2020-03-26 00:00:00,CAPITAL BUILDINGS,Capital,Ridge & Partners,1590892,25200.0,HILL 00-03 - Nov 2019 to June 2020.xlsx,1
+2020-03-26 00:00:00,CAPITAL BUILDINGS,Capital,Ridge & Partners,1590897,29760.0,HILL 00-03 - Nov 2019 to June 2020.xlsx,1
+2020-03-26 00:00:00,CAPITAL BUILDINGS,Capital,Dura Pump Ltd,1591447,29740.0,HILL 00-03 - Nov 2019 to June 2020.xlsx,1
+2020-03-30 00:00:00,Medical Equipment,Capital,Hologic Uk Ltd,1592320,303000.0,HILL 00-03 - Nov 2019 to June 2020.xlsx,1
+2020-03-30 00:00:00,Medical Equipment,Capital,Hologic Uk Ltd,1592321,66000.0,HILL 00-03 - Nov 2019 to June 2020.xlsx,1
+2020-03-31 00:00:00,CAPITAL BUILDINGS,Capital,Capsticks Solicitors Llp,1593285,350000.0,HILL 00-03 - Nov 2019 to June 2020.xlsx,1
+2020-03-31 00:00:00,CAPITAL BUILDINGS,Capital,Capsticks Solicitors Llp,1593286,5450000.0,HILL 00-03 - Nov 2019 to June 2020.xlsx,1
+2020-04-23 00:00:00,CONSULTANT,Acute Oncology,East & North Herts Nhs Trust,60438,37292.0,HILL 00-03 - Nov 2019 to June 2020.xlsx,1
+2020-04-03 00:00:00,PSYCHIATRY SERVICES,Medicine General Management,Cnwl Nhs Foundation Trust,62326,47460.0,HILL 00-03 - Nov 2019 to June 2020.xlsx,1
+2020-04-03 00:00:00,PSYCHIATRY SERVICES,Medicine General Management,Cnwl Nhs Foundation Trust,62514,47460.0,HILL 00-03 - Nov 2019 to June 2020.xlsx,1
+2020-04-03 00:00:00,PROFESSIONAL FEES,Central Budgets Ddf,Cnwl Nhs Foundation Trust,62859,34672.0,HILL 00-03 - Nov 2019 to June 2020.xlsx,1
+2020-04-03 00:00:00,ACP HEART FAILURE,Medical Specialties,Cnwl Nhs Foundation Trust,62965,58333.0,HILL 00-03 - Nov 2019 to June 2020.xlsx,1
+2020-04-03 00:00:00,PSYCHIATRY SERVICES,Medicine General Management,Cnwl Nhs Foundation Trust,63047,47460.0,HILL 00-03 - Nov 2019 to June 2020.xlsx,1
+2020-04-03 00:00:00,PSYCHIATRY SERVICES,Medicine General Management,Cnwl Nhs Foundation Trust,63279,47460.0,HILL 00-03 - Nov 2019 to June 2020.xlsx,1
+2020-04-03 00:00:00,PROFESSIONAL FEES,Nursing,Cnwl Nhs Foundation Trust,63413,-41014.0,HILL 00-03 - Nov 2019 to June 2020.xlsx,-1
+2020-04-03 00:00:00,MH A&E LIAISON,Corporate,Cnwl Nhs Foundation Trust,63421,33526.0,HILL 00-03 - Nov 2019 to June 2020.xlsx,1
+2020-04-23 00:00:00,SPECIALTY REG CT/ST 1/2,Corporate,Royal Free London Nhs Foundation Trust,63444,75488.0,HILL 00-03 - Nov 2019 to June 2020.xlsx,1
+2020-04-23 00:00:00,PROFESSIONAL FEES,Central Budgets Ddf,Cnwl Nhs Foundation Trust,63553,32744.0,HILL 00-03 - Nov 2019 to June 2020.xlsx,1
+2020-04-03 00:00:00,PSYCHIATRY SERVICES,Medicine General Management,Cnwl Nhs Foundation Trust,63611,47460.0,HILL 00-03 - Nov 2019 to June 2020.xlsx,1
+2020-04-23 00:00:00,SPECIALTY REG CT/ST 1/2,Corporate,Royal Free London Nhs Foundation Trust,63633,77121.0,HILL 00-03 - Nov 2019 to June 2020.xlsx,1
+2020-04-03 00:00:00,PSYCHIATRY SERVICES,Medicine General Management,Cnwl Nhs Foundation Trust,63812,47460.0,HILL 00-03 - Nov 2019 to June 2020.xlsx,1
+2020-04-03 00:00:00,DRUGS,Pharmacy,East & North Herts Nhs Trust,63929,94801.0,HILL 00-03 - Nov 2019 to June 2020.xlsx,1
+2020-04-03 00:00:00,PSYCHIATRY SERVICES,Medicine General Management,Cnwl Nhs Foundation Trust,63992,47460.0,HILL 00-03 - Nov 2019 to June 2020.xlsx,1
+2020-04-23 00:00:00,SPECIALTY REG CT/ST 1/2,Corporate,Royal Free London Nhs Foundation Trust,64028,77329.0,HILL 00-03 - Nov 2019 to June 2020.xlsx,1
+2020-04-23 00:00:00,MH A&E LIAISON,Corporate,Cnwl Nhs Foundation Trust,64144,32958.0,HILL 00-03 - Nov 2019 to June 2020.xlsx,1
+2020-04-03 00:00:00,STROKE ESD,Medical Specialties,Cnwl Nhs Foundation Trust,64157,-134203.0,HILL 00-03 - Nov 2019 to June 2020.xlsx,-1
+2020-04-03 00:00:00,DRUGS,Pharmacy,East & North Herts Nhs Trust,64225,80599.0,HILL 00-03 - Nov 2019 to June 2020.xlsx,1
+2020-04-03 00:00:00,NWL PATHOLOGY COST OF SERVICES,Pathology,North West London Pathology,64229,716777.0,HILL 00-03 - Nov 2019 to June 2020.xlsx,1
+2020-04-03 00:00:00,NWL PATHOLOGY COST OF SERVICES,Pathology,North West London Pathology,64230,237866.0,HILL 00-03 - Nov 2019 to June 2020.xlsx,1
+2020-04-03 00:00:00,PSYCHIATRY SERVICES,Medicine General Management,Cnwl Nhs Foundation Trust,64279,47460.0,HILL 00-03 - Nov 2019 to June 2020.xlsx,1
+2020-04-03 00:00:00,RADIOPHARMACEUTICALS,X Ray,East & North Herts Nhs Trust,64304,36156.0,HILL 00-03 - Nov 2019 to June 2020.xlsx,1
+2020-04-23 00:00:00,FEES FOR TESTS,Medical Specialties,Royal Brompton & Harefield Nhs Ft,64358,53229.0,HILL 00-03 - Nov 2019 to June 2020.xlsx,1
+2020-04-23 00:00:00,PROFESSIONAL FEES,Central Budgets Ddf,Cnwl Nhs Foundation Trust,64417,42964.0,HILL 00-03 - Nov 2019 to June 2020.xlsx,1
+2020-04-03 00:00:00,DRUGS,Pharmacy,East & North Herts Nhs Trust,64420,60263.0,HILL 00-03 - Nov 2019 to June 2020.xlsx,1
+2020-04-29 00:00:00,NWL PATHOLOGY COST OF SERVICES,Pathology,North West London Pathology,64469,716777.0,HILL 00-03 - Nov 2019 to June 2020.xlsx,1
+2020-04-29 00:00:00,NWL PATHOLOGY COST OF SERVICES,Pathology,North West London Pathology,64470,237866.0,HILL 00-03 - Nov 2019 to June 2020.xlsx,1
+2020-04-23 00:00:00,PSYCHIATRY SERVICES,Medicine General Management,Cnwl Nhs Foundation Trust,64511,47460.0,HILL 00-03 - Nov 2019 to June 2020.xlsx,1
+2020-04-23 00:00:00,SPECIALTY REG CT/ST 1/2,Corporate,Royal Free London Nhs Foundation Trust,64678,,HILL 00-03 - Nov 2019 to June 2020.xlsx,1
+2020-04-23 00:00:00,FEES FOR TESTS,Medical Specialties,Royal Brompton & Harefield Nhs Ft,64695,83842.0,HILL 00-03 - Nov 2019 to June 2020.xlsx,1
+2020-04-23 00:00:00,SPECIALTY REG CT/ST 1/2,Corporate,Royal Free London Nhs Foundation Trust,64706,,HILL 00-03 - Nov 2019 to June 2020.xlsx,1
+2020-04-29 00:00:00,NWL PATHOLOGY COST OF SERVICES,Pathology,North West London Pathology,64867,237866.0,HILL 00-03 - Nov 2019 to June 2020.xlsx,1
+2020-04-29 00:00:00,NWL PATHOLOGY COST OF SERVICES,Pathology,North West London Pathology,64869,716777.0,HILL 00-03 - Nov 2019 to June 2020.xlsx,1
+2020-04-30 00:00:00,CNST PREMIUM,Nursing,Nhs Resolution,65002,1111542.0,HILL 00-03 - Nov 2019 to June 2020.xlsx,1
+2020-04-30 00:00:00,LTPS PREMIUM,Corporate,Nhs Resolution,65002,12537.0,HILL 00-03 - Nov 2019 to June 2020.xlsx,1
+2020-04-30 00:00:00,PES PREMIUM,Estates,Nhs Resolution,65002,1846.0,HILL 00-03 - Nov 2019 to June 2020.xlsx,1
+2020-04-17 00:00:00,PACS MAINTENANCE,Ict Directorate,Sectra Ltd,1552673,106292.0,HILL 00-03 - Nov 2019 to June 2020.xlsx,1
+2020-04-23 00:00:00,PACS MAINTENANCE,Ict Directorate,Sectra Ltd,1562243,104947.0,HILL 00-03 - Nov 2019 to June 2020.xlsx,1
+2020-04-23 00:00:00,PACS MAINTENANCE,Ict Directorate,Sectra Ltd,1571459,104947.0,HILL 00-03 - Nov 2019 to June 2020.xlsx,1
+2020-04-23 00:00:00,NBS BLOCK CONTRACT,Pathology,Nhs Blood And Transplant,1581839,88715.0,HILL 00-03 - Nov 2019 to June 2020.xlsx,1
+2020-04-23 00:00:00,M.R.I.,X Ray,Alliance Medical Ltd,1581863,43823.0,HILL 00-03 - Nov 2019 to June 2020.xlsx,1
+2020-04-09 00:00:00,SSD RECHARGE,Corporate,Ihss Limited,1583916,30236.0,HILL 00-03 - Nov 2019 to June 2020.xlsx,1
+2020-04-09 00:00:00,FINANCE LEASE,Corporate,Bhh Lift Accommodation Services Ltd,1585146,233527.0,HILL 00-03 - Nov 2019 to June 2020.xlsx,1
+2020-04-03 00:00:00,WATER,Estates,Advanced Demand Side Mngt Ltd,1585671,32334.0,HILL 00-03 - Nov 2019 to June 2020.xlsx,1
+2020-04-03 00:00:00,ELECTRICITY,Estates,Edf Energy,1586457,159585.0,HILL 00-03 - Nov 2019 to June 2020.xlsx,1
+2020-04-23 00:00:00,CT SCANNING,X Ray,Radiology Reporting Online,1587263,67862.0,HILL 00-03 - Nov 2019 to June 2020.xlsx,1
+2020-04-23 00:00:00,M.R.I.,X Ray,Radiology Reporting Online,1587263,4774.0,HILL 00-03 - Nov 2019 to June 2020.xlsx,1
+2020-04-09 00:00:00,BUSINESS RATES,Estates,London Borough Of Hillingdon,1587566,46018.0,HILL 00-03 - Nov 2019 to June 2020.xlsx,1
+2020-04-09 00:00:00,BUSINESS RATES,Estates,London Borough Of Hillingdon,1587567,55328.0,HILL 00-03 - Nov 2019 to June 2020.xlsx,1
+2020-04-17 00:00:00,STORES CONTROL,Corporate,Nhs Supply Chain Roarp,1587724,125534.0,HILL 00-03 - Nov 2019 to June 2020.xlsx,1
+2020-04-17 00:00:00,ELECTRICITY,Estates,Edf Energy,1588052,27408.0,HILL 00-03 - Nov 2019 to June 2020.xlsx,1
+2020-04-09 00:00:00,BAXTERS CYTOTOXICS,Pharmacy,Baxter Shared Service & Competencies Ltd,1588328,25198.0,HILL 00-03 - Nov 2019 to June 2020.xlsx,1
+2020-04-03 00:00:00,PMS RENTAL,Ict Directorate,Silverlink Software Ltd,1588823,105658.0,HILL 00-03 - Nov 2019 to June 2020.xlsx,1
+2020-04-09 00:00:00,BECKMAN COULTER CONTRACT,Pathology,Beckman Coulter United Kingdom Ltd,1588893,173452.0,HILL 00-03 - Nov 2019 to June 2020.xlsx,1
+2020-04-03 00:00:00,PROFESSIONAL FEES,Purchasing And Supplies,Tenwell Innovations Ltd,1588970,33600.0,HILL 00-03 - Nov 2019 to June 2020.xlsx,1
+2020-04-03 00:00:00,CAPITAL BUILDINGS,Capital,Tenwell Innovations Ltd,1588972,54400.0,HILL 00-03 - Nov 2019 to June 2020.xlsx,1
+2020-04-17 00:00:00,BAXTERS CYTOTOXICS,Pharmacy,Baxter Shared Service & Competencies Ltd,1589330,55245.0,HILL 00-03 - Nov 2019 to June 2020.xlsx,1
+2020-04-17 00:00:00,BAXTERS CYTOTOXICS,Pharmacy,Baxter Shared Service & Competencies Ltd,1589331,46154.0,HILL 00-03 - Nov 2019 to June 2020.xlsx,1
+2020-04-17 00:00:00,BAXTERS CYTOTOXICS,Pharmacy,Baxter Shared Service & Competencies Ltd,1589335,39382.0,HILL 00-03 - Nov 2019 to June 2020.xlsx,1
+2020-04-23 00:00:00,M.R.I.,X Ray,Alliance Medical Ltd,1590154,40452.0,HILL 00-03 - Nov 2019 to June 2020.xlsx,1
+2020-04-23 00:00:00,STORES CONTROL,Corporate,Nhs Supply Chain Roarp,1590413,116559.0,HILL 00-03 - Nov 2019 to June 2020.xlsx,1
+2020-04-17 00:00:00,CAPITAL IT,Capital,Softcat Ltd,1590627,36024.0,HILL 00-03 - Nov 2019 to June 2020.xlsx,1
+2020-04-23 00:00:00,CAPITAL IT,Capital,Bytes Software Services Ltd,1590856,49248.0,HILL 00-03 - Nov 2019 to June 2020.xlsx,1
+2020-04-09 00:00:00,CAPITAL BUILDINGS,Capital,Ic2 Cctv & Security Specialists Uk Ltd,1590908,32811.0,HILL 00-03 - Nov 2019 to June 2020.xlsx,1
+2020-04-17 00:00:00,DRUGS,Corporate,Bayer Plc,1591224,73416.0,HILL 00-03 - Nov 2019 to June 2020.xlsx,1
+2020-04-09 00:00:00,SSD RECHARGE,Corporate,Ihss Limited,1591459,67940.0,HILL 00-03 - Nov 2019 to June 2020.xlsx,1
+2020-04-09 00:00:00,SSD RECHARGE,Corporate,Ihss Limited,1591460,67940.0,HILL 00-03 - Nov 2019 to June 2020.xlsx,1
+2020-04-23 00:00:00,PROFESSIONAL FEES,Project Management Office,Pa Consulting,1591489,142143.0,HILL 00-03 - Nov 2019 to June 2020.xlsx,1
+2020-04-29 00:00:00,CAPITAL IT,Capital,Ithealth Ltd,1591662,59608.0,HILL 00-03 - Nov 2019 to June 2020.xlsx,1
+2020-04-29 00:00:00,CAPITAL BUILDINGS,Capital,Ibi Group (Uk)Ltd,1592108,48290.0,HILL 00-03 - Nov 2019 to June 2020.xlsx,1
+2020-04-23 00:00:00,CAPITAL BUILDINGS,Capital,Ibi Group (Uk)Ltd,1592113,25174.0,HILL 00-03 - Nov 2019 to June 2020.xlsx,1
+2020-04-29 00:00:00,CAPITAL IT,Capital,Insight Direct (Uk) Ltd,1592117,102630.0,HILL 00-03 - Nov 2019 to June 2020.xlsx,1
+2020-04-03 00:00:00,CAPITAL BUILDINGS,Capital,Jarvis Contracting Ltd,1592149,46195.0,HILL 00-03 - Nov 2019 to June 2020.xlsx,1
+2020-04-03 00:00:00,CAPITAL BUILDINGS,Capital,Jarvis Contracting Ltd,1592150,28216.0,HILL 00-03 - Nov 2019 to June 2020.xlsx,1
+2020-04-29 00:00:00,CAPITAL BUILDINGS,Capital,Eta Projects Limited,1592334,37800.0,HILL 00-03 - Nov 2019 to June 2020.xlsx,1
+2020-04-29 00:00:00,CAPITAL BUILDINGS,Capital,Ridge & Partners,1592390,63180.0,HILL 00-03 - Nov 2019 to June 2020.xlsx,1
+2020-04-29 00:00:00,CAPITAL BUILDINGS,Capital,Ridge & Partners,1592397,112138.0,HILL 00-03 - Nov 2019 to June 2020.xlsx,1
+2020-04-29 00:00:00,MEDICAL EQUIPMENT - NEW,Covid-19 Costs,Abbott Laboratories Ltd,1592408,31410.0,HILL 00-03 - Nov 2019 to June 2020.xlsx,1
+2020-04-30 00:00:00,CAPITAL BUILDINGS,Capital,Pcp Limited,1592450,91281.0,HILL 00-03 - Nov 2019 to June 2020.xlsx,1
+2020-04-30 00:00:00,CAPITAL BUILDINGS,Capital,Pcp Limited,1592453,143786.0,HILL 00-03 - Nov 2019 to June 2020.xlsx,1
+2020-04-29 00:00:00,CAPITAL IT,Capital,Bytes Software Services Ltd,1592539,94158.0,HILL 00-03 - Nov 2019 to June 2020.xlsx,1
+2020-04-03 00:00:00,CAPITAL BUILDINGS,Capital,Arthur Pollard Ltd,1592784,86952.0,HILL 00-03 - Nov 2019 to June 2020.xlsx,1
+2020-04-29 00:00:00,CAPITAL IT,Capital,Loadbalancer.Org Ltd,1592810,67224.0,HILL 00-03 - Nov 2019 to June 2020.xlsx,1
+2020-04-29 00:00:00,CAPITAL IT,Capital,European Electronique Ltd,1592811,85773.0,HILL 00-03 - Nov 2019 to June 2020.xlsx,1
+2020-04-29 00:00:00,CAPITAL IT,Capital,European Electronique Ltd,1592813,206781.0,HILL 00-03 - Nov 2019 to June 2020.xlsx,1
+2020-04-17 00:00:00,EXTERNAL AUDIT - FINAL ACCTS,Finance Department,Deloitte Llp,1592822,60600.0,HILL 00-03 - Nov 2019 to June 2020.xlsx,1
+2020-04-29 00:00:00,STORES CONTROL,Corporate,Nhs Supply Chain Roarp,1592871,88429.0,HILL 00-03 - Nov 2019 to June 2020.xlsx,1
+2020-04-29 00:00:00,Medical Equipment,Capital,Medtronic Ltd,1593056,43237.0,HILL 00-03 - Nov 2019 to June 2020.xlsx,1
+2020-04-09 00:00:00,CAPITAL BUILDINGS,Capital,Tenwell Innovations Ltd,1593239,31200.0,HILL 00-03 - Nov 2019 to June 2020.xlsx,1
+2020-04-09 00:00:00,CAPITAL BUILDINGS,Capital,Tenwell Innovations Ltd,1593240,34800.0,HILL 00-03 - Nov 2019 to June 2020.xlsx,1
+2020-04-29 00:00:00,Medical Equipment,Capital,Fujifilm (Uk) Ltd,1593262,65994.0,HILL 00-03 - Nov 2019 to June 2020.xlsx,1
+2020-04-17 00:00:00,PHONE REPAIR AND INSTALLATION,Covid-19 Costs,Bt Business Direct Ltd,1593397,26210.0,HILL 00-03 - Nov 2019 to June 2020.xlsx,1
+2020-04-30 00:00:00,CAPITAL BUILDINGS,Capital,Pcp Limited,1593462,452421.0,HILL 00-03 - Nov 2019 to June 2020.xlsx,1
+2020-04-29 00:00:00,Medical Equipment,Capital,Sectra Ltd,1593487,53888.0,HILL 00-03 - Nov 2019 to June 2020.xlsx,1
+2020-04-29 00:00:00,STORES CONTROL,Corporate,Nhs Supply Chain Roarp,1593502,31996.0,HILL 00-03 - Nov 2019 to June 2020.xlsx,1
+2020-04-29 00:00:00,CAPITAL BUILDINGS,Capital,Mtx Contracts Limited,1593526,892040.0,HILL 00-03 - Nov 2019 to June 2020.xlsx,1
+2020-04-29 00:00:00,SYNERGY LAUNDRY CONTRACT,Facilities,Synergy Health Managed Services Ltd,1593787,59847.0,HILL 00-03 - Nov 2019 to June 2020.xlsx,1
+2020-04-29 00:00:00,CAPITAL BUILDINGS,Capital,Ridge & Partners,1593789,30702.0,HILL 00-03 - Nov 2019 to June 2020.xlsx,1
+2020-04-29 00:00:00,CAPITAL BUILDINGS,Capital,Ridge & Partners,1594166,41731.0,HILL 00-03 - Nov 2019 to June 2020.xlsx,1
+2020-04-17 00:00:00,CLINICAL WASTE COLLECTION,Estates,Srcl Ltd,1594334,38862.0,HILL 00-03 - Nov 2019 to June 2020.xlsx,1
+2020-04-29 00:00:00,CAPITAL IT,Capital,Visionable Ltd,1594722,51347.0,HILL 00-03 - Nov 2019 to June 2020.xlsx,1
+2020-04-23 00:00:00,BAXTERS CYTOTOXICS,Pharmacy,Baxter Shared Service & Competencies Ltd,1595263,27617.0,HILL 00-03 - Nov 2019 to June 2020.xlsx,1
+2020-04-20 00:00:00,MEDICAL EQUIPMENT - NEW,Covid-19 Costs,Full Support Healthcare Ltd,1596814,274392.0,HILL 00-03 - Nov 2019 to June 2020.xlsx,1
+2020-04-23 00:00:00,PACS MAINTENANCE,Ict Directorate,Sectra Ltd,1597663,-104947.0,HILL 00-03 - Nov 2019 to June 2020.xlsx,-1
+2020-04-23 00:00:00,PACS MAINTENANCE,Ict Directorate,Sectra Ltd,1597669,-104947.0,HILL 00-03 - Nov 2019 to June 2020.xlsx,-1
+2020-04-23 00:00:00,PACS MAINTENANCE,Ict Directorate,Sectra Ltd,1597672,-104947.0,HILL 00-03 - Nov 2019 to June 2020.xlsx,-1
+2020-04-23 00:00:00,PACS MAINTENANCE,Ict Directorate,Sectra Ltd,1597673,108982.0,HILL 00-03 - Nov 2019 to June 2020.xlsx,1
+2020-04-23 00:00:00,PACS MAINTENANCE,Ict Directorate,Sectra Ltd,1597674,108982.0,HILL 00-03 - Nov 2019 to June 2020.xlsx,1
+2020-04-23 00:00:00,ADDITIONAL EQUIPMENT,Covid-19 Costs,Beijing Easy Monitor Tech Development Co. Ltd,1597710,524796.0,HILL 00-03 - Nov 2019 to June 2020.xlsx,1
+2020-04-28 00:00:00,STAFF UNIFORMS,Covid-19 Costs,Bender International Ltd,1598738,57600.0,HILL 00-03 - Nov 2019 to June 2020.xlsx,1
+2020-04-29 00:00:00,GENERAL CLEANING MAT & EQUIP,Covid-19 Costs,Uniwipe Europe Ltd,1599033,124800.0,HILL 00-03 - Nov 2019 to June 2020.xlsx,1
+2020-04-29 00:00:00,RENT SLOUGH VANBURGH COURT,Corporate,Mackenzie(Stoke Road) Ltd,1599141,56250.0,HILL 00-03 - Nov 2019 to June 2020.xlsx,1
+2020-02-06 00:00:00,SPECIALTY REG CT/ST 1/2,Corporate,Royal Free London Nhs Foundation Trust,62444,74263.0,HILL 00-03 - Nov 2019 to June 2020.xlsx,1
+2020-02-06 00:00:00,FEES FOR TESTS,Medical Specialties,Imperial College Healthcare Nhs Trust,62790,30368.0,HILL 00-03 - Nov 2019 to June 2020.xlsx,1
+2020-02-28 00:00:00,FEES FOR TESTS,Medical Specialties,Royal Brompton & Harefield Nhs Ft,63178,85153.0,HILL 00-03 - Nov 2019 to June 2020.xlsx,1
+2020-02-06 00:00:00,SPECIALTY REG CT/ST 1/2,Corporate,Royal Free London Nhs Foundation Trust,63179,66430.0,HILL 00-03 - Nov 2019 to June 2020.xlsx,1
+2020-02-13 00:00:00,PROFESSIONAL FEES,Corporate,Nhs North Of England Csu,63624,50000.0,HILL 00-03 - Nov 2019 to June 2020.xlsx,1
+2020-02-06 00:00:00,PROFESSIONAL FEES,Corporate,Nhs North Of England Csu,63931,50000.0,HILL 00-03 - Nov 2019 to June 2020.xlsx,1
+2020-02-06 00:00:00,COMPTR & PRINTERS MAINTENANCE,Ict Directorate,Intersystems Corporation,1508993,25394.0,HILL 00-03 - Nov 2019 to June 2020.xlsx,1
+2020-02-05 00:00:00,AUDIOVISUAL EQUIPMENT,Education Centre & Library,Gaumard Scientific Co Inc,1554420,38520.0,HILL 00-03 - Nov 2019 to June 2020.xlsx,1
+2020-02-13 00:00:00,CONSULTANCY FEES,Corporate,Pa Consulting,1562817,278158.0,HILL 00-03 - Nov 2019 to June 2020.xlsx,1
+2020-02-06 00:00:00,CAPITAL BUILDINGS,Capital,Ibi Group (Uk)Ltd,1562838,103200.0,HILL 00-03 - Nov 2019 to June 2020.xlsx,1
+2020-02-13 00:00:00,STORES CONTROL,Corporate,Nhs Supply Chain Roarp,1563952,83284.0,HILL 00-03 - Nov 2019 to June 2020.xlsx,1
+2020-02-13 00:00:00,STORES CONTROL,Corporate,Nhs Supply Chain Roarp,1564040,119593.0,HILL 00-03 - Nov 2019 to June 2020.xlsx,1
+2020-02-20 00:00:00,STORES CONTROL,Corporate,Nhs Supply Chain Roarp,1567854,147264.0,HILL 00-03 - Nov 2019 to June 2020.xlsx,1
+2020-02-20 00:00:00,CAPITAL BUILDINGS,Capital,Tenwell Innovations Ltd,1567898,30000.0,HILL 00-03 - Nov 2019 to June 2020.xlsx,1
+2020-02-20 00:00:00,CAPITAL BUILDINGS,Capital,Tenwell Innovations Ltd,1567917,30000.0,HILL 00-03 - Nov 2019 to June 2020.xlsx,1
+2020-02-28 00:00:00,BAXTERS CYTOTOXICS,Pharmacy,Baxter Shared Service & Competencies Ltd,1568100,48607.0,HILL 00-03 - Nov 2019 to June 2020.xlsx,1
+2020-02-28 00:00:00,STORES CONTROL,Corporate,Nhs Supply Chain Roarp,1568704,41250.0,HILL 00-03 - Nov 2019 to June 2020.xlsx,1
+2020-02-13 00:00:00,CAPITAL IT,Capital,Itgl Limited,1568922,37198.0,HILL 00-03 - Nov 2019 to June 2020.xlsx,1
+2020-02-13 00:00:00,CONSULTANCY FEES,Corporate,Mbi Healthcare Technologies Ltd,1569003,155536.0,HILL 00-03 - Nov 2019 to June 2020.xlsx,1
+2020-02-06 00:00:00,DRUGS,Corporate,Novartis Pharmaceuticals Uk Ltd,1569236,81740.0,HILL 00-03 - Nov 2019 to June 2020.xlsx,1
+2020-02-28 00:00:00,STORES CONTROL,Corporate,Nhs Supply Chain Roarp,1569507,56739.0,HILL 00-03 - Nov 2019 to June 2020.xlsx,1
+2020-02-06 00:00:00,BAXTERS CYTOTOXICS,Pharmacy,Baxter Shared Service & Competencies Ltd,1569574,35643.0,HILL 00-03 - Nov 2019 to June 2020.xlsx,1
+2020-02-06 00:00:00,PROFESSIONAL FEES,Corporate,Ggi Development And Research Llp,1571140,57053.0,HILL 00-03 - Nov 2019 to June 2020.xlsx,1
+2020-02-13 00:00:00,MED EQUIP MAINTENANCE CONTRCTS,Facilities,Siemens Healthcare Limited,1571429,57651.0,HILL 00-03 - Nov 2019 to June 2020.xlsx,1
+2020-02-06 00:00:00,MED EQUIP MAINTENANCE CONTRCTS,Facilities,Ge Healthcare,1571796,229138.0,HILL 00-03 - Nov 2019 to June 2020.xlsx,1
+2020-02-06 00:00:00,BECKMAN COULTER CONTRACT,Pathology,Beckman Coulter United Kingdom Ltd,1571816,173452.0,HILL 00-03 - Nov 2019 to June 2020.xlsx,1
+2020-02-20 00:00:00,CAPITAL BUILDINGS,Capital,Tenwell Innovations Ltd,1572754,30000.0,HILL 00-03 - Nov 2019 to June 2020.xlsx,1
+2020-02-28 00:00:00,NON-NHS AMBULANCE SERVICES,Facilities,Hats Group Ltd,1573172,117373.0,HILL 00-03 - Nov 2019 to June 2020.xlsx,1
+2020-02-20 00:00:00,SYSMEX REAGENTS,Pathology,Sysmex Uk Ltd,1573236,190113.0,HILL 00-03 - Nov 2019 to June 2020.xlsx,1
+2020-02-20 00:00:00,CAPITAL BUILDINGS,Capital,Pcp Limited,1573424,135350.0,HILL 00-03 - Nov 2019 to June 2020.xlsx,1
+2020-02-28 00:00:00,PROFESSIONAL FEES,Medicine General Management,Chs Healthcare,1574397,25920.0,HILL 00-03 - Nov 2019 to June 2020.xlsx,1
+2020-02-13 00:00:00,LICENCES & SUBSCRIPTIONS,Corporate,Brunel University,1574695,26000.0,HILL 00-03 - Nov 2019 to June 2020.xlsx,1
+2020-02-28 00:00:00,BAXTERS CYTOTOXICS,Pharmacy,Baxter Shared Service & Competencies Ltd,1574873,31817.0,HILL 00-03 - Nov 2019 to June 2020.xlsx,1
+2020-02-20 00:00:00,CAPITAL BUILDINGS,Capital,David Phillips Furniture Ltd,1575443,45932.0,HILL 00-03 - Nov 2019 to June 2020.xlsx,1
+2020-02-06 00:00:00,CONSULTANCY FEES,Corporate,Biz Think Ltd,1576842,37800.0,HILL 00-03 - Nov 2019 to June 2020.xlsx,1
+2020-02-28 00:00:00,RECRUITMENT,People And Development,Search Recruitment Ltd,1577136,121384.0,HILL 00-03 - Nov 2019 to June 2020.xlsx,1
+2020-02-06 00:00:00,CAPITAL BUILDINGS,Capital,Pordum Foods Ltd,1577685,26208.0,HILL 00-03 - Nov 2019 to June 2020.xlsx,1
+2020-02-28 00:00:00,CLINICAL WASTE COLLECTION,Estates,Srcl Ltd,1577695,38212.0,HILL 00-03 - Nov 2019 to June 2020.xlsx,1
+2020-02-20 00:00:00,ELECTRICITY,Estates,Edf Energy,1578254,28911.0,HILL 00-03 - Nov 2019 to June 2020.xlsx,1
+2020-02-28 00:00:00,ELECTRICITY,Estates,Edf Energy,1578959,177456.0,HILL 00-03 - Nov 2019 to June 2020.xlsx,1
+2020-02-20 00:00:00,CAPITAL BUILDINGS,Capital,Arthur Pollard Ltd,1579085,119836.0,HILL 00-03 - Nov 2019 to June 2020.xlsx,1
+2020-02-20 00:00:00,Medical Equipment,Capital,Mri Devices Ltd,1579150,61200.0,HILL 00-03 - Nov 2019 to June 2020.xlsx,1
+2020-02-18 00:00:00,RENT,Ambulatory Care Services,Capsticks Solicitors Llp,1581154,234000.0,HILL 00-03 - Nov 2019 to June 2020.xlsx,1
+2020-02-20 00:00:00,CAPITAL BUILDINGS,Capital,Shl Refractories (Uk) Ltd,1581381,122268.0,HILL 00-03 - Nov 2019 to June 2020.xlsx,1
+2020-02-20 00:00:00,CONSULTANCY FEES,Corporate,Biz Think Ltd,1581707,36000.0,HILL 00-03 - Nov 2019 to June 2020.xlsx,1
+2020-02-28 00:00:00,CAPITAL BUILDINGS,Capital,Jarvis Contracting Ltd,1581802,34407.0,HILL 00-03 - Nov 2019 to June 2020.xlsx,1
+2020-01-09 00:00:00,PROFESSIONAL FEES,Central Budgets Ddf,Cnwl Nhs Foundation Trust,62161,38191.0,HILL 00-03 - Nov 2019 to June 2020.xlsx,1
+2020-01-09 00:00:00,FEES FOR TESTS,Medical Specialties,Royal Brompton & Harefield Nhs Ft,62607,51895.0,HILL 00-03 - Nov 2019 to June 2020.xlsx,1
+2020-01-09 00:00:00,PSYCHIATRY SERVICES,Medicine General Management,Cnwl Nhs Foundation Trust,62768,47460.0,HILL 00-03 - Nov 2019 to June 2020.xlsx,1
+2020-01-09 00:00:00,FEES FOR TESTS,Medical Specialties,Royal Brompton & Harefield Nhs Ft,62908,61664.0,HILL 00-03 - Nov 2019 to June 2020.xlsx,1
+2020-01-30 00:00:00,PROFESSIONAL FEES,Corporate,Guy'S & St. Thomas' Nhs Ft,63820,30000.0,HILL 00-03 - Nov 2019 to June 2020.xlsx,1
+2020-01-10 00:00:00,CNST PREMIUM,Nursing,Nhs Resolution,64004,1127332.0,HILL 00-03 - Nov 2019 to June 2020.xlsx,1
+2020-01-10 00:00:00,LTPS PREMIUM,Corporate,Nhs Resolution,64004,10494.0,HILL 00-03 - Nov 2019 to June 2020.xlsx,1
+2020-01-10 00:00:00,PES PREMIUM,Estates,Nhs Resolution,64004,1509.0,HILL 00-03 - Nov 2019 to June 2020.xlsx,1
+2020-01-31 00:00:00,CNST PREMIUM,Nursing,Nhs Resolution,64108,1127332.0,HILL 00-03 - Nov 2019 to June 2020.xlsx,1
+2020-01-31 00:00:00,LTPS PREMIUM,Corporate,Nhs Resolution,64108,10494.0,HILL 00-03 - Nov 2019 to June 2020.xlsx,1
+2020-01-31 00:00:00,PES PREMIUM,Estates,Nhs Resolution,64108,1509.0,HILL 00-03 - Nov 2019 to June 2020.xlsx,1
+2020-01-02 00:00:00,CAPITAL BUILDINGS,Capital,Hastingwood Contracts,1494876,31153.0,HILL 00-03 - Nov 2019 to June 2020.xlsx,1
+2020-01-02 00:00:00,BUSINESS RATES,Estates,London Borough Of Hillingdon,1505814,54493.0,HILL 00-03 - Nov 2019 to June 2020.xlsx,1
+2020-01-10 00:00:00,LICENCING AND MAINT. NON CLIN,Ict Directorate,Advanced Business Solutions,1538276,76761.0,HILL 00-03 - Nov 2019 to June 2020.xlsx,1
+2020-01-28 00:00:00,CLINICAL WASTE COLLECTION,Estates,Srcl Ltd,1545403,38212.0,HILL 00-03 - Nov 2019 to June 2020.xlsx,1
+2020-01-02 00:00:00,DRUGS,Corporate,Csl Behring,1546819,46830.0,HILL 00-03 - Nov 2019 to June 2020.xlsx,1
+2020-01-02 00:00:00,INTERPRETING,Nursing,One Stop Interpreting & Translation Agency,1549230,27615.0,HILL 00-03 - Nov 2019 to June 2020.xlsx,1
+2020-01-02 00:00:00,M.R.I.,X Ray,Alliance Medical Ltd,1549297,40452.0,HILL 00-03 - Nov 2019 to June 2020.xlsx,1
+2020-01-02 00:00:00,NBS BLOCK CONTRACT,Pathology,Nhs Blood And Transplant,1549317,88715.0,HILL 00-03 - Nov 2019 to June 2020.xlsx,1
+2020-01-02 00:00:00,SYNERGY LAUNDRY CONTRACT,Facilities,Synergy Health Managed Services Ltd,1552941,71156.0,HILL 00-03 - Nov 2019 to June 2020.xlsx,1
+2020-01-02 00:00:00,STORES CONTROL,Corporate,Nhs Supply Chain Roarp,1555328,85966.0,HILL 00-03 - Nov 2019 to June 2020.xlsx,1
+2020-01-28 00:00:00,CLINICAL WASTE COLLECTION,Estates,Srcl Ltd,1555345,38212.0,HILL 00-03 - Nov 2019 to June 2020.xlsx,1
+2020-01-28 00:00:00,DRUGS,Corporate,Csl Behring,1555509,31710.0,HILL 00-03 - Nov 2019 to June 2020.xlsx,1
+2020-01-23 00:00:00,CT SCANNING,X Ray,Radiology Reporting Online,1555765,53708.0,HILL 00-03 - Nov 2019 to June 2020.xlsx,1
+2020-01-23 00:00:00,M.R.I.,X Ray,Radiology Reporting Online,1555765,29.0,HILL 00-03 - Nov 2019 to June 2020.xlsx,1
+2020-01-28 00:00:00,SSD RECHARGE,Corporate,Ihss Limited,1555806,67940.0,HILL 00-03 - Nov 2019 to June 2020.xlsx,1
+2020-01-09 00:00:00,STORES CONTROL,Corporate,Nhs Supply Chain Roarp,1557148,82983.0,HILL 00-03 - Nov 2019 to June 2020.xlsx,1
+2020-01-02 00:00:00,STORES CONTROL,Corporate,Nhs Supply Chain Roarp,1557164,94956.0,HILL 00-03 - Nov 2019 to June 2020.xlsx,1
+2020-01-16 00:00:00,SYSMEX REAGENTS,Pathology,Sysmex Uk Ltd,1557259,190113.0,HILL 00-03 - Nov 2019 to June 2020.xlsx,1
+2020-01-23 00:00:00,DRUGS,Corporate,Enh Pharma Ltd,1557314,36842.0,HILL 00-03 - Nov 2019 to June 2020.xlsx,1
+2020-01-02 00:00:00,NON-NHS AMBULANCE SERVICES,Facilities,Hats Group Ltd,1558115,117373.0,HILL 00-03 - Nov 2019 to June 2020.xlsx,1
+2020-01-10 00:00:00,DRUGS,Corporate,Bayer Plc,1558569,52440.0,HILL 00-03 - Nov 2019 to June 2020.xlsx,1
+2020-01-23 00:00:00,STORES CONTROL,Corporate,Nhs Supply Chain Roarp,1558840,101965.0,HILL 00-03 - Nov 2019 to June 2020.xlsx,1
+2020-01-10 00:00:00,DRUGS,Corporate,Bayer Plc,1558869,26220.0,HILL 00-03 - Nov 2019 to June 2020.xlsx,1
+2020-01-10 00:00:00,DRUGS,Corporate,Janssen-Cilag Ltd,1559668,32450.0,HILL 00-03 - Nov 2019 to June 2020.xlsx,1
+2020-01-28 00:00:00,SYNERGY LAUNDRY CONTRACT,Facilities,Synergy Health Managed Services Ltd,1560765,60005.0,HILL 00-03 - Nov 2019 to June 2020.xlsx,1
+2020-01-02 00:00:00,MEDICAL EQUIPMENT -REPLACEMENT,X Ray,Ge Healthcare,1560891,29802.0,HILL 00-03 - Nov 2019 to June 2020.xlsx,1
+2020-01-02 00:00:00,FINANCE LEASE,Corporate,Bhh Lift Accommodation Services Ltd,1561108,233527.0,HILL 00-03 - Nov 2019 to June 2020.xlsx,1
+2020-01-28 00:00:00,STORES CONTROL,Corporate,Nhs Supply Chain Roarp,1561197,91697.0,HILL 00-03 - Nov 2019 to June 2020.xlsx,1
+2020-01-02 00:00:00,DRUGS,Corporate,Novartis Pharmaceuticals Uk Ltd,1561923,47933.0,HILL 00-03 - Nov 2019 to June 2020.xlsx,1
+2020-01-23 00:00:00,PROFESSIONAL FEES,People And Development,Price Waterhouse Coopers Llp,1562342,159579.0,HILL 00-03 - Nov 2019 to June 2020.xlsx,1
+2020-01-02 00:00:00,DRUGS,Corporate,Novartis Pharmaceuticals Uk Ltd,1562991,58162.0,HILL 00-03 - Nov 2019 to June 2020.xlsx,1
+2020-01-28 00:00:00,CLINICAL WASTE COLLECTION,Estates,Srcl Ltd,1563206,38212.0,HILL 00-03 - Nov 2019 to June 2020.xlsx,1
+2020-01-28 00:00:00,DRUGS,Corporate,Csl Behring,1563243,46830.0,HILL 00-03 - Nov 2019 to June 2020.xlsx,1
+2020-01-10 00:00:00,SSD RECHARGE,Corporate,Ihss Limited,1563461,67940.0,HILL 00-03 - Nov 2019 to June 2020.xlsx,1
+2020-01-14 00:00:00,EXTERNAL AUDIT - FINAL ACCTS,Finance Department,Deloitte Llp,1563830,36360.0,HILL 00-03 - Nov 2019 to June 2020.xlsx,1
+2020-01-16 00:00:00,ELECTRICITY,Estates,Edf Energy,1563841,169499.0,HILL 00-03 - Nov 2019 to June 2020.xlsx,1
+2020-01-16 00:00:00,ELECTRICITY,Estates,Edf Energy,1563847,28246.0,HILL 00-03 - Nov 2019 to June 2020.xlsx,1
+2020-01-10 00:00:00,PROFESSIONAL FEES,Corporate,Ggi Development And Research Llp,1563949,30286.0,HILL 00-03 - Nov 2019 to June 2020.xlsx,1
+2020-01-23 00:00:00,NBS BLOCK CONTRACT,Pathology,Nhs Blood And Transplant,1563969,88715.0,HILL 00-03 - Nov 2019 to June 2020.xlsx,1
+2020-01-16 00:00:00,BECKMAN COULTER CONTRACT,Pathology,Beckman Coulter United Kingdom Ltd,1564108,173452.0,HILL 00-03 - Nov 2019 to June 2020.xlsx,1
+2020-01-02 00:00:00,FINANCE LEASE,Corporate,Siemens Financial Services Ltd,1564189,31195.0,HILL 00-03 - Nov 2019 to June 2020.xlsx,1
+2020-01-16 00:00:00,CT SCANNING,X Ray,Radiology Reporting Online,1564205,47795.0,HILL 00-03 - Nov 2019 to June 2020.xlsx,1
+2020-01-28 00:00:00,LICENCING AND MAINT. ICT INFRA,Ict Directorate,Cdw Ltd,1564422,55139.0,HILL 00-03 - Nov 2019 to June 2020.xlsx,1
+2020-01-28 00:00:00,DRUGS,Corporate,Bayer Plc,1564662,104880.0,HILL 00-03 - Nov 2019 to June 2020.xlsx,1
+2020-01-28 00:00:00,SYSMEX REAGENTS,Pathology,Sysmex Uk Ltd,1564810,190113.0,HILL 00-03 - Nov 2019 to June 2020.xlsx,1
+2020-01-28 00:00:00,CAPITAL BUILDINGS,Capital,Arthur Pollard Ltd,1566216,212922.0,HILL 00-03 - Nov 2019 to June 2020.xlsx,1
+2020-01-28 00:00:00,CAPITAL BUILDINGS,Capital,Pcp Limited,1566430,39163.0,HILL 00-03 - Nov 2019 to June 2020.xlsx,1
+2020-01-28 00:00:00,INTERNAL AUDIT,Finance Department,Kpmg Llp,1566434,26694.0,HILL 00-03 - Nov 2019 to June 2020.xlsx,1
+2020-01-28 00:00:00,INTERNAL AUDIT,Finance Department,Kpmg Llp,1566436,26694.0,HILL 00-03 - Nov 2019 to June 2020.xlsx,1
+2020-01-28 00:00:00,INTERNAL AUDIT,Finance Department,Kpmg Llp,1566439,26694.0,HILL 00-03 - Nov 2019 to June 2020.xlsx,1
+2020-01-28 00:00:00,NON-NHS AMBULANCE SERVICES,Facilities,Hats Group Ltd,1566760,117373.0,HILL 00-03 - Nov 2019 to June 2020.xlsx,1
+2020-01-09 00:00:00,CAPITAL BUILDINGS,Capital,Ramsden Pipework Services Ltd,1566764,35522.0,HILL 00-03 - Nov 2019 to June 2020.xlsx,1
+2020-01-28 00:00:00,PMS RENTAL,Ict Directorate,Silverlink Software Ltd,1566916,105658.0,HILL 00-03 - Nov 2019 to June 2020.xlsx,1
+2020-01-28 00:00:00,DRUGS,Corporate,Novartis Pharmaceuticals Uk Ltd,1567140,53727.0,HILL 00-03 - Nov 2019 to June 2020.xlsx,1
+2020-01-02 00:00:00,MED EQUIP MAINTENANCE CONTRCTS,Medical Specialties,Siemens Financial Services Ltd,1567701,24595.0,HILL 00-03 - Nov 2019 to June 2020.xlsx,1
+2020-01-02 00:00:00,OP LEASE ENDOSCOPY EQUIPMENT,Medical Specialties,Siemens Financial Services Ltd,1567701,65517.0,HILL 00-03 - Nov 2019 to June 2020.xlsx,1
+2020-01-28 00:00:00,COMPTR & PRINTERS MAINTENANCE,Ict Directorate,Advanced Business Solutions,1567752,30690.0,HILL 00-03 - Nov 2019 to June 2020.xlsx,1
+2020-01-23 00:00:00,WATER,Estates,Advanced Demand Side Mngt Ltd,1567815,26556.0,HILL 00-03 - Nov 2019 to June 2020.xlsx,1
+2020-01-28 00:00:00,DRUGS,Corporate,Bayer Plc,1567942,26220.0,HILL 00-03 - Nov 2019 to June 2020.xlsx,1
+2020-01-16 00:00:00,BAXTERS CYTOTOXICS,Pharmacy,Baxter Shared Service & Competencies Ltd,1568091,32171.0,HILL 00-03 - Nov 2019 to June 2020.xlsx,1
+2020-01-28 00:00:00,SYNERGY LAUNDRY CONTRACT,Facilities,Synergy Health Managed Services Ltd,1568745,64434.0,HILL 00-03 - Nov 2019 to June 2020.xlsx,1
+2020-01-28 00:00:00,FINANCE LEASE,Corporate,Bhh Lift Accommodation Services Ltd,1569123,233527.0,HILL 00-03 - Nov 2019 to June 2020.xlsx,1
+2020-01-28 00:00:00,CLINICAL WASTE COLLECTION,Estates,Srcl Ltd,1569508,38212.0,HILL 00-03 - Nov 2019 to June 2020.xlsx,1
+2020-01-23 00:00:00,WATER,Estates,Advanced Demand Side Mngt Ltd,1571145,35203.0,HILL 00-03 - Nov 2019 to June 2020.xlsx,1
+2020-01-28 00:00:00,ELECTRICITY,Estates,Edf Energy,1571228,28669.0,HILL 00-03 - Nov 2019 to June 2020.xlsx,1
+2020-01-28 00:00:00,ELECTRICITY,Estates,Edf Energy,1571229,177609.0,HILL 00-03 - Nov 2019 to June 2020.xlsx,1
+2020-01-28 00:00:00,SSD RECHARGE,Corporate,Ihss Limited,1571458,67940.0,HILL 00-03 - Nov 2019 to June 2020.xlsx,1
+2020-01-23 00:00:00,CAPITAL BUILDINGS,Capital,T & B (Contractors) Ltd,1571545,165660.0,HILL 00-03 - Nov 2019 to June 2020.xlsx,1
+2020-01-23 00:00:00,RECRUITMENT,People And Development,Capsticks Solicitors Llp,1574393,70000.0,HILL 00-03 - Nov 2019 to June 2020.xlsx,1
+22/07/2020,STAFF TRAINING EXPENSES,People And Development,Advance Performance Limited,1607420,38400.0,HILL 03-05 - June to August.xlsx,1
+22/07/2020,COMPTR & PRINTERS MAINTENANCE,Corporate,Advanced Business Solutions,1613667,36828.0,HILL 03-05 - June to August.xlsx,1
+22/07/2020,LICENCING AND MAINT. NON CLIN,Corporate,Advanced Business Solutions,1610935,27139.0,HILL 03-05 - June to August.xlsx,1
+25/06/2020,WATER,Estates,Advanced Demand Side Mngt Ltd,1603551,29710.0,HILL 03-05 - June to August.xlsx,1
+22/07/2020,WATER,Estates,Advanced Demand Side Mngt Ltd,1612186,29778.0,HILL 03-05 - June to August.xlsx,1
+04/06/2020,WATER,Estates,Advanced Demand Side Mngt Ltd,1603528,31021.0,HILL 03-05 - June to August.xlsx,1
+25/06/2020,PNEUMATIC TUBE MAINTENANCE CNT,Operational Serv Directorate,Aerocom (Uk) Ltd,1603516,27030.0,HILL 03-05 - June to August.xlsx,1
+12/06/2020,BAXTERS CYTOTOXICS,Pharmacy,Baxter Shared Service & Competencies Ltd,1603699,28859.0,HILL 03-05 - June to August.xlsx,1
+30/07/2020,BAXTERS CYTOTOXICS,Pharmacy,Baxter Shared Service & Competencies Ltd,1609028,34929.0,HILL 03-05 - June to August.xlsx,1
+04/06/2020,BAXTERS CYTOTOXICS,Pharmacy,Baxter Shared Service & Competencies Ltd,1601295,56803.0,HILL 03-05 - June to August.xlsx,1
+18/06/2020,DRUGS,Corporate,Bayer Plc,1603803,34217.0,HILL 03-05 - June to August.xlsx,1
+16/07/2020,DRUGS,Corporate,Bayer Plc,1608416,54747.0,HILL 03-05 - June to August.xlsx,1
+13/08/2020,DRUGS,Corporate,Bayer Plc,1613325,68434.0,HILL 03-05 - June to August.xlsx,1
+12/06/2020,BECKMAN COULTER CONTRACT,Operational Serv Directorate,Beckman Coulter United Kingdom Ltd,1601296,173452.0,HILL 03-05 - June to August.xlsx,1
+16/07/2020,BECKMAN COULTER CONTRACT,Operational Serv Directorate,Beckman Coulter United Kingdom Ltd,1607564,173452.0,HILL 03-05 - June to August.xlsx,1
+06/08/2020,BECKMAN COULTER CONTRACT,Operational Serv Directorate,Beckman Coulter United Kingdom Ltd,1612228,173452.0,HILL 03-05 - June to August.xlsx,1
+30/07/2020,ADDITIONAL EQUIPMENT,Covid-19 Costs,Bender International Ltd,1614659,55152.0,HILL 03-05 - June to August.xlsx,1
+30/07/2020,ADDITIONAL EQUIPMENT,Covid-19 Costs,Bender International Ltd,1610999,69120.0,HILL 03-05 - June to August.xlsx,1
+30/07/2020,ADDITIONAL EQUIPMENT,Covid-19 Costs,Bender International Ltd,1611000,76032.0,HILL 03-05 - June to August.xlsx,1
+30/07/2020,ADDITIONAL EQUIPMENT,Covid-19 Costs,Bender International Ltd,1611002,87696.0,HILL 03-05 - June to August.xlsx,1
+16/07/2020,STAFF UNIFORMS,Covid-19 Costs,Bender International Ltd,1610982,109848.0,HILL 03-05 - June to August.xlsx,1
+07/07/2020,FINANCE LEASE,Corporate,Bhh Lift Accommodation Services Ltd,1605231,231545.0,HILL 03-05 - June to August.xlsx,1
+09/07/2020,FINANCE LEASE,Corporate,Bhh Lift Accommodation Services Ltd,1610974,231545.0,HILL 03-05 - June to August.xlsx,1
+07/07/2020,FINANCE LEASE,Corporate,Bhh Lift Accommodation Services Ltd,1600338,239263.0,HILL 03-05 - June to August.xlsx,1
+27/08/2020,FINANCE LEASE,Corporate,Bhh Lift Accommodation Services Ltd,1610711,239263.0,HILL 03-05 - June to August.xlsx,1
+20/08/2020,COMPTR & PRINTERS MAINTENANCE,Corporate,Bluewire Technologies,1592385,41976.0,HILL 03-05 - June to August.xlsx,1
+06/08/2020,LICENCES & SUBSCRIPTIONS,Corporate,Brunel University,1611811,26000.0,HILL 03-05 - June to August.xlsx,1
+27/08/2020,MEDICAL EQUIPMENT,Capital,Carl Zeiss Ltd,1609015,232115.0,HILL 03-05 - June to August.xlsx,1
+12/06/2020,CAPITAL IT,Capital,Cdw Ltd,1599585,26220.0,HILL 03-05 - June to August.xlsx,1
+12/06/2020,CAPITAL IT,Capital,Cdw Ltd,1601074,34288.0,HILL 03-05 - June to August.xlsx,1
+12/06/2020,CAPITAL IT,Capital,Cdw Ltd,1600228,41952.0,HILL 03-05 - June to August.xlsx,1
+27/08/2020,MEDICAL EQUIPMENT - NEW,Covid-19 Costs,Charter-Kontron Ltd,1607755,32019.0,HILL 03-05 - June to August.xlsx,1
+25/06/2020,CNWL PODIATRY SERVICE,Unplanned Care Management,Cnwl Nhs Foundation Trust,63971,54731.0,HILL 03-05 - June to August.xlsx,1
+04/06/2020,PSYCHOLOGY SERVICES,Corporate,Cnwl Nhs Foundation Trust,64625,32958.0,HILL 03-05 - June to August.xlsx,1
+25/06/2020,SCI THERAP & TECH: BAND 7,Trauma & Orthopaedics And Pain,Cnwl Nhs Foundation Trust,63972,36671.0,HILL 03-05 - June to August.xlsx,1
+22/07/2020,COMPTR & PRINTERS MAINTENANCE,Covid-19 Costs,Computacenter (Uk) Ltd,1613586,216230.0,HILL 03-05 - June to August.xlsx,1
+04/06/2020,CAPITAL BUILDINGS,Capital,Continuous Improvement Projects Ltd,1600200,34326.0,HILL 03-05 - June to August.xlsx,1
+16/07/2020,DRUGS,Corporate,Csl Behring,1608505,25200.0,HILL 03-05 - June to August.xlsx,1
+20/08/2020,DRUGS,Corporate,Csl Behring,1614405,25200.0,HILL 03-05 - June to August.xlsx,1
+16/07/2020,CAPITAL IT,Capital,Dacoll Ltd,1594158,70009.0,HILL 03-05 - June to August.xlsx,1
+16/07/2020,CAPITAL IT,Capital,Dacoll Ltd,1599531,105048.0,HILL 03-05 - June to August.xlsx,1
+20/08/2020,DRUGS,Corporate,Dialachemist Ltd T/A Springmed Solutions,1614406,29160.0,HILL 03-05 - June to August.xlsx,1
+30/07/2020,CONTRACTORS MAINTENANCE,Covid-19 Costs,E S Moss (Watford) Ltd,1611412,25776.0,HILL 03-05 - June to August.xlsx,1
+30/07/2020,CONSULTANT,"Rheum, Pall , Oncol,Heam, Neur",East & North Herts Nhs Trust,62145,28045.0,HILL 03-05 - June to August.xlsx,1
+25/06/2020,DRUGS,Pharmacy,East & North Herts Nhs Trust,65148,63998.0,HILL 03-05 - June to August.xlsx,1
+30/07/2020,DRUGS,Pharmacy,East & North Herts Nhs Trust,65351,71831.0,HILL 03-05 - June to August.xlsx,1
+16/07/2020,DRUGS,Pharmacy,East & North Herts Nhs Trust,65195,72163.0,HILL 03-05 - June to August.xlsx,1
+02/07/2020,DRUGS,Pharmacy,East & North Herts Nhs Trust,64613,79092.0,HILL 03-05 - June to August.xlsx,1
+02/07/2020,DRUGS,Pharmacy,East & North Herts Nhs Trust,64342,82625.0,HILL 03-05 - June to August.xlsx,1
+12/06/2020,ELECTRICITY,Estates,Edf Energy,1602741,25199.0,HILL 03-05 - June to August.xlsx,1
+23/07/2020,ELECTRICITY,Estates,Edf Energy,1606167,25816.0,HILL 03-05 - June to August.xlsx,1
+23/07/2020,ELECTRICITY,Estates,Edf Energy,1611053,26247.0,HILL 03-05 - June to August.xlsx,1
+12/06/2020,ELECTRICITY,Estates,Edf Energy,1594780,28944.0,HILL 03-05 - June to August.xlsx,1
+30/07/2020,ELECTRICITY,Operational Serv Directorate,Edf Energy,1606725,30616.0,HILL 03-05 - June to August.xlsx,1
+30/07/2020,ELECTRICITY,Estates,Edf Energy,1606725,122095.0,HILL 03-05 - June to August.xlsx,1
+12/06/2020,ELECTRICITY,Estates,Edf Energy,1602414,128671.0,HILL 03-05 - June to August.xlsx,1
+30/07/2020,ELECTRICITY,Estates,Edf Energy,1611823,142747.0,HILL 03-05 - June to August.xlsx,1
+04/06/2020,ELECTRICITY,Estates,Edf Energy,1596880,148314.0,HILL 03-05 - June to August.xlsx,1
+09/07/2020,MEDICAL EQUIPMENT,Capital,Erbe Medical Uk Ltd,1606641,28009.0,HILL 03-05 - June to August.xlsx,1
+02/07/2020,MED EQUIP MAINTENANCE CONTRCTS,X Ray,Fujifilm (Uk) Ltd,1598360,35760.0,HILL 03-05 - June to August.xlsx,1
+30/06/2020,MEDICAL EQUIPMENT - NEW,Covid-19 Costs,Full Support Healthcare Ltd,1610278,-69357.0,HILL 03-05 - June to August.xlsx,-1
+20/08/2020,CAPITAL BUILDINGS,Capital,Ggi Development And Research Llp,1617486,32314.0,HILL 03-05 - June to August.xlsx,1
+04/06/2020,CONSULTANCY FEES,Corporate,Ggi Development And Research Llp,1598072,40290.0,HILL 03-05 - June to August.xlsx,1
+16/07/2020,CONSULTANCY FEES,Corporate,Ggi Development And Research Llp,1606521,40432.0,HILL 03-05 - June to August.xlsx,1
+16/07/2020,CAPITAL BUILDINGS,Capital,Hastingwood Contracts,1607417,67234.0,HILL 03-05 - June to August.xlsx,1
+25/06/2020,NON-NHS AMBULANCE SERVICES,Covid-19 Costs,Hats Group Ltd,1603754,31074.0,HILL 03-05 - June to August.xlsx,1
+12/06/2020,NON-NHS AMBULANCE SERVICES,Covid-19 Costs,Hats Group Ltd,1600679,48324.0,HILL 03-05 - June to August.xlsx,1
+04/06/2020,NON-NHS AMBULANCE SERVICES,Covid-19 Costs,Hats Group Ltd,1598052,60464.0,HILL 03-05 - June to August.xlsx,1
+04/06/2020,NON-NHS AMBULANCE SERVICES,Facilities,Hats Group Ltd,1602430,117373.0,HILL 03-05 - June to August.xlsx,1
+04/06/2020,NON-NHS AMBULANCE SERVICES,Facilities,Hats Group Ltd,1602431,117373.0,HILL 03-05 - June to August.xlsx,1
+25/06/2020,NON-NHS AMBULANCE SERVICES,Facilities,Hats Group Ltd,1604016,117373.0,HILL 03-05 - June to August.xlsx,1
+22/07/2020,NON-NHS AMBULANCE SERVICES,Facilities,Hats Group Ltd,1608229,117373.0,HILL 03-05 - June to August.xlsx,1
+27/08/2020,NON-NHS AMBULANCE SERVICES,Facilities,Hats Group Ltd,1614013,117373.0,HILL 03-05 - June to August.xlsx,1
+16/07/2020,CAPITAL BUILDINGS,Capital,Ibi Group (Uk)Ltd,1599065,47709.0,HILL 03-05 - June to August.xlsx,1
+25/06/2020,CAPITAL BUILDINGS,Capital,Ibi Group (Uk)Ltd,1606032,48000.0,HILL 03-05 - June to August.xlsx,1
+25/06/2020,SECURITY EQUIPMENT,Facilities,Ic2 Cctv & Security Specialists Uk Ltd,1605885,29835.0,HILL 03-05 - June to August.xlsx,1
+30/07/2020,SSD RECHARGE,Corporate,Ihss Limited,1612985,69609.0,HILL 03-05 - June to August.xlsx,1
+30/07/2020,SSD RECHARGE,Corporate,Ihss Limited,1612986,69609.0,HILL 03-05 - June to August.xlsx,1
+30/07/2020,SSD RECHARGE,Corporate,Ihss Limited,1612987,69609.0,HILL 03-05 - June to August.xlsx,1
+30/07/2020,SSD RECHARGE,Corporate,Ihss Limited,1612696,70079.0,HILL 03-05 - June to August.xlsx,1
+04/06/2020,DIRECTOR OF FINANCE,Corporate,Insight Executive Group Ltd,1604566,35947.0,HILL 03-05 - June to August.xlsx,1
+25/06/2020,MEDICAL EQUIPMENT,Capital,Karl Storz Endoscopy (Uk) Ltd,1599694,-53230.0,HILL 03-05 - June to August.xlsx,-1
+20/08/2020,MEDICAL EQUIPMENT,Capital,Lawmed Ltd,1613610,30523.0,HILL 03-05 - June to August.xlsx,1
+20/08/2020,MEDICAL EQUIPMENT,Capital,Lawmed Ltd,1613600,71442.0,HILL 03-05 - June to August.xlsx,1
+02/07/2020,BUSINESS RATES,Estates,London Borough Of Hillingdon,1594682,46018.0,HILL 03-05 - June to August.xlsx,1
+30/07/2020,BUSINESS RATES,Estates,London Borough Of Hillingdon,1594683,46018.0,HILL 03-05 - June to August.xlsx,1
+27/08/2020,BUSINESS RATES,Estates,London Borough Of Hillingdon,1594684,46018.0,HILL 03-05 - June to August.xlsx,1
+02/07/2020,BUSINESS RATES,Estates,London Borough Of Hillingdon,1594673,55328.0,HILL 03-05 - June to August.xlsx,1
+30/07/2020,BUSINESS RATES,Estates,London Borough Of Hillingdon,1594674,55328.0,HILL 03-05 - June to August.xlsx,1
+27/08/2020,BUSINESS RATES,Estates,London Borough Of Hillingdon,1594675,55328.0,HILL 03-05 - June to August.xlsx,1
+16/07/2020,RENT SLOUGH VANBURGH COURT,Corporate,Mackenzie(Stoke Road) Ltd,1612361,56250.0,HILL 03-05 - June to August.xlsx,1
+04/06/2020,CONSULTANCY FEES,Corporate,Mbi Healthcare Technologies Ltd,1600066,55680.0,HILL 03-05 - June to August.xlsx,1
+18/06/2020,CAPITAL BUILDINGS,Capital,Me Construction Ltd,1605973,216000.0,HILL 03-05 - June to August.xlsx,1
+04/06/2020,SYSMEX REAGENTS,Operational Serv Directorate,Meridian Cost Benefit Ltd,1587381,60554.0,HILL 03-05 - June to August.xlsx,1
+12/06/2020,MANAGEMENT FEE,Facilities,Metropolitan Housing Trust Limited,1606220,74766.0,HILL 03-05 - June to August.xlsx,1
+27/08/2020,RENT - PILOT WARD,Corporate,Moduleco Healthcare Ltd,1613907,357115.0,HILL 03-05 - June to August.xlsx,1
+12/06/2020,CAPITAL BUILDINGS,Capital,Mtx Contracts Limited,1604040,243225.0,HILL 03-05 - June to August.xlsx,1
+11/08/2020,CAPITAL BUILDINGS,Capital,Mtx Contracts Limited,1604453,785176.0,HILL 03-05 - June to August.xlsx,1
+12/06/2020,CAPITAL BUILDINGS,Capital,Mtx Contracts Limited,1604039,1017618.0,HILL 03-05 - June to August.xlsx,1
+11/08/2020,CAPITAL BUILDINGS,Capital,Mtx Contracts Limited,1617183,1019568.0,HILL 03-05 - June to August.xlsx,1
+18/06/2020,LICENCING AND MAINT. ICT INFRA,Corporate,Netconnection Systems Ltd,1600091,34596.0,HILL 03-05 - June to August.xlsx,1
+02/07/2020,NBS BLOCK CONTRACT,Operational Serv Directorate,Nhs Blood And Transplant,1595916,97041.0,HILL 03-05 - June to August.xlsx,1
+09/07/2020,NBS BLOCK CONTRACT,Operational Serv Directorate,Nhs Blood And Transplant,1602557,97041.0,HILL 03-05 - June to August.xlsx,1
+16/07/2020,NBS BLOCK CONTRACT,Operational Serv Directorate,Nhs Blood And Transplant,1608374,97041.0,HILL 03-05 - June to August.xlsx,1
+20/08/2020,NBS BLOCK CONTRACT,Operational Serv Directorate,Nhs Blood And Transplant,1612597,97041.0,HILL 03-05 - June to August.xlsx,1
+23/06/2020,CNST PREMIUM,Nursing,Nhs Resolution,65325,1111542.0,HILL 03-05 - June to August.xlsx,1
+27/07/2020,CNST PREMIUM,Nursing,Nhs Resolution,65476,1111542.0,HILL 03-05 - June to August.xlsx,1
+18/08/2020,CNST PREMIUM,Nursing,Nhs Resolution,65741,1111542.0,HILL 03-05 - June to August.xlsx,1
+23/06/2020,LTPS PREMIUM,Corporate,Nhs Resolution,65325,12537.0,HILL 03-05 - June to August.xlsx,1
+27/07/2020,LTPS PREMIUM,Corporate,Nhs Resolution,65476,12537.0,HILL 03-05 - June to August.xlsx,1
+18/08/2020,LTPS PREMIUM,Corporate,Nhs Resolution,65741,12537.0,HILL 03-05 - June to August.xlsx,1
+23/06/2020,PES PREMIUM,Estates,Nhs Resolution,65325,1846.0,HILL 03-05 - June to August.xlsx,1
+27/07/2020,PES PREMIUM,Estates,Nhs Resolution,65476,1846.0,HILL 03-05 - June to August.xlsx,1
+18/08/2020,PES PREMIUM,Estates,Nhs Resolution,65741,1846.0,HILL 03-05 - June to August.xlsx,1
+02/07/2020,STORES,Corporate,Nhs Supply Chain Roarp,1605168,33993.0,HILL 03-05 - June to August.xlsx,1
+12/06/2020,STORES,Corporate,Nhs Supply Chain Roarp,1601108,39632.0,HILL 03-05 - June to August.xlsx,1
+20/08/2020,STORES,Corporate,Nhs Supply Chain Roarp,1613913,40655.0,HILL 03-05 - June to August.xlsx,1
+18/06/2020,STORES,Corporate,Nhs Supply Chain Roarp,1602745,42054.0,HILL 03-05 - June to August.xlsx,1
+02/07/2020,STORES,Corporate,Nhs Supply Chain Roarp,1603698,42370.0,HILL 03-05 - June to August.xlsx,1
+27/08/2020,STORES,Corporate,Nhs Supply Chain Roarp,1614613,42702.0,HILL 03-05 - June to August.xlsx,1
+22/07/2020,STORES,Corporate,Nhs Supply Chain Roarp,1608593,48261.0,HILL 03-05 - June to August.xlsx,1
+12/06/2020,STORES,Corporate,Nhs Supply Chain Roarp,1600168,48781.0,HILL 03-05 - June to August.xlsx,1
+16/07/2020,STORES,Corporate,Nhs Supply Chain Roarp,1607448,49567.0,HILL 03-05 - June to August.xlsx,1
+06/08/2020,STORES,Corporate,Nhs Supply Chain Roarp,1611035,52233.0,HILL 03-05 - June to August.xlsx,1
+20/08/2020,STORES,Corporate,Nhs Supply Chain Roarp,1612680,55583.0,HILL 03-05 - June to August.xlsx,1
+22/07/2020,DRUGS,Corporate,Novartis Pharmaceuticals Uk Ltd,1613363,38465.0,HILL 03-05 - June to August.xlsx,1
+25/06/2020,DRUGS,Corporate,Novartis Pharmaceuticals Uk Ltd,1604930,48081.0,HILL 03-05 - June to August.xlsx,1
+06/08/2020,DRUGS,Corporate,Novartis Pharmaceuticals Uk Ltd,1611348,48081.0,HILL 03-05 - June to August.xlsx,1
+12/06/2020,MED EQUIP MAINTENANCE CONTRCTS,Theatres And Anaesthetics,Olympus Keymed,1597061,42909.0,HILL 03-05 - June to August.xlsx,1
+11/08/2020,CAPITAL BUILDINGS,Capital,Pcp Limited,1617302,183425.0,HILL 03-05 - June to August.xlsx,1
+11/08/2020,CAPITAL BUILDINGS,Capital,Pcp Limited,1609060,203959.0,HILL 03-05 - June to August.xlsx,1
+27/08/2020,PROFESSIONAL FEES,Covid-19 Costs,Pcp Limited,1613645,99672.0,HILL 03-05 - June to August.xlsx,1
+02/07/2020,PROFESSIONAL FEES,Covid-19 Costs,Pcp Limited,1605028,343100.0,HILL 03-05 - June to August.xlsx,1
+16/07/2020,CT SCANNING,X Ray,Radiology Reporting Online,1602582,34551.0,HILL 03-05 - June to August.xlsx,1
+16/07/2020,CT SCANNING,X Ray,Radiology Reporting Online,1607305,44633.0,HILL 03-05 - June to August.xlsx,1
+16/07/2020,M.R.I.,X Ray,Radiology Reporting Online,1602582,1065.0,HILL 03-05 - June to August.xlsx,1
+27/08/2020,M.R.I.,X Ray,Radiology Reporting Online,1612333,43457.0,HILL 03-05 - June to August.xlsx,1
+02/07/2020,FEES FOR TESTS,Cardio Gastro Rheum Resp Neuro,Royal Brompton & Harefield Nhs Ft,64098,57575.0,HILL 03-05 - June to August.xlsx,1
+04/06/2020,SPECIALTY REG CT/ST 1/2,Corporate,Royal Free London Nhs Foundation Trust,64666,67881.0,HILL 03-05 - June to August.xlsx,1
+02/07/2020,SPECIALTY REG CT/ST 1/2,Corporate,Royal Free London Nhs Foundation Trust,65146,71087.0,HILL 03-05 - June to August.xlsx,1
+02/07/2020,SPECIALTY REG CT/ST 1/2,Corporate,Royal Free London Nhs Foundation Trust,64996,72305.0,HILL 03-05 - June to August.xlsx,1
+04/06/2020,SPECIALTY REG CT/ST 1/2,Corporate,Royal Free London Nhs Foundation Trust,64402,72965.0,HILL 03-05 - June to August.xlsx,1
+04/06/2020,SPECIALTY REG CT/ST 1/2,Corporate,Royal Free London Nhs Foundation Trust,63921,100498.0,HILL 03-05 - June to August.xlsx,1
+27/08/2020,PACS MAINTENANCE,Corporate,Sectra Ltd,1612362,108982.0,HILL 03-05 - June to August.xlsx,1
+25/06/2020,PC HARDWARE,Covid-19 Costs,Sectra Ltd,1605197,80218.0,HILL 03-05 - June to August.xlsx,1
+13/08/2020,CAPITAL BUILDINGS,Capital,Shj Hospital Pipelines Ltd,1612683,69547.0,HILL 03-05 - June to August.xlsx,1
+11/08/2020,CAPITAL BUILDINGS,Capital,Shl Refractories (Uk) Ltd,1600423,119258.0,HILL 03-05 - June to August.xlsx,1
+13/08/2020,MEDICAL EQUIPMENT,Capital,Siemens Financial Services Ltd,1616747,45789.0,HILL 03-05 - June to August.xlsx,1
+13/08/2020,FINANCE LEASE,Corporate,Siemens Financial Services Ltd,1608396,31195.0,HILL 03-05 - June to August.xlsx,1
+25/06/2020,FINANCE LEASE,Corporate,Siemens Financial Services Ltd,1600377,45789.0,HILL 03-05 - June to August.xlsx,1
+25/06/2020,MED EQUIP MAINTENANCE CONTRCTS,X Ray,Siemens Financial Services Ltd,1600377,18270.0,HILL 03-05 - June to August.xlsx,1
+13/08/2020,MED EQUIP MAINTENANCE CONTRCTS,X Ray,Siemens Financial Services Ltd,1616747,18270.0,HILL 03-05 - June to August.xlsx,1
+25/06/2020,MED EQUIP MAINTENANCE CONTRCTS,Cardio Gastro Rheum Resp Neuro,Siemens Financial Services Ltd,1599589,24420.0,HILL 03-05 - June to August.xlsx,1
+25/06/2020,OP LEASE ENDOSCOPY EQUIPMENT,Cardio Gastro Rheum Resp Neuro,Siemens Financial Services Ltd,1599589,65517.0,HILL 03-05 - June to August.xlsx,1
+20/08/2020,PMS RENTAL,Corporate,Silverlink Software Ltd,1608225,105658.0,HILL 03-05 - June to August.xlsx,1
+20/08/2020,CAPITAL IT,Capital,Soliton Limited,1614008,41166.0,HILL 03-05 - June to August.xlsx,1
+16/07/2020,CLINICAL WASTE COLLECTION,Estates,Srcl Ltd,1605368,38862.0,HILL 03-05 - June to August.xlsx,1
+22/07/2020,CLINICAL WASTE COLLECTION,Estates,Srcl Ltd,1611027,38862.0,HILL 03-05 - June to August.xlsx,1
+20/08/2020,CLINICAL WASTE COLLECTION,Estates,Srcl Ltd,1616735,38862.0,HILL 03-05 - June to August.xlsx,1
+25/06/2020,SYNERGY LAUNDRY CONTRACT,Facilities,Synergy Health Managed Services Ltd,1605229,39149.0,HILL 03-05 - June to August.xlsx,1
+27/08/2020,SYNERGY LAUNDRY CONTRACT,Facilities,Synergy Health Managed Services Ltd,1610628,44383.0,HILL 03-05 - June to August.xlsx,1
+06/08/2020,SYSMEX REAGENTS,Operational Serv Directorate,Sysmex Uk Ltd,1611848,105566.0,HILL 03-05 - June to August.xlsx,1
+18/06/2020,SYSMEX REAGENTS,Operational Serv Directorate,Sysmex Uk Ltd,1602588,179821.0,HILL 03-05 - June to August.xlsx,1
+02/07/2020,SYSMEX REAGENTS,Operational Serv Directorate,Sysmex Uk Ltd,1605877,179821.0,HILL 03-05 - June to August.xlsx,1
+09/07/2020,CAPITAL BUILDINGS,Capital,T & B (Contractors) Ltd,1605837,31413.0,HILL 03-05 - June to August.xlsx,1
+30/07/2020,CAPITAL BUILDINGS,Capital,T&S Environment Ltd,1610799,53760.0,HILL 03-05 - June to August.xlsx,1
+04/06/2020,PROFESSIONAL FEES,Finance Department,Tenwell Innovations Ltd,1602931,66216.0,HILL 03-05 - June to August.xlsx,1
+13/08/2020,PROFESSIONAL FEES,Finance Department,Tenwell Innovations Ltd,1615649,66216.0,HILL 03-05 - June to August.xlsx,1
+13/08/2020,PROFESSIONAL FEES,Finance Department,Tenwell Innovations Ltd,1615651,66216.0,HILL 03-05 - June to August.xlsx,1
+09/07/2020,MEDICAL EQUIPMENT,Capital,Verathon Medical (Uk) Ltd,1593245,90240.0,HILL 03-05 - June to August.xlsx,1
+30/07/2020,INSURANCE,Corporate,Willis Ltd,1609123,201600.0,HILL 03-05 - June to August.xlsx,1
+2020-11-05 00:00:00,BECKMAN COULTER CONTRACT,Operational Serv Directorate,Beckman Coulter United Kingdom Ltd,1630303,173452.0,HILL 06-09 - September to November.xlsx,1
+2020-11-05 00:00:00,CAPITAL BUILDINGS,Capital,Me Construction Ltd,1626342,168943.0,HILL 06-09 - September to November.xlsx,1
+2020-11-05 00:00:00,CAPITAL BUILDINGS,Capital,Tenwell Innovations Ltd,1631630,106125.0,HILL 06-09 - September to November.xlsx,1
+2020-11-05 00:00:00,CAPITAL EBME,Capital,Fujifilm Sonosite Ltd,1628544,75348.0,HILL 06-09 - September to November.xlsx,1
+2020-11-05 00:00:00,COMPTR & PRINTERS MAINTENANCE,Corporate,Intersystems Corporation,1617522,26029.0,HILL 06-09 - September to November.xlsx,1
+2020-11-05 00:00:00,ELECTRICITY,Estates,Edf Energy,1628743,150783.0,HILL 06-09 - September to November.xlsx,1
+2020-11-05 00:00:00,ELECTRICITY,Estates,Edf Energy,1628803,26692.0,HILL 06-09 - September to November.xlsx,1
+2020-11-05 00:00:00,FINANCE LEASE,Corporate,Siemens Financial Services Ltd,1633720,45789.0,HILL 06-09 - September to November.xlsx,1
+2020-11-05 00:00:00,MED EQUIP MAINTENANCE CONTRCTS,Cardio Gastro Rheum Resp Neuro,Siemens Financial Services Ltd,1633723,24420.0,HILL 06-09 - September to November.xlsx,1
+2020-11-05 00:00:00,OP LEASE ENDOSCOPY EQUIPMENT,Cardio Gastro Rheum Resp Neuro,Siemens Financial Services Ltd,1633723,65517.0,HILL 06-09 - September to November.xlsx,1
+2020-11-05 00:00:00,PMS RENTAL,Corporate,Silverlink Software Ltd,1624284,105658.0,HILL 06-09 - September to November.xlsx,1
+2020-11-05 00:00:00,PMS RENTAL,Corporate,Silverlink Software Ltd,1624286,36613.0,HILL 06-09 - September to November.xlsx,1
+2020-11-05 00:00:00,RENT SLOUGH VANBURGH COURT,Corporate,Mackenzie(Stoke Road) Ltd,1631341,56250.0,HILL 06-09 - September to November.xlsx,1
+2020-11-05 00:00:00,SYNERGY LAUNDRY CONTRACT,Facilities,Synergy Health Managed Services Ltd,1627234,55941.0,HILL 06-09 - September to November.xlsx,1
+2020-11-05 00:00:00,SYSMEX REAGENTS,Operational Serv Directorate,Sysmex Uk Ltd,1627986,179821.0,HILL 06-09 - September to November.xlsx,1
+2020-11-12 00:00:00,CAPITAL BUILDINGS,Capital,Continuous Improvement Projects Ltd,1628494,34929.0,HILL 06-09 - September to November.xlsx,1
+2020-11-12 00:00:00,DRUGS,Corporate,Bayer Plc,1630755,54747.0,HILL 06-09 - September to November.xlsx,1
+2020-11-12 00:00:00,DRUGS,Corporate,Csl Behring,1629100,25200.0,HILL 06-09 - September to November.xlsx,1
+2020-11-12 00:00:00,DRUGS,Corporate,Novartis Pharmaceuticals Uk Ltd,1629127,48152.0,HILL 06-09 - September to November.xlsx,1
+2020-11-12 00:00:00,HEALTH AND SAFETY,Central Budgets,Full Support Healthcare Ltd,1624001,63325.0,HILL 06-09 - September to November.xlsx,1
+2020-11-12 00:00:00,LICENCES & SUBSCRIPTIONS,Corporate,Brunel University,1628809,26000.0,HILL 06-09 - September to November.xlsx,1
+2020-11-12 00:00:00,MEDICAL EQUIPMENT - NEW,Central Budgets,Nikkiso Belgium Bvba,1635447,80017.0,HILL 06-09 - September to November.xlsx,1
+2020-11-12 00:00:00,WATER,Estates,Advanced Demand Side Mngt Ltd,1627706,29852.0,HILL 06-09 - September to November.xlsx,1
+2020-11-19 00:00:00,CAPITAL BUILDINGS,Capital,Couch Perry & Wilkes Llp,1634038,54696.0,HILL 06-09 - September to November.xlsx,1
+2020-11-19 00:00:00,CAPITAL BUILDINGS,Capital,Me Construction Ltd,1631854,60712.0,HILL 06-09 - September to November.xlsx,1
+2020-11-19 00:00:00,CAPITAL BUILDINGS,Capital,Pcp Limited,1628441,258163.0,HILL 06-09 - September to November.xlsx,1
+2020-11-19 00:00:00,CAPITAL BUILDINGS,Capital,Pcp Limited,1632485,128159.0,HILL 06-09 - September to November.xlsx,1
+2020-11-19 00:00:00,CAPITAL BUILDINGS,Capital,Tenwell Innovations Ltd,1634620,108135.0,HILL 06-09 - September to November.xlsx,1
+2020-11-19 00:00:00,CONTRACTORS MAINTENANCE,Central Budgets,Drayton Fencing,1632954,30637.0,HILL 06-09 - September to November.xlsx,1
+2020-11-19 00:00:00,INTERNAL AUDIT,Finance Department,Kpmg Llp,1636518,26667.0,HILL 06-09 - September to November.xlsx,1
+2020-11-19 00:00:00,MED EQUIP MAINTENANCE CONTRCTS,Corporate,Maintel Europe Ltd,1633637,74541.0,HILL 06-09 - September to November.xlsx,1
+2020-11-19 00:00:00,NBS BLOCK CONTRACT,Operational Serv Directorate,Nhs Blood And Transplant,1630490,97041.0,HILL 06-09 - September to November.xlsx,1
+2020-11-19 00:00:00,NON-NHS AMBULANCE SERVICES,Facilities,Hats Group Ltd,1631859,117373.0,HILL 06-09 - September to November.xlsx,1
+2020-11-19 00:00:00,SYNERGY LAUNDRY CONTRACT,Facilities,Synergy Health Managed Services Ltd,1634056,60127.0,HILL 06-09 - September to November.xlsx,1
+2020-11-19 00:00:00,TOP-UP OF FRANKING MACHINE,Facilities,Pitney Bowes Purchase Power,1636828,25398.0,HILL 06-09 - September to November.xlsx,1
+2020-11-20 00:00:00,CNST PREMIUM,Nursing,Nhs Resolution,66474,1111541.0,HILL 06-09 - September to November.xlsx,1
+2020-11-20 00:00:00,LTPS PREMIUM,Corporate,Nhs Resolution,66474,12537.0,HILL 06-09 - September to November.xlsx,1
+2020-11-20 00:00:00,PES PREMIUM,Estates,Nhs Resolution,66474,1846.0,HILL 06-09 - September to November.xlsx,1
+2020-11-26 00:00:00,BECKMAN COULTER CONTRACT,Operational Serv Directorate,Beckman Coulter United Kingdom Ltd,1624000,173452.0,HILL 06-09 - September to November.xlsx,1
+2020-11-26 00:00:00,CAPITAL BUILDINGS,Capital,Aecom Ltd,1631850,45600.0,HILL 06-09 - September to November.xlsx,1
+2020-11-26 00:00:00,CAPITAL BUILDINGS,Capital,Ibi Group (Uk)Ltd,1631810,66000.0,HILL 06-09 - September to November.xlsx,1
+2020-11-26 00:00:00,CAPITAL BUILDINGS,Capital,Western Building Systems Ltd,1631847,230679.0,HILL 06-09 - September to November.xlsx,1
+2020-11-26 00:00:00,CAPITAL IT,Capital,Computacenter (Uk) Ltd,1617572,57542.0,HILL 06-09 - September to November.xlsx,1
+2020-11-26 00:00:00,CLINICAL WASTE COLLECTION,Estates,Srcl Ltd,1635346,38862.0,HILL 06-09 - September to November.xlsx,1
+2020-11-26 00:00:00,CT SCANNING,X Ray,Radiology Reporting Online,1628847,49797.0,HILL 06-09 - September to November.xlsx,1
+2020-11-26 00:00:00,ELECTRICITY,Estates,Edf Energy,1623338,136105.0,HILL 06-09 - September to November.xlsx,1
+2020-11-26 00:00:00,FEES FOR TESTS,Cardio Gastro Rheum Resp Neuro,Royal Brompton & Harefield Nhs Ft,66205,46901.0,HILL 06-09 - September to November.xlsx,1
+2020-11-26 00:00:00,MED EQUIP MAINTENANCE CONTRCTS,Corporate,Logicalis Uk Ltd,1630368,39808.0,HILL 06-09 - September to November.xlsx,1
+2020-11-26 00:00:00,MEDICAL & SURGICAL (NON-STOCK),Central Budgets,Charter-Kontron Ltd,1624667,34351.0,HILL 06-09 - September to November.xlsx,1
+2020-09-03 00:00:00,CAPITAL BUILDINGS,Capital,Middlesex Flooring Ltd,1616240,39775.0,HILL 06-09 - September to November.xlsx,1
+2020-09-03 00:00:00,CAPITAL BUILDINGS,Capital,Pa Consulting,1618251,89992.0,HILL 06-09 - September to November.xlsx,1
+2020-09-03 00:00:00,CAPITAL BUILDINGS,Capital,Ridge & Partners,1617013,28924.0,HILL 06-09 - September to November.xlsx,1
+2020-09-03 00:00:00,DIRECTOR OF FINANCE,Corporate,Insight Executive Group Ltd,1610275,31089.0,HILL 06-09 - September to November.xlsx,1
+2020-09-03 00:00:00,DRUGS,Corporate,Bayer Plc,1617200,68434.0,HILL 06-09 - September to November.xlsx,1
+2020-09-03 00:00:00,DRUGS,Corporate,Novartis Pharmaceuticals Uk Ltd,1615699,72122.0,HILL 06-09 - September to November.xlsx,1
+2020-09-03 00:00:00,PC SOFTWARE,People And Development,Softcat Ltd,1615955,122869.0,HILL 06-09 - September to November.xlsx,1
+2020-09-03 00:00:00,RECH. FROM E&N HERTS PHARMACY,Pharmacy,East & North Herts Nhs Trust,65627,64247.0,HILL 06-09 - September to November.xlsx,1
+2020-09-03 00:00:00,SPECIALTY REG CT/ST 1/2,Central Budgets,Royal Free London Nhs Foundation Trust,65628,59399.0,HILL 06-09 - September to November.xlsx,1
+2020-09-03 00:00:00,SYNERGY LAUNDRY CONTRACT,Facilities,Synergy Health Managed Services Ltd,1617573,40621.0,HILL 06-09 - September to November.xlsx,1
+2020-09-03 00:00:00,SYSMEX REAGENTS,Operational Serv Directorate,Sysmex Uk Ltd,1616257,105566.0,HILL 06-09 - September to November.xlsx,1
+2020-09-10 00:00:00,BECKMAN COULTER CONTRACT,Operational Serv Directorate,Beckman Coulter United Kingdom Ltd,1617931,173452.0,HILL 06-09 - September to November.xlsx,1
+2020-09-10 00:00:00,CLINICAL WASTE COLLECTION,Estates,Srcl Ltd,1621703,38862.0,HILL 06-09 - September to November.xlsx,1
+2020-09-10 00:00:00,ELECTRICITY,Estates,Edf Energy,1616575,26902.0,HILL 06-09 - September to November.xlsx,1
+2020-09-10 00:00:00,MINOR OFFICE EQUIPMENT,Central Budgets,Korn Wall Ltd,1618585,28200.0,HILL 06-09 - September to November.xlsx,1
+2020-09-10 00:00:00,PROFESSIONAL FEES,Corporate,Nhs North Of England Csu,65563,50000.0,HILL 06-09 - September to November.xlsx,1
+2020-09-10 00:00:00,SPECIALTY REG CT/ST 1/2,Central Budgets,Royal Free London Nhs Foundation Trust,65308,74948.0,HILL 06-09 - September to November.xlsx,1
+2020-09-10 00:00:00,WATER,Estates,Advanced Demand Side Mngt Ltd,1616734,25631.0,HILL 06-09 - September to November.xlsx,1
+2020-09-17 00:00:00,CAPITAL BUILDINGS,Capital,Pcp Limited,1620793,36066.0,HILL 06-09 - September to November.xlsx,1
+2020-09-17 00:00:00,DRUGS,Corporate,Bayer Plc,1619256,45622.0,HILL 06-09 - September to November.xlsx,1
+2020-09-17 00:00:00,DRUGS,Corporate,Celgene Ltd,1620351,28304.0,HILL 06-09 - September to November.xlsx,1
+2020-09-17 00:00:00,DRUGS,Corporate,Csl Behring,1619719,25200.0,HILL 06-09 - September to November.xlsx,1
+2020-09-17 00:00:00,ELECTRICITY,Estates,Edf Energy,1617300,147551.0,HILL 06-09 - September to November.xlsx,1
+2020-09-17 00:00:00,NBS BLOCK CONTRACT,Operational Serv Directorate,Nhs Blood And Transplant,1618305,97041.0,HILL 06-09 - September to November.xlsx,1
+2020-09-17 00:00:00,SPECIALTY REG CT/ST 1/2,Central Budgets,Royal Free London Nhs Foundation Trust,65490,64506.0,HILL 06-09 - September to November.xlsx,1
+2020-09-17 00:00:00,SPECIALTY REG CT/ST 1/2,Central Budgets,Royal Free London Nhs Foundation Trust,65920,71248.0,HILL 06-09 - September to November.xlsx,1
+2020-09-17 00:00:00,STORES,Corporate,Nhs Supply Chain Roarp,1609779,81419.0,HILL 06-09 - September to November.xlsx,1
+2020-09-17 00:00:00,STORES,Corporate,Nhs Supply Chain Roarp,1616334,70547.0,HILL 06-09 - September to November.xlsx,1
+2020-09-24 00:00:00,CAPITAL BUILDINGS,Capital,Llewelyn Davies Weeks Ltd,1621399,59097.0,HILL 06-09 - September to November.xlsx,1
+2020-09-24 00:00:00,DRUGS,Corporate,Novartis Pharmaceuticals Uk Ltd,1620380,86708.0,HILL 06-09 - September to November.xlsx,1
+2020-09-24 00:00:00,FINANCE LEASE,Corporate,Siemens Financial Services Ltd,1624638,31195.0,HILL 06-09 - September to November.xlsx,1
+2020-09-24 00:00:00,LICENCING AND MAINT. ICT INFRA,Corporate,Exponential-E Ltd,1604429,43792.0,HILL 06-09 - September to November.xlsx,1
+2020-09-24 00:00:00,PROFESSIONAL FEES,Central Budgets,Pcp Limited,1619215,36000.0,HILL 06-09 - September to November.xlsx,1
+2020-09-24 00:00:00,PROFESSIONAL FEES,Finance Department,Tenwell Innovations Ltd,1619661,66216.0,HILL 06-09 - September to November.xlsx,1
+2020-09-24 00:00:00,PROFESSIONAL FEES,Finance Department,Tenwell Innovations Ltd,1622942,66216.0,HILL 06-09 - September to November.xlsx,1
+2020-09-29 00:00:00,CNST PREMIUM,Nursing,Nhs Resolution,65974,1111542.0,HILL 06-09 - September to November.xlsx,1
+2020-09-29 00:00:00,LTPS PREMIUM,Corporate,Nhs Resolution,65974,12537.0,HILL 06-09 - September to November.xlsx,1
+2020-09-29 00:00:00,PES PREMIUM,Estates,Nhs Resolution,65974,1846.0,HILL 06-09 - September to November.xlsx,1
+2020-10-01 00:00:00,A&C: AGENCY,Central Budgets,Pace Security Services Ltd,1623133,27788.0,HILL 06-09 - September to November.xlsx,1
+2020-10-01 00:00:00,BUSINESS RATES,Estates,London Borough Of Hillingdon,1594676,55328.0,HILL 06-09 - September to November.xlsx,1
+2020-10-01 00:00:00,BUSINESS RATES,Estates,London Borough Of Hillingdon,1594685,46018.0,HILL 06-09 - September to November.xlsx,1
+2020-10-01 00:00:00,BUSINESS RATES,Operational Serv Directorate,Threadneedle Uk Property Trust,1623183,34046.0,HILL 06-09 - September to November.xlsx,1
+2020-10-01 00:00:00,CAPITAL BUILDINGS,Capital,E S Moss (Watford) Ltd,1624406,28444.0,HILL 06-09 - September to November.xlsx,1
+2020-10-01 00:00:00,CAPITAL EBME,Capital,Sectra Ltd,1621659,-53888.0,HILL 06-09 - September to November.xlsx,-1
+2020-10-01 00:00:00,CAPITAL EBME,Capital,Sectra Ltd,1621661,52106.0,HILL 06-09 - September to November.xlsx,1
+2020-10-01 00:00:00,CT SCANNING,X Ray,Radiology Reporting Online,1617458,30967.0,HILL 06-09 - September to November.xlsx,1
+2020-10-01 00:00:00,CT SCANNING,X Ray,Radiology Reporting Online,1622232,51955.0,HILL 06-09 - September to November.xlsx,1
+2020-10-01 00:00:00,DRUGS,Corporate,Novartis Pharmaceuticals Uk Ltd,1621561,43273.0,HILL 06-09 - September to November.xlsx,1
+2020-10-01 00:00:00,ELECTRICITY,Estates,Edf Energy,1621710,29166.0,HILL 06-09 - September to November.xlsx,1
+2020-10-01 00:00:00,FINANCE LEASE,Corporate,Bhh Lift Accommodation Services Ltd,1616243,239263.0,HILL 06-09 - September to November.xlsx,1
+2020-10-01 00:00:00,FINANCE LEASE,Corporate,Bhh Lift Accommodation Services Ltd,1621392,231545.0,HILL 06-09 - September to November.xlsx,1
+2020-10-01 00:00:00,MED EQUIP MAINTENANCE CONTRCTS,Cardio Gastro Rheum Resp Neuro,Siemens Financial Services Ltd,1615073,24420.0,HILL 06-09 - September to November.xlsx,1
+2020-10-01 00:00:00,OP LEASE ENDOSCOPY EQUIPMENT,Cardio Gastro Rheum Resp Neuro,Siemens Financial Services Ltd,1615073,65517.0,HILL 06-09 - September to November.xlsx,1
+2020-10-01 00:00:00,PC SOFTWARE,Corporate,Phoenix Software Limited,1624953,228876.0,HILL 06-09 - September to November.xlsx,1
+2020-10-01 00:00:00,RECH. FROM E&N HERTS PHARMACY,Pharmacy,East & North Herts Nhs Trust,65900,76523.0,HILL 06-09 - September to November.xlsx,1
+2020-10-01 00:00:00,SYNERGY LAUNDRY CONTRACT,Facilities,Synergy Health Managed Services Ltd,1621394,48792.0,HILL 06-09 - September to November.xlsx,1
+2020-10-01 00:00:00,WATER,Estates,Advanced Demand Side Mngt Ltd,1622264,34337.0,HILL 06-09 - September to November.xlsx,1
+2020-10-08 00:00:00,CAPITAL BUILDINGS,Capital,Pa Consulting,1625948,39955.0,HILL 06-09 - September to November.xlsx,1
+2020-10-08 00:00:00,CAPITAL BUILDINGS,Capital,Pa Consulting,1625949,290044.0,HILL 06-09 - September to November.xlsx,1
+2020-10-08 00:00:00,CAPITAL BUILDINGS,Capital,Pcp Limited,1621497,36240.0,HILL 06-09 - September to November.xlsx,1
+2020-10-08 00:00:00,CONTRACTORS MAINTENANCE,Estates,Pcp Limited,1621795,33573.0,HILL 06-09 - September to November.xlsx,1
+2020-10-08 00:00:00,DRUGS,Corporate,Novartis Pharmaceuticals Uk Ltd,1621953,43339.0,HILL 06-09 - September to November.xlsx,1
+2020-10-08 00:00:00,MEDICAL EQUIPMENT - NEW,Central Budgets,Becton Dickinson Uk Ltd,1625541,39114.0,HILL 06-09 - September to November.xlsx,1
+2020-10-08 00:00:00,MEDICAL & SURGICAL (NON-STOCK),Central Budgets,Ge Healthcare,1622078,56721.0,HILL 06-09 - September to November.xlsx,1
+2020-10-08 00:00:00,STORES,Corporate,Nhs Supply Chain Roarp,1626694,69924.0,HILL 06-09 - September to November.xlsx,1
+2020-10-08 00:00:00,STORES,Corporate,Nhs Supply Chain Roarp,1626696,82320.0,HILL 06-09 - September to November.xlsx,1
+2020-10-08 00:00:00,STORES,Corporate,Nhs Supply Chain Roarp,1626697,51165.0,HILL 06-09 - September to November.xlsx,1
+2020-10-08 00:00:00,STORES,Corporate,Nhs Supply Chain Roarp,1626698,64389.0,HILL 06-09 - September to November.xlsx,1
+2020-10-08 00:00:00,STORES,Corporate,Nhs Supply Chain Roarp,1626705,69426.0,HILL 06-09 - September to November.xlsx,1
+2020-10-08 00:00:00,SYSMEX REAGENTS,Operational Serv Directorate,Sysmex Uk Ltd,1621398,179821.0,HILL 06-09 - September to November.xlsx,1
+2020-10-15 00:00:00,CNWL LIAISON PSYCHIATRY SERVIC,Planned Care Management,Cnwl Nhs Foundation Trust,65780,33628.0,HILL 06-09 - September to November.xlsx,1
+2020-10-15 00:00:00,CNWL LIAISON PSYCHIATRY SERVIC,Planned Care Management,Cnwl Nhs Foundation Trust,65782,33628.0,HILL 06-09 - September to November.xlsx,1
+2020-10-15 00:00:00,CNWL LIAISON PSYCHIATRY SERVIC,Planned Care Management,Cnwl Nhs Foundation Trust,65838,33628.0,HILL 06-09 - September to November.xlsx,1
+2020-10-15 00:00:00,CNWL LIAISON PSYCHIATRY SERVIC,Unplanned Care Management,Cnwl Nhs Foundation Trust,65780,48647.0,HILL 06-09 - September to November.xlsx,1
+2020-10-15 00:00:00,CNWL LIAISON PSYCHIATRY SERVIC,Unplanned Care Management,Cnwl Nhs Foundation Trust,65781,48647.0,HILL 06-09 - September to November.xlsx,1
+2020-10-15 00:00:00,CNWL LIAISON PSYCHIATRY SERVIC,Unplanned Care Management,Cnwl Nhs Foundation Trust,65782,48647.0,HILL 06-09 - September to November.xlsx,1
+2020-10-15 00:00:00,CNWL LIAISON PSYCHIATRY SERVIC,Unplanned Care Management,Cnwl Nhs Foundation Trust,65838,48647.0,HILL 06-09 - September to November.xlsx,1
+2020-10-15 00:00:00,CNWL PODIATRY SERVICE,Unplanned Care Management,Cnwl Nhs Foundation Trust,65780,7914.0,HILL 06-09 - September to November.xlsx,1
+2020-10-15 00:00:00,CNWL PODIATRY SERVICE,Unplanned Care Management,Cnwl Nhs Foundation Trust,65781,7914.0,HILL 06-09 - September to November.xlsx,1
+2020-10-15 00:00:00,CNWL PODIATRY SERVICE,Unplanned Care Management,Cnwl Nhs Foundation Trust,65782,7914.0,HILL 06-09 - September to November.xlsx,1
+2020-10-15 00:00:00,CNWL PODIATRY SERVICE,Unplanned Care Management,Cnwl Nhs Foundation Trust,65838,7914.0,HILL 06-09 - September to November.xlsx,1
+2020-10-15 00:00:00,COMPTR & PRINTERS MAINTENANCE,Corporate,Dr Foster Ltd,1626786,43650.0,HILL 06-09 - September to November.xlsx,1
+2020-10-15 00:00:00,CONTRACTORS MAINTENANCE,Estates,M Edwards T/A Komfort Services,1623109,39138.0,HILL 06-09 - September to November.xlsx,1
+2020-10-15 00:00:00,DRUGS,Corporate,Bayer Plc,1624457,91245.0,HILL 06-09 - September to November.xlsx,1
+2020-10-15 00:00:00,PACS MAINTENANCE,Corporate,Sunquest Information Systems Ltd,1608180,111269.0,HILL 06-09 - September to November.xlsx,1
+2020-10-15 00:00:00,PROFESSIONAL FEES,Central Budgets,Cnwl Nhs Foundation Trust,65780,34829.0,HILL 06-09 - September to November.xlsx,1
+2020-10-15 00:00:00,PROFESSIONAL FEES,Central Budgets,Cnwl Nhs Foundation Trust,65781,34829.0,HILL 06-09 - September to November.xlsx,1
+2020-10-15 00:00:00,PROFESSIONAL FEES,Central Budgets,Cnwl Nhs Foundation Trust,65782,34829.0,HILL 06-09 - September to November.xlsx,1
+2020-10-15 00:00:00,PROFESSIONAL FEES,Central Budgets,Cnwl Nhs Foundation Trust,65838,34829.0,HILL 06-09 - September to November.xlsx,1
+2020-10-15 00:00:00,PROFESSIONAL FEES,Central Budgets,Cnwl Nhs Foundation Trust,65931,-25589.0,HILL 06-09 - September to November.xlsx,-1
+2020-10-15 00:00:00,PROFESSIONAL FEES,Central Budgets,Cnwl Nhs Foundation Trust,65971,36381.0,HILL 06-09 - September to November.xlsx,1
+2020-10-15 00:00:00,PROFESSIONAL FEES,Nursing,Cnwl Nhs Foundation Trust,65780,3597.0,HILL 06-09 - September to November.xlsx,1
+2020-10-15 00:00:00,PROFESSIONAL FEES,Nursing,Cnwl Nhs Foundation Trust,65781,3597.0,HILL 06-09 - September to November.xlsx,1
+2020-10-15 00:00:00,PROFESSIONAL FEES,Nursing,Cnwl Nhs Foundation Trust,65782,3597.0,HILL 06-09 - September to November.xlsx,1
+2020-10-15 00:00:00,PROFESSIONAL FEES,Nursing,Cnwl Nhs Foundation Trust,65838,3597.0,HILL 06-09 - September to November.xlsx,1
+2020-10-15 00:00:00,RECH CNWL ACP HEART FAILURE,Cardio Gastro Rheum Resp Neuro,Cnwl Nhs Foundation Trust,65780,48402.0,HILL 06-09 - September to November.xlsx,1
+2020-10-15 00:00:00,RECH CNWL ACP HEART FAILURE,Cardio Gastro Rheum Resp Neuro,Cnwl Nhs Foundation Trust,65781,48402.0,HILL 06-09 - September to November.xlsx,1
+2020-10-15 00:00:00,RECH CNWL ACP HEART FAILURE,Cardio Gastro Rheum Resp Neuro,Cnwl Nhs Foundation Trust,65782,48402.0,HILL 06-09 - September to November.xlsx,1
+2020-10-15 00:00:00,RECH CNWL ACP HEART FAILURE,Cardio Gastro Rheum Resp Neuro,Cnwl Nhs Foundation Trust,65838,48402.0,HILL 06-09 - September to November.xlsx,1
+2020-10-15 00:00:00,RECH CNWL ACP HEART FAILURE,Planned Care Management,Cnwl Nhs Foundation Trust,65781,33628.0,HILL 06-09 - September to November.xlsx,1
+2020-10-15 00:00:00,RECH FROM CNWL MH A&E LIAISON,Central Budgets,Cnwl Nhs Foundation Trust,65780,11140.0,HILL 06-09 - September to November.xlsx,1
+2020-10-15 00:00:00,RECH FROM CNWL MH A&E LIAISON,Central Budgets,Cnwl Nhs Foundation Trust,65781,11140.0,HILL 06-09 - September to November.xlsx,1
+2020-10-15 00:00:00,RECH FROM CNWL MH A&E LIAISON,Central Budgets,Cnwl Nhs Foundation Trust,65782,11140.0,HILL 06-09 - September to November.xlsx,1
+2020-10-15 00:00:00,RECH FROM CNWL MH A&E LIAISON,Central Budgets,Cnwl Nhs Foundation Trust,65838,11140.0,HILL 06-09 - September to November.xlsx,1
+2020-10-15 00:00:00,SCI THERAP & TECH: BAND 7,Trauma & Orthopaedics And Pain,Cnwl Nhs Foundation Trust,65780,5369.0,HILL 06-09 - September to November.xlsx,1
+2020-10-15 00:00:00,SCI THERAP & TECH: BAND 7,Trauma & Orthopaedics And Pain,Cnwl Nhs Foundation Trust,65781,5369.0,HILL 06-09 - September to November.xlsx,1
+2020-10-15 00:00:00,SCI THERAP & TECH: BAND 7,Trauma & Orthopaedics And Pain,Cnwl Nhs Foundation Trust,65782,5369.0,HILL 06-09 - September to November.xlsx,1
+2020-10-15 00:00:00,SCI THERAP & TECH: BAND 7,Trauma & Orthopaedics And Pain,Cnwl Nhs Foundation Trust,65838,5369.0,HILL 06-09 - September to November.xlsx,1
+2020-10-15 00:00:00,STORES,Corporate,Nhs Supply Chain Roarp,1626710,129636.0,HILL 06-09 - September to November.xlsx,1
+2020-10-16 00:00:00,CAPITAL BUILDINGS,Capital,Reach Active Ltd,1630211,445807.0,HILL 06-09 - September to November.xlsx,1
+2020-10-22 00:00:00,CAPITAL BUILDINGS,Capital,Ibi Group (Uk)Ltd,1616903,39870.0,HILL 06-09 - September to November.xlsx,1
+2020-10-22 00:00:00,CAPITAL BUILDINGS,Capital,Ibi Group (Uk)Ltd,1623149,27000.0,HILL 06-09 - September to November.xlsx,1
+2020-10-22 00:00:00,CAPITAL BUILDINGS,Capital,Shj Hospital Pipelines Ltd,1624956,116629.0,HILL 06-09 - September to November.xlsx,1
+2020-10-22 00:00:00,CAPITAL BUILDINGS,Capital,Western Building Systems Ltd,1624236,125115.0,HILL 06-09 - September to November.xlsx,1
+2020-10-22 00:00:00,MEDICAL EQUIPMENT ,Capital,Sle Ltd,1625644,111614.0,HILL 06-09 - September to November.xlsx,1
+2020-10-22 00:00:00,CAPITAL IT,Capital,Apira Ltd,1620472,115188.0,HILL 06-09 - September to November.xlsx,1
+2020-10-22 00:00:00,CAPITAL IT,Capital,Apira Ltd,1623134,56712.0,HILL 06-09 - September to November.xlsx,1
+2020-10-22 00:00:00,CAPITAL IT,Capital,Computacenter (Uk) Ltd,1617534,180321.0,HILL 06-09 - September to November.xlsx,1
+2020-10-22 00:00:00,CLINICAL WASTE COLLECTION,Estates,Srcl Ltd,1627284,38862.0,HILL 06-09 - September to November.xlsx,1
+2020-10-22 00:00:00,DRUGS,Pharmacy,East & North Herts Nhs Trust,65989,72019.0,HILL 06-09 - September to November.xlsx,1
+2020-10-22 00:00:00,DRUGS,Corporate,Csl Behring,1624869,25200.0,HILL 06-09 - September to November.xlsx,1
+2020-10-22 00:00:00,LICENCING AND MAINT. CLIN. APP,Corporate,Univ Hospital Southampton Nhs Ft,66177,27600.0,HILL 06-09 - September to November.xlsx,1
+2020-10-22 00:00:00,MED EQUIP MAINTENANCE CONTRCTS,X Ray,Siemens Healthcare Limited,1627993,100811.0,HILL 06-09 - September to November.xlsx,1
+2020-10-22 00:00:00,NBS BLOCK CONTRACT,Operational Serv Directorate,Nhs Blood And Transplant,1623946,97041.0,HILL 06-09 - September to November.xlsx,1
+2020-10-22 00:00:00,PC SOFTWARE,Corporate,Chameleon Information Management Services Ltd,1624226,35270.0,HILL 06-09 - September to November.xlsx,1
+2020-10-22 00:00:00,PROFESSIONAL FEES,Corporate,Imperial College Health Partners,1630957,114000.0,HILL 06-09 - September to November.xlsx,1
+2020-10-22 00:00:00,STORES,Corporate,Nhs Supply Chain Roarp,1626712,70715.0,HILL 06-09 - September to November.xlsx,1
+2020-10-28 00:00:00,ADDITIONAL EQUIPMENT,Central Budgets,Full Support Healthcare Ltd,1625913,36425.0,HILL 06-09 - September to November.xlsx,1
+2020-10-28 00:00:00,BAXTERS CYTOTOXICS,Pharmacy,Baxter Shared Service & Competencies Ltd,1626089,34166.0,HILL 06-09 - September to November.xlsx,1
+2020-10-28 00:00:00,BUSINESS RATES,Estates,London Borough Of Hillingdon,1594677,55328.0,HILL 06-09 - September to November.xlsx,1
+2020-10-28 00:00:00,BUSINESS RATES,Estates,London Borough Of Hillingdon,1594686,46018.0,HILL 06-09 - September to November.xlsx,1
+2020-10-28 00:00:00,CAPITAL BUILDINGS,Capital,Arthur Pollard Ltd,1628543,25837.0,HILL 06-09 - September to November.xlsx,1
+2020-10-28 00:00:00,CAPITAL BUILDINGS,Capital,Murphy Philipps Associates Llp,1627207,27172.0,HILL 06-09 - September to November.xlsx,1
+2020-10-28 00:00:00,MEDICAL EQUIPMENT ,Capital,Spacelabs Healthcare Ltd,1626265,42393.0,HILL 06-09 - September to November.xlsx,1
+2020-10-28 00:00:00,CNST PREMIUM,Nursing,Nhs Resolution,66176,1111541.0,HILL 06-09 - September to November.xlsx,1
+2020-10-28 00:00:00,FINANCE LEASE,Corporate,Bhh Lift Accommodation Services Ltd,1627522,239263.0,HILL 06-09 - September to November.xlsx,1
+2020-10-28 00:00:00,LTPS PREMIUM,Corporate,Nhs Resolution,66176,12537.0,HILL 06-09 - September to November.xlsx,1
+2020-10-28 00:00:00,NON-NHS AMBULANCE SERVICES,Facilities,Hats Group Ltd,1618538,117373.0,HILL 06-09 - September to November.xlsx,1
+2020-10-28 00:00:00,NON-NHS AMBULANCE SERVICES,Facilities,Hats Group Ltd,1624241,117373.0,HILL 06-09 - September to November.xlsx,1
+2020-10-28 00:00:00,PES PREMIUM,Estates,Nhs Resolution,66176,1846.0,HILL 06-09 - September to November.xlsx,1
+2020-10-28 00:00:00,PROFESSIONAL FEES,Finance Department,Tenwell Innovations Ltd,1630967,66216.0,HILL 06-09 - September to November.xlsx,1
+2020-10-28 00:00:00,STORES,Corporate,Nhs Supply Chain Roarp,1626714,75037.0,HILL 06-09 - September to November.xlsx,1
+01/12/2020,CAPITAL BUILDINGS,Capital,Reach Active Ltd,1639960,250201.0,HILL 09-12 - December 2020 to March 2021.xlsx,1
+03/12/2020,BUSINESS RATES,Estates,London Borough Of Hillingdon,1594678,55328.0,HILL 09-12 - December 2020 to March 2021.xlsx,1
+03/12/2020,BUSINESS RATES,Estates,London Borough Of Hillingdon,1594687,46018.0,HILL 09-12 - December 2020 to March 2021.xlsx,1
+03/12/2020,CAPITAL BUILDINGS,Capital,Ibi Group (Uk)Ltd,1634039,108000.0,HILL 09-12 - December 2020 to March 2021.xlsx,1
+03/12/2020,CONSULTANT AGENCY,X Ray,Pharmeng Limited T/A Pe Global Healthcare,1630209,-53363.0,HILL 09-12 - December 2020 to March 2021.xlsx,-1
+03/12/2020,CONSULTANT AGENCY,X Ray,Pharmeng Limited T/A Pe Global Healthcare,1636567,41690.0,HILL 09-12 - December 2020 to March 2021.xlsx,1
+03/12/2020,CONSULTANT AGENCY,X Ray,Pharmeng Limited T/A Pe Global Healthcare,1636568,49258.0,HILL 09-12 - December 2020 to March 2021.xlsx,1
+03/12/2020,CONSULTANT AGENCY,X Ray,Pharmeng Limited T/A Pe Global Healthcare,1636575,-26949.0,HILL 09-12 - December 2020 to March 2021.xlsx,-1
+03/12/2020,DRUGS,Corporate,Csl Behring,1635480,25200.0,HILL 09-12 - December 2020 to March 2021.xlsx,1
+03/12/2020,DRUGS,Corporate,Novartis Pharmaceuticals Uk Ltd,1634990,49744.0,HILL 09-12 - December 2020 to March 2021.xlsx,1
+03/12/2020,FINANCE LEASES,Corporate,Bhh Lift Accommodation Services Ltd,1634222,231545.0,HILL 09-12 - December 2020 to March 2021.xlsx,1
+03/12/2020,SPECIALTY REG CT/ST 1/2,Central Budgets,Royal Free London Nhs Foundation Trust,66371,73280.0,HILL 09-12 - December 2020 to March 2021.xlsx,1
+10/12/2020,BECKMAN COULTER CONTRACT,Operational Serv Directorate,Beckman Coulter United Kingdom Ltd,1637037,173452.0,HILL 09-12 - December 2020 to March 2021.xlsx,1
+10/12/2020,CAPITAL BUILDINGS,Capital,Arthur Pollard Ltd,1636512,41292.0,HILL 09-12 - December 2020 to March 2021.xlsx,1
+10/12/2020,CAPITAL BUILDINGS,Capital,Hoare Lea,1633748,26466.0,HILL 09-12 - December 2020 to March 2021.xlsx,1
+10/12/2020,CONSULTANT RECHARGE,"Ophthalmology, Ent & Oral Surg",London North West Healthcare Nhs Trust,66540,27873.0,HILL 09-12 - December 2020 to March 2021.xlsx,1
+10/12/2020,DRUGS,Corporate,Bayer Plc,1635473,68434.0,HILL 09-12 - December 2020 to March 2021.xlsx,1
+10/12/2020,DRUGS,Corporate,Dialachemist Ltd T/A Springmed Solutions,1636651,29160.0,HILL 09-12 - December 2020 to March 2021.xlsx,1
+10/12/2020,FEES FOR TESTS,Operational Serv Directorate,London North West Healthcare Nhs Trust,66540,753.0,HILL 09-12 - December 2020 to March 2021.xlsx,1
+10/12/2020,NCA MATERNITY P2P,Central Budgets,London North West Healthcare Nhs Trust,66540,4867.0,HILL 09-12 - December 2020 to March 2021.xlsx,1
+10/12/2020,PROFESSIONAL FEES,Corporate,Nhs North Of England Csu,66290,50000.0,HILL 09-12 - December 2020 to March 2021.xlsx,1
+10/12/2020,RENT,Planned Care Management,London North West Healthcare Nhs Trust,66540,36931.0,HILL 09-12 - December 2020 to March 2021.xlsx,1
+10/12/2020,SPECIALTY DOCTORS,"Ophthalmology, Ent & Oral Surg",London North West Healthcare Nhs Trust,66540,2763.0,HILL 09-12 - December 2020 to March 2021.xlsx,1
+10/12/2020,STORES,Corporate,Nhs Supply Chain Roarp,1640550,87880.0,HILL 09-12 - December 2020 to March 2021.xlsx,1
+10/12/2020,STORES,Corporate,Nhs Supply Chain Roarp,1640553,97422.0,HILL 09-12 - December 2020 to March 2021.xlsx,1
+10/12/2020,STORES,Corporate,Nhs Supply Chain Roarp,1640555,79024.0,HILL 09-12 - December 2020 to March 2021.xlsx,1
+10/12/2020,STORES,Corporate,Nhs Supply Chain Roarp,1640556,93110.0,HILL 09-12 - December 2020 to March 2021.xlsx,1
+10/12/2020,SYSMEX REAGENTS,Operational Serv Directorate,Sysmex Uk Ltd,1635008,179821.0,HILL 09-12 - December 2020 to March 2021.xlsx,1
+10/12/2020,TRUST SPECIALTY REG 3+,"Ophthalmology, Ent & Oral Surg",London North West Healthcare Nhs Trust,66540,392.0,HILL 09-12 - December 2020 to March 2021.xlsx,1
+10/12/2020,TRUST SPECIALTY REG CT/ST 1/2,"Ophthalmology, Ent & Oral Surg",London North West Healthcare Nhs Trust,66540,1624.0,HILL 09-12 - December 2020 to March 2021.xlsx,1
+16/12/2020,GAS,Estates,Corona Energy Retail 4 Ltd,1643445,1389097.0,HILL 09-12 - December 2020 to March 2021.xlsx,1
+17/12/2020,CAPITAL BUILDINGS,Capital,Me Construction Ltd,1638254,222368.0,HILL 09-12 - December 2020 to March 2021.xlsx,1
+17/12/2020,CAPITAL BUILDINGS,Capital,Mott Macdonald Ltd,1641634,46374.0,HILL 09-12 - December 2020 to March 2021.xlsx,1
+17/12/2020,CAPITAL BUILDINGS,Capital,Mtx Contracts Limited,1644030,1351102.0,HILL 09-12 - December 2020 to March 2021.xlsx,1
+17/12/2020,CAPITAL BUILDINGS,Capital,Murphy Philipps Associates Llp,1640393,55786.0,HILL 09-12 - December 2020 to March 2021.xlsx,1
+17/12/2020,CAPITAL BUILDINGS,Capital,Pcp Limited,1613899,175198.0,HILL 09-12 - December 2020 to March 2021.xlsx,1
+17/12/2020,CAPITAL BUILDINGS,Capital,Pcp Limited,1619693,37126.0,HILL 09-12 - December 2020 to March 2021.xlsx,1
+17/12/2020,CAPITAL BUILDINGS,Capital,Quinn London Ltd,1642026,29604.0,HILL 09-12 - December 2020 to March 2021.xlsx,1
+17/12/2020,CAPITAL BUILDINGS,Capital,Reach Active Ltd,1641969,38506.0,HILL 09-12 - December 2020 to March 2021.xlsx,1
+17/12/2020,CAPITAL BUILDINGS,Capital,Ridge & Partners,1640438,27540.0,HILL 09-12 - December 2020 to March 2021.xlsx,1
+17/12/2020,CAPITAL BUILDINGS,Capital,Savills (Uk) Ltd,1641028,30030.0,HILL 09-12 - December 2020 to March 2021.xlsx,1
+17/12/2020,CAPITAL BUILDINGS,Capital,Shj Hospital Pipelines Ltd,1638069,79302.0,HILL 09-12 - December 2020 to March 2021.xlsx,1
+17/12/2020,CAPITAL BUILDINGS,Capital,Shl Refractories (Uk) Ltd,1639695,237298.0,HILL 09-12 - December 2020 to March 2021.xlsx,1
+17/12/2020,CAPITAL BUILDINGS,Capital,Tenwell Innovations Ltd,1638221,89400.0,HILL 09-12 - December 2020 to March 2021.xlsx,1
+17/12/2020,CAPITAL BUILDINGS,Capital,Western Building Systems Ltd,1639172,169705.0,HILL 09-12 - December 2020 to March 2021.xlsx,1
+17/12/2020,CAPITAL BUILDINGS,Capital,Western Building Systems Ltd,1640449,269798.0,HILL 09-12 - December 2020 to March 2021.xlsx,1
+17/12/2020,MEDICAL EQUIPMENT,Capital,Philips Healthcare,1643532,69524.0,HILL 09-12 - December 2020 to March 2021.xlsx,1
+17/12/2020,CLINICAL WASTE COLLECTION,Estates,Srcl Ltd,1640606,38862.0,HILL 09-12 - December 2020 to March 2021.xlsx,1
+17/12/2020,CNST PREMIUM,Nursing Services,Nhs Resolution,66639,1111541.0,HILL 09-12 - December 2020 to March 2021.xlsx,1
+17/12/2020,CT SCANNING,X Ray,Radiology Reporting Online,1636632,53917.0,HILL 09-12 - December 2020 to March 2021.xlsx,1
+17/12/2020,ELECTRICITY,Estates,Edf Energy,1635371,27466.0,HILL 09-12 - December 2020 to March 2021.xlsx,1
+17/12/2020,GENERAL CLEANING MAT & EQUIP,Central Budgets,Wybone Ltd,1637859,36212.0,HILL 09-12 - December 2020 to March 2021.xlsx,1
+17/12/2020,LICENCING AND MAINT. NON CLIN,Corporate,Advanced Business Solutions,1622258,58260.0,HILL 09-12 - December 2020 to March 2021.xlsx,1
+17/12/2020,LICENCING AND MAINT. NON CLIN,Corporate,Advanced Business Solutions,1622259,63873.0,HILL 09-12 - December 2020 to March 2021.xlsx,1
+17/12/2020,LTPS PREMIUM,Corporate,Nhs Resolution,66639,12537.0,HILL 09-12 - December 2020 to March 2021.xlsx,1
+17/12/2020,PACS MAINTENANCE,Corporate,Sectra Ltd,1643440,108982.0,HILL 09-12 - December 2020 to March 2021.xlsx,1
+17/12/2020,PC SOFTWARE,People And Development,Softcat Ltd,1632486,32466.0,HILL 09-12 - December 2020 to March 2021.xlsx,1
+17/12/2020,PES PREMIUM,Estates,Nhs Resolution,66639,1846.0,HILL 09-12 - December 2020 to March 2021.xlsx,1
+17/12/2020,PROFESSIONAL FEES,Corporate,Guy'S & St. Thomas' Nhs Ft,66559,32312.0,HILL 09-12 - December 2020 to March 2021.xlsx,1
+17/12/2020,SPECIALTY REG CT/ST 1/2,Central Budgets,Royal Free London Nhs Foundation Trust,66161,73804.0,HILL 09-12 - December 2020 to March 2021.xlsx,1
+17/12/2020,STORES,Corporate,Nhs Supply Chain Roarp,1640578,94245.0,HILL 09-12 - December 2020 to March 2021.xlsx,1
+17/12/2020,STORES,Corporate,Nhs Supply Chain Roarp,1640581,87648.0,HILL 09-12 - December 2020 to March 2021.xlsx,1
+17/12/2020,WATER,Estates,Advanced Demand Side Mngt Ltd,1638431,26763.0,HILL 09-12 - December 2020 to March 2021.xlsx,1
+23/12/2020,EQUIPMENT,Central Budgets,Full Support Healthcare Ltd,1639463,56453.0,HILL 09-12 - December 2020 to March 2021.xlsx,1
+23/12/2020,BUSINESS RATES,Estates,London Borough Of Hillingdon,1594679,55328.0,HILL 09-12 - December 2020 to March 2021.xlsx,1
+23/12/2020,BUSINESS RATES,Estates,London Borough Of Hillingdon,1594688,46018.0,HILL 09-12 - December 2020 to March 2021.xlsx,1
+23/12/2020,CONTRACTORS MAINTENANCE,Central Budgets,Centerprise International Ltd,1639246,28419.0,HILL 09-12 - December 2020 to March 2021.xlsx,1
+23/12/2020,DRUGS,Corporate,Bayer Plc,1642130,68434.0,HILL 09-12 - December 2020 to March 2021.xlsx,1
+23/12/2020,DRUGS,Corporate,Novartis Pharmaceuticals Uk Ltd,1641384,96190.0,HILL 09-12 - December 2020 to March 2021.xlsx,1
+23/12/2020,FEES FOR TESTS,X Ray,Radiology Reporting Online,1641888,45854.0,HILL 09-12 - December 2020 to March 2021.xlsx,1
+23/12/2020,FINANCE LEASES,Corporate,Bhh Lift Accommodation Services Ltd,1640433,239263.0,HILL 09-12 - December 2020 to March 2021.xlsx,1
+23/12/2020,MEDICAL EQUIPMENT ,Central Budgets,Becton Dickinson Uk Ltd,1645175,50400.0,HILL 09-12 - December 2020 to March 2021.xlsx,1
+23/12/2020,NBS BLOCK CONTRACT,Operational Serv Directorate,Nhs Blood And Transplant,1638422,97041.0,HILL 09-12 - December 2020 to March 2021.xlsx,1
+23/12/2020,NON-NHS AMBULANCE SERVICES,Facilities,Hats Group Ltd,1638214,117373.0,HILL 09-12 - December 2020 to March 2021.xlsx,1
+23/12/2020,PROFESSIONAL FEES,Finance Department,Tenwell Innovations Ltd,1634619,66216.0,HILL 09-12 - December 2020 to March 2021.xlsx,1
+23/12/2020,STORES,Corporate,Nhs Supply Chain Roarp,1640584,80896.0,HILL 09-12 - December 2020 to March 2021.xlsx,1
+23/12/2020,SYNERGY LAUNDRY CONTRACT,Facilities,Synergy Health Managed Services Ltd,1640451,58617.0,HILL 09-12 - December 2020 to March 2021.xlsx,1
+23/12/2020,SYSMEX REAGENTS,Operational Serv Directorate,Sysmex Uk Ltd,1641049,179821.0,HILL 09-12 - December 2020 to March 2021.xlsx,1
+05/01/2021,GAS,Estates,Corona Energy Retail 4 Ltd,1567885,28250.0,HILL 09-12 - December 2020 to March 2021.xlsx,1
+05/01/2021,GAS,Estates,Corona Energy Retail 4 Ltd,1571321,29765.0,HILL 09-12 - December 2020 to March 2021.xlsx,1
+05/01/2021,GAS,Estates,Corona Energy Retail 4 Ltd,1579706,-33212.0,HILL 09-12 - December 2020 to March 2021.xlsx,-1
+05/01/2021,GAS,Estates,Corona Energy Retail 4 Ltd,1579708,37101.0,HILL 09-12 - December 2020 to March 2021.xlsx,1
+05/01/2021,GAS,Estates,Corona Energy Retail 4 Ltd,1579709,-31259.0,HILL 09-12 - December 2020 to March 2021.xlsx,-1
+05/01/2021,GAS,Estates,Corona Energy Retail 4 Ltd,1579710,34905.0,HILL 09-12 - December 2020 to March 2021.xlsx,1
+05/01/2021,GAS,Estates,Corona Energy Retail 4 Ltd,1579712,25861.0,HILL 09-12 - December 2020 to March 2021.xlsx,1
+05/01/2021,GAS,Estates,Corona Energy Retail 4 Ltd,1579716,26806.0,HILL 09-12 - December 2020 to March 2021.xlsx,1
+05/01/2021,GAS,Estates,Corona Energy Retail 4 Ltd,1579718,26099.0,HILL 09-12 - December 2020 to March 2021.xlsx,1
+05/01/2021,GAS,Estates,Corona Energy Retail 4 Ltd,1579719,-33199.0,HILL 09-12 - December 2020 to March 2021.xlsx,-1
+05/01/2021,GAS,Estates,Corona Energy Retail 4 Ltd,1579720,37001.0,HILL 09-12 - December 2020 to March 2021.xlsx,1
+05/01/2021,GAS,Estates,Corona Energy Retail 4 Ltd,1579721,-41993.0,HILL 09-12 - December 2020 to March 2021.xlsx,-1
+05/01/2021,GAS,Estates,Corona Energy Retail 4 Ltd,1579722,46407.0,HILL 09-12 - December 2020 to March 2021.xlsx,1
+05/01/2021,GAS,Estates,Corona Energy Retail 4 Ltd,1579723,-48958.0,HILL 09-12 - December 2020 to March 2021.xlsx,-1
+05/01/2021,GAS,Estates,Corona Energy Retail 4 Ltd,1579724,55375.0,HILL 09-12 - December 2020 to March 2021.xlsx,1
+05/01/2021,GAS,Estates,Corona Energy Retail 4 Ltd,1579725,-52094.0,HILL 09-12 - December 2020 to March 2021.xlsx,-1
+05/01/2021,GAS,Estates,Corona Energy Retail 4 Ltd,1579726,58901.0,HILL 09-12 - December 2020 to March 2021.xlsx,1
+05/01/2021,GAS,Estates,Corona Energy Retail 4 Ltd,1579727,-55314.0,HILL 09-12 - December 2020 to March 2021.xlsx,-1
+05/01/2021,GAS,Estates,Corona Energy Retail 4 Ltd,1579728,53141.0,HILL 09-12 - December 2020 to March 2021.xlsx,1
+05/01/2021,GAS,Estates,Corona Energy Retail 4 Ltd,1579729,-40530.0,HILL 09-12 - December 2020 to March 2021.xlsx,-1
+05/01/2021,GAS,Estates,Corona Energy Retail 4 Ltd,1579730,55448.0,HILL 09-12 - December 2020 to March 2021.xlsx,1
+05/01/2021,GAS,Estates,Corona Energy Retail 4 Ltd,1579731,-32648.0,HILL 09-12 - December 2020 to March 2021.xlsx,-1
+05/01/2021,GAS,Estates,Corona Energy Retail 4 Ltd,1579732,36475.0,HILL 09-12 - December 2020 to March 2021.xlsx,1
+05/01/2021,GAS,Estates,Corona Energy Retail 4 Ltd,1579733,-30555.0,HILL 09-12 - December 2020 to March 2021.xlsx,-1
+05/01/2021,GAS,Estates,Corona Energy Retail 4 Ltd,1579734,33802.0,HILL 09-12 - December 2020 to March 2021.xlsx,1
+05/01/2021,GAS,Estates,Corona Energy Retail 4 Ltd,1579738,39424.0,HILL 09-12 - December 2020 to March 2021.xlsx,1
+05/01/2021,GAS,Estates,Corona Energy Retail 4 Ltd,1579740,56180.0,HILL 09-12 - December 2020 to March 2021.xlsx,1
+05/01/2021,GAS,Estates,Corona Energy Retail 4 Ltd,1579743,66392.0,HILL 09-12 - December 2020 to March 2021.xlsx,1
+05/01/2021,GAS,Estates,Corona Energy Retail 4 Ltd,1579744,69907.0,HILL 09-12 - December 2020 to March 2021.xlsx,1
+05/01/2021,GAS,Estates,Corona Energy Retail 4 Ltd,1579754,-26939.0,HILL 09-12 - December 2020 to March 2021.xlsx,-1
+05/01/2021,GAS,Estates,Corona Energy Retail 4 Ltd,1579755,30970.0,HILL 09-12 - December 2020 to March 2021.xlsx,1
+05/01/2021,GAS,Estates,Corona Energy Retail 4 Ltd,1579757,-25174.0,HILL 09-12 - December 2020 to March 2021.xlsx,-1
+05/01/2021,GAS,Estates,Corona Energy Retail 4 Ltd,1579758,29114.0,HILL 09-12 - December 2020 to March 2021.xlsx,1
+05/01/2021,GAS,Estates,Corona Energy Retail 4 Ltd,1579759,-26072.0,HILL 09-12 - December 2020 to March 2021.xlsx,-1
+05/01/2021,GAS,Estates,Corona Energy Retail 4 Ltd,1579760,30264.0,HILL 09-12 - December 2020 to March 2021.xlsx,1
+05/01/2021,GAS,Estates,Corona Energy Retail 4 Ltd,1579761,-29186.0,HILL 09-12 - December 2020 to March 2021.xlsx,-1
+05/01/2021,GAS,Estates,Corona Energy Retail 4 Ltd,1579762,34053.0,HILL 09-12 - December 2020 to March 2021.xlsx,1
+05/01/2021,GAS,Estates,Corona Energy Retail 4 Ltd,1579763,-27110.0,HILL 09-12 - December 2020 to March 2021.xlsx,-1
+05/01/2021,GAS,Estates,Corona Energy Retail 4 Ltd,1579765,31703.0,HILL 09-12 - December 2020 to March 2021.xlsx,1
+05/01/2021,GAS,Estates,Corona Energy Retail 4 Ltd,1579766,-27267.0,HILL 09-12 - December 2020 to March 2021.xlsx,-1
+05/01/2021,GAS,Estates,Corona Energy Retail 4 Ltd,1579793,26619.0,HILL 09-12 - December 2020 to March 2021.xlsx,1
+05/01/2021,GAS,Estates,Corona Energy Retail 4 Ltd,1579796,28107.0,HILL 09-12 - December 2020 to March 2021.xlsx,1
+05/01/2021,GAS,Estates,Corona Energy Retail 4 Ltd,1579797,-27709.0,HILL 09-12 - December 2020 to March 2021.xlsx,-1
+05/01/2021,GAS,Estates,Corona Energy Retail 4 Ltd,1579798,33293.0,HILL 09-12 - December 2020 to March 2021.xlsx,1
+05/01/2021,GAS,Estates,Corona Energy Retail 4 Ltd,1579803,-25181.0,HILL 09-12 - December 2020 to March 2021.xlsx,-1
+05/01/2021,GAS,Estates,Corona Energy Retail 4 Ltd,1579804,27997.0,HILL 09-12 - December 2020 to March 2021.xlsx,1
+05/01/2021,GAS,Estates,Corona Energy Retail 4 Ltd,1579817,32316.0,HILL 09-12 - December 2020 to March 2021.xlsx,1
+05/01/2021,GAS,Estates,Corona Energy Retail 4 Ltd,1579845,27419.0,HILL 09-12 - December 2020 to March 2021.xlsx,1
+05/01/2021,GAS,Estates,Corona Energy Retail 4 Ltd,1579862,-25408.0,HILL 09-12 - December 2020 to March 2021.xlsx,-1
+05/01/2021,GAS,Estates,Corona Energy Retail 4 Ltd,1579883,30540.0,HILL 09-12 - December 2020 to March 2021.xlsx,1
+05/01/2021,GAS,Estates,Corona Energy Retail 4 Ltd,1579901,-30565.0,HILL 09-12 - December 2020 to March 2021.xlsx,-1
+05/01/2021,GAS,Estates,Corona Energy Retail 4 Ltd,1579907,25115.0,HILL 09-12 - December 2020 to March 2021.xlsx,1
+05/01/2021,GAS,Estates,Corona Energy Retail 4 Ltd,1579921,-38283.0,HILL 09-12 - December 2020 to March 2021.xlsx,-1
+05/01/2021,GAS,Estates,Corona Energy Retail 4 Ltd,1579931,32783.0,HILL 09-12 - December 2020 to March 2021.xlsx,1
+05/01/2021,GAS,Estates,Corona Energy Retail 4 Ltd,1579935,31030.0,HILL 09-12 - December 2020 to March 2021.xlsx,1
+05/01/2021,GAS,Estates,Corona Energy Retail 4 Ltd,1579937,-28362.0,HILL 09-12 - December 2020 to March 2021.xlsx,-1
+05/01/2021,GAS,Estates,Corona Energy Retail 4 Ltd,1579938,25721.0,HILL 09-12 - December 2020 to March 2021.xlsx,1
+05/01/2021,GAS,Estates,Corona Energy Retail 4 Ltd,1579939,-29150.0,HILL 09-12 - December 2020 to March 2021.xlsx,-1
+05/01/2021,GAS,Estates,Corona Energy Retail 4 Ltd,1579941,25230.0,HILL 09-12 - December 2020 to March 2021.xlsx,1
+05/01/2021,GAS,Estates,Corona Energy Retail 4 Ltd,1579942,-25469.0,HILL 09-12 - December 2020 to March 2021.xlsx,-1
+05/01/2021,GAS,Estates,Corona Energy Retail 4 Ltd,1579946,29018.0,HILL 09-12 - December 2020 to March 2021.xlsx,1
+05/01/2021,GAS,Estates,Corona Energy Retail 4 Ltd,1579950,32873.0,HILL 09-12 - December 2020 to March 2021.xlsx,1
+05/01/2021,GAS,Estates,Corona Energy Retail 4 Ltd,1579951,-29135.0,HILL 09-12 - December 2020 to March 2021.xlsx,-1
+05/01/2021,GAS,Estates,Corona Energy Retail 4 Ltd,1579955,33530.0,HILL 09-12 - December 2020 to March 2021.xlsx,1
+05/01/2021,GAS,Estates,Corona Energy Retail 4 Ltd,1579959,-26225.0,HILL 09-12 - December 2020 to March 2021.xlsx,-1
+05/01/2021,GAS,Estates,Corona Energy Retail 4 Ltd,1579962,30099.0,HILL 09-12 - December 2020 to March 2021.xlsx,1
+05/01/2021,GAS,Estates,Corona Energy Retail 4 Ltd,1579964,-28452.0,HILL 09-12 - December 2020 to March 2021.xlsx,-1
+05/01/2021,GAS,Estates,Corona Energy Retail 4 Ltd,1579966,-27003.0,HILL 09-12 - December 2020 to March 2021.xlsx,-1
+05/01/2021,GAS,Estates,Corona Energy Retail 4 Ltd,1579967,36006.0,HILL 09-12 - December 2020 to March 2021.xlsx,1
+05/01/2021,GAS,Estates,Corona Energy Retail 4 Ltd,1579968,30544.0,HILL 09-12 - December 2020 to March 2021.xlsx,1
+05/01/2021,GAS,Estates,Corona Energy Retail 4 Ltd,1579969,32328.0,HILL 09-12 - December 2020 to March 2021.xlsx,1
+05/01/2021,GAS,Estates,Corona Energy Retail 4 Ltd,1579972,25655.0,HILL 09-12 - December 2020 to March 2021.xlsx,1
+05/01/2021,GAS,Estates,Corona Energy Retail 4 Ltd,1579987,-28250.0,HILL 09-12 - December 2020 to March 2021.xlsx,-1
+05/01/2021,GAS,Estates,Corona Energy Retail 4 Ltd,1579993,31937.0,HILL 09-12 - December 2020 to March 2021.xlsx,1
+05/01/2021,GAS,Estates,Corona Energy Retail 4 Ltd,1579994,25955.0,HILL 09-12 - December 2020 to March 2021.xlsx,1
+05/01/2021,GAS,Estates,Corona Energy Retail 4 Ltd,1580005,-29765.0,HILL 09-12 - December 2020 to March 2021.xlsx,-1
+05/01/2021,GAS,Estates,Corona Energy Retail 4 Ltd,1580006,33951.0,HILL 09-12 - December 2020 to March 2021.xlsx,1
+05/01/2021,GAS,Estates,Corona Energy Retail 4 Ltd,1580093,34258.0,HILL 09-12 - December 2020 to March 2021.xlsx,1
+05/01/2021,GAS,Estates,Corona Energy Retail 4 Ltd,1580094,31906.0,HILL 09-12 - December 2020 to March 2021.xlsx,1
+05/01/2021,GAS,Estates,Corona Energy Retail 4 Ltd,1587989,59050.0,HILL 09-12 - December 2020 to March 2021.xlsx,1
+05/01/2021,GAS,Estates,Corona Energy Retail 4 Ltd,1588086,32605.0,HILL 09-12 - December 2020 to March 2021.xlsx,1
+05/01/2021,GAS,Estates,Corona Energy Retail 4 Ltd,1595901,32188.0,HILL 09-12 - December 2020 to March 2021.xlsx,1
+05/01/2021,GAS,Estates,Corona Energy Retail 4 Ltd,1595909,40854.0,HILL 09-12 - December 2020 to March 2021.xlsx,1
+05/01/2021,GAS,Estates,Corona Energy Retail 4 Ltd,1617334,122183.0,HILL 09-12 - December 2020 to March 2021.xlsx,1
+05/01/2021,GAS,Estates,Corona Energy Retail 4 Ltd,1636597,37002.0,HILL 09-12 - December 2020 to March 2021.xlsx,1
+05/01/2021,GAS,Estates,Corona Energy Retail 4 Ltd,1637553,32048.0,HILL 09-12 - December 2020 to March 2021.xlsx,1
+05/01/2021,GAS,Estates,Corona Energy Retail 4 Ltd,1637554,58033.0,HILL 09-12 - December 2020 to March 2021.xlsx,1
+05/01/2021,GAS,Estates,Corona Energy Retail 4 Ltd,1643370,40375.0,HILL 09-12 - December 2020 to March 2021.xlsx,1
+05/01/2021,GAS,Estates,Corona Energy Retail 4 Ltd,1647408,-1389097.0,HILL 09-12 - December 2020 to March 2021.xlsx,-1
+05/01/2021,GAS,Estates,Corona Energy Retail 4 Ltd,1647409,-101482.0,HILL 09-12 - December 2020 to March 2021.xlsx,-1
+07/01/2021,BECKMAN COULTER CONTRACT,Operational Serv Directorate,Beckman Coulter United Kingdom Ltd,1641741,173452.0,HILL 09-12 - December 2020 to March 2021.xlsx,1
+07/01/2021,CAPITAL BUILDINGS,Capital,Aecom Ltd,1631850,45600.0,HILL 09-12 - December 2020 to March 2021.xlsx,1
+07/01/2021,CAPITAL BUILDINGS,Capital,Aecom Ltd,1636122,56400.0,HILL 09-12 - December 2020 to March 2021.xlsx,1
+07/01/2021,CAPITAL BUILDINGS,Capital,London Borough Of Hillingdon,1641541,40000.0,HILL 09-12 - December 2020 to March 2021.xlsx,1
+07/01/2021,CAPITAL BUILDINGS,Capital,Me Construction Ltd,1643729,164472.0,HILL 09-12 - December 2020 to March 2021.xlsx,1
+07/01/2021,CAPITAL BUILDINGS,Capital,Mtx Contracts Limited,1647187,1081700.0,HILL 09-12 - December 2020 to March 2021.xlsx,1
+07/01/2021,CAPITAL BUILDINGS,Capital,Pcp Limited,1638781,60000.0,HILL 09-12 - December 2020 to March 2021.xlsx,1
+07/01/2021,CAPITAL BUILDINGS,Capital,Pcp Limited,1643625,76320.0,HILL 09-12 - December 2020 to March 2021.xlsx,1
+07/01/2021,CAPITAL BUILDINGS,Capital,Ridge & Partners,1646118,46053.0,HILL 09-12 - December 2020 to March 2021.xlsx,1
+07/01/2021,CAPITAL BUILDINGS,Capital,Three Counties Water Ltd,1643611,28359.0,HILL 09-12 - December 2020 to March 2021.xlsx,1
+07/01/2021,CAPITAL IT,Capital,Phoenix Software Limited,1640459,110766.0,HILL 09-12 - December 2020 to March 2021.xlsx,1
+07/01/2021,DRUGS,Corporate,Alloga Uk Limited,1646869,25806.0,HILL 09-12 - December 2020 to March 2021.xlsx,1
+07/01/2021,ELECTRICITY,Estates,Edf Energy,1636624,164647.0,HILL 09-12 - December 2020 to March 2021.xlsx,1
+07/01/2021,ELECTRICITY,Estates,Edf Energy,1644023,162238.0,HILL 09-12 - December 2020 to March 2021.xlsx,1
+07/01/2021,LICENCING AND MAINT. ICT INFRA,Corporate,Itgl Limited,1638074,59103.0,HILL 09-12 - December 2020 to March 2021.xlsx,1
+07/01/2021,NON-NHS AMBULANCE SERVICES,Central Budgets,Hats Group Ltd,1642086,25500.0,HILL 09-12 - December 2020 to March 2021.xlsx,1
+07/01/2021,RENT,Operational Serv Directorate,Threadneedle Uk Property Trust,1643776,34046.0,HILL 09-12 - December 2020 to March 2021.xlsx,1
+14/01/2021,CAPITAL BUILDINGS,Capital,Health Integration Partners Ltd,1643748,89760.0,HILL 09-12 - December 2020 to March 2021.xlsx,1
+14/01/2021,CAPITAL BUILDINGS,Capital,Tenwell Innovations Ltd,1644556,44340.0,HILL 09-12 - December 2020 to March 2021.xlsx,1
+14/01/2021,CAR LEASE SCHEME SAL SAC,Corporate,Tuskerdirect Ltd,1647465,28384.0,HILL 09-12 - December 2020 to March 2021.xlsx,1
+14/01/2021,DIRECTOR OF FINANCE,Corporate,Insight Executive Group Ltd,1645434,26867.0,HILL 09-12 - December 2020 to March 2021.xlsx,1
+14/01/2021,DRUGS,Corporate,Alloga Uk Limited,1648428,48600.0,HILL 09-12 - December 2020 to March 2021.xlsx,1
+14/01/2021,DRUGS,Corporate,Bayer Plc,1644767,36498.0,HILL 09-12 - December 2020 to March 2021.xlsx,1
+14/01/2021,DRUGS,Corporate,Janssen-Cilag Ltd,1644817,41105.0,HILL 09-12 - December 2020 to March 2021.xlsx,1
+14/01/2021,NBS BLOCK CONTRACT,Operational Serv Directorate,Nhs Blood And Transplant,1644032,97041.0,HILL 09-12 - December 2020 to March 2021.xlsx,1
+14/01/2021,PROFESSIONAL FEES,Corporate,Imperial College Health Partners,1638423,114000.0,HILL 09-12 - December 2020 to March 2021.xlsx,1
+14/01/2021,PSYCHOLOGY SERVICES,Central Budgets,Cnwl Nhs Foundation Trust,66542,35278.0,HILL 09-12 - December 2020 to March 2021.xlsx,1
+14/01/2021,PSYCHOLOGY SERVICES,Central Budgets,Cnwl Nhs Foundation Trust,66543,35278.0,HILL 09-12 - December 2020 to March 2021.xlsx,1
+21/01/2021,SECURITY SERVICES,Facilities,Pace Security Services Ltd,1648989,74613.0,HILL 09-12 - December 2020 to March 2021.xlsx,1
+21/01/2021,CAPITAL BUILDINGS,Capital,Aecom Ltd,1642898,66000.0,HILL 09-12 - December 2020 to March 2021.xlsx,1
+21/01/2021,CAPITAL BUILDINGS,Capital,Aecom Ltd,1645369,147354.0,HILL 09-12 - December 2020 to March 2021.xlsx,1
+21/01/2021,CAPITAL BUILDINGS,Capital,Aecom Ltd,1645370,176851.0,HILL 09-12 - December 2020 to March 2021.xlsx,1
+21/01/2021,CAPITAL BUILDINGS,Capital,Me Construction Ltd,1650132,76247.0,HILL 09-12 - December 2020 to March 2021.xlsx,1
+21/01/2021,CAPITAL BUILDINGS,Capital,Pa Consulting,1642879,130950.0,HILL 09-12 - December 2020 to March 2021.xlsx,1
+21/01/2021,CAPITAL BUILDINGS,Capital,Quinn London Ltd,1648381,94970.0,HILL 09-12 - December 2020 to March 2021.xlsx,1
+21/01/2021,CAPITAL BUILDINGS,Capital,Shj Hospital Pipelines Ltd,1645225,40510.0,HILL 09-12 - December 2020 to March 2021.xlsx,1
+21/01/2021,CAPITAL BUILDINGS,Capital,Tenwell Innovations Ltd,1644553,104640.0,HILL 09-12 - December 2020 to March 2021.xlsx,1
+21/01/2021,CAPITAL BUILDINGS,Capital,Western Building Systems Ltd,1647418,634107.0,HILL 09-12 - December 2020 to March 2021.xlsx,1
+21/01/2021,MEDICAL EQUIPMENT,Capital,Pentax Uk Ltd,1639940,147049.0,HILL 09-12 - December 2020 to March 2021.xlsx,1
+21/01/2021,MEDICAL EQUIPMENT,Capital,Philips Healthcare,1646226,82800.0,HILL 09-12 - December 2020 to March 2021.xlsx,1
+21/01/2021,CONSULTANT RECHARGE,"Rheum, Pall , Oncol,Heam, Neur",East & North Herts Nhs Trust,64359,37637.0,HILL 09-12 - December 2020 to March 2021.xlsx,1
+21/01/2021,CONSULTANT RECHARGE,"Rheum, Pall , Oncol,Heam, Neur",East & North Herts Nhs Trust,65856,31209.0,HILL 09-12 - December 2020 to March 2021.xlsx,1
+21/01/2021,DRUGS,Pharmacy,East & North Herts Nhs Trust,66649,83467.0,HILL 09-12 - December 2020 to March 2021.xlsx,1
+21/01/2021,DRUGS,Pharmacy,East & North Herts Nhs Trust,66654,95716.0,HILL 09-12 - December 2020 to March 2021.xlsx,1
+21/01/2021,ELECTRICITY,Estates,Edf Energy,1649920,27180.0,HILL 09-12 - December 2020 to March 2021.xlsx,1
+21/01/2021,GAS,Estates,Corona Energy Retail 4 Ltd,1651192,60200.0,HILL 09-12 - December 2020 to March 2021.xlsx,1
+21/01/2021,PC SOFTWARE,Corporate,Mbi Healthcare Technologies Ltd,1640416,48960.0,HILL 09-12 - December 2020 to March 2021.xlsx,1
+26/01/2021,CNST PREMIUM,Nursing Services,Nhs Resolution,66803,1111541.0,HILL 09-12 - December 2020 to March 2021.xlsx,1
+26/01/2021,LTPS PREMIUM,Corporate,Nhs Resolution,66803,12537.0,HILL 09-12 - December 2020 to March 2021.xlsx,1
+26/01/2021,PES PREMIUM,Estates,Nhs Resolution,66803,1846.0,HILL 09-12 - December 2020 to March 2021.xlsx,1
+28/01/2021,SECURITY SERVICES,Facilities,Pace Security Services Ltd,1650793,60208.0,HILL 09-12 - December 2020 to March 2021.xlsx,1
+28/01/2021,CAPITAL BUILDINGS,Capital,Pcp Limited,1648811,305519.0,HILL 09-12 - December 2020 to March 2021.xlsx,1
+28/01/2021,CAPITAL BUILDINGS,Capital,Western Building Systems Ltd,1651999,579965.0,HILL 09-12 - December 2020 to March 2021.xlsx,1
+28/01/2021,FEES FOR TESTS,Cardio Gastro Rheum Resp Neuro,Royal Brompton & Harefield Nhs Ft,66497,77534.0,HILL 09-12 - December 2020 to March 2021.xlsx,1
+28/01/2021,FEES FOR TESTS,Cardio Gastro Rheum Resp Neuro,Royal Brompton & Harefield Nhs Ft,66653,58171.0,HILL 09-12 - December 2020 to March 2021.xlsx,1
+28/01/2021,GAS,Estates,Corona Energy Retail 4 Ltd,1650084,51701.0,HILL 09-12 - December 2020 to March 2021.xlsx,1
+28/01/2021,GAS,Estates,Corona Energy Retail 4 Ltd,1650100,142410.0,HILL 09-12 - December 2020 to March 2021.xlsx,1
+28/01/2021,LICENCES & SUBSCRIPTIONS,People And Development,Think Associates Limited,1643991,26730.0,HILL 09-12 - December 2020 to March 2021.xlsx,1
+28/01/2021,LICENCING AND MAINT. ICT INFRA,Corporate,European Electronique Ltd,1636128,124892.0,HILL 09-12 - December 2020 to March 2021.xlsx,1
+28/01/2021,MED EQUIP MAINTENANCE CONTRCTS,Cardio Gastro Rheum Resp Neuro,Siemens Financial Services Ltd,1652770,24420.0,HILL 09-12 - December 2020 to March 2021.xlsx,1
+28/01/2021,OP LEASE ENDOSCOPY EQUIPMENT,Cardio Gastro Rheum Resp Neuro,Siemens Financial Services Ltd,1652770,65517.0,HILL 09-12 - December 2020 to March 2021.xlsx,1
+28/01/2021,PSYCHOLOGY SERVICES,Central Budgets,Cnwl Nhs Foundation Trust,66604,35278.0,HILL 09-12 - December 2020 to March 2021.xlsx,1
+28/01/2021,SPECIALTY REG CT/ST 1/2,Central Budgets,Royal Free London Nhs Foundation Trust,66726,77100.0,HILL 09-12 - December 2020 to March 2021.xlsx,1
+04/02/2021,CAPITAL BUILDINGS,Capital,Aecom Ltd,1644504,145929.0,HILL 09-12 - December 2020 to March 2021.xlsx,1
+04/02/2021,CAPITAL BUILDINGS,Capital,Mott Macdonald Ltd,1653166,33840.0,HILL 09-12 - December 2020 to March 2021.xlsx,1
+04/02/2021,CAPITAL BUILDINGS,Capital,Mott Macdonald Ltd,1653167,30240.0,HILL 09-12 - December 2020 to March 2021.xlsx,1
+04/02/2021,CLINICAL WASTE COLLECTION,Estates,Srcl Ltd,1647501,38862.0,HILL 09-12 - December 2020 to March 2021.xlsx,1
+04/02/2021,CNWL LIAISON PSYCHIATRY SERVIC,Unplanned Care Management,Cnwl Nhs Foundation Trust,66471,48647.0,HILL 09-12 - December 2020 to March 2021.xlsx,1
+04/02/2021,CNWL LIAISON PSYCHIATRY SERVIC,Unplanned Care Management,Cnwl Nhs Foundation Trust,66472,48647.0,HILL 09-12 - December 2020 to March 2021.xlsx,1
+04/02/2021,CNWL PAED ORTHO CLUB FOOT SERV,Trauma & Orthopaedics And Pain,Cnwl Nhs Foundation Trust,66471,592.0,HILL 09-12 - December 2020 to March 2021.xlsx,1
+04/02/2021,CNWL PAED ORTHO CLUB FOOT SERV,Trauma & Orthopaedics And Pain,Cnwl Nhs Foundation Trust,66472,592.0,HILL 09-12 - December 2020 to March 2021.xlsx,1
+04/02/2021,CNWL PODIATRY SERVICE,Unplanned Care Management,Cnwl Nhs Foundation Trust,66471,7914.0,HILL 09-12 - December 2020 to March 2021.xlsx,1
+04/02/2021,CNWL PODIATRY SERVICE,Unplanned Care Management,Cnwl Nhs Foundation Trust,66472,7914.0,HILL 09-12 - December 2020 to March 2021.xlsx,1
+04/02/2021,CONSULTANT RECHARGE,Cardio Gastro Rheum Resp Neuro,Imperial College Healthcare Nhs Trust,66788,16871.0,HILL 09-12 - December 2020 to March 2021.xlsx,1
+04/02/2021,CONSULTANT RECHARGE,"Ophthalmology, Ent & Oral Surg",Imperial College Healthcare Nhs Trust,66788,13104.0,HILL 09-12 - December 2020 to March 2021.xlsx,1
+04/02/2021,DRUGS,Corporate,Csl Behring,1648931,33600.0,HILL 09-12 - December 2020 to March 2021.xlsx,1
+04/02/2021,DRUGS,Corporate,Novartis Pharmaceuticals Uk Ltd,1648844,57719.0,HILL 09-12 - December 2020 to March 2021.xlsx,1
+04/02/2021,FEES FOR TESTS,"Rheum, Pall , Oncol,Heam, Neur",Imperial College Healthcare Nhs Trust,66788,84575.0,HILL 09-12 - December 2020 to March 2021.xlsx,1
+04/02/2021,FEES FOR TESTS,X Ray,Radiology Reporting Online,1649126,58253.0,HILL 09-12 - December 2020 to March 2021.xlsx,1
+04/02/2021,FINANCE LEASES,Corporate,Bhh Lift Accommodation Services Ltd,1647428,239263.0,HILL 09-12 - December 2020 to March 2021.xlsx,1
+04/02/2021,INTERNAL AUDIT,Finance Department,Kpmg Llp,1652782,53334.0,HILL 09-12 - December 2020 to March 2021.xlsx,1
+04/02/2021,LICENCES & SUBSCRIPTIONS,"Rheum, Pall , Oncol,Heam, Neur",Imperial College Healthcare Nhs Trust,66788,3865.0,HILL 09-12 - December 2020 to March 2021.xlsx,1
+04/02/2021,MANAGER: BAND 9 RECHARGE,Corporate,Imperial College Healthcare Nhs Trust,66788,31464.0,HILL 09-12 - December 2020 to March 2021.xlsx,1
+04/02/2021,MED EQUIP MAINTENANCE CONTRCTS,Facilities,Cannon Medical Systems,1649289,51955.0,HILL 09-12 - December 2020 to March 2021.xlsx,1
+04/02/2021,NON-NHS AMBULANCE SERVICES,Central Budgets,Hats Group Ltd,1647471,31200.0,HILL 09-12 - December 2020 to March 2021.xlsx,1
+04/02/2021,NON-NHS AMBULANCE SERVICES,Facilities,Hats Group Ltd,1648559,117373.0,HILL 09-12 - December 2020 to March 2021.xlsx,1
+04/02/2021,P2P PATIENT ACTIVITY,General Surgery & Dermatology,London North West Healthcare Nhs Trust,64603,25427.0,HILL 09-12 - December 2020 to March 2021.xlsx,1
+04/02/2021,P2P PATIENT ACTIVITY,General Surgery & Dermatology,London North West Healthcare Nhs Trust,64835,108090.0,HILL 09-12 - December 2020 to March 2021.xlsx,1
+04/02/2021,PROFESSIONAL FEES,Central Budgets,Cnwl Nhs Foundation Trust,66471,9902.0,HILL 09-12 - December 2020 to March 2021.xlsx,1
+04/02/2021,PROFESSIONAL FEES,Central Budgets,Cnwl Nhs Foundation Trust,66472,13745.0,HILL 09-12 - December 2020 to March 2021.xlsx,1
+04/02/2021,PROFESSIONAL FEES,Nursing Services,Cnwl Nhs Foundation Trust,66471,3597.0,HILL 09-12 - December 2020 to March 2021.xlsx,1
+04/02/2021,PROFESSIONAL FEES,Nursing Services,Cnwl Nhs Foundation Trust,66472,3597.0,HILL 09-12 - December 2020 to March 2021.xlsx,1
+04/02/2021,PROFESSIONAL FEES,Finance Department,Tenwell Innovations Ltd,1644557,66216.0,HILL 09-12 - December 2020 to March 2021.xlsx,1
+04/02/2021,RECH CNWL ACP HEART FAILURE,Cardio Gastro Rheum Resp Neuro,Cnwl Nhs Foundation Trust,66471,53322.0,HILL 09-12 - December 2020 to March 2021.xlsx,1
+04/02/2021,RECH CNWL ACP HEART FAILURE,Cardio Gastro Rheum Resp Neuro,Cnwl Nhs Foundation Trust,66472,49386.0,HILL 09-12 - December 2020 to March 2021.xlsx,1
+04/02/2021,PSYCHOLOGY SERVICES,Central Budgets,Cnwl Nhs Foundation Trust,66471,53022.0,HILL 09-12 - December 2020 to March 2021.xlsx,1
+04/02/2021,PSYCHOLOGY SERVICES,Central Budgets,Cnwl Nhs Foundation Trust,66472,46418.0,HILL 09-12 - December 2020 to March 2021.xlsx,1
+04/02/2021,PSYCHOLOGY SERVICES,Central Budgets,Cnwl Nhs Foundation Trust,66744,35278.0,HILL 09-12 - December 2020 to March 2021.xlsx,1
+04/02/2021,RENT,Planned Care Management,London North West Healthcare Nhs Trust,64812,72061.0,HILL 09-12 - December 2020 to March 2021.xlsx,1
+04/02/2021,SCI THERAP & TECH: BAND 7,Trauma & Orthopaedics And Pain,Cnwl Nhs Foundation Trust,66471,5369.0,HILL 09-12 - December 2020 to March 2021.xlsx,1
+04/02/2021,SCI THERAP & TECH: BAND 7,Trauma & Orthopaedics And Pain,Cnwl Nhs Foundation Trust,66472,5369.0,HILL 09-12 - December 2020 to March 2021.xlsx,1
+04/02/2021,SPECIALTY REG CT/ST 1/2,Central Budgets,Royal Free London Nhs Foundation Trust,66584,76210.0,HILL 09-12 - December 2020 to March 2021.xlsx,1
+04/02/2021,SPECIALTY REG ST3+,X Ray,Imperial College Healthcare Nhs Trust,66788,13419.0,HILL 09-12 - December 2020 to March 2021.xlsx,1
+04/02/2021,STORES,Corporate,Nhs Supply Chain Roarp,1652442,114020.0,HILL 09-12 - December 2020 to March 2021.xlsx,1
+04/02/2021,STORES,Corporate,Nhs Supply Chain Roarp,1652443,83141.0,HILL 09-12 - December 2020 to March 2021.xlsx,1
+04/02/2021,STORES,Corporate,Nhs Supply Chain Roarp,1652444,98820.0,HILL 09-12 - December 2020 to March 2021.xlsx,1
+04/02/2021,STORES,Corporate,Nhs Supply Chain Roarp,1652449,54289.0,HILL 09-12 - December 2020 to March 2021.xlsx,1
+04/02/2021,STORES,Corporate,Nhs Supply Chain Roarp,1652457,94587.0,HILL 09-12 - December 2020 to March 2021.xlsx,1
+04/02/2021,SYNERGY LAUNDRY CONTRACT,Facilities,Synergy Health Managed Services Ltd,1647419,72874.0,HILL 09-12 - December 2020 to March 2021.xlsx,1
+10/02/2021,DRUGS,Corporate,Bayer Plc,1650723,91245.0,HILL 09-12 - December 2020 to March 2021.xlsx,1
+10/02/2021,MED EQUIP MAINTENANCE CONTRCTS,Facilities,Ge Healthcare,1652776,151042.0,HILL 09-12 - December 2020 to March 2021.xlsx,1
+10/02/2021,MED EQUIP MAINTENANCE CONTRCTS,Facilities,Siemens Healthcare Limited,1650557,58746.0,HILL 09-12 - December 2020 to March 2021.xlsx,1
+10/02/2021,NON-NHS AMBULANCE SERVICES,Central Budgets,Hats Group Ltd,1646996,46200.0,HILL 09-12 - December 2020 to March 2021.xlsx,1
+10/02/2021,NON-NHS AMBULANCE SERVICES,Central Budgets,Hats Group Ltd,1649125,44400.0,HILL 09-12 - December 2020 to March 2021.xlsx,1
+10/02/2021,STORES,Corporate,Nhs Supply Chain Roarp,1652447,59284.0,HILL 09-12 - December 2020 to March 2021.xlsx,1
+10/02/2021,TOP-UP OF FRANKING MACHINE,Facilities,Pitney Bowes Purchase Power,1655569,42011.0,HILL 09-12 - December 2020 to March 2021.xlsx,1
+18/02/2021,EQUIPMENT,Central Budgets,Korn Wall Ltd,1653272,33840.0,HILL 09-12 - December 2020 to March 2021.xlsx,1
+18/02/2021,BECKMAN COULTER CONTRACT,Operational Serv Directorate,Beckman Coulter United Kingdom Ltd,1650223,173452.0,HILL 09-12 - December 2020 to March 2021.xlsx,1
+18/02/2021,CAPITAL IT,Capital,European Electronique Ltd,1651002,34650.0,HILL 09-12 - December 2020 to March 2021.xlsx,1
+18/02/2021,CAPITAL IT,Capital,Xma Ltd,1650941,67437.0,HILL 09-12 - December 2020 to March 2021.xlsx,1
+18/02/2021,ELECTRICITY,Estates,Edf Energy,1648123,28433.0,HILL 09-12 - December 2020 to March 2021.xlsx,1
+18/02/2021,ELECTRICITY,Estates,Edf Energy,1649099,180235.0,HILL 09-12 - December 2020 to March 2021.xlsx,1
+18/02/2021,FEES FOR TESTS,Cardio Gastro Rheum Resp Neuro,Royal Brompton & Harefield Nhs Ft,66910,49413.0,HILL 09-12 - December 2020 to March 2021.xlsx,1
+18/02/2021,LICENCING AND MAINT. ICT INFRA,Corporate,Cdw Ltd,1650938,65819.0,HILL 09-12 - December 2020 to March 2021.xlsx,1
+18/02/2021,MEDICAL & SURGICAL (NON-STOCK),Cardio Gastro Rheum Resp Neuro,Getinge Uk Ltd,1654216,96033.0,HILL 09-12 - December 2020 to March 2021.xlsx,1
+18/02/2021,NBS BLOCK CONTRACT,Operational Serv Directorate,Nhs Blood And Transplant,1650254,97041.0,HILL 09-12 - December 2020 to March 2021.xlsx,1
+18/02/2021,NCA MATERNITY P2P,Central Budgets,Imperial College Healthcare Nhs Trust,55316,30974.0,HILL 09-12 - December 2020 to March 2021.xlsx,1
+18/02/2021,NCA MATERNITY P2P,Central Budgets,Imperial College Healthcare Nhs Trust,64810,65654.0,HILL 09-12 - December 2020 to March 2021.xlsx,1
+18/02/2021,OTHER EXPENDITURE,Corporate,Brunel University,1653750,26000.0,HILL 09-12 - December 2020 to March 2021.xlsx,1
+18/02/2021,PMS RENTAL,Corporate,Silverlink Software Ltd,1644673,105658.0,HILL 09-12 - December 2020 to March 2021.xlsx,1
+18/02/2021,STORES,Corporate,Nhs Supply Chain Roarp,1652446,85362.0,HILL 09-12 - December 2020 to March 2021.xlsx,1
+18/02/2021,STORES,Corporate,Nhs Supply Chain Roarp,1653590,76912.0,HILL 09-12 - December 2020 to March 2021.xlsx,1
+18/02/2021,STORES,Corporate,Nhs Supply Chain Roarp,1653591,93443.0,HILL 09-12 - December 2020 to March 2021.xlsx,1
+19/02/2021,CAPITAL BUILDINGS,Capital,Tenwell Innovations Ltd,1655432,69600.0,HILL 09-12 - December 2020 to March 2021.xlsx,1
+26/02/2021,A&C: AGENCY,Finance Department,Michael Page International,1649048,31050.0,HILL 09-12 - December 2020 to March 2021.xlsx,1
+26/02/2021,CAPITAL BUILDINGS,Capital,Quinn London Ltd,1653310,613145.0,HILL 09-12 - December 2020 to March 2021.xlsx,1
+26/02/2021,CAPITAL BUILDINGS,Capital,Tenwell Innovations Ltd,1655435,74400.0,HILL 09-12 - December 2020 to March 2021.xlsx,1
+26/02/2021,CAPITAL BUILDINGS,Capital,Tenwell Innovations Ltd,1655440,66216.0,HILL 09-12 - December 2020 to March 2021.xlsx,1
+26/02/2021,MEDICAL EQUIPMENT,Capital,Medtronic Ltd,1646207,43237.0,HILL 09-12 - December 2020 to March 2021.xlsx,1
+26/02/2021,CLINICAL WASTE COLLECTION,Estates,Srcl Ltd,1655024,38862.0,HILL 09-12 - December 2020 to March 2021.xlsx,1
+26/02/2021,DRUGS,Pharmacy,East & North Herts Nhs Trust,66911,76037.0,HILL 09-12 - December 2020 to March 2021.xlsx,1
+26/02/2021,DRUGS,Pharmacy,East & North Herts Nhs Trust,66912,93225.0,HILL 09-12 - December 2020 to March 2021.xlsx,1
+26/02/2021,ELECTRICITY,Estates,Edf Energy,1654305,30355.0,HILL 09-12 - December 2020 to March 2021.xlsx,1
+26/02/2021,FINANCE LEASES,Corporate,Siemens Financial Services Ltd,1657518,31195.0,HILL 09-12 - December 2020 to March 2021.xlsx,1
+26/02/2021,LONDON PROCUREMENT PROGRAMME,Finance Department,Guy'S & St. Thomas' Nhs Ft,67089,25000.0,HILL 09-12 - December 2020 to March 2021.xlsx,1
+26/02/2021,NON-NHS AMBULANCE SERVICES,Central Budgets,Hats Group Ltd,1652055,39900.0,HILL 09-12 - December 2020 to March 2021.xlsx,1
+26/02/2021,NON-NHS AMBULANCE SERVICES,Facilities,Hats Group Ltd,1651564,119010.0,HILL 09-12 - December 2020 to March 2021.xlsx,1
+26/02/2021,PROFESSIONAL FEES,Corporate,Nhs North Of England Csu,66677,54473.0,HILL 09-12 - December 2020 to March 2021.xlsx,1
+26/02/2021,RENT FROM VODAFONE,Estates,Capsticks Solicitors Llp,1659057,334000.0,HILL 09-12 - December 2020 to March 2021.xlsx,1
+26/02/2021,STORES,Corporate,Nhs Supply Chain Roarp,1652445,80436.0,HILL 09-12 - December 2020 to March 2021.xlsx,1
+26/02/2021,WATER,Estates,Advanced Demand Side Mngt Ltd,1653766,28385.0,HILL 09-12 - December 2020 to March 2021.xlsx,1
+04/03/2021,CAPITAL BUILDINGS,Capital,Me Construction Ltd,1657816,267308.0,HILL 09-12 - December 2020 to March 2021.xlsx,1
+04/03/2021,CAPITAL BUILDINGS,Capital,Pa Consulting,1655686,170631.0,HILL 09-12 - December 2020 to March 2021.xlsx,1
+04/03/2021,MEDICAL EQUIPMENT,Capital,Nhs Supply Chain Capital,1653735,190322.0,HILL 09-12 - December 2020 to March 2021.xlsx,1
+04/03/2021,CAPITAL IT,Capital,Cloud 21,1638062,28562.0,HILL 09-12 - December 2020 to March 2021.xlsx,1
+04/03/2021,CAPITAL IT,Capital,Phoenix Software Limited,1654145,82958.0,HILL 09-12 - December 2020 to March 2021.xlsx,1
+04/03/2021,CAR LEASE SCHEME SAL SAC,Corporate,Tuskerdirect Ltd,1653879,29496.0,HILL 09-12 - December 2020 to March 2021.xlsx,1
+04/03/2021,CNWL LIAISON PSYCHIATRY SERVIC,Unplanned Care Management,Cnwl Nhs Foundation Trust,67081,48647.0,HILL 09-12 - December 2020 to March 2021.xlsx,1
+04/03/2021,CNWL PAED ORTHO CLUB FOOT SERV,Trauma & Orthopaedics And Pain,Cnwl Nhs Foundation Trust,67081,592.0,HILL 09-12 - December 2020 to March 2021.xlsx,1
+04/03/2021,CNWL PODIATRY SERVICE,Unplanned Care Management,Cnwl Nhs Foundation Trust,67081,7914.0,HILL 09-12 - December 2020 to March 2021.xlsx,1
+04/03/2021,DRUGS,Corporate,Novartis Pharmaceuticals Uk Ltd,1656435,72954.0,HILL 09-12 - December 2020 to March 2021.xlsx,1
+04/03/2021,FEES FOR TESTS,Operational Serv Directorate,North West London Pathology,67164,241057.0,HILL 09-12 - December 2020 to March 2021.xlsx,1
+04/03/2021,NON-NHS AMBULANCE SERVICES,Central Budgets,Hats Group Ltd,1653765,39000.0,HILL 09-12 - December 2020 to March 2021.xlsx,1
+04/03/2021,PROFESSIONAL FEES,Nursing Services,Cnwl Nhs Foundation Trust,67081,3597.0,HILL 09-12 - December 2020 to March 2021.xlsx,1
+04/03/2021,PROFESSIONAL FEES,Finance Department,Tenwell Innovations Ltd,1653582,66216.0,HILL 09-12 - December 2020 to March 2021.xlsx,1
+04/03/2021,RECH CNWL ACP HEART FAILURE,Cardio Gastro Rheum Resp Neuro,Cnwl Nhs Foundation Trust,67081,49386.0,HILL 09-12 - December 2020 to March 2021.xlsx,1
+04/03/2021,PSYCHOLOGY SERVICES,Central Budgets,Cnwl Nhs Foundation Trust,67081,46418.0,HILL 09-12 - December 2020 to March 2021.xlsx,1
+04/03/2021,SCI THERAP & TECH: BAND 7,Trauma & Orthopaedics And Pain,Cnwl Nhs Foundation Trust,67081,5369.0,HILL 09-12 - December 2020 to March 2021.xlsx,1
+04/03/2021,STORES,Corporate,Nhs Supply Chain Roarp,1653968,89336.0,HILL 09-12 - December 2020 to March 2021.xlsx,1
+04/03/2021,SYNERGY LAUNDRY CONTRACT,Facilities,Synergy Health Managed Services Ltd,1653681,68455.0,HILL 09-12 - December 2020 to March 2021.xlsx,1
+04/03/2021,SYSMEX REAGENTS,Operational Serv Directorate,Sysmex Uk Ltd,1653516,-60295.0,HILL 09-12 - December 2020 to March 2021.xlsx,-1
+04/03/2021,SYSMEX REAGENTS,Operational Serv Directorate,Sysmex Uk Ltd,1654200,179821.0,HILL 09-12 - December 2020 to March 2021.xlsx,1
+04/03/2021,SYSMEX REAGENTS,Operational Serv Directorate,Sysmex Uk Ltd,1654202,179821.0,HILL 09-12 - December 2020 to March 2021.xlsx,1
+11/03/2021,SECURITY SERVICES,Facilities,Pace Security Services Ltd,1657084,74613.0,HILL 09-12 - December 2020 to March 2021.xlsx,1
+11/03/2021,BECKMAN COULTER CONTRACT,Operational Serv Directorate,Beckman Coulter United Kingdom Ltd,1655210,173452.0,HILL 09-12 - December 2020 to March 2021.xlsx,1
+11/03/2021,CAPITAL BUILDINGS,Capital,Mtx Contracts Limited,1655572,1345490.0,HILL 09-12 - December 2020 to March 2021.xlsx,1
+11/03/2021,CAPITAL BUILDINGS,Capital,Pcp Limited,1655166,70915.0,HILL 09-12 - December 2020 to March 2021.xlsx,1
+11/03/2021,CAR LEASE SCHEME SAL SAC,Corporate,Tuskerdirect Ltd,1660218,31121.0,HILL 09-12 - December 2020 to March 2021.xlsx,1
+11/03/2021,CONSULTANT RECHARGE,General Surgery & Dermatology,Chelsea & Westminster Nhs Foundation Trust,66508,3636.0,HILL 09-12 - December 2020 to March 2021.xlsx,1
+11/03/2021,DRUGS,Corporate,Alloga Uk Limited,1661054,29160.0,HILL 09-12 - December 2020 to March 2021.xlsx,1
+11/03/2021,DRUGS,Corporate,Csl Behring,1655262,25410.0,HILL 09-12 - December 2020 to March 2021.xlsx,1
+11/03/2021,FEES FOR TESTS,Paediatrics,Chelsea & Westminster Nhs Foundation Trust,66508,7412.0,HILL 09-12 - December 2020 to March 2021.xlsx,1
+11/03/2021,FEES FOR TESTS,"Rheum, Pall , Oncol,Heam, Neur",Imperial College Healthcare Nhs Trust,59523,110955.0,HILL 09-12 - December 2020 to March 2021.xlsx,1
+11/03/2021,FEES FOR TESTS,"Rheum, Pall , Oncol,Heam, Neur",Imperial College Healthcare Nhs Trust,59926,94864.0,HILL 09-12 - December 2020 to March 2021.xlsx,1
+11/03/2021,NCA MATERNITY P2P,Central Budgets,Chelsea & Westminster Nhs Foundation Trust,66508,6554.0,HILL 09-12 - December 2020 to March 2021.xlsx,1
+11/03/2021,NON-NHS AMBULANCE SERVICES,Central Budgets,Hats Group Ltd,1655192,37560.0,HILL 09-12 - December 2020 to March 2021.xlsx,1
+11/03/2021,NWL PATHOLOGY COST OF SERVICES,Operational Serv Directorate,North West London Pathology,62267,169200.0,HILL 09-12 - December 2020 to March 2021.xlsx,1
+11/03/2021,NWL PATHOLOGY COST OF SERVICES,Operational Serv Directorate,North West London Pathology,62270,169200.0,HILL 09-12 - December 2020 to March 2021.xlsx,1
+11/03/2021,NWL PATHOLOGY COST OF SERVICES,Operational Serv Directorate,North West London Pathology,62321,169200.0,HILL 09-12 - December 2020 to March 2021.xlsx,1
+11/03/2021,NWL PATHOLOGY COST OF SERVICES,Operational Serv Directorate,North West London Pathology,62497,169200.0,HILL 09-12 - December 2020 to March 2021.xlsx,1
+11/03/2021,NWL PATHOLOGY COST OF SERVICES,Operational Serv Directorate,North West London Pathology,62755,169200.0,HILL 09-12 - December 2020 to March 2021.xlsx,1
+11/03/2021,NWL PATHOLOGY COST OF SERVICES,Operational Serv Directorate,North West London Pathology,63043,169200.0,HILL 09-12 - December 2020 to March 2021.xlsx,1
+11/03/2021,NWL PATHOLOGY COST OF SERVICES,Operational Serv Directorate,North West London Pathology,63257,169200.0,HILL 09-12 - December 2020 to March 2021.xlsx,1
+11/03/2021,NWL PATHOLOGY COST OF SERVICES,Operational Serv Directorate,North West London Pathology,63500,169200.0,HILL 09-12 - December 2020 to March 2021.xlsx,1
+11/03/2021,NWL PATHOLOGY COST OF SERVICES,Operational Serv Directorate,North West London Pathology,63782,169200.0,HILL 09-12 - December 2020 to March 2021.xlsx,1
+11/03/2021,NWL PATHOLOGY COST OF SERVICES,Operational Serv Directorate,North West London Pathology,63986,169200.0,HILL 09-12 - December 2020 to March 2021.xlsx,1
+11/03/2021,NWL PATHOLOGY COST OF SERVICES,Operational Serv Directorate,North West London Pathology,64274,169200.0,HILL 09-12 - December 2020 to March 2021.xlsx,1
+11/03/2021,NWL PATHOLOGY COST OF SERVICES,Operational Serv Directorate,North West London Pathology,64451,169200.0,HILL 09-12 - December 2020 to March 2021.xlsx,1
+11/03/2021,PROFESSIONAL FEES,Central Budgets,Chelsea & Westminster Nhs Foundation Trust,66508,11263.0,HILL 09-12 - December 2020 to March 2021.xlsx,1
+11/03/2021,TRANSITIONAL FUNDING,Central Budgets,Nhs Surrey Heartlands Ccg,67067,28900.0,HILL 09-12 - December 2020 to March 2021.xlsx,1
+11/03/2021,WATER,Estates,Advanced Demand Side Mngt Ltd,1643434,30006.0,HILL 09-12 - December 2020 to March 2021.xlsx,1
+11/03/2021,WATER,Estates,Advanced Demand Side Mngt Ltd,1650257,29315.0,HILL 09-12 - December 2020 to March 2021.xlsx,1
+12/03/2021,CAPITAL BUILDINGS,Capital,Reach Active Ltd,1662943,1378501.0,HILL 09-12 - December 2020 to March 2021.xlsx,1
+18/03/2021,SECURITY SERVICES,Facilities,Pace Security Services Ltd,1660199,73311.0,HILL 09-12 - December 2020 to March 2021.xlsx,1
+18/03/2021,CAPITAL BUILDINGS,Capital,Aecom Ltd,1658643,57744.0,HILL 09-12 - December 2020 to March 2021.xlsx,1
+18/03/2021,CAPITAL BUILDINGS,Capital,Aecom Ltd,1662957,51552.0,HILL 09-12 - December 2020 to March 2021.xlsx,1
+18/03/2021,CAPITAL BUILDINGS,Capital,Couch Perry & Wilkes Llp,1658993,29760.0,HILL 09-12 - December 2020 to March 2021.xlsx,1
+18/03/2021,CAPITAL BUILDINGS,Capital,European Electronique Ltd,1652780,37169.0,HILL 09-12 - December 2020 to March 2021.xlsx,1
+18/03/2021,CAPITAL BUILDINGS,Capital,Western Building Systems Ltd,1658923,1029072.0,HILL 09-12 - December 2020 to March 2021.xlsx,1
+18/03/2021,CAPITAL IT,Capital,Apira Ltd,1651896,34194.0,HILL 09-12 - December 2020 to March 2021.xlsx,1
+18/03/2021,CAPITAL IT,Capital,Apira Ltd,1651897,47142.0,HILL 09-12 - December 2020 to March 2021.xlsx,1
+18/03/2021,CAPITAL IT,Capital,European Electronique Ltd,1656058,30120.0,HILL 09-12 - December 2020 to March 2021.xlsx,1
+18/03/2021,CAPITAL IT,Capital,Slalom Consulting Ltd,1627497,42542.0,HILL 09-12 - December 2020 to March 2021.xlsx,1
+18/03/2021,CAPITAL IT,Capital,Slalom Consulting Ltd,1628545,44019.0,HILL 09-12 - December 2020 to March 2021.xlsx,1
+18/03/2021,CAPITAL IT,Capital,Slalom Consulting Ltd,1636367,48003.0,HILL 09-12 - December 2020 to March 2021.xlsx,1
+18/03/2021,DRUGS,Corporate,Bayer Plc,1658285,91245.0,HILL 09-12 - December 2020 to March 2021.xlsx,1
+18/03/2021,DRUGS,Corporate,Roche Products Ltd,1658406,39886.0,HILL 09-12 - December 2020 to March 2021.xlsx,1
+18/03/2021,FEES FOR TESTS,Cardio Gastro Rheum Resp Neuro,Royal Brompton & Harefield Nhs Ft,66560,218844.0,HILL 09-12 - December 2020 to March 2021.xlsx,1
+18/03/2021,LICENCING AND MAINT. ICT INFRA,Corporate,European Electronique Ltd,1652780,22720.0,HILL 09-12 - December 2020 to March 2021.xlsx,1
+18/03/2021,MED EQUIP MAINTENANCE CONTRCTS,Theatres And Anaesthetics,T.J Smith And Newphew Ltd,1648551,26000.0,HILL 09-12 - December 2020 to March 2021.xlsx,1
+18/03/2021,NON-NHS AMBULANCE SERVICES,Central Budgets,Hats Group Ltd,1657083,31260.0,HILL 09-12 - December 2020 to March 2021.xlsx,1
+18/03/2021,PNEUMATIC TUBE MAINTENANCE CNT,Operational Serv Directorate,Aerocom (Uk) Ltd,1656763,27030.0,HILL 09-12 - December 2020 to March 2021.xlsx,1
+18/03/2021,STORES,Corporate,Nhs Supply Chain Roarp,1658038,78472.0,HILL 09-12 - December 2020 to March 2021.xlsx,1
+24/03/2021,CAPITAL BUILDINGS,Capital,London North West Healthcare Nhs Trust,67313,2447000.0,HILL 09-12 - December 2020 to March 2021.xlsx,1
+25/03/2021,CAPITAL BUILDINGS,Capital,Able Canopies Ltd,1660078,90405.0,HILL 09-12 - December 2020 to March 2021.xlsx,1
+25/03/2021,CAPITAL BUILDINGS,Capital,Aecom Ltd,1659422,103968.0,HILL 09-12 - December 2020 to March 2021.xlsx,1
+25/03/2021,CAPITAL BUILDINGS,Capital,Aecom Ltd,1659425,61056.0,HILL 09-12 - December 2020 to March 2021.xlsx,1
+25/03/2021,CAPITAL BUILDINGS,Capital,Aecom Ltd,1660265,159154.0,HILL 09-12 - December 2020 to March 2021.xlsx,1
+25/03/2021,CAPITAL BUILDINGS,Capital,Ibi Group (Uk)Ltd,1658156,57174.0,HILL 09-12 - December 2020 to March 2021.xlsx,1
+25/03/2021,CAPITAL BUILDINGS,Capital,Mts Health Ltd,1660285,28170.0,HILL 09-12 - December 2020 to March 2021.xlsx,1
+25/03/2021,CAPITAL BUILDINGS,Capital,Pcp Limited,1659332,237139.0,HILL 09-12 - December 2020 to March 2021.xlsx,1
+25/03/2021,CAPITAL BUILDINGS,Capital,Playfords Ltd,1661240,118142.0,HILL 09-12 - December 2020 to March 2021.xlsx,1
+25/03/2021,CAPITAL BUILDINGS,Capital,Playfords Ltd,1661241,335239.0,HILL 09-12 - December 2020 to March 2021.xlsx,1
+25/03/2021,CAPITAL BUILDINGS,Capital,Ridge & Partners,1660780,25297.0,HILL 09-12 - December 2020 to March 2021.xlsx,1
+25/03/2021,CAPITAL BUILDINGS,Capital,Ridge & Partners,1660783,193137.0,HILL 09-12 - December 2020 to March 2021.xlsx,1
+25/03/2021,CAPITAL BUILDINGS,Capital,Ridge & Partners,1660786,114648.0,HILL 09-12 - December 2020 to March 2021.xlsx,1
+25/03/2021,CAPITAL BUILDINGS,Capital,Ridge & Partners,1660788,184500.0,HILL 09-12 - December 2020 to March 2021.xlsx,1
+25/03/2021,CAPITAL BUILDINGS,Capital,Ridge & Partners,1660790,163946.0,HILL 09-12 - December 2020 to March 2021.xlsx,1
+25/03/2021,CAPITAL BUILDINGS,Capital,Savills (Uk) Ltd,1658916,55620.0,HILL 09-12 - December 2020 to March 2021.xlsx,1
+25/03/2021,CAPITAL BUILDINGS,Capital,Shj Hospital Pipelines Ltd,1660179,69350.0,HILL 09-12 - December 2020 to March 2021.xlsx,1
+25/03/2021,CAPITAL BUILDINGS,Capital,Softcat Ltd,1659769,319200.0,HILL 09-12 - December 2020 to March 2021.xlsx,1
+25/03/2021,CAPITAL BUILDINGS,Capital,Vista Maintenance Services Limited,1661349,37488.0,HILL 09-12 - December 2020 to March 2021.xlsx,1
+25/03/2021,CAPITAL IT,Capital,Cerner Ltd,1663279,1229707.0,HILL 09-12 - December 2020 to March 2021.xlsx,1
+25/03/2021,CONTRACTORS MAINTENANCE,Estates,Mpc Contracting Ltd,1660476,31722.0,HILL 09-12 - December 2020 to March 2021.xlsx,1
+25/03/2021,CONTRACTORS MAINTENANCE,Estates,Mpc Contracting Ltd,1660477,31722.0,HILL 09-12 - December 2020 to March 2021.xlsx,1
+25/03/2021,DRUGS,Corporate,Novartis Pharmaceuticals Uk Ltd,1659756,96163.0,HILL 09-12 - December 2020 to March 2021.xlsx,1
+25/03/2021,ELECTRICITY,Estates,Edf Energy,1656661,188029.0,HILL 09-12 - December 2020 to March 2021.xlsx,1
+25/03/2021,EXTERNAL AUDIT - FINAL ACCTS,Finance Department,Deloitte Llp,1661740,33900.0,HILL 09-12 - December 2020 to March 2021.xlsx,1
+25/03/2021,FINANCE LEASES,Corporate,Siemens Financial Services Ltd,1665215,31296.0,HILL 09-12 - December 2020 to March 2021.xlsx,1
+25/03/2021,GAS,Estates,Total Gas & Power Ltd,1660083,29181.0,HILL 09-12 - December 2020 to March 2021.xlsx,1
+25/03/2021,LICENCING AND MAINT. NON CLIN,Corporate,Oracle Corporation Uk Ltd,1666688,46699.0,HILL 09-12 - December 2020 to March 2021.xlsx,1
+25/03/2021,NON-NHS AMBULANCE SERVICES,Central Budgets,Hats Group Ltd,1658318,34260.0,HILL 09-12 - December 2020 to March 2021.xlsx,1
+25/03/2021,NON-NHS AMBULANCE SERVICES,Facilities,Hats Group Ltd,1659296,119010.0,HILL 09-12 - December 2020 to March 2021.xlsx,1
+25/03/2021,STORES,Corporate,Nhs Supply Chain Roarp,1658249,64755.0,HILL 09-12 - December 2020 to March 2021.xlsx,1
+25/03/2021,STORES,Corporate,Nhs Supply Chain Roarp,1660883,80929.0,HILL 09-12 - December 2020 to March 2021.xlsx,1
+31/03/2021,CAPITAL BUILDINGS,Capital,Pcp Limited,1657241,106226.0,HILL 09-12 - December 2020 to March 2021.xlsx,1
+31/03/2021,CAPITAL BUILDINGS,Capital,Shj Hospital Pipelines Ltd,1664184,81795.0,HILL 09-12 - December 2020 to March 2021.xlsx,1
+31/03/2021,CAPITAL BUILDINGS,Capital,Softcat Ltd,1663942,55740.0,HILL 09-12 - December 2020 to March 2021.xlsx,1
+31/03/2021,CAPITAL BUILDINGS,Capital,T & B (Contractors) Ltd,1667314,33328.0,HILL 09-12 - December 2020 to March 2021.xlsx,1
+31/03/2021,CAPITAL BUILDINGS,Capital,Vista Maintenance Services Limited,1666230,114303.0,HILL 09-12 - December 2020 to March 2021.xlsx,1
+31/03/2021,MEDICAL EQUIPMENT,Capital,Carleton Optical Equipment,1667484,28508.0,HILL 09-12 - December 2020 to March 2021.xlsx,1
+31/03/2021,MEDICAL EQUIPMENT,Capital,Fujifilm Sonosite Ltd,1665677,54545.0,HILL 09-12 - December 2020 to March 2021.xlsx,1
+31/03/2021,CAPITAL IT,Capital,Dacoll Ltd,1666192,144144.0,HILL 09-12 - December 2020 to March 2021.xlsx,1
+31/03/2021,CAPITAL IT,Capital,Phoenix Software Limited,1667315,69282.0,HILL 09-12 - December 2020 to March 2021.xlsx,1
+31/03/2021,CT SCANNING,X Ray,Radiology Reporting Online,1662189,47256.0,HILL 09-12 - December 2020 to March 2021.xlsx,1
+31/03/2021,FEES FOR TESTS,X Ray,Radiology Reporting Online,1655602,53520.0,HILL 09-12 - December 2020 to March 2021.xlsx,1
+31/03/2021,FINANCE LEASES,Corporate,Bhh Lift Accommodation Services Ltd,1660213,239263.0,HILL 09-12 - December 2020 to March 2021.xlsx,1
+31/03/2021,NON-NHS AMBULANCE SERVICES,Central Budgets,Hats Group Ltd,1651119,37500.0,HILL 09-12 - December 2020 to March 2021.xlsx,1
+31/03/2021,SYNERGY LAUNDRY CONTRACT,Facilities,Synergy Health Managed Services Ltd,1661348,63116.0,HILL 09-12 - December 2020 to March 2021.xlsx,1
+31/03/2021,SYSMEX REAGENTS,Operational Serv Directorate,Sysmex Uk Ltd,1660404,179821.0,HILL 09-12 - December 2020 to March 2021.xlsx,1

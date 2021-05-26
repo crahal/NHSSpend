@@ -1,0 +1,1400 @@
+date,expensearea,expensetype,supplier,amount,file,negative
+13/05/2020,Endoscopy N.P.H,Clinical Services Received,18 Week Support Llp,85000.0,LNWU 02 - May.csv,1
+06/05/2020,Balance Sheet Lnwh,Salary Sacrifice White Goods,Akira Financial Limited,43653.0,LNWU 02 - May.csv,1
+20/05/2020,Capital,Estates/Building Works,Kier Construction Limited,35256.0,LNWU 02 - May.csv,1
+27/05/2020,Capital,Estates/Building Works,Kier Construction Limited,80394.0,LNWU 02 - May.csv,1
+13/05/2020,Capital,Equipment,Siemens Healthcare,585960.0,LNWU 02 - May.csv,1
+13/05/2020,Capital,Equipment,Siemens Healthcare,92970.0,LNWU 02 - May.csv,1
+13/05/2020,Capital,Equipment,Siemens Healthcare,104898.0,LNWU 02 - May.csv,1
+13/05/2020,Capital,Equipment,Siemens Healthcare,92970.0,LNWU 02 - May.csv,1
+13/05/2020,Capital,Equipment,Siemens Healthcare,80664.0,LNWU 02 - May.csv,1
+13/05/2020,Capital,Equipment,Siemens Healthcare,88986.0,LNWU 02 - May.csv,1
+13/05/2020,Capital,Estates/Building Works,Siemens Healthcare,130972.0,LNWU 02 - May.csv,1
+13/05/2020,Car Parking N.W.L,C.M.H. Car Parking Contract,Apcoa Parking ( Uk ) Limited,64953.0,LNWU 02 - May.csv,1
+13/05/2020,Car Parking N.W.L,C.M.H. Car Parking Contract,Apcoa Parking ( Uk ) Limited,193694.0,LNWU 02 - May.csv,1
+27/05/2020,Cardiology Investigationsn.W.L,General Instruments,Medtronic Ltd,568707.0,LNWU 02 - May.csv,1
+06/05/2020,A&E Nursing E.H,General Instruments,Sccl-Nhs Supply Chain Roarp-Consumables,26941.0,LNWU 02 - May.csv,1
+20/05/2020,I M & T Support Maintenance,Software Purchases \ Licences,Armadillo Managed Services Ltd,25549.0,LNWU 02 - May.csv,1
+06/05/2020,Ibd Boost,Research Costs,Queen Mary University Of London,43403.0,LNWU 02 - May.csv,1
+13/05/2020,Bed Hire Contract N.W.L,Bed Hire,Arjo Uk Ltd,78960.0,LNWU 02 - May.csv,1
+06/05/2020,E.B.M.E.,E.B.M.E Contract,Bcas Bio Medical Services Ltd,210000.0,LNWU 02 - May.csv,1
+20/05/2020,Post Room N.P.H,Postage,Pitney Bowes Limited - Franking,25000.0,LNWU 02 - May.csv,1
+06/05/2020,I M & T Support Maintenance,Software Maintenance,Galtec Solutions Limited,55881.0,LNWU 02 - May.csv,1
+27/05/2020,Point Of Care N.W.L,Reagents/Chemicals,Genmed.Me Ltd,30108.0,LNWU 02 - May.csv,1
+06/05/2020,Endoscopy N.P.H,Clinical Services Received,Genmed.Me Ltd,56827.0,LNWU 02 - May.csv,1
+06/05/2020,Managed Print,It Leases,Genmed.Me Ltd,136071.0,LNWU 02 - May.csv,1
+27/05/2020,Point Of Care N.W.L,It Leases,Genmed.Me Ltd,54457.0,LNWU 02 - May.csv,1
+27/05/2020,Balance Sheet Lnwh,Pharmacy Stock Purchases,Baxter Healthcare Ltd,31730.0,LNWU 02 - May.csv,1
+27/05/2020,E.B.M.E.,Medical Equip Repairs & Maint,Sccl-Nhs Supply Chain Maintenance,51755.0,LNWU 02 - May.csv,1
+27/05/2020,Radiology C.M.H,Medical Equip Repairs & Maint,Sccl-Nhs Supply Chain Maintenance,93191.0,LNWU 02 - May.csv,1
+27/05/2020,E.B.M.E.,Medical Equip Repairs & Maint,Sccl-Nhs Supply Chain Maintenance,58773.0,LNWU 02 - May.csv,1
+20/05/2020,I M & T Support Maintenance,Software Maintenance,Hd Clinical Ltd,52800.0,LNWU 02 - May.csv,1
+27/05/2020,Capital,Equipment,Stryker (Uk) Ltd,331179.0,LNWU 02 - May.csv,1
+13/05/2020,Capital,Estates/Building Works,Seville Developments Ltd,51660.0,LNWU 02 - May.csv,1
+20/05/2020,Year End Adjust,Medical Gases,Arjo Uk Ltd,27614.0,LNWU 02 - May.csv,1
+20/05/2020,Bed Hire Contract N.W.L,Medical Equip Repairs & Maint,Arjo Uk Ltd,78960.0,LNWU 02 - May.csv,1
+06/05/2020,Bed Hire Contract N.W.L,Medical Equip Repairs & Maint,Arjo Uk Ltd,43329.0,LNWU 02 - May.csv,1
+11/05/2020,Capital,Software,Nuance Communications Ireland Limited,45000.0,LNWU 02 - May.csv,1
+20/05/2020,Capital,Equipment,Fileder Filter Systems Limited,35694.0,LNWU 02 - May.csv,1
+13/05/2020,Capital,Equipment,Carl Zeiss Ltd,126853.0,LNWU 02 - May.csv,1
+27/05/2020,Balance Sheet Lnwh,Pharmacy Stock Purchases,Aah Pharmaceuticals Limited,68208.0,LNWU 02 - May.csv,1
+06/05/2020,Medicine Management,Clinical Services Received,Central And North West London,73858.0,LNWU 02 - May.csv,1
+13/05/2020,Id Screening,Uniforms,Matz Medical Ltd,52200.0,LNWU 02 - May.csv,1
+06/05/2020,Capital,Estates/Building Works,Atos It Services Uk Ltd,39446.0,LNWU 02 - May.csv,1
+27/05/2020,Id Screening,Uniforms,Matz Medical Ltd,33000.0,LNWU 02 - May.csv,1
+20/05/2020,Gynaecology Outpatients N.P.H,Other Medical Consumables,Karl Storz Endoscopy (Uk) Ltd,26430.0,LNWU 02 - May.csv,1
+06/05/2020,Balance Sheet Lnwh,Pharmacy Stock Purchases,Mawdsleys-Brookes & Co Ltd,50679.0,LNWU 02 - May.csv,1
+06/05/2020,Balance Sheet Lnwh,Pharmacy Stock Purchases,Mawdsleys-Brookes & Co Ltd,47976.0,LNWU 02 - May.csv,1
+27/05/2020,Procurement,Uniforms,Merlin Developments Ltd,37980.0,LNWU 02 - May.csv,1
+05/05/2020,Mattock Lne Health Cntrestates,Rates,Ealing London Borough Council,44954.0,LNWU 02 - May.csv,1
+05/05/2020,Acton Health Centre Estates,Rates,Ealing London Borough Council,41230.0,LNWU 02 - May.csv,1
+05/05/2020,Featherstone Road Estates,Rates,Ealing London Borough Council,28672.0,LNWU 02 - May.csv,1
+06/05/2020,Capital,I.C.T Hardware,Dell Computer Corporation Ltd,247080.0,LNWU 02 - May.csv,1
+20/05/2020,I M & T Support Maintenance,Computer Equipment,Dell Computer Corporation Ltd,139044.0,LNWU 02 - May.csv,1
+11/05/2020,Capital,Estates/Building Works,Medical Imaging Systems Ltd,140541.0,LNWU 02 - May.csv,1
+11/05/2020,Capital,Estates/Building Works,Medical Imaging Systems Ltd,49560.0,LNWU 02 - May.csv,1
+21/05/2020,Blood Products N.W.L,Blood Products,Nhs Blood And Transplant,214579.0,LNWU 02 - May.csv,1
+21/05/2020,Blood Products E.H,Blood Products,Nhs Blood And Transplant,45849.0,LNWU 02 - May.csv,1
+21/05/2020,Blood Products N.W.L,Blood Products,Nhs Blood And Transplant,212436.0,LNWU 02 - May.csv,1
+21/05/2020,Blood Products E.H,Blood Products,Nhs Blood And Transplant,42824.0,LNWU 02 - May.csv,1
+28/05/2020,Blood Products N.W.L,Blood Products,Nhs Blood And Transplant,212436.0,LNWU 02 - May.csv,1
+28/05/2020,Blood Products E.H,Blood Products,Nhs Blood And Transplant,42824.0,LNWU 02 - May.csv,1
+27/05/2020,Balance Sheet Lnwh,Pharmacy Stock Purchases,Celgene Limited,41909.0,LNWU 02 - May.csv,1
+20/05/2020,Capital,Equipment,Sccl-Nhs Supply Chain Capital,383296.0,LNWU 02 - May.csv,1
+20/05/2020,Capital,Equipment,Sccl-Nhs Supply Chain Capital,628351.0,LNWU 02 - May.csv,1
+20/05/2020,Capital,Equipment,Draeger Medical Uk Ltd,42987.0,LNWU 02 - May.csv,1
+20/05/2020,Capital,Equipment,Fujifilm Uk Limited,83994.0,LNWU 02 - May.csv,1
+06/05/2020,Radiology N.P.H,Medical Equip Repairs & Maint,Philips Respironics Uk,50545.0,LNWU 02 - May.csv,1
+27/05/2020,Capital,Equipment,Nihon Kohden Uk Limited,184381.0,LNWU 02 - May.csv,1
+27/05/2020,Balance Sheet Lnwh,Pharmacy Stock Purchases,Csl Behring Uk Ltd,33600.0,LNWU 02 - May.csv,1
+06/05/2020,Southall Bdway Health Estates,Rent Payable,Messers Mohammad & Rahman,82500.0,LNWU 02 - May.csv,1
+13/05/2020,I.B.D Nursing,Clinical Services Received,Lloyds Pharmacy Clinical Homecare,59223.0,LNWU 02 - May.csv,1
+20/05/2020,I M & T Support Maintenance,Project Management,Cgi It Uk Limited,62005.0,LNWU 02 - May.csv,1
+20/05/2020,Pathology Contract N.W.L,Pathology Contract T.D.L.,Nwlht Analytical Llp,1110215.0,LNWU 02 - May.csv,1
+20/05/2020,Pathology Contract N.W.L,Pathology Contract T.D.L.,Nwlht Facilities Llp,650980.0,LNWU 02 - May.csv,1
+27/05/2020,Payroll,Lease Cars,Ensure Uk Limited,294109.0,LNWU 02 - May.csv,1
+06/05/2020,I M & T Support Maintenance,Software Maintenance,Softcat Ltd,33896.0,LNWU 02 - May.csv,1
+20/05/2020,Capital,I.C.T Hardware,Softcat Ltd,61232.0,LNWU 02 - May.csv,1
+27/05/2020,Radiology N.P.H,General Instruments,Agito Medical A/S,60000.0,LNWU 02 - May.csv,1
+06/05/2020,Radiology N.P.H,General Instruments,Agito Medical A/S,48000.0,LNWU 02 - May.csv,1
+27/05/2020,Capital,Equipment,Arthrex Ltd,40120.0,LNWU 02 - May.csv,1
+13/05/2020,Information E.H,Software Maintenance,Phoenix Software Ltd,71789.0,LNWU 02 - May.csv,1
+27/05/2020,Balance Sheet Lnwh,Pharmacy Stock Purchases,Healthcare At Home Limited,47272.0,LNWU 02 - May.csv,1
+27/05/2020,I M & T Support Maintenance,Software Maintenance,Teleologic Ltd,25872.0,LNWU 02 - May.csv,1
+20/05/2020,Finance Directorate Mgmt,Liability To 3rd Party Ins,Nhs Resolution,1893806.0,LNWU 02 - May.csv,1
+27/05/2020,Finance Directorate Mgmt,Liability To 3rd Party Ins,Nhs Resolution,1893806.0,LNWU 02 - May.csv,1
+06/05/2020,P.A.C.S N.W.L,P.A.C.S,Sectra Limited,73630.0,LNWU 02 - May.csv,1
+06/05/2020,P.A.C.S N.W.L,P.A.C.S,Sectra Limited,73630.0,LNWU 02 - May.csv,1
+06/05/2020,Point Of Care N.W.L,Laboratory Service Contracts,Radiometer Limited,69698.0,LNWU 02 - May.csv,1
+18/06/2020,Capital,Equipment,Omnicell Ltd,109080.0,LNWU 03 - June.csv,1
+18/06/2020,Theatres N.P.H,Uniforms,The Age Of Aquarius Ltd,26400.0,LNWU 03 - June.csv,1
+10/06/2020,Id Screening,Medical Equipment,The Income Generation Company (Tig Ltd),98582.0,LNWU 03 - June.csv,1
+03/06/2020,Balance Sheet Lnwh,Salary Sacrifice White Goods,Akira Financial Limited,45990.0,LNWU 03 - June.csv,1
+24/06/2020,Id Screening,General Instruments,Sccl-Nhs Supply Chain Roarp-Consumables,37840.0,LNWU 03 - June.csv,1
+10/06/2020,Id Screening,General Instruments,Whi Safeguard Limited,40320.0,LNWU 03 - June.csv,1
+18/06/2020,Car Parking N.W.L,C.M.H. Car Parking Contract,Apcoa Facilities Management (Uk) Limited,193694.0,LNWU 03 - June.csv,1
+24/06/2020,Capital,Equipment,Medtronic Ltd,83154.0,LNWU 03 - June.csv,1
+10/06/2020,Cardiology Investigationsn.W.L,General Instruments,Medtronic Ltd,289290.0,LNWU 03 - June.csv,1
+10/06/2020,Cardiology Investigationsn.W.L,Pacemakers,Medtronic Ltd,279417.0,LNWU 03 - June.csv,1
+18/06/2020,I M & T Support Maintenance,Software Purchases \ Licences,Armadillo Managed Services Ltd,25333.0,LNWU 03 - June.csv,1
+10/06/2020,Balance Sheet Lnwh,Pharmacy Stock Purchases,Roche Products Ltd,49094.0,LNWU 03 - June.csv,1
+10/06/2020,I M & T Support Maintenance,Software Purchases \ Licences,Made Tech Limited,35999.0,LNWU 03 - June.csv,1
+18/06/2020,Post Room N.P.H,Postage,Pitney Bowes Limited - Franking,25000.0,LNWU 03 - June.csv,1
+04/06/2020,E.B.M.E.,E.B.M.E Contract,Bcas Bio Medical Services Ltd,210000.0,LNWU 03 - June.csv,1
+10/06/2020,Id Screening,General Instruments,Whi Safeguard Limited,33600.0,LNWU 03 - June.csv,1
+10/06/2020,Id Screening,Patients' Clothing,Specialist Door Solutions Ltd,64950.0,LNWU 03 - June.csv,1
+10/06/2020,Id Screening,Patients' Clothing,Specialist Door Solutions Ltd,32475.0,LNWU 03 - June.csv,1
+24/06/2020,Id Screening,Patients' Clothing,Specialist Door Solutions Ltd,48712.0,LNWU 03 - June.csv,1
+04/06/2020,Endoscopy N.P.H,Clinical Services Received,Genmed.Me Ltd,56827.0,LNWU 03 - June.csv,1
+10/06/2020,Procurement,It Leases,Genmed.Me Ltd,138711.0,LNWU 03 - June.csv,1
+04/06/2020,Capital,Equipment,Baxter Healthcare Ltd,29520.0,LNWU 03 - June.csv,1
+18/06/2020,Radiology N.P.H,Medical Equip Repairs & Maint,Sccl-Nhs Supply Chain Maintenance,51587.0,LNWU 03 - June.csv,1
+10/06/2020,Radiology E.H,Medical Equip Repairs & Maint,Sccl-Nhs Supply Chain Maintenance,53980.0,LNWU 03 - June.csv,1
+10/06/2020,Radiology N.P.H,Medical Equip Repairs & Maint,Sccl-Nhs Supply Chain Maintenance,66317.0,LNWU 03 - June.csv,1
+24/06/2020,Urology C.M.H,Medical Equip Repairs & Maint,Sccl-Nhs Supply Chain Maintenance,68465.0,LNWU 03 - June.csv,1
+24/06/2020,Theatres N.P.H,Medical Equip Repairs & Maint,Sccl-Nhs Supply Chain Maintenance,92691.0,LNWU 03 - June.csv,1
+24/06/2020,Radiology E.H,Medical Equip Repairs & Maint,Sccl-Nhs Supply Chain Maintenance,63256.0,LNWU 03 - June.csv,1
+10/06/2020,Estates\Facilities Management,Legal Fees,Trowers & Hamlins Llp,32646.0,LNWU 03 - June.csv,1
+24/06/2020,Capital,Equipment,Maquet Limited,92999.0,LNWU 03 - June.csv,1
+18/06/2020,I M & T Support Maintenance,Hardware Maintenance,Daisy Corporate Services Trading Limited,26930.0,LNWU 03 - June.csv,1
+10/06/2020,Balance Sheet Lnwh,Pharmacy Stock Purchases,Dialachemist Ltd T/A Springmed Solutions,29160.0,LNWU 03 - June.csv,1
+24/06/2020,Balance Sheet Lnwh,Pharmacy Stock Purchases,Boehringer Ingelheim Ltd,36828.0,LNWU 03 - June.csv,1
+10/06/2020,Balance Sheet Lnwh,Pharmacy Stock Purchases,Boehringer Ingelheim Ltd,32004.0,LNWU 03 - June.csv,1
+24/06/2020,Id Screening,General Instruments,Toffeln Limited,186600.0,LNWU 03 - June.csv,1
+04/06/2020,Communications (Phones),Mobile Phone Call Chgs\Rental,Bt Global Services,25670.0,LNWU 03 - June.csv,1
+04/06/2020,Communications (Phones),Mobile Phone Call Chgs\Rental,Bt Global Services,25670.0,LNWU 03 - June.csv,1
+10/06/2020,Balance Sheet Lnwh,Pharmacy Stock Purchases,Aah Pharmaceuticals Limited,48523.0,LNWU 03 - June.csv,1
+24/06/2020,Cardiology Investigationsn.W.L,Uniforms,Toffeln Limited,148262.0,LNWU 03 - June.csv,1
+24/06/2020,Id Screening,Protective Clothing,Toffeln Limited,102999.0,LNWU 03 - June.csv,1
+24/06/2020,Id Screening,Protective Clothing,Toffeln Limited,102999.0,LNWU 03 - June.csv,1
+04/06/2020,Id Screening,Uniforms,Matz Medical Ltd,78000.0,LNWU 03 - June.csv,1
+04/06/2020,Id Screening,Uniforms,Matz Medical Ltd,78000.0,LNWU 03 - June.csv,1
+18/06/2020,Id Screening,Uniforms,Matz Medical Ltd,130000.0,LNWU 03 - June.csv,1
+04/06/2020,Capital,Equipment,Ge Medical Systems Limited,28902.0,LNWU 03 - June.csv,1
+18/06/2020,Capital,Equipment,Karl Storz Endoscopy (Uk) Ltd,74602.0,LNWU 03 - June.csv,1
+10/06/2020,Patient Transport Contract,Patient Transport Contract,Ambulance Transfers Ltd,395849.0,LNWU 03 - June.csv,1
+10/06/2020,Patient Transport Contract,Patient Transport Contract,Ambulance Transfers Ltd,263622.0,LNWU 03 - June.csv,1
+11/06/2020,Id Screening,General Instruments,Cmt Equipment Limited T/A Cmt Group,76500.0,LNWU 03 - June.csv,1
+11/06/2020,Id Screening,General Instruments,Cmt Equipment Limited T/A Cmt Group,198900.0,LNWU 03 - June.csv,1
+24/06/2020,Id Screening,General Instruments,Cmt Equipment Limited T/A Cmt Group,165750.0,LNWU 03 - June.csv,1
+10/06/2020,Textile Services,Laundry Contract,Elis Uk Limited,40537.0,LNWU 03 - June.csv,1
+17/06/2020,Blood Products N.W.L,Blood Products,Nhs Blood And Transplant,212436.0,LNWU 03 - June.csv,1
+17/06/2020,Blood Products E.H,Blood Products,Nhs Blood And Transplant,42824.0,LNWU 03 - June.csv,1
+10/06/2020,Balance Sheet Lnwh,Pharmacy Stock Purchases,Celgene Limited,60236.0,LNWU 03 - June.csv,1
+10/06/2020,Balance Sheet Lnwh,Pharmacy Stock Purchases,Celgene Limited,26399.0,LNWU 03 - June.csv,1
+24/06/2020,Balance Sheet Lnwh,Pharmacy Stock Purchases,Celgene Limited,52802.0,LNWU 03 - June.csv,1
+18/06/2020,Capital,Equipment,Alcon Eye Care Uk Limited,49800.0,LNWU 03 - June.csv,1
+24/06/2020,Communications (Phones),Mobile Phone Call Chgs\Rental,Vodafone Ltd,25122.0,LNWU 03 - June.csv,1
+18/06/2020,Capital,Equipment,Sccl-Nhs Supply Chain Capital,330318.0,LNWU 03 - June.csv,1
+10/06/2020,Balance Sheet Lnwh,Pharmacy Stock Purchases,Csl Behring Uk Ltd,35700.0,LNWU 03 - June.csv,1
+10/06/2020,Balance Sheet Lnwh,Lodging,Network Homes,96276.0,LNWU 03 - June.csv,1
+08/06/2020,H.R.  Services N.W.L,Software Purchases \ Licences,Softcat Ltd,149148.0,LNWU 03 - June.csv,1
+10/06/2020,I.B.D Nursing,Clinical Services Received,Lloyds Pharmacy Clinical Homecare,59223.0,LNWU 03 - June.csv,1
+10/06/2020,I.B.D Nursing,Clinical Services Received,Lloyds Pharmacy Clinical Homecare,59223.0,LNWU 03 - June.csv,1
+10/06/2020,Balance Sheet Lnwh,Pharmacy Stock Purchases,Alliance Healthcare (Distribution) Limited,36877.0,LNWU 03 - June.csv,1
+24/06/2020,Utilities E.H,Electricity,Laser Energy Buying Group,119111.0,LNWU 03 - June.csv,1
+24/06/2020,Utilities N.P.H,Electricity,Laser Energy Buying Group,329337.0,LNWU 03 - June.csv,1
+24/06/2020,Utilities N.P.H,Electricity,Laser Energy Buying Group,290143.0,LNWU 03 - June.csv,1
+24/06/2020,Utilities E.H,Electricity,Laser Energy Buying Group,108391.0,LNWU 03 - June.csv,1
+24/06/2020,Utilities E.H,Gas,Laser Energy Buying Group,66451.0,LNWU 03 - June.csv,1
+24/06/2020,Utilities E.H,Gas,Laser Energy Buying Group,25473.0,LNWU 03 - June.csv,1
+18/06/2020,I M & T Support Maintenance,Project Management,Cgi It Uk Limited,62005.0,LNWU 03 - June.csv,1
+04/06/2020,Capital,Equipment,Cardiac Services,36963.0,LNWU 03 - June.csv,1
+10/06/2020,Capital,Equipment,Cardiac Services,30126.0,LNWU 03 - June.csv,1
+24/06/2020,Oncology E.H,Consultant,Imperial College Healthcare Nhs Trust,31198.0,LNWU 03 - June.csv,1
+24/06/2020,Oncology,Consultant,Imperial College Healthcare Nhs Trust,25337.0,LNWU 03 - June.csv,1
+10/06/2020,H.R.  Services N.W.L,Software Purchases \ Licences,Softcat Ltd,149148.0,LNWU 03 - June.csv,1
+10/06/2020,Capital,Software,Softcat Ltd,184800.0,LNWU 03 - June.csv,1
+18/06/2020,Radiology N.P.H,General Instruments,Agito Medical A/S,48000.0,LNWU 03 - June.csv,1
+04/06/2020,Radiology N.P.H,General Instruments,Agito Medical A/S,48000.0,LNWU 03 - June.csv,1
+10/06/2020,St Marks Surgery,Project Management,Apira Ltd,36000.0,LNWU 03 - June.csv,1
+10/06/2020,Balance Sheet Lnwh,Lodging,Network Homes,95928.0,LNWU 03 - June.csv,1
+18/06/2020,Balance Sheet Lnwh,Pharmacy Stock Purchases,Healthcare At Home Limited,60900.0,LNWU 03 - June.csv,1
+24/06/2020,Balance Sheet Lnwh,Pharmacy Stock Purchases,Healthcare At Home Limited,49986.0,LNWU 03 - June.csv,1
+24/06/2020,I M & T Support Maintenance,Pas Licence And Support,Specialist Computer Centres Plc,103584.0,LNWU 03 - June.csv,1
+18/06/2020,I M & T Support Maintenance,Hardware Maintenance,Mti Technology Limited,34249.0,LNWU 03 - June.csv,1
+18/06/2020,Capital,Software,Edm Group Ltd,72011.0,LNWU 03 - June.csv,1
+18/06/2020,Capital,Software,Edm Group Ltd,176198.0,LNWU 03 - June.csv,1
+29/06/2020,Commercial,Liability To 3rd Party Ins,Nhs Resolution,46365.0,LNWU 03 - June.csv,1
+29/06/2020,Depreciation\Provisions N.W.L,Nhsla Premium,Nhs Resolution,1847441.0,LNWU 03 - June.csv,1
+10/06/2020,Balance Sheet Lnwh,Pharmacy Stock Purchases,Alk-Abello Ltd,90000.0,LNWU 03 - June.csv,1
+24/06/2020,Balance Sheet Lnwh,Pharmacy Stock Purchases,Alk-Abello Ltd,36000.0,LNWU 03 - June.csv,1
+04/06/2020,Textile Services,Laundry Contract,Elis Uk Limited,25797.0,LNWU 03 - June.csv,1
+04/06/2020,Textile Services,Laundry Contract,Elis Uk Limited,115856.0,LNWU 03 - June.csv,1
+10/06/2020,Id Screening,Protective Clothing,The Income Generation Company (Tig Ltd),196416.0,LNWU 03 - June.csv,1
+10/06/2020,Id Screening,Protective Clothing,The Income Generation Company (Tig Ltd),37537.0,LNWU 03 - June.csv,1
+08/07/2020,I M & T Support Maintenance,Computer Equipment,Parity Medical,48705.0,LNWU 04 - July.csv,1
+01/07/2020,Capital,Estates/Building Works,Direct Healthcare Group,49012.0,LNWU 04 - July.csv,1
+29/07/2020,Bed Hire Contract N.W.L,Medical Equip Repairs & Maint,Direct Healthcare Group,62100.0,LNWU 04 - July.csv,1
+15/07/2020,Capital,I.C.T Hardware,European Electronique Limited,80134.0,LNWU 04 - July.csv,1
+29/07/2020,Capital,Equipment,Getinge Uk Limited,479733.0,LNWU 04 - July.csv,1
+29/07/2020,Balance Sheet Lnwh,Pharmacy Stock Purchases,Janssen Cilag Limited,32352.0,LNWU 04 - July.csv,1
+01/07/2020,Balance Sheet Lnwh,Salary Sacrifice White Goods,Akira Financial Limited,38627.0,LNWU 04 - July.csv,1
+29/07/2020,Balance Sheet Lnwh,Salary Sacrifice White Goods,Akira Financial Limited,36664.0,LNWU 04 - July.csv,1
+15/07/2020,Capital,Estates/Building Works,Kier Construction Limited,35612.0,LNWU 04 - July.csv,1
+30/07/2020,Car Parking N.W.L,Car Parking,Apcoa Facilities Management (Uk) Limited,193694.0,LNWU 04 - July.csv,1
+29/07/2020,Estates\Facilities Management,Legal Fees,Trowers & Hamlins Llp,27535.0,LNWU 04 - July.csv,1
+01/07/2020,Ibd Boost,Research Costs,Queen Mary University Of London,43403.0,LNWU 04 - July.csv,1
+01/07/2020,Balance Sheet Lnwh,Pharmacy Stock Purchases,Roche Products Ltd,43883.0,LNWU 04 - July.csv,1
+23/07/2020,Post Room N.P.H,Postage,Pitney Bowes Limited - Franking,25000.0,LNWU 04 - July.csv,1
+01/07/2020,Post Room N.P.H,Postage,Pitney Bowes Limited - Franking,25000.0,LNWU 04 - July.csv,1
+01/07/2020,E.B.M.E.,E.B.M.E Contract,Bcas Bio Medical Services Ltd,210000.0,LNWU 04 - July.csv,1
+29/07/2020,E.B.M.E.,E.B.M.E Contract,Bcas Bio Medical Services Ltd,210000.0,LNWU 04 - July.csv,1
+15/07/2020,Id Screening,Patients' Clothing,Specialist Door Solutions Ltd,81187.0,LNWU 04 - July.csv,1
+01/07/2020,Anaesthetics Medical N.W.L,Equipment Lease,Genmed.Me Ltd,33201.0,LNWU 04 - July.csv,1
+01/07/2020,Radiology N.P.H,Equipment Lease,Genmed.Me Ltd,25052.0,LNWU 04 - July.csv,1
+29/07/2020,I M & T Support Maintenance,Professional Fees,Healthcare Clinical Informatics Limited,51975.0,LNWU 04 - July.csv,1
+29/07/2020,I M & T Support Maintenance,Building Contract Work,Healthcare Clinical Informatics Limited,30240.0,LNWU 04 - July.csv,1
+01/07/2020,Incontinence Bcs,Medical Equipment,Ontex Healthcare Uk Ltd,52180.0,LNWU 04 - July.csv,1
+01/07/2020,Incontinence Bcs,Incontinence Contract,Ontex Healthcare Uk Ltd,46457.0,LNWU 04 - July.csv,1
+08/07/2020,Radiology N.P.H,Medical Equip Repairs & Maint,Sccl-Nhs Supply Chain Maintenance,62709.0,LNWU 04 - July.csv,1
+15/07/2020,E.B.M.E.,Medical Equip Repairs & Maint,Sccl-Nhs Supply Chain Maintenance,48544.0,LNWU 04 - July.csv,1
+15/07/2020,Radiology N.P.H,Medical Equip Repairs & Maint,Sccl-Nhs Supply Chain Maintenance,80448.0,LNWU 04 - July.csv,1
+29/07/2020,Capital,Estates/Building Works,Apcoa Parking ( Uk ) Limited,177884.0,LNWU 04 - July.csv,1
+08/07/2020,Capital,Estates/Building Works,Seville Developments Ltd,54095.0,LNWU 04 - July.csv,1
+08/07/2020,Capital,Estates/Building Works,Seville Developments Ltd,56721.0,LNWU 04 - July.csv,1
+08/07/2020,Capital,Estates/Building Works,Seville Developments Ltd,53655.0,LNWU 04 - July.csv,1
+08/07/2020,Capital,Estates/Building Works,Seville Developments Ltd,32601.0,LNWU 04 - July.csv,1
+22/07/2020,Capital,Furniture & Fittings,Arjo Uk Ltd,52593.0,LNWU 04 - July.csv,1
+22/07/2020,Bed Hire Contract N.W.L,Medical Equip Repairs & Maint,Arjo Uk Ltd,43329.0,LNWU 04 - July.csv,1
+01/07/2020,Capital,Equipment,Fujifilm Sonosite Limited,156698.0,LNWU 04 - July.csv,1
+01/07/2020,Capital,Equipment,Fujifilm Sonosite Limited,26946.0,LNWU 04 - July.csv,1
+01/07/2020,Capital,Equipment,Fujifilm Sonosite Limited,27246.0,LNWU 04 - July.csv,1
+01/07/2020,Capital,Equipment,Fujifilm Sonosite Limited,26946.0,LNWU 04 - July.csv,1
+01/07/2020,Capital,Equipment,Fujifilm Sonosite Limited,28086.0,LNWU 04 - July.csv,1
+01/07/2020,Capital,Equipment,Fujifilm Sonosite Limited,27546.0,LNWU 04 - July.csv,1
+08/07/2020,Capital,Equipment,Steris Solutions Limited,92998.0,LNWU 04 - July.csv,1
+01/07/2020,Balance Sheet Lnwh,Pharmacy Stock Purchases,Dialachemist Ltd T/A Springmed Solutions,34020.0,LNWU 04 - July.csv,1
+01/07/2020,I M & T Support Maintenance,Software Maintenance,Insight Direct ( Uk ) Limited,54000.0,LNWU 04 - July.csv,1
+29/07/2020,I M & T Support Maintenance,Software Maintenance,Insight Direct ( Uk ) Limited,26174.0,LNWU 04 - July.csv,1
+08/07/2020,Capital,Equipment,Carl Zeiss Ltd,126451.0,LNWU 04 - July.csv,1
+02/07/2020,Id Screening,Protective Clothing,Denka Uk Limited,49600.0,LNWU 04 - July.csv,1
+22/07/2020,Balance Sheet Lnwh,Pharmacy Stock Purchases,Aah Pharmaceuticals Limited,32349.0,LNWU 04 - July.csv,1
+01/07/2020,Id Screening,General Instruments,Toffeln Limited,55980.0,LNWU 04 - July.csv,1
+01/07/2020,Id Screening,General Instruments,Toffeln Limited,46650.0,LNWU 04 - July.csv,1
+01/07/2020,Id Screening,Protective Clothing,Toffeln Limited,205999.0,LNWU 04 - July.csv,1
+15/07/2020,Balance Sheet Lnwh,Pharmacy Stock Purchases,Aah Pharmaceuticals Limited,32411.0,LNWU 04 - July.csv,1
+14/07/2020,Cancer Screening,General Instruments,Chrystal Consulting Limited,154047.0,LNWU 04 - July.csv,1
+14/07/2020,Cancer Screening,General Instruments,Chrystal Consulting Limited,154047.0,LNWU 04 - July.csv,1
+22/07/2020,Capital,Estates/Building Works,Siemens Industry Software Limited,40585.0,LNWU 04 - July.csv,1
+08/07/2020,Id Screening,Uniforms,Matz Medical Ltd,130000.0,LNWU 04 - July.csv,1
+15/07/2020,Id Screening,Uniforms,Matz Medical Ltd,130000.0,LNWU 04 - July.csv,1
+08/07/2020,Capital,Equipment,Karl Storz Endoscopy (Uk) Ltd,104567.0,LNWU 04 - July.csv,1
+29/07/2020,Capital,Equipment,Karl Storz Endoscopy (Uk) Ltd,87214.0,LNWU 04 - July.csv,1
+15/07/2020,Patient Transport Contract,Patient Transport Contract,Ambulance Transfers Ltd,345748.0,LNWU 04 - July.csv,1
+15/07/2020,Patient Transport Contract,Patient Transport Contract,Ambulance Transfers Ltd,324343.0,LNWU 04 - July.csv,1
+15/07/2020,I M & T,Substantive Management Band 9,Nhs Brent Ccg,29914.0,LNWU 04 - July.csv,1
+08/07/2020,Capital,Equipment,Philips Healthcare,404672.0,LNWU 04 - July.csv,1
+29/07/2020,Capital,I.C.T Hardware,Dell Computer Corporation Ltd,212172.0,LNWU 04 - July.csv,1
+29/07/2020,Capital,I.C.T Hardware,Dell Computer Corporation Ltd,844735.0,LNWU 04 - July.csv,1
+29/07/2020,Capital,I.C.T Hardware,Dell Computer Corporation Ltd,83335.0,LNWU 04 - July.csv,1
+17/07/2020,Blood Products N.W.L,Blood Products,Nhs Blood And Transplant,212436.0,LNWU 04 - July.csv,1
+17/07/2020,Blood Products E.H,Blood Products,Nhs Blood And Transplant,42824.0,LNWU 04 - July.csv,1
+22/07/2020,Balance Sheet Lnwh,Pharmacy Stock Purchases,Celgene Limited,36865.0,LNWU 04 - July.csv,1
+29/07/2020,Balance Sheet Lnwh,Pharmacy Stock Purchases,Celgene Limited,46023.0,LNWU 04 - July.csv,1
+22/07/2020,Balance Sheet Lnwh,Pharmacy Stock Purchases,Janssen Cilag Limited,25860.0,LNWU 04 - July.csv,1
+01/07/2020,E.B.M.E.,Medical Equip Repairs & Maint,Philips Healthcare,46885.0,LNWU 04 - July.csv,1
+23/07/2020,Capital,Equipment,Sccl-Nhs Supply Chain Capital,25277.0,LNWU 04 - July.csv,1
+23/07/2020,Capital,Equipment,Sccl-Nhs Supply Chain Capital,362184.0,LNWU 04 - July.csv,1
+22/07/2020,Balance Sheet Lnwh,Pharmacy Stock Purchases,Csl Behring Uk Ltd,35700.0,LNWU 04 - July.csv,1
+01/07/2020,Southall Bdway Health Estates,Rent Payable,Messers Mohammad & Rahman,82500.0,LNWU 04 - July.csv,1
+08/07/2020,I M & T Support Maintenance,Software Purchases \ Licences,Topdesk Uk Ltd,32155.0,LNWU 04 - July.csv,1
+01/07/2020,Capital,Equipment,Nxstage Medical Uk Limited,56160.0,LNWU 04 - July.csv,1
+29/07/2020,I.B.D Nursing,Clinical Services Received,Lloyds Pharmacy Clinical Homecare,59223.0,LNWU 04 - July.csv,1
+29/07/2020,I.B.D Nursing,Clinical Services Received,Lloyds Pharmacy Clinical Homecare,59223.0,LNWU 04 - July.csv,1
+08/07/2020,I.B.D Nursing,Clinical Services Received,Lloyds Pharmacy Clinical Homecare,59223.0,LNWU 04 - July.csv,1
+22/07/2020,Balance Sheet Lnwh,Pharmacy Stock Purchases,Alliance Healthcare (Distribution) Limited,29937.0,LNWU 04 - July.csv,1
+22/07/2020,Balance Sheet Lnwh,Pharmacy Stock Purchases,Alliance Healthcare (Distribution) Limited,26400.0,LNWU 04 - July.csv,1
+01/07/2020,Reserves,Substantive Speciality Reg,Rnoh Nhs Trust,38540.0,LNWU 04 - July.csv,1
+15/07/2020,Utilities N.P.H,Electricity,Laser Energy Buying Group,293637.0,LNWU 04 - July.csv,1
+15/07/2020,Utilities E.H,Gas,Laser Energy Buying Group,114091.0,LNWU 04 - July.csv,1
+22/07/2020,I M & T Support Maintenance,Project Management,Cgi It Uk Limited,62005.0,LNWU 04 - July.csv,1
+01/07/2020,Oncology E.H,Consultant,Imperial College Healthcare Nhs Trust,76013.0,LNWU 04 - July.csv,1
+01/07/2020,Communications N.W.L,Professional Fees,Hood & Woolf Limited,32312.0,LNWU 04 - July.csv,1
+01/07/2020,Reserves,Substantive Speciality Reg,Royal Free London Nhsft,256960.0,LNWU 04 - July.csv,1
+22/07/2020,Reserves,Substantive Speciality Reg,Royal Free London Nhsft,250060.0,LNWU 04 - July.csv,1
+15/07/2020,Reserves,Substantive Speciality Reg,Royal Free London Nhsft,276096.0,LNWU 04 - July.csv,1
+08/07/2020,Pathology Contract N.W.L,Pathology Contract T.D.L.,Nwlht Analytical Llp,1110215.0,LNWU 04 - July.csv,1
+08/07/2020,Pathology Contract N.W.L,Pathology Contract T.D.L.,Nwlht Analytical Llp,850198.0,LNWU 04 - July.csv,1
+08/07/2020,Pathology Contract N.W.L,Pathology Contract T.D.L.,Nwlht Analytical Llp,850198.0,LNWU 04 - July.csv,1
+08/07/2020,Pathology Contract N.W.L,Pathology Contract T.D.L.,Nwlht Facilities Llp,650980.0,LNWU 04 - July.csv,1
+15/07/2020,Pathology Contract N.W.L,Pathology Contract T.D.L.,Nwlht Facilities Llp,881649.0,LNWU 04 - July.csv,1
+08/07/2020,Pathology Contract N.W.L,Pathology Contract T.D.L.,Nwlht Facilities Llp,881649.0,LNWU 04 - July.csv,1
+08/07/2020,H.R.  Services N.W.L,Building Contract Work,Softcat Ltd,33600.0,LNWU 04 - July.csv,1
+08/07/2020,Capital,Software,Softcat Ltd,252300.0,LNWU 04 - July.csv,1
+01/07/2020,Integrated Sexual Health Hill,General Instruments,Sh24 Cic,25248.0,LNWU 04 - July.csv,1
+15/07/2020,Radiology N.P.H,General Instruments,Agito Medical A/S,60000.0,LNWU 04 - July.csv,1
+01/07/2020,O.M.F.S,Software Maintenance,Vantage Diagnostics,64560.0,LNWU 04 - July.csv,1
+15/07/2020,Capital,Estates/Building Works,Tr Building Services Ltd,43800.0,LNWU 04 - July.csv,1
+15/07/2020,Capital,Equipment,Mec Medical Limited,36450.0,LNWU 04 - July.csv,1
+08/07/2020,I M & T Support Maintenance,Building Contract Work,Apira Ltd,31560.0,LNWU 04 - July.csv,1
+01/07/2020,Balance Sheet Lnwh,Lodging,Network Homes,94952.0,LNWU 04 - July.csv,1
+22/07/2020,Balance Sheet Lnwh,Pharmacy Stock Purchases,Healthcare At Home Limited,68100.0,LNWU 04 - July.csv,1
+29/07/2020,Balance Sheet Lnwh,Pharmacy Stock Purchases,Healthcare At Home Limited,35534.0,LNWU 04 - July.csv,1
+22/07/2020,I M & T Support Maintenance,Software Purchases \ Licences,Phoenix Software Ltd,35880.0,LNWU 04 - July.csv,1
+22/07/2020,I M & T Support Maintenance,Software Purchases \ Licences,Phoenix Software Ltd,202635.0,LNWU 04 - July.csv,1
+20/07/2020,I M & T Support Maintenance,Software Purchases \ Licences,Topdesk Uk Ltd,32155.0,LNWU 04 - July.csv,1
+29/07/2020,Capital,Software,Jac Computer Services Limited,27326.0,LNWU 04 - July.csv,1
+08/07/2020,Capital,I.C.T Hardware,Cdw Ltd,47763.0,LNWU 04 - July.csv,1
+15/07/2020,Commercial,Rent Payable,Hayes Cottage Nursing Home Limited,40500.0,LNWU 04 - July.csv,1
+29/07/2020,Commercial,Liability To 3rd Party Ins,Nhs Resolution,46365.0,LNWU 04 - July.csv,1
+29/07/2020,Depreciation\Provisions N.W.L,Nhsla Premium,Nhs Resolution,1847441.0,LNWU 04 - July.csv,1
+01/07/2020,P.A.C.S N.W.L,P.A.C.S,Sectra Limited,73630.0,LNWU 04 - July.csv,1
+08/07/2020,P.A.C.S N.W.L,P.A.C.S,Sectra Limited,73630.0,LNWU 04 - July.csv,1
+15/07/2020,Clinical Risk,Subscriptions\Membership Fees,Datix Ltd,99784.0,LNWU 04 - July.csv,1
+06/07/2020,Clinical Risk,Subscriptions\Membership Fees,Datix Ltd,99784.0,LNWU 04 - July.csv,1
+22/07/2020,Balance Sheet Lnwh,Pharmacy Stock Purchases,Alk-Abello Ltd,108000.0,LNWU 04 - July.csv,1
+29/07/2020,Textile Services,Laundry Contract,Elis Uk Limited,28652.0,LNWU 04 - July.csv,1
+29/07/2020,Textile Services,Laundry Contract,Elis Uk Limited,38828.0,LNWU 04 - July.csv,1
+29/07/2020,Textile Services,Laundry Contract,Elis Uk Limited,134699.0,LNWU 04 - July.csv,1
+29/07/2020,Textile Services,Laundry Contract,Elis Uk Limited,40504.0,LNWU 04 - July.csv,1
+29/07/2020,Textile Services,Laundry Contract,Elis Uk Limited,141288.0,LNWU 04 - July.csv,1
+22/07/2020,Training & Development N.W.L,Training Costs,Traineasy.Com Limited,38604.0,LNWU 04 - July.csv,1
+12/08/2020,B.C.S External Estates Slas,Estates N.H.S Propery Services,Nhs Property Services Limited,33486.0,LNWU 05 - August.csv,1
+12/08/2020,B.C.S External Estates Slas,Estates N.H.S Propery Services,Nhs Property Services Limited,60482.0,LNWU 05 - August.csv,1
+12/08/2020,B.C.S External Estates Slas,Estates N.H.S Propery Services,Nhs Property Services Limited,206582.0,LNWU 05 - August.csv,1
+12/08/2020,B.C.S External Estates Slas,Estates N.H.S Propery Services,Nhs Property Services Limited,39114.0,LNWU 05 - August.csv,1
+12/08/2020,B.C.S External Estates Slas,Estates N.H.S Propery Services,Nhs Property Services Limited,63611.0,LNWU 05 - August.csv,1
+12/08/2020,B.C.S External Estates Slas,Estates N.H.S Propery Services,Nhs Property Services Limited,63669.0,LNWU 05 - August.csv,1
+12/08/2020,B.C.S External Estates Slas,Estates N.H.S Propery Services,Nhs Property Services Limited,69919.0,LNWU 05 - August.csv,1
+12/08/2020,B.C.S External Estates Slas,Estates N.H.S Propery Services,Nhs Property Services Limited,56356.0,LNWU 05 - August.csv,1
+19/08/2020,Balance Sheet Lnwh,Pensions,Nhs Injury Benefits,54990.0,LNWU 05 - August.csv,1
+26/08/2020,H.R.  Services N.W.L,Conference Expenses,Nhs Health At Work Network,49500.0,LNWU 05 - August.csv,1
+19/08/2020,Car Parking N.W.L,Car Parking,Apcoa Facilities Management (Uk) Limited,193694.0,LNWU 05 - August.csv,1
+12/08/2020,Estates & Services N.P.H,Contract Work,Vm Construction Ltd,34257.0,LNWU 05 - August.csv,1
+12/08/2020,Estates & Services N.P.H,Contract Work,Vm Construction Ltd,34257.0,LNWU 05 - August.csv,1
+12/08/2020,Estates & Services N.P.H,Contract Work,Vm Construction Ltd,34257.0,LNWU 05 - August.csv,1
+19/08/2020,Balance Sheet Lnwh,Pharmacy Stock Purchases,Roche Products Ltd,35057.0,LNWU 05 - August.csv,1
+26/08/2020,Post Room N.P.H,Postage,Pitney Bowes Limited - Franking,25000.0,LNWU 05 - August.csv,1
+12/08/2020,Post Room N.P.H,Postage,Pitney Bowes Limited - Franking,25000.0,LNWU 05 - August.csv,1
+05/08/2020,Cardiology E.H,Medical Equip Repairs & Maint,Change Healthcare Uk Holdings Limited,33013.0,LNWU 05 - August.csv,1
+05/08/2020,Cardiology Investigationsn.W.L,Medical Equip Repairs & Maint,Change Healthcare Uk Holdings Limited,68071.0,LNWU 05 - August.csv,1
+05/08/2020,Cancer Screening,Project Management,Genmed.Me Ltd,162955.0,LNWU 05 - August.csv,1
+26/08/2020,Point Of Care N.W.L,It Leases,Genmed.Me Ltd,50994.0,LNWU 05 - August.csv,1
+26/08/2020,Point Of Care N.W.L,It Leases,Genmed.Me Ltd,45651.0,LNWU 05 - August.csv,1
+26/08/2020,Capital,Estates/Building Works,A1 Uk Drains Limited,42576.0,LNWU 05 - August.csv,1
+19/08/2020,Capital,Staff/Agency Costs,Healthcare Clinical Informatics Limited,75600.0,LNWU 05 - August.csv,1
+26/08/2020,Radiology E.H,Medical Equip Repairs & Maint,Sccl-Nhs Supply Chain Maintenance,42865.0,LNWU 05 - August.csv,1
+26/08/2020,E.B.M.E.,Medical Equip Repairs & Maint,Sccl-Nhs Supply Chain Maintenance,63256.0,LNWU 05 - August.csv,1
+12/08/2020,Nursing Management N.W.L,Software Purchases \ Licences,Perfect Ward Limited,37996.0,LNWU 05 - August.csv,1
+27/08/2020,Id Screening,Protective Clothing,Beijing Easymonitor Technology Development,332425.0,LNWU 05 - August.csv,1
+27/08/2020,Id Screening,Uniforms,Beijing Easymonitor Technology Development,36000.0,LNWU 05 - August.csv,1
+04/08/2020,Reserves,Project Management,Apcoa Parking ( Uk ) Limited,385980.0,LNWU 05 - August.csv,1
+04/08/2020,Capital,Estates/Building Works,Apcoa Parking ( Uk ) Limited,669999.0,LNWU 05 - August.csv,1
+05/08/2020,A&E Nursing N.P.H,Medical Equipment,Stryker (Uk) Ltd,33767.0,LNWU 05 - August.csv,1
+05/08/2020,Capital,Estates/Building Works,Colorific Solutions Limited,37977.0,LNWU 05 - August.csv,1
+26/08/2020,Capital,Equipment,Maquet Limited,64243.0,LNWU 05 - August.csv,1
+26/08/2020,Communications (Phones),Software Purchases \ Licences,Bt Global Services,30780.0,LNWU 05 - August.csv,1
+26/08/2020,Communications (Phones),Software Purchases \ Licences,Bt Global Services,30780.0,LNWU 05 - August.csv,1
+12/08/2020,Cancer Screening,General Instruments,Chrystal Consulting Limited,164228.0,LNWU 05 - August.csv,1
+26/08/2020,Balance Sheet Lnwh,Pharmacy Stock Purchases,Aah Pharmaceuticals Limited,34310.0,LNWU 05 - August.csv,1
+05/08/2020,Capital,Estates/Building Works,Siemens Industry Software Limited,224174.0,LNWU 05 - August.csv,1
+19/08/2020,Capital,Equipment,Karl Storz Endoscopy (Uk) Ltd,99576.0,LNWU 05 - August.csv,1
+19/08/2020,Patient Transport Contract,Patient Transport Contract,Ambulance Transfers Ltd,389820.0,LNWU 05 - August.csv,1
+19/08/2020,Patient Transport Contract,Patient Transport Contract,Ambulance Transfers Ltd,268326.0,LNWU 05 - August.csv,1
+12/08/2020,Balance Sheet Lnwh,Pharmacy Stock Purchases,Mawdsleys-Brookes & Co Ltd,32116.0,LNWU 05 - August.csv,1
+26/08/2020,I M & T    Management,Substantive Management Band 9,Nhs Brent Ccg,30726.0,LNWU 05 - August.csv,1
+19/08/2020,Id Screening,Protective Clothing,Merlin Developments Ltd,54000.0,LNWU 05 - August.csv,1
+19/08/2020,Capital,Equipment,Philips Healthcare,47700.0,LNWU 05 - August.csv,1
+20/08/2020,Blood Products N.W.L,Blood Products,Nhs Blood And Transplant,212436.0,LNWU 05 - August.csv,1
+20/08/2020,Blood Products E.H,Blood Products,Nhs Blood And Transplant,42824.0,LNWU 05 - August.csv,1
+05/08/2020,Balance Sheet Lnwh,Pharmacy Stock Purchases,Celgene Limited,34540.0,LNWU 05 - August.csv,1
+05/08/2020,Balance Sheet Lnwh,Pharmacy Stock Purchases,Celgene Limited,39342.0,LNWU 05 - August.csv,1
+05/08/2020,Balance Sheet Lnwh,Pharmacy Stock Purchases,Csl Behring Uk Ltd,25200.0,LNWU 05 - August.csv,1
+19/08/2020,Utilities N.P.H,Electricity,Laser Energy Buying Group,290568.0,LNWU 05 - August.csv,1
+19/08/2020,Utilities E.H,Electricity,Laser Energy Buying Group,108605.0,LNWU 05 - August.csv,1
+19/08/2020,Communications N.W.L,Professional Fees,Hood & Woolf Limited,42976.0,LNWU 05 - August.csv,1
+05/08/2020,Reserves,Substantive Speciality Reg,Royal Free London Nhsft,258557.0,LNWU 05 - August.csv,1
+05/08/2020,Pathology Contract N.W.L,Pathology Contract T.D.L.,Nwlht Analytical Llp,850198.0,LNWU 05 - August.csv,1
+05/08/2020,Pathology Contract N.W.L,Pathology Contract T.D.L.,Nwlht Facilities Llp,881649.0,LNWU 05 - August.csv,1
+19/08/2020,I M & T Support Maintenance,Software Maintenance,Softcat Ltd,137093.0,LNWU 05 - August.csv,1
+19/08/2020,Radiology N.P.H,General Instruments,Agito Medical A/S,60000.0,LNWU 05 - August.csv,1
+19/08/2020,Communications (Phones),Switchboard Maintenance,Miracall Solutions Limited,84438.0,LNWU 05 - August.csv,1
+19/08/2020,Balance Sheet Lnwh,Lodging,Network Homes,92608.0,LNWU 05 - August.csv,1
+19/08/2020,Balance Sheet Lnwh,Lodging,Network Homes,92162.0,LNWU 05 - August.csv,1
+19/08/2020,Capital,Estates/Building Works,Kr Synergy Limited,28740.0,LNWU 05 - August.csv,1
+19/08/2020,Capital,Staff/Agency Costs,The Carbon And Energy Fund Limtied,78000.0,LNWU 05 - August.csv,1
+19/08/2020,Capital,Staff/Agency Costs,The Carbon And Energy Fund Limtied,78000.0,LNWU 05 - August.csv,1
+12/08/2020,I M & T Support Maintenance,Professional Fees,Apira Ltd,49776.0,LNWU 05 - August.csv,1
+19/08/2020,Capital,Software,Edm Group Ltd,43776.0,LNWU 05 - August.csv,1
+20/08/2020,Commercial,Liability To 3rd Party Ins,Nhs Resolution,46365.0,LNWU 05 - August.csv,1
+20/08/2020,Depreciation\Provisions N.W.L,Nhsla Premium,Nhs Resolution,1847441.0,LNWU 05 - August.csv,1
+05/08/2020,P.A.C.S N.W.L,P.A.C.S,Sectra Limited,73630.0,LNWU 05 - August.csv,1
+05/08/2020,Balance Sheet Lnwh,Pharmacy Stock Purchases,Alk-Abello Ltd,54000.0,LNWU 05 - August.csv,1
+26/08/2020,Balance Sheet Lnwh,Pharmacy Stock Purchases,Alk-Abello Ltd,90000.0,LNWU 05 - August.csv,1
+05/08/2020,Point Of Care N.W.L,Laboratory Service Contracts,Radiometer Limited,69698.0,LNWU 05 - August.csv,1
+09/09/2020,Capital,I.C.T Hardware,European Electronique Limited,163048.0,LNWU 06 - September.csv,1
+09/09/2020,Communications (Phones),Hardware Maintenance,European Electronique Limited,26740.0,LNWU 06 - September.csv,1
+16/09/2020,Balance Sheet Lnwh,Pharmacy Stock Purchases,Janssen Cilag Limited,34738.0,LNWU 06 - September.csv,1
+02/09/2020,Balance Sheet Lnwh,Salary Sacrifice White Goods,Akira Financial Limited,49380.0,LNWU 06 - September.csv,1
+16/09/2020,Capital,Estates/Building Works,Dc Emergency Systems Ltd,34478.0,LNWU 06 - September.csv,1
+23/09/2020,Car Parking N.W.L,Car Parking,Apcoa Facilities Management (Uk) Limited,193694.0,LNWU 06 - September.csv,1
+23/09/2020,Capital,Estates/Building Works,Vm Construction Ltd,46320.0,LNWU 06 - September.csv,1
+23/09/2020,Capital,Estates/Building Works,Aerocom (Uk) Limited,25812.0,LNWU 06 - September.csv,1
+28/09/2020,Ibd Boost,Research Costs,Queen Mary University Of London,41443.0,LNWU 06 - September.csv,1
+23/09/2020,Balance Sheet Lnwh,Pharmacy Stock Purchases,Roche Products Ltd,29752.0,LNWU 06 - September.csv,1
+02/09/2020,I M & T Support Maintenance,Software Purchases \ Licences,Made Tech Limited,35982.0,LNWU 06 - September.csv,1
+23/09/2020,Post Room N.P.H,Postage,Pitney Bowes Limited - Franking,25000.0,LNWU 06 - September.csv,1
+16/09/2020,Post Room N.P.H,Postage,Pitney Bowes Limited - Franking,25000.0,LNWU 06 - September.csv,1
+09/09/2020,E.B.M.E.,E.B.M.E Contract,Bcas Bio Medical Services Ltd,210000.0,LNWU 06 - September.csv,1
+28/09/2020,E.B.M.E.,E.B.M.E Contract,Bcas Bio Medical Services Ltd,210000.0,LNWU 06 - September.csv,1
+28/09/2020,Anaesthetics Medical N.W.L,Equipment Lease,Genmed.Me Ltd,33201.0,LNWU 06 - September.csv,1
+28/09/2020,Radiology N.P.H,Equipment Lease,Genmed.Me Ltd,25052.0,LNWU 06 - September.csv,1
+28/09/2020,Point Of Care N.W.L,It Leases,Genmed.Me Ltd,45651.0,LNWU 06 - September.csv,1
+23/09/2020,Capital,Estates/Building Works,A1 Uk Drains Limited,42576.0,LNWU 06 - September.csv,1
+09/09/2020,Theatres N.P.H,General Instruments,Johnson And Johnson Medical Limited,25619.0,LNWU 06 - September.csv,1
+09/09/2020,Radiology N.P.H,Medical Equip Repairs & Maint,Sccl-Nhs Supply Chain Maintenance,92497.0,LNWU 06 - September.csv,1
+09/09/2020,Capital,Equipment,Draeger Medical Uk Ltd,71807.0,LNWU 06 - September.csv,1
+09/09/2020,Capital,Equipment,Draeger Medical Uk Ltd,71807.0,LNWU 06 - September.csv,1
+02/09/2020,Capital,Estates/Building Works,Rbl Asbestos Removals  ( Roothings ),117864.0,LNWU 06 - September.csv,1
+23/09/2020,Incontinence Bcs,Incontinence Contract,Ontex Healthcare Uk Ltd,39471.0,LNWU 06 - September.csv,1
+02/09/2020,Incontinence Bcs,Incontinence Contract,Ontex Healthcare Uk Ltd,41066.0,LNWU 06 - September.csv,1
+09/09/2020,Radiology N.P.H,Medical Equip Repairs & Maint,Sccl-Nhs Supply Chain Maintenance,63179.0,LNWU 06 - September.csv,1
+23/09/2020,Radiology E.H,Medical Equip Repairs & Maint,Sccl-Nhs Supply Chain Maintenance,53980.0,LNWU 06 - September.csv,1
+23/09/2020,Radiology N.P.H,Medical Equip Repairs & Maint,Sccl-Nhs Supply Chain Maintenance,49081.0,LNWU 06 - September.csv,1
+28/09/2020,E.B.M.E.,Medical Equip Repairs & Maint,Sccl-Nhs Supply Chain Maintenance,75759.0,LNWU 06 - September.csv,1
+02/09/2020,Id Screening,General Instruments,Full Support Healthcare Limited,47000.0,LNWU 06 - September.csv,1
+23/09/2020,Id Screening,General Instruments,Full Support Healthcare Limited,37835.0,LNWU 06 - September.csv,1
+02/09/2020,Capital,Estates/Building Works,Apcoa Parking ( Uk ) Limited,231194.0,LNWU 06 - September.csv,1
+16/09/2020,Balance Sheet Lnwh,Pharmacy Stock Purchases,Dialachemist Ltd T/A Springmed Solutions,34020.0,LNWU 06 - September.csv,1
+09/09/2020,Balance Sheet Lnwh,Pharmacy Stock Purchases,Aah Pharmaceuticals Limited,48800.0,LNWU 06 - September.csv,1
+23/09/2020,Balance Sheet Lnwh,Pharmacy Stock Purchases,Aah Pharmaceuticals Limited,32976.0,LNWU 06 - September.csv,1
+09/09/2020,I M & T Support Maintenance,Software Maintenance,Insight Direct ( Uk ) Limited,26828.0,LNWU 06 - September.csv,1
+16/09/2020,Neurology N.P.H,Consultant,Ucl Hospitals Nhsft,28578.0,LNWU 06 - September.csv,1
+23/09/2020,Brent Cash,Consultant,Central And North West London,27732.0,LNWU 06 - September.csv,1
+23/09/2020,Integrated Sexual Health Hill,Out Of Area Activity Received,Central And North West London,33256.0,LNWU 06 - September.csv,1
+09/09/2020,Patient Transport Contract,Patient Transport Contract,Ambulance Transfers Ltd,482073.0,LNWU 06 - September.csv,1
+09/09/2020,Patient Transport Contract,Patient Transport Contract,Ambulance Transfers Ltd,157407.0,LNWU 06 - September.csv,1
+16/09/2020,Balance Sheet Lnwh,Pharmacy Stock Purchases,Mawdsleys-Brookes & Co Ltd,30809.0,LNWU 06 - September.csv,1
+22/09/2020,B.C.S External Estates Slas,Estates N.H.S Propery Services,Nhs Brent Ccg,1000000.0,LNWU 06 - September.csv,1
+16/09/2020,Capital,Equipment,Boston Scientific Ltd,90000.0,LNWU 06 - September.csv,1
+18/09/2020,End Of Life Care Education,Computer Equipment,Dell Computer Corporation Ltd,36000.0,LNWU 06 - September.csv,1
+23/09/2020,Capital,Equipment,Xograph Healthcare Limited,28176.0,LNWU 06 - September.csv,1
+24/09/2020,Blood Products N.W.L,Blood Products,Nhs Blood And Transplant,212436.0,LNWU 06 - September.csv,1
+24/09/2020,Blood Products E.H,Blood Products,Nhs Blood And Transplant,42824.0,LNWU 06 - September.csv,1
+02/09/2020,Balance Sheet Lnwh,Pharmacy Stock Purchases,Celgene Limited,26420.0,LNWU 06 - September.csv,1
+02/09/2020,Balance Sheet Lnwh,Pharmacy Stock Purchases,Celgene Limited,35838.0,LNWU 06 - September.csv,1
+16/09/2020,Balance Sheet Lnwh,Pharmacy Stock Purchases,Celgene Limited,36511.0,LNWU 06 - September.csv,1
+28/09/2020,Balance Sheet Lnwh,Pharmacy Stock Purchases,Celgene Limited,49738.0,LNWU 06 - September.csv,1
+29/09/2020,Balance Sheet Lnwh,Miscellaneous Receipts,Hammersmith & Fulham London Borough Council,48357.0,LNWU 06 - September.csv,1
+16/09/2020,Capital,Equipment,Philips Healthcare,70404.0,LNWU 06 - September.csv,1
+16/09/2020,Capital,Equipment,Philips Healthcare,155890.0,LNWU 06 - September.csv,1
+16/09/2020,Capital,Equipment,Philips Healthcare,237224.0,LNWU 06 - September.csv,1
+16/09/2020,Capital,Equipment,Philips Healthcare,29730.0,LNWU 06 - September.csv,1
+28/09/2020,Balance Sheet Lnwh,Pharmacy Stock Purchases,Csl Behring Uk Ltd,25200.0,LNWU 06 - September.csv,1
+28/09/2020,Balance Sheet Lnwh,Pharmacy Stock Purchases,Alliance Healthcare (Distribution) Limited,30009.0,LNWU 06 - September.csv,1
+09/09/2020,Hr Directorate Managemnt N.W.L,Training Costs,April Strategy Llp,30000.0,LNWU 06 - September.csv,1
+28/09/2020,Southall Bdway Health Estates,Rent Payable,Messers Mohammad & Rahman,82500.0,LNWU 06 - September.csv,1
+16/09/2020,I M & T Support Maintenance,Software Purchases \ Licences,Pcti Solutions Ltd,72480.0,LNWU 06 - September.csv,1
+16/09/2020,I.B.D Nursing,Clinical Services Received,Lloyds Pharmacy Clinical Homecare,59223.0,LNWU 06 - September.csv,1
+23/09/2020,I.B.D Nursing,Clinical Services Received,Lloyds Pharmacy Clinical Homecare,59223.0,LNWU 06 - September.csv,1
+16/09/2020,Utilities N.P.H,Electricity,Laser Energy Buying Group,302227.0,LNWU 06 - September.csv,1
+16/09/2020,Neurosciences,Clinical Services Received,Imperial College Healthcare Nhs Trust,31269.0,LNWU 06 - September.csv,1
+02/09/2020,Reserves,Substantive Speciality Reg,Royal Free London Nhsft,259040.0,LNWU 06 - September.csv,1
+02/09/2020,Sterile Services,Decontamination Contract,Ihss Limited,176481.0,LNWU 06 - September.csv,1
+02/09/2020,Sterile Services,Decontamination Contract,Ihss Limited,176481.0,LNWU 06 - September.csv,1
+02/09/2020,Sterile Services,Decontamination Contract,Ihss Limited,176481.0,LNWU 06 - September.csv,1
+02/09/2020,Sterile Services,Decontamination Contract,Ihss Limited,176481.0,LNWU 06 - September.csv,1
+23/09/2020,Commercial,General Instruments,Bhc Healthcare Furniture Limited,40642.0,LNWU 06 - September.csv,1
+09/09/2020,Commercial,Building Contract Work,Bhc Healthcare Furniture Limited,38428.0,LNWU 06 - September.csv,1
+28/09/2020,Pathology Contract N.W.L,Pathology Contract T.D.L.,Nwlht Analytical Llp,223529.0,LNWU 06 - September.csv,1
+02/09/2020,Information N.W.L,Building Contract Work,Keystream Analytics Limited,79200.0,LNWU 06 - September.csv,1
+09/09/2020,Rostering,Software Purchases \ Licences,Softcat Ltd,25137.0,LNWU 06 - September.csv,1
+16/09/2020,P.A.C.S N.W.L,P.A.C.S,Soliton It Limited,30000.0,LNWU 06 - September.csv,1
+28/09/2020,Radiology N.P.H,General Instruments,Agito Medical A/S,48000.0,LNWU 06 - September.csv,1
+09/09/2020,Radiology N.P.H,General Instruments,Agito Medical A/S,29000.0,LNWU 06 - September.csv,1
+09/09/2020,Radiology N.P.H,General Instruments,Agito Medical A/S,31000.0,LNWU 06 - September.csv,1
+09/09/2020,Balance Sheet Lnwh,Lodging,Network Homes,88974.0,LNWU 06 - September.csv,1
+09/09/2020,Capital,Staff/Agency Costs,The Carbon And Energy Fund Limtied,78000.0,LNWU 06 - September.csv,1
+02/09/2020,Communications (Phones),Professional Fees,Apira Ltd,46704.0,LNWU 06 - September.csv,1
+02/09/2020,Capital,Staff/Agency Costs,Apira Ltd,36000.0,LNWU 06 - September.csv,1
+09/09/2020,Capital,Estates/Building Works,M Coen,34441.0,LNWU 06 - September.csv,1
+04/09/2020,Balance Sheet Lnwh,Pharmacy Stock Purchases,Healthcare At Home Limited,74100.0,LNWU 06 - September.csv,1
+04/09/2020,Balance Sheet Lnwh,Pharmacy Stock Purchases,Healthcare At Home Limited,34962.0,LNWU 06 - September.csv,1
+04/09/2020,Balance Sheet Lnwh,Pharmacy Stock Purchases,Healthcare At Home Limited,70200.0,LNWU 06 - September.csv,1
+28/09/2020,Balance Sheet Lnwh,Pharmacy Stock Purchases,Healthcare At Home Limited,36120.0,LNWU 06 - September.csv,1
+18/09/2020,I M & T Support Maintenance,Microsoft Ewa,Phoenix Software Ltd,160948.0,LNWU 06 - September.csv,1
+23/09/2020,I M & T Support Maintenance,Pas Licence And Support,Specialist Computer Centres Plc,103584.0,LNWU 06 - September.csv,1
+29/09/2020,Commercial,Liability To 3rd Party Ins,Nhs Resolution,46365.0,LNWU 06 - September.csv,1
+29/09/2020,Depreciation\Provisions N.W.L,Nhsla Premium,Nhs Resolution,1847441.0,LNWU 06 - September.csv,1
+02/09/2020,Capital,I.C.T Hardware,Sectra Limited,39164.0,LNWU 06 - September.csv,1
+02/09/2020,Capital,I.C.T Hardware,Sectra Limited,47186.0,LNWU 06 - September.csv,1
+09/09/2020,P.A.C.S N.W.L,P.A.C.S,Sectra Limited,73630.0,LNWU 06 - September.csv,1
+23/09/2020,Balance Sheet Lnwh,Pharmacy Stock Purchases,Alk-Abello Ltd,72000.0,LNWU 06 - September.csv,1
+02/09/2020,Textile Services,Laundry Contract,Elis Uk Limited,86164.0,LNWU 06 - September.csv,1
+02/09/2020,Textile Services,Laundry Contract,Elis Uk Limited,43600.0,LNWU 06 - September.csv,1
+02/09/2020,Textile Services,Laundry Contract,Elis Uk Limited,143534.0,LNWU 06 - September.csv,1
+28/09/2020,Textile Services,Laundry Contract,Elis Uk Limited,46104.0,LNWU 06 - September.csv,1
+28/09/2020,Textile Services,Laundry Contract,Elis Uk Limited,134123.0,LNWU 06 - September.csv,1
+02/09/2020,Ibd Boost,Research Costs,Kings College London,42619.0,LNWU 06 - September.csv,1
+07/10/2020,Capital,Software,Omnicell Ltd,91200.0,LNWU 07 - October.csv,1
+07/10/2020,Capital,I.C.T Hardware,Parity Medical,236126.0,LNWU 07 - October.csv,1
+23/10/2020,H.R.  Services N.W.L,Work Permits,Lloyds Tsb,27461.0,LNWU 07 - October.csv,1
+28/10/2020,Utilities N.P.H,Water And Sewerage,Castle Water Limited,63959.0,LNWU 07 - October.csv,1
+28/10/2020,I M & T Support Maintenance,Hardware Maintenance,Bt Global Services,253391.0,LNWU 07 - October.csv,1
+07/10/2020,Balance Sheet Lnwh,Pharmacy Stock Purchases,Janssen Cilag Limited,26956.0,LNWU 07 - October.csv,1
+07/10/2020,Balance Sheet Lnwh,Salary Sacrifice White Goods,Akira Financial Limited,40375.0,LNWU 07 - October.csv,1
+21/10/2020,Capital,Estates/Building Works,Dc Emergency Systems Ltd,30000.0,LNWU 07 - October.csv,1
+28/10/2020,Capital,Estates/Building Works,Kier Construction Limited,132363.0,LNWU 07 - October.csv,1
+14/10/2020,Car Parking N.W.L,Car Parking,Apcoa Facilities Management (Uk) Limited,193694.0,LNWU 07 - October.csv,1
+28/10/2020,Capital,Estates/Building Works,Vm Construction Ltd,202593.0,LNWU 07 - October.csv,1
+28/10/2020,Estates & Services N.P.H,Equipment Hire,Vm Construction Ltd,27406.0,LNWU 07 - October.csv,1
+28/10/2020,Estates & Services N.P.H,Equipment Hire,Vm Construction Ltd,27406.0,LNWU 07 - October.csv,1
+28/10/2020,Estates & Services N.P.H,Equipment Hire,Vm Construction Ltd,27406.0,LNWU 07 - October.csv,1
+07/10/2020,Balance Sheet Lnwh,Pharmacy Stock Purchases,Roche Products Ltd,33250.0,LNWU 07 - October.csv,1
+14/10/2020,Balance Sheet Lnwh,Pharmacy Stock Purchases,Roche Products Ltd,45862.0,LNWU 07 - October.csv,1
+21/10/2020,Post Room N.P.H,Postage,Pitney Bowes Limited - Franking,25000.0,LNWU 07 - October.csv,1
+14/10/2020,Post Room N.P.H,Postage,Pitney Bowes Limited - Franking,25000.0,LNWU 07 - October.csv,1
+07/10/2020,Endoscopy N.P.H,Project Management,Genmed.Me Ltd,1158572.0,LNWU 07 - October.csv,1
+07/10/2020,Endoscopy N.P.H,Project Management,Genmed.Me Ltd,65095.0,LNWU 07 - October.csv,1
+07/10/2020,Endoscopy N.P.H,Project Management,Genmed.Me Ltd,65095.0,LNWU 07 - October.csv,1
+07/10/2020,Endoscopy N.P.H,Project Management,Genmed.Me Ltd,361198.0,LNWU 07 - October.csv,1
+07/10/2020,Theatres N.P.H,General Instruments,Johnson And Johnson Medical Limited,34996.0,LNWU 07 - October.csv,1
+28/10/2020,Theatres N.P.H,General Instruments,Johnson And Johnson Medical Limited,25876.0,LNWU 07 - October.csv,1
+28/10/2020,Radiology E.H,Medical Equip Repairs & Maint,Sccl-Nhs Supply Chain Maintenance,39189.0,LNWU 07 - October.csv,1
+07/10/2020,Capital,Estates/Building Works,Apcoa Parking ( Uk ) Limited,129249.0,LNWU 07 - October.csv,1
+07/10/2020,Capital,Estates/Building Works,Apcoa Parking ( Uk ) Limited,1631627.0,LNWU 07 - October.csv,1
+07/10/2020,Capital,Furniture & Fittings,Stryker (Uk) Ltd,27562.0,LNWU 07 - October.csv,1
+21/10/2020,Pathology Contract E.H,T.D.L. Out Of Scope,The Royal Marsden Nhsft,39370.0,LNWU 07 - October.csv,1
+14/10/2020,Balance Sheet Lnwh,Pharmacy Stock Purchases,Aah Pharmaceuticals Limited,33406.0,LNWU 07 - October.csv,1
+28/10/2020,Capital,I.C.T Hardware,Insight Direct ( Uk ) Limited,165000.0,LNWU 07 - October.csv,1
+28/10/2020,Finance Directorate Mgmt,Miscellaneous Expenses,Central And North West London,89615.0,LNWU 07 - October.csv,1
+28/10/2020,Finance Directorate Mgmt,Miscellaneous Expenses,Central And North West London,91429.0,LNWU 07 - October.csv,1
+28/10/2020,Finance Directorate Mgmt,Miscellaneous Expenses,Central And North West London,91429.0,LNWU 07 - October.csv,1
+28/10/2020,Finance Directorate Mgmt,Miscellaneous Expenses,Central And North West London,87598.0,LNWU 07 - October.csv,1
+21/10/2020,Capital,I.C.T Hardware,Bt Global Services,252766.0,LNWU 07 - October.csv,1
+21/10/2020,Capital,Software,Bt Global Services,183021.0,LNWU 07 - October.csv,1
+14/10/2020,Cancer Screening,General Instruments,Chrystal Consulting Limited,164228.0,LNWU 07 - October.csv,1
+14/10/2020,Cancer Screening,General Instruments,Chrystal Consulting Limited,164228.0,LNWU 07 - October.csv,1
+14/10/2020,Cancer Screening,General Instruments,Chrystal Consulting Limited,164228.0,LNWU 07 - October.csv,1
+07/10/2020,Patient Transport Contract,Patient Transport Contract,Ambulance Transfers Ltd,473437.0,LNWU 07 - October.csv,1
+07/10/2020,Patient Transport Contract,Patient Transport Contract,Ambulance Transfers Ltd,171039.0,LNWU 07 - October.csv,1
+14/10/2020,Capital,Estates/Building Works,London Fire Solutions,27630.0,LNWU 07 - October.csv,1
+07/10/2020,Financial Services,Miscellaneous Expenses,Nhs Ealing Ccg,307174.0,LNWU 07 - October.csv,1
+09/10/2020,Capital,Estates/Building Works,Medical Imaging Systems Ltd,192303.0,LNWU 07 - October.csv,1
+22/10/2020,Blood Products N.W.L,Blood Products,Nhs Blood And Transplant,212436.0,LNWU 07 - October.csv,1
+22/10/2020,Blood Products E.H,Blood Products,Nhs Blood And Transplant,42824.0,LNWU 07 - October.csv,1
+21/10/2020,Balance Sheet Lnwh,Pharmacy Stock Purchases,Celgene Limited,35837.0,LNWU 07 - October.csv,1
+28/10/2020,Balance Sheet Lnwh,Pharmacy Stock Purchases,Celgene Limited,29264.0,LNWU 07 - October.csv,1
+28/10/2020,Interest & Dividends N.W.L,Finance Lease Interest,De Lage Landen Leasing Ltd,251989.0,LNWU 07 - October.csv,1
+14/10/2020,Balance Sheet Lnwh,Pharmacy Stock Purchases,Csl Behring Uk Ltd,25200.0,LNWU 07 - October.csv,1
+07/10/2020,Systems Accounts,Software Maintenance,Advanced Business Software And Solutions Ltd,56784.0,LNWU 07 - October.csv,1
+21/10/2020,Systems Accounts,Software Maintenance,Advanced Business Software And Solutions Ltd,56609.0,LNWU 07 - October.csv,1
+07/10/2020,Balance Sheet Lnwh,Lodging,Network Homes,85422.0,LNWU 07 - October.csv,1
+21/10/2020,I.B.D Nursing,Clinical Services Received,Lloyds Pharmacy Clinical Homecare,55396.0,LNWU 07 - October.csv,1
+14/10/2020,Balance Sheet Lnwh,Pharmacy Stock Purchases,Alliance Healthcare (Distribution) Limited,33030.0,LNWU 07 - October.csv,1
+14/10/2020,Utilities N.P.H,Electricity,Laser Energy Buying Group,319832.0,LNWU 07 - October.csv,1
+28/10/2020,A&E Administration,Software Maintenance,Emis Health,38979.0,LNWU 07 - October.csv,1
+28/10/2020,I M & T Support Maintenance,Software Maintenance,Emis Health,29641.0,LNWU 07 - October.csv,1
+07/10/2020,Reserves,Substantive Speciality Reg,Royal Free London Nhsft,257480.0,LNWU 07 - October.csv,1
+21/10/2020,Pathology Contract N.W.L,Pathology Contract T.D.L.,Labex Analytical Llp,850198.0,LNWU 07 - October.csv,1
+21/10/2020,Pathology Contract N.W.L,Pathology Contract T.D.L.,Labex Facilities Llp,881649.0,LNWU 07 - October.csv,1
+21/10/2020,Pathology Contract N.W.L,Pathology Contract T.D.L.,Labex Analytical Llp,850198.0,LNWU 07 - October.csv,1
+21/10/2020,Pathology Contract N.W.L,Pathology Contract T.D.L.,Labex Facilities Llp,881649.0,LNWU 07 - October.csv,1
+28/10/2020,Pathology Contract N.W.L,Pathology Contract T.D.L.,Labex Analytical Llp,850198.0,LNWU 07 - October.csv,1
+28/10/2020,Pathology Contract N.W.L,Pathology Contract T.D.L.,Labex Facilities Llp,881649.0,LNWU 07 - October.csv,1
+22/10/2020,Information N.W.L,Building Contract Work,Keystream Analytics Limited,55500.0,LNWU 07 - October.csv,1
+28/10/2020,I M & T Support Maintenance,Professional Fees,Softcat Ltd,39480.0,LNWU 07 - October.csv,1
+28/10/2020,I M & T Support Maintenance,Professional Fees,Softcat Ltd,40320.0,LNWU 07 - October.csv,1
+28/10/2020,Capital,Staff/Agency Costs,Softcat Ltd,40454.0,LNWU 07 - October.csv,1
+28/10/2020,Procurement,Software Purchases \ Licences,Adb ( Uk ) Limited,27600.0,LNWU 07 - October.csv,1
+28/10/2020,I M & T Support Maintenance,Software Purchases \ Licences,Bluewire Technologies,36840.0,LNWU 07 - October.csv,1
+14/10/2020,Capital,Estates/Building Works,Kr Synergy Limited,51600.0,LNWU 07 - October.csv,1
+07/10/2020,Capital,Staff/Agency Costs,The Carbon And Energy Fund Limtied,78000.0,LNWU 07 - October.csv,1
+21/10/2020,Capital,Staff/Agency Costs,Apira Ltd,106704.0,LNWU 07 - October.csv,1
+21/10/2020,Capital,Staff/Agency Costs,Apira Ltd,31752.0,LNWU 07 - October.csv,1
+21/10/2020,Communications (Phones),Professional Fees,Apira Ltd,30702.0,LNWU 07 - October.csv,1
+21/10/2020,Anaesthetics Medical N.W.L,Consultant,University Of West London,33992.0,LNWU 07 - October.csv,1
+21/10/2020,Hillingdon Hiv,Drugs,The Hillingdon Hospital Nhsft,68108.0,LNWU 07 - October.csv,1
+14/10/2020,Balance Sheet Lnwh,Pharmacy Stock Purchases,Healthcare At Home Limited,58200.0,LNWU 07 - October.csv,1
+28/10/2020,Balance Sheet Lnwh,Pharmacy Stock Purchases,Healthcare At Home Limited,40766.0,LNWU 07 - October.csv,1
+28/10/2020,Balance Sheet Lnwh,Pharmacy Stock Purchases,Healthcare At Home Limited,66600.0,LNWU 07 - October.csv,1
+14/10/2020,I M & T Support Maintenance,Microsoft Ewa,Phoenix Software Ltd,160948.0,LNWU 07 - October.csv,1
+29/10/2020,Commercial,Liability To 3rd Party Ins,Nhs Resolution,46365.0,LNWU 07 - October.csv,1
+29/10/2020,Depreciation\Provisions N.W.L,Nhsla Premium,Nhs Resolution,1847429.0,LNWU 07 - October.csv,1
+07/10/2020,P.A.C.S N.W.L,P.A.C.S,Sectra Limited,73630.0,LNWU 07 - October.csv,1
+07/10/2020,Balance Sheet Lnwh,Pharmacy Stock Purchases,Alk-Abello Ltd,54000.0,LNWU 07 - October.csv,1
+14/10/2020,Balance Sheet Lnwh,Pharmacy Stock Purchases,Alk-Abello Ltd,108000.0,LNWU 07 - October.csv,1
+28/10/2020,Textile Services,Laundry Contract,Elis Uk Limited,53726.0,LNWU 07 - October.csv,1
+28/10/2020,Textile Services,Laundry Contract,Elis Uk Limited,149462.0,LNWU 07 - October.csv,1
+25/11/2020,Reserves,Training Costs,St Mark'S Hospital Foundation,135000.0,LNWU 08 - November.csv,1
+17/11/2020,H.R.  Services N.W.L,Work Permits,Lloyds Tsb,53567.0,LNWU 08 - November.csv,1
+25/11/2020,Capital,Equipment,Getinge Uk Limited,53303.0,LNWU 08 - November.csv,1
+04/11/2020,Balance Sheet Lnwh,Salary Sacrifice White Goods,Akira Financial Limited,62254.0,LNWU 08 - November.csv,1
+04/11/2020,Capital,Estates/Building Works,Dc Emergency Systems Ltd,34194.0,LNWU 08 - November.csv,1
+11/11/2020,Capital,Estates/Building Works,Dc Emergency Systems Ltd,26064.0,LNWU 08 - November.csv,1
+25/11/2020,Capital,Equipment,Sccl-Nhs Supply Chain Roarp-Consumables,37125.0,LNWU 08 - November.csv,1
+04/11/2020,Capital,Estates/Building Works,Vm Construction Ltd,428098.0,LNWU 08 - November.csv,1
+04/11/2020,I M & T Support Maintenance,Software Purchases \ Licences,Armadillo Managed Services Ltd,40147.0,LNWU 08 - November.csv,1
+18/11/2020,Capital,Estates/Building Works,Excel Contractors Ltd,155880.0,LNWU 08 - November.csv,1
+11/11/2020,Post Room N.P.H,Postage,Pitney Bowes Limited - Franking,25000.0,LNWU 08 - November.csv,1
+04/11/2020,Post Room N.P.H,Postage,Pitney Bowes Limited - Franking,25000.0,LNWU 08 - November.csv,1
+25/11/2020,H.R.  Services N.W.L,Miscellaneous Expenses,Medacs Healthcare Plc,59940.0,LNWU 08 - November.csv,1
+04/11/2020,E.B.M.E.,E.B.M.E Contract,Bcas Bio Medical Services Ltd,210000.0,LNWU 08 - November.csv,1
+11/11/2020,Capital,Equipment,Promed Limited,39000.0,LNWU 08 - November.csv,1
+11/11/2020,Chief Executive Office N.W.L,Subscriptions\Membership Fees,Imperial College Health Partners,114000.0,LNWU 08 - November.csv,1
+25/11/2020,Capital,Equipment,Resmed (Uk) Ltd,29970.0,LNWU 08 - November.csv,1
+04/11/2020,Radiology E.H,Medical Equip Repairs & Maint,Sccl-Nhs Supply Chain Maintenance,36397.0,LNWU 08 - November.csv,1
+25/11/2020,Communications (Phones),Building Contract Work,Healthcare Clinical Informatics Limited,37800.0,LNWU 08 - November.csv,1
+04/11/2020,Capital,Estates/Building Works,Rbl Asbestos Removals  ( Roothings ),99500.0,LNWU 08 - November.csv,1
+25/11/2020,Communications (Phones),Building Contract Work,Healthcare Clinical Informatics Limited,37800.0,LNWU 08 - November.csv,1
+04/11/2020,Incontinence Bcs,Incontinence Contract,Ontex Healthcare Uk Ltd,48442.0,LNWU 08 - November.csv,1
+18/11/2020,Incontinence Bcs,Incontinence Contract,Ontex Healthcare Uk Ltd,39769.0,LNWU 08 - November.csv,1
+04/11/2020,E.B.M.E.,Medical Equip Repairs & Maint,Sccl-Nhs Supply Chain Maintenance,59232.0,LNWU 08 - November.csv,1
+04/11/2020,E.B.M.E.,Medical Equip Repairs & Maint,Sccl-Nhs Supply Chain Maintenance,262095.0,LNWU 08 - November.csv,1
+04/11/2020,Radiology E.H,Medical Equip Repairs & Maint,Sccl-Nhs Supply Chain Maintenance,77144.0,LNWU 08 - November.csv,1
+04/11/2020,Capital,Estates/Building Works,D Santer T/A Totalworth Building Services,79074.0,LNWU 08 - November.csv,1
+04/11/2020,Capital,Estates/Building Works,D Santer T/A Totalworth Building Services,288030.0,LNWU 08 - November.csv,1
+04/11/2020,Capital,Estates/Building Works,Apcoa Parking ( Uk ) Limited,73505.0,LNWU 08 - November.csv,1
+04/11/2020,Capital,Estates/Building Works,Apcoa Parking ( Uk ) Limited,634599.0,LNWU 08 - November.csv,1
+04/11/2020,Capital,Estates/Building Works,Apcoa Parking ( Uk ) Limited,44027.0,LNWU 08 - November.csv,1
+27/11/2020,Capital,Estates/Building Works,Apcoa Parking ( Uk ) Limited,86430.0,LNWU 08 - November.csv,1
+27/11/2020,Capital,Estates/Building Works,Apcoa Parking ( Uk ) Limited,603143.0,LNWU 08 - November.csv,1
+11/11/2020,Procurement,Subscriptions\Membership Fees,Guy'S And St Thomas Nhs Foundation Trst,40000.0,LNWU 08 - November.csv,1
+25/11/2020,Capacity Plan Recruitment Nwl,Other Recruitment Costs,Search Recruitment Limited,41496.0,LNWU 08 - November.csv,1
+11/11/2020,Radiology N.P.H,Metabolic Equip-Prepd Contract,Medical Imaging Systems Ltd,75318.0,LNWU 08 - November.csv,1
+04/11/2020,Capital,Estates/Building Works,Seville Developments Ltd,369600.0,LNWU 08 - November.csv,1
+25/11/2020,Capital,Equipment,Fujifilm Sonosite Limited,30427.0,LNWU 08 - November.csv,1
+18/11/2020,Balance Sheet Lnwh,Pharmacy Stock Purchases,Dialachemist Ltd T/A Springmed Solutions,29160.0,LNWU 08 - November.csv,1
+04/11/2020,Capital,I.C.T Hardware,Insight Direct ( Uk ) Limited,165000.0,LNWU 08 - November.csv,1
+25/11/2020,Balance Sheet Lnwh,Pharmacy Stock Purchases,Boehringer Ingelheim Ltd,39398.0,LNWU 08 - November.csv,1
+11/11/2020,Capital,I.C.T Hardware,Insight Direct ( Uk ) Limited,165000.0,LNWU 08 - November.csv,1
+04/11/2020,Balance Sheet Lnwh,Pharmacy Stock Purchases,Aah Pharmaceuticals Limited,29769.0,LNWU 08 - November.csv,1
+04/11/2020,Cancer Screening,General Instruments,Chrystal Consulting Limited,164228.0,LNWU 08 - November.csv,1
+04/11/2020,Patient Transport Contract,Patient Transport Contract,Ambulance Transfers Ltd,526195.0,LNWU 08 - November.csv,1
+04/11/2020,Patient Transport Contract,Patient Transport Contract,Ambulance Transfers Ltd,106275.0,LNWU 08 - November.csv,1
+25/11/2020,Theatres N.P.H,Medical Equipment,B Braun Medical Ltd,32400.0,LNWU 08 - November.csv,1
+04/11/2020,Capital,Estates/Building Works,London Fire Solutions,27630.0,LNWU 08 - November.csv,1
+04/11/2020,Nhs Income N.W.L,Other S.L.A. Income,Nhs Luton Ccg,34496.0,LNWU 08 - November.csv,1
+06/11/2020,B.C.S External Estates Slas,Estates N.H.S Propery Services,Nhs Brent Ccg,500000.0,LNWU 08 - November.csv,1
+25/11/2020,I M & T    Management,Substantive Management Band 9,Nhs Brent Ccg,31067.0,LNWU 08 - November.csv,1
+04/11/2020,Capital,Estates/Building Works,Boss Plumbing & Heating Services Ltd,33000.0,LNWU 08 - November.csv,1
+04/11/2020,Capital,Estates/Building Works,Boss Plumbing & Heating Services Ltd,31800.0,LNWU 08 - November.csv,1
+25/11/2020,Blood Products N.W.L,Blood Products,Nhs Blood And Transplant,212436.0,LNWU 08 - November.csv,1
+25/11/2020,Blood Products E.H,Blood Products,Nhs Blood And Transplant,42824.0,LNWU 08 - November.csv,1
+11/11/2020,Balance Sheet Lnwh,Pharmacy Stock Purchases,Celgene Limited,28957.0,LNWU 08 - November.csv,1
+18/11/2020,Balance Sheet Lnwh,Pharmacy Stock Purchases,Celgene Limited,28879.0,LNWU 08 - November.csv,1
+25/11/2020,St Marks Surgery,General Instruments,Intuitive Surgical Ltd,25569.0,LNWU 08 - November.csv,1
+05/11/2020,I M & T Support Maintenance,Call Charges Hospital,Virgin Media,62407.0,LNWU 08 - November.csv,1
+25/11/2020,Capital,Estates/Building Works,Nipro Medical Limited,123275.0,LNWU 08 - November.csv,1
+18/11/2020,Capital,Equipment,Sccl-Nhs Supply Chain Capital,279963.0,LNWU 08 - November.csv,1
+18/11/2020,Capital,Equipment,Sccl-Nhs Supply Chain Capital,565457.0,LNWU 08 - November.csv,1
+11/11/2020,Capital,Equipment,Philips Respironics Uk,32025.0,LNWU 08 - November.csv,1
+18/11/2020,Capacity Plan Recruitment Nwl,Bed Hire,Network Homes,43663.0,LNWU 08 - November.csv,1
+18/11/2020,Information N.W.L,Software Purchases \ Licences,Civica Uk Limited,50400.0,LNWU 08 - November.csv,1
+25/11/2020,I.B.D Nursing,Clinical Services Received,Lloyds Pharmacy Clinical Homecare,55396.0,LNWU 08 - November.csv,1
+04/11/2020,Utilities E.H,Electricity,Laser Energy Buying Group,113463.0,LNWU 08 - November.csv,1
+11/11/2020,Utilities N.P.H,Electricity,Laser Energy Buying Group,299841.0,LNWU 08 - November.csv,1
+11/11/2020,Utilities E.H,Electricity,Laser Energy Buying Group,112123.0,LNWU 08 - November.csv,1
+18/11/2020,Utilities N.P.H,Gas,Laser Energy Buying Group,36934.0,LNWU 08 - November.csv,1
+18/11/2020,Utilities N.P.H,Gas,Laser Energy Buying Group,38897.0,LNWU 08 - November.csv,1
+18/11/2020,Utilities N.P.H,Gas,Laser Energy Buying Group,77821.0,LNWU 08 - November.csv,1
+18/11/2020,Utilities N.P.H,Gas,Laser Energy Buying Group,131824.0,LNWU 08 - November.csv,1
+18/11/2020,Utilities N.P.H,Gas,Laser Energy Buying Group,64776.0,LNWU 08 - November.csv,1
+18/11/2020,Utilities N.P.H,Gas,Laser Energy Buying Group,56843.0,LNWU 08 - November.csv,1
+18/11/2020,Utilities N.P.H,Gas,Laser Energy Buying Group,49235.0,LNWU 08 - November.csv,1
+11/11/2020,Estates & Services N.P.H,Software Purchases \ Licences,Micad Systems ( Uk ) Limited,57168.0,LNWU 08 - November.csv,1
+11/11/2020,Reserves,Substantive Speciality Reg,Royal Free London Nhsft,274723.0,LNWU 08 - November.csv,1
+25/11/2020,Medical Director N.W.L,Software Purchases \ Licences,Sard Jv Ltd,89304.0,LNWU 08 - November.csv,1
+11/11/2020,Integrated Sexual Health Hill,General Instruments,Sh24 Cic,30179.0,LNWU 08 - November.csv,1
+18/11/2020,Id Screening,Protective Clothing,Dunelm ( Soft Furnishings ) Limited,74250.0,LNWU 08 - November.csv,1
+04/11/2020,I M & T Support Maintenance,Software Purchases \ Licences,Hitec (Laboratories) Ltd,65432.0,LNWU 08 - November.csv,1
+04/11/2020,I M & T Support Maintenance,Software Purchases \ Licences,Hitec (Laboratories) Ltd,55012.0,LNWU 08 - November.csv,1
+04/11/2020,Capital,Estates/Building Works,M Coen,27812.0,LNWU 08 - November.csv,1
+06/11/2020,Id Screening,Uniforms,Hayley Group Limited,140021.0,LNWU 08 - November.csv,1
+11/11/2020,Balance Sheet Lnwh,Lodging,Network Homes,81276.0,LNWU 08 - November.csv,1
+11/11/2020,Commercial,Rent Payable,Hayes Cottage Nursing Home Limited,40500.0,LNWU 08 - November.csv,1
+25/11/2020,Balance Sheet Lnwh,Pharmacy Stock Purchases,We Pharma T/A Wep Clinical,74584.0,LNWU 08 - November.csv,1
+27/11/2020,Commercial,Liability To 3rd Party Ins,Nhs Resolution,46365.0,LNWU 08 - November.csv,1
+27/11/2020,Depreciation\Provisions N.W.L,Nhsla Premium,Nhs Resolution,1847429.0,LNWU 08 - November.csv,1
+04/11/2020,P.A.C.S N.W.L,P.A.C.S,Sectra Limited,73630.0,LNWU 08 - November.csv,1
+25/11/2020,Point Of Care N.W.L,Laboratory Service Contracts,Radiometer Limited,69698.0,LNWU 08 - November.csv,1
+09/12/2020,Training & Development N.W.L,Training Costs,Shinetech Europe Limited,39604.0,LNWU 09 - December.csv,1
+16/12/2020,Capital,Equipment,Radiometer Limited,34200.0,LNWU 09 - December.csv,1
+16/12/2020,Balance Sheet Lnwh,Pharmacy Stock Purchases,Janssen Cilag Limited,38019.0,LNWU 09 - December.csv,1
+22/12/2020,Balance Sheet Lnwh,Pharmacy Stock Purchases,Janssen Cilag Limited,25713.0,LNWU 09 - December.csv,1
+02/12/2020,Balance Sheet Lnwh,Salary Sacrifice White Goods,Akira Financial Limited,49004.0,LNWU 09 - December.csv,1
+16/12/2020,Capital,Estates/Building Works,Dc Emergency Systems Ltd,34323.0,LNWU 09 - December.csv,1
+02/12/2020,Capital,Estates/Building Works,Kier Construction Limited,30752.0,LNWU 09 - December.csv,1
+22/12/2020,Capital,Estates/Building Works,Siemens Healthcare,323068.0,LNWU 09 - December.csv,1
+16/12/2020,Endoscopy N.P.H,General Instruments,Sccl-Nhs Supply Chain Roarp-Consumables,70558.0,LNWU 09 - December.csv,1
+09/12/2020,Capital,Estates/Building Works,Vm Construction Ltd,200494.0,LNWU 09 - December.csv,1
+22/12/2020,I M & T Support Maintenance,Software Purchases \ Licences,The Phoenix Partnership,44460.0,LNWU 09 - December.csv,1
+16/12/2020,Ibd Boost,Research Costs,Queen Mary University Of London,41443.0,LNWU 09 - December.csv,1
+16/12/2020,Capital,Estates/Building Works,Excel Contractors Ltd,87455.0,LNWU 09 - December.csv,1
+22/12/2020,Capital,Estates/Building Works,Excel Contractors Ltd,57171.0,LNWU 09 - December.csv,1
+09/12/2020,Balance Sheet Lnwh,Pharmacy Stock Purchases,Roche Products Ltd,44250.0,LNWU 09 - December.csv,1
+22/12/2020,Balance Sheet Lnwh,Pharmacy Stock Purchases,Roche Products Ltd,31327.0,LNWU 09 - December.csv,1
+22/12/2020,Balance Sheet Lnwh,Pharmacy Stock Purchases,Roche Products Ltd,26457.0,LNWU 09 - December.csv,1
+16/12/2020,Post Room N.P.H,Postage,Pitney Bowes Limited - Franking,25000.0,LNWU 09 - December.csv,1
+02/12/2020,Post Room N.P.H,Postage,Pitney Bowes Limited - Franking,25000.0,LNWU 09 - December.csv,1
+02/12/2020,E.B.M.E.,E.B.M.E Contract,Bcas Bio Medical Services Ltd,210000.0,LNWU 09 - December.csv,1
+22/12/2020,Endoscopy N.P.H,General Instruments,Vanguard Healthcare Solutions Limited,138253.0,LNWU 09 - December.csv,1
+22/12/2020,Endoscopy N.P.H,General Instruments,Vanguard Healthcare Solutions Limited,142800.0,LNWU 09 - December.csv,1
+22/12/2020,E.B.M.E.,E.B.M.E Contract,Bcas Bio Medical Services Ltd,210000.0,LNWU 09 - December.csv,1
+22/12/2020,Endoscopy N.P.H,General Instruments,Vanguard Healthcare Solutions Limited,144474.0,LNWU 09 - December.csv,1
+22/12/2020,Anaesthetics Medical N.W.L,Equipment Lease,Genmed.Me Ltd,33201.0,LNWU 09 - December.csv,1
+22/12/2020,Radiology N.P.H,Equipment Lease,Genmed.Me Ltd,25052.0,LNWU 09 - December.csv,1
+22/12/2020,Point Of Care N.W.L,It Leases,Genmed.Me Ltd,45651.0,LNWU 09 - December.csv,1
+09/12/2020,I M & T Support Maintenance,Building Contract Work,Healthcare Clinical Informatics Limited,69993.0,LNWU 09 - December.csv,1
+09/12/2020,I M & T Support Maintenance,Building Contract Work,Healthcare Clinical Informatics Limited,70618.0,LNWU 09 - December.csv,1
+09/12/2020,Capital,Estates/Building Works,Rbl Asbestos Removals  ( Roothings ),48000.0,LNWU 09 - December.csv,1
+09/12/2020,I M & T Support Maintenance,Building Contract Work,Healthcare Clinical Informatics Limited,63945.0,LNWU 09 - December.csv,1
+02/12/2020,Radiology E.H,Medical Equip Repairs & Maint,Sccl-Nhs Supply Chain Maintenance,72865.0,LNWU 09 - December.csv,1
+09/12/2020,Capital,Estates/Building Works,D Santer T/A Totalworth Building Services,65010.0,LNWU 09 - December.csv,1
+29/12/2020,Balance Sheet Lnwh,Miscellaneous Receipts,Park Retail Ltd Trading As  Love2shop,191161.0,LNWU 09 - December.csv,1
+23/12/2020,Capital,Estates/Building Works,Apcoa Parking ( Uk ) Limited,142100.0,LNWU 09 - December.csv,1
+23/12/2020,Capital,Estates/Building Works,Apcoa Parking ( Uk ) Limited,1161051.0,LNWU 09 - December.csv,1
+23/12/2020,Capital,Estates/Building Works,Apcoa Parking ( Uk ) Limited,37345.0,LNWU 09 - December.csv,1
+09/12/2020,Capital,Estates/Building Works,Seville Developments Ltd,205141.0,LNWU 09 - December.csv,1
+16/12/2020,Capital,Estates/Building Works,Seville Developments Ltd,29854.0,LNWU 09 - December.csv,1
+16/12/2020,Clinical Risk,Stationery,Care Quality Commission,485534.0,LNWU 09 - December.csv,1
+09/12/2020,Balance Sheet Lnwh,Pharmacy Stock Purchases,Dialachemist Ltd T/A Springmed Solutions,38880.0,LNWU 09 - December.csv,1
+02/12/2020,Balance Sheet Lnwh,Pharmacy Stock Purchases,Aah Pharmaceuticals Limited,31296.0,LNWU 09 - December.csv,1
+22/12/2020,Balance Sheet Lnwh,Pharmacy Stock Purchases,Aah Pharmaceuticals Limited,31059.0,LNWU 09 - December.csv,1
+22/12/2020,Cancer Screening,General Instruments,Chrystal Consulting Limited,164228.0,LNWU 09 - December.csv,1
+09/12/2020,Capital,Estates/Building Works,Siemens Industry Software Limited,73429.0,LNWU 09 - December.csv,1
+09/12/2020,Capital,Estates/Building Works,Siemens Industry Software Limited,80464.0,LNWU 09 - December.csv,1
+09/12/2020,Capital,Estates/Building Works,Siemens Industry Software Limited,39879.0,LNWU 09 - December.csv,1
+02/12/2020,Id Screening,Protective Clothing,Toffeln Limited,38600.0,LNWU 09 - December.csv,1
+24/12/2020,Patient Transport Contract,Patient Transport Contract,Ambulance Transfers Ltd,28380.0,LNWU 09 - December.csv,1
+24/12/2020,Patient Transport Contract,Patient Transport Contract,Ambulance Transfers Ltd,105798.0,LNWU 09 - December.csv,1
+24/12/2020,Patient Transport Contract,Patient Transport Contract,Ambulance Transfers Ltd,636697.0,LNWU 09 - December.csv,1
+24/12/2020,Patient Transport Contract,Patient Transport Contract,Ambulance Transfers Ltd,84678.0,LNWU 09 - December.csv,1
+16/12/2020,Capital,Estates/Building Works,Austin Turner And Co Ltd,55266.0,LNWU 09 - December.csv,1
+02/12/2020,Theatres N.P.H,Medical Equipment,B Braun Medical Ltd,70200.0,LNWU 09 - December.csv,1
+22/12/2020,Balance Sheet Lnwh,Nhs Creditor Accruals Rab,Nhs West Essex Ccg,34839.0,LNWU 09 - December.csv,1
+22/12/2020,Balance Sheet Lnwh,Nhs Creditor Accruals Rab,Nhs Basildon And Brentwood Ccg,26043.0,LNWU 09 - December.csv,1
+22/12/2020,Balance Sheet Lnwh,Nhs Creditor Accruals Rab,Nhs Northamptonshire Ccg,29700.0,LNWU 09 - December.csv,1
+16/12/2020,Capital,I.C.T Hardware,Dell Computer Corporation Ltd,459000.0,LNWU 09 - December.csv,1
+02/12/2020,Capital,Estates/Building Works,Boss Plumbing & Heating Services Ltd,64140.0,LNWU 09 - December.csv,1
+02/12/2020,Capital,Estates/Building Works,Boss Plumbing & Heating Services Ltd,33300.0,LNWU 09 - December.csv,1
+09/12/2020,Capital,Estates/Building Works,Boss Plumbing & Heating Services Ltd,29400.0,LNWU 09 - December.csv,1
+09/12/2020,Capital,Equipment,Medical Imaging Systems Ltd,165561.0,LNWU 09 - December.csv,1
+09/12/2020,Capital,Equipment,Medical Imaging Systems Ltd,150000.0,LNWU 09 - December.csv,1
+14/12/2020,Capital,Estates/Building Works,Medical Imaging Systems Ltd,179285.0,LNWU 09 - December.csv,1
+22/12/2020,Capital,Equipment,Medical Imaging Systems Ltd,79803.0,LNWU 09 - December.csv,1
+22/12/2020,Capital,Equipment,Medical Imaging Systems Ltd,79803.0,LNWU 09 - December.csv,1
+23/12/2020,Blood Products N.W.L,Blood Products,Nhs Blood And Transplant,212436.0,LNWU 09 - December.csv,1
+23/12/2020,Blood Products E.H,Blood Products,Nhs Blood And Transplant,42824.0,LNWU 09 - December.csv,1
+02/12/2020,Balance Sheet Lnwh,Pharmacy Stock Purchases,Celgene Limited,41233.0,LNWU 09 - December.csv,1
+09/12/2020,Balance Sheet Lnwh,Pharmacy Stock Purchases,Celgene Limited,25106.0,LNWU 09 - December.csv,1
+16/12/2020,Balance Sheet Lnwh,Pharmacy Stock Purchases,Celgene Limited,28374.0,LNWU 09 - December.csv,1
+22/12/2020,Balance Sheet Lnwh,Pharmacy Stock Purchases,Celgene Limited,51569.0,LNWU 09 - December.csv,1
+09/12/2020,Capital,Equipment,Draeger Medical Uk Ltd,169951.0,LNWU 09 - December.csv,1
+09/12/2020,Capital,Equipment,Draeger Medical Uk Ltd,36846.0,LNWU 09 - December.csv,1
+02/12/2020,Capital,Estates/Building Works,Nipro Medical Limited,136757.0,LNWU 09 - December.csv,1
+02/12/2020,Capital,Equipment,Sccl-Nhs Supply Chain Capital,231874.0,LNWU 09 - December.csv,1
+02/12/2020,Capital,Equipment,Sccl-Nhs Supply Chain Capital,231334.0,LNWU 09 - December.csv,1
+22/12/2020,Capital,Equipment,Sccl-Nhs Supply Chain Capital,66576.0,LNWU 09 - December.csv,1
+09/12/2020,Systems Accounts,Software Maintenance,Advanced Business Software And Solutions Ltd,56609.0,LNWU 09 - December.csv,1
+22/12/2020,Systems Accounts,Software Purchases \ Licences,Advanced Business Software And Solutions Ltd,27000.0,LNWU 09 - December.csv,1
+23/12/2020,Balance Sheet Lnwh,Miscellaneous Receipts,Hm Revenue & Customs - Ni,184648.0,LNWU 09 - December.csv,1
+09/12/2020,Utilities E.H,Electricity,Laser Energy Buying Group,115960.0,LNWU 09 - December.csv,1
+16/12/2020,Utilities N.P.H,Electricity,Laser Energy Buying Group,313138.0,LNWU 09 - December.csv,1
+16/12/2020,Utilities E.H,Electricity,Laser Energy Buying Group,118807.0,LNWU 09 - December.csv,1
+09/12/2020,Utilities E.H,Gas,Laser Energy Buying Group,41345.0,LNWU 09 - December.csv,1
+02/12/2020,Reserves,Substantive Speciality Reg,Royal Free London Nhsft,274968.0,LNWU 09 - December.csv,1
+22/12/2020,Sterile Services,Decontamination Contract,Ihss Limited,37059.0,LNWU 09 - December.csv,1
+22/12/2020,Sterile Services,Decontamination Contract,Ihss Limited,37059.0,LNWU 09 - December.csv,1
+22/12/2020,Sterile Services,Decontamination Contract,Ihss Limited,37059.0,LNWU 09 - December.csv,1
+22/12/2020,Sterile Services,Decontamination Contract,Ihss Limited,36863.0,LNWU 09 - December.csv,1
+22/12/2020,Sterile Services,Decontamination Contract,Ihss Limited,36863.0,LNWU 09 - December.csv,1
+22/12/2020,Sterile Services,Decontamination Contract,Ihss Limited,36863.0,LNWU 09 - December.csv,1
+22/12/2020,Sterile Services,Decontamination Contract,Ihss Limited,36863.0,LNWU 09 - December.csv,1
+22/12/2020,Sterile Services,Decontamination Contract,Ihss Limited,36863.0,LNWU 09 - December.csv,1
+02/12/2020,Pathology Contract N.W.L,Pathology Contract T.D.L.,Labex Analytical Llp,850198.0,LNWU 09 - December.csv,1
+02/12/2020,Pathology Contract N.W.L,Pathology Contract T.D.L.,Labex Facilities Llp,881649.0,LNWU 09 - December.csv,1
+22/12/2020,Pathology Contract N.W.L,Pathology Contract T.D.L.,Labex Facilities Llp,881649.0,LNWU 09 - December.csv,1
+22/12/2020,Pathology Contract N.W.L,Pathology Contract T.D.L.,Labex Analytical Llp,850198.0,LNWU 09 - December.csv,1
+02/12/2020,Capital,Equipment,Spacelabs Healthcare Ltd,45664.0,LNWU 09 - December.csv,1
+09/12/2020,Balance Sheet Lnwh,Pharmacy Stock Purchases,Healthcare At Home Limited,30600.0,LNWU 09 - December.csv,1
+22/12/2020,Balance Sheet Lnwh,Pharmacy Stock Purchases,Healthcare At Home Limited,72000.0,LNWU 09 - December.csv,1
+22/12/2020,Balance Sheet Lnwh,Pharmacy Stock Purchases,Healthcare At Home Limited,28994.0,LNWU 09 - December.csv,1
+02/12/2020,Information N.W.L,Professional Fees,Keystream Analytics Limited,54120.0,LNWU 09 - December.csv,1
+16/12/2020,Capital,Software,Softcat Ltd,84325.0,LNWU 09 - December.csv,1
+22/12/2020,P.A.C.S N.W.L,P.A.C.S,Soliton It Limited,30000.0,LNWU 09 - December.csv,1
+16/12/2020,Integrated Sexual Health Hill,General Instruments,Sh24 Cic,31591.0,LNWU 09 - December.csv,1
+16/12/2020,Capital,Estates/Building Works,Btp Environmental Services Limited,26700.0,LNWU 09 - December.csv,1
+16/12/2020,I M & T Support Maintenance,Professional Fees,Apira Ltd,51672.0,LNWU 09 - December.csv,1
+16/12/2020,I M & T Support Maintenance,Professional Fees,Apira Ltd,47028.0,LNWU 09 - December.csv,1
+22/12/2020,Obs And Gynae Medical N.P.H,Clinical Services Received,The Hillingdon Hospital Nhsft,29768.0,LNWU 09 - December.csv,1
+22/12/2020,Balance Sheet Lnwh,Lodging,Network Homes,76072.0,LNWU 09 - December.csv,1
+11/12/2020,H.R.  Services N.W.L,Work Permits,Lloyds Tsb,34383.0,LNWU 09 - December.csv,1
+09/12/2020,Balance Sheet Lnwh,Lodging,Network Homes,79376.0,LNWU 09 - December.csv,1
+22/12/2020,I M & T Support Maintenance,Pas Licence And Support,Specialist Computer Centres Plc,103584.0,LNWU 09 - December.csv,1
+21/12/2020,6 South,Other Medical Consumables,1st Call Mobility Limited,50000.0,LNWU 09 - December.csv,1
+03/12/2020,Finance Directorate Mgmt,Miscellaneous Expenses,Chelsea & Westminster Hospital Nhsft,46099.0,LNWU 09 - December.csv,1
+02/12/2020,Capital,Software,Edm Group Ltd,55157.0,LNWU 09 - December.csv,1
+29/12/2020,Commercial,Liability To 3rd Party Ins,Nhs Resolution,46365.0,LNWU 09 - December.csv,1
+29/12/2020,Depreciation\Provisions N.W.L,Nhsla Premium,Nhs Resolution,1847429.0,LNWU 09 - December.csv,1
+02/12/2020,Balance Sheet Lnwh,Pharmacy Stock Purchases,Alk-Abello Ltd,72000.0,LNWU 09 - December.csv,1
+16/12/2020,Balance Sheet Lnwh,Pharmacy Stock Purchases,Alk-Abello Ltd,45040.0,LNWU 09 - December.csv,1
+22/12/2020,Balance Sheet Lnwh,Pharmacy Stock Purchases,Alk-Abello Ltd,90000.0,LNWU 09 - December.csv,1
+09/12/2020,Textile Services,Laundry Contract,Elis Uk Limited,52577.0,LNWU 09 - December.csv,1
+09/12/2020,Textile Services,Laundry Contract,Elis Uk Limited,138904.0,LNWU 09 - December.csv,1
+14/01/2021,H.R.  Services N.W.L,Work Permits,Lloyds Tsb,47179.0,LNWU 10 - January.csv,1
+06/01/2021,Balance Sheet Lnwh,Pharmacy Stock Purchases,Janssen Cilag Limited,25499.0,LNWU 10 - January.csv,1
+13/01/2021,Balance Sheet Lnwh,Pharmacy Stock Purchases,Janssen Cilag Limited,35212.0,LNWU 10 - January.csv,1
+06/01/2021,Balance Sheet Lnwh,Salary Sacrifice White Goods,Akira Financial Limited,79864.0,LNWU 10 - January.csv,1
+13/01/2021,Capital,Estates/Building Works,Dc Emergency Systems Ltd,27298.0,LNWU 10 - January.csv,1
+20/01/2021,Capital,Estates/Building Works,Kier Construction Limited,82566.0,LNWU 10 - January.csv,1
+27/01/2021,Capital,Equipment,Siemens Healthcare,543688.0,LNWU 10 - January.csv,1
+20/01/2021,Car Parking N.W.L,N.P.H. Car Parking Contract,Apcoa Facilities Management (Uk) Limited,63680.0,LNWU 10 - January.csv,1
+06/01/2021,I M & T Support Maintenance,Software Purchases \ Licences,Vantage Diagnostics,576000.0,LNWU 10 - January.csv,1
+20/01/2021,Capital,Estates/Building Works,E J Ruby Plumbing Contractors,75060.0,LNWU 10 - January.csv,1
+06/01/2021,Capital,Estates/Building Works,E J Ruby Plumbing Contractors,38646.0,LNWU 10 - January.csv,1
+06/01/2021,Capital,Estates/Building Works,E J Ruby Plumbing Contractors,44700.0,LNWU 10 - January.csv,1
+13/01/2021,Endoscopy N.P.H,General Instruments,Sccl-Nhs Supply Chain Roarp-Consumables,47568.0,LNWU 10 - January.csv,1
+20/01/2021,Urology C.M.H,Medical Equip Repairs & Maint,Storz Medical (Uk) Ltd,28800.0,LNWU 10 - January.csv,1
+20/01/2021,Capital,Estates/Building Works,Vm Construction Ltd,69420.0,LNWU 10 - January.csv,1
+20/01/2021,Capital,Estates/Building Works,Vm Construction Ltd,94050.0,LNWU 10 - January.csv,1
+20/01/2021,I M & T Support Maintenance,Software Purchases \ Licences,The Phoenix Partnership,194022.0,LNWU 10 - January.csv,1
+13/01/2021,Capital,Estates/Building Works,Excel Contractors Ltd,233935.0,LNWU 10 - January.csv,1
+06/01/2021,Balance Sheet Lnwh,Pharmacy Stock Purchases,Roche Products Ltd,25562.0,LNWU 10 - January.csv,1
+13/01/2021,Balance Sheet Lnwh,Pharmacy Stock Purchases,Roche Products Ltd,35689.0,LNWU 10 - January.csv,1
+13/01/2021,Post Room N.P.H,Postage,Pitney Bowes Limited - Franking,25000.0,LNWU 10 - January.csv,1
+27/01/2021,Post Room N.P.H,Postage,Pitney Bowes Limited - Franking,25000.0,LNWU 10 - January.csv,1
+20/01/2021,Endoscopy N.P.H,General Instruments,Vanguard Healthcare Solutions Limited,115579.0,LNWU 10 - January.csv,1
+20/01/2021,Capital,Estates/Building Works,Bassaire Cleanrooms Limited,62918.0,LNWU 10 - January.csv,1
+06/01/2021,Managed Print,Managed Print,Genmed.Me Ltd,136071.0,LNWU 10 - January.csv,1
+06/01/2021,Managed Print,Managed Print,Genmed.Me Ltd,138711.0,LNWU 10 - January.csv,1
+06/01/2021,Managed Print,Managed Print,Genmed.Me Ltd,136071.0,LNWU 10 - January.csv,1
+06/01/2021,Managed Print,Managed Print,Genmed.Me Ltd,138711.0,LNWU 10 - January.csv,1
+13/01/2021,Radiology E.H,Medical Equip Repairs & Maint,Sccl-Nhs Supply Chain Maintenance,63256.0,LNWU 10 - January.csv,1
+06/01/2021,Utilities E.H,Rates,Ealing London Borough Council,931000.0,LNWU 10 - January.csv,1
+06/01/2021,Capital,Estates/Building Works,D Santer T/A Totalworth Building Services,217510.0,LNWU 10 - January.csv,1
+20/01/2021,Patient Transport Contract,Patient Transport Contract,Apcoa Parking ( Uk ) Limited,250000.0,LNWU 10 - January.csv,1
+20/01/2021,Capital,Estates/Building Works,Apcoa Parking ( Uk ) Limited,300000.0,LNWU 10 - January.csv,1
+13/01/2021,Capital,Estates/Building Works,Apcoa Parking ( Uk ) Limited,1023562.0,LNWU 10 - January.csv,1
+06/01/2021,Rates C.M.H,Rates,Brent London Borough Council (Rates),1239560.0,LNWU 10 - January.csv,1
+06/01/2021,Rates N.P.H,Rates,Brent London Borough Council (Rates),89376.0,LNWU 10 - January.csv,1
+20/01/2021,Capital,Furniture & Fittings,Arjo Uk Ltd,27093.0,LNWU 10 - January.csv,1
+20/01/2021,Bed Hire Contract N.W.L,Bed Hire,Arjo Uk Ltd,43329.0,LNWU 10 - January.csv,1
+20/01/2021,Bed Hire Contract N.W.L,Bed Hire,Arjo Uk Ltd,43329.0,LNWU 10 - January.csv,1
+27/01/2021,Bed Hire Contract N.W.L,Bed Hire,Arjo Uk Ltd,108505.0,LNWU 10 - January.csv,1
+13/01/2021,Capital,Estates/Building Works,Seville Developments Ltd,344400.0,LNWU 10 - January.csv,1
+20/01/2021,Capital,Estates/Building Works,Seville Developments Ltd,149400.0,LNWU 10 - January.csv,1
+27/01/2021,Capital,Equipment,Fujifilm Sonosite Limited,27425.0,LNWU 10 - January.csv,1
+27/01/2021,Capital,Equipment,Fujifilm Sonosite Limited,27425.0,LNWU 10 - January.csv,1
+25/01/2021,Capital,Software,Nuance Communications Ireland Limited,705000.0,LNWU 10 - January.csv,1
+25/01/2021,Capital,Staff/Agency Costs,Nuance Communications Ireland Limited,56900.0,LNWU 10 - January.csv,1
+20/01/2021,Balance Sheet Lnwh,Pharmacy Stock Purchases,Gilead Sciences Ltd,29587.0,LNWU 10 - January.csv,1
+06/01/2021,I M & T Support Maintenance,Software Maintenance,Insight Direct ( Uk ) Limited,54000.0,LNWU 10 - January.csv,1
+13/01/2021,Balance Sheet Lnwh,Pharmacy Stock Purchases,Aah Pharmaceuticals Limited,29680.0,LNWU 10 - January.csv,1
+27/01/2021,Cancer Screening,General Instruments,Chrystal Consulting Limited,164228.0,LNWU 10 - January.csv,1
+27/01/2021,Capital,Estates/Building Works,Crossland Landscapes Limited,54900.0,LNWU 10 - January.csv,1
+27/01/2021,Patient Transport Contract,Patient Transport Contract,Ambulance Transfers Ltd,553912.0,LNWU 10 - January.csv,1
+27/01/2021,Patient Transport Contract,Patient Transport Contract,Ambulance Transfers Ltd,74182.0,LNWU 10 - January.csv,1
+27/01/2021,Patient Transport Contract,Patient Transport Contract,Ambulance Transfers Ltd,628095.0,LNWU 10 - January.csv,1
+27/01/2021,Patient Transport Contract,Patient Transport Contract,Ambulance Transfers Ltd,627094.0,LNWU 10 - January.csv,1
+27/01/2021,Patient Transport Contract,Patient Transport Contract,Ambulance Transfers Ltd,86196.0,LNWU 10 - January.csv,1
+13/01/2021,Capital,Equipment,Ge Medical Systems Limited,101583.0,LNWU 10 - January.csv,1
+27/01/2021,Capital,Estates/Building Works,Austin Turner And Co Ltd,49005.0,LNWU 10 - January.csv,1
+27/01/2021,Capital,Estates/Building Works,Austin Turner And Co Ltd,35850.0,LNWU 10 - January.csv,1
+13/01/2021,Theatres N.P.H,Medical Equipment,B Braun Medical Ltd,37560.0,LNWU 10 - January.csv,1
+13/01/2021,Theatres N.P.H,Medical Equipment,B Braun Medical Ltd,25533.0,LNWU 10 - January.csv,1
+13/01/2021,Theatres N.P.H,Medical Equipment,B Braun Medical Ltd,32524.0,LNWU 10 - January.csv,1
+13/01/2021,Theatres N.P.H,Medical Equipment,B Braun Medical Ltd,28800.0,LNWU 10 - January.csv,1
+13/01/2021,Theatres N.P.H,Medical Equipment,B Braun Medical Ltd,35616.0,LNWU 10 - January.csv,1
+27/01/2021,Balance Sheet Lnwh,Pharmacy Stock Purchases,Abbvie Limited,30730.0,LNWU 10 - January.csv,1
+06/01/2021,Procurement,Equipment Lease,Chg-Meridian Computer Leasing Uk Limited,43012.0,LNWU 10 - January.csv,1
+06/01/2021,Southall Bdway Health Estates,Rates,Ealing London Borough Council,150290.0,LNWU 10 - January.csv,1
+20/01/2021,Capital,Estates/Building Works,Boss Plumbing & Heating Services Ltd,106620.0,LNWU 10 - January.csv,1
+20/01/2021,Capital,Estates/Building Works,Boss Plumbing & Heating Services Ltd,53820.0,LNWU 10 - January.csv,1
+13/01/2021,Blood Products N.W.L,Blood Products,Nhs Blood And Transplant,212436.0,LNWU 10 - January.csv,1
+13/01/2021,Blood Products E.H,Blood Products,Nhs Blood And Transplant,42824.0,LNWU 10 - January.csv,1
+06/01/2021,Balance Sheet Lnwh,Pharmacy Stock Purchases,Celgene Limited,35219.0,LNWU 10 - January.csv,1
+20/01/2021,Balance Sheet Lnwh,Pharmacy Stock Purchases,Celgene Limited,51624.0,LNWU 10 - January.csv,1
+06/01/2021,Capital,Equipment,Nihon Kohden Uk Limited,55468.0,LNWU 10 - January.csv,1
+13/01/2021,Capital,Equipment,Sccl-Nhs Supply Chain Capital,329817.0,LNWU 10 - January.csv,1
+13/01/2021,Balance Sheet Lnwh,Pharmacy Stock Purchases,Csl Behring Uk Ltd,38850.0,LNWU 10 - January.csv,1
+27/01/2021,Southall Bdway Health Estates,Rent Payable,Messers Mohammad & Rahman,82500.0,LNWU 10 - January.csv,1
+06/01/2021,Capital,Equipment,Olympus Keymed,26549.0,LNWU 10 - January.csv,1
+20/01/2021,Capital,Equipment,Nxstage Medical Uk Limited,46800.0,LNWU 10 - January.csv,1
+27/01/2021,Utilities N.P.H,Electricity,Laser Energy Buying Group,308518.0,LNWU 10 - January.csv,1
+27/01/2021,Utilities E.H,Electricity,Laser Energy Buying Group,112234.0,LNWU 10 - January.csv,1
+13/01/2021,Patient Transport Contract,Taxi Service,Green Tomato Cars Ltd,43390.0,LNWU 10 - January.csv,1
+20/01/2021,Sterile Services,Decontamination Contract,Ihss Limited,176481.0,LNWU 10 - January.csv,1
+20/01/2021,Sterile Services,Decontamination Contract,Ihss Limited,176481.0,LNWU 10 - January.csv,1
+20/01/2021,Sterile Services,Decontamination Contract,Ihss Limited,176481.0,LNWU 10 - January.csv,1
+20/01/2021,Sterile Services,Decontamination Contract,Ihss Limited,176481.0,LNWU 10 - January.csv,1
+20/01/2021,Sterile Services,Decontamination Contract,Ihss Limited,36863.0,LNWU 10 - January.csv,1
+20/01/2021,Sterile Services,Decontamination Contract,Ihss Limited,176481.0,LNWU 10 - January.csv,1
+20/01/2021,Pathology Contract N.W.L,Pathology Contract T.D.L.,Labex Facilities Llp,369658.0,LNWU 10 - January.csv,1
+20/01/2021,Pathology Contract N.W.L,Pathology Contract T.D.L.,Labex Facilities Llp,45000.0,LNWU 10 - January.csv,1
+20/01/2021,Pathology Contract N.W.L,Pathology Contract T.D.L.,Labex Facilities Llp,1059015.0,LNWU 10 - January.csv,1
+27/01/2021,Balance Sheet Lnwh,Pharmacy Stock Purchases,Healthcare At Home Limited,60300.0,LNWU 10 - January.csv,1
+27/01/2021,Balance Sheet Lnwh,Pharmacy Stock Purchases,Healthcare At Home Limited,26378.0,LNWU 10 - January.csv,1
+06/01/2021,I M & T Support Maintenance,Software Purchases \ Licences,Softcat Ltd,167996.0,LNWU 10 - January.csv,1
+06/01/2021,Capital,Software,Softcat Ltd,48600.0,LNWU 10 - January.csv,1
+27/01/2021,Radiology N.P.H,General Instruments,Agito Medical A/S,31000.0,LNWU 10 - January.csv,1
+20/01/2021,Integrated Sexual Health Hill,General Instruments,Sh24 Cic,30995.0,LNWU 10 - January.csv,1
+20/01/2021,Integrated Sexual Health Hill,General Instruments,Sh24 Cic,32781.0,LNWU 10 - January.csv,1
+13/01/2021,Integrated Sexual Health Hill,General Instruments,Sh24 Cic,42325.0,LNWU 10 - January.csv,1
+27/01/2021,Commercial Development,Clinical Services Received,Medinet Clinical Services Limited,39454.0,LNWU 10 - January.csv,1
+06/01/2021,Capital,Software,Edm Group Ltd,51217.0,LNWU 10 - January.csv,1
+25/01/2021,Commercial,Liability To 3rd Party Ins,Nhs Resolution,46365.0,LNWU 10 - January.csv,1
+25/01/2021,Depreciation\Provisions N.W.L,Nhsla Premium,Nhs Resolution,1847429.0,LNWU 10 - January.csv,1
+06/01/2021,P.A.C.S N.W.L,P.A.C.S,Sectra Limited,73630.0,LNWU 10 - January.csv,1
+13/01/2021,Balance Sheet Lnwh,Pharmacy Stock Purchases,Alk-Abello Ltd,29160.0,LNWU 10 - January.csv,1
+20/01/2021,Balance Sheet Lnwh,Pharmacy Stock Purchases,Alk-Abello Ltd,90000.0,LNWU 10 - January.csv,1
+20/01/2021,Balance Sheet Lnwh,Pharmacy Stock Purchases,Alk-Abello Ltd,29160.0,LNWU 10 - January.csv,1
+27/01/2021,Balance Sheet Lnwh,Pharmacy Stock Purchases,Alk-Abello Ltd,64800.0,LNWU 10 - January.csv,1
+06/01/2021,Textile Services,Laundry Contract,Elis Uk Limited,55170.0,LNWU 10 - January.csv,1
+06/01/2021,Textile Services,Laundry Contract,Elis Uk Limited,133522.0,LNWU 10 - January.csv,1
+27/01/2021,Textile Services,Laundry Contract,Elis Uk Limited,55072.0,LNWU 10 - January.csv,1
+27/01/2021,Textile Services,Laundry Contract,Elis Uk Limited,164805.0,LNWU 10 - January.csv,1
+24/02/2021,Capital,Equipment,Omnicell Ltd,32311.0,LNWU 11 - Febuary.csv,1
+24/02/2021,Capital,Equipment,Omnicell Ltd,61665.0,LNWU 11 - Febuary.csv,1
+22/02/2021,H.R.  Services N.W.L,Work Permits,Lloyds Tsb,56577.0,LNWU 11 - Febuary.csv,1
+10/02/2021,Estates\Facilities Management,Non Medical Negligence Costs,Thompsons Solicitors Llp - Damages,40000.0,LNWU 11 - Febuary.csv,1
+17/02/2021,Balance Sheet Lnwh,Pharmacy Stock Purchases,Janssen Cilag Limited,32462.0,LNWU 11 - Febuary.csv,1
+24/02/2021,Balance Sheet Lnwh,Pharmacy Stock Purchases,Janssen Cilag Limited,25974.0,LNWU 11 - Febuary.csv,1
+03/02/2021,Balance Sheet Lnwh,Salary Sacrifice White Goods,Akira Financial Limited,35803.0,LNWU 11 - Febuary.csv,1
+10/02/2021,Capital,Estates/Building Works,Dc Emergency Systems Ltd,64360.0,LNWU 11 - Febuary.csv,1
+10/02/2021,Capital,Estates/Building Works,Dc Emergency Systems Ltd,27455.0,LNWU 11 - Febuary.csv,1
+17/02/2021,Capital,Estates/Building Works,Hiltons Electrical Services Ltd,79425.0,LNWU 11 - Febuary.csv,1
+17/02/2021,Capital,Estates/Building Works,Hiltons Electrical Services Ltd,306105.0,LNWU 11 - Febuary.csv,1
+24/02/2021,Capital,Estates/Building Works,Hiltons Electrical Services Ltd,79425.0,LNWU 11 - Febuary.csv,1
+24/02/2021,Capital,Estates/Building Works,Hiltons Electrical Services Ltd,153052.0,LNWU 11 - Febuary.csv,1
+10/02/2021,Capital,Equipment,Siemens Healthcare,28615.0,LNWU 11 - Febuary.csv,1
+03/02/2021,Capital,Estates/Building Works,Siemens Healthcare,45400.0,LNWU 11 - Febuary.csv,1
+17/02/2021,Capital,Estates/Building Works,Siemens Healthcare,204381.0,LNWU 11 - Febuary.csv,1
+17/02/2021,Capital,Estates/Building Works,Siemens Healthcare,108336.0,LNWU 11 - Febuary.csv,1
+17/02/2021,Capital,Equipment,Siemens Healthcare,574251.0,LNWU 11 - Febuary.csv,1
+17/02/2021,Car Parking N.W.L,N.P.H. Car Parking Contract,Apcoa Facilities Management (Uk) Limited,193694.0,LNWU 11 - Febuary.csv,1
+10/02/2021,Estates & Services N.P.H,Engineering  Contract Works,Vm Construction Ltd,29023.0,LNWU 11 - Febuary.csv,1
+24/02/2021,Capital,Estates/Building Works,Vm Construction Ltd,35556.0,LNWU 11 - Febuary.csv,1
+24/02/2021,Cardiology Investigationsn.W.L,General Instruments,Medtronic Ltd,174000.0,LNWU 11 - Febuary.csv,1
+03/02/2021,Capital,Estates/Building Works,Excel Contractors Ltd,35475.0,LNWU 11 - Febuary.csv,1
+03/02/2021,Capital,Estates/Building Works,Excel Contractors Ltd,26984.0,LNWU 11 - Febuary.csv,1
+03/02/2021,Capital,Estates/Building Works,Excel Contractors Ltd,28162.0,LNWU 11 - Febuary.csv,1
+10/02/2021,Capital,Estates/Building Works,Excel Contractors Ltd,154406.0,LNWU 11 - Febuary.csv,1
+10/02/2021,Capital,Estates/Building Works,Excel Contractors Ltd,90862.0,LNWU 11 - Febuary.csv,1
+10/02/2021,Balance Sheet Lnwh,Pharmacy Stock Purchases,Roche Products Ltd,79967.0,LNWU 11 - Febuary.csv,1
+10/02/2021,Balance Sheet Lnwh,Pharmacy Stock Purchases,Roche Products Ltd,37525.0,LNWU 11 - Febuary.csv,1
+24/02/2021,Balance Sheet Lnwh,Pharmacy Stock Purchases,Roche Products Ltd,28140.0,LNWU 11 - Febuary.csv,1
+24/02/2021,Post Room N.P.H,Postage,Pitney Bowes Limited - Franking,25000.0,LNWU 11 - Febuary.csv,1
+03/02/2021,Post Room N.P.H,Postage,Pitney Bowes Limited - Franking,25000.0,LNWU 11 - Febuary.csv,1
+03/02/2021,E.B.M.E.,E.B.M.E Contract,Bcas Bio Medical Services Ltd,210000.0,LNWU 11 - Febuary.csv,1
+03/02/2021,Managed Print,Managed Print,Genmed.Me Ltd,136071.0,LNWU 11 - Febuary.csv,1
+24/02/2021,Endoscopy N.P.H,Clinical Services Received,Genmed.Me Ltd,623234.0,LNWU 11 - Febuary.csv,1
+10/02/2021,Capital,Estates/Building Works,Rbl Asbestos Removals  ( Roothings ),80070.0,LNWU 11 - Febuary.csv,1
+03/02/2021,Incontinence Bcs,Incontinence Contract,Ontex Healthcare Uk Ltd,43042.0,LNWU 11 - Febuary.csv,1
+17/02/2021,Incontinence Bcs,Incontinence Contract,Ontex Healthcare Uk Ltd,45623.0,LNWU 11 - Febuary.csv,1
+24/02/2021,Capital,Equipment,Baxter Healthcare Ltd,73800.0,LNWU 11 - Febuary.csv,1
+24/02/2021,Capital,Estates/Building Works,Sunbelt Rentals Limited,34008.0,LNWU 11 - Febuary.csv,1
+24/02/2021,Radiology C.M.H,Medical Equip Repairs & Maint,Sccl-Nhs Supply Chain Maintenance,31164.0,LNWU 11 - Febuary.csv,1
+10/02/2021,Soft F.M. Contract N.W.L,Catering Equipment,Willis Jenkins Limited,50520.0,LNWU 11 - Febuary.csv,1
+24/02/2021,Capital,Estates/Building Works,D Santer T/A Totalworth Building Services,27228.0,LNWU 11 - Febuary.csv,1
+10/02/2021,Capital,Estates/Building Works,D Santer T/A Totalworth Building Services,34405.0,LNWU 11 - Febuary.csv,1
+24/02/2021,Capital,Estates/Building Works,D Santer T/A Totalworth Building Services,139200.0,LNWU 11 - Febuary.csv,1
+24/02/2021,Capital,Estates/Building Works,D Santer T/A Totalworth Building Services,186000.0,LNWU 11 - Febuary.csv,1
+17/02/2021,Id Screening,General Instruments,Full Support Healthcare Limited,99824.0,LNWU 11 - Febuary.csv,1
+17/02/2021,Capital,Estates/Building Works,Apcoa Parking ( Uk ) Limited,168800.0,LNWU 11 - Febuary.csv,1
+17/02/2021,Capital,Estates/Building Works,Apcoa Parking ( Uk ) Limited,541559.0,LNWU 11 - Febuary.csv,1
+17/02/2021,Capital,Estates/Building Works,Apcoa Parking ( Uk ) Limited,168800.0,LNWU 11 - Febuary.csv,1
+17/02/2021,Capital,Estates/Building Works,Apcoa Parking ( Uk ) Limited,541559.0,LNWU 11 - Febuary.csv,1
+17/02/2021,Capital,Equipment,Haemonetics Limited,25200.0,LNWU 11 - Febuary.csv,1
+24/02/2021,Capacity Plan Recruitment Nwl,Other Recruitment Costs,Search Recruitment Limited,28728.0,LNWU 11 - Febuary.csv,1
+24/02/2021,Capital,Estates/Building Works,Seville Developments Ltd,449187.0,LNWU 11 - Febuary.csv,1
+24/02/2021,Capital,Equipment,Fujifilm Sonosite Limited,46058.0,LNWU 11 - Febuary.csv,1
+24/02/2021,Capital,Estates/Building Works,Seville Developments Ltd,25893.0,LNWU 11 - Febuary.csv,1
+24/02/2021,Capital,Estates/Building Works,Seville Developments Ltd,123330.0,LNWU 11 - Febuary.csv,1
+24/02/2021,Capital,Estates/Building Works,Seville Developments Ltd,734124.0,LNWU 11 - Febuary.csv,1
+03/02/2021,Capital,Staff/Agency Costs,Insight Direct ( Uk ) Limited,137566.0,LNWU 11 - Febuary.csv,1
+03/02/2021,Finance Directorate Mgmt,Miscellaneous Expenses,Central And North West London,75705.0,LNWU 11 - Febuary.csv,1
+03/02/2021,Finance Directorate Mgmt,Miscellaneous Expenses,Central And North West London,75705.0,LNWU 11 - Febuary.csv,1
+03/02/2021,Finance Directorate Mgmt,Miscellaneous Expenses,Central And North West London,75705.0,LNWU 11 - Febuary.csv,1
+03/02/2021,Finance Directorate Mgmt,Miscellaneous Expenses,Central And North West London,75705.0,LNWU 11 - Febuary.csv,1
+03/02/2021,Finance Directorate Mgmt,Miscellaneous Expenses,Central And North West London,98694.0,LNWU 11 - Febuary.csv,1
+03/02/2021,Balance Sheet Lnwh,Pharmacy Stock Purchases,Aah Pharmaceuticals Limited,30932.0,LNWU 11 - Febuary.csv,1
+10/02/2021,Balance Sheet Lnwh,Pharmacy Stock Purchases,Aah Pharmaceuticals Limited,46203.0,LNWU 11 - Febuary.csv,1
+24/02/2021,Cancer Screening,General Instruments,Chrystal Consulting Limited,164228.0,LNWU 11 - Febuary.csv,1
+24/02/2021,H.R.  Services N.W.L,Legal Fees,Radcliffeslebrasseur Llp,100000.0,LNWU 11 - Febuary.csv,1
+03/02/2021,Capital,Estates/Building Works,Austin Turner And Co Ltd,30000.0,LNWU 11 - Febuary.csv,1
+24/02/2021,Capital,Estates/Building Works,Austin Turner And Co Ltd,47173.0,LNWU 11 - Febuary.csv,1
+24/02/2021,Capital,Estates/Building Works,Austin Turner And Co Ltd,56166.0,LNWU 11 - Febuary.csv,1
+03/02/2021,B.C.S External Estates Slas,Estates N.H.S Propery Services,Nhs Brent Ccg,250000.0,LNWU 11 - Febuary.csv,1
+24/02/2021,Regional Rehab Unit,Substantive A And C Band 5,Harrow London Borough Council,35134.0,LNWU 11 - Febuary.csv,1
+24/02/2021,Capital,I.C.T Hardware,Dell Computer Corporation Ltd,90000.0,LNWU 11 - Febuary.csv,1
+24/02/2021,Capital,I.C.T Hardware,Dell Computer Corporation Ltd,356956.0,LNWU 11 - Febuary.csv,1
+22/02/2021,St Marks Surgery,Medical Equip Repairs & Maint,Intuitive Surgical Limited,198000.0,LNWU 11 - Febuary.csv,1
+10/02/2021,Capital,Estates/Building Works,Boss Plumbing & Heating Services Ltd,71142.0,LNWU 11 - Febuary.csv,1
+10/02/2021,Capital,Estates/Building Works,Boss Plumbing & Heating Services Ltd,34500.0,LNWU 11 - Febuary.csv,1
+22/02/2021,St Marks Surgery,General Instruments,Intuitive Surgical Limited,156000.0,LNWU 11 - Febuary.csv,1
+24/02/2021,Pathology Contract N.W.L,T.D.L. Out Of Scope,Unilabs Ltd,32233.0,LNWU 11 - Febuary.csv,1
+17/02/2021,Capital,Equipment,Aquilant Endoscopy,265823.0,LNWU 11 - Febuary.csv,1
+17/02/2021,Blood Products N.W.L,Blood Products,Nhs Blood And Transplant,212436.0,LNWU 11 - Febuary.csv,1
+17/02/2021,Blood Products E.H,Blood Products,Nhs Blood And Transplant,42824.0,LNWU 11 - Febuary.csv,1
+03/02/2021,Balance Sheet Lnwh,Pharmacy Stock Purchases,Celgene Limited,36561.0,LNWU 11 - Febuary.csv,1
+17/02/2021,Balance Sheet Lnwh,Pharmacy Stock Purchases,Celgene Limited,30890.0,LNWU 11 - Febuary.csv,1
+24/02/2021,Balance Sheet Lnwh,Pharmacy Stock Purchases,Celgene Limited,37068.0,LNWU 11 - Febuary.csv,1
+24/02/2021,Capital,Estates/Building Works,Portakabin Limited,202141.0,LNWU 11 - Febuary.csv,1
+03/02/2021,Capital,Equipment,Sccl-Nhs Supply Chain Capital,746870.0,LNWU 11 - Febuary.csv,1
+10/02/2021,Balance Sheet Lnwh,Pharmacy Stock Purchases,Csl Behring Uk Ltd,33600.0,LNWU 11 - Febuary.csv,1
+10/02/2021,Balance Sheet Lnwh,Pharmacy Stock Purchases,Csl Behring Uk Ltd,33600.0,LNWU 11 - Febuary.csv,1
+10/02/2021,Capital,Equipment,Olympus Keymed,287110.0,LNWU 11 - Febuary.csv,1
+24/02/2021,Capital,Equipment,Bd Dispensing Uk Ltd,508800.0,LNWU 11 - Febuary.csv,1
+17/02/2021,I.B.D Nursing,Clinical Services Received,Lloyds Pharmacy Clinical Homecare,55396.0,LNWU 11 - Febuary.csv,1
+24/02/2021,I.B.D Nursing,Clinical Services Received,Lloyds Pharmacy Clinical Homecare,55396.0,LNWU 11 - Febuary.csv,1
+17/02/2021,Balance Sheet Lnwh,Lodging,Network Homes,73415.0,LNWU 11 - Febuary.csv,1
+17/02/2021,Utilities N.P.H,Electricity,Laser Energy Buying Group,322871.0,LNWU 11 - Febuary.csv,1
+17/02/2021,Utilities E.H,Electricity,Laser Energy Buying Group,115129.0,LNWU 11 - Febuary.csv,1
+17/02/2021,Utilities N.P.H,Gas,Laser Energy Buying Group,85620.0,LNWU 11 - Febuary.csv,1
+17/02/2021,Utilities E.H,Gas,Laser Energy Buying Group,44831.0,LNWU 11 - Febuary.csv,1
+17/02/2021,Utilities N.P.H,Gas,Laser Energy Buying Group,94904.0,LNWU 11 - Febuary.csv,1
+10/02/2021,Utilities N.P.H,Gas,Laser Energy Buying Group,114623.0,LNWU 11 - Febuary.csv,1
+17/02/2021,Utilities E.H,Gas,Laser Energy Buying Group,54942.0,LNWU 11 - Febuary.csv,1
+03/02/2021,Patient Transport Contract,Taxi Service,Green Tomato Cars Ltd,28500.0,LNWU 11 - Febuary.csv,1
+03/02/2021,Finance Directorate Mgmt,Miscellaneous Expenses,Imperial College Healthcare Nhs Trust,547556.0,LNWU 11 - Febuary.csv,1
+03/02/2021,Reserves,Substantive Speciality Reg,Royal Free London Nhsft,272794.0,LNWU 11 - Febuary.csv,1
+03/02/2021,Reserves,Substantive Speciality Reg,Royal Free London Nhsft,277555.0,LNWU 11 - Febuary.csv,1
+03/02/2021,Finance Directorate Mgmt,Clinical Services Received,Royal Brompton & Harefield Nhsft,42082.0,LNWU 11 - Febuary.csv,1
+03/02/2021,Pathology Contract N.W.L,Pathology Contract T.D.L.,Labex Facilities Llp,881649.0,LNWU 11 - Febuary.csv,1
+24/02/2021,Balance Sheet Lnwh,Pharmacy Stock Purchases,Healthcare At Home Limited,64500.0,LNWU 11 - Febuary.csv,1
+03/02/2021,Information N.W.L,Professional Fees,Keystream Analytics Limited,25080.0,LNWU 11 - Febuary.csv,1
+24/02/2021,Capital,Software,Cisilion Limited,321590.0,LNWU 11 - Febuary.csv,1
+24/02/2021,I M & T Support Maintenance,Software Purchases \ Licences,Softcat Ltd,167996.0,LNWU 11 - Febuary.csv,1
+10/02/2021,Capital,Staff/Agency Costs,Softcat Ltd,32603.0,LNWU 11 - Febuary.csv,1
+17/02/2021,Capital,Software,Softcat Ltd,64800.0,LNWU 11 - Febuary.csv,1
+24/02/2021,H.R.  Services N.W.L,Software Purchases \ Licences,Softcat Ltd,157204.0,LNWU 11 - Febuary.csv,1
+24/02/2021,H.R.  Services N.W.L,Software Purchases \ Licences,Softcat Ltd,157204.0,LNWU 11 - Febuary.csv,1
+17/02/2021,P.A.C.S N.W.L,P.A.C.S,Soliton It Limited,30000.0,LNWU 11 - Febuary.csv,1
+03/02/2021,Capital,I.C.T Hardware,Visionable Ltd,66857.0,LNWU 11 - Febuary.csv,1
+10/02/2021,Integrated Sexual Health Hill,General Instruments,Sh24 Cic,35155.0,LNWU 11 - Febuary.csv,1
+24/02/2021,I M & T Support Maintenance,Software Maintenance,Clinisys Solutions Limited,177885.0,LNWU 11 - Febuary.csv,1
+24/02/2021,Capital,Estates/Building Works,Elmcroft Construction Limited,101528.0,LNWU 11 - Febuary.csv,1
+24/02/2021,Capital,Staff/Agency Costs,Apira Ltd,88344.0,LNWU 11 - Febuary.csv,1
+24/02/2021,Capital,Staff/Agency Costs,Apira Ltd,48384.0,LNWU 11 - Febuary.csv,1
+24/02/2021,Capital,Staff/Agency Costs,Apira Ltd,40924.0,LNWU 11 - Febuary.csv,1
+10/02/2021,Finance Directorate Mgmt,Clinical Services Received,The Hillingdon Hospital Nhsft,29761.0,LNWU 11 - Febuary.csv,1
+24/02/2021,Medinet Lnwh,Clinical Services Received,Medinet Clinical Services Limited,32773.0,LNWU 11 - Febuary.csv,1
+24/02/2021,Medinet Lnwh,Clinical Services Received,Medinet Clinical Services Limited,66432.0,LNWU 11 - Febuary.csv,1
+24/02/2021,Medinet Lnwh,Clinical Services Received,Medinet Clinical Services Limited,46115.0,LNWU 11 - Febuary.csv,1
+24/02/2021,6 South,Other Medical Consumables,1st Call Mobility Limited,30000.0,LNWU 11 - Febuary.csv,1
+03/02/2021,Capital,Estates/Building Works,Vital Energi Solutions Ltd,2102086.0,LNWU 11 - Febuary.csv,1
+03/02/2021,Capital,Software,Edm Group Ltd,35791.0,LNWU 11 - Febuary.csv,1
+10/02/2021,P.A.C.S N.W.L,P.A.C.S,Sectra Limited,73630.0,LNWU 11 - Febuary.csv,1
+03/02/2021,Balance Sheet Lnwh,Pharmacy Stock Purchases,Alk-Abello Ltd,54000.0,LNWU 11 - Febuary.csv,1
+24/02/2021,Textile Services,Laundry Contract,Elis Uk Limited,26147.0,LNWU 11 - Febuary.csv,1
+24/02/2021,Textile Services,Laundry Contract,Elis Uk Limited,52518.0,LNWU 11 - Febuary.csv,1
+24/02/2021,Textile Services,Laundry Contract,Elis Uk Limited,151950.0,LNWU 11 - Febuary.csv,1
+03/02/2021,I M & T Support Maintenance,Software Purchases \ Licences,Seattle Software T/A Orbus Software,29739.0,LNWU 11 - Febuary.csv,1
+03/02/2021,Point Of Care N.W.L,Laboratory Service Contracts,Radiometer Limited,69698.0,LNWU 11 - Febuary.csv,1
+24/03/2021,Reserves,Training Costs,St Mark'S Hospital Foundation,135000.0,LNWU 12 - March.csv,1
+31/03/2021,B.C.S External Estates Slas,Estates N.H.S Propery Services,Nhs Property Services Limited,95209.0,LNWU 12 - March.csv,1
+31/03/2021,B.C.S External Estates Slas,Estates N.H.S Propery Services,Nhs Property Services Limited,98472.0,LNWU 12 - March.csv,1
+31/03/2021,B.C.S External Estates Slas,Estates N.H.S Propery Services,Nhs Property Services Limited,733941.0,LNWU 12 - March.csv,1
+31/03/2021,B.C.S External Estates Slas,Estates N.H.S Propery Services,Nhs Property Services Limited,74518.0,LNWU 12 - March.csv,1
+31/03/2021,B.C.S External Estates Slas,Estates N.H.S Propery Services,Nhs Property Services Limited,834778.0,LNWU 12 - March.csv,1
+31/03/2021,B.C.S External Estates Slas,Estates N.H.S Propery Services,Nhs Property Services Limited,33486.0,LNWU 12 - March.csv,1
+31/03/2021,B.C.S External Estates Slas,Estates N.H.S Propery Services,Nhs Property Services Limited,56680.0,LNWU 12 - March.csv,1
+31/03/2021,B.C.S External Estates Slas,Estates N.H.S Propery Services,Nhs Property Services Limited,63611.0,LNWU 12 - March.csv,1
+31/03/2021,B.C.S External Estates Slas,Estates N.H.S Propery Services,Nhs Property Services Limited,40262.0,LNWU 12 - March.csv,1
+31/03/2021,B.C.S External Estates Slas,Estates N.H.S Propery Services,Nhs Property Services Limited,45103.0,LNWU 12 - March.csv,1
+31/03/2021,B.C.S External Estates Slas,Estates N.H.S Propery Services,Nhs Property Services Limited,83501.0,LNWU 12 - March.csv,1
+31/03/2021,B.C.S External Estates Slas,Estates N.H.S Propery Services,Nhs Property Services Limited,60414.0,LNWU 12 - March.csv,1
+31/03/2021,B.C.S External Estates Slas,Estates N.H.S Propery Services,Nhs Property Services Limited,33486.0,LNWU 12 - March.csv,1
+31/03/2021,B.C.S External Estates Slas,Estates N.H.S Propery Services,Nhs Property Services Limited,75057.0,LNWU 12 - March.csv,1
+31/03/2021,B.C.S External Estates Slas,Estates N.H.S Propery Services,Nhs Property Services Limited,63611.0,LNWU 12 - March.csv,1
+31/03/2021,B.C.S External Estates Slas,Estates N.H.S Propery Services,Nhs Property Services Limited,656092.0,LNWU 12 - March.csv,1
+31/03/2021,B.C.S External Estates Slas,Estates N.H.S Propery Services,Nhs Property Services Limited,40509.0,LNWU 12 - March.csv,1
+31/03/2021,B.C.S External Estates Slas,Estates N.H.S Propery Services,Nhs Property Services Limited,26265.0,LNWU 12 - March.csv,1
+31/03/2021,B.C.S External Estates Slas,Estates N.H.S Propery Services,Nhs Property Services Limited,57013.0,LNWU 12 - March.csv,1
+31/03/2021,B.C.S External Estates Slas,Estates N.H.S Propery Services,Nhs Property Services Limited,68468.0,LNWU 12 - March.csv,1
+29/03/2021,Managed Print,It Leases,Vision ( Office Automation ) Limited,198000.0,LNWU 12 - March.csv,1
+03/03/2021,Capital,Equipment,Omnicell Ltd,433857.0,LNWU 12 - March.csv,1
+24/03/2021,Capital,Equipment,Omnicell Ltd,29990.0,LNWU 12 - March.csv,1
+24/03/2021,Capital,Equipment,Omnicell Ltd,32156.0,LNWU 12 - March.csv,1
+24/03/2021,Capital,Equipment,Omnicell Ltd,62863.0,LNWU 12 - March.csv,1
+29/03/2021,Capital,I.C.T Hardware,Parity Medical,133837.0,LNWU 12 - March.csv,1
+17/03/2021,Utilities N.P.H,Water And Sewerage,Castle Water Limited,30156.0,LNWU 12 - March.csv,1
+15/03/2021,H.R.  Services N.W.L,Work Permits,Lloyds Tsb,139853.0,LNWU 12 - March.csv,1
+29/03/2021,Capital,Equipment,Athrodax Healthcare International Ltd,53726.0,LNWU 12 - March.csv,1
+24/03/2021,Balance Sheet Lnwh,Pharmacy Stock Purchases,Novartis Pharma Uk Ltd,31606.0,LNWU 12 - March.csv,1
+03/03/2021,Obs And Gynae Medical N.P.H,Clinical Services Received,Bmi Healthcare,34981.0,LNWU 12 - March.csv,1
+10/03/2021,Capital,Equipment,Surgease Innovations Limited,120000.0,LNWU 12 - March.csv,1
+24/03/2021,Balance Sheet Lnwh,Pensions,Nhs Injury Benefits,54248.0,LNWU 12 - March.csv,1
+24/03/2021,Balance Sheet Lnwh,Pensions,Nhs Injury Benefits,55170.0,LNWU 12 - March.csv,1
+24/03/2021,Balance Sheet Lnwh,Pensions,Nhs Injury Benefits,55170.0,LNWU 12 - March.csv,1
+03/03/2021,Balance Sheet Lnwh,Salary Sacrifice White Goods,Akira Financial Limited,27376.0,LNWU 12 - March.csv,1
+24/03/2021,Capital,Estates/Building Works,Dc Emergency Systems Ltd,27799.0,LNWU 12 - March.csv,1
+24/03/2021,Capital,Estates/Building Works,Dc Emergency Systems Ltd,153589.0,LNWU 12 - March.csv,1
+17/03/2021,Capital,Estates/Building Works,Kier Construction Limited,49624.0,LNWU 12 - March.csv,1
+10/03/2021,Capital,Estates/Building Works,Hiltons Electrical Services Ltd,74025.0,LNWU 12 - March.csv,1
+03/03/2021,Capital,Estates/Building Works,Siemens Healthcare,155783.0,LNWU 12 - March.csv,1
+10/03/2021,Capital,Equipment,Siemens Healthcare,30223.0,LNWU 12 - March.csv,1
+03/03/2021,Capital,Equipment,Siemens Healthcare,965442.0,LNWU 12 - March.csv,1
+03/03/2021,Capital,Equipment,Siemens Healthcare,1096020.0,LNWU 12 - March.csv,1
+10/03/2021,Capital,Equipment,Siemens Healthcare,1634400.0,LNWU 12 - March.csv,1
+10/03/2021,Capital,Equipment,Siemens Healthcare,1552680.0,LNWU 12 - March.csv,1
+25/03/2021,Capital,Equipment,Siemens Healthcare,577114.0,LNWU 12 - March.csv,1
+24/03/2021,Car Parking N.W.L,Car Parking,Apcoa Facilities Management (Uk) Limited,91381.0,LNWU 12 - March.csv,1
+10/03/2021,Capital,Estates/Building Works,E J Ruby Plumbing Contractors,25838.0,LNWU 12 - March.csv,1
+24/03/2021,Capital,Estates/Building Works,E J Ruby Plumbing Contractors,75060.0,LNWU 12 - March.csv,1
+29/03/2021,Capital,Equipment,Sccl-Nhs Supply Chain Roarp-Consumables,95046.0,LNWU 12 - March.csv,1
+24/03/2021,Capital,Equipment,Stryker (Uk) Ltd,79918.0,LNWU 12 - March.csv,1
+24/03/2021,Capital,Equipment,Stryker (Uk) Ltd,313527.0,LNWU 12 - March.csv,1
+10/03/2021,Capital,Estates/Building Works,Vm Construction Ltd,598820.0,LNWU 12 - March.csv,1
+17/03/2021,Capital,Estates/Building Works,Vm Construction Ltd,137480.0,LNWU 12 - March.csv,1
+17/03/2021,Capital,Estates/Building Works,Vm Construction Ltd,33684.0,LNWU 12 - March.csv,1
+24/03/2021,Capital,Estates/Building Works,Vm Construction Ltd,33540.0,LNWU 12 - March.csv,1
+24/03/2021,Capital,Estates/Building Works,Vm Construction Ltd,25980.0,LNWU 12 - March.csv,1
+29/03/2021,Capital,Estates/Building Works,Vm Construction Ltd,26268.0,LNWU 12 - March.csv,1
+10/03/2021,Capital,Equipment,Medtronic Ltd,28773.0,LNWU 12 - March.csv,1
+10/03/2021,Cardiology Investigationsn.W.L,General Instruments,Medtronic Ltd,105840.0,LNWU 12 - March.csv,1
+24/03/2021,Ibd Boost,Research Costs,Queen Mary University Of London,41443.0,LNWU 12 - March.csv,1
+24/03/2021,Capital,Estates/Building Works,A1r Services Limited,27164.0,LNWU 12 - March.csv,1
+03/03/2021,Capital,Estates/Building Works,Excel Contractors Ltd,251646.0,LNWU 12 - March.csv,1
+17/03/2021,Capital,Estates/Building Works,Excel Contractors Ltd,238534.0,LNWU 12 - March.csv,1
+17/03/2021,Capital,Estates/Building Works,Excel Contractors Ltd,62680.0,LNWU 12 - March.csv,1
+17/03/2021,Capital,Estates/Building Works,Excel Contractors Ltd,28164.0,LNWU 12 - March.csv,1
+17/03/2021,Capital,Estates/Building Works,Excel Contractors Ltd,95100.0,LNWU 12 - March.csv,1
+17/03/2021,Balance Sheet Lnwh,Pharmacy Stock Purchases,Roche Products Ltd,53735.0,LNWU 12 - March.csv,1
+24/03/2021,Balance Sheet Lnwh,Pharmacy Stock Purchases,Roche Products Ltd,32823.0,LNWU 12 - March.csv,1
+24/03/2021,Balance Sheet Lnwh,Pharmacy Stock Purchases,Roche Products Ltd,81437.0,LNWU 12 - March.csv,1
+24/03/2021,Balance Sheet Lnwh,Pharmacy Stock Purchases,Roche Products Ltd,26647.0,LNWU 12 - March.csv,1
+10/03/2021,Post Room N.P.H,Postage,Pitney Bowes Limited - Franking,25000.0,LNWU 12 - March.csv,1
+17/03/2021,Post Room N.P.H,Postage,Pitney Bowes Limited - Franking,25000.0,LNWU 12 - March.csv,1
+24/03/2021,Post Room N.P.H,Postage,Pitney Bowes Limited - Franking,25000.0,LNWU 12 - March.csv,1
+03/03/2021,E.B.M.E.,E.B.M.E Contract,Bcas Bio Medical Services Ltd,210000.0,LNWU 12 - March.csv,1
+03/03/2021,Endoscopy N.P.H,General Instruments,Vanguard Healthcare Solutions Limited,115579.0,LNWU 12 - March.csv,1
+24/03/2021,E.B.M.E.,E.B.M.E Contract,Bcas Bio Medical Services Ltd,210000.0,LNWU 12 - March.csv,1
+24/03/2021,Theatres E.H,Medical Equipment,Shawbrook Bank Ltd,65320.0,LNWU 12 - March.csv,1
+10/03/2021,Capital,Estates/Building Works,Bassaire Cleanrooms Limited,88966.0,LNWU 12 - March.csv,1
+17/03/2021,Capital,Estates/Building Works,Bassaire Cleanrooms Limited,272035.0,LNWU 12 - March.csv,1
+24/03/2021,Capital,Estates/Building Works,Bassaire Cleanrooms Limited,506495.0,LNWU 12 - March.csv,1
+10/03/2021,Capital,Estates/Building Works,A1 Uk Drains Limited,49440.0,LNWU 12 - March.csv,1
+24/03/2021,Capital,Staff/Agency Costs,Genmed.Me Ltd,83316.0,LNWU 12 - March.csv,1
+24/03/2021,Anaesthetics Medical N.W.L,Equipment Lease,Genmed.Me Ltd,33201.0,LNWU 12 - March.csv,1
+24/03/2021,Endoscopy N.P.H,Clinical Services Received,Genmed.Me Ltd,361198.0,LNWU 12 - March.csv,1
+24/03/2021,Radiology N.P.H,Equipment Lease,Genmed.Me Ltd,25052.0,LNWU 12 - March.csv,1
+24/03/2021,Genetics Lab,Project Management,Genmed.Me Ltd,54090.0,LNWU 12 - March.csv,1
+24/03/2021,Capital,Staff/Agency Costs,Genmed.Me Ltd,179988.0,LNWU 12 - March.csv,1
+29/03/2021,Balance Sheet Lnwh,Pharmacy Stock Purchases,Baxter Healthcare Ltd,57156.0,LNWU 12 - March.csv,1
+03/03/2021,Capital,Equipment,Draeger Medical Uk Ltd,96617.0,LNWU 12 - March.csv,1
+03/03/2021,Capital,Equipment,Draeger Medical Uk Ltd,94547.0,LNWU 12 - March.csv,1
+24/03/2021,Capital,Equipment,Draeger Medical Uk Ltd,38395.0,LNWU 12 - March.csv,1
+24/03/2021,Capital,Equipment,Draeger Medical Uk Ltd,51803.0,LNWU 12 - March.csv,1
+10/03/2021,Capital,Estates/Building Works,Rbl Asbestos Removals  ( Roothings ),49500.0,LNWU 12 - March.csv,1
+24/03/2021,I M & T Support Maintenance,Building Contract Work,Healthcare Clinical Informatics Limited,69120.0,LNWU 12 - March.csv,1
+24/03/2021,Incontinence Bcs,Incontinence Contract,Ontex Healthcare Uk Ltd,45560.0,LNWU 12 - March.csv,1
+17/03/2021,Incontinence Bcs,Incontinence Contract,Ontex Healthcare Uk Ltd,42231.0,LNWU 12 - March.csv,1
+24/03/2021,Incontinence Bcs,Incontinence Contract,Ontex Healthcare Uk Ltd,41172.0,LNWU 12 - March.csv,1
+24/03/2021,I M & T Support Maintenance,Pas Licence And Support,Silverlink Software Limited,620760.0,LNWU 12 - March.csv,1
+19/03/2021,I M & T Support Maintenance,Pas Licence And Support,Silverlink Software Limited,620760.0,LNWU 12 - March.csv,1
+24/03/2021,I M & T Support Maintenance,Pas Licence And Support,Silverlink Software Limited,87240.0,LNWU 12 - March.csv,1
+19/03/2021,I M & T Support Maintenance,Pas Licence And Support,Silverlink Software Limited,87240.0,LNWU 12 - March.csv,1
+03/03/2021,I M & T Support Maintenance,Professional Fees,Healthcare Clinical Informatics Limited,27810.0,LNWU 12 - March.csv,1
+24/03/2021,I M & T Support Maintenance,Building Contract Work,Healthcare Clinical Informatics Limited,54643.0,LNWU 12 - March.csv,1
+24/03/2021,Capital,Equipment,Baxter Healthcare Ltd,44280.0,LNWU 12 - March.csv,1
+29/03/2021,Capital,Equipment,Baxter Healthcare Ltd,44000.0,LNWU 12 - March.csv,1
+24/03/2021,Radiology C.M.H,Medical Equip Repairs & Maint,Sccl-Nhs Supply Chain Maintenance,93191.0,LNWU 12 - March.csv,1
+24/03/2021,Radiology N.P.H,Medical Equip Repairs & Maint,Sccl-Nhs Supply Chain Maintenance,38614.0,LNWU 12 - March.csv,1
+24/03/2021,E.B.M.E.,Medical Equip Repairs & Maint,Sccl-Nhs Supply Chain Maintenance,33096.0,LNWU 12 - March.csv,1
+24/03/2021,E.B.M.E.,Medical Equip Repairs & Maint,Sccl-Nhs Supply Chain Maintenance,91877.0,LNWU 12 - March.csv,1
+24/03/2021,Radiology N.P.H,Medical Equip Repairs & Maint,Sccl-Nhs Supply Chain Maintenance,92497.0,LNWU 12 - March.csv,1
+29/03/2021,Radiology N.P.H,Medical Equip Repairs & Maint,Sccl-Nhs Supply Chain Maintenance,66317.0,LNWU 12 - March.csv,1
+24/03/2021,E.B.M.E.,Medical Equip Repairs & Maint,Sccl-Nhs Supply Chain Maintenance,58450.0,LNWU 12 - March.csv,1
+24/03/2021,Radiology N.P.H,Medical Equip Repairs & Maint,Sccl-Nhs Supply Chain Maintenance,82781.0,LNWU 12 - March.csv,1
+03/03/2021,I M & T Support Maintenance,Software Purchases \ Licences,Cloud 21 Limited,70468.0,LNWU 12 - March.csv,1
+01/03/2021,I M & T Support Maintenance,Software Purchases \ Licences,Cloud 21 Limited,70468.0,LNWU 12 - March.csv,1
+17/03/2021,Capital,Estates/Building Works,D Santer T/A Totalworth Building Services,207600.0,LNWU 12 - March.csv,1
+17/03/2021,Capital,Estates/Building Works,D Santer T/A Totalworth Building Services,27525.0,LNWU 12 - March.csv,1
+10/03/2021,Capital,Estates/Building Works,Apcoa Parking ( Uk ) Limited,357386.0,LNWU 12 - March.csv,1
+10/03/2021,Capital,Estates/Building Works,Apcoa Parking ( Uk ) Limited,712717.0,LNWU 12 - March.csv,1
+31/03/2021,Capital,Estates/Building Works,Apcoa Parking ( Uk ) Limited,208100.0,LNWU 12 - March.csv,1
+31/03/2021,Capital,Estates/Building Works,Apcoa Parking ( Uk ) Limited,1118700.0,LNWU 12 - March.csv,1
+31/03/2021,Capital,Estates/Building Works,Apcoa Parking ( Uk ) Limited,300000.0,LNWU 12 - March.csv,1
+24/03/2021,Capital,Equipment,Stryker (Uk) Ltd,38134.0,LNWU 12 - March.csv,1
+10/03/2021,Capital,Equipment,Haemonetics Limited,50400.0,LNWU 12 - March.csv,1
+24/03/2021,Capital,Equipment,Haemonetics Limited,44160.0,LNWU 12 - March.csv,1
+29/03/2021,Capital,Equipment,Getinge Ltd,48000.0,LNWU 12 - March.csv,1
+29/03/2021,Capital,Equipment,Daybreak Medical Limited,30600.0,LNWU 12 - March.csv,1
+03/03/2021,Rates N.P.H,Rates,Brent London Borough Council (Rates),1963080.0,LNWU 12 - March.csv,1
+24/03/2021,Capacity Plan Recruitment Nwl,Other Recruitment Costs,Search Recruitment Limited,55389.0,LNWU 12 - March.csv,1
+10/03/2021,Capital,Equipment,Fujifilm Sonosite Limited,42813.0,LNWU 12 - March.csv,1
+10/03/2021,Capital,Equipment,Fujifilm Sonosite Limited,38844.0,LNWU 12 - March.csv,1
+10/03/2021,Capital,Equipment,Fujifilm Sonosite Limited,39429.0,LNWU 12 - March.csv,1
+29/03/2021,Capital,Estates/Building Works,Seville Developments Ltd,426727.0,LNWU 12 - March.csv,1
+24/03/2021,Balance Sheet Lnwh,Pharmacy Stock Purchases,Biotest Uk Limited,46800.0,LNWU 12 - March.csv,1
+24/03/2021,Capital,Estates/Building Works,Seville Developments Ltd,68420.0,LNWU 12 - March.csv,1
+10/03/2021,Capital,Estates/Building Works,Redbridge Construction Limited,106844.0,LNWU 12 - March.csv,1
+17/03/2021,Capital,Estates/Building Works,Redbridge Construction Limited,106844.0,LNWU 12 - March.csv,1
+17/03/2021,Capital,Estates/Building Works,Redbridge Construction Limited,106844.0,LNWU 12 - March.csv,1
+29/03/2021,Capital,Estates/Building Works,Redbridge Construction Limited,106844.0,LNWU 12 - March.csv,1
+17/03/2021,Neurology N.P.H,Clinical Services Received,Ucl Hospitals Nhsft,37212.0,LNWU 12 - March.csv,1
+10/03/2021,Balance Sheet Lnwh,Pharmacy Stock Purchases,Boehringer Ingelheim Ltd,25980.0,LNWU 12 - March.csv,1
+10/03/2021,I M & T Support Maintenance,Software Purchases \ Licences,Insight Direct ( Uk ) Limited,60564.0,LNWU 12 - March.csv,1
+24/03/2021,Capital,I.C.T Hardware,Insight Direct ( Uk ) Limited,221400.0,LNWU 12 - March.csv,1
+29/03/2021,Capital,I.C.T Hardware,Insight Direct ( Uk ) Limited,273367.0,LNWU 12 - March.csv,1
+31/03/2021,Capital,I.C.T Hardware,Insight Direct ( Uk ) Limited,193286.0,LNWU 12 - March.csv,1
+24/03/2021,Nwl Hdft Service,Substantive Podiatrist Band 7,Central And North West London,27827.0,LNWU 12 - March.csv,1
+10/03/2021,Medicine Management,Clinical Services Received,Central And North West London,75705.0,LNWU 12 - March.csv,1
+24/03/2021,Finance Directorate Mgmt,Clinical Services Received,Central And North West London,101181.0,LNWU 12 - March.csv,1
+24/03/2021,Medicine Management,Clinical Services Received,Central And North West London,75705.0,LNWU 12 - March.csv,1
+03/03/2021,Cancer Screening,General Instruments,Chrystal Consulting Limited,164228.0,LNWU 12 - March.csv,1
+17/03/2021,Finance Directorate Mgmt,External Audit,Kpmg Llp,60450.0,LNWU 12 - March.csv,1
+29/03/2021,Capital,I.C.T Hardware,Bt Global Services,180523.0,LNWU 12 - March.csv,1
+29/03/2021,Capital,Software,Bt Global Services,295174.0,LNWU 12 - March.csv,1
+29/03/2021,Capital,Staff/Agency Costs,Bt Global Services,63194.0,LNWU 12 - March.csv,1
+24/03/2021,Balance Sheet Lnwh,Pharmacy Stock Purchases,Aah Pharmaceuticals Limited,27770.0,LNWU 12 - March.csv,1
+24/03/2021,Capital,I.C.T Hardware,Parity Medical,466156.0,LNWU 12 - March.csv,1
+10/03/2021,Capital,Estates/Building Works,Crossland Landscapes Limited,27450.0,LNWU 12 - March.csv,1
+03/03/2021,Capital,Estates/Building Works,Siemens Industry Software Limited,238389.0,LNWU 12 - March.csv,1
+03/03/2021,Capital,Equipment,Siemens Industry Software Limited,28311.0,LNWU 12 - March.csv,1
+24/03/2021,Capital,Estates/Building Works,Siemens Industry Software Limited,49333.0,LNWU 12 - March.csv,1
+17/03/2021,Capital,Estates/Building Works,Crossland Landscapes Limited,27450.0,LNWU 12 - March.csv,1
+29/03/2021,Capital,Staff/Agency Costs,Bt Global Services,47880.0,LNWU 12 - March.csv,1
+29/03/2021,I M & T Support Maintenance,Professional Fees,Keystream Group Limited T/A Keystream,44661.0,LNWU 12 - March.csv,1
+29/03/2021,Capital,Staff/Agency Costs,Bt Global Services,25080.0,LNWU 12 - March.csv,1
+24/03/2021,Capital,Staff/Agency Costs,Keystream Group Limited T/A Keystream,27764.0,LNWU 12 - March.csv,1
+24/03/2021,Capital,Staff/Agency Costs,Keystream Group Limited T/A Keystream,438960.0,LNWU 12 - March.csv,1
+29/03/2021,Information N.W.L,Professional Fees,Keystream Group Limited T/A Keystream,28380.0,LNWU 12 - March.csv,1
+29/03/2021,Capital,Staff/Agency Costs,Keystream Group Limited T/A Keystream,30409.0,LNWU 12 - March.csv,1
+03/03/2021,Patient Transport Contract,Patient Transport Contract,Ambulance Transfers Ltd,634816.0,LNWU 12 - March.csv,1
+03/03/2021,Patient Transport Contract,Patient Transport Contract,Ambulance Transfers Ltd,65010.0,LNWU 12 - March.csv,1
+03/03/2021,Patient Transport Contract,Patient Transport Contract,Ambulance Transfers Ltd,30000.0,LNWU 12 - March.csv,1
+24/03/2021,Patient Transport Contract,Patient Transport Contract,Ambulance Transfers Ltd,650835.0,LNWU 12 - March.csv,1
+24/03/2021,Patient Transport Contract,Patient Transport Contract,Ambulance Transfers Ltd,58674.0,LNWU 12 - March.csv,1
+24/03/2021,Patient Transport Contract,Patient Transport Contract,Ambulance Transfers Ltd,28000.0,LNWU 12 - March.csv,1
+17/03/2021,Capital,Equipment,Ge Medical Systems Limited,189903.0,LNWU 12 - March.csv,1
+10/03/2021,Capital,Estates/Building Works,Austin Turner And Co Ltd,98261.0,LNWU 12 - March.csv,1
+10/03/2021,Capital,Estates/Building Works,Austin Turner And Co Ltd,61028.0,LNWU 12 - March.csv,1
+29/03/2021,Capital,Estates/Building Works,Austin Turner And Co Ltd,53488.0,LNWU 12 - March.csv,1
+29/03/2021,Capital,Estates/Building Works,Austin Turner And Co Ltd,270430.0,LNWU 12 - March.csv,1
+29/03/2021,Capital,Estates/Building Works,Austin Turner And Co Ltd,54267.0,LNWU 12 - March.csv,1
+29/03/2021,Capital,Estates/Building Works,Austin Turner And Co Ltd,470747.0,LNWU 12 - March.csv,1
+29/03/2021,Capital,Estates/Building Works,Austin Turner And Co Ltd,28550.0,LNWU 12 - March.csv,1
+29/03/2021,Capital,Estates/Building Works,Austin Turner And Co Ltd,75249.0,LNWU 12 - March.csv,1
+29/03/2021,Capital,Estates/Building Works,Austin Turner And Co Ltd,68261.0,LNWU 12 - March.csv,1
+29/03/2021,Capital,Equipment,B Braun Medical Ltd,229667.0,LNWU 12 - March.csv,1
+31/03/2021,Capital,Equipment,Ge Medical Systems Limited,46233.0,LNWU 12 - March.csv,1
+03/03/2021,Balance Sheet Lnwh,Pharmacy Stock Purchases,Abbvie Limited,32568.0,LNWU 12 - March.csv,1
+10/03/2021,G.U Medicine C.M.H,Software Maintenance,Idox Health Ltd,44700.0,LNWU 12 - March.csv,1
+10/03/2021,B.C.S External Estates Slas,Estates N.H.S Propery Services,Nhs Brent Ccg,250000.0,LNWU 12 - March.csv,1
+24/03/2021,Financial Services,Other S.L.A. Income,Nhs Redbridge Ccg,34800.0,LNWU 12 - March.csv,1
+10/03/2021,Balance Sheet Lnwh,Nhs Creditor Accruals Rab,Nhs Waltham Forest Ccg,30727.0,LNWU 12 - March.csv,1
+17/03/2021,Capital,Equipment,Erbe Medical Uk,30011.0,LNWU 12 - March.csv,1
+24/03/2021,Capital,Equipment,Philips Healthcare,28718.0,LNWU 12 - March.csv,1
+17/03/2021,Capital,I.C.T Hardware,Dell Computer Corporation Ltd,75540.0,LNWU 12 - March.csv,1
+17/03/2021,I M & T Support Maintenance,Computer Equipment,Dell Computer Corporation Ltd,31647.0,LNWU 12 - March.csv,1
+29/03/2021,Capital,I.C.T Hardware,Dell Computer Corporation Ltd,33265.0,LNWU 12 - March.csv,1
+10/03/2021,Communications (Phones),Computer Equipment,Stanley Security Solutions,162011.0,LNWU 12 - March.csv,1
+10/03/2021,Communications (Phones),Computer Equipment,Stanley Security Solutions,162000.0,LNWU 12 - March.csv,1
+10/03/2021,Capital,Estates/Building Works,Boss Plumbing & Heating Services Ltd,27036.0,LNWU 12 - March.csv,1
+17/03/2021,Capital,Estates/Building Works,Boss Plumbing & Heating Services Ltd,59283.0,LNWU 12 - March.csv,1
+29/03/2021,Capital,Estates/Building Works,Medical Imaging Systems Ltd,318366.0,LNWU 12 - March.csv,1
+24/03/2021,Balance Sheet Lnwh,Pharmacy Stock Purchases,Celgene Limited,31483.0,LNWU 12 - March.csv,1
+24/03/2021,Balance Sheet Lnwh,Pharmacy Stock Purchases,Celgene Limited,40021.0,LNWU 12 - March.csv,1
+29/03/2021,Balance Sheet Lnwh,Pharmacy Stock Purchases,Celgene Limited,31250.0,LNWU 12 - March.csv,1
+24/03/2021,Blood Products N.W.L,Blood Products,Nhs Blood And Transplant,212436.0,LNWU 12 - March.csv,1
+24/03/2021,Blood Products E.H,Blood Products,Nhs Blood And Transplant,42824.0,LNWU 12 - March.csv,1
+29/03/2021,Capital,Staff/Agency Costs,Brightcloud Technologies Ltd,91380.0,LNWU 12 - March.csv,1
+12/03/2021,Capital,Estates/Building Works,Portakabin Limited,336901.0,LNWU 12 - March.csv,1
+29/03/2021,Capital,Equipment,Draeger Medical Uk Ltd,36274.0,LNWU 12 - March.csv,1
+11/03/2021,Capital,Equipment,Philips Healthcare,952838.0,LNWU 12 - March.csv,1
+10/03/2021,Capital,Equipment,Nihon Kohden Uk Limited,34872.0,LNWU 12 - March.csv,1
+17/03/2021,Capital,Equipment,Sccl-Nhs Supply Chain Capital,30176.0,LNWU 12 - March.csv,1
+24/03/2021,Capital,Equipment,Sccl-Nhs Supply Chain Capital,39308.0,LNWU 12 - March.csv,1
+24/03/2021,Capital,Equipment,Sccl-Nhs Supply Chain Capital,30176.0,LNWU 12 - March.csv,1
+03/03/2021,Balance Sheet Lnwh,Pharmacy Stock Purchases,Csl Behring Uk Ltd,27300.0,LNWU 12 - March.csv,1
+24/03/2021,Southall Bdway Health Estates,Rent Payable,Messers Mohammad & Rahman,82500.0,LNWU 12 - March.csv,1
+03/03/2021,Systems Accounts,Software Maintenance,Advanced Business Software And Solutions Ltd,32147.0,LNWU 12 - March.csv,1
+24/03/2021,Balance Sheet Lnwh,Miscellaneous Receipts,Nhs Luton Ccg,98022.0,LNWU 12 - March.csv,1
+29/03/2021,Medical Staffing,Recruitment Advertising,Bmj Publishing Group Ltd,41322.0,LNWU 12 - March.csv,1
+29/03/2021,I.B.D Nursing,Clinical Services Received,Lloyds Pharmacy Clinical Homecare,55396.0,LNWU 12 - March.csv,1
+24/03/2021,I.B.D Nursing,Clinical Services Received,Lloyds Pharmacy Clinical Homecare,55396.0,LNWU 12 - March.csv,1
+24/03/2021,Balance Sheet Lnwh,Pharmacy Stock Purchases,Alliance Healthcare (Distribution) Limited,37052.0,LNWU 12 - March.csv,1
+24/03/2021,Balance Sheet Lnwh,Pharmacy Stock Purchases,Alliance Healthcare (Distribution) Limited,30783.0,LNWU 12 - March.csv,1
+24/03/2021,Utilities E.H,Electricity,Laser Energy Buying Group,116651.0,LNWU 12 - March.csv,1
+24/03/2021,Utilities E.H,Electricity,Laser Energy Buying Group,106718.0,LNWU 12 - March.csv,1
+24/03/2021,Utilities N.P.H,Electricity,Laser Energy Buying Group,330119.0,LNWU 12 - March.csv,1
+24/03/2021,Utilities N.P.H,Electricity,Laser Energy Buying Group,293562.0,LNWU 12 - March.csv,1
+29/03/2021,Capital,Equipment,Henry Schein Dental,149392.0,LNWU 12 - March.csv,1
+24/03/2021,Balance Sheet Lnwh,Lodging,Network Homes,70094.0,LNWU 12 - March.csv,1
+17/03/2021,Utilities N.P.H,Gas,Laser Energy Buying Group,132962.0,LNWU 12 - March.csv,1
+24/03/2021,Utilities E.H,Gas,Laser Energy Buying Group,59147.0,LNWU 12 - March.csv,1
+24/03/2021,Utilities N.P.H,Gas,Laser Energy Buying Group,111151.0,LNWU 12 - March.csv,1
+24/03/2021,Utilities E.H,Gas,Laser Energy Buying Group,49643.0,LNWU 12 - March.csv,1
+10/03/2021,Patient Transport Contract,Taxi Service,Green Tomato Cars Ltd,34669.0,LNWU 12 - March.csv,1
+24/03/2021,Obs And Gynae Management N.W.L,Clinical Services Received,Imperial College Healthcare Nhs Trust,48575.0,LNWU 12 - March.csv,1
+24/03/2021,Obs And Gynae Management N.W.L,Clinical Services Received,Imperial College Healthcare Nhs Trust,41197.0,LNWU 12 - March.csv,1
+24/03/2021,Obs And Gynae Management N.W.L,Clinical Services Received,Imperial College Healthcare Nhs Trust,36306.0,LNWU 12 - March.csv,1
+24/03/2021,Obs And Gynae Management N.W.L,Clinical Services Received,Imperial College Healthcare Nhs Trust,32681.0,LNWU 12 - March.csv,1
+24/03/2021,Obs And Gynae Management N.W.L,Clinical Services Received,Imperial College Healthcare Nhs Trust,27476.0,LNWU 12 - March.csv,1
+24/03/2021,Obs And Gynae Management N.W.L,Clinical Services Received,Imperial College Healthcare Nhs Trust,32166.0,LNWU 12 - March.csv,1
+24/03/2021,Information N.W.L,Professional Fees,Hunter Healthcare Resourcing Ltd,26190.0,LNWU 12 - March.csv,1
+29/03/2021,Information N.W.L,Professional Fees,Hunter Healthcare Resourcing Ltd,32400.0,LNWU 12 - March.csv,1
+29/03/2021,Information N.W.L,Professional Fees,Hunter Healthcare Resourcing Ltd,29160.0,LNWU 12 - March.csv,1
+24/03/2021,Plastic Surgery N.P.H,Consultant,Royal Free London Nhsft,32812.0,LNWU 12 - March.csv,1
+10/03/2021,Reserves,Substantive Speciality Reg,Royal Free London Nhsft,276896.0,LNWU 12 - March.csv,1
+24/03/2021,Reserves,Substantive Speciality Reg,Royal Free London Nhsft,283888.0,LNWU 12 - March.csv,1
+17/03/2021,Stp Costs,Clinical Services Received,Inhealth Endoscopy Ltd,165060.0,LNWU 12 - March.csv,1
+24/03/2021,Stp Costs,Clinical Services Received,Inhealth Endoscopy Ltd,313490.0,LNWU 12 - March.csv,1
+24/03/2021,Stp Costs,Clinical Services Received,Inhealth Endoscopy Ltd,326062.0,LNWU 12 - March.csv,1
+24/03/2021,Stp Costs,Clinical Services Received,Inhealth Endoscopy Ltd,92015.0,LNWU 12 - March.csv,1
+24/03/2021,Stp Costs,Clinical Services Received,Inhealth Endoscopy Ltd,255394.0,LNWU 12 - March.csv,1
+24/03/2021,Stp Costs,Clinical Services Received,Inhealth Endoscopy Ltd,384114.0,LNWU 12 - March.csv,1
+24/03/2021,Sterile Services,Decontamination Contract,Ihss Limited,35968.0,LNWU 12 - March.csv,1
+24/03/2021,Sterile Services,Decontamination Contract,Ihss Limited,36863.0,LNWU 12 - March.csv,1
+24/03/2021,Sterile Services,Decontamination Contract,Ihss Limited,36863.0,LNWU 12 - March.csv,1
+24/03/2021,Sterile Services,Decontamination Contract,Ihss Limited,36863.0,LNWU 12 - March.csv,1
+24/03/2021,Pathology Contract N.W.L,Pathology Contract T.D.L.,Labex Analytical Llp,491710.0,LNWU 12 - March.csv,1
+24/03/2021,Pathology Contract N.W.L,Pathology Contract T.D.L.,Labex Analytical Llp,850198.0,LNWU 12 - March.csv,1
+24/03/2021,Pathology Contract N.W.L,Pathology Contract T.D.L.,Labex Analytical Llp,850198.0,LNWU 12 - March.csv,1
+24/03/2021,Pathology Contract N.W.L,Pathology Contract T.D.L.,Labex Analytical Llp,850198.0,LNWU 12 - March.csv,1
+03/03/2021,Pathology Contract N.W.L,Pathology Contract T.D.L.,Labex Facilities Llp,881649.0,LNWU 12 - March.csv,1
+31/03/2021,Pathology Contract N.W.L,Pathology Contract T.D.L.,Labex Analytical Llp,850198.0,LNWU 12 - March.csv,1
+24/03/2021,Pathology Contract N.W.L,Pathology Contract T.D.L.,Labex Facilities Llp,881649.0,LNWU 12 - March.csv,1
+31/03/2021,Pathology Contract N.W.L,Pathology Contract T.D.L.,Labex Facilities Llp,881649.0,LNWU 12 - March.csv,1
+10/03/2021,Capital,Estates/Building Works,Km Data Cabling Limited,46800.0,LNWU 12 - March.csv,1
+24/03/2021,Capital,Estates/Building Works,Km Data Cabling Limited,37440.0,LNWU 12 - March.csv,1
+17/03/2021,Capital,Software,Spacelabs Healthcare Ltd,28874.0,LNWU 12 - March.csv,1
+10/03/2021,Capital,Estates/Building Works,The Space Quantum Co Ltd,56532.0,LNWU 12 - March.csv,1
+10/03/2021,Capital,Estates/Building Works,The Space Quantum Co Ltd,56532.0,LNWU 12 - March.csv,1
+10/03/2021,Capital,Estates/Building Works,The Space Quantum Co Ltd,56532.0,LNWU 12 - March.csv,1
+24/03/2021,Research & Development N.P.H,Research Costs,Quadram Institute Bioscience,44948.0,LNWU 12 - March.csv,1
+29/03/2021,I M & T Support Maintenance,Software Maintenance,Jac Computer Services Limited,52155.0,LNWU 12 - March.csv,1
+29/03/2021,I M & T Support Maintenance,Software Maintenance,Jac Computer Services Limited,52155.0,LNWU 12 - March.csv,1
+11/03/2021,Capital,Software,Cerner Corporation,9958663.0,LNWU 12 - March.csv,1
+03/03/2021,Capital,I.C.T Hardware,Cisilion Limited,369628.0,LNWU 12 - March.csv,1
+03/03/2021,Capital,Software,Cisilion Limited,139411.0,LNWU 12 - March.csv,1
+17/03/2021,Capital,I.C.T Hardware,Cisilion Limited,783013.0,LNWU 12 - March.csv,1
+17/03/2021,Capital,I.C.T Hardware,Cisilion Limited,398274.0,LNWU 12 - March.csv,1
+17/03/2021,Capital,Software,Cisilion Limited,26769.0,LNWU 12 - March.csv,1
+10/03/2021,Capital,Staff/Agency Costs,Softcat Ltd,39100.0,LNWU 12 - March.csv,1
+24/03/2021,I M & T Support Maintenance,Hardware Maintenance,Softcat Ltd,25691.0,LNWU 12 - March.csv,1
+24/03/2021,I M & T Support Maintenance,Software Maintenance,Softcat Ltd,35381.0,LNWU 12 - March.csv,1
+26/03/2021,I M & T Support Maintenance,Clinical Admin Systems,Softcat Ltd,61073.0,LNWU 12 - March.csv,1
+24/03/2021,Radiology N.P.H,Equipment Hire,Agito Medical A/S,31000.0,LNWU 12 - March.csv,1
+17/03/2021,Capital,Estates/Building Works,Tr Building Services Ltd,45003.0,LNWU 12 - March.csv,1
+03/03/2021,Integrated Sexual Health Hill,General Instruments,Sh24 Cic,28426.0,LNWU 12 - March.csv,1
+29/03/2021,Integrated Sexual Health Hill,General Instruments,Sh24 Cic,32688.0,LNWU 12 - March.csv,1
+24/03/2021,Capital,Staff/Agency Costs,Stalis Ltd,200944.0,LNWU 12 - March.csv,1
+10/03/2021,Capital,Estates/Building Works,Elmcroft Construction Limited,57430.0,LNWU 12 - March.csv,1
+10/03/2021,Capital,Estates/Building Works,Elmcroft Construction Limited,57430.0,LNWU 12 - March.csv,1
+10/03/2021,Capital,Estates/Building Works,Elmcroft Construction Limited,57430.0,LNWU 12 - March.csv,1
+29/03/2021,I M & T Support Maintenance,Software Purchases \ Licences,Bluewire Technologies,137751.0,LNWU 12 - March.csv,1
+10/03/2021,I M & T Support Maintenance,Mobile Phone Call Chgs\Rental,Healthcare Communications Uk Limited,67574.0,LNWU 12 - March.csv,1
+24/03/2021,Capital,I.C.T Hardware,Cisilion Limited,228167.0,LNWU 12 - March.csv,1
+24/03/2021,Capital,Software,Cisilion Limited,80309.0,LNWU 12 - March.csv,1
+24/03/2021,Capital,I.C.T Hardware,Cisilion Limited,234904.0,LNWU 12 - March.csv,1
+24/03/2021,Balance Sheet Lnwh,Lodging,Network Homes,71422.0,LNWU 12 - March.csv,1
+24/03/2021,Capital,Staff/Agency Costs,Lakes Join Grandly Limited,35640.0,LNWU 12 - March.csv,1
+24/03/2021,Capital,Staff/Agency Costs,Apira Ltd,88404.0,LNWU 12 - March.csv,1
+24/03/2021,Capital,Staff/Agency Costs,Apira Ltd,56712.0,LNWU 12 - March.csv,1
+24/03/2021,Capital,Staff/Agency Costs,Apira Ltd,54780.0,LNWU 12 - March.csv,1
+17/03/2021,Capital,Staff/Agency Costs,Apira Ltd,50400.0,LNWU 12 - March.csv,1
+24/03/2021,Capital,Staff/Agency Costs,Apira Ltd,183648.0,LNWU 12 - March.csv,1
+24/03/2021,Obs And Gynae Medical N.P.H,Clinical Services Received,Chelsea & Westminster Hospital Nhsft,30464.0,LNWU 12 - March.csv,1
+03/03/2021,Integrated Sexual Health Hill,Out Of Area Activity Received,Chelsea & Westminster Hospital Nhsft,62530.0,LNWU 12 - March.csv,1
+24/03/2021,Medinet Lnwh,Clinical Services Received,Medinet Clinical Services Limited,35350.0,LNWU 12 - March.csv,1
+24/03/2021,Medinet Lnwh,Clinical Services Received,Medinet Clinical Services Limited,37261.0,LNWU 12 - March.csv,1
+24/03/2021,Medinet Lnwh,Clinical Services Received,Medinet Clinical Services Limited,55455.0,LNWU 12 - March.csv,1
+24/03/2021,Medinet Lnwh,Clinical Services Received,Medinet Clinical Services Limited,119263.0,LNWU 12 - March.csv,1
+24/03/2021,Medinet Lnwh,Clinical Services Received,Medinet Clinical Services Limited,39754.0,LNWU 12 - March.csv,1
+24/03/2021,Medinet Lnwh,Clinical Services Received,Medinet Clinical Services Limited,38730.0,LNWU 12 - March.csv,1
+24/03/2021,Medinet Lnwh,Clinical Services Received,Medinet Clinical Services Limited,48238.0,LNWU 12 - March.csv,1
+24/03/2021,Medinet Lnwh,Clinical Services Received,Medinet Clinical Services Limited,57607.0,LNWU 12 - March.csv,1
+24/03/2021,Medinet Lnwh,Clinical Services Received,Medinet Clinical Services Limited,70235.0,LNWU 12 - March.csv,1
+24/03/2021,Medinet Lnwh,Clinical Services Received,Medinet Clinical Services Limited,87363.0,LNWU 12 - March.csv,1
+24/03/2021,Medinet Lnwh,Clinical Services Received,Medinet Clinical Services Limited,29121.0,LNWU 12 - March.csv,1
+24/03/2021,Medinet Lnwh,Clinical Services Received,Medinet Clinical Services Limited,49741.0,LNWU 12 - March.csv,1
+24/03/2021,Medinet Lnwh,Clinical Services Received,Medinet Clinical Services Limited,57606.0,LNWU 12 - March.csv,1
+24/03/2021,Medinet Lnwh,Clinical Services Received,Medinet Clinical Services Limited,38724.0,LNWU 12 - March.csv,1
+24/03/2021,Medinet Lnwh,Clinical Services Received,Medinet Clinical Services Limited,66600.0,LNWU 12 - March.csv,1
+24/03/2021,Medinet Lnwh,Clinical Services Received,Medinet Clinical Services Limited,54714.0,LNWU 12 - March.csv,1
+24/03/2021,Medinet Lnwh,Clinical Services Received,Medinet Clinical Services Limited,29079.0,LNWU 12 - March.csv,1
+24/03/2021,Medinet Lnwh,Clinical Services Received,Medinet Clinical Services Limited,68503.0,LNWU 12 - March.csv,1
+24/03/2021,Medinet Lnwh,Clinical Services Received,Medinet Clinical Services Limited,74654.0,LNWU 12 - March.csv,1
+24/03/2021,Medinet Lnwh,Clinical Services Received,Medinet Clinical Services Limited,26094.0,LNWU 12 - March.csv,1
+24/03/2021,Medinet Lnwh,Clinical Services Received,Medinet Clinical Services Limited,46052.0,LNWU 12 - March.csv,1
+29/03/2021,Pharmacy N.P.H,Materials Management Contract,Eleanor Hospital Logistics Limited,37389.0,LNWU 12 - March.csv,1
+24/03/2021,Medical Library N.P.H,Reference Books \ Journals,Wolters Kluwer Hlth (Medical Research) Ltd,27684.0,LNWU 12 - March.csv,1
+24/03/2021,I M & T Support Maintenance,Microsoft Ewa,Phoenix Software Ltd,449818.0,LNWU 12 - March.csv,1
+26/03/2021,I M & T Support Maintenance,Microsoft Ewa,Phoenix Software Ltd,449818.0,LNWU 12 - March.csv,1
+29/03/2021,Capital,I.C.T Hardware,Phoenix Software Ltd,316546.0,LNWU 12 - March.csv,1
+29/03/2021,Capital,I.C.T Hardware,Phoenix Software Ltd,40545.0,LNWU 12 - March.csv,1
+29/03/2021,Capital,Software,Phoenix Software Ltd,80928.0,LNWU 12 - March.csv,1
+29/03/2021,Capital,I.C.T Hardware,Phoenix Software Ltd,418266.0,LNWU 12 - March.csv,1
+10/03/2021,Orthotics N.P.H,Appliances,Opcare Ltd,25536.0,LNWU 12 - March.csv,1
+29/03/2021,Utilities E.H,Professional Fees,Montagu Evans,73456.0,LNWU 12 - March.csv,1
+31/03/2021,Surgery Management N.W.L,Clinical Services Received,The London Clinic Limited,280752.0,LNWU 12 - March.csv,1
+24/03/2021,Capital,Estates/Building Works,Cbre Managed Services Limited,55700.0,LNWU 12 - March.csv,1
+24/03/2021,Capital,Estates/Building Works,Hiltons Electrical Services Ltd,43677.0,LNWU 12 - March.csv,1
+29/03/2021,Capital,Estates/Building Works,Hiltons Electrical Services Ltd,96000.0,LNWU 12 - March.csv,1
+03/03/2021,Capital,Software,Edm Group Ltd,52531.0,LNWU 12 - March.csv,1
+10/03/2021,P.A.C.S N.W.L,P.A.C.S,Sectra Limited,73630.0,LNWU 12 - March.csv,1
+24/03/2021,P.A.C.S N.W.L,P.A.C.S,Sectra Limited,73630.0,LNWU 12 - March.csv,1
+03/03/2021,Balance Sheet Lnwh,Pharmacy Stock Purchases,Alk-Abello Ltd,54000.0,LNWU 12 - March.csv,1
+10/03/2021,Balance Sheet Lnwh,Pharmacy Stock Purchases,Alk-Abello Ltd,90000.0,LNWU 12 - March.csv,1
+24/03/2021,Balance Sheet Lnwh,Pharmacy Stock Purchases,Alk-Abello Ltd,36000.0,LNWU 12 - March.csv,1
+24/03/2021,Balance Sheet Lnwh,Pharmacy Stock Purchases,Alk-Abello Ltd,34020.0,LNWU 12 - March.csv,1
+24/03/2021,Balance Sheet Lnwh,Pharmacy Stock Purchases,Alk-Abello Ltd,90000.0,LNWU 12 - March.csv,1
+24/03/2021,Textile Services,Laundry Contract,Elis Uk Limited,44013.0,LNWU 12 - March.csv,1
+24/03/2021,Textile Services,Laundry Contract,Elis Uk Limited,140755.0,LNWU 12 - March.csv,1
+24/03/2021,Capital,Estates/Building Works,Tr Building Services Ltd,29880.0,LNWU 12 - March.csv,1
+29/03/2021,Capital,Estates/Building Works,Valleyblinds And Tiles Limited,66994.0,LNWU 12 - March.csv,1
