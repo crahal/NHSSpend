@@ -1,0 +1,228 @@
+Department Family,Entity,Financial Year,Financial Period,Date,Expense Type,Expense Area,Supplier,Transaction Number,Amount,Description
+NHS,King's College Hospital NHS Foundation Trust,2021,4,14-Jul-20,Assets Under Construction,Fixed Asset, A J ELECTRICAL SERVICES ,4081,"39,644.40",Fixed Assets - Auc Pur Adds Bld
+NHS,King's College Hospital NHS Foundation Trust,2021,4,01-Jul-20,PHARMACY INVOICES,PHARMACY INVOICES, AAH PHARMACEUTICA KINGS COLL HOSP ,,"500,000.00",PHARMACY INVOICES
+NHS,King's College Hospital NHS Foundation Trust,2021,4,20-Jul-20,PHARMACY INVOICES,PHARMACY INVOICES, AAH PHARMACEUTICALS LIMITED ,16964051C,"35,155.94",Pharmacy Stock
+NHS,King's College Hospital NHS Foundation Trust,2021,4,14-Jul-20,Stock,Stock, ALEXION PHARMA UK ,90925438,"120,960.00",Pharmacy Stock
+NHS,King's College Hospital NHS Foundation Trust,2021,4,10-Jul-20,Stock,Stock, ALEXION PHARMA UK ,90924784,"45,360.00",Pharmacy Stock
+NHS,King's College Hospital NHS Foundation Trust,2021,4,22-Jul-20,Stock,Stock, ALLIANCE HEALTHCARE LTD (UNICHEM) ,B07M01141,"25,598.63",Stock Pharmacy PRUH
+NHS,King's College Hospital NHS Foundation Trust,2021,4,31-Mar-20,External Contract staffing and Consultan,Radiology Department, ALLIANCE MEDICAL ,AML-151181,"40,764.00",Contracted out services
+NHS,King's College Hospital NHS Foundation Trust,2021,4,18-May-20,External Contract staffing and Consultan,Radiology Department, ALLIANCE MEDICAL ,AML-152793,"26,544.00",Contracted out services
+NHS,King's College Hospital NHS Foundation Trust,2021,4,12-Jun-20,External Contract staffing and Consultan,Radiology Department, ALLIANCE MEDICAL ,AML-153844,"156,202.51",Contracted out services
+NHS,King's College Hospital NHS Foundation Trust,2021,4,18-May-20,External Contract staffing and Consultan,Radiology Department, ALLIANCE MEDICAL ,AML-152789,"166,848.00",Contracted out services
+NHS,King's College Hospital NHS Foundation Trust,2021,4,19-Jul-20,Net Pay-247Time,Net Pay-247Time, ALLOCATE SOFTWARE LIMITED ,KCH-19072020Fri,"79,857.12",Net Pay-247Time
+NHS,King's College Hospital NHS Foundation Trust,2021,4,19-Jul-20,Net Pay-247Time,Net Pay-247Time, ALLOCATE SOFTWARE LIMITED ,KCH-19072020,"119,531.12",Net Pay-247Time
+NHS,King's College Hospital NHS Foundation Trust,2021,4,28-Jun-20,Net Pay-247Time,Net Pay-247Time, ALLOCATE SOFTWARE LIMITED ,KCH-28062020Fri,"97,870.66",Net Pay-247Time
+NHS,King's College Hospital NHS Foundation Trust,2021,4,12-Jul-20,Net Pay-247Time,Net Pay-247Time, ALLOCATE SOFTWARE LIMITED ,KCH-12072020,"156,670.31",Net Pay-247Time
+NHS,King's College Hospital NHS Foundation Trust,2021,4,26-Jul-20,Net Pay-247Time,Net Pay-247Time, ALLOCATE SOFTWARE LIMITED ,KCH-26072020,"142,344.81",Net Pay-247Time
+NHS,King's College Hospital NHS Foundation Trust,2021,4,05-Jul-20,Net Pay-247Time,Net Pay-247Time, ALLOCATE SOFTWARE LIMITED ,KCH-05072020,"154,979.63",Net Pay-247Time
+NHS,King's College Hospital NHS Foundation Trust,2021,4,05-Jul-20,Net Pay-247Time,Net Pay-247Time, ALLOCATE SOFTWARE LIMITED ,KCH-05072020S,"173,389.76",Net Pay-247Time
+NHS,King's College Hospital NHS Foundation Trust,2021,4,05-Jul-20,Net Pay-247Time,Net Pay-247Time, ALLOCATE SOFTWARE LIMITED ,KCH-05072020Fri,"91,829.17",Net Pay-247Time
+NHS,King's College Hospital NHS Foundation Trust,2021,4,12-Jul-20,Net Pay-247Time,Net Pay-247Time, ALLOCATE SOFTWARE LIMITED ,KCH-12072020Fri,"84,985.33",Net Pay-247Time
+NHS,King's College Hospital NHS Foundation Trust,2021,4,12-Jul-20,Net Pay-247Time,Net Pay-247Time, ALLOCATE SOFTWARE LIMITED ,KCH-12072020S,"198,242.46",Net Pay-247Time
+NHS,King's College Hospital NHS Foundation Trust,2021,4,01-Jul-20,Stock,Stock, ALLOGA UK LTD ,SIN102931953,"36,000.00",Pharmacy Stock
+NHS,King's College Hospital NHS Foundation Trust,2021,4,30-Jun-20,Stock,Stock, ALLOGA UK LTD ,SIN102931060,"42,312.00",Pharmacy Stock
+NHS,King's College Hospital NHS Foundation Trust,2021,4,09-Apr-20,Stock,Stock, ALLOGA UK LTD ,SIN102877296,"36,000.00",Pharmacy Stock
+NHS,King's College Hospital NHS Foundation Trust,2021,4,12-Jun-20,Stock,Stock, ALLOGA UK LTD ,SIN102919390,"360,000.00",Stock Pharmacy PRUH
+NHS,King's College Hospital NHS Foundation Trust,2021,4,30-Jun-20,Clinical Supplies and Services,Haematology OPD, ANTHONY NOLAN ,624769,"39,573.00",Anthony Nolan Costs
+NHS,King's College Hospital NHS Foundation Trust,2021,4,10-Jun-20,Clinical Supplies and Services,Haematology OPD, ANTHONY NOLAN ,624183,"42,490.67",Anthony Nolan Costs
+NHS,King's College Hospital NHS Foundation Trust,2021,4,28-Jun-20,Premises and Fixed Plant,Facilities Estates / Maintenance, ARTIC BUILDING SERVICES LTD ,62006,"29,511.65",Engineering maintenance-equipment & mate
+NHS,King's College Hospital NHS Foundation Trust,2021,4,30-Jun-20,COVID - 19,Facilities Estates / Maintenance, ARTIC BUILDING SERVICES LTD ,62005,"33,100.80",COVID - 19
+NHS,King's College Hospital NHS Foundation Trust,2021,4,30-Jun-20,Premises and Fixed Plant,Facilities Estates / Maintenance, ARTIC BUILDING SERVICES LTD ,61881,"35,418.20",Eng maintenance contracts dom/cat
+NHS,King's College Hospital NHS Foundation Trust,2021,4,15-Jul-20,Hotel  ,Hotel  , ATOS RE PREMIERINN     9826133200071530 ,9.83E+15,"44,835.00",Hotel  
+NHS,King's College Hospital NHS Foundation Trust,2021,4,20-May-20,Assets Under Construction,Fixed Asset, AUTO PEDESTRIAN DOORS LIMITED ,SLI/54436,"34,658.00",Fixed Assets - Auc Pur Adds Bld
+NHS,King's College Hospital NHS Foundation Trust,2021,4,12-Mar-19,Stock,Stock, BAYER PLC ,824C192526,"26,220.00",Pharmacy Stock
+NHS,King's College Hospital NHS Foundation Trust,2021,4,13-Jul-20,Premises and Fixed Plant,Facilities Estates / Maintenance, BENDER UK LTD ,39851,"26,334.00",Day to day maintenance
+NHS,King's College Hospital NHS Foundation Trust,2021,4,20-Jul-20,Fire Equipment,Facilities Estates / Maintenance, BESPOKE DETECTION SERVICES LTD ,15533,"28,800.00",Fire Equipment
+NHS,King's College Hospital NHS Foundation Trust,2021,4,20-Jul-20,COVID - 19,Facilities Estates / Maintenance, BESPOKE DETECTION SERVICES LTD ,15532,"46,500.00",COVID - 19
+NHS,King's College Hospital NHS Foundation Trust,2021,4,03-Apr-20,External Contract staffing and Consultan,Endoscopy Suite, BMI HEALTHCARE ,049_S1135_0220,"47,385.81",Contracted out services
+NHS,King's College Hospital NHS Foundation Trust,2021,4,01-Apr-20,External Contract staffing and Consultan,Endoscopy Suite, BMI HEALTHCARE ,049_S1135_0320,"36,209.24",Contracted out services
+NHS,King's College Hospital NHS Foundation Trust,2021,4,15-Jul-20,Assets Under Construction,Fixed Asset, BMJ ARCHITECTS ,13479,"30,000.00",Fixed Assets - Auc Pur Adds Bld
+NHS,King's College Hospital NHS Foundation Trust,2021,4,20-Jul-20,Services Provided by non-NHS bodies,Dermatology Services PRUH, BROMLEY GP ALLIANCE LTD ,BGPA0653,"45,000.00",Services Provided by non-NHS bodies
+NHS,King's College Hospital NHS Foundation Trust,2021,4,20-Jul-20,Premises and Fixed Plant,Waste Services, BYWATERS (LEYTON) LTD ,P142627,"51,013.57",Clinical Waste
+NHS,King's College Hospital NHS Foundation Trust,2021,4,23-Jun-20,Establishment Expenses,Corporate Human Resources, CAPITA BUSINESS SERVICE LTD ,6003993301,"217,317.24",Recruitment costs
+NHS,King's College Hospital NHS Foundation Trust,2021,4,08-Jul-20,Establishment Expenses,Corporate Human Resources, CAPITA BUSINESS SERVICE LTD ,6003995805,"181,113.50",Recruitment costs
+NHS,King's College Hospital NHS Foundation Trust,2021,4,30-Jun-20,Assets Under Construction,Fixed Asset, CAPITA PROPERTY & INFRASTRUCTURE LTD ,6017127624,"82,147.20",Fixed Assets - Auc Pur Adds Bld
+NHS,King's College Hospital NHS Foundation Trust,2021,4,17-Apr-20,External Contract staffing and Consultan,Executive Nursing, CARE QUALITY COMMISSION ,42721522,"772,048.00",CQC
+NHS,King's College Hospital NHS Foundation Trust,2021,4,12-Jun-20,Premises and Fixed Plant,Accomodation, CLARION HOUSING ASSOCIATION LIMITED ,FTI100000682,"47,607.58",On Call Rooms
+NHS,King's College Hospital NHS Foundation Trust,2021,4,30-Jun-20,Premises and Fixed Plant,Community SC Dentistry Non-Pay, COMMUNITY HEALTH PARTNERSHIPS ,60158127,"75,804.50",Rents
+NHS,King's College Hospital NHS Foundation Trust,2021,4,30-Jun-20,Premises and Fixed Plant,Community SC Dentistry Non-Pay, COMMUNITY HEALTH PARTNERSHIPS ,60158125,"75,804.50",Rents
+NHS,King's College Hospital NHS Foundation Trust,2021,4,08-Jul-20,Premises and Fixed Plant,Energy & Utilities Denmark Hill, CORONA ENERGY ,15377110,"170,918.42",Gas
+NHS,King's College Hospital NHS Foundation Trust,2021,4,10-Jul-20,Stock,Stock, CSL BEHRING UK LTD ,994025812,"84,000.00",Pharmacy Stock
+NHS,King's College Hospital NHS Foundation Trust,2021,4,27-Jul-20,Clinical Supplies and Services,Nuclear Medicine, CURIUM PHARMA UK LTD ,RI10072670,"26,514.00",Pet Tracers
+NHS,King's College Hospital NHS Foundation Trust,2021,4,26-Jun-20,Clinical Supplies and Services,Nuclear Medicine, CURIUM PHARMA UK LTD ,RI10071654,"25,140.00",Pet Tracers
+NHS,King's College Hospital NHS Foundation Trust,2021,4,03-Jul-20,lease,lease, DE LAGE LANDEN L   95640013456 LG15 , 95640013456 LG15 ,"358,386.00",lease
+NHS,King's College Hospital NHS Foundation Trust,2021,4,30-Jun-20,Services Provided by non-NHS bodies,Thamesmead Dialysis Unit, DIAVERUM FACILITIES MANAGEMENT ,350599,"81,887.00",Diaverum Contract - Other
+NHS,King's College Hospital NHS Foundation Trust,2021,4,30-Jun-20,Services Provided by non-NHS bodies,Thamesmead Dialysis Unit, DIAVERUM FACILITIES MANAGEMENT ,350610,"37,917.60",Diaverum Contract - Other
+NHS,King's College Hospital NHS Foundation Trust,2021,4,30-May-20,Services Provided by non-NHS bodies,Thamesmead Dialysis Unit, DIAVERUM FACILITIES MANAGEMENT ,350545,"56,432.64",Diaverum Contract - Other
+NHS,King's College Hospital NHS Foundation Trust,2021,4,11-May-20,Sub Contracted Healthcare - NHS bodies,Haematology OPD, EAST SUSSEX HOSPITALS NHS TRUST ,144030,"26,100.00",Services received from other NHS bodies
+NHS,King's College Hospital NHS Foundation Trust,2021,4,02-Jul-20,Premises and Fixed Plant,Dental Energy & Utilities, EDF ENERGY ,7967557,"31,691.63",Electricity
+NHS,King's College Hospital NHS Foundation Trust,2021,4,02-Jul-20,Premises and Fixed Plant,Energy & Utilities Denmark Hill, EDF ENERGY ,7977187,"49,949.00",Electricity
+NHS,King's College Hospital NHS Foundation Trust,2021,4,02-Jul-20,Premises and Fixed Plant,PFI Service Payments, EDF ENERGY ,7976277,"67,612.33",Electricity
+NHS,King's College Hospital NHS Foundation Trust,2021,4,30-Jun-20,Storage costs,Patient Records DH, EDM GROUP LIMITED ,SI319802,"25,364.84",Storage costs
+NHS,King's College Hospital NHS Foundation Trust,2021,4,01-Jul-20,Transport and Moveable Plant,Patient Transport, FALCK UK AMBULANCE SERVICES ,25830,"512,213.89",Patient Transport Services
+NHS,King's College Hospital NHS Foundation Trust,2021,4,28-May-20,Stock,Stock, GILEAD SCIENCES LTD ,4410185429,"280,451.00",Pharmacy Stock
+NHS,King's College Hospital NHS Foundation Trust,2021,4,15-Jul-20,Stock,Stock, GILEAD SCIENCES LTD ,4410188490,"224,360.80",Pharmacy Stock
+NHS,King's College Hospital NHS Foundation Trust,2021,4,13-Jul-20,Stock,Stock, GILEAD SCIENCES LTD ,4410188337,"224,360.80",Pharmacy Stock
+NHS,King's College Hospital NHS Foundation Trust,2021,4,29-Jun-20,Stock,Stock, GILEAD SCIENCES LTD ,4410187591,"280,451.00",Pharmacy Stock
+NHS,King's College Hospital NHS Foundation Trust,2021,4,07-Jul-20,Stock,Stock, GILEAD SCIENCES LTD ,4410188026,"224,360.80",Pharmacy Stock
+NHS,King's College Hospital NHS Foundation Trust,2021,4,07-Jul-20,Stock,Stock, GILEAD SCIENCES LTD ,4410188010,"35,504.78",Pharmacy Stock
+NHS,King's College Hospital NHS Foundation Trust,2021,4,25-Jun-20,Stock,Stock, GILEAD SCIENCES LTD ,4410187347,"35,504.78",Pharmacy Stock
+NHS,King's College Hospital NHS Foundation Trust,2021,4,21-May-20,Administrative and Clerical Staff,CEF Senior Management Team, GUYS & ST THOMAS' NHS TRUST ,3288588,"39,490.00",Administrative and Clerical Staff B8D
+NHS,King's College Hospital NHS Foundation Trust,2021,4,21-May-20,Administrative and Clerical Staff,CEF Senior Management Team, GUYS & ST THOMAS' NHS TRUST ,3288588,"31,789.60",Administrative and Clerical Staff B8D
+NHS,King's College Hospital NHS Foundation Trust,2021,4,17-Apr-20,Senior Managers,Chief Executive, GUYS & ST THOMAS' NHS TRUST ,3286852,"72,292.86",Board members
+NHS,King's College Hospital NHS Foundation Trust,2021,4,05-Dec-19,General Supplies and Services,Neurosurgery, HCA INTERNATIONAL ,KINGS79HSC,"56,399.00",Services & Expenses Items - RDC
+NHS,King's College Hospital NHS Foundation Trust,2021,4,16-Oct-19,General Supplies and Services,Neurosurgery, HCA INTERNATIONAL ,KINGS76HSC,"90,316.27",Services & Expenses Items - RDC
+NHS,King's College Hospital NHS Foundation Trust,2021,4,25-Feb-19,General Supplies and Services,Neurosurgery, HCA INTERNATIONAL ,KINGS66HSCA,"42,778.00",Services & Expenses Items - RDC
+NHS,King's College Hospital NHS Foundation Trust,2021,4,22-Jan-19,General Supplies and Services,Neurosurgery, HCA INTERNATIONAL ,KINGS61HSC,"50,739.00",Services & Expenses Items - RDC
+NHS,King's College Hospital NHS Foundation Trust,2021,4,02-Jul-20,General Supplies and Services,Neurosurgery, HCA INTERNATIONAL ,KINGS84HSC,"30,658.00",Services & Expenses Items - RDC
+NHS,King's College Hospital NHS Foundation Trust,2021,4,18-Nov-19,General Supplies and Services,Neurosurgery, HCA INTERNATIONAL ,KINGS77HSC,"89,803.70",Services & Expenses Items - RDC
+NHS,King's College Hospital NHS Foundation Trust,2021,4,25-Feb-19,General Supplies and Services,Neurosurgery, HCA INTERNATIONAL ,KINGS65HSCA,"142,293.00",Services & Expenses Items - RDC
+NHS,King's College Hospital NHS Foundation Trust,2021,4,17-Jan-20,General Supplies and Services,Neurosurgery, HCA INTERNATIONAL ,KINGS83HSC,"41,584.92",Services & Expenses Items - RDC
+NHS,King's College Hospital NHS Foundation Trust,2021,4,17-Jan-20,General Supplies and Services,Neurosurgery, HCA INTERNATIONAL ,KINGS82HSC,"160,194.63",Services & Expenses Items - RDC
+NHS,King's College Hospital NHS Foundation Trust,2021,4,31-Mar-20,Stock,Stock, HEALTHCARE AT HOME LIMITED ,OP/9032854,"37,950.00",Pharmacy Stock
+NHS,King's College Hospital NHS Foundation Trust,2021,4,30-Jun-20,Stock,Stock, HEALTHCARE AT HOME LIMITED ,OP/9318919,"25,200.00",Pharmacy Stock
+NHS,King's College Hospital NHS Foundation Trust,2021,4,05-Jun-20,Stock,Stock, HEALTHCARE AT HOME LIMITED ,OP/9243862,"25,200.00",Pharmacy Stock
+NHS,King's College Hospital NHS Foundation Trust,2021,4,24-Jun-20,Stock,Stock, HEALTHCARE AT HOME LIMITED ,OP/9297503,"37,800.00",Pharmacy Stock
+NHS,King's College Hospital NHS Foundation Trust,2021,4,17-Jul-20,PFI PAYMENT,PFI PAYMENT, HPC KING'S COLLE   INVOICE HPCGJW56      ,HPCGJW56     ,"1,487,567.06",PFI PAYMENT
+NHS,King's College Hospital NHS Foundation Trust,2021,4,27-Jul-20,Int PUR  Additions,Fixed Asset, INSIGHT DIRECT (UK) LTD ,4922585,"57,769.98",Int PUR  Additions
+NHS,King's College Hospital NHS Foundation Trust,2021,4,22-Jun-20,COVID - 19,ICT - Network, INSIGHT DIRECT (UK) LTD ,4880495,"33,705.72",COVID - 19
+NHS,King's College Hospital NHS Foundation Trust,2021,4,22-Jun-20,COVID - 19,ICT - Network, INSIGHT DIRECT (UK) LTD ,4880495,"25,137.00",COVID - 19
+NHS,King's College Hospital NHS Foundation Trust,2021,4,27-Jul-20,Premises and Fixed Plant,PRUH & South sites operational team, INTOUCH HEALTH LTD ,3531,"292,800.00",Computer hardware purchases
+NHS,King's College Hospital NHS Foundation Trust,2021,4,30-Jun-20,Storage costs,Patient Records DH, IRON MOUNTAIN ,WX70452,"50,573.56",Storage costs
+NHS,King's College Hospital NHS Foundation Trust,2021,4,14-Jul-20,Assets Under Construction,Fixed Asset, J F JONES BUILDERS LTD ,JJ/6515,"36,672.00",Fixed Assets - Auc Pur Adds Bld
+NHS,King's College Hospital NHS Foundation Trust,2021,4,06-Jul-20,Assets Under Construction,Fixed Asset, J F JONES BUILDERS LTD ,JJ/6491,"33,018.60",Fixed Assets - Auc Pur Adds Bld
+NHS,King's College Hospital NHS Foundation Trust,2021,4,17-Jun-20,Premises and Fixed Plant,Facilities Estates / Maintenance, J F JONES BUILDERS LTD ,JJ/6539,"27,908.41",Day to day maintenance
+NHS,King's College Hospital NHS Foundation Trust,2021,4,10-Jul-20,Assets Under Construction,Fixed Asset, J F JONES BUILDERS LTD ,JJ/6506,"33,975.60",Fixed Assets - Auc Pur Adds Bld
+NHS,King's College Hospital NHS Foundation Trust,2021,4,26-Jun-20,COVID - 19,Facilities Estates / Maintenance, J F JONES BUILDERS LTD ,JJ/6477,"53,567.50",COVID - 19
+NHS,King's College Hospital NHS Foundation Trust,2021,4,25-Jun-20,Stock,Stock, JANSSEN-CILAG LTD ,930666156,"53,913.60",Pharmacy Stock
+NHS,King's College Hospital NHS Foundation Trust,2021,4,20-Jul-20,Assets Under Construction,Fixed Asset, JOHN GRAHAM CONSTRUCTION LIMITED ,912574,"215,829.74",Fixed Assets - Auc Pur Adds Bld
+NHS,King's College Hospital NHS Foundation Trust,2021,4,15-Jun-20,Assets Under Construction,Fixed Asset, JOHN GRAHAM CONSTRUCTION LIMITED ,912385,"92,398.98",Fixed Assets - Auc Pur Adds Bld
+NHS,King's College Hospital NHS Foundation Trust,2021,4,20-Jul-20,COVID - 19,Facilities Projects, JOHN GRAHAM CONSTRUCTION LIMITED ,912576,"30,549.57",COVID - 19
+NHS,King's College Hospital NHS Foundation Trust,2021,4,29-Jun-20,Services Provided by non-NHS bodies,Pathology JV Contract, KCH COMMERCIAL SERVICES LTD ,1248,"26,844.43",GSTS Pathology Contract Over & Under
+NHS,King's College Hospital NHS Foundation Trust,2021,4,29-Jun-20,Services Provided by non-NHS bodies,Pathology JV Contract, KCH COMMERCIAL SERVICES LTD ,1247,"38,885.84",GSTS Pathology Contract Over & Under
+NHS,King's College Hospital NHS Foundation Trust,2021,4,01-Jul-20,External Contract staffing and Consultan,KIFM Pharmacy Outpatient, KCH INTERVENTIONAL FAC MGT LTD ,FINV-000604,"1,916,000.00",Contracted out services
+NHS,King's College Hospital NHS Foundation Trust,2021,4,01-Jun-20,External Contract staffing and Consultan,KIFM Pharmacy Outpatient, KCH INTERVENTIONAL FAC MGT LTD ,FINV-000573,"1,916,000.00",Contracted out services
+NHS,King's College Hospital NHS Foundation Trust,2021,4,01-Jun-20,Services Provided by non-NHS bodies,IFT, KCH INTERVENTIONAL FAC MGT LTD ,FINV-000578,"2,147,876.17",KFM ESC Service
+NHS,King's College Hospital NHS Foundation Trust,2021,4,01-Jun-20,Services Provided by non-NHS bodies,IFT, KCH INTERVENTIONAL FAC MGT LTD ,FCRD-000089,"-3,314,727.43",KIFM NWC
+NHS,King's College Hospital NHS Foundation Trust,2021,4,01-Jun-20,Services Provided by non-NHS bodies,IFT, KCH INTERVENTIONAL FAC MGT LTD ,FCRD-000093,"-3,314,727.43",KIFM NWC
+NHS,King's College Hospital NHS Foundation Trust,2021,4,01-Jun-20,Services Provided by non-NHS bodies,IFT, KCH INTERVENTIONAL FAC MGT LTD ,FINV-000580,"3,373,737.03",KIFM NWC
+NHS,King's College Hospital NHS Foundation Trust,2021,4,01-Jun-20,Services Provided by non-NHS bodies,IFT, KCH INTERVENTIONAL FAC MGT LTD ,FINV-000579,"3,373,737.03",KIFM NWC
+NHS,King's College Hospital NHS Foundation Trust,2021,4,01-Jun-20,Services Provided by non-NHS bodies,IFT, KCH INTERVENTIONAL FAC MGT LTD ,FINV-000575,"3,373,737.03",KIFM NWC
+NHS,King's College Hospital NHS Foundation Trust,2021,4,01-Jun-20,Services Provided by non-NHS bodies,IFT, KCH INTERVENTIONAL FAC MGT LTD ,FINV-000587,"1,447,900.78",KIFM PRUH
+NHS,King's College Hospital NHS Foundation Trust,2021,4,01-Jun-20,Services Provided by non-NHS bodies,IFT, KCH INTERVENTIONAL FAC MGT LTD ,FINV-000576,"1,447,900.78",KIFM PRUH
+NHS,King's College Hospital NHS Foundation Trust,2021,4,01-Jun-20,Services Provided by non-NHS bodies,IFT, KCH INTERVENTIONAL FAC MGT LTD ,FCRD-000094,"-1,266,475.20",KIFM PRUH
+NHS,King's College Hospital NHS Foundation Trust,2021,4,01-Jun-20,Services Provided by non-NHS bodies,IFT, KCH INTERVENTIONAL FAC MGT LTD ,FCRD-000090,"-1,266,475.20",KIFM PRUH
+NHS,King's College Hospital NHS Foundation Trust,2021,4,01-Jun-20,Services Provided by non-NHS bodies,IFT, KCH INTERVENTIONAL FAC MGT LTD ,FINV-000583,"1,737,480.94",KIFM PRUH
+NHS,King's College Hospital NHS Foundation Trust,2021,4,01-Jul-20,Services Provided by non-NHS bodies,IFT, KCH INTERVENTIONAL FAC MGT LTD ,FCRD-000100,"-115,282.00",KIFM UPAC
+NHS,King's College Hospital NHS Foundation Trust,2021,4,01-Jun-20,Services Provided by non-NHS bodies,IFT, KCH INTERVENTIONAL FAC MGT LTD ,FCRD-000091,"-3,402,879.09",KIFM UPAC
+NHS,King's College Hospital NHS Foundation Trust,2021,4,01-Jun-20,Services Provided by non-NHS bodies,IFT, KCH INTERVENTIONAL FAC MGT LTD ,FINV-000584,"3,620,429.24",KIFM UPAC
+NHS,King's College Hospital NHS Foundation Trust,2021,4,01-Jun-20,Services Provided by non-NHS bodies,IFT, KCH INTERVENTIONAL FAC MGT LTD ,FCRD-000092,"-3,402,879.09",KIFM UPAC
+NHS,King's College Hospital NHS Foundation Trust,2021,4,01-Jun-20,Services Provided by non-NHS bodies,IFT, KCH INTERVENTIONAL FAC MGT LTD ,FINV-000577,"3,620,429.24",KIFM UPAC
+NHS,King's College Hospital NHS Foundation Trust,2021,4,01-Jun-20,Services Provided by non-NHS bodies,IFT, KCH INTERVENTIONAL FAC MGT LTD ,FINV-000586,"3,620,429.24",KIFM UPAC
+NHS,King's College Hospital NHS Foundation Trust,2021,4,27-Apr-20,Establishment Expenses,Corporate Human Resources, KCH MANAGEMENT LTD ,2415,"87,175.37",Recruitment costs
+NHS,King's College Hospital NHS Foundation Trust,2021,4,01-Jul-20,External Contract staffing and Consultan,Corporate Human Resources, KCH MANAGEMENT LTD ,2460,"90,000.00",Consultancy
+NHS,King's College Hospital NHS Foundation Trust,2021,4,27-Apr-20,Establishment Expenses,Corporate Human Resources, KCH MANAGEMENT LTD ,2417,"61,405.49",Recruitment costs
+NHS,King's College Hospital NHS Foundation Trust,2021,4,30-Jan-20,Scientific and Professional Staff,Haematology Minimal Residual Disease, KINGS COLLEGE LONDON ,RS50019055,"34,459.64",Medical Laboratory Staff B6
+NHS,King's College Hospital NHS Foundation Trust,2021,4,13-Feb-20,Consultant - Recharge,Urology, KINGS COLLEGE LONDON ,RS50019674,"54,288.15",Consultant - Recharge
+NHS,King's College Hospital NHS Foundation Trust,2021,4,13-Feb-20,Consultant - Recharge,General Surgery I, KINGS COLLEGE LONDON ,RS50019705,"27,103.57",Consultant - Recharge
+NHS,King's College Hospital NHS Foundation Trust,2021,4,16-Mar-20,Consultant - Recharge,Palliative Care, KINGS COLLEGE LONDON ,RS50021188,"26,390.22",Consultant Recharge In
+NHS,King's College Hospital NHS Foundation Trust,2021,4,23-Mar-20,Consultant - Recharge,Renal Research, KINGS COLLEGE LONDON ,RS50021473,"42,605.82",Consultant - Recharge
+NHS,King's College Hospital NHS Foundation Trust,2021,4,23-Mar-20,Consultant - Recharge,General Surgery I, KINGS COLLEGE LONDON ,RS50021478,"75,813.24",Consultant - Recharge
+NHS,King's College Hospital NHS Foundation Trust,2021,4,25-Mar-20,Consultant - Recharge,Child Health Medical General, KINGS COLLEGE LONDON ,RS50021600,"50,568.36",Consultant - Recharge
+NHS,King's College Hospital NHS Foundation Trust,2021,4,28-Apr-20,Consultant - Recharge,Liver Medical, KINGS COLLEGE LONDON ,RS50022615,"49,033.87",Consultant Recharge In
+NHS,King's College Hospital NHS Foundation Trust,2021,4,13-Jul-20,Consultant - Recharge,Liver Medical, KINGS COLLEGE LONDON ,RS50024817,"51,268.30",Consultant Recharge In
+NHS,King's College Hospital NHS Foundation Trust,2021,4,31-Jul-19,Clinical Trials EXP,NIHR Access Care Harding R, KINGS COLLEGE LONDON ,SH50013354,"95,178.91",Clinical Trials EXP
+NHS,King's College Hospital NHS Foundation Trust,2021,4,28-May-20,External Contract staffing and Consultan,AHSC-KHP, KINGS COLLEGE LONDON ,SH50023638,"125,000.00",Consultancy
+NHS,King's College Hospital NHS Foundation Trust,2021,4,12-Jun-20,External Contract staffing and Consultan,ARC PH & MM - Social Care, KINGS COLLEGE LONDON ,SH50024032,"26,355.12",Consultancy
+NHS,King's College Hospital NHS Foundation Trust,2021,4,12-Jun-20,External Contract staffing and Consultan,ARC Core, KINGS COLLEGE LONDON ,SH50024036,"63,722.61",Consultancy
+NHS,King's College Hospital NHS Foundation Trust,2021,4,23-Jul-20,External Contract staffing and Consultan,ARC Palliative Care & End of Life, KINGS COLLEGE LONDON ,SH50025133,"58,496.96",Consultancy
+NHS,King's College Hospital NHS Foundation Trust,2021,4,03-Sep-19,Administrative and Clerical Staff,Dental Oral Pathology, KINGS COLLEGE LONDON ,TS50014303,"70,065.24",A&C agency
+NHS,King's College Hospital NHS Foundation Trust,2021,4,01-Jul-20,External Contract staffing and Consultan,Strategy Team, KINGS COLLEGE LONDON ,TS50024554,"206,118.00",KCL Charity Fundraising
+NHS,King's College Hospital NHS Foundation Trust,2021,4,26-Jun-20,Sub Contracted Healthcare - NHS bodies,ACU Cross Account, KING'S FERTILITY LTD ,KFL186,"92,000.00",Services received from other NHS bodies
+NHS,King's College Hospital NHS Foundation Trust,2021,4,29-Mar-20,Leasing -Lease Charges Others,Senior Finance Staff, KONICA MINOLTA BUSINESS SOLUTI  (UK) LTD ,1150944018,"60,506.99",Leasing -Lease Charges Others
+NHS,King's College Hospital NHS Foundation Trust,2021,4,15-Jul-20,Assets Under Construction,Fixed Asset, LIFT SPECIALISTS LTD ,CSI001533,"96,132.00",Fixed Assets - Auc Pur Adds Bld
+NHS,King's College Hospital NHS Foundation Trust,2021,4,09-Jul-20,Premises and Fixed Plant,Facilities Estates / Maintenance, LIFTEC LIFTS LTD ,NV177262,"28,970.52",Day to day maintenance
+NHS,King's College Hospital NHS Foundation Trust,2021,4,06-Dec-19,Drugs,Pharmacy Lloyds, LLOYDS PHARMACY LTD ,86831,"1,617,483.31",Sainsburys Drug
+NHS,King's College Hospital NHS Foundation Trust,2021,4,01-Jul-20,RATES,RATES, London Borough of Bromley , Standing Order ,"136,192.00",RATES
+NHS,King's College Hospital NHS Foundation Trust,2021,4,01-Jul-20,RATES,RATES, London Borough of Lambeth , Standing Order ,"215,460.00",RATES
+NHS,King's College Hospital NHS Foundation Trust,2021,4,14-Apr-20,Assets Under Construction,Fixed Asset, MACFARLANES LLP ,449535,"62,018.25",Fixed Assets - Auc Pur Adds Bld
+NHS,King's College Hospital NHS Foundation Trust,2021,4,01-Jul-20,Administrative and Clerical Staff,CEF Senior Management Team, MACMITCH LTD ,INV-0024,"25,200.00",A&C agency
+NHS,King's College Hospital NHS Foundation Trust,2021,4,30-Jun-20,Premises and Fixed Plant,Facilities Rates / Rent, MAUDSLEY CHARITY ,C0002276,"26,914.43",Rents
+NHS,King's College Hospital NHS Foundation Trust,2021,4,30-Jun-20,Assets Under Construction,Fixed Asset, MCLAUGHLIN & HARVEY LTD ,23142,"142,689.60",Fixed Assets - Auc Pur Adds Bld
+NHS,King's College Hospital NHS Foundation Trust,2021,4,30-Jun-20,External Contract staffing and Consultan,Radiology Medical, MEDICA REPORTING LTD ,14906,"101,855.00",Contracted out services
+NHS,King's College Hospital NHS Foundation Trust,2021,4,30-Jun-20,Premises and Fixed Plant,Radiology Department, MEDICA REPORTING LTD ,14908,"71,715.00",Office equipment & stationery - RDC
+NHS,King's College Hospital NHS Foundation Trust,2021,4,31-May-20,Premises and Fixed Plant,Radiology Department, MEDICA REPORTING LTD ,14824,"59,405.00",Office equipment & stationery - RDC
+NHS,King's College Hospital NHS Foundation Trust,2021,4,26-Jun-20,Clinical Supplies and Services,Diabetes, MEDTRONIC LTD ,1099850211,"30,538.27",Insulin Pumps
+NHS,King's College Hospital NHS Foundation Trust,2021,4,29-May-20,Clinical Supplies and Services,Diabetes, MEDTRONIC LTD ,1099826123,"37,740.76",Insulin Pumps
+NHS,King's College Hospital NHS Foundation Trust,2021,4,22-May-20,Assets Under Construction,Fixed Asset, NEW TECH SECURITY ,38118,"147,790.80",Fixed Assets - Auc Pur Adds Bld
+NHS,King's College Hospital NHS Foundation Trust,2021,4,15-Jun-20,Clinical Supplies and Services,Haematology - Blood Products, NHS BLOOD AND TRANSPLANT ,889910,"482,245.72",National Blood Service Contract
+NHS,King's College Hospital NHS Foundation Trust,2021,4,15-Jun-20,Clinical Supplies and Services,Blood Transfusion, NHS BLOOD AND TRANSPLANT ,889912,"90,576.31",Blood components
+NHS,King's College Hospital NHS Foundation Trust,2021,4,01-Apr-20,Drugs,Pharmacy FP10, NHS BUSINESS SERVICES AUTHORITY ,1000064074,"152,373.19",FP10 drugs
+NHS,King's College Hospital NHS Foundation Trust,2021,4,17-Jan-20,Drugs,Pharmacy FP10, NHS BUSINESS SERVICES AUTHORITY ,1000063036,"133,019.28",FP10 drugs
+NHS,King's College Hospital NHS Foundation Trust,2021,4,22-Feb-20,Drugs,Pharmacy FP10, NHS BUSINESS SERVICES AUTHORITY ,1000063379,"125,934.74",FP10 drugs
+NHS,King's College Hospital NHS Foundation Trust,2021,4,11-Apr-20,Drugs,Pharmacy FP10, NHS BUSINESS SERVICES AUTHORITY ,1000064421,"122,832.45",FP10 drugs
+NHS,King's College Hospital NHS Foundation Trust,2021,4,07-Jul-20,Premises and Fixed Plant,Community SC Dentistry Non-Pay, NHS PROPERTY SERVICES LTD ,00000001/H318158,"85,249.81",Rents
+NHS,King's College Hospital NHS Foundation Trust,2021,4,09-Apr-20,Premises and Fixed Plant,Community SC Dentistry Non-Pay, NHS PROPERTY SERVICES LTD ,00000001/H303684,"85,249.81",Rents
+NHS,King's College Hospital NHS Foundation Trust,2021,4,09-Apr-20,Premises and Fixed Plant,Community SC Dentistry Non-Pay, NHS PROPERTY SERVICES LTD ,00000001/H305765,"35,547.99",Rents
+NHS,King's College Hospital NHS Foundation Trust,2021,4,07-Jul-20,Premises and Fixed Plant,Community SC Dentistry Non-Pay, NHS PROPERTY SERVICES LTD ,00000001/H319874,"35,547.99",Rents
+NHS,King's College Hospital NHS Foundation Trust,2021,4,05-May-20,Premises and Fixed Plant,ED PRUH Nursing, NHS SUPPLY CHAIN ,9521000221,"57,432.40",Office equipment & stationery - RDC
+NHS,King's College Hospital NHS Foundation Trust,2021,4,15-Jul-20,Legal,Legal, NHSLA SUSP     JULY 20/21 ,Jul-20,"4,389,297.20",Legal
+NHS,King's College Hospital NHS Foundation Trust,2021,4,30-Jun-20,Int PUR  Additions,Fixed Asset, NIFES CONSULTING GROUP ,696-519,"48,228.10",Int PUR  Additions
+NHS,King's College Hospital NHS Foundation Trust,2021,4,31-May-20,Assets Under Construction,Fixed Asset, OC EXPERTS SERVICES LTD ,2117/17,"93,912.50",Fixed Assets - Auc Pur Adds Bld
+NHS,King's College Hospital NHS Foundation Trust,2021,4,17-Apr-20,Subscriptions,Corporate Communications, ODYSSEY INTERACTIVE LIMITED ,9718083,"36,760.00",Subscriptions
+NHS,King's College Hospital NHS Foundation Trust,2021,4,29-Mar-19,Nursing Staff,Paeds Inpatient (PRUH), OXLEAS NHS FOUNDATION TRUST ,5814,"-48,997.88",Agency nurses
+NHS,King's College Hospital NHS Foundation Trust,2021,4,13-Dec-16,Nursing Staff,Paeds Inpatient (PRUH), OXLEAS NHS FOUNDATION TRUST ,41082,"68,318.00",Agency nurses
+NHS,King's College Hospital NHS Foundation Trust,2021,4,01-Dec-19,Sub Contracted Healthcare - NHS bodies,QMS Oxleas Charge, OXLEAS NHS FOUNDATION TRUST ,60546,"32,946.99",Services received from other NHS bodies
+NHS,King's College Hospital NHS Foundation Trust,2021,4,01-Dec-19,Sub Contracted Healthcare - NHS bodies,Pharmacy QMS (Oxleas NHS), OXLEAS NHS FOUNDATION TRUST ,60617,"30,043.83",Services received from other NHS bodies
+NHS,King's College Hospital NHS Foundation Trust,2021,4,01-Jun-20,Sub Contracted Healthcare - NHS bodies,Pharmacy QMS (Oxleas NHS), OXLEAS NHS FOUNDATION TRUST ,63830,"30,043.83",Services received from other NHS bodies
+NHS,King's College Hospital NHS Foundation Trust,2021,4,17-Jun-20,Sub Contracted Healthcare - NHS bodies,Pharmacy QMS (Oxleas NHS), OXLEAS NHS FOUNDATION TRUST ,63956,"328,374.25",Services received from other NHS bodies
+NHS,King's College Hospital NHS Foundation Trust,2021,4,18-Jun-20,Sub Contracted Healthcare - NHS bodies,Pharmacy QMS (Oxleas NHS), OXLEAS NHS FOUNDATION TRUST ,63957,"436,805.44",Services received from other NHS bodies
+NHS,King's College Hospital NHS Foundation Trust,2021,4,01-Jul-20,Sub Contracted Healthcare - NHS bodies,QMS Oxleas Charge, OXLEAS NHS FOUNDATION TRUST ,64084,"32,946.99",Services received from other NHS bodies
+NHS,King's College Hospital NHS Foundation Trust,2021,4,01-Jul-20,Sub Contracted Healthcare - NHS bodies,QMS Oxleas Charge, OXLEAS NHS FOUNDATION TRUST ,64085,"45,503.33",Services received from other NHS bodies
+NHS,King's College Hospital NHS Foundation Trust,2021,4,01-Jul-20,Sub Contracted Healthcare - NHS bodies,Pharmacy QMS (Oxleas NHS), OXLEAS NHS FOUNDATION TRUST ,64129,"30,043.83",Services received from other NHS bodies
+NHS,King's College Hospital NHS Foundation Trust,2021,4,22-Jul-20,Pulse Bank Nurses,Pulse Bank Nurses, PULSE HEALTHCARE LIMITED ,5137248,"44,263.41",Pulse Bank Nurses
+NHS,King's College Hospital NHS Foundation Trust,2021,4,23-Jul-20,Pulse Bank Nurses,Pulse Bank Nurses, PULSE HEALTHCARE LIMITED ,5139459,"581,425.17",Pulse Bank Nurses
+NHS,King's College Hospital NHS Foundation Trust,2021,4,09-Jul-20,Pulse Bank Nurses,Pulse Bank Nurses, PULSE HEALTHCARE LIMITED ,5131298,"513,803.25",Pulse Bank Nurses
+NHS,King's College Hospital NHS Foundation Trust,2021,4,02-Jul-20,Pulse Bank Nurses,Pulse Bank Nurses, PULSE HEALTHCARE LIMITED ,5127402,"498,245.54",Pulse Bank Nurses
+NHS,King's College Hospital NHS Foundation Trust,2021,4,06-Jul-20,Pulse Bank Nurses,Pulse Bank Nurses, PULSE HEALTHCARE LIMITED ,5127853,"37,392.32",Pulse Bank Nurses
+NHS,King's College Hospital NHS Foundation Trust,2021,4,30-Jul-20,Pulse Bank Nurses,Pulse Bank Nurses, PULSE HEALTHCARE LIMITED ,5143405,"596,789.32",Pulse Bank Nurses
+NHS,King's College Hospital NHS Foundation Trust,2021,4,29-Jun-20,Pulse Bank Nurses,Pulse Bank Nurses, PULSE HEALTHCARE LIMITED ,5123676,"40,263.92",Pulse Bank Nurses
+NHS,King's College Hospital NHS Foundation Trust,2021,4,28-Jul-20,Pulse Bank Nurses,Pulse Bank Nurses, PULSE HEALTHCARE LIMITED ,5141016,"40,059.18",Pulse Bank Nurses
+NHS,King's College Hospital NHS Foundation Trust,2021,4,15-Jul-20,Pulse Bank Nurses,Pulse Bank Nurses, PULSE HEALTHCARE LIMITED ,5133267,"38,724.97",Pulse Bank Nurses
+NHS,King's College Hospital NHS Foundation Trust,2021,4,16-Jul-20,Pulse Bank Nurses,Pulse Bank Nurses, PULSE HEALTHCARE LIMITED ,5135308,"523,629.42",Pulse Bank Nurses
+NHS,King's College Hospital NHS Foundation Trust,2021,4,27-Feb-20,Equipment,Fixed Asset, QIAGEN LTD ,95867205,"34,800.00",Equipment Purchased Additions
+NHS,King's College Hospital NHS Foundation Trust,2021,4,10-Jul-20,Stock,Stock, ROCHE PRODUCTS LIMITED ,1322145549,"37,176.00",Pharmacy Stock
+NHS,King's College Hospital NHS Foundation Trust,2021,4,12-Jun-20,Stock,Stock, ROCHE PRODUCTS LIMITED ,1322141987,"74,352.00",Stock Pharmacy PRUH
+NHS,King's College Hospital NHS Foundation Trust,2021,4,10-Jul-20,Stock,Stock, ROCHE PRODUCTS LIMITED ,1322145736,"74,352.00",Pharmacy Stock
+NHS,King's College Hospital NHS Foundation Trust,2021,4,14-Jul-20,Stock,Stock, ROCHE PRODUCTS LIMITED ,1322145786,"81,594.24",Pharmacy Stock
+NHS,King's College Hospital NHS Foundation Trust,2021,4,20-Jul-20,Transport and Moveable Plant,Patient Transport, SAVOY VENTURES LTD ,10534A,"73,534.45",Patient Transport Services
+NHS,King's College Hospital NHS Foundation Trust,2021,4,22-Jun-20,Transport and Moveable Plant,Patient Transport, SAVOY VENTURES LTD ,10446A,"61,278.71",Patient Transport Services
+NHS,King's College Hospital NHS Foundation Trust,2021,4,06-Jul-20,Transport and Moveable Plant,Patient Transport, SAVOY VENTURES LTD ,10487A,"73,534.45",Patient Transport Services
+NHS,King's College Hospital NHS Foundation Trust,2021,4,27-Jul-20,Transport and Moveable Plant,Patient Transport, SAVOY VENTURES LTD ,10554A,"73,534.45",Patient Transport Services
+NHS,King's College Hospital NHS Foundation Trust,2021,4,13-Jul-20,Transport and Moveable Plant,Patient Transport, SAVOY VENTURES LTD ,10518A,"73,534.45",Patient Transport Services
+NHS,King's College Hospital NHS Foundation Trust,2021,4,10-Jul-20,lease,lease, SIEMENS FINANCIAL     7786901 LG15495 , 7786901 LG15495 ,"31,200.00",lease
+NHS,King's College Hospital NHS Foundation Trust,2021,4,24-Jun-20,Sub Contracted Healthcare - NHS bodies,Neuroradiology, SOUTH LONDON AND MAUDSLEY NHS TRUST ,M0130918,"25,983.48",Services received from other NHS bodies
+NHS,King's College Hospital NHS Foundation Trust,2021,4,02-Jul-20,GP Trainee,Corporate Human Resources, ST GEORGE'S HEALTHCARE NHS TRUST ,6475981,"103,319.27",GP Trainee
+NHS,King's College Hospital NHS Foundation Trust,2021,4,02-Jul-20,GP Trainee,Corporate Human Resources, ST GEORGE'S HEALTHCARE NHS TRUST ,6475982,"97,754.93",GP Trainee
+NHS,King's College Hospital NHS Foundation Trust,2021,4,30-Jun-20,Establishment Expenses,Post Room, SWISS POST SOLUTIONS LTD ,1800003973,"72,532.97",Postage
+NHS,King's College Hospital NHS Foundation Trust,2021,4,30-Jun-20,Transport and Moveable Plant,Transport, SWISS POST SOLUTIONS LTD ,1800003857,"87,669.91",Hire Taxi's
+NHS,King's College Hospital NHS Foundation Trust,2021,4,30-Jun-20,Establishment Expenses,Postage (P.R.U.), SWISS POST SOLUTIONS LTD ,1800003974,"40,179.24",Postage
+NHS,King's College Hospital NHS Foundation Trust,2021,4,30-Mar-20,Clinical Trials EXP,Clinical Trials EXP, UNIVERSITY OF GLASGOW ,130051756,"27,680.98",Clinical Trials EXP
+NHS,King's College Hospital NHS Foundation Trust,2021,4,10-Jul-20,Clinical Trials EXP,Clinical Trials EXP, UNIVERSITY OF LIVERPOOL ,21976069,"46,627.66",Clinical Trials EXP
+NHS,King's College Hospital NHS Foundation Trust,2021,4,13-Jul-20,Premises and Fixed Plant,Energy & Utilities Denmark Hill, VEOLIA ENERGY AND UTILITY SERVICE UK PCS ,90245096,"38,172.06",Energy Centre Management
+NHS,King's College Hospital NHS Foundation Trust,2021,4,11-May-20,Premises and Fixed Plant,Energy & Utilities Denmark Hill, VEOLIA ENERGY AND UTILITY SERVICE UK PCS ,90238565,"57,116.18",Energy Centre Management
+NHS,King's College Hospital NHS Foundation Trust,2021,4,09-Apr-20,Premises and Fixed Plant,Energy & Utilities Denmark Hill, VEOLIA ENERGY AND UTILITY SERVICE UK PCS ,90235581,"39,422.21",Energy Centre Management
+NHS,King's College Hospital NHS Foundation Trust,2021,4,01-Jul-20,Services Provided by non-NHS bodies,Pathology JV Contract, VIAPATH ANALYTICS LLP ,91700310,"1,003,493.00",Viapath PTA
+NHS,King's College Hospital NHS Foundation Trust,2021,4,04-Jun-20,Services Provided by non-NHS bodies,Pathology JV Contract, VIAPATH ANALYTICS LLP ,91694277,"1,003,493.00",Viapath PTA
+NHS,King's College Hospital NHS Foundation Trust,2021,4,01-Jun-20,Services Provided by non-NHS bodies,Pathology JV Contract, VIAPATH ANALYTICS LLP ,91693347,"482,486.54",Viapath PRU PTA
+NHS,King's College Hospital NHS Foundation Trust,2021,4,01-Jul-20,Services Provided by non-NHS bodies,Pathology JV Contract, VIAPATH ANALYTICS LLP ,91700309,"482,486.54",Viapath PRU PTA
+NHS,King's College Hospital NHS Foundation Trust,2021,4,04-Jun-20,Services Provided by non-NHS bodies,Pathology JV Contract, VIAPATH SERVICES LLP ,91694276,"1,080,550.00",Viapath FMLSA
+NHS,King's College Hospital NHS Foundation Trust,2021,4,17-Apr-20,Equipment,Fixed Asset, VIAPATH SERVICES LLP ,91683718,"40,517.40",Equipment Purchased Additions
+NHS,King's College Hospital NHS Foundation Trust,2021,4,01-Jun-20,Services Provided by non-NHS bodies,Pathology JV Contract, VIAPATH SERVICES LLP ,91693348,"404,156.14",Viapath PRU FMLSA
+NHS,King's College Hospital NHS Foundation Trust,2021,4,17-Apr-20,Equipment,Fixed Asset, VIAPATH SERVICES LLP ,91683715,"55,544.51",Equipment Purchased Additions
+NHS,King's College Hospital NHS Foundation Trust,2021,4,17-Apr-20,Equipment,Fixed Asset, VIAPATH SERVICES LLP ,91683717,"297,159.53",Equipment Purchased Additions
+NHS,King's College Hospital NHS Foundation Trust,2021,4,17-Apr-20,Equipment,Fixed Asset, VIAPATH SERVICES LLP ,91683719,"35,684.55",Equipment Purchased Additions
+NHS,King's College Hospital NHS Foundation Trust,2021,4,17-Apr-20,Equipment,Fixed Asset, VIAPATH SERVICES LLP ,91683720,"37,055.15",Equipment Purchased Additions
+NHS,King's College Hospital NHS Foundation Trust,2021,4,01-Jul-20,Services Provided by non-NHS bodies,Pathology JV Contract, VIAPATH SERVICES LLP ,91700307,"404,156.14",Viapath PRU FMLSA
+NHS,King's College Hospital NHS Foundation Trust,2021,4,01-Jul-20,Services Provided by non-NHS bodies,Pathology JV Contract, VIAPATH SERVICES LLP ,91700308,"1,080,550.00",Viapath FMLSA
+NHS,King's College Hospital NHS Foundation Trust,2021,4,07-Jul-20,Assets Under Construction,Fixed Asset, VINCI CONSTRUCTION UK LIMITED ,20070003,"107,398.08",Fixed Assets - Auc Pur Adds Bld
