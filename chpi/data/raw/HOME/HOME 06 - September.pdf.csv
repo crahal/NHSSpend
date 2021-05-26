@@ -1,0 +1,85 @@
+Department Family,Entity,Date,Expense Type,Expense Area,Supplier,Transaction Number,amount
+Department of Health,Homerton University Hospital NHS FT,9/30/2020,AUC Additions,Balance Sheet,ANETIC AID LTD,34904014,"55,717.50"
+Department of Health,Homerton University Hospital NHS FT,9/30/2020,Services Received - NHSTs,Employee Health,OHWORKS LTD,35175346,"41,263.91"
+Department of Health,Homerton University Hospital NHS FT,9/30/2020,NonNHS Trade Pybls Curr,"Management Service
+Balance Sheet",SUPPLY CHAIN COORDINATION,35445388,"54,952.00"
+Department of Health,Homerton University Hospital NHS FT,9/30/2020,OthrIntngAst Additions,Balance Sheet,"LIMITED
+DELL CORPORATION LTD",35446325,"113,500.00"
+Department of Health,Homerton University Hospital NHS FT,9/30/2020,OthrIntngAst Additions,Balance Sheet,DELL CORPORATION LTD,35446326,"32,307.58"
+Department of Health,Homerton University Hospital NHS FT,9/30/2020,OthrIntngAst Additions,Balance Sheet,DELL CORPORATION LTD,35446327,"32,307.58"
+Department of Health,Homerton University Hospital NHS FT,9/30/2020,OthrIntngAst Additions,Balance Sheet,DELL CORPORATION LTD,35446328,"113,500.00"
+Department of Health,Homerton University Hospital NHS FT,9/30/2020,AUC Additions,Balance Sheet,FOREST GATE CONSTRUCTION,35447775,"42,667.32"
+Department of Health,Homerton University Hospital NHS FT,9/30/2020,Specialist Registrar,Reserves,"CO LTD
+ROYAL FREE LONDON NHS",35458290,"88,548.82"
+Department of Health,Homerton University Hospital NHS FT,9/30/2020,Contr Estate Management,Domestic Contract,"FOUNDATION TRUST
+ISS MEDICLEAN LTD",35458356,"26,325.76"
+Department of Health,Homerton University Hospital NHS FT,9/30/2020,Contr Premises Security,Domestic Contract,ISS MEDICLEAN LTD,35458356,"42,124.65"
+Department of Health,Homerton University Hospital NHS FT,9/30/2020,Ext Contr Catering,Domestic Contract,ISS MEDICLEAN LTD,35458356,"197,901.73"
+Department of Health,Homerton University Hospital NHS FT,9/30/2020,Ext Contr Domestics,Domestic Contract,ISS MEDICLEAN LTD,35458356,"180,474.05"
+Department of Health,Homerton University Hospital NHS FT,9/30/2020,Ext Contr Laundry,Domestic Contract,ISS MEDICLEAN LTD,35458356,"46,611.38"
+Department of Health,Homerton University Hospital NHS FT,9/30/2020,Ext Contr Oth Hotel Srv,Domestic Contract,ISS MEDICLEAN LTD,35458356,"69,958.61"
+Department of Health,Homerton University Hospital NHS FT,9/30/2020,Other Public Sector,Trust Board,NHS TOWER HAMLETS CCG,35458369,"100,350.50"
+Department of Health,Homerton University Hospital NHS FT,9/30/2020,"Books, Journals & Subscr",Trust Board,UCL PARTNERS,35458454,"50,000.00"
+Department of Health,Homerton University Hospital NHS FT,9/30/2020,Laboratory Chemicals,Chemical Pathology,ABBOTT LABORATORIES LTD,35461360,"76,010.52"
+Department of Health,Homerton University Hospital NHS FT,9/30/2020,Computer Software/License,Clinical Information Systems,CERNER LTD,35476729,"29,879.91"
+Department of Health,Homerton University Hospital NHS FT,9/30/2020,Computer Software/License,Clinical Information Systems,CERNER LTD,35476732,"29,879.91"
+Department of Health,Homerton University Hospital NHS FT,9/30/2020,X-Ray Equip Maint/Repair,Medical Electronics,SUPPLY CHAIN COORDINATION,35501642,"81,856.01"
+Department of Health,Homerton University Hospital NHS FT,9/30/2020,Lease Rents,Hackney Ark - Estates,"LIMITED
+COMMUNITY HEALTH",35501659,"82,074.26"
+Department of Health,Homerton University Hospital NHS FT,9/30/2020,Lease Rents,Sexual Health Estates,"PARTNERSHIPS LTD
+CUMBRAE PROPERTIES (1963)",35502425,"28,598.25"
+Department of Health,Homerton University Hospital NHS FT,9/30/2020,Services Received - NHSTs,Immunology,"LTD
+DOCTORS LABORATORY LTD",35502432,"32,438.79"
+Department of Health,Homerton University Hospital NHS FT,9/30/2020,NonNHS Trade Pybls Curr,Balance Sheet,"(THE)
+SUPPLY CHAIN COORDINATION",35503053,"71,602.83"
+Department of Health,Homerton University Hospital NHS FT,9/30/2020,AUC Additions,Balance Sheet,"LIMITED
+H&C CONTRACTS LTD",35524947,"61,837.01"
+Department of Health,Homerton University Hospital NHS FT,9/30/2020,AUC Additions,Balance Sheet,OLYMPUS KEYMED,35535738,"302,543.92"
+Department of Health,Homerton University Hospital NHS FT,9/30/2020,AUC Additions,Balance Sheet,OLYMPUS KEYMED,35535738,"60,508.79"
+Department of Health,Homerton University Hospital NHS FT,9/30/2020,Computer Software/License,Clinical Information Systems,CERNER LTD,35537047,"97,518.73"
+Department of Health,Homerton University Hospital NHS FT,9/30/2020,Computer Software/License,Clinical Information Systems,CERNER LTD,35537060,"97,518.73"
+Department of Health,Homerton University Hospital NHS FT,9/30/2020,Payroll Ded'ns N/S Curr,Balance Sheet,TUSKERDIRECT LTD,35537104,"26,806.17"
+Department of Health,Homerton University Hospital NHS FT,9/30/2020,NonNHS Trade Pybls Curr,Balance Sheet,SUPPLY CHAIN COORDINATION,35537160,"75,539.65"
+Department of Health,Homerton University Hospital NHS FT,9/30/2020,Other Gen Supplies & Srv,Health and Safety,"LIMITED
+SYNERGY HEALTH (UK) LTD",35537257,"40,151.20"
+Department of Health,Homerton University Hospital NHS FT,9/30/2020,Other Gen Supplies & Srv,Health and Safety,SYNERGY HEALTH (UK) LTD,35537260,"37,042.09"
+Department of Health,Homerton University Hospital NHS FT,9/30/2020,Other Gen Supplies & Srv,Health and Safety,SYNERGY HEALTH (UK) LTD,35537262,"51,801.67"
+Department of Health,Homerton University Hospital NHS FT,9/30/2020,Other Gen Supplies & Srv,Health and Safety,SYNERGY HEALTH (UK) LTD,35537264,"46,954.44"
+Department of Health,Homerton University Hospital NHS FT,9/30/2020,Specialist Registrar,Reserves,ROYAL FREE LONDON NHS,35537285,"76,176.05"
+Department of Health,Homerton University Hospital NHS FT,9/30/2020,Specialist Registrar,Reserves,"FOUNDATION TRUST
+ROYAL FREE LONDON NHS",35537286,"86,090.34"
+Department of Health,Homerton University Hospital NHS FT,9/30/2020,National Insurance - Curr,Balance Sheet,INLAND REVENUE CIS,35551730,"2,835,938.35"
+Department of Health,Homerton University Hospital NHS FT,9/30/2020,Stocks Raw Materials,Balance Sheet,ALLIANCE HEALTHCARE,35554208,"26,946.00"
+Department of Health,Homerton University Hospital NHS FT,9/30/2020,AUC Additions,Balance Sheet,"DISTRIBUTION LTD
+SUPPLY CHAIN COORDINATION",35569421,"42,869.85"
+Department of Health,Homerton University Hospital NHS FT,9/30/2020,Services Received - NHSTs,Histopathology,"LIMITED
+BARTS HEALTH NHS TRUST",35572403,"119,631.99"
+Department of Health,Homerton University Hospital NHS FT,9/30/2020,Services Received - NHSTs,Virology,BARTS HEALTH NHS TRUST,35572413,"28,542.36"
+Department of Health,Homerton University Hospital NHS FT,9/30/2020,NonNHS Trade Pybls Curr,Balance Sheet,SUPPLY CHAIN COORDINATION,35584196,"53,340.13"
+Department of Health,Homerton University Hospital NHS FT,9/30/2020,NonNHS Trade Pybls Curr,Balance Sheet,"LIMITED
+SUPPLY CHAIN COORDINATION",35584320,"85,351.61"
+Department of Health,Homerton University Hospital NHS FT,9/30/2020,Services Received - NHSTs,Employee Health,"LIMITED
+OHWORKS LTD",35584336,"34,686.25"
+Department of Health,Homerton University Hospital NHS FT,9/30/2020,Electricity,"Management Service
+Homerton Energy",EDF ENERGY CUSTOMERS PLC,35601094,"41,712.45"
+Department of Health,Homerton University Hospital NHS FT,9/30/2020,AUC Additions,Balance Sheet,MAQUET LTD,35631263,"51,363.21"
+Department of Health,Homerton University Hospital NHS FT,9/30/2020,Stocks Raw Materials,Balance Sheet,ALLIANCE HEALTHCARE,35635172,"29,925.00"
+Department of Health,Homerton University Hospital NHS FT,9/30/2020,Hospitality,Unplanned Care,"DISTRIBUTION LTD
+LONDON BOROUGH OF",35637385,"32,467.29"
+Department of Health,Homerton University Hospital NHS FT,9/30/2020,AUC Additions,"Workstream (CCG Funded)
+Balance Sheet","HACKNEY
+CANON MEDICAL SYSTEMS LTD",35652733,"106,122.98"
+Department of Health,Homerton University Hospital NHS FT,9/30/2020,NonNHS Trade Pybls Curr,Balance Sheet,SUPPLY CHAIN COORDINATION,35666665,"55,255.07"
+Department of Health,Homerton University Hospital NHS FT,9/30/2020,NonNHS Trade Pybls Curr,Balance Sheet,"LIMITED
+SUPPLY CHAIN COORDINATION",35666691,"80,737.13"
+Department of Health,Homerton University Hospital NHS FT,9/30/2020,AUC Additions,Balance Sheet,"LIMITED
+B BRAUN MEDICAL LTD",35667114,"25,955.00"
+Department of Health,Homerton University Hospital NHS FT,9/30/2020,Vaccines,COVID-19,ISS MEDICLEAN LTD,35683464,"231,823.41"
+Department of Health,Homerton University Hospital NHS FT,9/30/2020,NonNHS Trade Pybls Curr,Balance Sheet,SUPPLY CHAIN COORDINATION,35696951,"65,905.21"
+Department of Health,Homerton University Hospital NHS FT,9/30/2020,Specialist Registrar,Reserves,"LIMITED
+ROYAL FREE LONDON NHS",35717260,"76,445.58"
+Department of Health,Homerton University Hospital NHS FT,9/30/2020,Specialist Registrar,Reserves,"FOUNDATION TRUST
+ROYAL FREE LONDON NHS",35717268,"86,890.34"
+Department of Health,Homerton University Hospital NHS FT,9/30/2020,Laboratory Test Kits,Chemical Pathology,"FOUNDATION TRUST
+ABBOTT LABORATORIES LTD",35723919,"92,697.95"
+Department of Health,Homerton University Hospital NHS FT,9/30/2020,Laboratory Test Kits,Chemical Pathology,ABBOTT LABORATORIES LTD,35723921,"81,420.94"
