@@ -1,0 +1,894 @@
+date,expensetype,expensearea,supplier,transactionnumber,amount,file,negative
+2020-04-01 00:00:00,IT Support and Maintenance,Finance,B-Plan Information Systems Ltd,762906,50773.0,NMID 01 - April.xlsx,1
+2020-04-01 00:00:00,Hire of Storage Facilities,Mortuary,Floyd & Son Ltd,764851,37800.0,NMID 01 - April.xlsx,1
+2020-04-03 00:00:00,Consultancy,Trust Headquarters,Linea Partners Ltd,772656,104940.0,NMID 01 - April.xlsx,1
+2020-04-09 00:00:00,Procurement Service,Procurement,Whittington Hosp Nhst,722975,34190.0,NMID 01 - April.xlsx,1
+2020-04-09 00:00:00,Medical Staff Recharge,Various Medical Specialties,Royal Free London Nhs Ft,754368,153692.0,NMID 01 - April.xlsx,1
+2020-04-09 00:00:00,Send Out Tests,Pathology,University College London Hospital Nhs Ft,754452,29141.0,NMID 01 - April.xlsx,1
+2020-04-09 00:00:00,Medical Staff Recharge,Various Medical Specialties,Royal Free London Nhs Ft,760475,154389.0,NMID 01 - April.xlsx,1
+2020-04-09 00:00:00,Medical Staff Recharge,Various Medical Specialties,Royal Free London Nhs Ft,760477,160190.0,NMID 01 - April.xlsx,1
+2020-04-09 00:00:00,Common Services Charge,Histopathology,Royal Free London Nhs Ft,761350,84500.0,NMID 01 - April.xlsx,1
+2020-04-09 00:00:00,Drugs,Pharmacy,Bayer Plc,761726,31464.0,NMID 01 - April.xlsx,1
+2020-04-09 00:00:00,Drugs,Pharmacy,Roche Products Ltd,761962,42868.0,NMID 01 - April.xlsx,1
+2020-04-09 00:00:00,Drugs,Pharmacy,Aah Pharmaceutical Ltd,761965,32349.0,NMID 01 - April.xlsx,1
+2020-04-09 00:00:00,Drugs,Pharmacy,Janssen-Cilag Ltd,762185,25464.0,NMID 01 - April.xlsx,1
+2020-04-09 00:00:00,Drugs,Pharmacy,Novartis Pharma Uk Ltd,762204,34312.0,NMID 01 - April.xlsx,1
+2020-04-09 00:00:00,Drugs,Pharmacy,Aah Pharmaceutical Ltd,762308,32349.0,NMID 01 - April.xlsx,1
+2020-04-09 00:00:00,Temporary Staff,Hospital Wide,Pulse Healthcare Ltd,762434,27452.0,NMID 01 - April.xlsx,1
+2020-04-09 00:00:00,Temporary Staff,Hospital Wide,Pulse Healthcare Ltd,762436,374328.0,NMID 01 - April.xlsx,1
+2020-04-09 00:00:00,Temporary Staff,Hospital Wide,Pulse Healthcare Ltd,762437,385941.0,NMID 01 - April.xlsx,1
+2020-04-09 00:00:00,Medical Equipment Purchase,Medical Equipment Management,Bard Ltd,762444,35708.0,NMID 01 - April.xlsx,1
+2020-04-09 00:00:00,Access Control Works,Estates & Facilities,Adt Fire & Security,762905,96535.0,NMID 01 - April.xlsx,1
+2020-04-09 00:00:00,Utilities,Estates & Facilities,Bynorth Ltd,762908,166229.0,NMID 01 - April.xlsx,1
+2020-04-09 00:00:00,Temporary Staff,Hospital Wide,Cromwell Medical Staffing,762914,56568.0,NMID 01 - April.xlsx,1
+2020-04-09 00:00:00,Consultancy,Trust Headquarters,Alamac Ltd,762940,38454.0,NMID 01 - April.xlsx,1
+2020-04-09 00:00:00,Drugs,Pharmacy,Bayer Plc,763204,36708.0,NMID 01 - April.xlsx,1
+2020-04-09 00:00:00,Drugs,Pharmacy,Janssen-Cilag Ltd,763207,36300.0,NMID 01 - April.xlsx,1
+2020-04-09 00:00:00,Drugs,Pharmacy,Aah Pharmaceutical Ltd,763291,32349.0,NMID 01 - April.xlsx,1
+2020-04-09 00:00:00,Medical Equipment Purchase,Medical Equipment Management,Fujifilm Sonosite Ltd,763345,77850.0,NMID 01 - April.xlsx,1
+2020-04-09 00:00:00,Refurbishment,Estates & Facilities,Buildnet Uk Ltd,763383,34519.0,NMID 01 - April.xlsx,1
+2020-04-09 00:00:00,Medical Equipment Purchase,Medical Equipment Management,Huntleigh Diagnostics Ltd,763460,60361.0,NMID 01 - April.xlsx,1
+2020-04-09 00:00:00,Domestic Services,Estates & Facilities,Tgc Facility Services Ltd,763490,54528.0,NMID 01 - April.xlsx,1
+2020-04-16 00:00:00,Insurance,Medical Director,NHS Resolution,765765,1648972.0,NMID 01 - April.xlsx,1
+2020-04-17 00:00:00,Student/Staff Rent,Accommodation,Origin Housing Group Ltd,762057,27542.0,NMID 01 - April.xlsx,1
+2020-04-17 00:00:00,Software Licences,Computer Services,Insight Direct (Uk) Ltd,763956,37860.0,NMID 01 - April.xlsx,1
+2020-04-17 00:00:00,Healthcare,Dermatology,Omnes Healthcare Ltd,764057,131847.0,NMID 01 - April.xlsx,1
+2020-04-17 00:00:00,Cycle Facilities,Estates & Facilities,Active Commuting Ltd,764058,57837.0,NMID 01 - April.xlsx,1
+2020-04-17 00:00:00,Healthcare,Dermatology,Omnes Healthcare Ltd,764060,61000.0,NMID 01 - April.xlsx,1
+2020-04-17 00:00:00,Membership Contribution,Trust Headquarters,UCL Partners,764073,50000.0,NMID 01 - April.xlsx,1
+2020-04-24 00:00:00,FM Contract Variations,Estates & Facilities,Medirest - Compass Group Uk & Ireland,761081,-33541.0,NMID 01 - April.xlsx,-1
+2020-04-24 00:00:00,IT Software Purchase,Computer Services,System C Healthcare Ltd,762446,173400.0,NMID 01 - April.xlsx,1
+2020-04-24 00:00:00,Utilities,Estates & Facilities,Bynorth Ltd,762910,159297.0,NMID 01 - April.xlsx,1
+2020-04-24 00:00:00,Hospice Contract,Palliative Care,North London Hospice,763333,160824.0,NMID 01 - April.xlsx,1
+2020-04-24 00:00:00,Temporary Staff,Hospital Wide,Pulse Healthcare Ltd,763533,385478.0,NMID 01 - April.xlsx,1
+2020-04-24 00:00:00,Hire of Storage Facilities,Mortuary,Floyd & Son Ltd,763965,120000.0,NMID 01 - April.xlsx,1
+2020-04-24 00:00:00,Miscellaneous Supplies,Hospital Wide,Nhs Supply Chain,764092,172585.0,NMID 01 - April.xlsx,1
+2020-04-24 00:00:00,Laundry Services,Estates & Facilities,Synergy Health Managed Services Ltd,764138,57361.0,NMID 01 - April.xlsx,1
+2020-04-24 00:00:00,Rates,Estates & Facilities,London Borough Of Enfield,764201,262808.0,NMID 01 - April.xlsx,1
+2020-04-24 00:00:00,Medical Equipment Purchase,Medical Equipment Management,Becton Dickinson Uk Ltd,764225,28350.0,NMID 01 - April.xlsx,1
+2020-04-24 00:00:00,Personal Protective Equipment,Hospital Wide,Matz Medical Ltd,764237,43200.0,NMID 01 - April.xlsx,1
+2020-04-24 00:00:00,Temporary Staff,Hospital Wide,Independent Clinical Services Ltd,764272,78710.0,NMID 01 - April.xlsx,1
+2020-04-24 00:00:00,Temporary Staff,Hospital Wide,Pulse Healthcare Ltd,764279,331868.0,NMID 01 - April.xlsx,1
+2020-04-24 00:00:00,Drugs,Pharmacy,Aah Pharmaceutical Ltd,764395,44100.0,NMID 01 - April.xlsx,1
+2020-04-24 00:00:00,Drugs,Pharmacy,Bayer Plc,764513,31464.0,NMID 01 - April.xlsx,1
+2020-04-24 00:00:00,Drugs,Pharmacy,Alliance Healthcare Distribution Ltd,764536,30510.0,NMID 01 - April.xlsx,1
+2020-04-24 00:00:00,Drugs,Pharmacy,Alliance Healthcare Distribution Ltd,764635,28347.0,NMID 01 - April.xlsx,1
+2020-04-24 00:00:00,Drugs,Pharmacy,Novartis Pharma Uk Ltd,764646,38465.0,NMID 01 - April.xlsx,1
+2020-04-24 00:00:00,Drugs,Pharmacy,Roche Products Ltd,764822,55511.0,NMID 01 - April.xlsx,1
+2020-04-24 00:00:00,Medical Equipment Hire,Urology,Karl Storz Endocopy (Uk) Ltd,764849,28749.0,NMID 01 - April.xlsx,1
+2020-04-24 00:00:00,Hire of Storage Facilities,Mortuary,Floyd & Son Ltd,764850,90000.0,NMID 01 - April.xlsx,1
+2020-04-24 00:00:00,Domestic Services,Estates & Facilities,Clean Event Services Ltd,764864,31988.0,NMID 01 - April.xlsx,1
+2020-04-24 00:00:00,Software Licences,Computer Services,Civica Uk Ltd,764867,53677.0,NMID 01 - April.xlsx,1
+2020-04-24 00:00:00,FM Contract Variations,Estates & Facilities,Medirest - Compass Group Uk & Ireland,764870,100076.0,NMID 01 - April.xlsx,1
+2020-04-24 00:00:00,PFI Unitary Payment,PFI Hospital,Bynorth Ltd,764900,1926202.0,NMID 01 - April.xlsx,1
+2020-04-24 00:00:00,Registration Fee,Trust Headquarters,Care Quality Commission,764915,219322.0,NMID 01 - April.xlsx,1
+2020-04-24 00:00:00,Domestic Services,Estates & Facilities,Tgc Facility Services Ltd,764916,102240.0,NMID 01 - April.xlsx,1
+2020-04-24 00:00:00,Medical Equipment Maintenance,Diagnostic Imaging,Agfa Healthcare  Uk Ltd,764933,26972.0,NMID 01 - April.xlsx,1
+2020-04-24 00:00:00,Temporary Staff,Hospital Wide,Pulse Healthcare Ltd,764945,473896.0,NMID 01 - April.xlsx,1
+2020-04-24 00:00:00,Hire of Mobile Facility,Oncology,Hope For Tomorrow,764947,35244.0,NMID 01 - April.xlsx,1
+2020-04-24 00:00:00,Hire of Mobile Facility,Oncology,Hope For Tomorrow,764950,34848.0,NMID 01 - April.xlsx,1
+2020-04-24 00:00:00,Temporary Staff,Hospital Wide,Cromwell Medical Staffing,765012,39177.0,NMID 01 - April.xlsx,1
+2020-04-24 00:00:00,Temporary Staff,Hospital Wide,Cromwell Medical Staffing,765019,32530.0,NMID 01 - April.xlsx,1
+2020-04-24 00:00:00,IT Support and Maintenance,Computer Services,Cis Oncology Ltd,765028,28097.0,NMID 01 - April.xlsx,1
+2020-04-24 00:00:00,Postage,Diabetic Eye Screening,Canon Uk Ltd,765049,27581.0,NMID 01 - April.xlsx,1
+2020-04-24 00:00:00,FM Contract,Estates & Facilities,Medirest - Compass Group Uk & Ireland,765110,658984.0,NMID 01 - April.xlsx,1
+2020-04-24 00:00:00,Catering Contract,Estates & Facilities,Medirest - Compass Group Uk & Ireland,765110,187945.0,NMID 01 - April.xlsx,1
+2020-05-01 00:00:00,IT Infrastructure Maintenance,Computer Services,Redcentric Solutions Limited,762050,106636.0,NMID 02 - May.xlsx,1
+2020-05-01 00:00:00,Facilities Management,Pathology,Health Services Laboratories Fm,764209,25072.0,NMID 02 - May.xlsx,1
+2020-05-01 00:00:00,Facilities Management,Pathology,Health Services Laboratories Fm,764894,601355.0,NMID 02 - May.xlsx,1
+2020-05-01 00:00:00,IT Support and Maintenance,Computer Services,Softcat Plc,764986,51351.0,NMID 02 - May.xlsx,1
+2020-05-01 00:00:00,Miscellaneous Supplies,Hospital Wide,Nhs Supply Chain,765119,145630.0,NMID 02 - May.xlsx,1
+2020-05-01 00:00:00,Drugs,Pharmacy,Aah Pharmaceutical Ltd,765482,32349.0,NMID 02 - May.xlsx,1
+2020-05-01 00:00:00,Drugs,Pharmacy,Roche Products Ltd,765485,39239.0,NMID 02 - May.xlsx,1
+2020-05-01 00:00:00,IT Support and Maintenance,Computer Services,The Icc Group,765714,26675.0,NMID 02 - May.xlsx,1
+2020-05-01 00:00:00,IT Support and Maintenance,Computer Services,The Icc Group,765715,26547.0,NMID 02 - May.xlsx,1
+2020-05-01 00:00:00,IT Support and Maintenance,Computer Services,The Icc Group,765716,29087.0,NMID 02 - May.xlsx,1
+2020-05-01 00:00:00,Interpreting Service,Linkworkers,The Bigword Interpreting Service Limited,765742,34531.0,NMID 02 - May.xlsx,1
+2020-05-01 00:00:00,Medical Equipment Maintenance,Cardiology,Abbott Medical Uk Ltd,765753,49201.0,NMID 02 - May.xlsx,1
+2020-05-01 00:00:00,Temporary Staff,Hospital Wide,Pulse Healthcare Ltd,765809,466869.0,NMID 02 - May.xlsx,1
+2020-05-01 00:00:00,IT Support and Maintenance,Computer Services,Qliktech Uk Ltd,765847,45824.0,NMID 02 - May.xlsx,1
+2020-05-01 00:00:00,Refurbishment,Estates & Facilities,Phc Flooring Ltd,765848,30000.0,NMID 02 - May.xlsx,1
+2020-05-07 00:00:00,Scanning Facilities,Diagnostic Imaging,Canon Medical Systems Ltd,760657,-16857.0,NMID 02 - May.xlsx,-1
+2020-05-07 00:00:00,Medical Staff Recharge,Oncology,Princess Alexandra Hosp Nhst,762378,30820.0,NMID 02 - May.xlsx,1
+2020-05-07 00:00:00,Pathology Service,Pathology,Health Services Laboratories-Analytics,764892,450550.0,NMID 02 - May.xlsx,1
+2020-05-07 00:00:00,Rates,Estates & Facilities,London Borough Of Enfield,765862,262808.0,NMID 02 - May.xlsx,1
+2020-05-07 00:00:00,Drugs,Pharmacy,Janssen-Cilag Ltd,765947,28159.0,NMID 02 - May.xlsx,1
+2020-05-07 00:00:00,Engineering Works,Estates & Facilities,Bynorth Ltd,766185,26417.0,NMID 02 - May.xlsx,1
+2020-05-07 00:00:00,Temporary Staff,Hospital Wide,Swiis Uk Ltd,766190,31205.0,NMID 02 - May.xlsx,1
+2020-05-07 00:00:00,Temporary Staff,Hospital Wide,Independent Clinical Services Ltd,766192,74352.0,NMID 02 - May.xlsx,1
+2020-05-07 00:00:00,Engineering Works,Estates & Facilities,Bynorth Ltd,766206,26038.0,NMID 02 - May.xlsx,1
+2020-05-07 00:00:00,Consultancy,Trust Headquarters,Alamac Ltd,766230,38193.0,NMID 02 - May.xlsx,1
+2020-05-07 00:00:00,IT Support and Maintenance,Computer Services,Ascribe Limited,766315,48140.0,NMID 02 - May.xlsx,1
+2020-05-07 00:00:00,Scanning Facilities,Diagnostic Imaging,Canon Medical Systems Ltd,766332,52257.0,NMID 02 - May.xlsx,1
+2020-05-07 00:00:00,Medical Equipment Purchase,Medical Equipment Management,Terumo Bct Europe N.V.,766368,60552.0,NMID 02 - May.xlsx,1
+2020-05-07 00:00:00,Domestic Services,Estates & Facilities,Tgc Facility Services Ltd,766399,34899.0,NMID 02 - May.xlsx,1
+2020-05-15 00:00:00,Miscellaneous Supplies,Hospital Wide,Nhs Supply Chain,765116,91101.0,NMID 02 - May.xlsx,1
+2020-05-15 00:00:00,Miscellaneous Supplies,Hospital Wide,Nhs Supply Chain,765117,28096.0,NMID 02 - May.xlsx,1
+2020-05-15 00:00:00,Miscellaneous Supplies,Hospital Wide,Nhs Supply Chain,765118,68833.0,NMID 02 - May.xlsx,1
+2020-05-15 00:00:00,Miscellaneous Supplies,Hospital Wide,Nhs Supply Chain,766305,76814.0,NMID 02 - May.xlsx,1
+2020-05-15 00:00:00,Miscellaneous Supplies,Hospital Wide,Nhs Supply Chain,766330,74616.0,NMID 02 - May.xlsx,1
+2020-05-15 00:00:00,Temporary Staff,Hospital Wide,Pulse Healthcare Ltd,766853,374954.0,NMID 02 - May.xlsx,1
+2020-05-15 00:00:00,Send Out Tests,Diagnostic Imaging,Radiology Reporting Online Llp,766898,66581.0,NMID 02 - May.xlsx,1
+2020-05-15 00:00:00,Sterile Services,Endoscopy,Guys & St Thomas Nhs Foundation Trust,766978,48935.0,NMID 02 - May.xlsx,1
+2020-05-15 00:00:00,Sterile Services,Endoscopy,Guys & St Thomas Nhs Foundation Trust,766979,47967.0,NMID 02 - May.xlsx,1
+2020-05-15 00:00:00,Sterile Services,Endoscopy,Guys & St Thomas Nhs Foundation Trust,766981,47988.0,NMID 02 - May.xlsx,1
+2020-05-15 00:00:00,Domestic Services,Estates & Facilities,Tgc Facility Services Ltd,766983,65263.0,NMID 02 - May.xlsx,1
+2020-05-15 00:00:00,Insurance,Medical Director,NHS Resolution,767363,1648972.0,NMID 02 - May.xlsx,1
+2020-05-21 00:00:00,IT Support and Maintenance,Computer Services,Pcti Solutions Ltd,768127,30100.0,NMID 02 - May.xlsx,1
+2020-05-22 00:00:00,Blood & Blood Products,Pathology,Nhs Blood & Transplant,760748,-20560.0,NMID 02 - May.xlsx,-1
+2020-05-22 00:00:00,Refurbishment,Estates & Facilities,Buildnet Uk Ltd,765578,58474.0,NMID 02 - May.xlsx,1
+2020-05-22 00:00:00,Medical Equipment Maintenance,Medical Equipment Management,Nhs Supply Chain (Maintenance),765690,-1021.0,NMID 02 - May.xlsx,-1
+2020-05-22 00:00:00,Utilities,Estates & Facilities,Bynorth Ltd,766202,158563.0,NMID 02 - May.xlsx,1
+2020-05-22 00:00:00,Temporary Staff,Hospital Wide,Independent Clinical Services Ltd,766360,37541.0,NMID 02 - May.xlsx,1
+2020-05-22 00:00:00,Temporary Staff,Hospital Wide,Swiis Uk Ltd,766361,39346.0,NMID 02 - May.xlsx,1
+2020-05-22 00:00:00,Refurbishment,Estates & Facilities,Phc Flooring Ltd,766984,39707.0,NMID 02 - May.xlsx,1
+2020-05-22 00:00:00,Miscellaneous Supplies,Hospital Wide,Nhs Supply Chain,767275,48646.0,NMID 02 - May.xlsx,1
+2020-05-22 00:00:00,Blood & Blood Products,Pathology,Nhs Blood & Transplant,767283,-11240.0,NMID 02 - May.xlsx,-1
+2020-05-22 00:00:00,Blood & Blood Products,Pathology,Nhs Blood & Transplant,767324,122710.0,NMID 02 - May.xlsx,1
+2020-05-22 00:00:00,Medical Equipment Maintenance,Medical Equipment Management,Nhs Supply Chain (Maintenance),767491,35943.0,NMID 02 - May.xlsx,1
+2020-05-22 00:00:00,Temporary Staff,Hospital Wide,Pulse Healthcare Ltd,767521,315708.0,NMID 02 - May.xlsx,1
+2020-05-22 00:00:00,Temporary Staff,Hospital Wide,Pulse Healthcare Ltd,767522,341543.0,NMID 02 - May.xlsx,1
+2020-05-22 00:00:00,Scanning Facilities,Diagnostic Imaging,Canon Medical Systems Ltd,767524,48886.0,NMID 02 - May.xlsx,1
+2020-05-22 00:00:00,Personal Protective Equipment,Hospital Wide,Matz Medical Ltd,767554,144000.0,NMID 02 - May.xlsx,1
+2020-05-22 00:00:00,IT Software Purchase,Computer Services,System C Healthcare Ltd,767578,48830.0,NMID 02 - May.xlsx,1
+2020-05-27 00:00:00,Pathology Service,Pathology,Health Services Laboratories-Analytics,766778,450550.0,NMID 02 - May.xlsx,1
+2020-05-27 00:00:00,Facilities Management,Pathology,Health Services Laboratories Fm,766779,601355.0,NMID 02 - May.xlsx,1
+2020-05-27 00:00:00,PFI Unitary Payment,PFI Hospital,Bynorth Ltd,767549,1994010.0,NMID 02 - May.xlsx,1
+2020-05-29 00:00:00,Drugs,Pharmacy,Aah Pharmaceutical Ltd,767950,80872.0,NMID 02 - May.xlsx,1
+2020-05-29 00:00:00,Drugs,Pharmacy,Roche Products Ltd,767954,65088.0,NMID 02 - May.xlsx,1
+2020-05-29 00:00:00,IT Support and Maintenance,Computer Services,System C Healthcare Ltd,767968,41256.0,NMID 02 - May.xlsx,1
+2020-05-29 00:00:00,IT Support and Maintenance,Computer Services,System C Healthcare Ltd,767969,26675.0,NMID 02 - May.xlsx,1
+2020-05-29 00:00:00,IT Support and Maintenance,Computer Services,System C Healthcare Ltd,767970,56704.0,NMID 02 - May.xlsx,1
+2020-05-29 00:00:00,IT Support and Maintenance,Computer Services,System C Healthcare Ltd,767971,56704.0,NMID 02 - May.xlsx,1
+2020-05-29 00:00:00,IT Support and Maintenance,Computer Services,System C Healthcare Ltd,767972,30000.0,NMID 02 - May.xlsx,1
+2020-05-29 00:00:00,IT Support and Maintenance,Computer Services,System C Healthcare Ltd,767973,30000.0,NMID 02 - May.xlsx,1
+2020-05-29 00:00:00,Software Upgrade,Computer Services,Bridgehead Software Ltd,768015,69646.0,NMID 02 - May.xlsx,1
+2020-05-29 00:00:00,IT Managed Service,Computer Services,System C Healthcare Ltd,768055,385629.0,NMID 02 - May.xlsx,1
+2020-05-29 00:00:00,Consultancy,Trust Headquarters,Alamac Ltd,768070,35827.0,NMID 02 - May.xlsx,1
+2020-05-29 00:00:00,Utilities,Estates & Facilities,Bynorth Ltd,768073,164151.0,NMID 02 - May.xlsx,1
+2020-05-29 00:00:00,Domestic Services,Estates & Facilities,Tgc Facility Services Ltd,768126,188505.0,NMID 02 - May.xlsx,1
+2020-05-29 00:00:00,Patient Transport,Estates & Facilities,Dhl Supply Chain - Uk&I,768135,140149.0,NMID 02 - May.xlsx,1
+2020-05-29 00:00:00,IT Hardware Purchases,Computer Services,Dell Computer Corporation Ltd,768146,52920.0,NMID 02 - May.xlsx,1
+2020-05-29 00:00:00,IT Hardware Purchases,Computer Services,Dell Computer Corporation Ltd,768147,26460.0,NMID 02 - May.xlsx,1
+2020-06-05 00:00:00,Patient Transport,Estates & Facilities,Dhl Supply Chain - Uk&I,768137,-2549.0,NMID 03 - June.xlsx,-1
+2020-06-05 00:00:00,Personal Protective Equipment,Site Wide,Matz Medical Ltd,768245,144000.0,NMID 03 - June.xlsx,1
+2020-06-05 00:00:00,Drugs,Pharmacy,Roche Products Ltd,768506,32544.0,NMID 03 - June.xlsx,1
+2020-06-05 00:00:00,Drugs,Pharmacy,Aah Pharmaceutical Ltd,768508,64698.0,NMID 03 - June.xlsx,1
+2020-06-05 00:00:00,Rates,Estates & Facilities,London Borough Of Enfield,768512,262808.0,NMID 03 - June.xlsx,1
+2020-06-05 00:00:00,Temporary Staff,Hospital Wide,Pulse Healthcare Ltd,768558,309056.0,NMID 03 - June.xlsx,1
+2020-06-05 00:00:00,Temporary Staff,Hospital Wide,Pulse Healthcare Ltd,768561,288798.0,NMID 03 - June.xlsx,1
+2020-06-05 00:00:00,Patient Transport,Estates & Facilities,Dhl Supply Chain - Uk&I,768593,163392.0,NMID 03 - June.xlsx,1
+2020-06-05 00:00:00,Record Storage,Health Records,Crown Records Management Ltd,768681,28589.0,NMID 03 - June.xlsx,1
+2020-06-05 00:00:00,Laundry Services,Estates & Facilities,Synergy Health Managed Services Ltd,768698,50478.0,NMID 03 - June.xlsx,1
+2020-06-05 00:00:00,Laundry Services,Estates & Facilities,Synergy Health Managed Services Ltd,768699,41614.0,NMID 03 - June.xlsx,1
+2020-06-05 00:00:00,FM Contract,Estates & Facilities,Medirest - Compass Group Uk & Ireland,768711,658984.0,NMID 03 - June.xlsx,1
+2020-06-05 00:00:00,FM Contract,Estates & Facilities,Medirest - Compass Group Uk & Ireland,768711,187945.0,NMID 03 - June.xlsx,1
+2020-06-05 00:00:00,Catering Contract,Estates & Facilities,Medirest - Compass Group Uk & Ireland,768713,658984.0,NMID 03 - June.xlsx,1
+2020-06-05 00:00:00,Catering Contract,Estates & Facilities,Medirest - Compass Group Uk & Ireland,768713,187945.0,NMID 03 - June.xlsx,1
+2020-06-05 00:00:00,Patient Transport,Estates & Facilities,Falck Uk Ambulance Service Limited,768716,152735.0,NMID 03 - June.xlsx,1
+2020-06-05 00:00:00,Send Out Tests,Diagnostic Imaging,Radiology Reporting Online Llp,768773,31842.0,NMID 03 - June.xlsx,1
+2020-06-05 00:00:00,Software Upgrade,Computer Services,Civica Uk Ltd,768813,34125.0,NMID 03 - June.xlsx,1
+2020-06-05 00:00:00,Medical Equipment Purchase,Medical Equipment Management,Baxter Healthcare Ltd,768817,36000.0,NMID 03 - June.xlsx,1
+2020-06-12 00:00:00,Miscellaneous Supplies,Hospital Wide,Nhs Supply Chain,768931,51919.0,NMID 03 - June.xlsx,1
+2020-06-12 00:00:00,Miscellaneous Supplies,Hospital Wide,Nhs Supply Chain,768932,42385.0,NMID 03 - June.xlsx,1
+2020-06-12 00:00:00,Miscellaneous Supplies,Hospital Wide,Nhs Supply Chain,768933,41938.0,NMID 03 - June.xlsx,1
+2020-06-12 00:00:00,Internal Audit,Finance,Kpmg Llp,769315,28704.0,NMID 03 - June.xlsx,1
+2020-06-12 00:00:00,IT Support and Maintenance,Computer Services,Healthnet Connections Ltd,769348,28311.0,NMID 03 - June.xlsx,1
+2020-06-12 00:00:00,IT Hardware Purchases,Computer Services,Dell Computer Corporation Ltd,769365,56880.0,NMID 03 - June.xlsx,1
+2020-06-12 00:00:00,Refurbishment,Estates & Facilities,Sw Bruce & Co Ltd,769514,75163.0,NMID 03 - June.xlsx,1
+2020-06-15 00:00:00,Insurance,Medical Director,NHS Resolution,770451,1648972.0,NMID 03 - June.xlsx,1
+2020-06-19 00:00:00,Medical Staff Recharge,Various Medical Specialties,Royal Free London Nhs Ft,728612,126486.0,NMID 03 - June.xlsx,1
+2020-06-19 00:00:00,Common Services Charges,St Annes Hospital,Barnet Enf & Har Mental Hlth NHS Trust,738145,83333.0,NMID 03 - June.xlsx,1
+2020-06-19 00:00:00,Common Services Charges,St Annes Hospital,Barnet Enf & Har Mental Hlth NHS Trust,749756,41666.0,NMID 03 - June.xlsx,1
+2020-06-19 00:00:00,Nuclear Medicine Scans,Diagnostic Imaging,University College London Hospital Nhs Ft,762389,201802.0,NMID 03 - June.xlsx,1
+2020-06-19 00:00:00,Nuclear Medicine Scans,Diagnostic Imaging,University College London Hospital Nhs Ft,762390,131658.0,NMID 03 - June.xlsx,1
+2020-06-19 00:00:00,Radiation Protection Service,Nuclear Medicine,Royal Free London Nhs Ft,763500,36640.0,NMID 03 - June.xlsx,1
+2020-06-19 00:00:00,Blood & Blood Products,Pathology,Nhs Blood & Transplant,767553,-11004.0,NMID 03 - June.xlsx,-1
+2020-06-19 00:00:00,Miscellaneous Supplies,Hospital Wide,Nhs Supply Chain,769173,63063.0,NMID 03 - June.xlsx,1
+2020-06-19 00:00:00,Miscellaneous Supplies,Hospital Wide,Nhs Supply Chain,769347,190409.0,NMID 03 - June.xlsx,1
+2020-06-19 00:00:00,Sterile Services,Endoscopy,Guys & St Thomas Nhs Foundation Trust,769892,41321.0,NMID 03 - June.xlsx,1
+2020-06-19 00:00:00,Temporary Staff,Hospital Wide,Pulse Healthcare Ltd,769897,329965.0,NMID 03 - June.xlsx,1
+2020-06-19 00:00:00,Miscellaneous Supplies,Hospital Wide,Nhs Supply Chain,769910,58513.0,NMID 03 - June.xlsx,1
+2020-06-19 00:00:00,Blood & Blood Products,Pathology,Nhs Blood & Transplant,769915,122710.0,NMID 03 - June.xlsx,1
+2020-06-19 00:00:00,Blood & Blood Products,Pathology,Nhs Blood & Transplant,769921,122710.0,NMID 03 - June.xlsx,1
+2020-06-19 00:00:00,Printing and Copying,Hospital Wide,Canon Uk Ltd,769966,97607.0,NMID 03 - June.xlsx,1
+2020-06-19 00:00:00,Temporary Staff,Hospital Wide,Pulse Healthcare Ltd,769971,272882.0,NMID 03 - June.xlsx,1
+2020-06-19 00:00:00,Consultancy,Trust Headquarters,Deloitte Llp,769974,54721.0,NMID 03 - June.xlsx,1
+2020-06-19 00:00:00,IT Managed Service,Computer Services,Sectra Ltd,769975,180313.0,NMID 03 - June.xlsx,1
+2020-06-19 00:00:00,Personal Protective Equipment,Site Wide,Chemical Solution Supplies Ltd,770057,61200.0,NMID 03 - June.xlsx,1
+2020-06-19 00:00:00,Sterile Services,Endoscopy,Guys & St Thomas Nhs Foundation Trust,770124,26638.0,NMID 03 - June.xlsx,1
+2020-06-26 00:00:00,Facilities Management,Pathology,Health Services Laboratories Fm,767387,155967.0,NMID 03 - June.xlsx,1
+2020-06-26 00:00:00,Pathology Service,Pathology,Health Services Laboratories-Analytics,767390,195633.0,NMID 03 - June.xlsx,1
+2020-06-26 00:00:00,Facilities Management,Pathology,Health Services Laboratories Fm,768517,601355.0,NMID 03 - June.xlsx,1
+2020-06-26 00:00:00,Pathology Service,Pathology,Health Services Laboratories-Analytics,768518,450550.0,NMID 03 - June.xlsx,1
+2020-06-26 00:00:00,Patient Transport,Estates & Facilities,Dhl Supply Chain - Uk&I,768592,-1945.0,NMID 03 - June.xlsx,-1
+2020-06-26 00:00:00,Common Services Charge,Histopathology,Royal Free London Nhs Ft,770125,84500.0,NMID 03 - June.xlsx,1
+2020-06-26 00:00:00,IT Support and Maintenance,Telecom Support,Netcall Technology Limited,770187,51130.0,NMID 03 - June.xlsx,1
+2020-06-26 00:00:00,PFI Unitary Payment,PFI Hospital,Bynorth Ltd,770198,1921440.0,NMID 03 - June.xlsx,1
+2020-06-26 00:00:00,Drugs,Pharmacy,Roche Products Ltd,770384,34941.0,NMID 03 - June.xlsx,1
+2020-06-26 00:00:00,Healthcare,Dermatology,Omnes Healthcare Ltd,770396,175379.0,NMID 03 - June.xlsx,1
+2020-06-26 00:00:00,Refurbishment,Estates & Facilities,Buildnet Uk Ltd,770407,36000.0,NMID 03 - June.xlsx,1
+2020-06-26 00:00:00,Utilities,Estates & Facilities,Bynorth Ltd,770418,171792.0,NMID 03 - June.xlsx,1
+2020-06-26 00:00:00,Healthcare,Dermatology,Omnes Healthcare Ltd,770606,175379.0,NMID 03 - June.xlsx,1
+2020-06-26 00:00:00,Healthcare,Dermatology,Omnes Healthcare Ltd,770608,89818.0,NMID 03 - June.xlsx,1
+2020-06-26 00:00:00,Healthcare,Dermatology,Omnes Healthcare Ltd,770609,30500.0,NMID 03 - June.xlsx,1
+2020-06-26 00:00:00,Healthcare,Dermatology,Omnes Healthcare Ltd,770610,44555.0,NMID 03 - June.xlsx,1
+2020-06-26 00:00:00,Healthcare,Dermatology,Omnes Healthcare Ltd,770611,175379.0,NMID 03 - June.xlsx,1
+2020-06-26 00:00:00,Scanning Facilities,Diagnostic Imaging,Canon Medical Systems Ltd,770634,52257.0,NMID 03 - June.xlsx,1
+2020-06-26 00:00:00,FM Contract Variations,Estates & Facilities,Medirest - Compass Group Uk & Ireland,770646,110185.0,NMID 03 - June.xlsx,1
+2020-06-26 00:00:00,FM Contract Variations,Estates & Facilities,Medirest - Compass Group Uk & Ireland,770647,125919.0,NMID 03 - June.xlsx,1
+2020-06-26 00:00:00,FM Contract Variations,Estates & Facilities,Medirest - Compass Group Uk & Ireland,770648,98923.0,NMID 03 - June.xlsx,1
+2020-06-26 00:00:00,Temporary Staff,Hospital Wide,Pulse Healthcare Ltd,770667,315073.0,NMID 03 - June.xlsx,1
+2020-06-26 00:00:00,Facilities Management,Pathology,Health Services Laboratories Fm,770699,-5852.0,NMID 03 - June.xlsx,-1
+2020-06-26 00:00:00,Facilities Management,Pathology,Health Services Laboratories Fm,770700,22940.0,NMID 03 - June.xlsx,1
+2020-06-26 00:00:00,Pathology Service,Pathology,Health Services Laboratories-Analytics,770702,-9391.0,NMID 03 - June.xlsx,-1
+2020-06-26 00:00:00,Pathology Service,Pathology,Health Services Laboratories-Analytics,770703,-24615.0,NMID 03 - June.xlsx,-1
+2020-06-26 00:00:00,Pathology Service,Pathology,Health Services Laboratories-Analytics,770704,-10982.0,NMID 03 - June.xlsx,-1
+2020-06-26 00:00:00,Pathology Service,Pathology,Health Services Laboratories-Analytics,770705,-22447.0,NMID 03 - June.xlsx,-1
+2020-06-26 00:00:00,Medical Equipment Maintenance,Medical Equipment Management,Nhs Supply Chain (Maintenance),770711,366771.0,NMID 03 - June.xlsx,1
+2020-06-26 00:00:00,Patient Transport,Estates & Facilities,Dhl Supply Chain - Uk&I,770721,163392.0,NMID 03 - June.xlsx,1
+2020-07-10 00:00:00,Drugs,Pharmacy,Aah Pharmaceutical Ltd,771605,48523.0,NMID 04 - July.xlsx,1
+2020-07-31 00:00:00,Drugs,Pharmacy,Aah Pharmaceutical Ltd,773140,34480.0,NMID 04 - July.xlsx,1
+2020-07-03 00:00:00,Medical Equipment Purchase,Diagnostic Imaging,Agfa Healthcare  Uk Ltd,771026,119940.0,NMID 04 - July.xlsx,1
+2020-07-31 00:00:00,Consultancy,Trust Office,Alamac Ltd,773197,36654.0,NMID 04 - July.xlsx,1
+2020-07-29 00:00:00,PFI Unitary Payment,PFI Hospital,Bynorth Ltd,772629,1993092.0,NMID 04 - July.xlsx,1
+2020-07-31 00:00:00,Utilities,Estates & Facilities,Bynorth Ltd,773440,121479.0,NMID 04 - July.xlsx,1
+2020-07-10 00:00:00,Software Licences,Computer Services,Civica Uk Ltd (Putney),771740,116947.0,NMID 04 - July.xlsx,1
+2020-07-17 00:00:00,Medical Equipment Maintenance,Medical Equipment Management,Conmed Linvatec Uk Service Centre,772300,49877.0,NMID 04 - July.xlsx,1
+2020-07-31 00:00:00,Record Storage,Health Records,Crown Records Management Ltd,773383,25871.0,NMID 04 - July.xlsx,1
+2020-07-17 00:00:00,Communications,Trust Office,Freshwater Uk Regions Ltd,772177,30165.0,NMID 04 - July.xlsx,1
+2020-07-10 00:00:00,Medical Equipment Purchase,Medical Equipment Management,Ge Med Sys Ltd,771763,434706.0,NMID 04 - July.xlsx,1
+2020-07-10 00:00:00,Medical Equipment Purchase,Medical Equipment Management,Ge Med Sys Ltd,771680,179109.0,NMID 04 - July.xlsx,1
+2020-07-17 00:00:00,Medical Equipment Purchase,Medical Equipment Management,Ge Med Sys Ltd,772290,156308.0,NMID 04 - July.xlsx,1
+2020-07-10 00:00:00,Medical Equipment Purchase,Medical Equipment Management,Ge Med Sys Ltd,771682,97458.0,NMID 04 - July.xlsx,1
+2020-07-10 00:00:00,Medical Equipment Purchase,Medical Equipment Management,Ge Med Sys Ltd,771766,32438.0,NMID 04 - July.xlsx,1
+2020-07-03 00:00:00,Rent,Estates & Facilities,Gla Land & Property,771233,62500.0,NMID 04 - July.xlsx,1
+2020-07-31 00:00:00,Sterile Services,Endoscopy,Guys & St Thomas Nhs Foundation Trust,773212,52661.0,NMID 04 - July.xlsx,1
+2020-07-31 00:00:00,Sterile Services,Endoscopy,Guys & St Thomas Nhs Foundation Trust,773465,31611.0,NMID 04 - July.xlsx,1
+2020-07-29 00:00:00,Facilities Management,Pathology,Health Service Laboratories Fm,771037,601355.0,NMID 04 - July.xlsx,1
+2020-07-29 00:00:00,Pathology Service,Pathology,Health Service Laboratories-Analytics,771036,450550.0,NMID 04 - July.xlsx,1
+2020-07-17 00:00:00,Hire of Mattresses,Medical Equipment Management,Hill-Rom Ltd,772275,40882.0,NMID 04 - July.xlsx,1
+2020-07-31 00:00:00,Management Consultancy,Trust Office,Linea Partners Ltd,773234,49368.0,NMID 04 - July.xlsx,1
+2020-07-10 00:00:00,Management Consultancy,Trust Office,Linea Partners Ltd,771814,44880.0,NMID 04 - July.xlsx,1
+2020-07-10 00:00:00,Management Consultancy,Trust Office,Linea Partners Ltd,771815,42636.0,NMID 04 - July.xlsx,1
+2020-07-10 00:00:00,Rates,Estates & Facilities,London Borough Of Enfield,771049,262808.0,NMID 04 - July.xlsx,1
+2020-07-10 00:00:00,Personal Protective Equipment,Hospital Wide,Matz Medical Ltd,771788,144000.0,NMID 04 - July.xlsx,1
+2020-07-31 00:00:00,Blood & Blood Products,Pathology,Nhs Blood & Transplant,773321,122710.0,NMID 04 - July.xlsx,1
+2020-07-31 00:00:00,Blood & Blood Products,Pathology,Nhs Blood & Transplant,773325,122710.0,NMID 04 - July.xlsx,1
+2020-07-24 00:00:00,Miscellaneous Supplies,Hospital Wide,Nhs Supply Chain,772708,74411.0,NMID 04 - July.xlsx,1
+2020-07-03 00:00:00,Miscellaneous Supplies,Hospital Wide,Nhs Supply Chain,770199,71380.0,NMID 04 - July.xlsx,1
+2020-07-24 00:00:00,Miscellaneous Supplies,Hospital Wide,Nhs Supply Chain,772634,71154.0,NMID 04 - July.xlsx,1
+2020-07-24 00:00:00,Miscellaneous Supplies,Hospital Wide,Nhs Supply Chain,772709,66130.0,NMID 04 - July.xlsx,1
+2020-07-24 00:00:00,Miscellaneous Supplies,Hospital Wide,Nhs Supply Chain,772707,37230.0,NMID 04 - July.xlsx,1
+2020-07-31 00:00:00,Medical Equipment Maintenance,Medical Equipment Management,Nhs Supply Chain (Maintenance),773467,223603.0,NMID 04 - July.xlsx,1
+2020-07-31 00:00:00,Medical Equipment Maintenance,Medical Equipment Management,Nhs Supply Chain (Maintenance),773216,121915.0,NMID 04 - July.xlsx,1
+2020-07-24 00:00:00,Medical Equipment Maintenance,Medical Equipment Management,Nhs Supply Chain (Maintenance),772615,29936.0,NMID 04 - July.xlsx,1
+2020-07-10 00:00:00,Hospice Contract,Palliative Care,North London Hospice,771232,169486.0,NMID 04 - July.xlsx,1
+2020-07-24 00:00:00,Healthcare,Dermatology,Omnes Healthcare Ltd,772822,175379.0,NMID 04 - July.xlsx,1
+2020-07-03 00:00:00,Refurbishment,Estates & Facilities,PHC FLOORING LTD,771147,42000.0,NMID 04 - July.xlsx,1
+2020-07-24 00:00:00,Temporary Staff,Hospital Wide,Pulse Healthcare Ltd,772767,349494.0,NMID 04 - July.xlsx,1
+2020-07-10 00:00:00,Temporary Staff,Hospital Wide,Pulse Healthcare Ltd,771744,347409.0,NMID 04 - July.xlsx,1
+2020-07-17 00:00:00,Temporary Staff,Hospital Wide,Pulse Healthcare Ltd,772231,340582.0,NMID 04 - July.xlsx,1
+2020-07-24 00:00:00,Temporary Staff,Hospital Wide,Pulse Healthcare Ltd,772691,322049.0,NMID 04 - July.xlsx,1
+2020-07-29 00:00:00,Temporary Staff,Hospital Wide,Pulse Healthcare Ltd,766726,32282.0,NMID 04 - July.xlsx,1
+2020-07-29 00:00:00,Temporary Staff,Hospital Wide,Pulse Healthcare Ltd,771622,31106.0,NMID 04 - July.xlsx,1
+2020-07-10 00:00:00,Temporary Staff,Hospital Wide,Pulse Healthcare Ltd,770728,-37760.0,NMID 04 - July.xlsx,-1
+2020-07-10 00:00:00,Send Out Tests,Diagnostic Imaging,Radiology Reporting Online Llp,771792,47941.0,NMID 04 - July.xlsx,1
+2020-07-10 00:00:00,Drugs,Pharmacy,Roche Products Ltd,771606,49769.0,NMID 04 - July.xlsx,1
+2020-07-24 00:00:00,Medical Staff Recharge,Various Medical Specialties,Royal Free London Nhs Ft,766944,169264.0,NMID 04 - July.xlsx,1
+2020-07-31 00:00:00,Medical Staff Recharge,Various Medical Specialties,Royal Free London Nhs Ft,768523,167570.0,NMID 04 - July.xlsx,1
+2020-07-03 00:00:00,Common Services Charge,Histopathology,Royal Free London Nhs Ft,770126,84500.0,NMID 04 - July.xlsx,1
+2020-07-17 00:00:00,Common Services Charge,Histopathology,Royal Free London Nhs Ft,770127,84500.0,NMID 04 - July.xlsx,1
+2020-07-31 00:00:00,Medical Equipment Lease,Urology,Shawbrook Bank Ltd,773351,42385.0,NMID 04 - July.xlsx,1
+2020-07-31 00:00:00,IT Support and Maintenance,Human Resources,Softcat Plc,773463,125340.0,NMID 04 - July.xlsx,1
+2020-07-31 00:00:00,IT Support and Maintenance,Computer Services,Softcat Plc,773195,51351.0,NMID 04 - July.xlsx,1
+2020-07-17 00:00:00,Laundry Services,Estates & Facilities,Synergy Health Managed Services Ltd,772143,48647.0,NMID 04 - July.xlsx,1
+2020-07-17 00:00:00,Domestic Services,Estates & Facilities,Tgc Facility Services Ltd,772139,162785.0,NMID 04 - July.xlsx,1
+2020-07-31 00:00:00,Domestic Services,Estates & Facilities,Tgc Facility Services Ltd,773376,150804.0,NMID 04 - July.xlsx,1
+2020-07-17 00:00:00,Domestic Services,Estates & Facilities,Tgc Facility Services Ltd,772142,47911.0,NMID 04 - July.xlsx,1
+2020-07-17 00:00:00,Domestic Services,Estates & Facilities,Tgc Facility Services Ltd,772137,38329.0,NMID 04 - July.xlsx,1
+2020-07-31 00:00:00,Domestic Services,Estates & Facilities,Tgc Facility Services Ltd,773377,38329.0,NMID 04 - July.xlsx,1
+2020-07-31 00:00:00,Assessment,Human Resources,Thomas International Uk Ltd,773202,28800.0,NMID 04 - July.xlsx,1
+2020-07-10 00:00:00,Send Out Tests,Diagnostic Imaging,Tic Health Ltd,771675,48000.0,NMID 04 - July.xlsx,1
+2020-07-24 00:00:00,Nuclear Medicine Scans,Diagnostic Imaging,University College London Hospital Nhs Ft,770592,34230.0,NMID 04 - July.xlsx,1
+2020-07-31 00:00:00,Medical Equipment Maintenance,Medical Physics,Varian-Tem Ltd,773357,173514.0,NMID 04 - July.xlsx,1
+2020-07-31 00:00:00,IT Support and Maintenance,Medical Physics,Varian-Tem Ltd,773358,167283.0,NMID 04 - July.xlsx,1
+2020-07-15 00:00:00,Insurance,Medical Director,NHS Resolution,772633,1648972.0,NMID 04 - July.xlsx,1
+2020-07-16 00:00:00,Management Consultancy,Trust Office,Linea Partners Ltd,772656,31944.0,NMID 04 - July.xlsx,1
+2020-08-07 00:00:00,Medical Staff Recharge,Various Medical Specialties,Royal Free London Nhs Ft,772407,176170.0,NMID 05 - August.xlsx,1
+2020-08-07 00:00:00,Temporary Staff,Hospital Wide,Pulse Healthcare Ltd,773349,323754.0,NMID 05 - August.xlsx,1
+2020-08-07 00:00:00,Rates,Estates & Facilities,London Borough Of Enfield,773513,262808.0,NMID 05 - August.xlsx,1
+2020-08-07 00:00:00,FM Contract Variations,Estates & Facilities,Medirest - Compass Group Uk & Ireland,774026,96344.0,NMID 05 - August.xlsx,1
+2020-08-07 00:00:00,Send Out Tests,Diagnostic Imaging,Radiology Reporting Online Llp,774046,57076.0,NMID 05 - August.xlsx,1
+2020-08-07 00:00:00,Utilities,Estates & Facilities,Bynorth Ltd,774091,110088.0,NMID 05 - August.xlsx,1
+2020-08-07 00:00:00,Refurbishment,Estates & Facilities,PHC FLOORING LTD,774130,28715.0,NMID 05 - August.xlsx,1
+2020-08-07 00:00:00,Call Charges,Telecom Support,British Telecommunications Plc,774134,25278.0,NMID 05 - August.xlsx,1
+2020-08-07 00:00:00,Call Charges,Telecom Support,British Telecommunications Plc,774240,38819.0,NMID 05 - August.xlsx,1
+2020-08-14 00:00:00,Nuclear Medicine Scans,Diagnostic Imaging,University College London Hospital Nhs Ft,770202,36571.0,NMID 05 - August.xlsx,1
+2020-08-14 00:00:00,Nuclear Medicine Scans,Diagnostic Imaging,University College London Hospital Nhs Ft,770203,47161.0,NMID 05 - August.xlsx,1
+2020-08-14 00:00:00,Medical Staff Recharge,Various Medical Specialties,Royal Free London Nhs Ft,770205,200535.0,NMID 05 - August.xlsx,1
+2020-08-14 00:00:00,Temporary Staff,Hospital Wide,Cromwell Medical Staffing,773476,47056.0,NMID 05 - August.xlsx,1
+2020-08-14 00:00:00,Drugs,Pharmacy,Janssen-Cilag Ltd,773671,25326.0,NMID 05 - August.xlsx,1
+2020-08-14 00:00:00,Temporary Staff,Hospital Wide,Pulse Healthcare Ltd,774147,398970.0,NMID 05 - August.xlsx,1
+2020-08-14 00:00:00,Drugs,Pharmacy,Celgene Ltd,774353,26049.0,NMID 05 - August.xlsx,1
+2020-08-14 00:00:00,Drugs,Pharmacy,Roche Products Ltd,774512,31247.0,NMID 05 - August.xlsx,1
+2020-08-14 00:00:00,Drugs,Pharmacy,Roche Products Ltd,774515,48703.0,NMID 05 - August.xlsx,1
+2020-08-14 00:00:00,IT Software Development,Computer Services,System C Healthcare Ltd,774557,78000.0,NMID 05 - August.xlsx,1
+2020-08-14 00:00:00,Refurbishment,Estates & Facilities,Buildnet Uk Ltd,774581,36876.0,NMID 05 - August.xlsx,1
+2020-08-14 00:00:00,Domestic Services,Estates & Facilities,Tgc Facility Services Ltd,774627,58447.0,NMID 05 - August.xlsx,1
+2020-08-14 00:00:00,IT Support and Maintenance,Computer Services,System C Healthcare Ltd,774711,41256.0,NMID 05 - August.xlsx,1
+2020-08-14 00:00:00,Temporary Staff,Hospital Wide,Pulse Healthcare Ltd,774713,397322.0,NMID 05 - August.xlsx,1
+2020-08-17 00:00:00,Insurance,Medical Director,NHS Resolution,775142,1648972.0,NMID 05 - August.xlsx,1
+2020-08-26 00:00:00,Nuclear Medicine Scans,Diagnostic Imaging,University College London Hospital Nhs Ft,728720,37351.0,NMID 05 - August.xlsx,1
+2020-08-26 00:00:00,Nuclear Medicine Scans,Diagnostic Imaging,University College London Hospital Nhs Ft,728721,35100.0,NMID 05 - August.xlsx,1
+2020-08-26 00:00:00,Send Out Tests,Cardiology,Barts And The London Nhst,762365,33934.0,NMID 05 - August.xlsx,1
+2020-08-26 00:00:00,Common Services Charge,Histopathology,Royal Free London Nhs Ft,772678,84500.0,NMID 05 - August.xlsx,1
+2020-08-26 00:00:00,Pathology Service,Pathology,Health Service Laboratories-Analytics,774054,450550.0,NMID 05 - August.xlsx,1
+2020-08-26 00:00:00,Facilities Management,Pathology,Health Service Laboratories Fm,774055,601355.0,NMID 05 - August.xlsx,1
+2020-08-26 00:00:00,Drugs,Pharmacy,Novartis Pharma Uk Ltd,774932,34201.0,NMID 05 - August.xlsx,1
+2020-08-26 00:00:00,IT Support and Maintenance,Computer Services,System C Healthcare Ltd,775146,30000.0,NMID 05 - August.xlsx,1
+2020-08-26 00:00:00,IT Support and Maintenance,Computer Services,System C Healthcare Ltd,775147,56704.0,NMID 05 - August.xlsx,1
+2020-08-26 00:00:00,Temporary Staff,Hospital Wide,Pulse Healthcare Ltd,775150,391868.0,NMID 05 - August.xlsx,1
+2020-08-26 00:00:00,PFI Unitary Payment,PFI Hospital,Bynorth Ltd,775253,1995923.0,NMID 05 - August.xlsx,1
+2020-08-26 00:00:00,Consultancy,Trust Office,Alamac Ltd,775271,35480.0,NMID 05 - August.xlsx,1
+2020-08-26 00:00:00,External Audit,Finance,Grant Thornton Uk Llp,775292,26294.0,NMID 05 - August.xlsx,1
+2020-08-26 00:00:00,Medical Equipment Purchase,Medical Equipment Management,Maquet Ltd,775300,30686.0,NMID 05 - August.xlsx,1
+2020-08-26 00:00:00,Medical Equipment Purchase,Medical Equipment Management,Maquet Ltd,775301,30682.0,NMID 05 - August.xlsx,1
+2020-08-26 00:00:00,Send Out Tests,Diagnostic Imaging,Radiology Reporting Online Llp,775302,69880.0,NMID 05 - August.xlsx,1
+2020-08-26 00:00:00,Temporary Staff,Hospital Wide,Pulse Healthcare Ltd,775374,30383.0,NMID 05 - August.xlsx,1
+2020-08-26 00:00:00,Record Storage,Health Records,Crown Records Management Ltd,775422,31275.0,NMID 05 - August.xlsx,1
+2020-08-26 00:00:00,Temporary Staff,Hospital Wide,Pulse Healthcare Ltd,775552,392346.0,NMID 05 - August.xlsx,1
+2020-08-26 00:00:00,IT Managed Service,Computer Services,Sectra Ltd,775890,180313.0,NMID 05 - August.xlsx,1
+2020-08-26 00:00:00,Refurbishment,Estates & Facilities,Buildnet Uk Ltd,775919,31176.0,NMID 05 - August.xlsx,1
+2020-08-26 00:00:00,Medical Equipment Purchase,Medical Equipment Management,Maquet Ltd,775923,122434.0,NMID 05 - August.xlsx,1
+2020-08-26 00:00:00,IT Support and Maintenance,Risk and Governance,Datix Ltd,775956,60468.0,NMID 05 - August.xlsx,1
+2020-09-04 00:00:00,Miscellaneous Supplies,Hospital Wide,Nhs Supply Chain,770768,65360.0,NMID 06 - September.xlsx,1
+2020-09-04 00:00:00,Medical Staff Recharge,Various Medical Specialties,Royal Free London Nhs Ft,774120,181947.0,NMID 06 - September.xlsx,1
+2020-09-04 00:00:00,Domestic Services,Estates & Facilities,Tgc Facility Services Ltd,775415,-9031.0,NMID 06 - September.xlsx,-1
+2020-09-04 00:00:00,Miscellaneous Supplies,Hospital Wide,Nhs Supply Chain,775880,55215.0,NMID 06 - September.xlsx,1
+2020-09-04 00:00:00,Miscellaneous Supplies,Hospital Wide,Nhs Supply Chain,775881,61643.0,NMID 06 - September.xlsx,1
+2020-09-04 00:00:00,Miscellaneous Supplies,Hospital Wide,Nhs Supply Chain,775882,80506.0,NMID 06 - September.xlsx,1
+2020-09-04 00:00:00,Miscellaneous Supplies,Hospital Wide,Nhs Supply Chain,775883,68274.0,NMID 06 - September.xlsx,1
+2020-09-04 00:00:00,Rates,Estates & Facilities,London Borough Of Enfield,775958,262808.0,NMID 06 - September.xlsx,1
+2020-09-04 00:00:00,Patient Transport,Estates & Facilities,Dhl Supply Chain - Uk&I,775966,163392.0,NMID 06 - September.xlsx,1
+2020-09-04 00:00:00,Patient Transport,Estates & Facilities,Dhl Supply Chain - Uk&I,775967,163392.0,NMID 06 - September.xlsx,1
+2020-09-04 00:00:00,Refurbishment,Estates & Facilities,Bynorth Ltd,775972,45595.0,NMID 06 - September.xlsx,1
+2020-09-04 00:00:00,Cycle Facility,Estates & Facilities,Hendry Construction Ltd,776063,62202.0,NMID 06 - September.xlsx,1
+2020-09-04 00:00:00,Drugs,Pharmacy,Bayer Plc,776226,27373.0,NMID 06 - September.xlsx,1
+2020-09-04 00:00:00,Domestic Services,Estates & Facilities,Tgc Facility Services Ltd,776514,58447.0,NMID 06 - September.xlsx,1
+2020-09-04 00:00:00,Purchase of Beds,Medical Equipment Management,Arjo Uk Ltd,776546,131520.0,NMID 06 - September.xlsx,1
+2020-09-04 00:00:00,Temporary Staff,Hospital Wide,Cromwell Medical Staffing,776555,29081.0,NMID 06 - September.xlsx,1
+2020-09-04 00:00:00,Temporary Staff,Hospital Wide,Pulse Healthcare Ltd,776556,433185.0,NMID 06 - September.xlsx,1
+2020-09-04 00:00:00,FM Contract Variations,Estates & Facilities,Medirest - Compass Group Uk & Ireland,776627,159037.0,NMID 06 - September.xlsx,1
+2020-09-04 00:00:00,FM Contract Variations,Estates & Facilities,Medirest - Compass Group Uk & Ireland,776643,75166.0,NMID 06 - September.xlsx,1
+2020-09-04 00:00:00,FM Contract,Estates & Facilities,Medirest - Compass Group Uk & Ireland,776646,682259.0,NMID 06 - September.xlsx,1
+2020-09-04 00:00:00,Catering Contract,Estates & Facilities,Medirest - Compass Group Uk & Ireland,776646,194045.0,NMID 06 - September.xlsx,1
+2020-09-11 00:00:00,Healthcare,Maternity,Whittington Hosp Nhs Trust,728168,34676.0,NMID 06 - September.xlsx,1
+2020-09-11 00:00:00,Nuclear Medicine Scans,Diagnostic Imaging,University College London Hospital Nhs Ft,770204,36194.0,NMID 06 - September.xlsx,1
+2020-09-11 00:00:00,IT Software Development,Computer Services,System C Healthcare Ltd,776697,39000.0,NMID 06 - September.xlsx,1
+2020-09-11 00:00:00,Drugs,Pharmacy,Aah Pharmaceutical Ltd,776919,29589.0,NMID 06 - September.xlsx,1
+2020-09-11 00:00:00,Sterile Services,Endoscopy,Guys & St Thomas Nhs Foundation Trust,776979,37976.0,NMID 06 - September.xlsx,1
+2020-09-11 00:00:00,Medical Equipment Hire,Endoscopy,Karl Storz Endoscopy (Uk) Ltd,777058,41784.0,NMID 06 - September.xlsx,1
+2020-09-11 00:00:00,Blood & Blood Products,Pathology,Nhs Blood & Transplant,777092,122710.0,NMID 06 - September.xlsx,1
+2020-09-15 00:00:00,Insurance,Medical Director,NHS Resolution,777179,1648972.0,NMID 06 - September.xlsx,1
+2020-09-16 00:00:00,Temporary Staff,Hospital Wide,Pulse Healthcare Ltd,777556,413158.0,NMID 06 - September.xlsx,1
+2020-09-17 00:00:00,Health Screening,Obs & Gynae,Whittington Hosp Nhst,762385,67003.0,NMID 06 - September.xlsx,1
+2020-09-17 00:00:00,Procurement Service,Procurement,Whittington Hosp Nhst,762404,67173.0,NMID 06 - September.xlsx,1
+2020-09-17 00:00:00,Common Services Charge,Histopathology,Royal Free London Nhs Ft,775444,84500.0,NMID 06 - September.xlsx,1
+2020-09-17 00:00:00,Salary Recharge,Surgery Division,Barnet Enf & Har Mental Hlth Nhs Trust,776935,52853.0,NMID 06 - September.xlsx,1
+2020-09-17 00:00:00,Miscellaneous Supplies,Hospital Wide,Nhs Supply Chain,777079,83289.0,NMID 06 - September.xlsx,1
+2020-09-17 00:00:00,Miscellaneous Supplies,Hospital Wide,Nhs Supply Chain,777080,47960.0,NMID 06 - September.xlsx,1
+2020-09-17 00:00:00,Miscellaneous Supplies,Hospital Wide,Nhs Supply Chain,777200,82360.0,NMID 06 - September.xlsx,1
+2020-09-17 00:00:00,Drugs,Pharmacy,Alliance Healthcare Distribution Ltd,777319,25749.0,NMID 06 - September.xlsx,1
+2020-09-17 00:00:00,Temporary Staff,Hospital Wide,Cromwell Medical Staffing,777440,37584.0,NMID 06 - September.xlsx,1
+2020-09-17 00:00:00,Rent,Estates & Facilities,Gla Land & Property,777506,62500.0,NMID 06 - September.xlsx,1
+2020-09-17 00:00:00,Medical Equipment Purchase,Medical Equipment Management,Maquet Ltd,777518,245801.0,NMID 06 - September.xlsx,1
+2020-09-17 00:00:00,Medical Equipment Hire,Endoscopy,Karl Storz Endoscopy (Uk) Ltd,777539,41784.0,NMID 06 - September.xlsx,1
+2020-09-17 00:00:00,Temporary Staff,Hospital Wide,Pulse Healthcare Ltd,777553,436005.0,NMID 06 - September.xlsx,1
+2020-09-17 00:00:00,Send Out Tests,Diagnostic Imaging,Radiology Reporting Online Llp,777610,94429.0,NMID 06 - September.xlsx,1
+2020-09-17 00:00:00,Refurbishment,Estates & Facilities,Bynorth Ltd,777671,33993.0,NMID 06 - September.xlsx,1
+2020-09-17 00:00:00,Refurbishment,Estates & Facilities,Bynorth Ltd,777681,50492.0,NMID 06 - September.xlsx,1
+2020-09-17 00:00:00,FM Contract,Estates & Facilities,Medirest - Compass Group Uk & Ireland,777692,682259.0,NMID 06 - September.xlsx,1
+2020-09-17 00:00:00,Catering Contract,Estates & Facilities,Medirest - Compass Group Uk & Ireland,777692,194045.0,NMID 06 - September.xlsx,1
+2020-09-17 00:00:00,FM Contract,Estates & Facilities,Medirest - Compass Group Uk & Ireland,777693,682259.0,NMID 06 - September.xlsx,1
+2020-09-17 00:00:00,Catering Contract,Estates & Facilities,Medirest - Compass Group Uk & Ireland,777693,194045.0,NMID 06 - September.xlsx,1
+2020-09-25 00:00:00,Procurement Service,Procurement,Whittington Hosp Nhst,766947,67173.0,NMID 06 - September.xlsx,1
+2020-09-25 00:00:00,Facilities Management,Pathology,Health Service Laboratories Fm,776543,601355.0,NMID 06 - September.xlsx,1
+2020-09-25 00:00:00,Pathology Service,Pathology,Health Service Laboratories-Analytics,776544,450550.0,NMID 06 - September.xlsx,1
+2020-09-25 00:00:00,Temporary Staff,Hospital Wide,Pulse Healthcare Ltd,777216,25858.0,NMID 06 - September.xlsx,1
+2020-09-25 00:00:00,Temporary Staff,Hospital Wide,Cromwell Medical Staffing,777596,37601.0,NMID 06 - September.xlsx,1
+2020-09-25 00:00:00,Utilities,Estates & Facilities,Bynorth Ltd,777714,126137.0,NMID 06 - September.xlsx,1
+2020-09-25 00:00:00,Utilities,Estates & Facilities,Bynorth Ltd,777715,136220.0,NMID 06 - September.xlsx,1
+2020-09-25 00:00:00,Miscellaneous Supplies,Hospital Wide,Nhs Supply Chain,777832,94624.0,NMID 06 - September.xlsx,1
+2020-09-25 00:00:00,Drugs,Pharmacy,Celgene Ltd,778121,40941.0,NMID 06 - September.xlsx,1
+2020-09-25 00:00:00,Drugs,Pharmacy,Aah Pharmaceutical Ltd,778290,69475.0,NMID 06 - September.xlsx,1
+2020-09-25 00:00:00,Drugs,Pharmacy,Roche Products Ltd,778291,48816.0,NMID 06 - September.xlsx,1
+2020-09-25 00:00:00,Drugs,Pharmacy,Roche Products Ltd,778300,25624.0,NMID 06 - September.xlsx,1
+2020-09-25 00:00:00,Refurbishment,Estates & Facilities,Buildnet Uk Ltd,778348,59084.0,NMID 06 - September.xlsx,1
+2020-09-25 00:00:00,Patient Transport,Estates & Facilities,Dhl Supply Chain - Uk&I,778349,163392.0,NMID 06 - September.xlsx,1
+2020-09-25 00:00:00,Refurbishment,Estates & Facilities,Buildnet Uk Ltd,778352,26112.0,NMID 06 - September.xlsx,1
+2020-09-25 00:00:00,Refurbishment,Estates & Facilities,Buildnet Uk Ltd,778353,29052.0,NMID 06 - September.xlsx,1
+2020-09-25 00:00:00,Temporary Staff,Hospital Wide,Pulse Healthcare Ltd,778409,434251.0,NMID 06 - September.xlsx,1
+2020-09-25 00:00:00,Site Planning,Estates & Facilities,Ibi Group Uk Ltd,778499,97342.0,NMID 06 - September.xlsx,1
+2020-09-25 00:00:00,Site Planning,Estates & Facilities,Ibi Group Uk Ltd,778500,29951.0,NMID 06 - September.xlsx,1
+2020-09-25 00:00:00,Cycle Facility,Estates & Facilities,Active Commuting Ltd,778507,134955.0,NMID 06 - September.xlsx,1
+2020-09-25 00:00:00,Medical Equipment Maintenance,Medical Physics,Varian-Tem Ltd,778532,172478.0,NMID 06 - September.xlsx,1
+2020-09-25 00:00:00,Refurbishment,Estates & Facilities,Buildnet Uk Ltd,778548,60000.0,NMID 06 - September.xlsx,1
+2020-09-25 00:00:00,Medical Equipment Purchase,Medical Equipment Management,Becton Dickinson Uk Ltd,778573,34020.0,NMID 06 - September.xlsx,1
+2020-09-25 00:00:00,PFI Unitary Payment,PFI Hospital,Bynorth Ltd,778600,1937133.0,NMID 06 - September.xlsx,1
+2020-09-29 00:00:00,IT Hardware Purchase,Computer Services,Specialist Computers,778884,468570.0,NMID 06 - September.xlsx,1
+2020-10-01 00:00:00,Drugs,Pharmacy,Aah Pharmaceutical Ltd,778867,32349.0,NMID 07 - October.xlsx,1
+2020-10-01 00:00:00,Temporary Staff,Computer Services,Bates It Information Technology,778883,35403.0,NMID 07 - October.xlsx,1
+2020-10-01 00:00:00,Rates,Estates & Facilities,London Borough Of Enfield,778890,262808.0,NMID 07 - October.xlsx,1
+2020-10-01 00:00:00,Laundry Services,Estates & Facilities,Synergy Health Managed Services Ltd,778951,52191.0,NMID 07 - October.xlsx,1
+2020-10-01 00:00:00,Laundry Services,Estates & Facilities,Synergy Health Managed Services Ltd,778952,48478.0,NMID 07 - October.xlsx,1
+2020-10-01 00:00:00,IT Software Development,Computer Services,System C Healthcare Ltd,778967,39000.0,NMID 07 - October.xlsx,1
+2020-10-01 00:00:00,Refurbishment,Estates & Facilities,Bynorth Ltd,779034,46218.0,NMID 07 - October.xlsx,1
+2020-10-01 00:00:00,Domestic Services,Estates & Facilities,Tgc Facility Services Ltd,779103,47911.0,NMID 07 - October.xlsx,1
+2020-10-01 00:00:00,Domestic Services,Estates & Facilities,Tgc Facility Services Ltd,779104,141926.0,NMID 07 - October.xlsx,1
+2020-10-01 00:00:00,Domestic Services,Estates & Facilities,Tgc Facility Services Ltd,779105,232531.0,NMID 07 - October.xlsx,1
+2020-10-08 00:00:00,Procurement Service,Procurement,Whittington Hosp Nhst,768833,67173.0,NMID 07 - October.xlsx,1
+2020-10-08 00:00:00,Procurement Service,Procurement,Whittington Hosp Nhst,770955,67173.0,NMID 07 - October.xlsx,1
+2020-10-08 00:00:00,Health Screening,Obs & Gynae,Whittington Hosp Nhst,772389,27359.0,NMID 07 - October.xlsx,1
+2020-10-08 00:00:00,Domestic Services,Estates & Facilities,Tgc Facility Services Ltd,775416,-60199.0,NMID 07 - October.xlsx,-1
+2020-10-08 00:00:00,Medical Staff Recharge,Various Medical Specialties,Royal Free London Nhs Ft,776971,180802.0,NMID 07 - October.xlsx,1
+2020-10-08 00:00:00,Domestic Services,Estates & Facilities,Tgc Facility Services Ltd,777586,-12780.0,NMID 07 - October.xlsx,-1
+2020-10-08 00:00:00,Miscellaneous Supplies,Hospital Wide,Nhs Supply Chain,778909,117028.0,NMID 07 - October.xlsx,1
+2020-10-08 00:00:00,Temporary Staff,Hospital Wide,Pulse Healthcare Ltd,778965,402762.0,NMID 07 - October.xlsx,1
+2020-10-08 00:00:00,Temporary Staff,Hospital Wide,Cromwell Medical Staffing,779129,31548.0,NMID 07 - October.xlsx,1
+2020-10-08 00:00:00,Miscellaneous Supplies,Hospital Wide,Nhs Supply Chain,779163,51232.0,NMID 07 - October.xlsx,1
+2020-10-08 00:00:00,Training,Human Resources,Think Associates Ltd,779205,45856.0,NMID 07 - October.xlsx,1
+2020-10-08 00:00:00,Drugs,Pharmacy,Janssen-Cilag Ltd,779311,34490.0,NMID 07 - October.xlsx,1
+2020-10-08 00:00:00,Refurbishment,Estates & Facilities,Bynorth Ltd,779378,31781.0,NMID 07 - October.xlsx,1
+2020-10-08 00:00:00,Domestic Services,Estates & Facilities,Tgc Facility Services Ltd,779397,290664.0,NMID 07 - October.xlsx,1
+2020-10-08 00:00:00,Sterile Services,Endoscopy,Guys & St Thomas Nhs Foundation Trust,779399,38200.0,NMID 07 - October.xlsx,1
+2020-10-08 00:00:00,Refurbishment,Estates & Facilities,Bynorth Ltd,779432,38061.0,NMID 07 - October.xlsx,1
+2020-10-08 00:00:00,Refurbishment,Estates & Facilities,Bynorth Ltd,779433,669309.0,NMID 07 - October.xlsx,1
+2020-10-08 00:00:00,Software Licences,Computer Services,Civica Uk Ltd (Putney),779523,239320.0,NMID 07 - October.xlsx,1
+2020-10-08 00:00:00,Software Licences,Computer Services,Civica Uk Ltd (Putney),779537,107826.0,NMID 07 - October.xlsx,1
+2020-10-08 00:00:00,Temporary Staff,Hospital Wide,Pulse Healthcare Ltd,779538,475151.0,NMID 07 - October.xlsx,1
+2020-10-15 00:00:00,Health Screening,Obs & Gynae,Whittington Hosp Nhst,777074,33548.0,NMID 07 - October.xlsx,1
+2020-10-15 00:00:00,Temporary Staff,Hospital Wide,Cromwell Medical Staffing,779544,31896.0,NMID 07 - October.xlsx,1
+2020-10-15 00:00:00,Blood & Blood Products,Pathology,Nhs Blood & Transplant,779619,122710.0,NMID 07 - October.xlsx,1
+2020-10-15 00:00:00,Drugs,Pharmacy,Novartis Pharma Uk Ltd,779824,28893.0,NMID 07 - October.xlsx,1
+2020-10-15 00:00:00,Drugs,Pharmacy,Alliance Healthcare Distribution Ltd,779825,28996.0,NMID 07 - October.xlsx,1
+2020-10-15 00:00:00,Drugs,Pharmacy,Roche Products Ltd,780049,35803.0,NMID 07 - October.xlsx,1
+2020-10-15 00:00:00,IT Managed Service,Computer Services,Bridgehead Software Ltd,780069,240000.0,NMID 07 - October.xlsx,1
+2020-10-15 00:00:00,Record Storage,Health Records,Crown Records Management Ltd,780070,25992.0,NMID 07 - October.xlsx,1
+2020-10-15 00:00:00,Record Storage,Health Records,Crown Records Management Ltd,780071,28668.0,NMID 07 - October.xlsx,1
+2020-10-15 00:00:00,Management Consultancy,Trust Office,Linea Partners Ltd,780208,38293.0,NMID 07 - October.xlsx,1
+2020-10-15 00:00:00,Management Consultancy,Trust Office,Linea Partners Ltd,780210,34812.0,NMID 07 - October.xlsx,1
+2020-10-15 00:00:00,Management Consultancy,Trust Office,Linea Partners Ltd,780211,40033.0,NMID 07 - October.xlsx,1
+2020-10-15 00:00:00,Call Charges,Telecom Support,British Telecommunications Plc,780238,46754.0,NMID 07 - October.xlsx,1
+2020-10-15 00:00:00,Temporary Staff,Hospital Wide,Pulse Healthcare Ltd,780240,455939.0,NMID 07 - October.xlsx,1
+2020-10-15 00:00:00,Temporary Staff,Hospital Wide,Pulse Healthcare Ltd,780243,33696.0,NMID 07 - October.xlsx,1
+2020-10-15 00:00:00,IT Support and Maintenance,Computer Services,System C Healthcare Ltd,780262,41256.0,NMID 07 - October.xlsx,1
+2020-10-15 00:00:00,Healthcare,Dermatology,Omnes Healthcare Ltd,780264,175379.0,NMID 07 - October.xlsx,1
+2020-10-15 00:00:00,Healthcare,Dermatology,Omnes Healthcare Ltd,780266,175379.0,NMID 07 - October.xlsx,1
+2020-10-15 00:00:00,Insurance,Medical Director,NHS Resolution,780805,1648980.0,NMID 07 - October.xlsx,1
+2020-10-22 00:00:00,Common Services Charge,Histopathology,Royal Free London Nhs Ft,778443,84500.0,NMID 07 - October.xlsx,1
+2020-10-22 00:00:00,Miscellaneous Supplies,Hospital Wide,Nhs Supply Chain,779396,93659.0,NMID 07 - October.xlsx,1
+2020-10-22 00:00:00,Salary Recharge,Surgery Division,Barnet Enf & Har Mental Hlth Nhs Trust,779611,26402.0,NMID 07 - October.xlsx,1
+2020-10-22 00:00:00,Miscellaneous Supplies,Hospital Wide,Nhs Supply Chain,780061,103228.0,NMID 07 - October.xlsx,1
+2020-10-22 00:00:00,Medical Equipment Purchase,Medical Equipment Management,Stryker Uk Ltd,780308,465574.0,NMID 07 - October.xlsx,1
+2020-10-22 00:00:00,FM Contract Variations,Estates & Facilities,Medirest - Compass Group Uk & Ireland,780665,103216.0,NMID 07 - October.xlsx,1
+2020-10-22 00:00:00,Temporary Staff,Computer Services,Bates It Information Technology,780750,25857.0,NMID 07 - October.xlsx,1
+2020-10-22 00:00:00,Medical Equipment Maintenance,Medical Equipment Management,Beckman Coulter Uk Ltd,780815,80058.0,NMID 07 - October.xlsx,1
+2020-10-22 00:00:00,Medical Equipment Maintenance,Medical Equipment Management,Beckman Coulter Uk Ltd,780816,48205.0,NMID 07 - October.xlsx,1
+2020-10-28 00:00:00,Send Out Tests,Diagnostic Imaging,Radiology Reporting Online Llp,780298,-2000.0,NMID 07 - October.xlsx,-1
+2020-10-28 00:00:00,FM Contract,Estates & Facilities,Medirest - Compass Group Uk & Ireland,780664,682259.0,NMID 07 - October.xlsx,1
+2020-10-28 00:00:00,Catering Contract,Estates & Facilities,Medirest - Compass Group Uk & Ireland,780664,194045.0,NMID 07 - October.xlsx,1
+2020-10-28 00:00:00,Temporary Staff,Hospital Wide,Pulse Healthcare Ltd,780728,440462.0,NMID 07 - October.xlsx,1
+2020-10-28 00:00:00,PFI Unitary Payment,PFI Hospital,Bynorth Ltd,780748,1955460.0,NMID 07 - October.xlsx,1
+2020-10-28 00:00:00,Miscellaneous Supplies,Hospital Wide,Nhs Supply Chain,780758,83209.0,NMID 07 - October.xlsx,1
+2020-10-28 00:00:00,Send Out Tests,Diagnostic Imaging,Radiology Reporting Online Llp,780822,84849.0,NMID 07 - October.xlsx,1
+2020-10-28 00:00:00,Medical Equipment Purchase,Medical Equipment Management,Maquet Ltd,780825,92196.0,NMID 07 - October.xlsx,1
+2020-10-28 00:00:00,Medical Equipment Purchase,Medical Equipment Management,Nhs Supply Chain (Capital),780835,692615.0,NMID 07 - October.xlsx,1
+2020-10-28 00:00:00,Medical Staff Recharge,Oncology,Princess Alexandra Hosp Nhst,780847,25594.0,NMID 07 - October.xlsx,1
+2020-10-28 00:00:00,Call Charges,Telecom Support,British Telecommunications Plc,780859,26550.0,NMID 07 - October.xlsx,1
+2020-10-28 00:00:00,Blood & Blood Products,Pathology,Nhs Blood & Transplant,780898,122710.0,NMID 07 - October.xlsx,1
+2020-10-28 00:00:00,Drugs,Pharmacy,Bayer Plc,781086,31479.0,NMID 07 - October.xlsx,1
+2020-10-28 00:00:00,Drugs,Pharmacy,Bayer Plc,781109,36498.0,NMID 07 - October.xlsx,1
+2020-10-28 00:00:00,Pathology Service,Pathology,Health Service Laboratories-Analytics,781324,450550.0,NMID 07 - October.xlsx,1
+2020-10-28 00:00:00,Facilities Management,Pathology,Health Service Laboratories Fm,781325,601355.0,NMID 07 - October.xlsx,1
+2020-10-28 00:00:00,IT Support and Maintenance,Computer Services,System C Healthcare Ltd,781386,30000.0,NMID 07 - October.xlsx,1
+2020-10-28 00:00:00,IT Support and Maintenance,Computer Services,System C Healthcare Ltd,781389,56704.0,NMID 07 - October.xlsx,1
+2020-10-28 00:00:00,Printing and Copying,Hospital Wide,Canon Uk Ltd,781472,97607.0,NMID 07 - October.xlsx,1
+2020-10-28 00:00:00,IT Support and Maintenance,Computer Services,Icnet Ltd,781488,36026.0,NMID 07 - October.xlsx,1
+2020-10-28 00:00:00,Sterile Services,Endoscopy,Guys & St Thomas Nhs Foundation Trust,781559,44299.0,NMID 07 - October.xlsx,1
+2020-11-06 00:00:00,External Works,Estates & Facilities,Bynorth Ltd,781620,33229.0,NMID 08 - November.xlsx,1
+2020-11-06 00:00:00,Rates,Estates & Facilities,London Borough Of Enfield,782226,262808.0,NMID 08 - November.xlsx,1
+2020-11-06 00:00:00,Medical Equipment Purchase,Medical Equipment Management,Maquet Ltd,782199,91933.0,NMID 08 - November.xlsx,1
+2020-11-06 00:00:00,Miscellaneous Supplies,Hospital Wide,Nhs Supply Chain,781326,103099.0,NMID 08 - November.xlsx,1
+2020-11-06 00:00:00,Miscellaneous Supplies,Hospital Wide,Nhs Supply Chain,782224,82457.0,NMID 08 - November.xlsx,1
+2020-11-06 00:00:00,Medical Equipment Purchase,Medical Equipment Management,Philips Medical Systems,782202,50400.0,NMID 08 - November.xlsx,1
+2020-11-06 00:00:00,Temporary Staff,Hospital Wide,Pulse Healthcare Ltd,781471,432622.0,NMID 08 - November.xlsx,1
+2020-11-06 00:00:00,Medical Staff Recharge,Various Medical Specialties,Royal Free London Nhs Ft,779584,186293.0,NMID 08 - November.xlsx,1
+2020-11-06 00:00:00,Laundry Services,Estates & Facilities,Synergy Health Managed Services Ltd,782476,61268.0,NMID 08 - November.xlsx,1
+2020-11-06 00:00:00,Domestic Services,Estates & Facilities,Tgc Facility Services Ltd,780157,-15057.0,NMID 08 - November.xlsx,-1
+2020-11-06 00:00:00,Domestic Services,Estates & Facilities,Tgc Facility Services Ltd,782447,232531.0,NMID 08 - November.xlsx,1
+2020-11-13 00:00:00,Refurbishment,Estates & Facilities,Bynorth Ltd,782935,454475.0,NMID 08 - November.xlsx,1
+2020-11-13 00:00:00,Software Upgrade,Computer Services,Endosoft Ltd,782953,30000.0,NMID 08 - November.xlsx,1
+2020-11-13 00:00:00,IT Support and Maintenance,Computer Services,Fortrus Ltd,783141,226220.0,NMID 08 - November.xlsx,1
+2020-11-13 00:00:00,Student/Staff Rent,Accommodation,Origin Housing Group Ltd,782972,28210.0,NMID 08 - November.xlsx,1
+2020-11-13 00:00:00,Student/Staff Rent,Accommodation,Origin Housing Group Ltd,782973,28210.0,NMID 08 - November.xlsx,1
+2020-11-13 00:00:00,Student/Staff Rent,Accommodation,Origin Housing Group Ltd,782975,28210.0,NMID 08 - November.xlsx,1
+2020-11-13 00:00:00,Student/Staff Rent,Accommodation,Origin Housing Group Ltd,782976,28210.0,NMID 08 - November.xlsx,1
+2020-11-13 00:00:00,Student/Staff Rent,Accommodation,Origin Housing Group Ltd,782977,28210.0,NMID 08 - November.xlsx,1
+2020-11-13 00:00:00,Student/Staff Rent,Accommodation,Origin Housing Group Ltd,782978,28210.0,NMID 08 - November.xlsx,1
+2020-11-13 00:00:00,Student/Staff Rent,Accommodation,Origin Housing Group Ltd,782979,28210.0,NMID 08 - November.xlsx,1
+2020-11-13 00:00:00,Student/Staff Rent,Accommodation,Origin Housing Group Ltd,782980,28210.0,NMID 08 - November.xlsx,1
+2020-11-13 00:00:00,Temporary Staff,Hospital Wide,Pulse Healthcare Ltd,782898,494197.0,NMID 08 - November.xlsx,1
+2020-11-13 00:00:00,Temporary Staff,Hospital Wide,Pulse Healthcare Ltd,782904,469692.0,NMID 08 - November.xlsx,1
+2020-11-13 00:00:00,Drugs,Pharmacy,Roche Products Ltd,782868,32544.0,NMID 08 - November.xlsx,1
+2020-11-13 00:00:00,Project Management,Computer Services,Softcat Plc,782948,63120.0,NMID 08 - November.xlsx,1
+2020-11-13 00:00:00,Procurement Service,Procurement,Whittington Hosp Nhst,778369,67173.0,NMID 08 - November.xlsx,1
+2020-11-16 00:00:00,Insurance,Medical Director,NHS Resolution,783187,1648980.0,NMID 08 - November.xlsx,1
+2020-11-25 00:00:00,Drugs,Pharmacy,Aah Pharmaceutical Ltd,784126,30802.0,NMID 08 - November.xlsx,1
+2020-11-25 00:00:00,Drugs,Pharmacy,Aah Pharmaceutical Ltd,784128,46203.0,NMID 08 - November.xlsx,1
+2020-11-25 00:00:00,Drugs,Pharmacy,Bayer Plc,783952,36498.0,NMID 08 - November.xlsx,1
+2020-11-25 00:00:00,Project Management,GDE Faster Followers,Brightive Ltd,783189,46551.0,NMID 08 - November.xlsx,1
+2020-11-25 00:00:00,Project Management,GDE Faster Followers,Brightive Ltd,783190,28063.0,NMID 08 - November.xlsx,1
+2020-11-25 00:00:00,Project Management,GDE Faster Followers,Brightive Ltd,783401,37116.0,NMID 08 - November.xlsx,1
+2020-11-25 00:00:00,Refurbishment,Estates & Facilities,Bynorth Ltd,783355,66846.0,NMID 08 - November.xlsx,1
+2020-11-25 00:00:00,PFI Unitary Payment,PFI Hospital,Bynorth Ltd,784161,1945103.0,NMID 08 - November.xlsx,1
+2020-11-25 00:00:00,Utilities,Estates & Facilities,Bynorth Ltd,784228,112839.0,NMID 08 - November.xlsx,1
+2020-11-25 00:00:00,PFI Unitary Payment,PFI Hospital,Bynorth Ltd,784234,-42601.0,NMID 08 - November.xlsx,-1
+2020-11-25 00:00:00,Scanning Facilities,Diagnostic Imaging,Canon Medical Systems Ltd,784367,25457.0,NMID 08 - November.xlsx,1
+2020-11-25 00:00:00,Scanning Facilities,Diagnostic Imaging,Canon Medical Systems Ltd,784368,39857.0,NMID 08 - November.xlsx,1
+2020-11-25 00:00:00,Printing and Copying,Hospital Wide,Canon Uk Ltd,784235,81600.0,NMID 08 - November.xlsx,1
+2020-11-25 00:00:00,Legal Fees,Trust Office,Capsticks,783368,25142.0,NMID 08 - November.xlsx,1
+2020-11-25 00:00:00,Water,Estates & Facilities,Castle Water Ltd,784354,95413.0,NMID 08 - November.xlsx,1
+2020-11-25 00:00:00,Temporary Staff,Hospital Wide,Cromwell Medical Staffing,784262,32318.0,NMID 08 - November.xlsx,1
+2020-11-25 00:00:00,Record Storage,Health Records,Crown Records Management Ltd,783618,25985.0,NMID 08 - November.xlsx,1
+2020-11-25 00:00:00,Pathology Service,Pathology,Health Service Laboratories-Analytics,781640,450550.0,NMID 08 - November.xlsx,1
+2020-11-25 00:00:00,Facilities Management,Pathology,Health Services Laboratories Fm,781641,601355.0,NMID 08 - November.xlsx,1
+2020-11-25 00:00:00,Artwork,Estates & Facilities,Inspired Visual Limited,784269,31200.0,NMID 08 - November.xlsx,1
+2020-11-25 00:00:00,Drugs,Pharmacy,Janssen-Cilag Ltd,783909,29688.0,NMID 08 - November.xlsx,1
+2020-11-25 00:00:00,Drugs,Pharmacy,Janssen-Cilag Ltd,783961,36676.0,NMID 08 - November.xlsx,1
+2020-11-25 00:00:00,Blood & Blood Products,Pathology,Nhs Blood & Transplant,784284,122710.0,NMID 08 - November.xlsx,1
+2020-11-25 00:00:00,Miscellaneous Supplies,Hospital Wide,Nhs Supply Chain,782879,136256.0,NMID 08 - November.xlsx,1
+2020-11-25 00:00:00,Miscellaneous Supplies,Hospital Wide,Nhs Supply Chain,783336,121287.0,NMID 08 - November.xlsx,1
+2020-11-25 00:00:00,Temporary Staff,Hospital Wide,Pulse Healthcare Ltd,783626,455081.0,NMID 08 - November.xlsx,1
+2020-11-25 00:00:00,Temporary Staff,Hospital Wide,Pulse Healthcare Ltd,783637,35085.0,NMID 08 - November.xlsx,1
+2020-11-25 00:00:00,Drugs,Pharmacy,Roche Products Ltd,784102,32714.0,NMID 08 - November.xlsx,1
+2020-11-25 00:00:00,Drugs,Pharmacy,Roche Products Ltd,784120,32219.0,NMID 08 - November.xlsx,1
+2020-11-25 00:00:00,Drugs,Pharmacy,Roche Products Ltd,784148,35891.0,NMID 08 - November.xlsx,1
+2020-11-25 00:00:00,Common Services Charge,Histopathology,Royal Free London Nhs Ft,780846,84500.0,NMID 08 - November.xlsx,1
+2020-11-25 00:00:00,IT Managed Service,Computer Services,Sectra Ltd,783328,180313.0,NMID 08 - November.xlsx,1
+2020-11-25 00:00:00,IT Support and Maintenance,Computer Services,Softcat Plc,783407,51351.0,NMID 08 - November.xlsx,1
+2020-11-25 00:00:00,Laundry Services,Estates & Facilities,Synergy Health Managed Services Ltd,783588,60586.0,NMID 08 - November.xlsx,1
+2020-11-25 00:00:00,Software Purchase,Computer Services,System C Healthcare Ltd,784394,51000.0,NMID 08 - November.xlsx,1
+2020-12-04 00:00:00,Consultancy,Human Resources,April Strategy Llp,784531,40182.0,NMID 09 - December.xlsx,1
+2020-12-04 00:00:00,Refurbishment,Estates & Facilities,Buildnet Uk Ltd,784940,35424.0,NMID 09 - December.xlsx,1
+2020-12-04 00:00:00,Utilities,Estates & Facilities,Bynorth Ltd,784949,122130.0,NMID 09 - December.xlsx,1
+2020-12-04 00:00:00,Rates,Estates & Facilities,London Borough Of Enfield,784694,262808.0,NMID 09 - December.xlsx,1
+2020-12-04 00:00:00,Drugs,Pharmacy,Novartis Pharma Uk Ltd,784602,29282.0,NMID 09 - December.xlsx,1
+2020-12-04 00:00:00,Hire of Modular Ward,Estates & Facilities,Premier Modular Limited,784800,206400.0,NMID 09 - December.xlsx,1
+2020-12-04 00:00:00,Temporary staff,Hospital Wide,Pulse Healthcare Ltd,784707,469019.0,NMID 09 - December.xlsx,1
+2020-12-04 00:00:00,Medical Staff Recharge,Various Medical Specialties,Royal Free London Nhsft,782911,185258.0,NMID 09 - December.xlsx,1
+2020-12-04 00:00:00,Drugs,Pharmacy,Spring Med (Diala Chemist Ltd),784589,38880.0,NMID 09 - December.xlsx,1
+2020-12-04 00:00:00,Membership Subscriptions,Trust Board,Ucl Partners,784889,50000.0,NMID 09 - December.xlsx,1
+2020-12-11 00:00:00,Drugs,Pharmacy,Aah Pharmaceutical Ltd,785285,30802.0,NMID 09 - December.xlsx,1
+2020-12-11 00:00:00,Drugs,Pharmacy,Alliance Healthcare Distribution Ltd,785120,40026.0,NMID 09 - December.xlsx,1
+2020-12-11 00:00:00,Patient Transport Contract,Estates & Facilities,Dhl Supply Chain - Uk&I,785568,225036.0,NMID 09 - December.xlsx,1
+2020-12-11 00:00:00,Patient Transport Contract,Estates & Facilities,Dhl Supply Chain - Uk&I,785569,163392.0,NMID 09 - December.xlsx,1
+2020-12-11 00:00:00,Send Out Tests,Diagnostic Imaging,Everlight Radiology,785292,76506.0,NMID 09 - December.xlsx,1
+2020-12-11 00:00:00,Rent Paid,Estates & Facilities,Gla Land & Property Ltd,785640,62500.0,NMID 09 - December.xlsx,1
+2020-12-11 00:00:00,Medical Equipment Maintenance,Medical Equipment Management,Karl Storz Endoscopy Uk Ltd,785307,41784.0,NMID 09 - December.xlsx,1
+2020-12-11 00:00:00,Medical consumables,Trust wide,Nhs Supply Chain,784163,116420.0,NMID 09 - December.xlsx,1
+2020-12-11 00:00:00,Medical consumables,Trust wide,Nhs Supply Chain,784790,70730.0,NMID 09 - December.xlsx,1
+2020-12-11 00:00:00,Medical consumables,Trust wide,Nhs Supply Chain,785346,100567.0,NMID 09 - December.xlsx,1
+2020-12-11 00:00:00,Temporary staff,Hospital Wide,Pulse Healthcare Ltd,785522,446441.0,NMID 09 - December.xlsx,1
+2020-12-11 00:00:00,Temporary staff,Hospital Wide,Pulse Healthcare Ltd,785561,438519.0,NMID 09 - December.xlsx,1
+2020-12-11 00:00:00,Domestic Services,Estates & Facilities,Tgc Facility Services Ltd,785570,302049.0,NMID 09 - December.xlsx,1
+2020-12-11 00:00:00,Interpretation Services,Linkworkers,The Bigword Interpreting Service Limited,785523,25667.0,NMID 09 - December.xlsx,1
+2020-12-15 00:00:00,Insurance,Medical Director,Nhs Resolution,785968,1648980.0,NMID 09 - December.xlsx,1
+2020-12-22 00:00:00,Drugs,Pharmacy,Aah Pharmaceutical Ltd,785799,36130.0,NMID 09 - December.xlsx,1
+2020-12-22 00:00:00,Drugs,Pharmacy,Alliance Healthcare Distribution Ltd,785766,31695.0,NMID 09 - December.xlsx,1
+2020-12-22 00:00:00,Drugs,Pharmacy,Alliance Healthcare Distribution Ltd,786760,27573.0,NMID 09 - December.xlsx,1
+2020-12-22 00:00:00,Drugs,Pharmacy,Alloga Uk Ltd,786750,63180.0,NMID 09 - December.xlsx,1
+2020-12-22 00:00:00,Drugs,Pharmacy,Bayer Plc,786647,31935.0,NMID 09 - December.xlsx,1
+2020-12-22 00:00:00,IT Managed Service,Computer Services,Bridgehead Software Limited,786342,131520.0,NMID 09 - December.xlsx,1
+2020-12-22 00:00:00,Project Management,GDE Fast Follower Programme,Brightive Ltd,785972,28063.0,NMID 09 - December.xlsx,1
+2020-12-22 00:00:00,Project Management,GDE Fast Follower Programme,Brightive Ltd,786055,81990.0,NMID 09 - December.xlsx,1
+2020-12-22 00:00:00,PFI Unitary Payment,PFI Hospital,Bynorth Ltd,785390,1911220.0,NMID 09 - December.xlsx,1
+2020-12-22 00:00:00,Utilities,Estates & Facilities,Bynorth Ltd,785390,85261.0,NMID 09 - December.xlsx,1
+2020-12-22 00:00:00,Refurbishment,Estates & Facilities,Bynorth Ltd,786081,110121.0,NMID 09 - December.xlsx,1
+2020-12-22 00:00:00,Temporary staff,Hospital Wide,Cromwell Medical Staffing,785917,39623.0,NMID 09 - December.xlsx,1
+2020-12-22 00:00:00,Send Out Tests,Diagnostic Imaging,Everlight Radiology,786295,85435.0,NMID 09 - December.xlsx,1
+2020-12-22 00:00:00,Electronic Document Management,Trust wide,Fortrus Ltd,786284,282235.0,NMID 09 - December.xlsx,1
+2020-12-22 00:00:00,Sterile Services,Endoscopy,Guys & St Thomas Nhs Foundation Trust,786125,48839.0,NMID 09 - December.xlsx,1
+2020-12-22 00:00:00,Pathology Service,Pathology,Health Service Laboratories-Analytics,784705,450550.0,NMID 09 - December.xlsx,1
+2020-12-22 00:00:00,Facilities Management,Pathology,Health Services Laboratories Fm,784706,601355.0,NMID 09 - December.xlsx,1
+2020-12-22 00:00:00,Computer Software,Sexual Health Community Services,Idox Health (Formerly 6Pm Group),786382,50174.0,NMID 09 - December.xlsx,1
+2020-12-22 00:00:00,Recruitment,Human Resources,Jane Lewis,786963,34540.0,NMID 09 - December.xlsx,1
+2020-12-22 00:00:00,FM Contract,Estates & Facilities,Medirest - Compass Group Uk & Ireland,785470,673583.0,NMID 09 - December.xlsx,1
+2020-12-22 00:00:00,Catering Contract,Estates & Facilities,Medirest - Compass Group Uk & Ireland,785470,202721.0,NMID 09 - December.xlsx,1
+2020-12-22 00:00:00,FM Contract Variation,Estates & Facilities,Medirest - Compass Group Uk & Ireland,786368,117204.0,NMID 09 - December.xlsx,1
+2020-12-22 00:00:00,Medical consumables,Trust wide,Nhs Supply Chain,785654,101237.0,NMID 09 - December.xlsx,1
+2020-12-22 00:00:00,Medical Equipment Purchase,Diagnostic Imaging,Nhs Supply Chain (Capital),786149,597336.0,NMID 09 - December.xlsx,1
+2020-12-22 00:00:00,Medical Equipment Maintenance,Medical Equipment Management,Nhs Supply Chain (Maintenance),783337,-6811.0,NMID 09 - December.xlsx,-1
+2020-12-22 00:00:00,Medical Equipment Maintenance,Medical Equipment Management,Nhs Supply Chain (Maintenance),783338,-18943.0,NMID 09 - December.xlsx,-1
+2020-12-22 00:00:00,Medical Equipment Maintenance,Medical Equipment Management,Nhs Supply Chain (Maintenance),785838,57730.0,NMID 09 - December.xlsx,1
+2020-12-22 00:00:00,Medical Equipment Maintenance,Medical Equipment Management,Nhs Supply Chain (Maintenance),786151,29410.0,NMID 09 - December.xlsx,1
+2020-12-22 00:00:00,Healthcare services,Dermatology ,Omnes Healthcare Ltd,786166,175379.0,NMID 09 - December.xlsx,1
+2020-12-22 00:00:00,Healthcare services,Dermatology ,Omnes Healthcare Ltd,786167,175379.0,NMID 09 - December.xlsx,1
+2020-12-22 00:00:00,Medical Equipment Purchase,Medical Equipment Management,Omnicell Limited,785872,51554.0,NMID 09 - December.xlsx,1
+2020-12-22 00:00:00,Student/Staff Rent,Staff Accommodation,Origin Housing Ltd,786078,28210.0,NMID 09 - December.xlsx,1
+2020-12-22 00:00:00,IT Support and Maintenance,Computer Services,Pentesec Ltd,786097,64075.0,NMID 09 - December.xlsx,1
+2020-12-22 00:00:00,Temporary staff,Hospital Wide,Pulse Healthcare Ltd,785648,482211.0,NMID 09 - December.xlsx,1
+2020-12-22 00:00:00,Temporary staff,Hospital Wide,Pulse Healthcare Ltd,786067,465000.0,NMID 09 - December.xlsx,1
+2020-12-22 00:00:00,Temporary staff,Hospital Wide,Pulse Healthcare Ltd,786069,465000.0,NMID 09 - December.xlsx,1
+2020-12-22 00:00:00,Temporary staff,Hospital Wide,Pulse Healthcare Ltd,786147,39532.0,NMID 09 - December.xlsx,1
+2020-12-22 00:00:00,Temporary staff,Hospital Wide,Pulse Healthcare Ltd,786324,437030.0,NMID 09 - December.xlsx,1
+2020-12-22 00:00:00,Common Services Charge,Histopathology,Royal Free London Nhsft,784245,84500.0,NMID 09 - December.xlsx,1
+2020-12-22 00:00:00,IT Network Upgrade,Computer Services,Sector It Solutions Ltd,786969,42000.0,NMID 09 - December.xlsx,1
+2020-12-22 00:00:00,Medical Equipment Maintenance,Diagnostic Imaging,Siemens Financial Services Ltd,786111,36874.0,NMID 09 - December.xlsx,1
+2020-12-22 00:00:00,Laundry Services,Estates & Facilities,Synergy Health Managed Services Ltd,786406,58664.0,NMID 09 - December.xlsx,1
+2020-12-22 00:00:00,IT Managed Service,Patient Systems,System C Healthcare Ltd,786950,382494.0,NMID 09 - December.xlsx,1
+2020-12-22 00:00:00,IT Managed Service,Patient Systems,System C Healthcare Ltd,786951,382494.0,NMID 09 - December.xlsx,1
+2021-01-08 00:00:00,Drugs,Pharmacy,Aah Pharmaceutical Ltd,787477,30802.0,NMID 10 - January.xlsx,1
+2021-01-08 00:00:00,Project Management,GDE Fast Follower Programme,Brightive Ltd,787732,28063.0,NMID 10 - January.xlsx,1
+2021-01-08 00:00:00,Refurbishment,Estates & Facilities,Bynorth Ltd,787056,73064.0,NMID 10 - January.xlsx,1
+2021-01-08 00:00:00,Scanning Facilities,Diagnostic Imaging,Canon Medical Systems Ltd,787830,39857.0,NMID 10 - January.xlsx,1
+2021-01-08 00:00:00,Scanning Facilities,Diagnostic Imaging,Canon Medical Systems Ltd,787840,31199.0,NMID 10 - January.xlsx,1
+2021-01-08 00:00:00,Software Licences,Informatics,Chks Ltd,787717,47208.0,NMID 10 - January.xlsx,1
+2021-01-08 00:00:00,Temporary staff,Hospital Wide,Cromwell Medical Staffing,787517,25468.0,NMID 10 - January.xlsx,1
+2021-01-08 00:00:00,Storage of Records,Trust wide,Crown Records Management Ltd,787004,27962.0,NMID 10 - January.xlsx,1
+2021-01-08 00:00:00,Medical Equipment Purchase,Medical Equipment Management,Ge Medical Systems Ltd,787070,298939.0,NMID 10 - January.xlsx,1
+2021-01-08 00:00:00,Consultancy,Human Resources,Inspiring Hope Ltd,787835,58088.0,NMID 10 - January.xlsx,1
+2021-01-08 00:00:00,Rates,Estates & Facilities,London Borough Of Enfield,786992,262808.0,NMID 10 - January.xlsx,1
+2021-01-08 00:00:00,Medical consumables,Trust wide,Nhs Supply Chain,786948,127064.0,NMID 10 - January.xlsx,1
+2021-01-08 00:00:00,Drugs,Pharmacy,Novartis Pharma Uk Ltd,787264,42107.0,NMID 10 - January.xlsx,1
+2021-01-08 00:00:00,Healthcare services,Dermatology ,Omnes Healthcare Ltd,787507,175379.0,NMID 10 - January.xlsx,1
+2021-01-15 00:00:00,Safety and security systems,Estates & Facilities,Adt Fire & Security,788183,53940.0,NMID 10 - January.xlsx,1
+2021-01-15 00:00:00,Medical Equipment Purchase,Medical Equipment Management,Baxter Healthcare Ltd,785861,36000.0,NMID 10 - January.xlsx,1
+2021-01-15 00:00:00,Project Management,GDE Fast Follower Programme,Brightive Ltd,788348,59040.0,NMID 10 - January.xlsx,1
+2021-01-15 00:00:00,Utilities,Estates & Facilities,Bynorth Ltd,788107,132443.0,NMID 10 - January.xlsx,1
+2021-01-15 00:00:00,Security Variation,Estates & Facilities,Carlisle Security Services Ltd,788239,130876.0,NMID 10 - January.xlsx,1
+2021-01-15 00:00:00,Send Out Tests,Diagnostic Imaging,Everlight Radiology,788248,89471.0,NMID 10 - January.xlsx,1
+2021-01-15 00:00:00,IT Support and Maintenance,Informatics,Gooroo Ltd,788053,26400.0,NMID 10 - January.xlsx,1
+2021-01-15 00:00:00,Insurance,Medical Director,Nhs Resolution,789119,1648980.0,NMID 10 - January.xlsx,1
+2021-01-15 00:00:00,Hospice Contracted Service,Palliative Care Community Service,North London Hospice,787115,-16000.0,NMID 10 - January.xlsx,-1
+2021-01-15 00:00:00,Hospice Contracted Service,Palliative Care Community Service,North London Hospice,788015,170515.0,NMID 10 - January.xlsx,1
+2021-01-15 00:00:00,Drugs,Pharmacy,Novartis Pharma Uk Ltd,787920,34088.0,NMID 10 - January.xlsx,1
+2021-01-15 00:00:00,Drugs,Pharmacy,Novartis Pharma Uk Ltd,787936,33657.0,NMID 10 - January.xlsx,1
+2021-01-15 00:00:00,Temporary staff,Hospital Wide,Pulse Healthcare Ltd,788091,36754.0,NMID 10 - January.xlsx,1
+2021-01-15 00:00:00,Drugs,Pharmacy,Roche Products Ltd,788003,27755.0,NMID 10 - January.xlsx,1
+2021-01-15 00:00:00,Drugs,Pharmacy,Roche Products Ltd,788004,33528.0,NMID 10 - January.xlsx,1
+2021-01-15 00:00:00,Drugs,Pharmacy,Roche Products Ltd,788005,45641.0,NMID 10 - January.xlsx,1
+2021-01-15 00:00:00,Medical Staff Recharge,Various Medical Specialties,Royal Free London Nhsft,785400,181597.0,NMID 10 - January.xlsx,1
+2021-01-15 00:00:00,Medical Staff Recharge,Various Medical Specialties,Royal Free London Nhsft,785401,-9539.0,NMID 10 - January.xlsx,-1
+2021-01-15 00:00:00,Medical Staff Recharge,Various Medical Specialties,Royal Free London Nhsft,785402,-10278.0,NMID 10 - January.xlsx,-1
+2021-01-15 00:00:00,Medical Staff Recharge,Various Medical Specialties,Royal Free London Nhsft,785403,-10831.0,NMID 10 - January.xlsx,-1
+2021-01-15 00:00:00,Common Services Charge,Histopathology,Royal Free London Nhsft,786412,84500.0,NMID 10 - January.xlsx,1
+2021-01-15 00:00:00,IT Hardware Purchase,Computer Services,Softcat Plc,788324,106413.0,NMID 10 - January.xlsx,1
+2021-01-22 00:00:00,Drugs,Pharmacy,Aah Pharmaceutical Ltd,788864,30802.0,NMID 10 - January.xlsx,1
+2021-01-22 00:00:00,Salary Recharge,Human Resources,Barnet Enf & Har Mental Hlth Nhs Trust,789170,26410.0,NMID 10 - January.xlsx,1
+2021-01-22 00:00:00,Temporary staff,Computer Services,Bates It Information Technology,789061,33333.0,NMID 10 - January.xlsx,1
+2021-01-22 00:00:00,Drugs,Pharmacy,Bayer Plc,788672,31935.0,NMID 10 - January.xlsx,1
+2021-01-22 00:00:00,PFI Unitary Payment,PFI Hospital,Bynorth Ltd,788196,1910982.0,NMID 10 - January.xlsx,1
+2021-01-22 00:00:00,Utilities,Estates & Facilities,Bynorth Ltd,788196,102366.0,NMID 10 - January.xlsx,1
+2021-01-22 00:00:00,Security Variation,Estates & Facilities,Carlisle Security Services Ltd,789130,42110.0,NMID 10 - January.xlsx,1
+2021-01-22 00:00:00,IT Pathology Support,Patient Systems,Csc Computer Sciences Ltd,789250,57927.0,NMID 10 - January.xlsx,1
+2021-01-22 00:00:00,Pathology Service,Pathology,Health Service Laboratories-Analytics,787738,450550.0,NMID 10 - January.xlsx,1
+2021-01-22 00:00:00,Facilities Management,Pathology,Health Services Laboratories Fm,787736,601355.0,NMID 10 - January.xlsx,1
+2021-01-22 00:00:00,Drugs,Pharmacy,Janssen-Cilag Ltd,788849,32857.0,NMID 10 - January.xlsx,1
+2021-01-22 00:00:00,FM Contract Variation,Estates & Facilities,Medirest - Compass Group Uk & Ireland,786367,131273.0,NMID 10 - January.xlsx,1
+2021-01-22 00:00:00,FM Contract,Estates & Facilities,Medirest - Compass Group Uk & Ireland,786369,673583.0,NMID 10 - January.xlsx,1
+2021-01-22 00:00:00,Catering Contract,Estates & Facilities,Medirest - Compass Group Uk & Ireland,786369,202721.0,NMID 10 - January.xlsx,1
+2021-01-22 00:00:00,Blood & Blood Products,Pathology,Nhs Blood & Transplant,788903,122710.0,NMID 10 - January.xlsx,1
+2021-01-22 00:00:00,Medical consumables,Trust wide,Nhs Supply Chain,788227,101405.0,NMID 10 - January.xlsx,1
+2021-01-22 00:00:00,Medical consumables,Trust wide,Nhs Supply Chain,788230,102788.0,NMID 10 - January.xlsx,1
+2021-01-22 00:00:00,Medical consumables,Trust wide,Nhs Supply Chain,788231,50914.0,NMID 10 - January.xlsx,1
+2021-01-22 00:00:00,Medical consumables,Trust wide,Nhs Supply Chain,788870,123431.0,NMID 10 - January.xlsx,1
+2021-01-22 00:00:00,Temporary staff,Hospital Wide,Pulse Healthcare Ltd,787506,407354.0,NMID 10 - January.xlsx,1
+2021-01-22 00:00:00,Temporary staff,Hospital Wide,Pulse Healthcare Ltd,787753,-465000.0,NMID 10 - January.xlsx,-1
+2021-01-22 00:00:00,Temporary staff,Hospital Wide,Pulse Healthcare Ltd,787754,-465000.0,NMID 10 - January.xlsx,-1
+2021-01-22 00:00:00,Temporary staff,Hospital Wide,Pulse Healthcare Ltd,787756,450520.0,NMID 10 - January.xlsx,1
+2021-01-22 00:00:00,Temporary staff,Hospital Wide,Pulse Healthcare Ltd,788352,531256.0,NMID 10 - January.xlsx,1
+2021-01-22 00:00:00,IT Hardware Purchase,Diagnostic Imaging,Sectra Ltd,789075,126590.0,NMID 10 - January.xlsx,1
+2021-01-22 00:00:00,Domestic Services,Estates & Facilities,Tgc Facility Services Ltd,789229,242906.0,NMID 10 - January.xlsx,1
+2021-01-29 00:00:00,Medical Equipment Purchase,Medical Equipment Management,Baxter Healthcare Ltd,789449,36000.0,NMID 10 - January.xlsx,1
+2021-01-29 00:00:00,Sterile Services,Endoscopy,Guys & St Thomas Nhs Foundation Trust,789534,44920.0,NMID 10 - January.xlsx,1
+2021-01-29 00:00:00,Recruitment,Human Resources,Jane Lewis,789522,34540.0,NMID 10 - January.xlsx,1
+2021-01-29 00:00:00,Internal Audit,Finance,Kpmg Llp,789633,34320.0,NMID 10 - January.xlsx,1
+2021-01-29 00:00:00,Blood & Blood Products,Pathology,Nhs Blood & Transplant,789386,122710.0,NMID 10 - January.xlsx,1
+2021-01-29 00:00:00,Medical consumables,Trust wide,Nhs Supply Chain,789362,117221.0,NMID 10 - January.xlsx,1
+2021-01-29 00:00:00,Student/Staff Rent,Staff Accommodation,Origin Housing Ltd,789365,28210.0,NMID 10 - January.xlsx,1
+2021-01-29 00:00:00,Temporary staff,Hospital Wide,Pulse Healthcare Ltd,789456,652926.0,NMID 10 - January.xlsx,1
+2021-01-29 00:00:00,Temporary staff,Hospital Wide,Pulse Healthcare Ltd,789475,607996.0,NMID 10 - January.xlsx,1
+2021-01-29 00:00:00,Medical Staff Recharge,Various Medical Specialties,Royal Free London Nhsft,788193,172806.0,NMID 10 - January.xlsx,1
+2021-01-29 00:00:00,Laundry Services,Estates & Facilities,Synergy Health Managed Services Ltd,789690,69914.0,NMID 10 - January.xlsx,1
+2021-02-04 00:00:00,Drugs,Pharmacy,Aah Pharmaceutical Ltd,789357,26632.0,NMID 11 - February.xlsx,1
+2021-02-04 00:00:00,Drugs,Pharmacy,Aah Pharmaceutical Ltd,789998,30802.0,NMID 11 - February.xlsx,1
+2021-02-04 00:00:00,Refurbishment,Estates & Facilities,Ahp Architects & Surveyors Ltd,790038,46452.0,NMID 11 - February.xlsx,1
+2021-02-04 00:00:00,Scanning Facilities,Diagnostic Imaging,Canon Medical Systems Ltd,790235,39857.0,NMID 11 - February.xlsx,1
+2021-02-04 00:00:00,Scanning Facilities,Diagnostic Imaging,Canon Medical Systems Ltd,790236,37200.0,NMID 11 - February.xlsx,1
+2021-02-04 00:00:00,Temporary staff,Hospital Wide,Cromwell Medical Staffing,789697,33153.0,NMID 11 - February.xlsx,1
+2021-02-04 00:00:00,Medical consumables,Trust wide,Nhs Supply Chain,790247,94489.0,NMID 11 - February.xlsx,1
+2021-02-04 00:00:00,Medical Equipment Purchase,Medical Equipment Management,Nihon Kohden Uk Ltd,790114,65935.0,NMID 11 - February.xlsx,1
+2021-02-04 00:00:00,Temporary staff,Hospital Wide,Pulse Healthcare Ltd,790085,751462.0,NMID 11 - February.xlsx,1
+2021-02-04 00:00:00,Common Services Charge,Histopathology,Royal Free London Nhsft,789171,80333.0,NMID 11 - February.xlsx,1
+2021-02-04 00:00:00,Common Services Charge,Histopathology,Royal Free London Nhsft,789172,80333.0,NMID 11 - February.xlsx,1
+2021-02-04 00:00:00,Common Services Charge,Histopathology,Royal Free London Nhsft,789173,-84500.0,NMID 11 - February.xlsx,-1
+2021-02-04 00:00:00,Miscellaneous,Human Resources,Selenity Ltd,790110,29161.0,NMID 11 - February.xlsx,1
+2021-02-04 00:00:00,Software Licences,Human Resources,Softcat Plc,790233,168346.0,NMID 11 - February.xlsx,1
+2021-02-04 00:00:00,Domestic Services,Estates & Facilities,Tgc Facility Services Ltd,790112,255439.0,NMID 11 - February.xlsx,1
+2021-02-04 00:00:00,Procurement Service,Procurement,The Whittington Hospital Nhs Trust,789667,67173.0,NMID 11 - February.xlsx,1
+2021-02-04 00:00:00,Procurement Service,Procurement,The Whittington Hospital Nhs Trust,789672,67173.0,NMID 11 - February.xlsx,1
+2021-02-11 00:00:00,Project Management,GDE Fast Follower Programme,Brightive Ltd,790333,95802.0,NMID 11 - February.xlsx,1
+2021-02-11 00:00:00,Project Management,GDE Fast Follower Programme,Brightive Ltd,790335,28063.0,NMID 11 - February.xlsx,1
+2021-02-11 00:00:00,Furniture & Fittings,Estates & Facilities,Bynorth Ltd,790497,36033.0,NMID 11 - February.xlsx,1
+2021-02-11 00:00:00,Scanning Facilities,Diagnostic Imaging,Canon Medical Systems Ltd,790344,38571.0,NMID 11 - February.xlsx,1
+2021-02-11 00:00:00,Drugs,Pharmacy,Celgene Ltd,788729,25719.0,NMID 11 - February.xlsx,1
+2021-02-11 00:00:00,IT Support and Maintenance,Diabetic Eye Screening,Digital Healthcare Ltd,790577,67650.0,NMID 11 - February.xlsx,1
+2021-02-11 00:00:00,Sterile Services,Endoscopy,Guys & St Thomas Nhs Foundation Trust,790302,41949.0,NMID 11 - February.xlsx,1
+2021-02-11 00:00:00,Site Planning,Estates & Facilities,Ibi Group Uk Ltd,790504,60611.0,NMID 11 - February.xlsx,1
+2021-02-11 00:00:00,FM Contract Variation,Estates & Facilities,Medirest - Compass Group Uk & Ireland,790266,-54014.0,NMID 11 - February.xlsx,-1
+2021-02-11 00:00:00,FM Contract Variation,Estates & Facilities,Medirest - Compass Group Uk & Ireland,790557,184742.0,NMID 11 - February.xlsx,1
+2021-02-11 00:00:00,FM Contract,Estates & Facilities,Medirest - Compass Group Uk & Ireland,790559,673583.0,NMID 11 - February.xlsx,1
+2021-02-11 00:00:00,Catering Contract,Estates & Facilities,Medirest - Compass Group Uk & Ireland,790559,202721.0,NMID 11 - February.xlsx,1
+2021-02-11 00:00:00,Refurbishment,Estates & Facilities,Murphy Philipps Associates Llp,790278,28794.0,NMID 11 - February.xlsx,1
+2021-02-11 00:00:00,Refurbishment,Estates & Facilities,Murphy Philipps Associates Llp,790510,40138.0,NMID 11 - February.xlsx,1
+2021-02-11 00:00:00,Medical consumables,Trust wide,Nhs Supply Chain,790501,97531.0,NMID 11 - February.xlsx,1
+2021-02-11 00:00:00,Medical Equipment Maintenance,Medical Equipment Management,Nhs Supply Chain (Maintenance),785840,35181.0,NMID 11 - February.xlsx,1
+2021-02-11 00:00:00,Medical Equipment Maintenance,Medical Equipment Management,Nhs Supply Chain (Maintenance),785841,-35943.0,NMID 11 - February.xlsx,-1
+2021-02-11 00:00:00,Student/Staff Rent,Staff Accommodation,Origin Housing Ltd,790486,28210.0,NMID 11 - February.xlsx,1
+2021-02-11 00:00:00,Temporary staff,Hospital Wide,Pulse Healthcare Ltd,790522,699751.0,NMID 11 - February.xlsx,1
+2021-02-11 00:00:00,Temporary staff,Hospital Wide,Pulse Healthcare Ltd,790523,38792.0,NMID 11 - February.xlsx,1
+2021-02-11 00:00:00,IT Hardware Purchase,Computer Services,Specialist Computer Cent,790502,207279.0,NMID 11 - February.xlsx,1
+2021-02-11 00:00:00,Software Licences,GDE Fast Follower Programme,System C Healthcare Ltd,790318,30000.0,NMID 11 - February.xlsx,1
+2021-02-11 00:00:00,Software Licences,GDE Fast Follower Programme,System C Healthcare Ltd,790319,56704.0,NMID 11 - February.xlsx,1
+2021-02-11 00:00:00,Software Licences,GDE Fast Follower Programme,System C Healthcare Ltd,790320,41256.0,NMID 11 - February.xlsx,1
+2021-02-11 00:00:00,Procurement Service,Procurement,The Whittington Hospital Nhs Trust,789673,67173.0,NMID 11 - February.xlsx,1
+2021-02-11 00:00:00,Staff training,Human Resources,Whi Consulting Ltd,790603,29580.0,NMID 11 - February.xlsx,1
+2021-02-18 00:00:00,Drugs,Pharmacy,Aah Pharmaceutical Ltd,791027,30802.0,NMID 11 - February.xlsx,1
+2021-02-18 00:00:00,Facilities Management,Pathology,Health Services Laboratories Fm,790067,601355.0,NMID 11 - February.xlsx,1
+2021-02-23 00:00:00,Drugs,Pharmacy,Alliance Healthcare Distribution Ltd,791434,26550.0,NMID 11 - February.xlsx,1
+2021-02-23 00:00:00,Drugs,Pharmacy,Alliance Healthcare Distribution Ltd,791439,25724.0,NMID 11 - February.xlsx,1
+2021-02-23 00:00:00,Drugs,Pharmacy,Alliance Healthcare Distribution Ltd,791484,30444.0,NMID 11 - February.xlsx,1
+2021-02-23 00:00:00,IT Support and Maintenance,Computer Services,Bates It Information Technology,791598,26130.0,NMID 11 - February.xlsx,1
+2021-02-23 00:00:00,Drugs,Pharmacy,Bayer Plc,791448,27373.0,NMID 11 - February.xlsx,1
+2021-02-23 00:00:00,PFI Unitary Payment,PFI Hospital,Bynorth Ltd,791138,1732060.0,NMID 11 - February.xlsx,1
+2021-02-23 00:00:00,Utilities,Estates & Facilities,Bynorth Ltd,791138,103275.0,NMID 11 - February.xlsx,1
+2021-02-23 00:00:00,Photocopy Fees,Hospital Wide,Canon Uk Ltd,791222,81600.0,NMID 11 - February.xlsx,1
+2021-02-23 00:00:00,Pathology Service,Pathology,Health Service Laboratories-Analytics,790068,450550.0,NMID 11 - February.xlsx,1
+2021-02-23 00:00:00,Rent Paid,Diabetic Eye Screening Programme,Nhs Property Services Ltd,728616,26081.0,NMID 11 - February.xlsx,1
+2021-02-23 00:00:00,Medical consumables,Trust wide,Nhs Supply Chain,791200,101378.0,NMID 11 - February.xlsx,1
+2021-02-23 00:00:00,Healthcare services,Dermatology ,Omnes Healthcare Ltd,790019,175379.0,NMID 11 - February.xlsx,1
+2021-02-23 00:00:00,Temporary staff,Hospital Wide,Pulse Healthcare Ltd,791352,649458.0,NMID 11 - February.xlsx,1
+2021-02-23 00:00:00,Temporary staff,Hospital Wide,Pulse Healthcare Ltd,791353,658639.0,NMID 11 - February.xlsx,1
+2021-02-23 00:00:00,Consultancy,Finance,Rob Ryan Consulting Ltd,791242,32232.0,NMID 11 - February.xlsx,1
+2021-02-23 00:00:00,IT Hardware Purchase,GDE Fast Follower Programme,Specialist Computer Cent,791340,52377.0,NMID 11 - February.xlsx,1
+2021-02-23 00:00:00,IT Hardware Purchase,Computer Services,Specialist Computer Cent,791345,63770.0,NMID 11 - February.xlsx,1
+2021-02-23 00:00:00,IT Hardware Purchase,Computer Services,Specialist Computer Cent,791669,227752.0,NMID 11 - February.xlsx,1
+2021-02-23 00:00:00,IT Hardware Purchase,Computer Services,Specialist Computer Cent,791675,28278.0,NMID 11 - February.xlsx,1
+2021-02-23 00:00:00,IT Managed Service,Patient Systems,System C Healthcare Ltd,791356,382494.0,NMID 11 - February.xlsx,1
+2021-02-23 00:00:00,Software Licences,GDE Fast Follower Programme,System C Healthcare Ltd,791709,30000.0,NMID 11 - February.xlsx,1
+2021-02-23 00:00:00,Software Licences,GDE Fast Follower Programme,System C Healthcare Ltd,791710,30000.0,NMID 11 - February.xlsx,1
+2021-02-23 00:00:00,Procurement Service,Procurement,The Whittington Hospital Nhs Trust,789675,67173.0,NMID 11 - February.xlsx,1
+2021-02-23 00:00:00,Procurement Service,Procurement,The Whittington Hospital Nhs Trust,789677,67173.0,NMID 11 - February.xlsx,1
+2021-02-23 00:00:00,Healthcare,Maternity,University College London Hospital Nhs Ft,728232,37311.0,NMID 11 - February.xlsx,1
+2021-02-23 00:00:00,Phone Charges,Telecom Support,University College London Hospital Nhs Ft,791194,-46410.0,NMID 11 - February.xlsx,-1
+2021-03-05 00:00:00,Drugs,Pharmacy,Alloga Uk Ltd,792100,72900.0,NMID 12 - March.xlsx,1
+2021-03-05 00:00:00,Salary Recharge,Oncology,Barnet Enf & Har Mental Hlth Nhs Trust,786165,14012.0,NMID 12 - March.xlsx,1
+2021-03-05 00:00:00,Salary Recharge,Sexual Health Community Services,Barnet Enf & Har Mental Hlth Nhs Trust,786165,14012.0,NMID 12 - March.xlsx,1
+2021-03-05 00:00:00,Drugs,Pharmacy,Bayer Plc,792176,31935.0,NMID 12 - March.xlsx,1
+2021-03-05 00:00:00,Catering Supplies,Trust wide,Beyond Meals Limited,792687,43885.0,NMID 12 - March.xlsx,1
+2021-03-05 00:00:00,Utilities,Estates & Facilities,Bynorth Ltd,790495,131879.0,NMID 12 - March.xlsx,1
+2021-03-05 00:00:00,Utilities,Estates & Facilities,Bynorth Ltd,791840,139062.0,NMID 12 - March.xlsx,1
+2021-03-05 00:00:00,Utilities,Estates & Facilities,Bynorth Ltd,791841,156220.0,NMID 12 - March.xlsx,1
+2021-03-05 00:00:00,Refurbishment,Estates & Facilities,Bynorth Ltd,791848,493610.0,NMID 12 - March.xlsx,1
+2021-03-05 00:00:00,Scanning Facilities,Diagnostic Imaging,Canon Medical Systems Ltd,792554,53942.0,NMID 12 - March.xlsx,1
+2021-03-05 00:00:00,Send Out Tests,Diagnostic Imaging,Everlight Radiology,791973,79830.0,NMID 12 - March.xlsx,1
+2021-03-05 00:00:00,Hire of Storage Facilities,Mortuary,Floyd & Son Ltd,791778,28000.0,NMID 12 - March.xlsx,1
+2021-03-05 00:00:00,Hire of Storage Facilities,Mortuary,Floyd & Son Ltd,792547,29000.0,NMID 12 - March.xlsx,1
+2021-03-05 00:00:00,Medical Equipment Purchase,Medical Equipment Management,Ge Medical Systems Ltd,792411,42803.0,NMID 12 - March.xlsx,1
+2021-03-05 00:00:00,Medical Equipment Purchase,Diagnostic Imaging,Ge Medical Systems Ltd,792457,39690.0,NMID 12 - March.xlsx,1
+2021-03-05 00:00:00,Sterile Services,Endoscopy,Guys & St Thomas Nhs Foundation Trust,792689,30168.0,NMID 12 - March.xlsx,1
+2021-03-05 00:00:00,Recruitment,Human Resources,Jane Lewis,792682,32382.0,NMID 12 - March.xlsx,1
+2021-03-05 00:00:00,Recruitment,Human Resources,Jane Lewis,792684,32382.0,NMID 12 - March.xlsx,1
+2021-03-05 00:00:00,Recruitment,Human Resources,Jane Lewis,792685,32382.0,NMID 12 - March.xlsx,1
+2021-03-05 00:00:00,Drugs,Pharmacy,Janssen-Cilag Ltd,792124,29397.0,NMID 12 - March.xlsx,1
+2021-03-05 00:00:00,Drugs,Pharmacy,Janssen-Cilag Ltd,792177,33888.0,NMID 12 - March.xlsx,1
+2021-03-05 00:00:00,Drugs,Pharmacy,Janssen-Cilag Ltd,792358,26956.0,NMID 12 - March.xlsx,1
+2021-03-05 00:00:00,Medical Equipment Purchase,Medical Equipment Management,Karl Storz Endoscopy Uk Ltd,792654,41784.0,NMID 12 - March.xlsx,1
+2021-03-05 00:00:00,Blood & Blood Products,Pathology,Nhs Blood & Transplant,791796,122710.0,NMID 12 - March.xlsx,1
+2021-03-05 00:00:00,Medical consumables,Trust wide,Nhs Supply Chain,792439,70659.0,NMID 12 - March.xlsx,1
+2021-03-05 00:00:00,Medical Equipment Purchase,Medical Equipment Management,Oncology Systems Ltd,792369,61800.0,NMID 12 - March.xlsx,1
+2021-03-05 00:00:00,Temporary staff,Hospital Wide,Pulse Healthcare Ltd,792503,783426.0,NMID 12 - March.xlsx,1
+2021-03-05 00:00:00,Common Services Charge,Histopathology,Royal Free London Nhsft,791198,80333.0,NMID 12 - March.xlsx,1
+2021-03-05 00:00:00,Procurement Service,Procurement,The Whittington Hospital Nhs Trust,789679,67173.0,NMID 12 - March.xlsx,1
+2021-03-12 00:00:00,Drugs,Pharmacy,Aah Pharmaceutical Ltd,792911,27615.0,NMID 12 - March.xlsx,1
+2021-03-12 00:00:00,Drugs,Pharmacy,Bayer Plc,792810,31935.0,NMID 12 - March.xlsx,1
+2021-03-12 00:00:00,Project Management,GDE Fast Follower Programme,Brightive Ltd,793049,127212.0,NMID 12 - March.xlsx,1
+2021-03-12 00:00:00,Project Management,GDE Fast Follower Programme,Brightive Ltd,793078,28063.0,NMID 12 - March.xlsx,1
+2021-03-12 00:00:00,Refurbishment,Estates & Facilities,Bynorth Ltd,793005,614997.0,NMID 12 - March.xlsx,1
+2021-03-12 00:00:00,Domestic Services,Estates & Facilities,Clean Event Services Ltd,792932,66830.0,NMID 12 - March.xlsx,1
+2021-03-12 00:00:00,Patient Transport Contract,Estates & Facilities,Dhl Supply Chain - Uk&I,793351,175511.0,NMID 12 - March.xlsx,1
+2021-03-12 00:00:00,Patient Transport Contract,Estates & Facilities,Dhl Supply Chain - Uk&I,793352,146402.0,NMID 12 - March.xlsx,1
+2021-03-12 00:00:00,Patient Transport Contract,Estates & Facilities,Dhl Supply Chain - Uk&I,793353,191627.0,NMID 12 - March.xlsx,1
+2021-03-12 00:00:00,Send Out Tests,Diagnostic Imaging,Everlight Radiology,793287,71767.0,NMID 12 - March.xlsx,1
+2021-03-12 00:00:00,Medical Equipment Purchase,Medical Equipment Management,Getinge Ltd,792994,32698.0,NMID 12 - March.xlsx,1
+2021-03-12 00:00:00,Software Licences,Computer Services,Insight Direct (Uk) Ltd,793014,111864.0,NMID 12 - March.xlsx,1
+2021-03-12 00:00:00,Refurbishment,Estates & Facilities,Komfort Services,793068,120000.0,NMID 12 - March.xlsx,1
+2021-03-12 00:00:00,FM Contract Variation,Estates & Facilities,Medirest - Compass Group Uk & Ireland,793350,109746.0,NMID 12 - March.xlsx,1
+2021-03-12 00:00:00,FM Contract,Estates & Facilities,Medirest - Compass Group Uk & Ireland,793360,673583.0,NMID 12 - March.xlsx,1
+2021-03-12 00:00:00,Catering Contract,Estates & Facilities,Medirest - Compass Group Uk & Ireland,793360,202721.0,NMID 12 - March.xlsx,1
+2021-03-12 00:00:00,Medical consumables,Trust wide,Nhs Supply Chain,792934,73347.0,NMID 12 - March.xlsx,1
+2021-03-12 00:00:00,Medical Equipment Purchase,Medical Equipment Management,Nhs Supply Chain (Capital),793356,41659.0,NMID 12 - March.xlsx,1
+2021-03-12 00:00:00,Medical Equipment Maintenance,Medical Equipment Management,Nhs Supply Chain (Maintenance),790521,-10670.0,NMID 12 - March.xlsx,-1
+2021-03-12 00:00:00,Hospice Contracted Service,Palliative Care Community Service,North London Hospice,792454,169494.0,NMID 12 - March.xlsx,1
+2021-03-12 00:00:00,Healthcare services,Dermatology ,Omnes Healthcare Ltd,793303,175379.0,NMID 12 - March.xlsx,1
+2021-03-12 00:00:00,Student/Staff Rent,Staff Accommodation,Origin Housing Ltd,793354,28210.0,NMID 12 - March.xlsx,1
+2021-03-12 00:00:00,Temporary staff,Hospital Wide,Pulse Healthcare Ltd,793194,652217.0,NMID 12 - March.xlsx,1
+2021-03-12 00:00:00,Drugs,Pharmacy,Roche Products Ltd,792738,33761.0,NMID 12 - March.xlsx,1
+2021-03-12 00:00:00,Drugs,Pharmacy,Roche Products Ltd,792746,36172.0,NMID 12 - March.xlsx,1
+2021-03-12 00:00:00,Drugs,Pharmacy,Roche Products Ltd,792751,27491.0,NMID 12 - March.xlsx,1
+2021-03-12 00:00:00,Drugs,Pharmacy,Roche Products Ltd,792791,36655.0,NMID 12 - March.xlsx,1
+2021-03-12 00:00:00,Drugs,Pharmacy,Roche Products Ltd,792897,35349.0,NMID 12 - March.xlsx,1
+2021-03-12 00:00:00,Drugs,Pharmacy,Roche Products Ltd,792907,30590.0,NMID 12 - March.xlsx,1
+2021-03-12 00:00:00,Drugs,Pharmacy,Roche Products Ltd,792915,40819.0,NMID 12 - March.xlsx,1
+2021-03-12 00:00:00,IT Managed Service,Computer Services,Sectra Ltd,793306,180313.0,NMID 12 - March.xlsx,1
+2021-03-12 00:00:00,Medical Equipment Purchase,Diagnostic Imaging,Siemens Healthcare Limited,792631,199200.0,NMID 12 - March.xlsx,1
+2021-03-12 00:00:00,Medical Equipment Purchase,Diagnostic Imaging,Siemens Healthcare Limited,792634,178200.0,NMID 12 - March.xlsx,1
+2021-03-12 00:00:00,Medical Equipment Purchase,Diagnostic Imaging,Siemens Healthcare Limited,792635,178200.0,NMID 12 - March.xlsx,1
+2021-03-12 00:00:00,Medical Equipment Purchase,Diagnostic Imaging,Siemens Healthcare Limited,792636,144000.0,NMID 12 - March.xlsx,1
+2021-03-12 00:00:00,Medical Equipment Purchase,Diagnostic Imaging,Siemens Healthcare Limited,792637,199200.0,NMID 12 - March.xlsx,1
+2021-03-19 00:00:00,Temporary staff,Hospital Wide,Cromwell Medical Staffing,794098,40201.0,NMID 12 - March.xlsx,1
+2021-03-19 00:00:00,Patient Transport Contract,Estates & Facilities,Dhl Supply Chain - Uk&I,793789,145929.0,NMID 12 - March.xlsx,1
+2021-03-19 00:00:00,Refurbishment,Estates & Facilities,Draeger Medical Uk Ltd - Drager,793709,27689.0,NMID 12 - March.xlsx,1
+2021-03-19 00:00:00,IT Support and Maintenance,Patient Systems,Healthnet Connections Ltd,793759,29605.0,NMID 12 - March.xlsx,1
+2021-03-19 00:00:00,FM Contract Variation,Estates & Facilities,Medirest - Compass Group Uk & Ireland,793349,97645.0,NMID 12 - March.xlsx,1
+2021-03-19 00:00:00,Medical consumables,Trust wide,Nhs Supply Chain,791595,87340.0,NMID 12 - March.xlsx,1
+2021-03-19 00:00:00,Medical consumables,Trust wide,Nhs Supply Chain,793375,72017.0,NMID 12 - March.xlsx,1
+2021-03-19 00:00:00,Medical Equipment Maintenance,Medical Equipment Management,Nhs Supply Chain (Maintenance),793714,35685.0,NMID 12 - March.xlsx,1
+2021-03-19 00:00:00,Temporary staff,Hospital Wide,Pulse Healthcare Ltd,793933,535916.0,NMID 12 - March.xlsx,1
+2021-03-19 00:00:00,Medical Staff Recharge,Various Medical Specialties,Royal Free London Nhsft,791835,169253.0,NMID 12 - March.xlsx,1
+2021-03-19 00:00:00,Medical Staff Recharge,Various Medical Specialties,Royal Free London Nhsft,792935,232575.0,NMID 12 - March.xlsx,1
+2021-03-19 00:00:00,Radiation Protection,Nuclear Medicine,Royal Free London Nhsft,793808,37722.0,NMID 12 - March.xlsx,1
+2021-03-19 00:00:00,Radiation Protection,Nuclear Medicine,Royal Free London Nhsft,793818,45396.0,NMID 12 - March.xlsx,1
+2021-03-19 00:00:00,Drugs,Pharmacy,Sanofi Aventis,793491,43714.0,NMID 12 - March.xlsx,1
+2021-03-19 00:00:00,Medical Equipment Maintenance,Urology,Shawbrook Bank Ltd,793850,34757.0,NMID 12 - March.xlsx,1
+2021-03-19 00:00:00,Laundry Services,Estates & Facilities,Synergy Health Managed Services Ltd,794003,56271.0,NMID 12 - March.xlsx,1
+2021-03-19 00:00:00,Laundry Services,Estates & Facilities,Synergy Health Managed Services Ltd,794004,61587.0,NMID 12 - March.xlsx,1
+2021-03-19 00:00:00,Healthcare services,Sexual Health Community Services,The Terrence Higgins Trust,793872,36000.0,NMID 12 - March.xlsx,1
+2021-03-19 00:00:00,Procurement Service,Procurement,The Whittington Hospital Nhs Trust,793223,67173.0,NMID 12 - March.xlsx,1
+2021-03-19 00:00:00,Healthcare,Maternity,University College London Hospital Nhs Ft,728489,28068.0,NMID 12 - March.xlsx,1
+2021-03-19 00:00:00,Healthcare,Maternity,University College London Hospital Nhs Ft,754381,43870.0,NMID 12 - March.xlsx,1
+2021-03-19 00:00:00,Medical Equipment Maintenance,Medical Equipment Management,Varian Medical Systems Uk Ltd,793102,94935.0,NMID 12 - March.xlsx,1
+2021-03-29 00:00:00,PFI Unitary Payment,PFI Hospital,Bynorth Ltd,793871,1909881.0,NMID 12 - March.xlsx,1
+2021-03-29 00:00:00,Utilities,Estates & Facilities,Bynorth Ltd,793871,85134.0,NMID 12 - March.xlsx,1
+2021-03-29 00:00:00,Refurbishment,Estates & Facilities,Bynorth Ltd,794749,30767.0,NMID 12 - March.xlsx,1
+2021-03-29 00:00:00,Refurbishment,Estates & Facilities,Bynorth Ltd,794755,190834.0,NMID 12 - March.xlsx,1
+2021-03-29 00:00:00,Refurbishment,Estates & Facilities,Bynorth Ltd,794756,213060.0,NMID 12 - March.xlsx,1
+2021-03-29 00:00:00,Rent Paid,Estates & Facilities,Gla Land & Property Ltd,795174,62500.0,NMID 12 - March.xlsx,1
+2021-03-29 00:00:00,Pathology Service,Pathology,Health Service Laboratories-Analytics,792404,450550.0,NMID 12 - March.xlsx,1
+2021-03-29 00:00:00,Facilities Management,Pathology,Health Services Laboratories Fm,792397,601355.0,NMID 12 - March.xlsx,1
+2021-03-29 00:00:00,Site Planning,Estates & Facilities,Ibi Group Uk Ltd,795086,278295.0,NMID 12 - March.xlsx,1
+2021-03-29 00:00:00,Software Licences,Computer Services,Insight Direct (Uk) Ltd,794992,27130.0,NMID 12 - March.xlsx,1
+2021-03-29 00:00:00,Software Licences,Computer Services,Insight Direct (Uk) Ltd,795000,525709.0,NMID 12 - March.xlsx,1
+2021-03-29 00:00:00,Medical Equipment Purchase,Medical Equipment Management,Nhs Supply Chain (Capital),794964,170789.0,NMID 12 - March.xlsx,1
+2021-03-29 00:00:00,Medical Equipment Maintenance,Medical Equipment Management,Nhs Supply Chain (Maintenance),794890,39400.0,NMID 12 - March.xlsx,1
+2021-03-29 00:00:00,Healthcare services,Dermatology ,Omnes Healthcare Ltd,795169,175379.0,NMID 12 - March.xlsx,1
+2021-03-29 00:00:00,IT Support and Maintenance,Computer Services,Pcti Solutions Ltd,795374,30100.0,NMID 12 - March.xlsx,1
+2021-03-29 00:00:00,Hire of Modular Ward,Estates & Facilities,Premier Modular Limited,794686,504453.0,NMID 12 - March.xlsx,1
+2021-03-29 00:00:00,Hire of Modular Ward,Estates & Facilities,Premier Modular Limited,794688,499522.0,NMID 12 - March.xlsx,1
+2021-03-29 00:00:00,Enabling Works Modular Ward,Estates & Facilities,Premier Modular Limited,794984,154747.0,NMID 12 - March.xlsx,1
+2021-03-29 00:00:00,Temporary staff,Hospital Wide,Pulse Healthcare Ltd,794819,492403.0,NMID 12 - March.xlsx,1
+2021-03-29 00:00:00,Software Licences,Computer Services,Softcat Plc,794855,139692.0,NMID 12 - March.xlsx,1
+2021-03-29 00:00:00,Software Licences,Computer Services,Softcat Plc,794855,129844.0,NMID 12 - March.xlsx,1
+2021-03-29 00:00:00,Software Licences,GDE Fast Follower Programme,Wellsky International Ltd,795004,90390.0,NMID 12 - March.xlsx,1
+2021-03-29 00:00:00,Software Licences,GDE Fast Follower Programme,Wellsky International Ltd,795006,26585.0,NMID 12 - March.xlsx,1
+2021-03-29 00:00:00,IT Support and Maintenance,GDE Fast Follower Programme,Wellsky International Ltd,795008,31503.0,NMID 12 - March.xlsx,1
+2021-03-29 00:00:00,IT Support and Maintenance,GDE Fast Follower Programme,Wellsky International Ltd,795012,31503.0,NMID 12 - March.xlsx,1
+2021-03-29 00:00:00,IT Support and Maintenance,GDE Fast Follower Programme,Wellsky International Ltd,795019,31503.0,NMID 12 - March.xlsx,1
+2021-03-30 00:00:00,Phone Charges,Telecom Support,British Telecommunications Plc,795576,37635.0,NMID 12 - March.xlsx,1
+2021-03-30 00:00:00,Phone Charges,Telecom Support,British Telecommunications Plc,795578,21174.0,NMID 12 - March.xlsx,1
+2021-03-30 00:00:00,Phone Charges,Telecom Support,British Telecommunications Plc,795585,23292.0,NMID 12 - March.xlsx,1
+2021-03-30 00:00:00,Phone Charges,Telecom Support,British Telecommunications Plc,795588,21323.0,NMID 12 - March.xlsx,1
+2021-03-30 00:00:00,Phone Charges,Telecom Support,British Telecommunications Plc,795589,22532.0,NMID 12 - March.xlsx,1
+2021-03-30 00:00:00,Phone Charges,Telecom Support,British Telecommunications Plc,795591,40186.0,NMID 12 - March.xlsx,1
+2021-03-30 00:00:00,Phone Charges,Telecom Support,British Telecommunications Plc,795697,21942.0,NMID 12 - March.xlsx,1
