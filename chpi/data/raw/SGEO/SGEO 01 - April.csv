@@ -1,0 +1,236 @@
+Department Family,Entity,Date,Period,Supplier,Invoice Number,Amount,Expense Type,Expense Area
+DoH,SGH,07/04/2020,202001,AAH Hospital Service,51723159M,"32,349.12",JAC Purchases,Balance Sheet
+DoH,SGH,07/04/2020,202001,AAH Hospital Service,51526968E,"105,600.00",Contract Services Building,Capital
+DoH,SGH,15/04/2020,202001,AAH Hospital Service,51992905E,38067.65,M & S Equipment,Capital
+DoH,SGH,15/04/2020,202001,AAH Hospital Service,51845878Y,42768,Contract Services Building,Capital
+DoH,SGH,30/04/2020,202001,AAH Hospital Service,525915307Q,34560,Contract Services Building,Capital
+DoH,SGH,07/04/2020,202001,Abbott Medical UK Limited,7500427297,28080,M & S Surgical Implants,Rehab & Adult Therapy Services
+DoH,SGH,28/04/2020,202001,Absolute Air & Gas Ltd,22344,"29,562.24",Drugs - MHRA License,Pharmacy
+DoH,SGH,28/04/2020,202001,Aimteq Solutions Limited,SI011221,"26,916.00",Contract Services Building,Capital
+DoH,SGH,28/04/2020,202001,Alarm Communication Ltd,25739,"235,511.78",Other Contract Clinical Services,Renal
+DoH,SGH,07/04/2020,202001,Alliance Healthcare (Distribution) Ltd,A03B01948,55642.08,JAC Purchases,Balance Sheet
+DoH,SGH,07/04/2020,202001,Alliance Healthcare (Distribution) Ltd,A03G02296,44810.02,JAC Purchases,Balance Sheet
+DoH,SGH,21/04/2020,202001,Alliance Healthcare (Distribution) Ltd,A03H08667,"27,223.20",Electricity,Energy & Engineering
+DoH,SGH,28/04/2020,202001,Alliance Healthcare (Distribution) Ltd,A04901802,"41,777.16",M & S Eqpt Leasing & Hire,Capital
+DoH,SGH,28/04/2020,202001,Alliance Healthcare (Distribution) Ltd,A04708314,"34,904.90",Contract Services Building,Capital
+DoH,SGH,30/04/2020,202001,Alliance Healthcare (Distribution) Ltd,A02P08572,29100.58,Contract Services Building,Capital
+DoH,SGH,15/04/2020,202001,Alloga UK Limited,SIN102863349,29520,0,0
+DoH,SGH,15/04/2020,202001,Alloga UK Limited,SIN102862113,54240,0,0
+DoH,SGH,15/04/2020,202001,Alloga UK Limited,SIN102857494,53576.16,0,0
+DoH,SGH,15/04/2020,202001,Alloga UK Limited,SIN102857495,162720,0,0
+DoH,SGH,21/04/2020,202001,Alloga UK Limited,SIN102867859,34920,0,0
+DoH,SGH,28/04/2020,202001,Alloga UK Limited,SIN102869055,"27,000.00",Contract Services Building,Capital
+DoH,SGH,30/04/2020,202001,Alloga UK Limited,SIN102881688,37200,JAC Purchases,Balance Sheet
+DoH,SGH,30/04/2020,202001,Alloga UK Limited,SIN102880681,33900,Lab Equipment,Capital
+DoH,SGH,28/04/2020,202001,Altona Diagnostics,I+020000129,"115,332.00",Drugs - MHRA License,Pharmacy
+DoH,SGH,05/05/2020,202001,Altona Diagnostics,I+020000083,"115,200.00",Computer Consumables,Capital
+DoH,SGH,21/04/2020,202001,Arien Contractors Ltd,41015,"30,660.00",Lab Equipment,Capital
+DoH,SGH,21/04/2020,202001,Artic Building Services Ltd,61059,"39,059.20",Lab Equipment,Capital
+DoH,SGH,28/04/2020,202001,Assa Abloy Entrance Systems,SLI/ 54321,"30,024.00",Misc Expenditure,Outpatients
+DoH,SGH,28/04/2020,202001,Atlas Maintenance Services Ltd,2492,"43,634.40",VAT Inputs Contracted Out,Balance Sheet
+DoH,SGH,28/04/2020,202001,Atlas Maintenance Services Ltd,2531,"43,634.40",Lab Equipment,Capital
+DoH,SGH,15/04/2020,202001,Baxter Healthcare Ltd,20059320,40615,VAT Inputs Contracted Out,Balance Sheet
+DoH,SGH,28/04/2020,202001,Beckman Coulter United Kingdom Limited,1462037,"108,238.14",Comp Software Maintenance,Capital
+DoH,SGH,28/04/2020,202001,Becton Dickinson UK Ltd,200041135,140265.86,Clinical Psychiatry Services,Emergency Department
+DoH,SGH,28/04/2020,202001,Biotronik UK Ltd,513064403,63124.8,JAC Purchases,Balance Sheet
+DoH,SGH,28/04/2020,202001,Blackshaw Healthcare Services Limited,1497,"1,040,405.65",Lab Chemicals & Reagents,SWLP Microbiology
+DoH,SGH,21/04/2020,202001,Boston Scientific Ltd,7162117324,"39,600.00",VAT Inputs Contracted Out,Balance Sheet
+DoH,SGH,07/04/2020,202001,Bristol Myers Squibb Pharmaceuticals Limited,100641058,59517.72,JAC Purchases,Balance Sheet
+DoH,SGH,15/04/2020,202001,Bristol Myers Squibb Pharmaceuticals Limited,100641433,108165.12,0,0
+DoH,SGH,15/04/2020,202001,Bristol Myers Squibb Pharmaceuticals Limited,100641909,55279.86,0,0
+DoH,SGH,28/04/2020,202001,Bristol Myers Squibb Pharmaceuticals Limited,100642259,"25,673.70",Contract Services Building,Capital
+DoH,SGH,28/04/2020,202001,Bristol Myers Squibb Pharmaceuticals Limited,100642700,"42,102.06",Contract Services Building,Capital
+DoH,SGH,01/04/2020,202001,Bromex Engineering Ltd,1002,32604,0,0
+DoH,SGH,21/04/2020,202001,CDC Facilities Management Ltd,5692,"274,304.04",Computer Consumables,Capital
+DoH,SGH,28/04/2020,202001,CDW Ltd,PSINV02725792,"52,796.65",JAC Purchases,Balance Sheet
+DoH,SGH,28/04/2020,202001,CDW Ltd,PSINV02727778,"28,493.22",Contract Services Building,Capital
+DoH,SGH,15/04/2020,202001,Celgene Ltd,8940214008,40638.86,0,0
+DoH,SGH,28/04/2020,202001,Celgene Ltd,8940215056,"50,421.50",JAC Purchases,Balance Sheet
+DoH,SGH,28/04/2020,202001,Central Surgery,43831,"34,800.00",Comp Software Maintenance,Capital
+DoH,SGH,28/04/2020,202001,Cerner Limited,101409219,"166,334.10",Lab Equipment,Capital
+DoH,SGH,28/04/2020,202001,Cerner Limited,101444487,"215,969.15",Lab Equipment,Capital
+DoH,SGH,28/04/2020,202001,Cerner Limited,101444486,"199,870.84",Auditors Remuneration,Finance and Procurement
+DoH,SGH,28/04/2020,202001,Cerner Limited,101548273,"332,668.21",Comp Software Maintenance,"IT, Informatics & Telecomms"
+DoH,SGH,28/04/2020,202001,Cerner Limited,101444488,"101,935.70",Computer Consumables,"IT, Informatics & Telecomms"
+DoH,SGH,05/05/2020,202001,Change Healthcare UK Holdings Ltd,141231,"291,312.19",Computer Consumables,Capital
+DoH,SGH,28/04/2020,202001,Chromis UK Limited T/A Freeway Medical,13707,188512.49,JAC Purchases,Balance Sheet
+DoH,SGH,28/04/2020,202001,Chromis UK Limited T/A Freeway Medical,13710,26930.88,JAC Purchases,Balance Sheet
+DoH,SGH,28/04/2020,202001,Chromis UK Limited T/A Freeway Medical,13741,"530,299.20",Drugs - MHRA License,Pharmacy
+DoH,SGH,28/04/2020,202001,Cinos Communications Services Limited,2756-C,"73,507.11",Contract Services Building,Capital
+DoH,SGH,28/04/2020,202001,Cinos Communications Services Limited,2801,"28,353.12",Lab Equipment,Capital
+DoH,SGH,28/04/2020,202001,Cinos Communications Services Limited,2791,"104,227.66",Medical Gases,Capital
+DoH,SGH,28/04/2020,202001,Cinos Communications Services Limited,2696,"172,475.33",AMH Wing - Contract Monitoring,Estates
+DoH,SGH,28/04/2020,202001,Cinos Communications Services Limited,2802,"568,944.00",Journals Books & Publications,SWLP Haematology
+DoH,SGH,28/04/2020,202001,Cinos Communications Services Limited,2756-A,"31,516.99",Lab Chemicals & Reagents,SWLP Microbiology
+DoH,SGH,30/04/2020,202001,Clinigen Healthcare Limited,130041506,29681.99,JAC Purchases,Balance Sheet
+DoH,SGH,28/04/2020,202001,Corona Energy Retail 4 Limited,15181342,"204,603.40",M & S Pacemakers DDD,Cardiology CAG
+DoH,SGH,28/04/2020,202001,Corona Energy Retail 4 Limited,15181343,"108,359.08",Purch of Non NHS Healthcare,Infection
+DoH,SGH,28/04/2020,202001,CSL Behring UK Limited,994022760,"283,500.00",Consultancy Services,Obstetrics
+DoH,SGH,05/05/2020,202001,DBS Finance,7606965,"27,698.00",M & S Eqpt Leasing & Hire,Capital
+DoH,SGH,05/05/2020,202001,DBS Finance,7606966,"39,895.50",Lab Equipment,Capital
+DoH,SGH,28/04/2020,202001,DD Porter Ltd,12359,"125,286.96",M & S Equipment Repairs,SWLP Cellular Pathology
+DoH,SGH,28/04/2020,202001,De Lage Landen Leasing LImited,956 1 20 00000960,"43,725.07",Comp Software Maintenance,Capital
+DoH,SGH,28/04/2020,202001,De Soutter Medical,527429,"113,742.20",Drugs - MHRA License,Pharmacy
+DoH,SGH,21/04/2020,202001,Dell Computer Corporation Ltd,7402596965,"48,600.00",JAC Purchases,Balance Sheet
+DoH,SGH,21/04/2020,202001,Dell Computer Corporation Ltd,7402596583,"26,640.00",JAC Purchases,Balance Sheet
+DoH,SGH,21/04/2020,202001,Dell Computer Corporation Ltd,7402596964,"48,600.00",JAC Purchases,Balance Sheet
+DoH,SGH,21/04/2020,202001,Dell Computer Corporation Ltd,7402596966,"26,640.00",Consultancy Services,"IT, Informatics & Telecomms"
+DoH,SGH,28/04/2020,202001,Dell Computer Corporation Ltd,7402611497,"106,980.00",M & S Equipment,Capital
+DoH,SGH,28/04/2020,202001,Dell Computer Corporation Ltd,7402610214,"44,580.00",Carriage Charges Medical,Capital
+DoH,SGH,28/04/2020,202001,Dell Computer Corporation Ltd,7402611496,"57,060.00",Lab Equipment,Capital
+DoH,SGH,28/04/2020,202001,Dell Computer Corporation Ltd,7402609919,"44,580.00",Lab Equipment,Capital
+DoH,SGH,21/04/2020,202001,Deloitte LLP,8000797888,"34,211.06",Staff Accommodation - TVHA,Balance Sheet
+DoH,SGH,28/04/2020,202001,Deloitte LLP,8001117969,"32,377.64",Contract Services Building,Capital
+DoH,SGH,28/04/2020,202001,Deva Medical Electronics Limited (DME),AFP-964318,"26,235.00",Lab Equipment,Capital
+DoH,SGH,21/04/2020,202001,Direct Healthcare Group,75820,122709,0,0
+DoH,SGH,15/04/2020,202001,DJ Lift Services Ltd,N9945,31076.54,0,0
+DoH,SGH,28/04/2020,202001,DP Medical Systems Limited,SIN342295,"51,927.48",Drugs - MHRA License,Pharmacy
+DoH,SGH,28/04/2020,202001,EDF Energy Customers Plc,7490143,"200,289.02",VAT Inputs Contracted Out,Balance Sheet
+DoH,SGH,28/04/2020,202001,Ekotherm Ltd,1341,"63,439.74",JAC Purchases,Balance Sheet
+DoH,SGH,28/04/2020,202001,Ekotherm Ltd,1340,"50,810.65",M & S Pacemakers DDD,Cardiology CAG
+DoH,SGH,07/04/2020,202001,Fideliti Ltd,619740,"42,852.70",Purch of NHS Healthcare,Intensive Therapy Unit
+DoH,SGH,05/05/2020,202001,Foman ( Civil Engineers & Programme Managers ),INV2006-TAG,"33,420.00",Computer Consumables,Capital
+DoH,SGH,12/05/2020,202001,Foman ( Civil Engineers & Programme Managers ),INV2004-50,"208,200.00",Comp Software Maintenance,"IT, Informatics & Telecomms"
+DoH,SGH,21/04/2020,202001,Fortrus Ltd,INV-0375,187200,0,0
+DoH,SGH,21/04/2020,202001,Fortrus Ltd,INV-0376,144000,0,0
+DoH,SGH,07/04/2020,202001,Fresenius Medical Care Renal Services Ltd,1051036349,"70,186.26",Rent,Estates
+DoH,SGH,07/04/2020,202001,Fresenius Medical Care Renal Services Ltd,1051036355,"39,442.82",BTC Blood Issues,Pathology - STG
+DoH,SGH,28/04/2020,202001,Fresenius Medical Care Renal Services Ltd,1051047283,"98,864.30",Contract Services Building,Capital
+DoH,SGH,21/04/2020,202001,G K Wood & Son Ltd,16611,"51,669.65",Contract Services Building,Capital
+DoH,SGH,21/04/2020,202001,G K Wood & Son Ltd,16610,"48,376.93",Contract Services Building,Capital
+DoH,SGH,07/04/2020,202001,Gilead Sciences Limited,4410181384,"124,485.96",Contract Services Building,Capital
+DoH,SGH,15/04/2020,202001,Gilead Sciences Limited,4410182360,26653.2,Blood Products,Clinical Haematology
+DoH,SGH,15/04/2020,202001,GPF Lewis plc,501816,38518.9,0,0
+DoH,SGH,28/04/2020,202001,GPF Lewis plc,501842,"133,330.74",Computer Software,"IT, Informatics & Telecomms"
+DoH,SGH,05/05/2020,202001,Guymark UK Ltd,120934,"33,473.99",Computer Consumables,Capital
+DoH,SGH,12/05/2020,202001,Guys &  St Thomas NHS Foundation Trust,3283807,"30,000.00",JAC Purchases,Balance Sheet
+DoH,SGH,12/05/2020,202001,Guys &  St Thomas NHS Foundation Trust,3283802,"39,171.50",Comp Software Maintenance,Capital
+DoH,SGH,28/04/2020,202001,HealthNetConnections Ltd,INV-23155,"131,629.92",VAT Inputs Contracted Out,Balance Sheet
+DoH,SGH,28/04/2020,202001,Hill Rom,3184439,"312,000.00",Childcare Vouchers,Balance Sheet
+DoH,SGH,15/04/2020,202001,Hologic Limited,2071712,168000,0,0
+DoH,SGH,21/04/2020,202001,Hologic Limited,2070494,"168,000.00",Consultant Recharge In,Community Services Division Management
+DoH,SGH,22/04/2020,202001,Hospital System Inc,35248,"100,919.56",M & S Pacemakers DDD,Cardiology CAG
+DoH,SGH,21/04/2020,202001,HR Signature Limited,HRS 059,"158,400.00",JAC Purchases,Balance Sheet
+DoH,SGH,28/04/2020,202001,HR Signature Limited,HRS 061,"52,770.00",Lab Equipment,SWLP Biochemistry
+DoH,SGH,28/04/2020,202001,IBI Group (UK) Ltd,10004622,"43,896.76",JAC Purchases,Balance Sheet
+DoH,SGH,15/04/2020,202001,Ingersoll-Rand UK Limited,101306,52452,0,0
+DoH,SGH,28/04/2020,202001,InHealth Limited,IHLIN0022455,"50,788.61",JAC Purchases,Balance Sheet
+DoH,SGH,15/04/2020,202001,Interserve Construction Ltd,VLC00006,1117506.94,0,0
+DoH,SGH,15/04/2020,202001,Interserve Construction Ltd,VLC00004,729623.9,0,0
+DoH,SGH,28/04/2020,202001,Iron Mountain (UK) Ltd,WS43749,"46,378.45",Rates,Facilities Services
+DoH,SGH,15/04/2020,202001,Janssen Cilag Ltd,930641217,44928,JAC Purchases,Balance Sheet
+DoH,SGH,15/04/2020,202001,Janssen Cilag Ltd,930639689,28685.9,JAC Purchases,Balance Sheet
+DoH,SGH,15/04/2020,202001,Janssen Cilag Ltd,930638776,77310,Mntnce Contracts Lifts,Capital
+DoH,SGH,28/04/2020,202001,Jazz Pharmaceuticals UK Limited,90006524,"39,420.00",Lab Equipment,Capital
+DoH,SGH,28/04/2020,202001,Johs Tandrup UK Ltd,INV-000945,"146,123.88",JAC Purchases,Balance Sheet
+DoH,SGH,28/04/2020,202001,Karl Storz Endoscopy UK Ltd,6020057600,"39,698.16",Lab Equipment,Capital
+DoH,SGH,28/04/2020,202001,Karl Storz Endoscopy UK Ltd,6020055781,"74,210.88",Contract Services Building,Capital
+DoH,SGH,28/04/2020,202001,Kingston Hospital NHS Trust,1400016240,"56,480.00",Computer Software,"IT, Informatics & Telecomms"
+DoH,SGH,21/04/2020,202001,KNK Group,STGO576599,"28,879.20",JAC Purchases,Balance Sheet
+DoH,SGH,07/04/2020,202001,KPMG LLP,5502063354,"26,400.00",Lab Equipment,Capital
+DoH,SGH,28/04/2020,202001,Lidco Ltd,162000589,"636,030.00",Contract Services Building,Capital
+DoH,SGH,28/04/2020,202001,Lidco Ltd,162000603,"318,000.00",Lab Equipment,Capital
+DoH,SGH,21/04/2020,202001,LivaNova Plc,2020202500,576000,0,0
+DoH,SGH,21/04/2020,202001,Lloyds Pharmacy Clinical Homecare Limited,SINV4039466,"101,747.52",Lab Equipment,Capital
+DoH,SGH,21/04/2020,202001,Lloyds Pharmacy Clinical Homecare Limited,SINV4037713,"79,027.20",Lab Equipment,Capital
+DoH,SGH,21/04/2020,202001,Lloyds Pharmacy Clinical Homecare Limited,SINV4037688,"59,270.40",Computer Software,Imaging
+DoH,SGH,28/04/2020,202001,Lloyds Pharmacy Clinical Homecare Limited,SINV4079047,"59,270.40",Comp Software Maintenance,Capital
+DoH,SGH,28/04/2020,202001,Lloyds Pharmacy Clinical Homecare Limited,SINV4068481,"101,747.52",Blood Products,Clinical Haematology
+DoH,SGH,28/04/2020,202001,London Pumps Ltd,46739,"34,299.06",Mntnce Eqpt & Mats Electrical,Capital
+DoH,SGH,28/04/2020,202001,MBI Health Consulting Ltd,INV-0057,"53,760.00",Contract Services Building,Capital
+DoH,SGH,28/04/2020,202001,Medical Imaging Systems Ltd T/A MIS Healthcare,79972,"60,000.00",M & S Pacemakers DDD,Cardiology CAG
+DoH,SGH,05/05/2020,202001,Medical Imaging Systems Ltd T/A MIS Healthcare,35574,"202,800.00",M & S Surgical Instruments,Capital
+DoH,SGH,07/04/2020,202001,Medtronic,1099724059,28800,JAC Purchases,Balance Sheet
+DoH,SGH,28/04/2020,202001,Medtronic,1099770351,"32,400.00",Contract Services Building,Capital
+DoH,SGH,28/04/2020,202001,Metropolitan Thames Valley,SG612,"223,336.30",VAT Inputs Contracted Out,Balance Sheet
+DoH,SGH,21/04/2020,202001,Michael J Lonsdale (Electrical) Limited,12738/EE1324,"96,361.73",Firm Gas,Energy & Engineering
+DoH,SGH,21/04/2020,202001,Michael J Lonsdale (Electrical) Limited,12781/EE1324,"119,993.59",Firm Gas,Energy & Engineering
+DoH,SGH,21/04/2020,202001,NHS Blood and Transplant,886867,"293,730.94",Contract Services Building,Capital
+DoH,SGH,21/04/2020,202001,NHS Blood and Transplant,960514,"68,476.33",Lab Equipment,Imaging
+DoH,SGH,28/04/2020,202001,NHS Property Services Ltd,NAVS05887,"35,587.33",VAT Inputs Contracted Out,Balance Sheet
+DoH,SGH,28/04/2020,202001,NHS Supply Chain,2121000105,"106,103.20",Computer Consumables,Capital
+DoH,SGH,28/04/2020,202001,NHS Supply Chain,1121007947,"179,512.12",Comp Software Maintenance,Capital
+DoH,SGH,28/04/2020,202001,NHS Supply Chain,9050002377,"327,413.63",Computer Consumables,"IT, Informatics & Telecomms"
+DoH,SGH,28/04/2020,202001,NHS Supply Chain,1010262618,"228,704.77",Computer Consumables,"IT, Informatics & Telecomms"
+DoH,SGH,28/04/2020,202001,NHS Supply Chain,1010269444,"88,650.00",Computer Consumables,"IT, Informatics & Telecomms"
+DoH,SGH,28/04/2020,202001,NHS Supply Chain,2121000010,"277,535.76",Purch of Non NHS Healthcare,Neurology
+DoH,SGH,28/04/2020,202001,NHS Supply Chain,1121002568,"123,268.54",Consultancy Services,Obstetrics
+DoH,SGH,28/04/2020,202001,NHS Supply Chain,1121012453,"123,533.85",Lab Equipment,SWLP Haematology
+DoH,SGH,28/04/2020,202001,NIRAS Group (UK) Ltd,18411,"38,328.00",M & S Equipment,Imaging
+DoH,SGH,30/04/2020,202001,Novartis Pharmaceuticals UK,92271511,26829.84,Consultancy Services,Imaging
+DoH,SGH,28/04/2020,202001,Novosco Limited,22217-A,25974,JAC Purchases,Balance Sheet
+DoH,SGH,28/04/2020,202001,Novosco Limited,22003-A,40500,JAC Purchases,Balance Sheet
+DoH,SGH,28/04/2020,202001,Novosco Limited,22243-A,"138,283.78",Comp Software Maintenance,Capital
+DoH,SGH,28/04/2020,202001,Octapharma Ltd,5208026449,"40,722.50",Drugs - MHRA License,Pharmacy
+DoH,SGH,21/04/2020,202001,Olympic (South) Limited,211470,"49,481.81",Contract Services Building,Capital
+DoH,SGH,21/04/2020,202001,Olympic (South) Limited,211469,"45,750.00",Contract Services Building,Capital
+DoH,SGH,21/04/2020,202001,Olympic (South) Limited,211468,"311,658.40",Contract Services Building,Capital
+DoH,SGH,28/04/2020,202001,Olympus KeyMed,CD2579232,"180,039.19",Contract Services Building,Capital
+DoH,SGH,07/04/2020,202001,Opcare Ltd,OP-SI-028503,110009.45,VAT Inputs Contracted Out,Balance Sheet
+DoH,SGH,07/04/2020,202001,Opcare Ltd,OP-SI-028504,82861.76,VAT Inputs Contracted Out,Balance Sheet
+DoH,SGH,15/04/2020,202001,Opcare Ltd,OP-SI-031806,82871.75,0,0
+DoH,SGH,15/04/2020,202001,Opcare Ltd,OP-SI-031804,51373.71,Lab Equipment,Capital
+DoH,SGH,15/04/2020,202001,Opcare Ltd,OP-SI-031805,103463.95,Comp Software Maintenance,Capital
+DoH,SGH,15/04/2020,202001,Opcare Ltd,OP-SI-031803,169335.92,Comp Software Maintenance,Capital
+DoH,SGH,28/04/2020,202001,Peter Smith Valve Company Ltd,103238,"43,334.40",Contract Services Building,Capital
+DoH,SGH,07/04/2020,202001,Philips Healthcare,944039574,185715.46,JAC Purchases,Balance Sheet
+DoH,SGH,28/04/2020,202001,Philips Healthcare,7300331080,"119,862.24",Lab Equipment,Capital
+DoH,SGH,28/04/2020,202001,Philips Healthcare,7300333759,"78,312.41",Drugs - MHRA License,Pharmacy
+DoH,SGH,28/04/2020,202001,Premaitha Health,10970,"66,357.29",Contract Services Building,Capital
+DoH,SGH,28/04/2020,202001,Premaitha Health,10368,"42,640.49",Consultancy Services,Medicine Directorate Overheads
+DoH,SGH,15/04/2020,202001,Radiology Reporting Online LLP T/A Everlight Radiology Ltd,SIN004902,38464.5,0,0
+DoH,SGH,28/04/2020,202001,Ram Consultancy Ltd,RAM2020-12990,"38,922.00",Lab Equipment,Capital
+DoH,SGH,21/04/2020,202001,Renal Registry,2412,"26,996.34",Contract Services Building,Capital
+DoH,SGH,07/04/2020,202001,Roche Diagnostics Limited,6571198933,"333,829.90",Contract Services Building,Capital
+DoH,SGH,07/04/2020,202001,Roche Diagnostics Limited,6571198957,"107,464.30",Contract Services Building,Capital
+DoH,SGH,07/04/2020,202001,Roche Diagnostics Limited,6571186974,"408,016.50",Data Processing Services,Renal
+DoH,SGH,07/04/2020,202001,Roche Products Ltd,1322130419,36920.16,JAC Purchases,Balance Sheet
+DoH,SGH,15/04/2020,202001,Roche Products Ltd,1322131041,224526,JAC Purchases,Balance Sheet
+DoH,SGH,15/04/2020,202001,Roche Products Ltd,1322132536,42249.7,VAT Inputs Contracted Out,Balance Sheet
+DoH,SGH,15/04/2020,202001,Roche Products Ltd,1322131495,37265.39,Drugs - MHRA License,Pharmacy
+DoH,SGH,28/04/2020,202001,Roche Products Ltd,1322134110,"32,796.48",RESUS Creditors,Balance Sheet
+DoH,SGH,28/04/2020,202001,Roche Products Ltd,1322133338,"41,797.03",RESUS Creditors,Balance Sheet
+DoH,SGH,28/04/2020,202001,Roche Products Ltd,1322134458,"47,448.05",Lab Equipment,Capital
+DoH,SGH,30/04/2020,202001,Roche Products Ltd,1322135331,31609.16,Contract Services Building,Capital
+DoH,SGH,07/04/2020,202001,Russell Cawberry Ltd,629352,"26,697.14",Ambulance Costs,Facilities Services
+DoH,SGH,07/04/2020,202001,Russell Cawberry Ltd,629494,"187,128.52",Ambulance Costs,Facilities Services
+DoH,SGH,21/04/2020,202001,Scene Double,SDL23928,"81,323.87",Purch of Non NHS Healthcare,SWLP Microbiology
+DoH,SGH,21/04/2020,202001,Schneider Electric,99225805,"26,535.60",Contract Services Building,Capital
+DoH,SGH,28/04/2020,202001,SDS Protection Ltd,16900,"40,058.88",Contract Services Building,Capital
+DoH,SGH,28/04/2020,202001,Servelec Healthcare Ltd,70016497,"101,159.99",VAT Inputs Contracted Out,Balance Sheet
+DoH,SGH,28/04/2020,202001,Servelec Healthcare Ltd,70016740,"65,966.40",VAT Inputs Contracted Out,Balance Sheet
+DoH,SGH,28/04/2020,202001,SHJ Hospital Pipelines Ltd,37690,"92,382.00",JAC Purchases,Balance Sheet
+DoH,SGH,28/04/2020,202001,SHJ Hospital Pipelines Ltd,37761,"35,820.00",RESUS Creditors,Balance Sheet
+DoH,SGH,28/04/2020,202001,SHJ Hospital Pipelines Ltd,37688,"103,381.20",M & S Eqpt Maint Contracts,Medical Physics
+DoH,SGH,28/04/2020,202001,SHJ Hospital Pipelines Ltd,37694,"25,176.00",X Ray Eqpt Maint Contracts,Neuroradiology
+DoH,SGH,07/04/2020,202001,Siemens Financial Services Limited,220/20/0006517,"68,786.02",Ambulance Costs,Facilities Services
+DoH,SGH,21/04/2020,202001,Siemens Financial Services Limited,220/20/0008898,"86,278.64",Contract Services Building,Capital
+DoH,SGH,28/04/2020,202001,Siemens Financial Services Limited,220/20/0009129,"102,904.27",RESUS Creditors,Balance Sheet
+DoH,SGH,21/04/2020,202001,Siemens Healthcare Ltd,1051075101,"34,320.00",Mntnce Eqpt & Mats Electrical,Capital
+DoH,SGH,28/04/2020,202001,Siemens Healthcare Ltd,1051077900,224400,JAC Purchases,Balance Sheet
+DoH,SGH,07/04/2020,202001,Softcat Ltd,INV02462656,"41,953.55",Purch of Non NHS Healthcare,Anaesthetics
+DoH,SGH,28/04/2020,202001,Softcat Ltd,INV02566142,92763.16,JAC Purchases,Balance Sheet
+DoH,SGH,28/04/2020,202001,Softcat Ltd,INV02539094,"281,653.02",Contract Services Building,#N/A
+DoH,SGH,12/05/2020,202001,South West London And St Georges Mental,P0067534,35887,Contract Services Building,Capital
+DoH,SGH,05/05/2020,202001,Spacelabs Healthcare Ltd,IN281636,"50,029.58",VAT Inputs Contracted Out,Balance Sheet
+DoH,SGH,28/04/2020,202001,Specialist Computer Centres,OP/M747859,"71,749.80",Computer Software,Capital
+DoH,SGH,28/04/2020,202001,Specialist Refurbishment Services Ltd,I000888,"32,388.00",Lab Equipment,Capital
+DoH,SGH,28/04/2020,202001,Spirax Sarco Ltd,20008968,"58,543.28",Ventricular Implantable Defibrilators,Cardiology CAG
+DoH,SGH,21/04/2020,202001,St Vincent's Health & Public Sector Ltd,2044,"45,934.06",VAT Inputs Contracted Out,Balance Sheet
+DoH,SGH,21/04/2020,202001,St Vincent's Health & Public Sector Ltd,2041,"152,879.71",Comp Software Maintenance,"IT, Informatics & Telecomms"
+DoH,SGH,28/04/2020,202001,Sterile Services Developments Limited,NHS 1101,"57,583.08",Contract Services Building,Capital
+DoH,SGH,05/05/2020,202001,Stryker (UK) Ltd,28779162,"33,780.00",M & S Equipment,Cardiology CAG
+DoH,SGH,21/04/2020,202001,Sunlight Service Group Ltd,SN3190248,"29,334.65",Consultancy Services,Capital
+DoH,SGH,28/04/2020,202001,Supply Chain Coordination Limited Management Function of the NHS Supply Chain,9050002194,"92,376.02",Computer Software,Capital
+DoH,SGH,28/04/2020,202001,Systemware Services Ltd,INV00017999,"58,128.00",VAT Inputs Contracted Out,Balance Sheet
+DoH,SGH,28/04/2020,202001,The Swift Lift Company UK Ltd,NV21065,"44,315.70",Other Contract Clinical Services,Renal
+DoH,SGH,28/04/2020,202001,TIAA Ltd,20200401-062,"39,960.00",Other Contract Clinical Services,Renal
+DoH,SGH,28/04/2020,202001,Unit4 Business Software Ltd,20000009880,"141,742.74",VAT Inputs Contracted Out,Balance Sheet
+DoH,SGH,28/04/2020,202001,University of Oxford,210087075,"36,504.13",RESUS Creditors,Balance Sheet
+DoH,SGH,28/04/2020,202001,Wandsworth Borough Council,34076871/MAY20,"251,287.00",Purch of Non NHS Healthcare,SWLP Microbiology
+DoH,SGH,31/03/2020,202001,WB Power Services Ltd,98089,"70,826.49",Telephone Eqpt,"IT, Informatics & Telecomms"
+DoH,SGH,21/04/2020,202001,WB Power Services Ltd,97641,"43,183.20",Computer Consumables,Capital
+DoH,SGH,21/04/2020,202001,WB Power Services Ltd,98089A,"84,991.79",Computer Consumables,Capital
+DoH,SGH,21/04/2020,202001,Welch Allyn UK Ltd,9000374227,"231,341.04",Contract Services Building,Capital
+DoH,SGH,28/04/2020,202001,Xograph Healthcare Ltd,73459,"41,121.60",Comp Software Maintenance,Capital
+,,,,,,,,
