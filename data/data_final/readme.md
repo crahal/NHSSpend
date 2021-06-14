@@ -41,8 +41,8 @@ This is a subdirectory to hold the final outputs of the project. It is generated
     * `CHnotes`: Notes on the charity (CharityName, not verif_match) as determined by the audit process
     * `isCIC`: Whether the supplier is a Community Interest Company
     * `audit_type`: Whether the match; be it 'CompanyName' or 'ChartityName' was determined either solely by the automatic reconciliation process ("1") or the audit process ("2: ")
-    * `count`: The number of payments to this reconciled supplier
-    * `amount`: The amount of procurement purchased from this reconciled supplier
+    * `count`: The number of payments to this *query_string_n*
+    * `amount`: The amount of procurement purchased from this *query_string_n*
     * `match_0_n`: The closed suggested (ElasticSearch) match to the `query_string_n` field
     * `match_1_n`: The second closed suggested (ElasticSearch) match to the `query_string_n` field
     * `match_2_n`: The third closed suggested (ElasticSearch) match to the `query_string_n` field
