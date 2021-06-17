@@ -1,569 +1,4 @@
 date,expensetype,expensearea,supplier,transactionnumber,amount,file,negative
-4/30/2020,Vaccines,COVID-19,SOLAREX (GB) LTD,33885573,25500.0,HOME 01 - April.pdf.csv,1
-4/30/2020,Gas,Homerton Energy,CORONA ENERGY RETAIL 4 LTD,33885864,42227.0,HOME 01 - April.pdf.csv,1
-4/30/2020,Bldg/Eng Equip Maint Cont,Slg-Retinal Screening,NHS PROPERTY SERVICES LTD,33901195,443.0,HOME 01 - April.pdf.csv,1
-4/30/2020,Lease Rents,Slg-Retinal Screening,NHS PROPERTY SERVICES LTD,33901195,48702.0,HOME 01 - April.pdf.csv,1
-4/30/2020,Service Charge,Slg-Retinal Screening,NHS PROPERTY SERVICES LTD,33901195,8875.0,HOME 01 - April.pdf.csv,1
-4/30/2020,Med & Surg Equip Repair,Main Theatres Scrub,SUPPLY CHAIN COORDINATION LIMITED,33902009,43750.0,HOME 01 - April.pdf.csv,1
-4/30/2020,AUC Additions,Balance Sheet,OLYMPUS KEYMED,33902484,39821.0,HOME 01 - April.pdf.csv,1
-4/30/2020,NonNHS Trade Pybls Curr,Balance Sheet,BUNZL HEALTHCARE,33905656,28789.0,HOME 01 - April.pdf.csv,1
-4/30/2020,Postage & Carriage,Chs Estates Sla,XEROX (UK) LTD,33913402,5712.0,HOME 01 - April.pdf.csv,1
-4/30/2020,NonNHS Trade Pybls Curr,Balance Sheet,SUPPLY CHAIN COORDINATION LIMITED,33925096,74406.0,HOME 01 - April.pdf.csv,1
-4/30/2020,NonNHS Trade Pybls Curr,Balance Sheet,SUPPLY CHAIN COORDINATION LIMITED,33925100,69605.0,HOME 01 - April.pdf.csv,1
-4/30/2020,NonNHS Trade Pybls Curr,Balance Sheet,SUPPLY CHAIN COORDINATION LIMITED,33925149,73049.0,HOME 01 - April.pdf.csv,1
-4/30/2020,NonNHS Trade Pybls Curr,Balance Sheet,BUNZL HEALTHCARE,33925151,28322.0,HOME 01 - April.pdf.csv,1
-4/30/2020,NonNHS Trade Pybls Curr,Balance Sheet,SUPPLY CHAIN COORDINATION LIMITED,33925240,83269.0,HOME 01 - April.pdf.csv,1
-4/30/2020,Computer Software/License,Clinical Information Systems,SERVELEC HEALTHCARE LTD,33930930,88689.0,HOME 01 - April.pdf.csv,1
-4/30/2020,Laboratory Test Kits,Chemical Pathology,ABBOTT LABORATORIES LTD,33931757,107113.0,HOME 01 - April.pdf.csv,1
-4/30/2020,Lease Rents,Kenworthy Road - Estates,COMMUNITY HEALTH PARTNERSHIPS LTD,33932343,25405.0,HOME 01 - April.pdf.csv,1
-4/30/2020,Computer Maintenance,Csdo Divisional Management,BARTS HEALTH NHS TRUST,33936983,38866.0,HOME 01 - April.pdf.csv,1
-4/30/2020,Postage & Carriage,Post Homerton,PITNEY BOWES LTD,33947049,39269.0,HOME 01 - April.pdf.csv,1
-4/30/2020,Vaccines,COVID-19,OBEN PROPERTY SERVICES LTD,33947072,62500.0,HOME 01 - April.pdf.csv,1
-4/30/2020,Audit Fees: Ext non-stat,Financial Accounts,KPMG LLP,33947126,101790.0,HOME 01 - April.pdf.csv,1
-4/30/2020,Contr Pest Control,Domestic Contract,ISS MEDICLEAN LTD,33957069,1088.0,HOME 01 - April.pdf.csv,1
-4/30/2020,Contr Premises Security,Domestic Contract,ISS MEDICLEAN LTD,33957069,30895.0,HOME 01 - April.pdf.csv,1
-4/30/2020,Ext Contr Catering,Domestic Contract,ISS MEDICLEAN LTD,33957069,794.0,HOME 01 - April.pdf.csv,1
-4/30/2020,Ext Contr Domestics,Domestic Contract,ISS MEDICLEAN LTD,33957069,60924.0,HOME 01 - April.pdf.csv,1
-4/30/2020,Ext Contr Oth Hotel Srv,Domestic Contract,ISS MEDICLEAN LTD,33957069,9571.0,HOME 01 - April.pdf.csv,1
-4/30/2020,Hospitality,Domestic Contract,ISS MEDICLEAN LTD,33957069,10220.0,HOME 01 - April.pdf.csv,1
-4/30/2020,Staff Uniforms & Clothing,Domestic Contract,ISS MEDICLEAN LTD,33957069,1143.0,HOME 01 - April.pdf.csv,1
-4/30/2020,Contr Estate Management,Domestic Contract,ISS MEDICLEAN LTD,33957225,26325.0,HOME 01 - April.pdf.csv,1
-4/30/2020,Contr Premises Security,Domestic Contract,ISS MEDICLEAN LTD,33957225,42124.0,HOME 01 - April.pdf.csv,1
-4/30/2020,Contr Refuse & Clin Waste,Domestic Contract,ISS MEDICLEAN LTD,33957225,17089.0,HOME 01 - April.pdf.csv,1
-4/30/2020,Ext Contr Catering,Domestic Contract,ISS MEDICLEAN LTD,33957225,197901.0,HOME 01 - April.pdf.csv,1
-4/30/2020,Ext Contr Domestics,Domestic Contract,ISS MEDICLEAN LTD,33957225,194265.0,HOME 01 - April.pdf.csv,1
-4/30/2020,Ext Contr Laundry,Domestic Contract,ISS MEDICLEAN LTD,33957225,46611.0,HOME 01 - April.pdf.csv,1
-4/30/2020,Ext Contr Oth Hotel Srv,Domestic Contract,ISS MEDICLEAN LTD,33957225,69958.0,HOME 01 - April.pdf.csv,1
-4/30/2020,Contr Estate Management,Domestic Contract,ISS MEDICLEAN LTD,33957436,19510.0,HOME 01 - April.pdf.csv,1
-4/30/2020,Contr Premises Security,Domestic Contract,ISS MEDICLEAN LTD,33957436,48940.0,HOME 01 - April.pdf.csv,1
-4/30/2020,Contr Refuse & Clin Waste,Domestic Contract,ISS MEDICLEAN LTD,33957436,17089.0,HOME 01 - April.pdf.csv,1
-4/30/2020,Ext Contr Catering,Domestic Contract,ISS MEDICLEAN LTD,33957436,197901.0,HOME 01 - April.pdf.csv,1
-4/30/2020,Ext Contr Domestics,Domestic Contract,ISS MEDICLEAN LTD,33957436,194265.0,HOME 01 - April.pdf.csv,1
-4/30/2020,Ext Contr Laundry,Domestic Contract,ISS MEDICLEAN LTD,33957436,46611.0,HOME 01 - April.pdf.csv,1
-4/30/2020,Ext Contr Oth Hotel Srv,Domestic Contract,ISS MEDICLEAN LTD,33957436,69958.0,HOME 01 - April.pdf.csv,1
-4/30/2020,Contr Pest Control,Domestic Contract,ISS MEDICLEAN LTD,33957552,1088.0,HOME 01 - April.pdf.csv,1
-4/30/2020,Contr Premises Security,Domestic Contract,ISS MEDICLEAN LTD,33957552,30895.0,HOME 01 - April.pdf.csv,1
-4/30/2020,Ext Contr Catering,Domestic Contract,ISS MEDICLEAN LTD,33957552,858.0,HOME 01 - April.pdf.csv,1
-4/30/2020,Ext Contr Domestics,Domestic Contract,ISS MEDICLEAN LTD,33957552,80499.0,HOME 01 - April.pdf.csv,1
-4/30/2020,Ext Contr Oth Hotel Srv,Domestic Contract,ISS MEDICLEAN LTD,33957552,9571.0,HOME 01 - April.pdf.csv,1
-4/30/2020,Hospitality,Domestic Contract,ISS MEDICLEAN LTD,33957552,6248.0,HOME 01 - April.pdf.csv,1
-4/30/2020,Staff Uniforms & Clothing,Domestic Contract,ISS MEDICLEAN LTD,33957552,1143.0,HOME 01 - April.pdf.csv,1
-4/30/2020,Lease Rents,Hackney Ark - Estates,COMMUNITY HEALTH PARTNERSHIPS LTD,33957632,95956.0,HOME 01 - April.pdf.csv,1
-4/30/2020,Service Charge,Hackney Ark - Estates,COMMUNITY HEALTH PARTNERSHIPS LTD,33957632,10356.0,HOME 01 - April.pdf.csv,1
-4/30/2020,Lease Rents,Hackney Ark - Estates,COMMUNITY HEALTH PARTNERSHIPS LTD,33957649,95956.0,HOME 01 - April.pdf.csv,1
-4/30/2020,Service Charge,Hackney Ark - Estates,COMMUNITY HEALTH PARTNERSHIPS LTD,33957649,10356.0,HOME 01 - April.pdf.csv,1
-4/30/2020,Vaccines,COVID-19,SOLAREX (GB) LTD,33961020,63375.0,HOME 01 - April.pdf.csv,1
-4/30/2020,OthrIntngAst Additions,Balance Sheet,AGILE MEDICAL LTD,33961059,170586.0,HOME 01 - April.pdf.csv,1
-4/30/2020,OthrIntngAst Additions,Balance Sheet,VODAFONE LTD,33981565,28526.0,HOME 01 - April.pdf.csv,1
-4/30/2020,Bldg/Eng Equip Maint/Rep,Homerton Central Engineer,STARKSTROM LTD,33981790,21260.0,HOME 01 - April.pdf.csv,1
-4/30/2020,OthrIntngAst Additions,Balance Sheet,DELL CORPORATION LTD,33984729,29190.0,HOME 01 - April.pdf.csv,1
-4/30/2020,Consultant,Opthalmology,MOORFIELDS EYE HOSPITAL NHS,33993793,80415.0,HOME 01 - April.pdf.csv,1
-4/30/2020,Lease Rents,Hackney Ark - Estates,"FOUNDATION TRUST
-COMMUNITY HEALTH PARTNERSHIPS LTD",33993989,95956.0,HOME 01 - April.pdf.csv,1
-4/30/2020,Service Charge,Hackney Ark - Estates,COMMUNITY HEALTH PARTNERSHIPS LTD,33993989,10356.0,HOME 01 - April.pdf.csv,1
-4/30/2020,Lease Rents,Hackney Ark - Estates,COMMUNITY HEALTH PARTNERSHIPS LTD,33994009,95956.0,HOME 01 - April.pdf.csv,1
-4/30/2020,Service Charge,Hackney Ark - Estates,COMMUNITY HEALTH PARTNERSHIPS LTD,33994009,10356.0,HOME 01 - April.pdf.csv,1
-4/30/2020,Lease Rents,Hackney Ark - Estates,COMMUNITY HEALTH PARTNERSHIPS LTD,33994081,93725.0,HOME 01 - April.pdf.csv,1
-4/30/2020,Lease Rents,Kenworthy Road - Estates,COMMUNITY HEALTH PARTNERSHIPS LTD,33994081,24961.0,HOME 01 - April.pdf.csv,1
-4/30/2020,Service Charge,Hackney Ark - Estates,COMMUNITY HEALTH PARTNERSHIPS LTD,33994081,9789.0,HOME 01 - April.pdf.csv,1
-4/30/2020,Service Charge,Kenworthy Road - Estates,COMMUNITY HEALTH PARTNERSHIPS LTD,33994081,3597.0,HOME 01 - April.pdf.csv,1
-4/30/2020,Lease Rents,Kenworthy Road - Estates,COMMUNITY HEALTH PARTNERSHIPS LTD,33994105,95956.0,HOME 01 - April.pdf.csv,1
-4/30/2020,Service Charge,Kenworthy Road - Estates,COMMUNITY HEALTH PARTNERSHIPS LTD,33994105,10356.0,HOME 01 - April.pdf.csv,1
-4/30/2020,Lease Rents,Hackney Ark - Estates,COMMUNITY HEALTH PARTNERSHIPS LTD,33994114,95956.0,HOME 01 - April.pdf.csv,1
-4/30/2020,Service Charge,Hackney Ark - Estates,COMMUNITY HEALTH PARTNERSHIPS LTD,33994114,10356.0,HOME 01 - April.pdf.csv,1
-4/30/2020,OthrIntngAst Additions,Balance Sheet,DELL CORPORATION LTD,33995861,45531.0,HOME 01 - April.pdf.csv,1
-4/30/2020,OthrIntngAst Additions,Balance Sheet,DELL CORPORATION LTD,33995863,45531.0,HOME 01 - April.pdf.csv,1
-4/30/2020,OthrIntngAst Additions,Balance Sheet,INSIGHT DIRECT (UK) LTD,33996075,45600.0,HOME 01 - April.pdf.csv,1
-4/30/2020,Contr Estate Management,Louis Freedman Centre - Estates,NHS PROPERTY SERVICES LTD,33999223,43676.0,HOME 01 - April.pdf.csv,1
-4/30/2020,Service Charge,Louis Freedman Centre - Estates,NHS PROPERTY SERVICES LTD,33999263,47069.0,HOME 01 - April.pdf.csv,1
-4/30/2020,Contr Estate Management,John Scott Health Centre - Estates,NHS PROPERTY SERVICES LTD,33999269,41393.0,HOME 01 - April.pdf.csv,1
-4/30/2020,AUC Additions,Balance Sheet,STERIS SOLUTIONS LTD,33999295,52966.0,HOME 01 - April.pdf.csv,1
-4/30/2020,Consultant,Opthalmology,MOORFIELDS EYE HOSPITAL NHS,34028731,80415.0,HOME 01 - April.pdf.csv,1
-4/30/2020,Laboratory Test Kits,I.T.U.,"FOUNDATION TRUST
-ABBOTT LABORATORIES LTD",34029998,31575.0,HOME 01 - April.pdf.csv,1
-4/30/2020,Income tax - Current,Balance Sheet,INLAND REVENUE CIS,34033147,2324347.0,HOME 01 - April.pdf.csv,1
-4/30/2020,National Insurance - Curr,Balance Sheet,INLAND REVENUE CIS,34033147,2803705.0,HOME 01 - April.pdf.csv,1
-4/30/2020,Shared Parental Leave,Balance Sheet,INLAND REVENUE CIS,34033147,-683.0,HOME 01 - April.pdf.csv,-1
-4/30/2020,Statutory Mat Pay - Curr,Balance Sheet,INLAND REVENUE CIS,34033147,-80698.0,HOME 01 - April.pdf.csv,-1
-4/30/2020,Statutory Pat Pay - Curr,Balance Sheet,INLAND REVENUE CIS,34033147,-273.0,HOME 01 - April.pdf.csv,-1
-4/30/2020,Ext Contr Catering,Domestic Contract,ISS MEDICLEAN LTD,34040543,23975.0,HOME 01 - April.pdf.csv,1
-4/30/2020,Ext Contr Domestics,Domestic Contract,ISS MEDICLEAN LTD,34040543,65588.0,HOME 01 - April.pdf.csv,1
-4/30/2020,Hospitality,Domestic Contract,ISS MEDICLEAN LTD,34040543,26488.0,HOME 01 - April.pdf.csv,1
-4/30/2020,Lease Rents,Kenworthy Road - Estates,COMMUNITY HEALTH PARTNERSHIPS LTD,34051873,25405.0,HOME 01 - April.pdf.csv,1
-4/30/2020,Service Charge,Kenworthy Road - Estates,COMMUNITY HEALTH PARTNERSHIPS LTD,34051873,3112.0,HOME 01 - April.pdf.csv,1
-4/30/2020,Computer Maintenance,COVID-19,INSIGHT DIRECT (UK) LTD,34062776,50370.0,HOME 01 - April.pdf.csv,1
-4/30/2020,Computer Maintenance,It Client Support,INSIGHT DIRECT (UK) LTD,34072261,60070.0,HOME 01 - April.pdf.csv,1
-4/30/2020,Services Received - NHSTs,Immunology,DOCTORS LABORATORY LTD (THE),34087743,25104.0,HOME 01 - April.pdf.csv,1
-4/30/2020,Vaccines,COVID-19,SOLAREX (GB) LTD,34087746,63375.0,HOME 01 - April.pdf.csv,1
-4/30/2020,Services Received - NHSTs,Nuclear Medicine,WHITTINGTON HOSPITAL NHS TRUST,34090129,28438.0,HOME 01 - April.pdf.csv,1
-4/30/2020,OthrIntngAst Additions,Balance Sheet,VODAFONE LTD,34090240,67240.0,HOME 01 - April.pdf.csv,1
-4/30/2020,Stocks Raw Materials,Balance Sheet,ALLIANCE HEALTHCARE DISTRIBUTION LTD,34092725,47407.0,HOME 01 - April.pdf.csv,1
-4/30/2020,Stocks Raw Materials,Balance Sheet,GILEAD SCIENCES LTD,34092795,28694.0,HOME 01 - April.pdf.csv,1
-4/30/2020,Stocks Raw Materials,Balance Sheet,JANSSEN CILAG LTD,34094441,42180.0,HOME 01 - April.pdf.csv,1
-4/30/2020,Stocks Raw Materials,Balance Sheet,GILEAD SCIENCES LTD,34094472,67711.0,HOME 01 - April.pdf.csv,1
-4/30/2020,Laboratory Reagents,Molecular Lab,CHRYSTAL CONSULTING LTD,34129198,186581.0,HOME 01 - April.pdf.csv,1
-4/30/2020,Gas,Homerton Energy,CORONA ENERGY RETAIL 4 LTD,34142841,-42227.0,HOME 01 - April.pdf.csv,-1
-4/30/2020,Services Received - NHSTs,Bowel Cancer Screening Programme,BARTS HEALTH NHS TRUST,34153821,31835.0,HOME 01 - April.pdf.csv,1
-4/30/2020,Laboratory Test Kits,Chemical Pathology,ABBOTT LABORATORIES LTD,34153931,29490.0,HOME 01 - April.pdf.csv,1
-4/30/2020,Electricity,Homerton Energy,EDF ENERGY CUSTOMERS PLC,34154028,63843.0,HOME 01 - April.pdf.csv,1
-4/30/2020,Electricity,Homerton Energy,EDF ENERGY CUSTOMERS PLC,34161080,43583.0,HOME 01 - April.pdf.csv,1
-4/30/2020,Gas,Homerton Energy,CORONA ENERGY RETAIL 4 LTD,34161086,42232.0,HOME 01 - April.pdf.csv,1
-4/30/2020,Gas,Homerton Energy,CORONA ENERGY RETAIL 4 LTD,34161087,37858.0,HOME 01 - April.pdf.csv,1
-4/30/2020,Vaccines,COVID-19,MY LAUNDRESS COMMERCIAL LTD,34161089,40986.0,HOME 01 - April.pdf.csv,1
-4/30/2020,Training Expenses,Primary Care Psychology,CITY & HACKNEY MIND,34161295,30000.0,HOME 01 - April.pdf.csv,1
-4/30/2020,Stocks Raw Materials,Balance Sheet,ALLOGA UK LTD,34173628,25200.0,HOME 01 - April.pdf.csv,1
-4/30/2020,Lease Rents,Kenworthy Road - Estates,COMMUNITY HEALTH PARTNERSHIPS LTD,34180438,25405.0,HOME 01 - April.pdf.csv,1
-4/30/2020,Service Charge,Kenworthy Road - Estates,COMMUNITY HEALTH PARTNERSHIPS LTD,34180438,3112.0,HOME 01 - April.pdf.csv,1
-4/30/2020,Lease Rents,Kenworthy Road - Estates,COMMUNITY HEALTH PARTNERSHIPS LTD,34180440,25405.0,HOME 01 - April.pdf.csv,1
-4/30/2020,Service Charge,Kenworthy Road - Estates,COMMUNITY HEALTH PARTNERSHIPS LTD,34180440,3112.0,HOME 01 - April.pdf.csv,1
-4/30/2020,Electricity,Homerton Energy,EDF ENERGY CUSTOMERS PLC,34195028,43583.0,HOME 01 - April.pdf.csv,1
-4/30/2020,Phone Instal & Maint,Homerton Telephones,MAINTEL EUROPE LTD,34195898,75009.0,HOME 01 - April.pdf.csv,1
-4/30/2020,Other Gen Supplies & Srv,Health and Safety,SYNERGY HEALTH (UK) LTD,34210216,94026.0,HOME 01 - April.pdf.csv,1
-4/30/2020,NonNHS Trade Pybls Curr,Balance Sheet,BUNZL HEALTHCARE,34210221,26760.0,HOME 01 - April.pdf.csv,1
-4/30/2020,National QC & Accred Fees,Trust Board,CARE QUALITY COMMISSION,34210335,225000.0,HOME 01 - April.pdf.csv,1
-4/30/2020,Insurance Costs,Financial Accounts,WILLIS LTD,34210360,78400.0,HOME 01 - April.pdf.csv,1
-4/30/2020,Electricity,Homerton Energy,EDF ENERGY 1 LTD,34210363,63843.0,HOME 01 - April.pdf.csv,1
-4/30/2020,AUC Additions,Balance Sheet,OLYMPUS KEYMED,34213060,137984.0,HOME 01 - April.pdf.csv,1
-4/30/2020,Lease Rents,Kenworthy Road - Estates,COMMUNITY HEALTH PARTNERSHIPS LTD,34216426,25405.0,HOME 01 - April.pdf.csv,1
-4/30/2020,Service Charge,Kenworthy Road - Estates,COMMUNITY HEALTH PARTNERSHIPS LTD,34216426,3112.0,HOME 01 - April.pdf.csv,1
-4/30/2020,Lease Rents,Kenworthy Road - Estates,COMMUNITY HEALTH PARTNERSHIPS LTD,34216427,25405.0,HOME 01 - April.pdf.csv,1
-4/30/2020,Service Charge,Kenworthy Road - Estates,COMMUNITY HEALTH PARTNERSHIPS LTD,34216427,3112.0,HOME 01 - April.pdf.csv,1
-4/30/2020,Rates,Shoreditch Community Maternity,LONDON BOROUGH OF HACKNEY,34216429,26368.0,HOME 01 - April.pdf.csv,1
-4/30/2020,Bldg/Eng Equip Maint Cont,"Ctre
-Slg-Retinal Screening",NHS PROPERTY SERVICES LTD,34216450,434.0,HOME 01 - April.pdf.csv,1
-4/30/2020,Lease Rents,Slg-Retinal Screening,NHS PROPERTY SERVICES LTD,34216450,48702.0,HOME 01 - April.pdf.csv,1
-4/30/2020,Bldg/Eng Equip Maint Cont,Slg-Retinal Screening,NHS PROPERTY SERVICES LTD,34216451,3488.0,HOME 01 - April.pdf.csv,1
-4/30/2020,Service Charge,Slg-Retinal Screening,NHS PROPERTY SERVICES LTD,34216451,28951.0,HOME 01 - April.pdf.csv,1
-4/30/2020,Vaccines,COVID-19,SOLAREX (GB) LTD,34217949,53200.0,HOME 01 - April.pdf.csv,1
-5/31/2020,Laboratory Reagents,Molecular Lab,CHRYSTAL CONSULTING LTD,33290227,207713.0,HOME 02 - May.pdf.csv,1
-5/31/2020,Hospital Car Services,New Transport,ERS TRANSITION LTD,33902465,134757.0,HOME 02 - May.pdf.csv,1
-5/31/2020,Vaccines,COVID-19,MY LAUNDRESS COMMERCIAL LTD,34092319,22540.0,HOME 02 - May.pdf.csv,1
-5/31/2020,Hospital Car Services,New Transport,ERS TRANSITION LTD,34156079,134757.0,HOME 02 - May.pdf.csv,1
-5/31/2020,X-Ray Equip Maint/Repair,Medical Electronics,SUPPLY CHAIN COORDINATION LIMITED,34226549,116235.0,HOME 02 - May.pdf.csv,1
-5/31/2020,NonNHS Trade Pybls Curr,Balance Sheet,SUPPLY CHAIN COORDINATION LIMITED,34230854,93112.0,HOME 02 - May.pdf.csv,1
-5/31/2020,NonNHS Trade Pybls Curr,Balance Sheet,BUNZL HEALTHCARE,34230875,29664.0,HOME 02 - May.pdf.csv,1
-5/31/2020,NonNHS Trade Pybls Curr,Balance Sheet,BUNZL HEALTHCARE,34230888,96723.0,HOME 02 - May.pdf.csv,1
-5/31/2020,NonNHS Trade Pybls Curr,Balance Sheet,SUPPLY CHAIN COORDINATION LIMITED,34230890,81017.0,HOME 02 - May.pdf.csv,1
-5/31/2020,NonNHS Trade Pybls Curr,Balance Sheet,BUNZL HEALTHCARE,34230891,28727.0,HOME 02 - May.pdf.csv,1
-5/31/2020,NonNHS Trade Pybls Curr,Balance Sheet,SUPPLY CHAIN COORDINATION LIMITED,34230894,31903.0,HOME 02 - May.pdf.csv,1
-5/31/2020,NonNHS Trade Pybls Curr,Balance Sheet,SUPPLY CHAIN COORDINATION LIMITED,34230902,67445.0,HOME 02 - May.pdf.csv,1
-5/31/2020,Computer Maintenance,It Client Support,APOGEE CORPORATION LTD,34231006,76875.0,HOME 02 - May.pdf.csv,1
-5/31/2020,AUC Additions,Balance Sheet,PHILIPS ELECTRONICS UK LTD,34243637,56436.0,HOME 02 - May.pdf.csv,1
-5/31/2020,AUC Additions,Balance Sheet,PERFECT CIRCLE JV LTD,34271179,65713.0,HOME 02 - May.pdf.csv,1
-5/31/2020,Rates,Homerton Gen Estate Expens,LONDON BOROUGH OF HACKNEY,34271352,1255520.0,HOME 02 - May.pdf.csv,1
-5/31/2020,NonNHS Trade Pybls Curr,Balance Sheet,SUPPLY CHAIN COORDINATION LIMITED,34271401,114273.0,HOME 02 - May.pdf.csv,1
-5/31/2020,Electricity,Homerton Energy,EDF ENERGY CUSTOMERS PLC,34271441,-43583.0,HOME 02 - May.pdf.csv,-1
-5/31/2020,Electricity,Homerton Energy,EDF ENERGY CUSTOMERS PLC,34271442,-63843.0,HOME 02 - May.pdf.csv,-1
-5/31/2020,Services Received - NHSTs,Employee Health Management,OHWORKS LTD,34271455,32071.0,HOME 02 - May.pdf.csv,1
-5/31/2020,Services Received - NHSTs,"Service
-Employee Health Management",OHWORKS LTD,34271456,32071.0,HOME 02 - May.pdf.csv,1
-5/31/2020,Equip Maint Contracts,"Service
-Radiology",PHILIPS ELECTRONICS UK LTD,34271467,38784.0,HOME 02 - May.pdf.csv,1
-5/31/2020,OthrIntngAst Additions,Balance Sheet,BOLT PARTNERS LTD,34273222,37230.0,HOME 02 - May.pdf.csv,1
-5/31/2020,Other Transport Costs,Pathology,CITYSPRINT (UK) LTD,34273233,21395.0,HOME 02 - May.pdf.csv,1
-5/31/2020,NonNHS Trade Pybls Curr,Balance Sheet,SUPPLY CHAIN COORDINATION LIMITED,34283259,67827.0,HOME 02 - May.pdf.csv,1
-5/31/2020,Med & Surg Equip Repair,Theatre Supplies - Urology,MERCIAN SURGICAL SUPPLY CO LTD,34295779,31932.0,HOME 02 - May.pdf.csv,1
-5/31/2020,Vaccines,COVID-19,R PERKINS & SONS LTD,34316633,58193.0,HOME 02 - May.pdf.csv,1
-5/31/2020,Computer Software/License,Clinical Information Systems,ASCRIBE LTD T/A EMIS HEALTH,34318549,69660.0,HOME 02 - May.pdf.csv,1
-5/31/2020,Services Received - NHSTs,Cardiac Dept,BARTS HEALTH NHS TRUST,34333275,28875.0,HOME 02 - May.pdf.csv,1
-5/31/2020,Services Received - NHSTs,Bowel Cancer Screening,BARTS HEALTH NHS TRUST,34333318,35353.0,HOME 02 - May.pdf.csv,1
-5/31/2020,Services Received - NHSTs,"Programme
-Bowel Cancer Screening",BARTS HEALTH NHS TRUST,34333324,42278.0,HOME 02 - May.pdf.csv,1
-5/31/2020,Med & Surg Equip Hire,"Programme
-Integrated Comm Equip",LONDON BOROUGH OF HACKNEY,34333339,37190.0,HOME 02 - May.pdf.csv,1
-5/31/2020,Laboratory Reagents,Chemical Pathology,ABBOTT LABORATORIES LTD,34333377,135090.0,HOME 02 - May.pdf.csv,1
-5/31/2020,Training Expenses,Primary Care Psychology,CITY & HACKNEY MIND,34333530,36000.0,HOME 02 - May.pdf.csv,1
-5/31/2020,NonNHS Trade Pybls Curr,Balance Sheet,SUPPLY CHAIN COORDINATION LIMITED,34333543,77839.0,HOME 02 - May.pdf.csv,1
-5/31/2020,Laboratory Chemicals,Chemical Pathology,ABBOTT LABORATORIES LTD,34333612,43365.0,HOME 02 - May.pdf.csv,1
-5/31/2020,Vaccines,COVID-19,ROSE HOUSE FUNERAL SUPPLIES,34333996,28836.0,HOME 02 - May.pdf.csv,1
-5/31/2020,Med & Surg Equip Repair,Medical Electronics,SOFTCAT PLC,34334034,22678.0,HOME 02 - May.pdf.csv,1
-5/31/2020,AUC Additions,Balance Sheet,KARL STORZ ENDOSCOPY UK LTD,34344610,38318.0,HOME 02 - May.pdf.csv,1
-5/31/2020,Med & Surg Equip Disp,Theatre Supplies - Ent,KARL STORZ ENDOSCOPY UK LTD,34344610,2844.0,HOME 02 - May.pdf.csv,1
-5/31/2020,Income tax - Current,Balance Sheet,INLAND REVENUE CIS,34354887,2363250.0,HOME 02 - May.pdf.csv,1
-5/31/2020,National Insurance - Curr,Balance Sheet,INLAND REVENUE CIS,34354887,2746112.0,HOME 02 - May.pdf.csv,1
-5/31/2020,Shared Parental Leave,Balance Sheet,INLAND REVENUE CIS,34354887,-3853.0,HOME 02 - May.pdf.csv,-1
-5/31/2020,Statutory Mat Pay - Curr,Balance Sheet,INLAND REVENUE CIS,34354887,-69058.0,HOME 02 - May.pdf.csv,-1
-5/31/2020,Computer Maintenance,It Client Support,SOFTCAT PLC,34360730,32128.0,HOME 02 - May.pdf.csv,1
-5/31/2020,Payroll Ded'ns N/S Curr,Balance Sheet,TUSKERDIRECT LTD,34373775,25193.0,HOME 02 - May.pdf.csv,1
-5/31/2020,Payroll Ded'ns N/S Curr,Balance Sheet,TUSKERDIRECT LTD,34373937,26461.0,HOME 02 - May.pdf.csv,1
-5/31/2020,Services Received - NHSTs,Employee Health Management,OHWORKS LTD,34374086,32071.0,HOME 02 - May.pdf.csv,1
-5/31/2020,Laboratory Reagents,"Service
-Haematology",SYSMEX UK LTD,34374223,45872.0,HOME 02 - May.pdf.csv,1
-5/31/2020,Agency Senior Manager,Infecton Control Team,COMPUTER FUTURES,34382907,30762.0,HOME 02 - May.pdf.csv,1
-5/31/2020,Stocks Raw Materials,Balance Sheet,ALLIANCE HEALTHCARE DISTRIBUTION LTD,34389265,73049.0,HOME 02 - May.pdf.csv,1
-5/31/2020,Bldg/Eng Equip Maint Cont,Homerton Central Engineer,CENTRICA BUSINESS SOLUTIONS UK LTD,34411831,-34591.0,HOME 02 - May.pdf.csv,-1
-5/31/2020,Bldg/Eng Equip Maint Cont,Homerton Central Engineer,CENTRICA BUSINESS SOLUTIONS UK LTD,34411952,34591.0,HOME 02 - May.pdf.csv,1
-5/31/2020,Contr Estate Management,Homerton Central Engineer,CENTRICA BUSINESS SOLUTIONS UK LTD,34412113,23814.0,HOME 02 - May.pdf.csv,1
-5/31/2020,AUC Additions,Balance Sheet,MARDAV SOLUTIONS LTD,34418545,-48762.0,HOME 02 - May.pdf.csv,-1
-5/31/2020,AUC Additions,Balance Sheet,SUPPLY CHAIN COORDINATION LIMITED,34435611,84783.0,HOME 02 - May.pdf.csv,1
-5/31/2020,Bldg/Eng Equip Maint/Rep,Homerton Central Engineer,MICAD SYSTEMS (UK) LTD,34435853,45945.0,HOME 02 - May.pdf.csv,1
-5/31/2020,Vaccines,Corporate Nursing,BATES OFFICE SERVICES LTD - RQX,34443208,43200.0,HOME 02 - May.pdf.csv,1
-5/31/2020,Gas,Homerton Energy,CORONA ENERGY RETAIL 4 LTD,34444959,26844.0,HOME 02 - May.pdf.csv,1
-5/31/2020,Computer Maintenance,Pathology It,CLINISYS SOLUTIONS LTD,34445209,260655.0,HOME 02 - May.pdf.csv,1
-5/31/2020,Services Received - NHSTs,Cardiac Dept,BARTS HEALTH NHS TRUST,34462813,27300.0,HOME 02 - May.pdf.csv,1
-5/31/2020,Services Received - NHSTs,Cardiac Dept,BARTS HEALTH NHS TRUST,34462823,32550.0,HOME 02 - May.pdf.csv,1
-5/31/2020,Services Received - NHSTs,Cardiac Dept,BARTS HEALTH NHS TRUST,34462831,34650.0,HOME 02 - May.pdf.csv,1
-5/31/2020,Services Received - NHSTs,Cardiac Dept,BARTS HEALTH NHS TRUST,34462845,30975.0,HOME 02 - May.pdf.csv,1
-5/31/2020,Med & Surg Equip General,Delivery Suite,K2 MEDICAL SYSTEMS LTD,34494786,31050.0,HOME 02 - May.pdf.csv,1
-6/30/2020,National Insurance - Curr,Balance Sheet,INLAND REVENUE CIS,34667731,2825584.0,HOME 03 - June.pdf.csv,1
-6/30/2020,Income tax - Current,Balance Sheet,INLAND REVENUE CIS,34667731,2426111.0,HOME 03 - June.pdf.csv,1
-6/30/2020,Med & Surg Equip Hire,Integrated Comm Equip,LONDON BOROUGH OF HACKNEY,34547849,571417.0,HOME 03 - June.pdf.csv,1
-6/30/2020,Med & Surg Equip Hire,Integrated Comm Equip,LONDON BOROUGH OF HACKNEY,34547856,478132.0,HOME 03 - June.pdf.csv,1
-6/30/2020,AUC Additions,Balance Sheet,SUPPLY CHAIN COORDINATION,34504148,389144.0,HOME 03 - June.pdf.csv,1
-6/30/2020,Vaccines,COVID-19,"LIMITED
-ISS MEDICLEAN LTD",34592622,313732.0,HOME 03 - June.pdf.csv,1
-6/30/2020,Vaccines,COVID-19,ISS MEDICLEAN LTD,34747762,297465.0,HOME 03 - June.pdf.csv,1
-6/30/2020,Bldg/Eng Equip Maint Cont,St. Leonards - Estates,NHS PROPERTY SERVICES LTD,34563416,219983.0,HOME 03 - June.pdf.csv,1
-6/30/2020,Ext Contr Catering,Domestic Contract,ISS MEDICLEAN LTD,34592658,197901.0,HOME 03 - June.pdf.csv,1
-6/30/2020,Ext Contr Catering,Domestic Contract,ISS MEDICLEAN LTD,34592660,197901.0,HOME 03 - June.pdf.csv,1
-6/30/2020,Ext Contr Catering,Domestic Contract,ISS MEDICLEAN LTD,34760645,197901.0,HOME 03 - June.pdf.csv,1
-6/30/2020,Ext Contr Domestics,Domestic Contract,ISS MEDICLEAN LTD,34592658,194265.0,HOME 03 - June.pdf.csv,1
-6/30/2020,Ext Contr Domestics,Domestic Contract,ISS MEDICLEAN LTD,34760645,194265.0,HOME 03 - June.pdf.csv,1
-6/30/2020,Ext Contr Domestics,Domestic Contract,ISS MEDICLEAN LTD,34592660,180474.0,HOME 03 - June.pdf.csv,1
-6/30/2020,Rent,St. Leonards - Estates,NHS PROPERTY SERVICES LTD,34563406,138869.0,HOME 03 - June.pdf.csv,1
-6/30/2020,Rent,St. Leonards - Estates,NHS PROPERTY SERVICES LTD,34616787,138869.0,HOME 03 - June.pdf.csv,1
-6/30/2020,Lease Rents,St. Leonards - Estates,NHS PROPERTY SERVICES LTD,34616793,138869.0,HOME 03 - June.pdf.csv,1
-6/30/2020,Hospital Car Services,New Transport,ERS TRANSITION LTD,34505988,134757.0,HOME 03 - June.pdf.csv,1
-6/30/2020,Service Charge,St. Leonards - Estates,NHS PROPERTY SERVICES LTD,34563414,125166.0,HOME 03 - June.pdf.csv,1
-6/30/2020,Service Charge,St. Leonards - Estates,NHS PROPERTY SERVICES LTD,34616785,125166.0,HOME 03 - June.pdf.csv,1
-6/30/2020,Services Received - NHSTs,Hshs Clinic,EAST LONDON NHS FOUNDATION,34532940,124045.0,HOME 03 - June.pdf.csv,1
-6/30/2020,AUC Additions,Balance Sheet,"TRUST
-SOFTCAT PLC",34659246,120297.0,HOME 03 - June.pdf.csv,1
-6/30/2020,AUC Additions,Balance Sheet,SOFTCAT PLC,34756167,120297.0,HOME 03 - June.pdf.csv,1
-6/30/2020,AUC Additions,Balance Sheet,H&C CONTRACTS LTD,34601906,95615.0,HOME 03 - June.pdf.csv,1
-6/30/2020,Protective Clothing,COVID-19,BATES OFFICE SERVICES LTD - RQX,34677027,80000.0,HOME 03 - June.pdf.csv,1
-6/30/2020,AUC Additions,Balance Sheet,SUPPLY CHAIN COORDINATION,34504148,77828.0,HOME 03 - June.pdf.csv,1
-6/30/2020,NonNHS Trade Pybls Curr,Balance Sheet,"LIMITED
-SUPPLY CHAIN COORDINATION",34532971,76143.0,HOME 03 - June.pdf.csv,1
-6/30/2020,Computer Software/License,Clinical Information Systems,"LIMITED
-CERNER LTD",34760627,74454.0,HOME 03 - June.pdf.csv,1
-6/30/2020,Electricity,Homerton Energy,EDF ENERGY CUSTOMERS PLC,34594732,74343.0,HOME 03 - June.pdf.csv,1
-6/30/2020,Computer Software/License,Clinical Information Systems,SERVELEC HEALTHCARE LTD,34720206,73907.0,HOME 03 - June.pdf.csv,1
-6/30/2020,AUC Additions,Balance Sheet,WELCH ALLYN UK LTD,34750260,71530.0,HOME 03 - June.pdf.csv,1
-6/30/2020,Ext Contr Oth Hotel Srv,Domestic Contract,ISS MEDICLEAN LTD,34592658,69958.0,HOME 03 - June.pdf.csv,1
-6/30/2020,Ext Contr Oth Hotel Srv,Domestic Contract,ISS MEDICLEAN LTD,34592660,69958.0,HOME 03 - June.pdf.csv,1
-6/30/2020,Ext Contr Oth Hotel Srv,Domestic Contract,ISS MEDICLEAN LTD,34760645,69958.0,HOME 03 - June.pdf.csv,1
-6/30/2020,Ext Contr Domestics,Domestic Contract,ISS MEDICLEAN LTD,34592661,68192.0,HOME 03 - June.pdf.csv,1
-6/30/2020,Vaccines,COVID-19,GBUK HEALTHCARE,34622720,66960.0,HOME 03 - June.pdf.csv,1
-6/30/2020,Radio communications,Health and Safety,SKYGUARD LTD,34616916,63976.0,HOME 03 - June.pdf.csv,1
-6/30/2020,NonNHS Trade Pybls Curr,Balance Sheet,SUPPLY CHAIN COORDINATION,34532960,62549.0,HOME 03 - June.pdf.csv,1
-6/30/2020,Other Gen Supplies & Srv,Health and Safety,"LIMITED
-SYNERGY HEALTH (UK) LTD",34747775,62196.0,HOME 03 - June.pdf.csv,1
-6/30/2020,Electricity,Homerton Energy,EDF ENERGY CUSTOMERS PLC,34747755,62181.0,HOME 03 - June.pdf.csv,1
-6/30/2020,NonNHS Trade Pybls Curr,Balance Sheet,SUPPLY CHAIN COORDINATION,34684092,59554.0,HOME 03 - June.pdf.csv,1
-6/30/2020,AUC Additions,Balance Sheet,"LIMITED
-SUPPLY CHAIN COORDINATION",34504154,56781.0,HOME 03 - June.pdf.csv,1
-6/30/2020,AUC Additions,Balance Sheet,"LIMITED
-SUPPLY CHAIN COORDINATION",34504156,56781.0,HOME 03 - June.pdf.csv,1
-6/30/2020,Bldg/Eng Equip Maint Cont,St. Leonards - Estates,"LIMITED
-NHS PROPERTY SERVICES LTD",34563414,51670.0,HOME 03 - June.pdf.csv,1
-6/30/2020,Bldg/Eng Equip Maint Cont,St. Leonards - Estates,NHS PROPERTY SERVICES LTD,34616785,51670.0,HOME 03 - June.pdf.csv,1
-6/30/2020,FP10S,Outpatients,NHS BUSINESS SERVICES,34705646,51535.0,HOME 03 - June.pdf.csv,1
-6/30/2020,Services Received - NHSTs,Cardiac Dept,"AUTHORITY
-UNIVERSITY COLLEGE LONDON",34656181,50587.0,HOME 03 - June.pdf.csv,1
-6/30/2020,FP10S,Outpatients,NHS BUSINESS SERVICES,34675760,50163.0,HOME 03 - June.pdf.csv,1
-6/30/2020,FP10S,Outpatients,"AUTHORITY
-NHS BUSINESS SERVICES",34705645,50135.0,HOME 03 - June.pdf.csv,1
-6/30/2020,Computer Software/License,Clinical Coding,"AUTHORITY
-3M UNITED KINGDOM PLC",34697945,49129.0,HOME 03 - June.pdf.csv,1
-6/30/2020,FP10S,Outpatients,NHS BUSINESS SERVICES,34705649,48765.0,HOME 03 - June.pdf.csv,1
-6/30/2020,AUC Additions,Balance Sheet,"AUTHORITY
-MARDAV SOLUTIONS LTD",34815089,48762.0,HOME 03 - June.pdf.csv,1
-6/30/2020,Lease Rents,Slg-Retinal Screening,NHS PROPERTY SERVICES LTD,34532918,48702.0,HOME 03 - June.pdf.csv,1
-6/30/2020,Lease Rents,Slg-Retinal Screening,NHS PROPERTY SERVICES LTD,34623548,48702.0,HOME 03 - June.pdf.csv,1
-6/30/2020,FP10S,Outpatients,NHS BUSINESS SERVICES,34705644,47867.0,HOME 03 - June.pdf.csv,1
-6/30/2020,Rates,Sexual Health Estates,"AUTHORITY
-CITY OF LONDON",34599424,47790.0,HOME 03 - June.pdf.csv,1
-6/30/2020,NonNHS Trade Pybls Curr,Balance Sheet,SUPPLY CHAIN COORDINATION,34684093,47305.0,HOME 03 - June.pdf.csv,1
-6/30/2020,AUC Additions,Balance Sheet,"LIMITED
-WELCH ALLYN UK LTD",34749029,46772.0,HOME 03 - June.pdf.csv,1
-6/30/2020,Ext Contr Laundry,Domestic Contract,ISS MEDICLEAN LTD,34592658,46611.0,HOME 03 - June.pdf.csv,1
-6/30/2020,Ext Contr Laundry,Domestic Contract,ISS MEDICLEAN LTD,34592660,46611.0,HOME 03 - June.pdf.csv,1
-6/30/2020,Ext Contr Laundry,Domestic Contract,ISS MEDICLEAN LTD,34760645,46611.0,HOME 03 - June.pdf.csv,1
-6/30/2020,Miscellaneous Expenditure,COVID-19,FLOYD & SON,34616828,46000.0,HOME 03 - June.pdf.csv,1
-6/30/2020,Laboratory Chemicals,Chemical Pathology,ABBOTT LABORATORIES LTD,34642347,44434.0,HOME 03 - June.pdf.csv,1
-6/30/2020,Services Received - NHSTs,Cardiac Dept,UNIVERSITY COLLEGE LONDON,34656189,43372.0,HOME 03 - June.pdf.csv,1
-6/30/2020,Ext Contr Catering,Domestic Contract,ISS MEDICLEAN LTD,34592661,42588.0,HOME 03 - June.pdf.csv,1
-6/30/2020,Contr Premises Security,Domestic Contract,ISS MEDICLEAN LTD,34592658,42124.0,HOME 03 - June.pdf.csv,1
-6/30/2020,Contr Premises Security,Domestic Contract,ISS MEDICLEAN LTD,34592660,42124.0,HOME 03 - June.pdf.csv,1
-6/30/2020,Contr Premises Security,Domestic Contract,ISS MEDICLEAN LTD,34760645,42124.0,HOME 03 - June.pdf.csv,1
-6/30/2020,Radio communications,Health and Safety,SKYGUARD LTD,34524375,41985.0,HOME 03 - June.pdf.csv,1
-6/30/2020,Services Received - NHSTs,Paediatrics Sla,MOORFIELDS EYE HOSPITAL NHS,34642327,41772.0,HOME 03 - June.pdf.csv,1
-6/30/2020,Ext Contr Domestics,Domestic Contract,"FOUNDATION TRUST
-ISS MEDICLEAN LTD",34592657,40071.0,HOME 03 - June.pdf.csv,1
-6/30/2020,Vaccines,COVID-19,MY LAUNDRESS COMMERCIAL,34570092,39500.0,HOME 03 - June.pdf.csv,1
-6/30/2020,AUC Additions,Balance Sheet,"LTD
-OLYMPUS KEYMED",34818270,39042.0,HOME 03 - June.pdf.csv,1
-6/30/2020,Other Gen Supplies & Srv,Health and Safety,SYNERGY HEALTH (UK) LTD,34705665,38407.0,HOME 03 - June.pdf.csv,1
-6/30/2020,NonNHS Trade Pybls Curr,Balance Sheet,SUPPLY CHAIN COORDINATION,34684094,37070.0,HOME 03 - June.pdf.csv,1
-6/30/2020,Electricity,Homerton Energy,"LIMITED
-EDF ENERGY CUSTOMERS PLC",34599431,36415.0,HOME 03 - June.pdf.csv,1
-6/30/2020,Vaccines,COVID-19,ERS TRANSITION LTD,34532686,35723.0,HOME 03 - June.pdf.csv,1
-6/30/2020,Services Received - NHSTs,Cardiac Dept,BARTS HEALTH NHS TRUST,34747742,35175.0,HOME 03 - June.pdf.csv,1
-6/30/2020,AUC Additions,Balance Sheet,K2 MEDICAL SYSTEMS LTD,34556458,35000.0,HOME 03 - June.pdf.csv,1
-6/30/2020,Vaccines,COVID-19,MY LAUNDRESS COMMERCIAL,34587745,34845.0,HOME 03 - June.pdf.csv,1
-6/30/2020,AUC Additions,Balance Sheet,"LTD
-BAXTER HEALTHCARE LTD",34732039,33750.0,HOME 03 - June.pdf.csv,1
-6/30/2020,AUC Additions,Balance Sheet,H&C CONTRACTS LTD,34732614,32665.0,HOME 03 - June.pdf.csv,1
-6/30/2020,Postage & Carriage,Post Homerton,XEROX (UK) LTD,33603933,32475.0,HOME 03 - June.pdf.csv,1
-6/30/2020,Services Received - NHSTs,Employee Health,OHWORKS LTD,34675884,32071.0,HOME 03 - June.pdf.csv,1
-6/30/2020,Postage & Carriage,"Management Service
-Post Homerton",XEROX (UK) LTD,32979634,31868.0,HOME 03 - June.pdf.csv,1
-6/30/2020,Contr Premises Security,Domestic Contract,ISS MEDICLEAN LTD,34592657,30895.0,HOME 03 - June.pdf.csv,1
-6/30/2020,Contr Premises Security,Domestic Contract,ISS MEDICLEAN LTD,34592661,30895.0,HOME 03 - June.pdf.csv,1
-6/30/2020,"Books, Journals & Subscr",Trust Board,SALFORD ROYAL HOSPITALS NHS,34764187,30000.0,HOME 03 - June.pdf.csv,1
-6/30/2020,Computer Software/License,Clinical Information Systems,"FOUNDATION TRUST
-CERNER LTD",34760625,29879.0,HOME 03 - June.pdf.csv,1
-6/30/2020,Computer Software/License,Clinical Information Systems,CERNER LTD,34760631,29879.0,HOME 03 - June.pdf.csv,1
-6/30/2020,Vaccines,COVID-19,MY LAUNDRESS COMMERCIAL,34570061,29785.0,HOME 03 - June.pdf.csv,1
-6/30/2020,Lease Rents,Sexual Health Estates,"LTD
-CUMBRAE PROPERTIES (1963) LTD",34555821,28598.0,HOME 03 - June.pdf.csv,1
-6/30/2020,Postage & Carriage,Post Homerton,XEROX (UK) LTD,33913402,28562.0,HOME 03 - June.pdf.csv,1
-6/30/2020,Services Received - NHSTs,Cardiac Dept,BARTS HEALTH NHS TRUST,34656193,28206.0,HOME 03 - June.pdf.csv,1
-6/30/2020,Consultant,Opthalmology,MOORFIELDS EYE HOSPITAL NHS,34642327,27112.0,HOME 03 - June.pdf.csv,1
-6/30/2020,Stocks Raw Materials,Balance Sheet,"FOUNDATION TRUST
-ALLIANCE HEALTHCARE",34518096,26946.0,HOME 03 - June.pdf.csv,1
-6/30/2020,Vaccines,COVID-19,"DISTRIBUTION LTD
-MY LAUNDRESS COMMERCIAL",34570079,26565.0,HOME 03 - June.pdf.csv,1
-6/30/2020,Contr Estate Management,Domestic Contract,"LTD
-ISS MEDICLEAN LTD",34592658,26325.0,HOME 03 - June.pdf.csv,1
-6/30/2020,Contr Estate Management,Domestic Contract,ISS MEDICLEAN LTD,34592660,26325.0,HOME 03 - June.pdf.csv,1
-6/30/2020,Contr Estate Management,Domestic Contract,ISS MEDICLEAN LTD,34760645,26325.0,HOME 03 - June.pdf.csv,1
-6/30/2020,OthrIntngAst Additions,Balance Sheet,COMPUTACENTER (UK) LTD,34659254,25462.0,HOME 03 - June.pdf.csv,1
-6/30/2020,Bldg/Eng Equip Maint Cont,Lower Clapton - Estates,NHS PROPERTY SERVICES LTD,34623503,25238.0,HOME 03 - June.pdf.csv,1
-6/30/2020,Computer Software/License,Clinical Information Systems,INTERSYSTEMS,34601904,25064.0,HOME 03 - June.pdf.csv,1
-7/31/2020,AUC Additions,Balance Sheet,BELMONT MEDICAL TECHNOLOGIES,34818284,39038.0,HOME 04 - July.pdf.csv,1
-7/31/2020,Hospital Car Services,New Transport,ERS TRANSITION LTD,34818297,134757.0,HOME 04 - July.pdf.csv,1
-7/31/2020,Contr Other External,School Nursing,THOMSON SCREENING SOLUTIONS LTD,34830470,28588.0,HOME 04 - July.pdf.csv,1
-7/31/2020,Lease Rents,St. Leonards - Estates,NHS PROPERTY SERVICES LTD,34844265,138869.0,HOME 04 - July.pdf.csv,1
-7/31/2020,FP10S,Outpatients,NHS BUSINESS SERVICES AUTHORITY,34844287,43486.0,HOME 04 - July.pdf.csv,1
-7/31/2020,Services Received -,Histopathology,BARTS HEALTH NHS TRUST,34854511,50436.0,HOME 04 - July.pdf.csv,1
-7/31/2020,"NHSTs
-Computer",Clinical Information,CERNER LTD,34855515,111617.0,HOME 04 - July.pdf.csv,1
-7/31/2020,"Software/License
-Computer","Systems
-Clinical Information",CERNER LTD,34855523,29879.0,HOME 04 - July.pdf.csv,1
-7/31/2020,"Software/License
-Computer","Systems
-Risk Management",DATIX LTD,34857438,57863.0,HOME 04 - July.pdf.csv,1
-7/31/2020,"Software/License
-Computer",Clinical Information,CERNER LTD,34873394,186582.0,HOME 04 - July.pdf.csv,1
-7/31/2020,"Software/License
-Computer","Systems
-Clinical Information",CERNER LTD,34873409,100073.0,HOME 04 - July.pdf.csv,1
-7/31/2020,"Software/License
-Computer","Systems
-Clinical Information",CERNER LTD,34873423,97518.0,HOME 04 - July.pdf.csv,1
-7/31/2020,"Software/License
-Contr Premises","Systems
-Domestic Contract",ISS MEDICLEAN LTD,34873431,30895.0,HOME 04 - July.pdf.csv,1
-7/31/2020,"Security
-Ext Contr Domestics",Domestic Contract,ISS MEDICLEAN LTD,34873431,51319.0,HOME 04 - July.pdf.csv,1
-7/31/2020,Electricity,Homerton Energy,EDF ENERGY CUSTOMERS PLC,34873534,73634.0,HOME 04 - July.pdf.csv,1
-7/31/2020,Services Received -,Employee Health,OHWORKS LTD,34873744,32071.0,HOME 04 - July.pdf.csv,1
-7/31/2020,"NHSTs
-Lease Rents","Management Service
-Hackney Ark - Estates",COMMUNITY HEALTH PARTNERSHIPS LTD,34873979,82074.0,HOME 04 - July.pdf.csv,1
-7/31/2020,Lease Rents,St. Leonards - Estates,NHS PROPERTY SERVICES LTD,34886950,32440.0,HOME 04 - July.pdf.csv,1
-7/31/2020,Lease Rents,St. Leonards - Estates,NHS PROPERTY SERVICES LTD,34886953,49136.0,HOME 04 - July.pdf.csv,1
-7/31/2020,Lease Rents,John Scott Health,NHS PROPERTY SERVICES LTD,34903334,28300.0,HOME 04 - July.pdf.csv,1
-7/31/2020,Lease Rents,"Centre - Estates
-Louis Freedman",NHS PROPERTY SERVICES LTD,34903344,43676.0,HOME 04 - July.pdf.csv,1
-7/31/2020,Lease Rents,"Centre - Estates
-St. Leonards - Estates",NHS PROPERTY SERVICES LTD,34903351,148624.0,HOME 04 - July.pdf.csv,1
-7/31/2020,Lease Rents,John Scott Health,NHS PROPERTY SERVICES LTD,34903372,41393.0,HOME 04 - July.pdf.csv,1
-7/31/2020,Service Charge,"Centre - Estates
-St. Leonards - Estates",NHS PROPERTY SERVICES LTD,34903385,189639.0,HOME 04 - July.pdf.csv,1
-7/31/2020,Service Charge,Louis Freedman,NHS PROPERTY SERVICES LTD,34903391,47069.0,HOME 04 - July.pdf.csv,1
-7/31/2020,Computer,"Centre - Estates
-Procurement",GENESIS AUTOMATION UK LTD,34903419,49500.0,HOME 04 - July.pdf.csv,1
-7/31/2020,"Software/License
-Services Received -",Immunology,DOCTORS LABORATORY LTD (THE),34913728,25466.0,HOME 04 - July.pdf.csv,1
-7/31/2020,"NHSTs
-AUC Additions",Balance Sheet,H&C CONTRACTS LTD,34926997,33214.0,HOME 04 - July.pdf.csv,1
-7/31/2020,Computer,Clinical Information,SERVELEC HEALTHCARE LTD,34933437,73907.0,HOME 04 - July.pdf.csv,1
-7/31/2020,"Software/License
-Consultant","Systems
-Opthalmology",MOORFIELDS EYE HOSPITAL NHS,34958173,27112.0,HOME 04 - July.pdf.csv,1
-7/31/2020,Services Received -,Paediatrics Sla,"FOUNDATION TRUST
-MOORFIELDS EYE HOSPITAL NHS",34958173,41772.0,HOME 04 - July.pdf.csv,1
-7/31/2020,"NHSTs
-Income tax - Current",Balance Sheet,"FOUNDATION TRUST
-INLAND REVENUE CIS",34969092,2298615.0,HOME 04 - July.pdf.csv,1
-7/31/2020,National Insurance -,Balance Sheet,INLAND REVENUE CIS,34969092,2767152.0,HOME 04 - July.pdf.csv,1
-7/16/2020,"Curr
-Services Received -",Virology,BARTS HEALTH NHS TRUST,34983625,28542.0,HOME 04 - July.pdf.csv,1
-7/31/2020,"NHSTs
-Lease Rents",Hackney Ark - Estates,COMMUNITY HEALTH PARTNERSHIPS LTD,34984112,98489.0,HOME 04 - July.pdf.csv,1
-7/31/2020,Lease Rents,Hackney Ark - Estates,COMMUNITY HEALTH PARTNERSHIPS LTD,34984113,98489.0,HOME 04 - July.pdf.csv,1
-7/31/2020,Laboratory Reagents,Chemical Pathology,ABBOTT LABORATORIES LTD,34984114,41312.0,HOME 04 - July.pdf.csv,1
-7/16/2020,Electricity,Homerton Energy,EDF ENERGY CUSTOMERS PLC,34984119,38266.0,HOME 04 - July.pdf.csv,1
-07/01/2020,Computer,Clinical Information,CERNER LTD,35004159,97518.0,HOME 04 - July.pdf.csv,1
-7/21/2020,"Software/License
-AUC Additions","Systems
-Balance Sheet",H&C CONTRACTS LTD,35027616,81877.0,HOME 04 - July.pdf.csv,1
-07/01/2020,Miscellaneous,Community Superhub,CITY & HACKNEY GP CONFEDERATION CIC,35066132,157015.0,HOME 04 - July.pdf.csv,1
-7/24/2020,"Expenditure
-Electricity",Homerton Energy,EDF ENERGY CUSTOMERS PLC,35066133,67933.0,HOME 04 - July.pdf.csv,1
-7/24/2020,Ext Contr Domestics,Domestic Contract,ISS MEDICLEAN LTD,35066138,594277.0,HOME 04 - July.pdf.csv,1
-7/24/2020,Vaccines,COVID-19,ISS MEDICLEAN LTD,35066144,213392.0,HOME 04 - July.pdf.csv,1
-7/24/2020,Contr Premises,Domestic Contract,ISS MEDICLEAN LTD,35066145,30895.0,HOME 04 - July.pdf.csv,1
-7/24/2020,"Security
-Ext Contr Domestics",Domestic Contract,ISS MEDICLEAN LTD,35066145,54477.0,HOME 04 - July.pdf.csv,1
-7/24/2020,Laboratory Reagents,Molecular Lab,CHRYSTAL CONSULTING LTD,35066746,40494.0,HOME 04 - July.pdf.csv,1
-7/24/2020,Med & Surg Equip,Endoscopy,SUPPLY CHAIN COORDINATION LIMITED,35066749,291785.0,HOME 04 - July.pdf.csv,1
-7/24/2020,"General
-Med & Surg Equip",Endoscopy,SUPPLY CHAIN COORDINATION LIMITED,35066749,58357.0,HOME 04 - July.pdf.csv,1
-7/27/2020,"General
-Vaccines",COVID-19,MY LAUNDRESS COMMERCIAL LTD,35089507,32563.0,HOME 04 - July.pdf.csv,1
-7/27/2020,Hospital Car Services,New Transport,ERS TRANSITION LTD,35090221,134757.0,HOME 04 - July.pdf.csv,1
-07/01/2020,Specialist Registrar,Reserves,ROYAL FREE LONDON NHS FOUNDATION,35112979,99700.0,HOME 04 - July.pdf.csv,1
-07/01/2020,Specialist Registrar,Reserves,"TRUST
-ROYAL FREE LONDON NHS FOUNDATION",35112987,93561.0,HOME 04 - July.pdf.csv,1
-7/29/2020,Computer,It Client Support,"TRUST
-APOGEE CORPORATION LTD",35115252,76875.0,HOME 04 - July.pdf.csv,1
-7/30/2020,"Maintenance
-AUC Additions",Balance Sheet,H&C CONTRACTS LTD,35118867,28215.0,HOME 04 - July.pdf.csv,1
-7/30/2020,Other Gen Supplies &,Health and Safety,SYNERGY HEALTH (UK) LTD,35119494,27887.0,HOME 04 - July.pdf.csv,1
-7/30/2020,"Srv
-Other Gen Supplies &",Health and Safety,SYNERGY HEALTH (UK) LTD,35119495,40176.0,HOME 04 - July.pdf.csv,1
-7/31/2020,"Srv
-Computer Hardware",COVID-19,DELL CORPORATION LTD,35121383,35000.0,HOME 04 - July.pdf.csv,1
-08/01/2020,Services Received - NHSTs,Histopathology,BARTS HEALTH NHS TRUST,35118559,78200.0,HOME 05 - August.pdf.csv,1
-8/31/2020,Computer Software/License,Im&T,UNIVERSITY HOSPITALS BIRMINGHAM,35139670,30000.0,HOME 05 - August.pdf.csv,1
-08/01/2020,Computer Software/License,It Client Support,"NHS FOUNDATION TRUST
-TRUSTMARQUE SOLUTIONS LTD",35142319,141584.0,HOME 05 - August.pdf.csv,1
-08/01/2020,Computer Software/License,It Client Support,TRUSTMARQUE SOLUTIONS LTD,35142319,28316.0,HOME 05 - August.pdf.csv,1
-08/01/2020,Computer Software/License,It Client Support,TRUSTMARQUE SOLUTIONS LTD,35142320,603068.0,HOME 05 - August.pdf.csv,1
-08/01/2020,Computer Software/License,It Client Support,TRUSTMARQUE SOLUTIONS LTD,35142320,120613.0,HOME 05 - August.pdf.csv,1
-08/01/2020,Lease Rents,Kenworthy Road - Estates,COMMUNITY HEALTH PARTNERSHIPS,35156719,26229.0,HOME 05 - August.pdf.csv,1
-08/01/2020,Lease Rents,Kenworthy Road - Estates,"LTD
-COMMUNITY HEALTH PARTNERSHIPS",35156723,26206.0,HOME 05 - August.pdf.csv,1
-08/01/2020,Lease Rents,Kenworthy Road - Estates,"LTD
-COMMUNITY HEALTH PARTNERSHIPS",35156724,26206.0,HOME 05 - August.pdf.csv,1
-08/01/2020,Lease Rents,Kenworthy Road - Estates,"LTD
-COMMUNITY HEALTH PARTNERSHIPS",35156725,26229.0,HOME 05 - August.pdf.csv,1
-08/05/2020,Lease Rents,Hackney Ark - Estates,"LTD
-COMMUNITY HEALTH PARTNERSHIPS",35181569,82074.0,HOME 05 - August.pdf.csv,1
-08/01/2020,Services Received - NHSTs,Paediatrics Sla,"LTD
-BARTS HEALTH NHS TRUST",35182189,141200.0,HOME 05 - August.pdf.csv,1
-08/01/2020,NonNHS Trade Pybls Curr,Balance Sheet,SUPPLY CHAIN COORDINATION LIMITED,35182193,68036.0,HOME 05 - August.pdf.csv,1
-08/01/2020,NonNHS Trade Pybls Curr,Balance Sheet,SUPPLY CHAIN COORDINATION LIMITED,35182195,75474.0,HOME 05 - August.pdf.csv,1
-08/01/2020,NonNHS Trade Pybls Curr,Balance Sheet,SUPPLY CHAIN COORDINATION LIMITED,35182197,66843.0,HOME 05 - August.pdf.csv,1
-08/01/2020,NonNHS Trade Pybls Curr,Balance Sheet,SUPPLY CHAIN COORDINATION LIMITED,35182200,55284.0,HOME 05 - August.pdf.csv,1
-08/01/2020,NonNHS Trade Pybls Curr,Balance Sheet,SUPPLY CHAIN COORDINATION LIMITED,35182202,51653.0,HOME 05 - August.pdf.csv,1
-08/01/2020,NonNHS Trade Pybls Curr,Balance Sheet,SUPPLY CHAIN COORDINATION LIMITED,35182204,56301.0,HOME 05 - August.pdf.csv,1
-08/01/2020,Services Received - NHSTs,Ent,BARTS HEALTH NHS TRUST,35195894,126584.0,HOME 05 - August.pdf.csv,1
-08/01/2020,Services Received - NHSTs,Paediatrics Sla,BARTS HEALTH NHS TRUST,35195894,52743.0,HOME 05 - August.pdf.csv,1
-08/01/2020,NonNHS Trade Pybls Curr,Balance Sheet,BUNZL HEALTHCARE,35195907,27016.0,HOME 05 - August.pdf.csv,1
-08/08/2020,Postage & Carriage,Post Homerton,XEROX (UK) LTD,35208188,26689.0,HOME 05 - August.pdf.csv,1
-08/08/2020,Other Public Sector,Chemical Pathology,BECKMAN COULTER UK LTD,35212808,27144.0,HOME 05 - August.pdf.csv,1
-08/08/2020,AUC Additions,Balance Sheet,MINDRAY (UK) LTD,35212842,34673.0,HOME 05 - August.pdf.csv,1
-08/10/2020,Electricity,Homerton Energy,EDF ENERGY CUSTOMERS PLC,35230208,34487.0,HOME 05 - August.pdf.csv,1
-08/10/2020,Services Received - NHSTs,Immunology,DOCTORS LABORATORY LTD (THE),35230954,38299.0,HOME 05 - August.pdf.csv,1
-08/12/2020,NonNHS Trade Pybls Curr,Balance Sheet,SUPPLY CHAIN COORDINATION LIMITED,35255355,59604.0,HOME 05 - August.pdf.csv,1
-8/13/2020,Income tax - Current,Balance Sheet,INLAND REVENUE CIS,35263090,2316221.0,HOME 05 - August.pdf.csv,1
-8/13/2020,Electricity,Homerton Energy,EDF ENERGY CUSTOMERS PLC,35263151,39985.0,HOME 05 - August.pdf.csv,1
-8/15/2020,Payroll Ded'ns N/S Curr,Balance Sheet,TUSKERDIRECT LTD,35277606,28266.0,HOME 05 - August.pdf.csv,1
-8/31/2020,Payroll Ded'ns N/S Curr,Balance Sheet,TUSKERDIRECT LTD,35277608,27777.0,HOME 05 - August.pdf.csv,1
-8/31/2020,Payroll Ded'ns N/S Curr,Balance Sheet,TUSKERDIRECT LTD,35277610,26912.0,HOME 05 - August.pdf.csv,1
-8/15/2020,Payroll Ded'ns N/S Curr,Balance Sheet,TUSKERDIRECT LTD,35277612,27679.0,HOME 05 - August.pdf.csv,1
-8/31/2020,Electricity,Homerton Energy,EDF ENERGY CUSTOMERS PLC,35287633,77978.0,HOME 05 - August.pdf.csv,1
-8/31/2020,NonNHS Trade Pybls Curr,Balance Sheet,BUNZL HEALTHCARE,35306978,25868.0,HOME 05 - August.pdf.csv,1
-8/31/2020,NonNHS Trade Pybls Curr,Balance Sheet,SUPPLY CHAIN COORDINATION LIMITED,35307229,53109.0,HOME 05 - August.pdf.csv,1
-8/31/2020,Services Received - NHSTs,Employee Health Management Service,OHWORKS LTD,35340858,32071.0,HOME 05 - August.pdf.csv,1
-8/31/2020,AUC Additions,Balance Sheet,MAQUET LTD,35340963,54088.0,HOME 05 - August.pdf.csv,1
-8/31/2020,Bldg/Eng Equip Maint Cont,St. Leonards - Estates,NHS PROPERTY SERVICES LTD,35363188,103340.0,HOME 05 - August.pdf.csv,1
-8/31/2020,Service Charge,St. Leonards - Estates,NHS PROPERTY SERVICES LTD,35363188,250333.0,HOME 05 - August.pdf.csv,1
-8/31/2020,Electricity,Homerton Energy,EDF ENERGY CUSTOMERS PLC,35363207,73800.0,HOME 05 - August.pdf.csv,1
-8/31/2020,Electricity,Homerton Energy,EDF ENERGY CUSTOMERS PLC,35363211,68642.0,HOME 05 - August.pdf.csv,1
-8/31/2020,Electricity,Homerton Energy,EDF ENERGY CUSTOMERS PLC,35363214,73808.0,HOME 05 - August.pdf.csv,1
-8/31/2020,Med & Surg Equip General,Main Theatres Scrub,SUPPLY CHAIN COORDINATION LIMITED,35364237,50370.0,HOME 05 - August.pdf.csv,1
-8/31/2020,AUC Additions,Balance Sheet,FISHER & PAYKEL HEALTHCARE LTD,35400969,49504.0,HOME 05 - August.pdf.csv,1
-9/30/2020,AUC Additions,Balance Sheet,ANETIC AID LTD,34904014,55717.0,HOME 06 - September.pdf.csv,1
-9/30/2020,Services Received - NHSTs,Employee Health,OHWORKS LTD,35175346,41263.0,HOME 06 - September.pdf.csv,1
-9/30/2020,NonNHS Trade Pybls Curr,"Management Service
-Balance Sheet",SUPPLY CHAIN COORDINATION,35445388,54952.0,HOME 06 - September.pdf.csv,1
-9/30/2020,OthrIntngAst Additions,Balance Sheet,"LIMITED
-DELL CORPORATION LTD",35446325,113500.0,HOME 06 - September.pdf.csv,1
-9/30/2020,OthrIntngAst Additions,Balance Sheet,DELL CORPORATION LTD,35446326,32307.0,HOME 06 - September.pdf.csv,1
-9/30/2020,OthrIntngAst Additions,Balance Sheet,DELL CORPORATION LTD,35446327,32307.0,HOME 06 - September.pdf.csv,1
-9/30/2020,OthrIntngAst Additions,Balance Sheet,DELL CORPORATION LTD,35446328,113500.0,HOME 06 - September.pdf.csv,1
-9/30/2020,AUC Additions,Balance Sheet,FOREST GATE CONSTRUCTION,35447775,42667.0,HOME 06 - September.pdf.csv,1
-9/30/2020,Specialist Registrar,Reserves,"CO LTD
-ROYAL FREE LONDON NHS",35458290,88548.0,HOME 06 - September.pdf.csv,1
-9/30/2020,Contr Estate Management,Domestic Contract,"FOUNDATION TRUST
-ISS MEDICLEAN LTD",35458356,26325.0,HOME 06 - September.pdf.csv,1
-9/30/2020,Contr Premises Security,Domestic Contract,ISS MEDICLEAN LTD,35458356,42124.0,HOME 06 - September.pdf.csv,1
-9/30/2020,Ext Contr Catering,Domestic Contract,ISS MEDICLEAN LTD,35458356,197901.0,HOME 06 - September.pdf.csv,1
-9/30/2020,Ext Contr Domestics,Domestic Contract,ISS MEDICLEAN LTD,35458356,180474.0,HOME 06 - September.pdf.csv,1
-9/30/2020,Ext Contr Laundry,Domestic Contract,ISS MEDICLEAN LTD,35458356,46611.0,HOME 06 - September.pdf.csv,1
-9/30/2020,Ext Contr Oth Hotel Srv,Domestic Contract,ISS MEDICLEAN LTD,35458356,69958.0,HOME 06 - September.pdf.csv,1
-9/30/2020,Other Public Sector,Trust Board,NHS TOWER HAMLETS CCG,35458369,100350.0,HOME 06 - September.pdf.csv,1
-9/30/2020,"Books, Journals & Subscr",Trust Board,UCL PARTNERS,35458454,50000.0,HOME 06 - September.pdf.csv,1
-9/30/2020,Laboratory Chemicals,Chemical Pathology,ABBOTT LABORATORIES LTD,35461360,76010.0,HOME 06 - September.pdf.csv,1
-9/30/2020,Computer Software/License,Clinical Information Systems,CERNER LTD,35476729,29879.0,HOME 06 - September.pdf.csv,1
-9/30/2020,Computer Software/License,Clinical Information Systems,CERNER LTD,35476732,29879.0,HOME 06 - September.pdf.csv,1
-9/30/2020,X-Ray Equip Maint/Repair,Medical Electronics,SUPPLY CHAIN COORDINATION,35501642,81856.0,HOME 06 - September.pdf.csv,1
-9/30/2020,Lease Rents,Hackney Ark - Estates,"LIMITED
-COMMUNITY HEALTH",35501659,82074.0,HOME 06 - September.pdf.csv,1
-9/30/2020,Lease Rents,Sexual Health Estates,"PARTNERSHIPS LTD
-CUMBRAE PROPERTIES (1963)",35502425,28598.0,HOME 06 - September.pdf.csv,1
-9/30/2020,Services Received - NHSTs,Immunology,"LTD
-DOCTORS LABORATORY LTD",35502432,32438.0,HOME 06 - September.pdf.csv,1
-9/30/2020,NonNHS Trade Pybls Curr,Balance Sheet,"(THE)
-SUPPLY CHAIN COORDINATION",35503053,71602.0,HOME 06 - September.pdf.csv,1
-9/30/2020,AUC Additions,Balance Sheet,"LIMITED
-H&C CONTRACTS LTD",35524947,61837.0,HOME 06 - September.pdf.csv,1
-9/30/2020,AUC Additions,Balance Sheet,OLYMPUS KEYMED,35535738,302543.0,HOME 06 - September.pdf.csv,1
-9/30/2020,AUC Additions,Balance Sheet,OLYMPUS KEYMED,35535738,60508.0,HOME 06 - September.pdf.csv,1
-9/30/2020,Computer Software/License,Clinical Information Systems,CERNER LTD,35537047,97518.0,HOME 06 - September.pdf.csv,1
-9/30/2020,Computer Software/License,Clinical Information Systems,CERNER LTD,35537060,97518.0,HOME 06 - September.pdf.csv,1
-9/30/2020,Payroll Ded'ns N/S Curr,Balance Sheet,TUSKERDIRECT LTD,35537104,26806.0,HOME 06 - September.pdf.csv,1
-9/30/2020,NonNHS Trade Pybls Curr,Balance Sheet,SUPPLY CHAIN COORDINATION,35537160,75539.0,HOME 06 - September.pdf.csv,1
-9/30/2020,Other Gen Supplies & Srv,Health and Safety,"LIMITED
-SYNERGY HEALTH (UK) LTD",35537257,40151.0,HOME 06 - September.pdf.csv,1
-9/30/2020,Other Gen Supplies & Srv,Health and Safety,SYNERGY HEALTH (UK) LTD,35537260,37042.0,HOME 06 - September.pdf.csv,1
-9/30/2020,Other Gen Supplies & Srv,Health and Safety,SYNERGY HEALTH (UK) LTD,35537262,51801.0,HOME 06 - September.pdf.csv,1
-9/30/2020,Other Gen Supplies & Srv,Health and Safety,SYNERGY HEALTH (UK) LTD,35537264,46954.0,HOME 06 - September.pdf.csv,1
-9/30/2020,Specialist Registrar,Reserves,ROYAL FREE LONDON NHS,35537285,76176.0,HOME 06 - September.pdf.csv,1
-9/30/2020,Specialist Registrar,Reserves,"FOUNDATION TRUST
-ROYAL FREE LONDON NHS",35537286,86090.0,HOME 06 - September.pdf.csv,1
-9/30/2020,National Insurance - Curr,Balance Sheet,INLAND REVENUE CIS,35551730,2835938.0,HOME 06 - September.pdf.csv,1
-9/30/2020,Stocks Raw Materials,Balance Sheet,ALLIANCE HEALTHCARE,35554208,26946.0,HOME 06 - September.pdf.csv,1
-9/30/2020,AUC Additions,Balance Sheet,"DISTRIBUTION LTD
-SUPPLY CHAIN COORDINATION",35569421,42869.0,HOME 06 - September.pdf.csv,1
-9/30/2020,Services Received - NHSTs,Histopathology,"LIMITED
-BARTS HEALTH NHS TRUST",35572403,119631.0,HOME 06 - September.pdf.csv,1
-9/30/2020,Services Received - NHSTs,Virology,BARTS HEALTH NHS TRUST,35572413,28542.0,HOME 06 - September.pdf.csv,1
-9/30/2020,NonNHS Trade Pybls Curr,Balance Sheet,SUPPLY CHAIN COORDINATION,35584196,53340.0,HOME 06 - September.pdf.csv,1
-9/30/2020,NonNHS Trade Pybls Curr,Balance Sheet,"LIMITED
-SUPPLY CHAIN COORDINATION",35584320,85351.0,HOME 06 - September.pdf.csv,1
-9/30/2020,Services Received - NHSTs,Employee Health,"LIMITED
-OHWORKS LTD",35584336,34686.0,HOME 06 - September.pdf.csv,1
-9/30/2020,Electricity,"Management Service
-Homerton Energy",EDF ENERGY CUSTOMERS PLC,35601094,41712.0,HOME 06 - September.pdf.csv,1
-9/30/2020,AUC Additions,Balance Sheet,MAQUET LTD,35631263,51363.0,HOME 06 - September.pdf.csv,1
-9/30/2020,Stocks Raw Materials,Balance Sheet,ALLIANCE HEALTHCARE,35635172,29925.0,HOME 06 - September.pdf.csv,1
-9/30/2020,Hospitality,Unplanned Care,"DISTRIBUTION LTD
-LONDON BOROUGH OF",35637385,32467.0,HOME 06 - September.pdf.csv,1
-9/30/2020,AUC Additions,"Workstream (CCG Funded)
-Balance Sheet","HACKNEY
-CANON MEDICAL SYSTEMS LTD",35652733,106122.0,HOME 06 - September.pdf.csv,1
-9/30/2020,NonNHS Trade Pybls Curr,Balance Sheet,SUPPLY CHAIN COORDINATION,35666665,55255.0,HOME 06 - September.pdf.csv,1
-9/30/2020,NonNHS Trade Pybls Curr,Balance Sheet,"LIMITED
-SUPPLY CHAIN COORDINATION",35666691,80737.0,HOME 06 - September.pdf.csv,1
-9/30/2020,AUC Additions,Balance Sheet,"LIMITED
-B BRAUN MEDICAL LTD",35667114,25955.0,HOME 06 - September.pdf.csv,1
-9/30/2020,Vaccines,COVID-19,ISS MEDICLEAN LTD,35683464,231823.0,HOME 06 - September.pdf.csv,1
-9/30/2020,NonNHS Trade Pybls Curr,Balance Sheet,SUPPLY CHAIN COORDINATION,35696951,65905.0,HOME 06 - September.pdf.csv,1
-9/30/2020,Specialist Registrar,Reserves,"LIMITED
-ROYAL FREE LONDON NHS",35717260,76445.0,HOME 06 - September.pdf.csv,1
-9/30/2020,Specialist Registrar,Reserves,"FOUNDATION TRUST
-ROYAL FREE LONDON NHS",35717268,86890.0,HOME 06 - September.pdf.csv,1
-9/30/2020,Laboratory Test Kits,Chemical Pathology,"FOUNDATION TRUST
-ABBOTT LABORATORIES LTD",35723919,92697.0,HOME 06 - September.pdf.csv,1
-9/30/2020,Laboratory Test Kits,Chemical Pathology,ABBOTT LABORATORIES LTD,35723921,81420.0,HOME 06 - September.pdf.csv,1
 10/31/2020,Services Received - NHSTs,Bowel Cancer Screening Programme,BARTS AND THE LONDON NHS TRUST,35461254,50000.0,HOME 07 - October.pdf.csv,1
 10/31/2020,Services Received - NHSTs,Bowel Cancer Screening Programme,BARTS AND THE LONDON NHS TRUST,35461254,10000.0,HOME 07 - October.pdf.csv,1
 10/31/2020,NonNHS Trade Pybls Curr,Balance Sheet,SUPPLY CHAIN COORDINATION LIMITED,35723941,61266.0,HOME 07 - October.pdf.csv,1
@@ -810,291 +245,76 @@ ALLIANCE HEALTHCARE",36419253,15.0,HOME 08 - November.pdf.csv,1
 ALLIANCE HEALTHCARE",36419253,49.0,HOME 08 - November.pdf.csv,1
 11/30/2020,Stocks Raw Materials,Balance Sheet,"DISTRIBUTION LTD
 ALLIANCE HEALTHCARE",36419253,5.0,HOME 08 - November.pdf.csv,1
-12/31/2020,Stocks Raw Materials,Balance Sheet,ALLIANCE HEALTHCARE DISTRIBUTION LTD,36481459,1620.0,HOME 09 - December.pdf.csv,1
-12/31/2020,Stocks Raw Materials,Balance Sheet,ALLIANCE HEALTHCARE DISTRIBUTION LTD,36481459,18.0,HOME 09 - December.pdf.csv,1
-12/31/2020,Stocks Raw Materials,Balance Sheet,ALLIANCE HEALTHCARE DISTRIBUTION LTD,36481459,20.0,HOME 09 - December.pdf.csv,1
-12/31/2020,Stocks Raw Materials,Balance Sheet,ALLIANCE HEALTHCARE DISTRIBUTION LTD,36481459,3.0,HOME 09 - December.pdf.csv,1
-12/31/2020,Stocks Raw Materials,Balance Sheet,ALLIANCE HEALTHCARE DISTRIBUTION LTD,36481459,36.0,HOME 09 - December.pdf.csv,1
-12/31/2020,Stocks Raw Materials,Balance Sheet,ALLIANCE HEALTHCARE DISTRIBUTION LTD,36481459,35.0,HOME 09 - December.pdf.csv,1
-12/31/2020,Stocks Raw Materials,Balance Sheet,ALLIANCE HEALTHCARE DISTRIBUTION LTD,36481459,19.0,HOME 09 - December.pdf.csv,1
-12/31/2020,Stocks Raw Materials,Balance Sheet,ALLIANCE HEALTHCARE DISTRIBUTION LTD,36481459,11317.0,HOME 09 - December.pdf.csv,1
-12/31/2020,Stocks Raw Materials,Balance Sheet,ALLIANCE HEALTHCARE DISTRIBUTION LTD,36481459,18000.0,HOME 09 - December.pdf.csv,1
-12/31/2020,Stocks Raw Materials,Balance Sheet,ALLIANCE HEALTHCARE DISTRIBUTION LTD,36481459,4968.0,HOME 09 - December.pdf.csv,1
-12/31/2020,Stocks Raw Materials,Balance Sheet,ALLIANCE HEALTHCARE DISTRIBUTION LTD,36481459,40.0,HOME 09 - December.pdf.csv,1
-12/31/2020,Stocks Raw Materials,Balance Sheet,ALLIANCE HEALTHCARE DISTRIBUTION LTD,36481459,4.0,HOME 09 - December.pdf.csv,1
-12/31/2020,Stocks Raw Materials,Balance Sheet,ALLIANCE HEALTHCARE DISTRIBUTION LTD,36481459,8.0,HOME 09 - December.pdf.csv,1
-12/31/2020,NonNHS Trade Pybls Curr,Balance Sheet,"HOSPITALS NHS TRUST
-SUPPLY CHAIN COORDINATION LIMITED",36487372,68593.0,HOME 09 - December.pdf.csv,1
-12/31/2020,NonNHS Trade Pybls Curr,Balance Sheet,SUPPLY CHAIN COORDINATION LIMITED,36487473,99843.0,HOME 09 - December.pdf.csv,1
-12/31/2020,Computer Maintenance,Foetal Medicine,HEALTHNETCONNECTIONS LTD,36488104,30202.0,HOME 09 - December.pdf.csv,1
-12/31/2020,Computer Maintenance,Foetal Medicine,HEALTHNETCONNECTIONS LTD,36488104,6040.0,HOME 09 - December.pdf.csv,1
-12/31/2020,Lease Rents,Sexual Health Estates,CUMBRAE PROPERTIES (1963) LTD,36510836,28598.0,HOME 09 - December.pdf.csv,1
-12/31/2020,Lease Rents,Sexual Health Estates,CUMBRAE PROPERTIES (1963) LTD,36510836,5719.0,HOME 09 - December.pdf.csv,1
-12/31/2020,Specialist Registrar,Reserves,ROYAL FREE LONDON NHS FOUNDATION,36512711,91390.0,HOME 09 - December.pdf.csv,1
-12/31/2020,Specialist Registrar,Reserves,"TRUST
-ROYAL FREE LONDON NHS FOUNDATION",36512724,87032.0,HOME 09 - December.pdf.csv,1
-12/31/2020,Specialist Registrar,Reserves,"TRUST
-ROYAL FREE LONDON NHS FOUNDATION",36512729,100741.0,HOME 09 - December.pdf.csv,1
-12/31/2020,Specialist Registrar,Reserves,"TRUST
-ROYAL FREE LONDON NHS FOUNDATION",36512736,98281.0,HOME 09 - December.pdf.csv,1
-12/31/2020,NonNHS Trade Pybls Curr,Balance Sheet,"TRUST
-SUPPLY CHAIN COORDINATION LIMITED",36512811,82405.0,HOME 09 - December.pdf.csv,1
-12/31/2020,Ext Contr Domestics,Domestic Contract,ISS MEDICLEAN LTD,36512821,-927099.0,HOME 09 - December.pdf.csv,-1
-12/31/2020,Specialist Registrar,Reserves,ROYAL FREE LONDON NHS FOUNDATION,36512892,98082.0,HOME 09 - December.pdf.csv,1
-12/31/2020,Laboratory Reagents,Molecular Lab,"TRUST
-CHRYSTAL CONSULTING LTD",36513054,65870.0,HOME 09 - December.pdf.csv,1
-12/31/2020,Laboratory Reagents,Molecular Lab,CHRYSTAL CONSULTING LTD,36513054,13174.0,HOME 09 - December.pdf.csv,1
-12/31/2020,Payroll Ded'ns N/S Curr,Balance Sheet,TUSKERDIRECT LTD,36524372,28025.0,HOME 09 - December.pdf.csv,1
-12/31/2020,Services Received - NHSTs,Immunology,DOCTORS LABORATORY LTD (THE),36543218,37758.0,HOME 09 - December.pdf.csv,1
-12/31/2020,Stocks Raw Materials,Balance Sheet,ALLIANCE HEALTHCARE DISTRIBUTION LTD,36543272,4620.0,HOME 09 - December.pdf.csv,1
-12/31/2020,Stocks Raw Materials,Balance Sheet,ALLIANCE HEALTHCARE DISTRIBUTION LTD,36543272,199.0,HOME 09 - December.pdf.csv,1
-12/31/2020,Stocks Raw Materials,Balance Sheet,ALLIANCE HEALTHCARE DISTRIBUTION LTD,36543272,76.0,HOME 09 - December.pdf.csv,1
-12/31/2020,Stocks Raw Materials,Balance Sheet,ALLIANCE HEALTHCARE DISTRIBUTION LTD,36543272,4.0,HOME 09 - December.pdf.csv,1
-12/31/2020,Stocks Raw Materials,Balance Sheet,ALLIANCE HEALTHCARE DISTRIBUTION LTD,36543272,17.0,HOME 09 - December.pdf.csv,1
-12/31/2020,Stocks Raw Materials,Balance Sheet,ALLIANCE HEALTHCARE DISTRIBUTION LTD,36543272,8083.0,HOME 09 - December.pdf.csv,1
-12/31/2020,Stocks Raw Materials,Balance Sheet,ALLIANCE HEALTHCARE DISTRIBUTION LTD,36543272,18000.0,HOME 09 - December.pdf.csv,1
-12/31/2020,Stocks Raw Materials,Balance Sheet,ALLIANCE HEALTHCARE DISTRIBUTION LTD,36543272,93.0,HOME 09 - December.pdf.csv,1
-12/31/2020,Stocks Raw Materials,Balance Sheet,ALLIANCE HEALTHCARE DISTRIBUTION LTD,36543272,2.0,HOME 09 - December.pdf.csv,1
-12/31/2020,Stocks Raw Materials,Balance Sheet,ALLIANCE HEALTHCARE DISTRIBUTION LTD,36543272,7.0,HOME 09 - December.pdf.csv,1
-12/31/2020,Stocks Raw Materials,Balance Sheet,ALLIANCE HEALTHCARE DISTRIBUTION LTD,36543272,2.0,HOME 09 - December.pdf.csv,1
-12/31/2020,Stocks Raw Materials,Balance Sheet,ALLIANCE HEALTHCARE DISTRIBUTION LTD,36543272,36.0,HOME 09 - December.pdf.csv,1
-12/31/2020,Stocks Raw Materials,Balance Sheet,ALLIANCE HEALTHCARE DISTRIBUTION LTD,36543272,35.0,HOME 09 - December.pdf.csv,1
-12/31/2020,Stocks Raw Materials,Balance Sheet,ALLIANCE HEALTHCARE DISTRIBUTION LTD,36543272,183.0,HOME 09 - December.pdf.csv,1
-12/31/2020,Stocks Raw Materials,Balance Sheet,ALLIANCE HEALTHCARE DISTRIBUTION LTD,36543272,415.0,HOME 09 - December.pdf.csv,1
-12/31/2020,Stocks Raw Materials,Balance Sheet,ALLIANCE HEALTHCARE DISTRIBUTION LTD,36543272,49.0,HOME 09 - December.pdf.csv,1
-12/31/2020,Stocks Raw Materials,Balance Sheet,ALLIANCE HEALTHCARE DISTRIBUTION LTD,36543272,92.0,HOME 09 - December.pdf.csv,1
-12/31/2020,Consultant,Comm. Paediatric Admin General,MOORFIELDS EYE HOSPITAL NHS,36564536,11531.0,HOME 09 - December.pdf.csv,1
-12/31/2020,Consultant,Opthalmology,"FOUNDATION TRUST
-MOORFIELDS EYE HOSPITAL NHS",36564536,27112.0,HOME 09 - December.pdf.csv,1
-12/31/2020,Services Received - NHSTs,Paediatrics Sla,"FOUNDATION TRUST
-MOORFIELDS EYE HOSPITAL NHS",36564536,41772.0,HOME 09 - December.pdf.csv,1
-12/31/2020,Electricity,Homerton Energy,"FOUNDATION TRUST
-EDF ENERGY CUSTOMERS PLC",36564537,9805.0,HOME 09 - December.pdf.csv,1
-12/31/2020,Electricity,Homerton Energy,EDF ENERGY CUSTOMERS PLC,36564537,58684.0,HOME 09 - December.pdf.csv,1
-12/31/2020,Income tax - Current,Balance Sheet,INLAND REVENUE CIS,36579974,2480629.0,HOME 09 - December.pdf.csv,1
-12/31/2020,National Insurance - Curr,Balance Sheet,INLAND REVENUE CIS,36579974,2917102.0,HOME 09 - December.pdf.csv,1
-12/31/2020,Shared Parental Leave,Balance Sheet,INLAND REVENUE CIS,36579974,-695.0,HOME 09 - December.pdf.csv,-1
-12/31/2020,Stat Adoption Pay - Curr,Balance Sheet,INLAND REVENUE CIS,36579974,-3525.0,HOME 09 - December.pdf.csv,-1
-12/31/2020,Statutory Mat Pay - Curr,Balance Sheet,INLAND REVENUE CIS,36579974,-82107.0,HOME 09 - December.pdf.csv,-1
-12/31/2020,NonNHS Trade Pybls Curr,Balance Sheet,SUPPLY CHAIN COORDINATION LIMITED,36591220,70457.0,HOME 09 - December.pdf.csv,1
-12/31/2020,Electricity,Homerton Energy,EDF ENERGY CUSTOMERS PLC,36610730,-9822.0,HOME 09 - December.pdf.csv,-1
-12/31/2020,Electricity,Homerton Energy,EDF ENERGY CUSTOMERS PLC,36610730,-58787.0,HOME 09 - December.pdf.csv,-1
-12/31/2020,Electricity,Homerton Energy,EDF ENERGY CUSTOMERS PLC,36610733,-9711.0,HOME 09 - December.pdf.csv,-1
-12/31/2020,Electricity,Homerton Energy,EDF ENERGY CUSTOMERS PLC,36610733,-58116.0,HOME 09 - December.pdf.csv,-1
-12/31/2020,Computer Software/License,Clinical Information Systems,SERVELEC HEALTHCARE LTD,36615574,73907.0,HOME 09 - December.pdf.csv,1
-12/31/2020,Computer Software/License,Clinical Information Systems,SERVELEC HEALTHCARE LTD,36615574,14781.0,HOME 09 - December.pdf.csv,1
-12/31/2020,Computer Software/License,Clinical Information Systems,SERVELEC HEALTHCARE LTD,36615586,73907.0,HOME 09 - December.pdf.csv,1
-12/31/2020,Computer Software/License,Clinical Information Systems,SERVELEC HEALTHCARE LTD,36615586,14781.0,HOME 09 - December.pdf.csv,1
-12/31/2020,Ext Contr Domestics,Domestic Contract,ISS MEDICLEAN LTD,36631668,927099.0,HOME 09 - December.pdf.csv,1
-12/31/2020,Electricity,Homerton Energy,EDF ENERGY CUSTOMERS PLC,36631680,9805.0,HOME 09 - December.pdf.csv,1
-12/31/2020,Electricity,Homerton Energy,EDF ENERGY CUSTOMERS PLC,36631680,58684.0,HOME 09 - December.pdf.csv,1
-12/31/2020,Electricity,Homerton Energy,EDF ENERGY CUSTOMERS PLC,36631792,9728.0,HOME 09 - December.pdf.csv,1
-12/31/2020,Electricity,Homerton Energy,EDF ENERGY CUSTOMERS PLC,36631792,58213.0,HOME 09 - December.pdf.csv,1
-12/31/2020,Electricity,Homerton Energy,EDF ENERGY CUSTOMERS PLC,36631850,9748.0,HOME 09 - December.pdf.csv,1
-12/31/2020,Electricity,Homerton Energy,EDF ENERGY CUSTOMERS PLC,36631850,58335.0,HOME 09 - December.pdf.csv,1
-12/31/2020,Independent Sector,Ct Scanner,TELEMEDICINE CLINIC LTD,36633314,28419.0,HOME 09 - December.pdf.csv,1
-12/31/2020,Stocks Raw Materials,Balance Sheet,JANSSEN CILAG LTD,36639342,12240.0,HOME 09 - December.pdf.csv,1
-12/31/2020,Stocks Raw Materials,Balance Sheet,JANSSEN CILAG LTD,36639342,13104.0,HOME 09 - December.pdf.csv,1
-12/31/2020,Stocks Raw Materials,Balance Sheet,JANSSEN CILAG LTD,36639342,860.0,HOME 09 - December.pdf.csv,1
-12/31/2020,Ext Contr Laundry,Domestic Contract,ISS MEDICLEAN LTD,36642158,33553.0,HOME 09 - December.pdf.csv,1
-12/31/2020,Other recvables - Current,Balance Sheet,SME HCI LTD,36642196,25970.0,HOME 09 - December.pdf.csv,1
-12/31/2020,Other Gen Supplies & Srv,Health and Safety,SYNERGY HEALTH (UK) LTD,36644322,47249.0,HOME 09 - December.pdf.csv,1
-12/31/2020,Other Gen Supplies & Srv,Health and Safety,SYNERGY HEALTH (UK) LTD,36644344,42822.0,HOME 09 - December.pdf.csv,1
-12/31/2020,Electricity,Homerton Energy,EDF ENERGY CUSTOMERS PLC,36644371,6544.0,HOME 09 - December.pdf.csv,1
-12/31/2020,Electricity,Homerton Energy,EDF ENERGY CUSTOMERS PLC,36644371,39195.0,HOME 09 - December.pdf.csv,1
-12/31/2020,Ext Contr Laundry,Domestic Contract,ISS MEDICLEAN LTD,36644430,-33553.0,HOME 09 - December.pdf.csv,-1
-12/31/2020,Stocks Raw Materials,Balance Sheet,GILEAD SCIENCES LTD,36661368,9820.0,HOME 09 - December.pdf.csv,1
-12/31/2020,Stocks Raw Materials,Balance Sheet,GILEAD SCIENCES LTD,36661368,6595.0,HOME 09 - December.pdf.csv,1
-12/31/2020,Stocks Raw Materials,Balance Sheet,GILEAD SCIENCES LTD,36661368,5875.0,HOME 09 - December.pdf.csv,1
-12/31/2020,Stocks Raw Materials,Balance Sheet,GILEAD SCIENCES LTD,36661368,5227.0,HOME 09 - December.pdf.csv,1
-12/31/2020,Stocks Raw Materials,Balance Sheet,GILEAD SCIENCES LTD,36661371,12276.0,HOME 09 - December.pdf.csv,1
-12/31/2020,Stocks Raw Materials,Balance Sheet,GILEAD SCIENCES LTD,36661371,8244.0,HOME 09 - December.pdf.csv,1
-12/31/2020,Stocks Raw Materials,Balance Sheet,GILEAD SCIENCES LTD,36661371,8712.0,HOME 09 - December.pdf.csv,1
-12/31/2020,Med & Surg Equip Hire,Integrated Comm Equip,LONDON BOROUGH OF HACKNEY,36679364,305155.0,HOME 09 - December.pdf.csv,1
-12/31/2020,Other Gen Supplies & Srv,Health and Safety,SYNERGY HEALTH (UK) LTD,36679387,77647.0,HOME 09 - December.pdf.csv,1
-12/31/2020,Other Gen Supplies & Srv,Health and Safety,SYNERGY HEALTH (UK) LTD,36679389,83340.0,HOME 09 - December.pdf.csv,1
-12/31/2020,Vaccines,COVID-19,ISS MEDICLEAN LTD,36679418,150336.0,HOME 09 - December.pdf.csv,1
-12/31/2020,AUC Additions,Balance Sheet,LOGAN CONSTRUCTION (SE) LTD,36682429,435705.0,HOME 09 - December.pdf.csv,1
-12/31/2020,Laboratory Chemicals,Chemical Pathology,ABBOTT LABORATORIES LTD,36694885,91428.0,HOME 09 - December.pdf.csv,1
-12/31/2020,Laboratory Chemicals,Chemical Pathology,ABBOTT LABORATORIES LTD,36694885,18417.0,HOME 09 - December.pdf.csv,1
-12/31/2020,Laboratory Chemicals,Chemical Pathology,ABBOTT LABORATORIES LTD,36694885,657.0,HOME 09 - December.pdf.csv,1
-12/31/2020,NonNHS Trade Pybls Curr,Balance Sheet,SUPPLY CHAIN COORDINATION LIMITED,36697876,99530.0,HOME 09 - December.pdf.csv,1
-12/31/2020,Stocks Raw Materials,Balance Sheet,ALLIANCE HEALTHCARE DISTRIBUTION LTD,36708324,838.0,HOME 09 - December.pdf.csv,1
-12/31/2020,Stocks Raw Materials,Balance Sheet,ALLIANCE HEALTHCARE DISTRIBUTION LTD,36708324,16.0,HOME 09 - December.pdf.csv,1
-12/31/2020,Stocks Raw Materials,Balance Sheet,ALLIANCE HEALTHCARE DISTRIBUTION LTD,36708324,18.0,HOME 09 - December.pdf.csv,1
-12/31/2020,Stocks Raw Materials,Balance Sheet,ALLIANCE HEALTHCARE DISTRIBUTION LTD,36708324,161.0,HOME 09 - December.pdf.csv,1
-12/31/2020,Stocks Raw Materials,Balance Sheet,ALLIANCE HEALTHCARE DISTRIBUTION LTD,36708324,26.0,HOME 09 - December.pdf.csv,1
-12/31/2020,Stocks Raw Materials,Balance Sheet,ALLIANCE HEALTHCARE DISTRIBUTION LTD,36708324,9188.0,HOME 09 - December.pdf.csv,1
-12/31/2020,Stocks Raw Materials,Balance Sheet,ALLIANCE HEALTHCARE DISTRIBUTION LTD,36708324,63.0,HOME 09 - December.pdf.csv,1
-12/31/2020,Stocks Raw Materials,Balance Sheet,ALLIANCE HEALTHCARE DISTRIBUTION LTD,36708324,34.0,HOME 09 - December.pdf.csv,1
-12/31/2020,Stocks Raw Materials,Balance Sheet,ALLIANCE HEALTHCARE DISTRIBUTION LTD,36708324,12.0,HOME 09 - December.pdf.csv,1
-12/31/2020,Stocks Raw Materials,Balance Sheet,ALLIANCE HEALTHCARE DISTRIBUTION LTD,36708324,11.0,HOME 09 - December.pdf.csv,1
-12/31/2020,Stocks Raw Materials,Balance Sheet,ALLIANCE HEALTHCARE DISTRIBUTION LTD,36708324,2.0,HOME 09 - December.pdf.csv,1
-12/31/2020,Stocks Raw Materials,Balance Sheet,ALLIANCE HEALTHCARE DISTRIBUTION LTD,36708324,10.0,HOME 09 - December.pdf.csv,1
-12/31/2020,Stocks Raw Materials,Balance Sheet,ALLIANCE HEALTHCARE DISTRIBUTION LTD,36708324,159.0,HOME 09 - December.pdf.csv,1
-12/31/2020,Stocks Raw Materials,Balance Sheet,ALLIANCE HEALTHCARE DISTRIBUTION LTD,36708324,7.0,HOME 09 - December.pdf.csv,1
-12/31/2020,Stocks Raw Materials,Balance Sheet,ALLIANCE HEALTHCARE DISTRIBUTION LTD,36708324,50.0,HOME 09 - December.pdf.csv,1
-12/31/2020,Stocks Raw Materials,Balance Sheet,ALLIANCE HEALTHCARE DISTRIBUTION LTD,36708324,13473.0,HOME 09 - December.pdf.csv,1
-12/31/2020,Stocks Raw Materials,Balance Sheet,ALLIANCE HEALTHCARE DISTRIBUTION LTD,36708324,15000.0,HOME 09 - December.pdf.csv,1
-12/31/2020,Stocks Raw Materials,Balance Sheet,ALLIANCE HEALTHCARE DISTRIBUTION LTD,36708324,12.0,HOME 09 - December.pdf.csv,1
-12/31/2020,Stocks Raw Materials,Balance Sheet,ALLIANCE HEALTHCARE DISTRIBUTION LTD,36708324,46.0,HOME 09 - December.pdf.csv,1
-12/31/2020,Stocks Raw Materials,Balance Sheet,ALLIANCE HEALTHCARE DISTRIBUTION LTD,36708324,18.0,HOME 09 - December.pdf.csv,1
-12/31/2020,Stocks Raw Materials,Balance Sheet,ALLIANCE HEALTHCARE DISTRIBUTION LTD,36708324,9.0,HOME 09 - December.pdf.csv,1
-12/31/2020,Stocks Raw Materials,Balance Sheet,ALLIANCE HEALTHCARE DISTRIBUTION LTD,36708324,35.0,HOME 09 - December.pdf.csv,1
-12/31/2020,Stocks Raw Materials,Balance Sheet,ALLIANCE HEALTHCARE DISTRIBUTION LTD,36708324,32.0,HOME 09 - December.pdf.csv,1
-12/31/2020,Stocks Raw Materials,Balance Sheet,ALLIANCE HEALTHCARE DISTRIBUTION LTD,36708324,475.0,HOME 09 - December.pdf.csv,1
-12/31/2020,Stocks Raw Materials,Balance Sheet,ALLIANCE HEALTHCARE DISTRIBUTION LTD,36708324,4.0,HOME 09 - December.pdf.csv,1
-12/31/2020,Stocks Raw Materials,Balance Sheet,ALLIANCE HEALTHCARE DISTRIBUTION LTD,36708324,58.0,HOME 09 - December.pdf.csv,1
-12/31/2020,Stocks Raw Materials,Balance Sheet,ALLIANCE HEALTHCARE DISTRIBUTION LTD,36708324,236.0,HOME 09 - December.pdf.csv,1
-12/31/2020,Payt Rec On A/C Susp <1Yr,Balance Sheet,NHS CITY AND HACKNEY CCG,36736257,31949.0,HOME 09 - December.pdf.csv,1
-12/31/2020,AUC Additions,Balance Sheet,CASTONS,36743328,36784.0,HOME 09 - December.pdf.csv,1
-12/31/2020,AUC Additions,Balance Sheet,CASTONS,36744574,28300.0,HOME 09 - December.pdf.csv,1
-12/31/2020,AUC Additions,Balance Sheet,CASTONS,36744574,5660.0,HOME 09 - December.pdf.csv,1
-12/31/2020,NonNHS Trade Pybls Curr,Balance Sheet,SUPPLY CHAIN COORDINATION LIMITED,36753456,106206.0,HOME 09 - December.pdf.csv,1
-1/31/2021,Services Received -,Employee Health Management,OHWORKS LTD,36118566,34686.0,HOME 10 - January.pdf.csv,1
-1/31/2021,"NHSTs
-Surg Instruments","Service
-Hackney Diabetic Service",MEDTRONIC LTD,36592486,-46950.0,HOME 10 - January.pdf.csv,-1
-1/31/2021,"General
-Surg Instruments",Hackney Diabetic Service,MEDTRONIC LTD,36592486,-9390.0,HOME 10 - January.pdf.csv,-1
-1/31/2021,"General
-Services Received -",Virology,BARTS HEALTH NHS TRUST,36773328,28397.0,HOME 10 - January.pdf.csv,1
-1/31/2021,"NHSTs
-Gas",Homerton Energy,CORONA ENERGY RETAIL 4 LTD,36777308,5113.0,HOME 10 - January.pdf.csv,1
-1/31/2021,Gas,Homerton Energy,CORONA ENERGY RETAIL 4 LTD,36777308,30577.0,HOME 10 - January.pdf.csv,1
-1/31/2021,Computer Maintenance,It Client Support,INTOUCH WITH HEALTH LTD,36789828,2300.0,HOME 10 - January.pdf.csv,1
-1/31/2021,Computer Maintenance,It Client Support,INTOUCH WITH HEALTH LTD,36789828,15136.0,HOME 10 - January.pdf.csv,1
-1/31/2021,Computer Maintenance,It Client Support,INTOUCH WITH HEALTH LTD,36789828,4000.0,HOME 10 - January.pdf.csv,1
-1/31/2021,Computer Maintenance,It Client Support,INTOUCH WITH HEALTH LTD,36789828,4287.0,HOME 10 - January.pdf.csv,1
-1/31/2021,Postage & Carriage,Post Homerton,XEROX (UK) LTD,36792458,30506.0,HOME 10 - January.pdf.csv,1
-1/31/2021,Computer Maintenance,It Client Support,TRUSTMARQUE SOLUTIONS LTD,36792470,29879.0,HOME 10 - January.pdf.csv,1
-1/31/2021,Computer Maintenance,It Client Support,TRUSTMARQUE SOLUTIONS LTD,36792470,5975.0,HOME 10 - January.pdf.csv,1
-1/31/2021,Minor Works,Homerton Central Engineer,OBEN PROPERTY SERVICES LTD,36792477,40778.0,HOME 10 - January.pdf.csv,1
-1/31/2021,Services Received -,Histopathology,BARTS HEALTH NHS TRUST,36816969,182938.0,HOME 10 - January.pdf.csv,1
-1/31/2021,"NHSTs
-FP10S",Outpatients,NHS BUSINESS SERVICES AUTHORITY,36821644,28858.0,HOME 10 - January.pdf.csv,1
-1/31/2021,Services Received -,Neurophysiology,UNIVERSITY COLLEGE LONDON HOSPITALS,36821803,47962.0,HOME 10 - January.pdf.csv,1
-1/31/2021,"NHSTs
-NonNHS Trade Pybls",Balance Sheet,"NHS FOUNDATION TRUST
-SUPPLY CHAIN COORDINATION LIMITED",36833082,71969.0,HOME 10 - January.pdf.csv,1
-1/31/2021,"Curr
-Independent Sector",Ct Scanner,TELEMEDICINE CLINIC LTD,36835336,32321.0,HOME 10 - January.pdf.csv,1
-1/31/2021,Hospital Car Services,New Transport,ERS TRANSITION LTD,36835340,134757.0,HOME 10 - January.pdf.csv,1
-1/31/2021,AUC Additions,Balance Sheet,ADT FIRE & SECURITY PLC,36846950,49764.0,HOME 10 - January.pdf.csv,1
-1/31/2021,AUC Additions,Balance Sheet,ADT FIRE & SECURITY PLC,36846951,40235.0,HOME 10 - January.pdf.csv,1
-1/31/2021,NonNHS Trade Pybls,Balance Sheet,SUPPLY CHAIN COORDINATION LIMITED,36847807,100509.0,HOME 10 - January.pdf.csv,1
-1/31/2021,"Curr
-Other Transport Costs",Pathology,CITYSPRINT (UK) LTD,36850010,21374.0,HOME 10 - January.pdf.csv,1
-1/31/2021,Computer,Primary Care Psychology,UNIVERSITY OF YORK,36870648,25301.0,HOME 10 - January.pdf.csv,1
-1/31/2021,"Software/License
-Computer",Primary Care Psychology,UNIVERSITY OF YORK,36870648,5060.0,HOME 10 - January.pdf.csv,1
-1/31/2021,"Software/License
-Income tax - Current",Balance Sheet,INLAND REVENUE CIS,36877393,2417454.0,HOME 10 - January.pdf.csv,1
-1/31/2021,National Insurance -,Balance Sheet,INLAND REVENUE CIS,36877393,2856687.0,HOME 10 - January.pdf.csv,1
-1/31/2021,"Curr
-Shared Parental Leave",Balance Sheet,INLAND REVENUE CIS,36877393,-556.0,HOME 10 - January.pdf.csv,-1
-1/31/2021,Stat Adoption Pay - Curr,Balance Sheet,INLAND REVENUE CIS,36877393,-2041.0,HOME 10 - January.pdf.csv,-1
-1/31/2021,Statutory Mat Pay - Curr,Balance Sheet,INLAND REVENUE CIS,36877393,-85020.0,HOME 10 - January.pdf.csv,-1
-1/31/2021,Electricity,Homerton Energy,EDF ENERGY CUSTOMERS PLC,36878137,-9728.0,HOME 10 - January.pdf.csv,-1
-1/31/2021,Electricity,Homerton Energy,EDF ENERGY CUSTOMERS PLC,36878137,-58213.0,HOME 10 - January.pdf.csv,-1
-1/31/2021,Bldg/Eng Equip Maint,Slg-Retinal Screening,NHS PROPERTY SERVICES LTD,36881977,3488.0,HOME 10 - January.pdf.csv,1
-1/31/2021,"Cont
-Service Charge",Slg-Retinal Screening,NHS PROPERTY SERVICES LTD,36881977,28951.0,HOME 10 - January.pdf.csv,1
-1/31/2021,Bldg/Eng Equip Maint,Slg-Retinal Screening,NHS PROPERTY SERVICES LTD,36881981,434.0,HOME 10 - January.pdf.csv,1
-1/31/2021,"Cont
-Lease Rents",St. Leonards - Estates,NHS PROPERTY SERVICES LTD,36881981,48702.0,HOME 10 - January.pdf.csv,1
-1/31/2021,Lease Rents,St. Leonards - Estates,NHS PROPERTY SERVICES LTD,36881982,132999.0,HOME 10 - January.pdf.csv,1
-1/31/2021,Bldg/Eng Equip Maint,John Scott Health Centre - Estates,NHS PROPERTY SERVICES LTD,36881983,243.0,HOME 10 - January.pdf.csv,1
-1/31/2021,"Cont
-Lease Rents",John Scott Health Centre - Estates,NHS PROPERTY SERVICES LTD,36881983,28300.0,HOME 10 - January.pdf.csv,1
-1/31/2021,Service Charge,John Scott Health Centre - Estates,NHS PROPERTY SERVICES LTD,36881983,4876.0,HOME 10 - January.pdf.csv,1
-1/31/2021,Service Charge,Louis Freedman Centre - Estates,NHS PROPERTY SERVICES LTD,36881989,47069.0,HOME 10 - January.pdf.csv,1
-1/31/2021,Lease Rents,Louis Freedman Centre - Estates,NHS PROPERTY SERVICES LTD,36882003,43676.0,HOME 10 - January.pdf.csv,1
-1/31/2021,Bldg/Eng Equip Maint,John Scott Health Centre - Estates,NHS PROPERTY SERVICES LTD,36882008,11991.0,HOME 10 - January.pdf.csv,1
-1/31/2021,"Cont
-Service Charge",John Scott Health Centre - Estates,NHS PROPERTY SERVICES LTD,36882008,29401.0,HOME 10 - January.pdf.csv,1
-1/31/2021,Bldg/Eng Equip Maint,Lower Clapton - Estates,NHS PROPERTY SERVICES LTD,36882010,7573.0,HOME 10 - January.pdf.csv,1
-1/31/2021,"Cont
-Service Charge",Lower Clapton - Estates,NHS PROPERTY SERVICES LTD,36882010,17713.0,HOME 10 - January.pdf.csv,1
-1/31/2021,Lease Rents,Hackney Ark - Estates,COMMUNITY HEALTH PARTNERSHIPS LTD,36882020,18284.0,HOME 10 - January.pdf.csv,1
-1/31/2021,Lease Rents,Kenworthy Road - Estates,COMMUNITY HEALTH PARTNERSHIPS LTD,36882022,21857.0,HOME 10 - January.pdf.csv,1
-1/31/2021,Lease Rents,Kenworthy Road - Estates,COMMUNITY HEALTH PARTNERSHIPS LTD,36882022,4371.0,HOME 10 - January.pdf.csv,1
-1/31/2021,Service Charge,Kenworthy Road - Estates,COMMUNITY HEALTH PARTNERSHIPS LTD,36882022,2586.0,HOME 10 - January.pdf.csv,1
-1/31/2021,Service Charge,Kenworthy Road - Estates,COMMUNITY HEALTH PARTNERSHIPS LTD,36882022,517.0,HOME 10 - January.pdf.csv,1
-1/31/2021,Services Received -,Immunology,DOCTORS LABORATORY LTD (THE),36883667,30966.0,HOME 10 - January.pdf.csv,1
-1/31/2021,"NHSTs
-Services Received -",People Analytics and Systems,BARTS HEALTH NHS TRUST,36894997,69360.0,HOME 10 - January.pdf.csv,1
-1/31/2021,"NHSTs
-Laboratory Chemicals",Chemical Pathology,ABBOTT LABORATORIES LTD,36897714,210684.0,HOME 10 - January.pdf.csv,1
-1/31/2021,Laboratory Chemicals,Chemical Pathology,ABBOTT LABORATORIES LTD,36897714,42136.0,HOME 10 - January.pdf.csv,1
-1/31/2021,Furniture & Fittings,COVID-19,KORN WALL LTD T/A KWICKSCREEN,36898178,22400.0,HOME 10 - January.pdf.csv,1
-1/31/2021,Furniture & Fittings,COVID-19,KORN WALL LTD T/A KWICKSCREEN,36898178,4480.0,HOME 10 - January.pdf.csv,1
-1/31/2021,Services Received -,Employee Health Management,OHWORKS LTD,36909644,34686.0,HOME 10 - January.pdf.csv,1
-1/31/2021,"NHSTs
-NonNHS Trade Pybls","Service
-Balance Sheet",SUPPLY CHAIN COORDINATION LIMITED,36926481,115982.0,HOME 10 - January.pdf.csv,1
-1/31/2021,"Curr
-Computer",COVID Vaccinations,SYSTEM BOOKINGS LTD,36933447,21000.0,HOME 10 - January.pdf.csv,1
-1/31/2021,"Software/License
-Computer",COVID Vaccinations,SYSTEM BOOKINGS LTD,36933447,4200.0,HOME 10 - January.pdf.csv,1
-1/31/2021,"Software/License
-Laboratory Reagents",Molecular Lab,CHRYSTAL CONSULTING LTD,36942432,88351.0,HOME 10 - January.pdf.csv,1
-1/31/2021,Laboratory Reagents,Molecular Lab,CHRYSTAL CONSULTING LTD,36942432,17670.0,HOME 10 - January.pdf.csv,1
-1/31/2021,Services Received -,Bowel Cancer Screening Programme,BARTS HEALTH NHS TRUST,36946416,45203.0,HOME 10 - January.pdf.csv,1
-1/31/2021,"NHSTs
-Electricity",Homerton Energy,EDF ENERGY CUSTOMERS PLC,36946501,9729.0,HOME 10 - January.pdf.csv,1
-1/31/2021,Electricity,Homerton Energy,EDF ENERGY CUSTOMERS PLC,36946501,58221.0,HOME 10 - January.pdf.csv,1
-1/31/2021,Payroll Ded'ns N/S Curr,Balance Sheet,TUSKERDIRECT LTD,36958803,29402.0,HOME 10 - January.pdf.csv,1
-1/31/2021,Electricity,Homerton Energy,EDF ENERGY CUSTOMERS PLC,36958815,6879.0,HOME 10 - January.pdf.csv,1
-1/31/2021,Electricity,Homerton Energy,EDF ENERGY CUSTOMERS PLC,36958815,41163.0,HOME 10 - January.pdf.csv,1
-1/31/2021,Services Received -,Virology,BARTS HEALTH NHS TRUST,36962344,30252.0,HOME 10 - January.pdf.csv,1
-1/31/2021,"NHSTs
-NonNHS Trade Pybls",Balance Sheet,SUPPLY CHAIN COORDINATION LIMITED,36986000,103623.0,HOME 10 - January.pdf.csv,1
-1/31/2021,"Curr
-AUC Additions",Balance Sheet,INSIGHT DIRECT (UK) LTD,36986866,33975.0,HOME 10 - January.pdf.csv,1
-1/31/2021,AUC Additions,Balance Sheet,INSIGHT DIRECT (UK) LTD,36986866,6795.0,HOME 10 - January.pdf.csv,1
-1/31/2021,Gas,Homerton Energy,CORONA ENERGY RETAIL 4 LTD,37002401,6211.0,HOME 10 - January.pdf.csv,1
-1/31/2021,Gas,Homerton Energy,CORONA ENERGY RETAIL 4 LTD,37002401,37148.0,HOME 10 - January.pdf.csv,1
-1/31/2021,Ext Contr Domestics,Domestic Contract,ISS MEDICLEAN LTD,37002543,-96633.0,HOME 10 - January.pdf.csv,-1
-1/31/2021,Ext Contr Domestics,Domestic Contract,ISS MEDICLEAN LTD,37002554,-106971.0,HOME 10 - January.pdf.csv,-1
-1/31/2021,Electricity,Homerton Energy,EDF ENERGY CUSTOMERS PLC,37002589,-9805.0,HOME 10 - January.pdf.csv,-1
-1/31/2021,Electricity,Homerton Energy,EDF ENERGY CUSTOMERS PLC,37002589,-58684.0,HOME 10 - January.pdf.csv,-1
-1/31/2021,AUC Additions,Balance Sheet,TENWELL INNOVATIONS LTD,37012364,34204.0,HOME 10 - January.pdf.csv,1
-1/31/2021,FP10S,Outpatients,NHS BUSINESS SERVICES AUTHORITY,37026695,29179.0,HOME 10 - January.pdf.csv,1
-1/31/2021,NHS Local Creditors Adj,Balance Sheet,UNIVERSITY COLLEGE LONDON HOSPITALS,37027010,-25118.0,HOME 10 - January.pdf.csv,-1
-1/31/2021,Other Liabilities Local,Balance Sheet,"NHS FOUNDATION TRUST
-UNIVERSITY COLLEGE LONDON HOSPITALS",37027010,-4457.0,HOME 10 - January.pdf.csv,-1
-1/31/2021,"Adj
-Services Received -",Management/Specialists,"NHS FOUNDATION TRUST
-UNIVERSITY COLLEGE LONDON HOSPITALS",37027010,-3459.0,HOME 10 - January.pdf.csv,-1
-1/31/2021,"NHSTs
-AUC Additions",Balance Sheet,"NHS FOUNDATION TRUST
-LAKES JOIN GRANDLY LTD",37027302,59644.0,HOME 10 - January.pdf.csv,1
-1/31/2021,AUC Additions,Balance Sheet,LAKES JOIN GRANDLY LTD,37027315,40750.0,HOME 10 - January.pdf.csv,1
-1/31/2021,Services Received -,Employee Health Management,OHWORKS LTD,37028885,34686.0,HOME 10 - January.pdf.csv,1
-1/31/2021,"NHSTs
-Services Received -","Service
-Histopathology",BARTS HEALTH NHS TRUST,37039810,177878.0,HOME 10 - January.pdf.csv,1
-1/31/2021,"NHSTs
-AUC Additions",Balance Sheet,SUPPLY CHAIN COORDINATION LIMITED,37040817,22395.0,HOME 10 - January.pdf.csv,1
-1/31/2021,AUC Additions,Balance Sheet,SUPPLY CHAIN COORDINATION LIMITED,37040817,4479.0,HOME 10 - January.pdf.csv,1
-1/31/2021,AUC Additions,Balance Sheet,BAXTER HEALTHCARE LTD,37040819,22500.0,HOME 10 - January.pdf.csv,1
-1/31/2021,AUC Additions,Balance Sheet,BAXTER HEALTHCARE LTD,37040819,3250.0,HOME 10 - January.pdf.csv,1
-1/31/2021,AUC Additions,Balance Sheet,BAXTER HEALTHCARE LTD,37040819,5150.0,HOME 10 - January.pdf.csv,1
-1/31/2021,Med & Surg Equip Disp,Endoscopy,MEDTRONIC LTD,37040958,61300.0,HOME 10 - January.pdf.csv,1
-1/31/2021,AUC Additions,Balance Sheet,STRYKER UK LTD,37056514,32200.0,HOME 10 - January.pdf.csv,1
-1/31/2021,AUC Additions,Balance Sheet,STRYKER UK LTD,37056514,6440.0,HOME 10 - January.pdf.csv,1
-1/31/2021,Ext Contr Domestics,Domestic Contract,ISS MEDICLEAN LTD,37057903,874547.0,HOME 10 - January.pdf.csv,1
-1/31/2021,Phone Rental and Calls,Homerton Telephones,STANLEY SECURITY SOLUTIONS,37058199,32199.0,HOME 10 - January.pdf.csv,1
-1/31/2021,NonNHS Trade Pybls,Balance Sheet,SUPPLY CHAIN COORDINATION LIMITED,37058233,80501.0,HOME 10 - January.pdf.csv,1
-1/31/2021,"Curr
-Ext Contr Domestics",Domestic Contract,ISS MEDICLEAN LTD,37071409,910212.0,HOME 10 - January.pdf.csv,1
-1/31/2021,Other Public Sector,Trust Board,NHS TOWER HAMLETS CCG,37071411,50175.0,HOME 10 - January.pdf.csv,1
-1/31/2021,Electricity,Homerton Energy,EDF ENERGY CUSTOMERS PLC,37071422,10611.0,HOME 10 - January.pdf.csv,1
-1/31/2021,Electricity,Homerton Energy,EDF ENERGY CUSTOMERS PLC,37071422,63500.0,HOME 10 - January.pdf.csv,1
-1/31/2021,Water,Homerton Energy,CASTLE WATER LTD,37071435,59765.0,HOME 10 - January.pdf.csv,1
-1/31/2021,Other Public Sector,Trust Board,NHS TOWER HAMLETS CCG,37079120,50175.0,HOME 10 - January.pdf.csv,1
-1/31/2021,AUC Additions,Balance Sheet,LOGAN CONSTRUCTION (SE) LTD,37081835,364624.0,HOME 10 - January.pdf.csv,1
+5/31/2020,Laboratory Reagents,Molecular Lab,CHRYSTAL CONSULTING LTD,33290227,207713.0,HOME 02 - May.pdf.csv,1
+5/31/2020,Hospital Car Services,New Transport,ERS TRANSITION LTD,33902465,134757.0,HOME 02 - May.pdf.csv,1
+5/31/2020,Vaccines,COVID-19,MY LAUNDRESS COMMERCIAL LTD,34092319,22540.0,HOME 02 - May.pdf.csv,1
+5/31/2020,Hospital Car Services,New Transport,ERS TRANSITION LTD,34156079,134757.0,HOME 02 - May.pdf.csv,1
+5/31/2020,X-Ray Equip Maint/Repair,Medical Electronics,SUPPLY CHAIN COORDINATION LIMITED,34226549,116235.0,HOME 02 - May.pdf.csv,1
+5/31/2020,NonNHS Trade Pybls Curr,Balance Sheet,SUPPLY CHAIN COORDINATION LIMITED,34230854,93112.0,HOME 02 - May.pdf.csv,1
+5/31/2020,NonNHS Trade Pybls Curr,Balance Sheet,BUNZL HEALTHCARE,34230875,29664.0,HOME 02 - May.pdf.csv,1
+5/31/2020,NonNHS Trade Pybls Curr,Balance Sheet,BUNZL HEALTHCARE,34230888,96723.0,HOME 02 - May.pdf.csv,1
+5/31/2020,NonNHS Trade Pybls Curr,Balance Sheet,SUPPLY CHAIN COORDINATION LIMITED,34230890,81017.0,HOME 02 - May.pdf.csv,1
+5/31/2020,NonNHS Trade Pybls Curr,Balance Sheet,BUNZL HEALTHCARE,34230891,28727.0,HOME 02 - May.pdf.csv,1
+5/31/2020,NonNHS Trade Pybls Curr,Balance Sheet,SUPPLY CHAIN COORDINATION LIMITED,34230894,31903.0,HOME 02 - May.pdf.csv,1
+5/31/2020,NonNHS Trade Pybls Curr,Balance Sheet,SUPPLY CHAIN COORDINATION LIMITED,34230902,67445.0,HOME 02 - May.pdf.csv,1
+5/31/2020,Computer Maintenance,It Client Support,APOGEE CORPORATION LTD,34231006,76875.0,HOME 02 - May.pdf.csv,1
+5/31/2020,AUC Additions,Balance Sheet,PHILIPS ELECTRONICS UK LTD,34243637,56436.0,HOME 02 - May.pdf.csv,1
+5/31/2020,AUC Additions,Balance Sheet,PERFECT CIRCLE JV LTD,34271179,65713.0,HOME 02 - May.pdf.csv,1
+5/31/2020,Rates,Homerton Gen Estate Expens,LONDON BOROUGH OF HACKNEY,34271352,1255520.0,HOME 02 - May.pdf.csv,1
+5/31/2020,NonNHS Trade Pybls Curr,Balance Sheet,SUPPLY CHAIN COORDINATION LIMITED,34271401,114273.0,HOME 02 - May.pdf.csv,1
+5/31/2020,Electricity,Homerton Energy,EDF ENERGY CUSTOMERS PLC,34271441,-43583.0,HOME 02 - May.pdf.csv,-1
+5/31/2020,Electricity,Homerton Energy,EDF ENERGY CUSTOMERS PLC,34271442,-63843.0,HOME 02 - May.pdf.csv,-1
+5/31/2020,Services Received - NHSTs,Employee Health Management,OHWORKS LTD,34271455,32071.0,HOME 02 - May.pdf.csv,1
+5/31/2020,Services Received - NHSTs,"Service
+Employee Health Management",OHWORKS LTD,34271456,32071.0,HOME 02 - May.pdf.csv,1
+5/31/2020,Equip Maint Contracts,"Service
+Radiology",PHILIPS ELECTRONICS UK LTD,34271467,38784.0,HOME 02 - May.pdf.csv,1
+5/31/2020,OthrIntngAst Additions,Balance Sheet,BOLT PARTNERS LTD,34273222,37230.0,HOME 02 - May.pdf.csv,1
+5/31/2020,Other Transport Costs,Pathology,CITYSPRINT (UK) LTD,34273233,21395.0,HOME 02 - May.pdf.csv,1
+5/31/2020,NonNHS Trade Pybls Curr,Balance Sheet,SUPPLY CHAIN COORDINATION LIMITED,34283259,67827.0,HOME 02 - May.pdf.csv,1
+5/31/2020,Med & Surg Equip Repair,Theatre Supplies - Urology,MERCIAN SURGICAL SUPPLY CO LTD,34295779,31932.0,HOME 02 - May.pdf.csv,1
+5/31/2020,Vaccines,COVID-19,R PERKINS & SONS LTD,34316633,58193.0,HOME 02 - May.pdf.csv,1
+5/31/2020,Computer Software/License,Clinical Information Systems,ASCRIBE LTD T/A EMIS HEALTH,34318549,69660.0,HOME 02 - May.pdf.csv,1
+5/31/2020,Services Received - NHSTs,Cardiac Dept,BARTS HEALTH NHS TRUST,34333275,28875.0,HOME 02 - May.pdf.csv,1
+5/31/2020,Services Received - NHSTs,Bowel Cancer Screening,BARTS HEALTH NHS TRUST,34333318,35353.0,HOME 02 - May.pdf.csv,1
+5/31/2020,Services Received - NHSTs,"Programme
+Bowel Cancer Screening",BARTS HEALTH NHS TRUST,34333324,42278.0,HOME 02 - May.pdf.csv,1
+5/31/2020,Med & Surg Equip Hire,"Programme
+Integrated Comm Equip",LONDON BOROUGH OF HACKNEY,34333339,37190.0,HOME 02 - May.pdf.csv,1
+5/31/2020,Laboratory Reagents,Chemical Pathology,ABBOTT LABORATORIES LTD,34333377,135090.0,HOME 02 - May.pdf.csv,1
+5/31/2020,Training Expenses,Primary Care Psychology,CITY & HACKNEY MIND,34333530,36000.0,HOME 02 - May.pdf.csv,1
+5/31/2020,NonNHS Trade Pybls Curr,Balance Sheet,SUPPLY CHAIN COORDINATION LIMITED,34333543,77839.0,HOME 02 - May.pdf.csv,1
+5/31/2020,Laboratory Chemicals,Chemical Pathology,ABBOTT LABORATORIES LTD,34333612,43365.0,HOME 02 - May.pdf.csv,1
+5/31/2020,Vaccines,COVID-19,ROSE HOUSE FUNERAL SUPPLIES,34333996,28836.0,HOME 02 - May.pdf.csv,1
+5/31/2020,Med & Surg Equip Repair,Medical Electronics,SOFTCAT PLC,34334034,22678.0,HOME 02 - May.pdf.csv,1
+5/31/2020,AUC Additions,Balance Sheet,KARL STORZ ENDOSCOPY UK LTD,34344610,38318.0,HOME 02 - May.pdf.csv,1
+5/31/2020,Med & Surg Equip Disp,Theatre Supplies - Ent,KARL STORZ ENDOSCOPY UK LTD,34344610,2844.0,HOME 02 - May.pdf.csv,1
+5/31/2020,Income tax - Current,Balance Sheet,INLAND REVENUE CIS,34354887,2363250.0,HOME 02 - May.pdf.csv,1
+5/31/2020,National Insurance - Curr,Balance Sheet,INLAND REVENUE CIS,34354887,2746112.0,HOME 02 - May.pdf.csv,1
+5/31/2020,Shared Parental Leave,Balance Sheet,INLAND REVENUE CIS,34354887,-3853.0,HOME 02 - May.pdf.csv,-1
+5/31/2020,Statutory Mat Pay - Curr,Balance Sheet,INLAND REVENUE CIS,34354887,-69058.0,HOME 02 - May.pdf.csv,-1
+5/31/2020,Computer Maintenance,It Client Support,SOFTCAT PLC,34360730,32128.0,HOME 02 - May.pdf.csv,1
+5/31/2020,Payroll Ded'ns N/S Curr,Balance Sheet,TUSKERDIRECT LTD,34373775,25193.0,HOME 02 - May.pdf.csv,1
+5/31/2020,Payroll Ded'ns N/S Curr,Balance Sheet,TUSKERDIRECT LTD,34373937,26461.0,HOME 02 - May.pdf.csv,1
+5/31/2020,Services Received - NHSTs,Employee Health Management,OHWORKS LTD,34374086,32071.0,HOME 02 - May.pdf.csv,1
+5/31/2020,Laboratory Reagents,"Service
+Haematology",SYSMEX UK LTD,34374223,45872.0,HOME 02 - May.pdf.csv,1
+5/31/2020,Agency Senior Manager,Infecton Control Team,COMPUTER FUTURES,34382907,30762.0,HOME 02 - May.pdf.csv,1
+5/31/2020,Stocks Raw Materials,Balance Sheet,ALLIANCE HEALTHCARE DISTRIBUTION LTD,34389265,73049.0,HOME 02 - May.pdf.csv,1
+5/31/2020,Bldg/Eng Equip Maint Cont,Homerton Central Engineer,CENTRICA BUSINESS SOLUTIONS UK LTD,34411831,-34591.0,HOME 02 - May.pdf.csv,-1
+5/31/2020,Bldg/Eng Equip Maint Cont,Homerton Central Engineer,CENTRICA BUSINESS SOLUTIONS UK LTD,34411952,34591.0,HOME 02 - May.pdf.csv,1
+5/31/2020,Contr Estate Management,Homerton Central Engineer,CENTRICA BUSINESS SOLUTIONS UK LTD,34412113,23814.0,HOME 02 - May.pdf.csv,1
+5/31/2020,AUC Additions,Balance Sheet,MARDAV SOLUTIONS LTD,34418545,-48762.0,HOME 02 - May.pdf.csv,-1
+5/31/2020,AUC Additions,Balance Sheet,SUPPLY CHAIN COORDINATION LIMITED,34435611,84783.0,HOME 02 - May.pdf.csv,1
+5/31/2020,Bldg/Eng Equip Maint/Rep,Homerton Central Engineer,MICAD SYSTEMS (UK) LTD,34435853,45945.0,HOME 02 - May.pdf.csv,1
+5/31/2020,Vaccines,Corporate Nursing,BATES OFFICE SERVICES LTD - RQX,34443208,43200.0,HOME 02 - May.pdf.csv,1
+5/31/2020,Gas,Homerton Energy,CORONA ENERGY RETAIL 4 LTD,34444959,26844.0,HOME 02 - May.pdf.csv,1
+5/31/2020,Computer Maintenance,Pathology It,CLINISYS SOLUTIONS LTD,34445209,260655.0,HOME 02 - May.pdf.csv,1
+5/31/2020,Services Received - NHSTs,Cardiac Dept,BARTS HEALTH NHS TRUST,34462813,27300.0,HOME 02 - May.pdf.csv,1
+5/31/2020,Services Received - NHSTs,Cardiac Dept,BARTS HEALTH NHS TRUST,34462823,32550.0,HOME 02 - May.pdf.csv,1
+5/31/2020,Services Received - NHSTs,Cardiac Dept,BARTS HEALTH NHS TRUST,34462831,34650.0,HOME 02 - May.pdf.csv,1
+5/31/2020,Services Received - NHSTs,Cardiac Dept,BARTS HEALTH NHS TRUST,34462845,30975.0,HOME 02 - May.pdf.csv,1
+5/31/2020,Med & Surg Equip General,Delivery Suite,K2 MEDICAL SYSTEMS LTD,34494786,31050.0,HOME 02 - May.pdf.csv,1
 2/28/2021,AUC Additions,Balance Sheet,HUNTER & PARTNERS LTD,36386999,3470.0,HOME 11 - February.pdf.csv,1
 2/28/2021,AUC Additions,Balance Sheet,HUNTER & PARTNERS LTD,36386999,23623.0,HOME 11 - February.pdf.csv,1
 2/28/2021,AUC Additions,Balance Sheet,HUNTER & PARTNERS LTD,36386999,7105.0,HOME 11 - February.pdf.csv,1
@@ -1258,3 +478,783 @@ AKESO & COMPANY LTD",37142498,33000.0,HOME 11 - February.pdf.csv,1
 2/28/2021,OthrIntngAst Additions,Balance Sheet,TRUSTMARQUE SOLUTIONS LTD,37380915,34000.0,HOME 11 - February.pdf.csv,1
 2/28/2021,OthrIntngAst Additions,Balance Sheet,TRUSTMARQUE SOLUTIONS LTD,37380915,6800.0,HOME 11 - February.pdf.csv,1
 2/28/2021,Postage & Carriage,Post Homerton,PITNEY BOWES LTD,37381900,27302.0,HOME 11 - February.pdf.csv,1
+08/01/2020,Services Received - NHSTs,Histopathology,BARTS HEALTH NHS TRUST,35118559,78200.0,HOME 05 - August.pdf.csv,1
+8/31/2020,Computer Software/License,Im&T,UNIVERSITY HOSPITALS BIRMINGHAM,35139670,30000.0,HOME 05 - August.pdf.csv,1
+08/01/2020,Computer Software/License,It Client Support,"NHS FOUNDATION TRUST
+TRUSTMARQUE SOLUTIONS LTD",35142319,141584.0,HOME 05 - August.pdf.csv,1
+08/01/2020,Computer Software/License,It Client Support,TRUSTMARQUE SOLUTIONS LTD,35142319,28316.0,HOME 05 - August.pdf.csv,1
+08/01/2020,Computer Software/License,It Client Support,TRUSTMARQUE SOLUTIONS LTD,35142320,603068.0,HOME 05 - August.pdf.csv,1
+08/01/2020,Computer Software/License,It Client Support,TRUSTMARQUE SOLUTIONS LTD,35142320,120613.0,HOME 05 - August.pdf.csv,1
+08/01/2020,Lease Rents,Kenworthy Road - Estates,COMMUNITY HEALTH PARTNERSHIPS,35156719,26229.0,HOME 05 - August.pdf.csv,1
+08/01/2020,Lease Rents,Kenworthy Road - Estates,"LTD
+COMMUNITY HEALTH PARTNERSHIPS",35156723,26206.0,HOME 05 - August.pdf.csv,1
+08/01/2020,Lease Rents,Kenworthy Road - Estates,"LTD
+COMMUNITY HEALTH PARTNERSHIPS",35156724,26206.0,HOME 05 - August.pdf.csv,1
+08/01/2020,Lease Rents,Kenworthy Road - Estates,"LTD
+COMMUNITY HEALTH PARTNERSHIPS",35156725,26229.0,HOME 05 - August.pdf.csv,1
+08/05/2020,Lease Rents,Hackney Ark - Estates,"LTD
+COMMUNITY HEALTH PARTNERSHIPS",35181569,82074.0,HOME 05 - August.pdf.csv,1
+08/01/2020,Services Received - NHSTs,Paediatrics Sla,"LTD
+BARTS HEALTH NHS TRUST",35182189,141200.0,HOME 05 - August.pdf.csv,1
+08/01/2020,NonNHS Trade Pybls Curr,Balance Sheet,SUPPLY CHAIN COORDINATION LIMITED,35182193,68036.0,HOME 05 - August.pdf.csv,1
+08/01/2020,NonNHS Trade Pybls Curr,Balance Sheet,SUPPLY CHAIN COORDINATION LIMITED,35182195,75474.0,HOME 05 - August.pdf.csv,1
+08/01/2020,NonNHS Trade Pybls Curr,Balance Sheet,SUPPLY CHAIN COORDINATION LIMITED,35182197,66843.0,HOME 05 - August.pdf.csv,1
+08/01/2020,NonNHS Trade Pybls Curr,Balance Sheet,SUPPLY CHAIN COORDINATION LIMITED,35182200,55284.0,HOME 05 - August.pdf.csv,1
+08/01/2020,NonNHS Trade Pybls Curr,Balance Sheet,SUPPLY CHAIN COORDINATION LIMITED,35182202,51653.0,HOME 05 - August.pdf.csv,1
+08/01/2020,NonNHS Trade Pybls Curr,Balance Sheet,SUPPLY CHAIN COORDINATION LIMITED,35182204,56301.0,HOME 05 - August.pdf.csv,1
+08/01/2020,Services Received - NHSTs,Ent,BARTS HEALTH NHS TRUST,35195894,126584.0,HOME 05 - August.pdf.csv,1
+08/01/2020,Services Received - NHSTs,Paediatrics Sla,BARTS HEALTH NHS TRUST,35195894,52743.0,HOME 05 - August.pdf.csv,1
+08/01/2020,NonNHS Trade Pybls Curr,Balance Sheet,BUNZL HEALTHCARE,35195907,27016.0,HOME 05 - August.pdf.csv,1
+08/08/2020,Postage & Carriage,Post Homerton,XEROX (UK) LTD,35208188,26689.0,HOME 05 - August.pdf.csv,1
+08/08/2020,Other Public Sector,Chemical Pathology,BECKMAN COULTER UK LTD,35212808,27144.0,HOME 05 - August.pdf.csv,1
+08/08/2020,AUC Additions,Balance Sheet,MINDRAY (UK) LTD,35212842,34673.0,HOME 05 - August.pdf.csv,1
+08/10/2020,Electricity,Homerton Energy,EDF ENERGY CUSTOMERS PLC,35230208,34487.0,HOME 05 - August.pdf.csv,1
+08/10/2020,Services Received - NHSTs,Immunology,DOCTORS LABORATORY LTD (THE),35230954,38299.0,HOME 05 - August.pdf.csv,1
+08/12/2020,NonNHS Trade Pybls Curr,Balance Sheet,SUPPLY CHAIN COORDINATION LIMITED,35255355,59604.0,HOME 05 - August.pdf.csv,1
+8/13/2020,Income tax - Current,Balance Sheet,INLAND REVENUE CIS,35263090,2316221.0,HOME 05 - August.pdf.csv,1
+8/13/2020,Electricity,Homerton Energy,EDF ENERGY CUSTOMERS PLC,35263151,39985.0,HOME 05 - August.pdf.csv,1
+8/15/2020,Payroll Ded'ns N/S Curr,Balance Sheet,TUSKERDIRECT LTD,35277606,28266.0,HOME 05 - August.pdf.csv,1
+8/31/2020,Payroll Ded'ns N/S Curr,Balance Sheet,TUSKERDIRECT LTD,35277608,27777.0,HOME 05 - August.pdf.csv,1
+8/31/2020,Payroll Ded'ns N/S Curr,Balance Sheet,TUSKERDIRECT LTD,35277610,26912.0,HOME 05 - August.pdf.csv,1
+8/15/2020,Payroll Ded'ns N/S Curr,Balance Sheet,TUSKERDIRECT LTD,35277612,27679.0,HOME 05 - August.pdf.csv,1
+8/31/2020,Electricity,Homerton Energy,EDF ENERGY CUSTOMERS PLC,35287633,77978.0,HOME 05 - August.pdf.csv,1
+8/31/2020,NonNHS Trade Pybls Curr,Balance Sheet,BUNZL HEALTHCARE,35306978,25868.0,HOME 05 - August.pdf.csv,1
+8/31/2020,NonNHS Trade Pybls Curr,Balance Sheet,SUPPLY CHAIN COORDINATION LIMITED,35307229,53109.0,HOME 05 - August.pdf.csv,1
+8/31/2020,Services Received - NHSTs,Employee Health Management Service,OHWORKS LTD,35340858,32071.0,HOME 05 - August.pdf.csv,1
+8/31/2020,AUC Additions,Balance Sheet,MAQUET LTD,35340963,54088.0,HOME 05 - August.pdf.csv,1
+8/31/2020,Bldg/Eng Equip Maint Cont,St. Leonards - Estates,NHS PROPERTY SERVICES LTD,35363188,103340.0,HOME 05 - August.pdf.csv,1
+8/31/2020,Service Charge,St. Leonards - Estates,NHS PROPERTY SERVICES LTD,35363188,250333.0,HOME 05 - August.pdf.csv,1
+8/31/2020,Electricity,Homerton Energy,EDF ENERGY CUSTOMERS PLC,35363207,73800.0,HOME 05 - August.pdf.csv,1
+8/31/2020,Electricity,Homerton Energy,EDF ENERGY CUSTOMERS PLC,35363211,68642.0,HOME 05 - August.pdf.csv,1
+8/31/2020,Electricity,Homerton Energy,EDF ENERGY CUSTOMERS PLC,35363214,73808.0,HOME 05 - August.pdf.csv,1
+8/31/2020,Med & Surg Equip General,Main Theatres Scrub,SUPPLY CHAIN COORDINATION LIMITED,35364237,50370.0,HOME 05 - August.pdf.csv,1
+8/31/2020,AUC Additions,Balance Sheet,FISHER & PAYKEL HEALTHCARE LTD,35400969,49504.0,HOME 05 - August.pdf.csv,1
+4/30/2020,Vaccines,COVID-19,SOLAREX (GB) LTD,33885573,25500.0,HOME 01 - April.pdf.csv,1
+4/30/2020,Gas,Homerton Energy,CORONA ENERGY RETAIL 4 LTD,33885864,42227.0,HOME 01 - April.pdf.csv,1
+4/30/2020,Bldg/Eng Equip Maint Cont,Slg-Retinal Screening,NHS PROPERTY SERVICES LTD,33901195,443.0,HOME 01 - April.pdf.csv,1
+4/30/2020,Lease Rents,Slg-Retinal Screening,NHS PROPERTY SERVICES LTD,33901195,48702.0,HOME 01 - April.pdf.csv,1
+4/30/2020,Service Charge,Slg-Retinal Screening,NHS PROPERTY SERVICES LTD,33901195,8875.0,HOME 01 - April.pdf.csv,1
+4/30/2020,Med & Surg Equip Repair,Main Theatres Scrub,SUPPLY CHAIN COORDINATION LIMITED,33902009,43750.0,HOME 01 - April.pdf.csv,1
+4/30/2020,AUC Additions,Balance Sheet,OLYMPUS KEYMED,33902484,39821.0,HOME 01 - April.pdf.csv,1
+4/30/2020,NonNHS Trade Pybls Curr,Balance Sheet,BUNZL HEALTHCARE,33905656,28789.0,HOME 01 - April.pdf.csv,1
+4/30/2020,Postage & Carriage,Chs Estates Sla,XEROX (UK) LTD,33913402,5712.0,HOME 01 - April.pdf.csv,1
+4/30/2020,NonNHS Trade Pybls Curr,Balance Sheet,SUPPLY CHAIN COORDINATION LIMITED,33925096,74406.0,HOME 01 - April.pdf.csv,1
+4/30/2020,NonNHS Trade Pybls Curr,Balance Sheet,SUPPLY CHAIN COORDINATION LIMITED,33925100,69605.0,HOME 01 - April.pdf.csv,1
+4/30/2020,NonNHS Trade Pybls Curr,Balance Sheet,SUPPLY CHAIN COORDINATION LIMITED,33925149,73049.0,HOME 01 - April.pdf.csv,1
+4/30/2020,NonNHS Trade Pybls Curr,Balance Sheet,BUNZL HEALTHCARE,33925151,28322.0,HOME 01 - April.pdf.csv,1
+4/30/2020,NonNHS Trade Pybls Curr,Balance Sheet,SUPPLY CHAIN COORDINATION LIMITED,33925240,83269.0,HOME 01 - April.pdf.csv,1
+4/30/2020,Computer Software/License,Clinical Information Systems,SERVELEC HEALTHCARE LTD,33930930,88689.0,HOME 01 - April.pdf.csv,1
+4/30/2020,Laboratory Test Kits,Chemical Pathology,ABBOTT LABORATORIES LTD,33931757,107113.0,HOME 01 - April.pdf.csv,1
+4/30/2020,Lease Rents,Kenworthy Road - Estates,COMMUNITY HEALTH PARTNERSHIPS LTD,33932343,25405.0,HOME 01 - April.pdf.csv,1
+4/30/2020,Computer Maintenance,Csdo Divisional Management,BARTS HEALTH NHS TRUST,33936983,38866.0,HOME 01 - April.pdf.csv,1
+4/30/2020,Postage & Carriage,Post Homerton,PITNEY BOWES LTD,33947049,39269.0,HOME 01 - April.pdf.csv,1
+4/30/2020,Vaccines,COVID-19,OBEN PROPERTY SERVICES LTD,33947072,62500.0,HOME 01 - April.pdf.csv,1
+4/30/2020,Audit Fees: Ext non-stat,Financial Accounts,KPMG LLP,33947126,101790.0,HOME 01 - April.pdf.csv,1
+4/30/2020,Contr Pest Control,Domestic Contract,ISS MEDICLEAN LTD,33957069,1088.0,HOME 01 - April.pdf.csv,1
+4/30/2020,Contr Premises Security,Domestic Contract,ISS MEDICLEAN LTD,33957069,30895.0,HOME 01 - April.pdf.csv,1
+4/30/2020,Ext Contr Catering,Domestic Contract,ISS MEDICLEAN LTD,33957069,794.0,HOME 01 - April.pdf.csv,1
+4/30/2020,Ext Contr Domestics,Domestic Contract,ISS MEDICLEAN LTD,33957069,60924.0,HOME 01 - April.pdf.csv,1
+4/30/2020,Ext Contr Oth Hotel Srv,Domestic Contract,ISS MEDICLEAN LTD,33957069,9571.0,HOME 01 - April.pdf.csv,1
+4/30/2020,Hospitality,Domestic Contract,ISS MEDICLEAN LTD,33957069,10220.0,HOME 01 - April.pdf.csv,1
+4/30/2020,Staff Uniforms & Clothing,Domestic Contract,ISS MEDICLEAN LTD,33957069,1143.0,HOME 01 - April.pdf.csv,1
+4/30/2020,Contr Estate Management,Domestic Contract,ISS MEDICLEAN LTD,33957225,26325.0,HOME 01 - April.pdf.csv,1
+4/30/2020,Contr Premises Security,Domestic Contract,ISS MEDICLEAN LTD,33957225,42124.0,HOME 01 - April.pdf.csv,1
+4/30/2020,Contr Refuse & Clin Waste,Domestic Contract,ISS MEDICLEAN LTD,33957225,17089.0,HOME 01 - April.pdf.csv,1
+4/30/2020,Ext Contr Catering,Domestic Contract,ISS MEDICLEAN LTD,33957225,197901.0,HOME 01 - April.pdf.csv,1
+4/30/2020,Ext Contr Domestics,Domestic Contract,ISS MEDICLEAN LTD,33957225,194265.0,HOME 01 - April.pdf.csv,1
+4/30/2020,Ext Contr Laundry,Domestic Contract,ISS MEDICLEAN LTD,33957225,46611.0,HOME 01 - April.pdf.csv,1
+4/30/2020,Ext Contr Oth Hotel Srv,Domestic Contract,ISS MEDICLEAN LTD,33957225,69958.0,HOME 01 - April.pdf.csv,1
+4/30/2020,Contr Estate Management,Domestic Contract,ISS MEDICLEAN LTD,33957436,19510.0,HOME 01 - April.pdf.csv,1
+4/30/2020,Contr Premises Security,Domestic Contract,ISS MEDICLEAN LTD,33957436,48940.0,HOME 01 - April.pdf.csv,1
+4/30/2020,Contr Refuse & Clin Waste,Domestic Contract,ISS MEDICLEAN LTD,33957436,17089.0,HOME 01 - April.pdf.csv,1
+4/30/2020,Ext Contr Catering,Domestic Contract,ISS MEDICLEAN LTD,33957436,197901.0,HOME 01 - April.pdf.csv,1
+4/30/2020,Ext Contr Domestics,Domestic Contract,ISS MEDICLEAN LTD,33957436,194265.0,HOME 01 - April.pdf.csv,1
+4/30/2020,Ext Contr Laundry,Domestic Contract,ISS MEDICLEAN LTD,33957436,46611.0,HOME 01 - April.pdf.csv,1
+4/30/2020,Ext Contr Oth Hotel Srv,Domestic Contract,ISS MEDICLEAN LTD,33957436,69958.0,HOME 01 - April.pdf.csv,1
+4/30/2020,Contr Pest Control,Domestic Contract,ISS MEDICLEAN LTD,33957552,1088.0,HOME 01 - April.pdf.csv,1
+4/30/2020,Contr Premises Security,Domestic Contract,ISS MEDICLEAN LTD,33957552,30895.0,HOME 01 - April.pdf.csv,1
+4/30/2020,Ext Contr Catering,Domestic Contract,ISS MEDICLEAN LTD,33957552,858.0,HOME 01 - April.pdf.csv,1
+4/30/2020,Ext Contr Domestics,Domestic Contract,ISS MEDICLEAN LTD,33957552,80499.0,HOME 01 - April.pdf.csv,1
+4/30/2020,Ext Contr Oth Hotel Srv,Domestic Contract,ISS MEDICLEAN LTD,33957552,9571.0,HOME 01 - April.pdf.csv,1
+4/30/2020,Hospitality,Domestic Contract,ISS MEDICLEAN LTD,33957552,6248.0,HOME 01 - April.pdf.csv,1
+4/30/2020,Staff Uniforms & Clothing,Domestic Contract,ISS MEDICLEAN LTD,33957552,1143.0,HOME 01 - April.pdf.csv,1
+4/30/2020,Lease Rents,Hackney Ark - Estates,COMMUNITY HEALTH PARTNERSHIPS LTD,33957632,95956.0,HOME 01 - April.pdf.csv,1
+4/30/2020,Service Charge,Hackney Ark - Estates,COMMUNITY HEALTH PARTNERSHIPS LTD,33957632,10356.0,HOME 01 - April.pdf.csv,1
+4/30/2020,Lease Rents,Hackney Ark - Estates,COMMUNITY HEALTH PARTNERSHIPS LTD,33957649,95956.0,HOME 01 - April.pdf.csv,1
+4/30/2020,Service Charge,Hackney Ark - Estates,COMMUNITY HEALTH PARTNERSHIPS LTD,33957649,10356.0,HOME 01 - April.pdf.csv,1
+4/30/2020,Vaccines,COVID-19,SOLAREX (GB) LTD,33961020,63375.0,HOME 01 - April.pdf.csv,1
+4/30/2020,OthrIntngAst Additions,Balance Sheet,AGILE MEDICAL LTD,33961059,170586.0,HOME 01 - April.pdf.csv,1
+4/30/2020,OthrIntngAst Additions,Balance Sheet,VODAFONE LTD,33981565,28526.0,HOME 01 - April.pdf.csv,1
+4/30/2020,Bldg/Eng Equip Maint/Rep,Homerton Central Engineer,STARKSTROM LTD,33981790,21260.0,HOME 01 - April.pdf.csv,1
+4/30/2020,OthrIntngAst Additions,Balance Sheet,DELL CORPORATION LTD,33984729,29190.0,HOME 01 - April.pdf.csv,1
+4/30/2020,Consultant,Opthalmology,MOORFIELDS EYE HOSPITAL NHS,33993793,80415.0,HOME 01 - April.pdf.csv,1
+4/30/2020,Lease Rents,Hackney Ark - Estates,"FOUNDATION TRUST
+COMMUNITY HEALTH PARTNERSHIPS LTD",33993989,95956.0,HOME 01 - April.pdf.csv,1
+4/30/2020,Service Charge,Hackney Ark - Estates,COMMUNITY HEALTH PARTNERSHIPS LTD,33993989,10356.0,HOME 01 - April.pdf.csv,1
+4/30/2020,Lease Rents,Hackney Ark - Estates,COMMUNITY HEALTH PARTNERSHIPS LTD,33994009,95956.0,HOME 01 - April.pdf.csv,1
+4/30/2020,Service Charge,Hackney Ark - Estates,COMMUNITY HEALTH PARTNERSHIPS LTD,33994009,10356.0,HOME 01 - April.pdf.csv,1
+4/30/2020,Lease Rents,Hackney Ark - Estates,COMMUNITY HEALTH PARTNERSHIPS LTD,33994081,93725.0,HOME 01 - April.pdf.csv,1
+4/30/2020,Lease Rents,Kenworthy Road - Estates,COMMUNITY HEALTH PARTNERSHIPS LTD,33994081,24961.0,HOME 01 - April.pdf.csv,1
+4/30/2020,Service Charge,Hackney Ark - Estates,COMMUNITY HEALTH PARTNERSHIPS LTD,33994081,9789.0,HOME 01 - April.pdf.csv,1
+4/30/2020,Service Charge,Kenworthy Road - Estates,COMMUNITY HEALTH PARTNERSHIPS LTD,33994081,3597.0,HOME 01 - April.pdf.csv,1
+4/30/2020,Lease Rents,Kenworthy Road - Estates,COMMUNITY HEALTH PARTNERSHIPS LTD,33994105,95956.0,HOME 01 - April.pdf.csv,1
+4/30/2020,Service Charge,Kenworthy Road - Estates,COMMUNITY HEALTH PARTNERSHIPS LTD,33994105,10356.0,HOME 01 - April.pdf.csv,1
+4/30/2020,Lease Rents,Hackney Ark - Estates,COMMUNITY HEALTH PARTNERSHIPS LTD,33994114,95956.0,HOME 01 - April.pdf.csv,1
+4/30/2020,Service Charge,Hackney Ark - Estates,COMMUNITY HEALTH PARTNERSHIPS LTD,33994114,10356.0,HOME 01 - April.pdf.csv,1
+4/30/2020,OthrIntngAst Additions,Balance Sheet,DELL CORPORATION LTD,33995861,45531.0,HOME 01 - April.pdf.csv,1
+4/30/2020,OthrIntngAst Additions,Balance Sheet,DELL CORPORATION LTD,33995863,45531.0,HOME 01 - April.pdf.csv,1
+4/30/2020,OthrIntngAst Additions,Balance Sheet,INSIGHT DIRECT (UK) LTD,33996075,45600.0,HOME 01 - April.pdf.csv,1
+4/30/2020,Contr Estate Management,Louis Freedman Centre - Estates,NHS PROPERTY SERVICES LTD,33999223,43676.0,HOME 01 - April.pdf.csv,1
+4/30/2020,Service Charge,Louis Freedman Centre - Estates,NHS PROPERTY SERVICES LTD,33999263,47069.0,HOME 01 - April.pdf.csv,1
+4/30/2020,Contr Estate Management,John Scott Health Centre - Estates,NHS PROPERTY SERVICES LTD,33999269,41393.0,HOME 01 - April.pdf.csv,1
+4/30/2020,AUC Additions,Balance Sheet,STERIS SOLUTIONS LTD,33999295,52966.0,HOME 01 - April.pdf.csv,1
+4/30/2020,Consultant,Opthalmology,MOORFIELDS EYE HOSPITAL NHS,34028731,80415.0,HOME 01 - April.pdf.csv,1
+4/30/2020,Laboratory Test Kits,I.T.U.,"FOUNDATION TRUST
+ABBOTT LABORATORIES LTD",34029998,31575.0,HOME 01 - April.pdf.csv,1
+4/30/2020,Income tax - Current,Balance Sheet,INLAND REVENUE CIS,34033147,2324347.0,HOME 01 - April.pdf.csv,1
+4/30/2020,National Insurance - Curr,Balance Sheet,INLAND REVENUE CIS,34033147,2803705.0,HOME 01 - April.pdf.csv,1
+4/30/2020,Shared Parental Leave,Balance Sheet,INLAND REVENUE CIS,34033147,-683.0,HOME 01 - April.pdf.csv,-1
+4/30/2020,Statutory Mat Pay - Curr,Balance Sheet,INLAND REVENUE CIS,34033147,-80698.0,HOME 01 - April.pdf.csv,-1
+4/30/2020,Statutory Pat Pay - Curr,Balance Sheet,INLAND REVENUE CIS,34033147,-273.0,HOME 01 - April.pdf.csv,-1
+4/30/2020,Ext Contr Catering,Domestic Contract,ISS MEDICLEAN LTD,34040543,23975.0,HOME 01 - April.pdf.csv,1
+4/30/2020,Ext Contr Domestics,Domestic Contract,ISS MEDICLEAN LTD,34040543,65588.0,HOME 01 - April.pdf.csv,1
+4/30/2020,Hospitality,Domestic Contract,ISS MEDICLEAN LTD,34040543,26488.0,HOME 01 - April.pdf.csv,1
+4/30/2020,Lease Rents,Kenworthy Road - Estates,COMMUNITY HEALTH PARTNERSHIPS LTD,34051873,25405.0,HOME 01 - April.pdf.csv,1
+4/30/2020,Service Charge,Kenworthy Road - Estates,COMMUNITY HEALTH PARTNERSHIPS LTD,34051873,3112.0,HOME 01 - April.pdf.csv,1
+4/30/2020,Computer Maintenance,COVID-19,INSIGHT DIRECT (UK) LTD,34062776,50370.0,HOME 01 - April.pdf.csv,1
+4/30/2020,Computer Maintenance,It Client Support,INSIGHT DIRECT (UK) LTD,34072261,60070.0,HOME 01 - April.pdf.csv,1
+4/30/2020,Services Received - NHSTs,Immunology,DOCTORS LABORATORY LTD (THE),34087743,25104.0,HOME 01 - April.pdf.csv,1
+4/30/2020,Vaccines,COVID-19,SOLAREX (GB) LTD,34087746,63375.0,HOME 01 - April.pdf.csv,1
+4/30/2020,Services Received - NHSTs,Nuclear Medicine,WHITTINGTON HOSPITAL NHS TRUST,34090129,28438.0,HOME 01 - April.pdf.csv,1
+4/30/2020,OthrIntngAst Additions,Balance Sheet,VODAFONE LTD,34090240,67240.0,HOME 01 - April.pdf.csv,1
+4/30/2020,Stocks Raw Materials,Balance Sheet,ALLIANCE HEALTHCARE DISTRIBUTION LTD,34092725,47407.0,HOME 01 - April.pdf.csv,1
+4/30/2020,Stocks Raw Materials,Balance Sheet,GILEAD SCIENCES LTD,34092795,28694.0,HOME 01 - April.pdf.csv,1
+4/30/2020,Stocks Raw Materials,Balance Sheet,JANSSEN CILAG LTD,34094441,42180.0,HOME 01 - April.pdf.csv,1
+4/30/2020,Stocks Raw Materials,Balance Sheet,GILEAD SCIENCES LTD,34094472,67711.0,HOME 01 - April.pdf.csv,1
+4/30/2020,Laboratory Reagents,Molecular Lab,CHRYSTAL CONSULTING LTD,34129198,186581.0,HOME 01 - April.pdf.csv,1
+4/30/2020,Gas,Homerton Energy,CORONA ENERGY RETAIL 4 LTD,34142841,-42227.0,HOME 01 - April.pdf.csv,-1
+4/30/2020,Services Received - NHSTs,Bowel Cancer Screening Programme,BARTS HEALTH NHS TRUST,34153821,31835.0,HOME 01 - April.pdf.csv,1
+4/30/2020,Laboratory Test Kits,Chemical Pathology,ABBOTT LABORATORIES LTD,34153931,29490.0,HOME 01 - April.pdf.csv,1
+4/30/2020,Electricity,Homerton Energy,EDF ENERGY CUSTOMERS PLC,34154028,63843.0,HOME 01 - April.pdf.csv,1
+4/30/2020,Electricity,Homerton Energy,EDF ENERGY CUSTOMERS PLC,34161080,43583.0,HOME 01 - April.pdf.csv,1
+4/30/2020,Gas,Homerton Energy,CORONA ENERGY RETAIL 4 LTD,34161086,42232.0,HOME 01 - April.pdf.csv,1
+4/30/2020,Gas,Homerton Energy,CORONA ENERGY RETAIL 4 LTD,34161087,37858.0,HOME 01 - April.pdf.csv,1
+4/30/2020,Vaccines,COVID-19,MY LAUNDRESS COMMERCIAL LTD,34161089,40986.0,HOME 01 - April.pdf.csv,1
+4/30/2020,Training Expenses,Primary Care Psychology,CITY & HACKNEY MIND,34161295,30000.0,HOME 01 - April.pdf.csv,1
+4/30/2020,Stocks Raw Materials,Balance Sheet,ALLOGA UK LTD,34173628,25200.0,HOME 01 - April.pdf.csv,1
+4/30/2020,Lease Rents,Kenworthy Road - Estates,COMMUNITY HEALTH PARTNERSHIPS LTD,34180438,25405.0,HOME 01 - April.pdf.csv,1
+4/30/2020,Service Charge,Kenworthy Road - Estates,COMMUNITY HEALTH PARTNERSHIPS LTD,34180438,3112.0,HOME 01 - April.pdf.csv,1
+4/30/2020,Lease Rents,Kenworthy Road - Estates,COMMUNITY HEALTH PARTNERSHIPS LTD,34180440,25405.0,HOME 01 - April.pdf.csv,1
+4/30/2020,Service Charge,Kenworthy Road - Estates,COMMUNITY HEALTH PARTNERSHIPS LTD,34180440,3112.0,HOME 01 - April.pdf.csv,1
+4/30/2020,Electricity,Homerton Energy,EDF ENERGY CUSTOMERS PLC,34195028,43583.0,HOME 01 - April.pdf.csv,1
+4/30/2020,Phone Instal & Maint,Homerton Telephones,MAINTEL EUROPE LTD,34195898,75009.0,HOME 01 - April.pdf.csv,1
+4/30/2020,Other Gen Supplies & Srv,Health and Safety,SYNERGY HEALTH (UK) LTD,34210216,94026.0,HOME 01 - April.pdf.csv,1
+4/30/2020,NonNHS Trade Pybls Curr,Balance Sheet,BUNZL HEALTHCARE,34210221,26760.0,HOME 01 - April.pdf.csv,1
+4/30/2020,National QC & Accred Fees,Trust Board,CARE QUALITY COMMISSION,34210335,225000.0,HOME 01 - April.pdf.csv,1
+4/30/2020,Insurance Costs,Financial Accounts,WILLIS LTD,34210360,78400.0,HOME 01 - April.pdf.csv,1
+4/30/2020,Electricity,Homerton Energy,EDF ENERGY 1 LTD,34210363,63843.0,HOME 01 - April.pdf.csv,1
+4/30/2020,AUC Additions,Balance Sheet,OLYMPUS KEYMED,34213060,137984.0,HOME 01 - April.pdf.csv,1
+4/30/2020,Lease Rents,Kenworthy Road - Estates,COMMUNITY HEALTH PARTNERSHIPS LTD,34216426,25405.0,HOME 01 - April.pdf.csv,1
+4/30/2020,Service Charge,Kenworthy Road - Estates,COMMUNITY HEALTH PARTNERSHIPS LTD,34216426,3112.0,HOME 01 - April.pdf.csv,1
+4/30/2020,Lease Rents,Kenworthy Road - Estates,COMMUNITY HEALTH PARTNERSHIPS LTD,34216427,25405.0,HOME 01 - April.pdf.csv,1
+4/30/2020,Service Charge,Kenworthy Road - Estates,COMMUNITY HEALTH PARTNERSHIPS LTD,34216427,3112.0,HOME 01 - April.pdf.csv,1
+4/30/2020,Rates,Shoreditch Community Maternity,LONDON BOROUGH OF HACKNEY,34216429,26368.0,HOME 01 - April.pdf.csv,1
+4/30/2020,Bldg/Eng Equip Maint Cont,"Ctre
+Slg-Retinal Screening",NHS PROPERTY SERVICES LTD,34216450,434.0,HOME 01 - April.pdf.csv,1
+4/30/2020,Lease Rents,Slg-Retinal Screening,NHS PROPERTY SERVICES LTD,34216450,48702.0,HOME 01 - April.pdf.csv,1
+4/30/2020,Bldg/Eng Equip Maint Cont,Slg-Retinal Screening,NHS PROPERTY SERVICES LTD,34216451,3488.0,HOME 01 - April.pdf.csv,1
+4/30/2020,Service Charge,Slg-Retinal Screening,NHS PROPERTY SERVICES LTD,34216451,28951.0,HOME 01 - April.pdf.csv,1
+4/30/2020,Vaccines,COVID-19,SOLAREX (GB) LTD,34217949,53200.0,HOME 01 - April.pdf.csv,1
+6/30/2020,National Insurance - Curr,Balance Sheet,INLAND REVENUE CIS,34667731,2825584.0,HOME 03 - June.pdf.csv,1
+6/30/2020,Income tax - Current,Balance Sheet,INLAND REVENUE CIS,34667731,2426111.0,HOME 03 - June.pdf.csv,1
+6/30/2020,Med & Surg Equip Hire,Integrated Comm Equip,LONDON BOROUGH OF HACKNEY,34547849,571417.0,HOME 03 - June.pdf.csv,1
+6/30/2020,Med & Surg Equip Hire,Integrated Comm Equip,LONDON BOROUGH OF HACKNEY,34547856,478132.0,HOME 03 - June.pdf.csv,1
+6/30/2020,AUC Additions,Balance Sheet,SUPPLY CHAIN COORDINATION,34504148,389144.0,HOME 03 - June.pdf.csv,1
+6/30/2020,Vaccines,COVID-19,"LIMITED
+ISS MEDICLEAN LTD",34592622,313732.0,HOME 03 - June.pdf.csv,1
+6/30/2020,Vaccines,COVID-19,ISS MEDICLEAN LTD,34747762,297465.0,HOME 03 - June.pdf.csv,1
+6/30/2020,Bldg/Eng Equip Maint Cont,St. Leonards - Estates,NHS PROPERTY SERVICES LTD,34563416,219983.0,HOME 03 - June.pdf.csv,1
+6/30/2020,Ext Contr Catering,Domestic Contract,ISS MEDICLEAN LTD,34592658,197901.0,HOME 03 - June.pdf.csv,1
+6/30/2020,Ext Contr Catering,Domestic Contract,ISS MEDICLEAN LTD,34592660,197901.0,HOME 03 - June.pdf.csv,1
+6/30/2020,Ext Contr Catering,Domestic Contract,ISS MEDICLEAN LTD,34760645,197901.0,HOME 03 - June.pdf.csv,1
+6/30/2020,Ext Contr Domestics,Domestic Contract,ISS MEDICLEAN LTD,34592658,194265.0,HOME 03 - June.pdf.csv,1
+6/30/2020,Ext Contr Domestics,Domestic Contract,ISS MEDICLEAN LTD,34760645,194265.0,HOME 03 - June.pdf.csv,1
+6/30/2020,Ext Contr Domestics,Domestic Contract,ISS MEDICLEAN LTD,34592660,180474.0,HOME 03 - June.pdf.csv,1
+6/30/2020,Rent,St. Leonards - Estates,NHS PROPERTY SERVICES LTD,34563406,138869.0,HOME 03 - June.pdf.csv,1
+6/30/2020,Rent,St. Leonards - Estates,NHS PROPERTY SERVICES LTD,34616787,138869.0,HOME 03 - June.pdf.csv,1
+6/30/2020,Lease Rents,St. Leonards - Estates,NHS PROPERTY SERVICES LTD,34616793,138869.0,HOME 03 - June.pdf.csv,1
+6/30/2020,Hospital Car Services,New Transport,ERS TRANSITION LTD,34505988,134757.0,HOME 03 - June.pdf.csv,1
+6/30/2020,Service Charge,St. Leonards - Estates,NHS PROPERTY SERVICES LTD,34563414,125166.0,HOME 03 - June.pdf.csv,1
+6/30/2020,Service Charge,St. Leonards - Estates,NHS PROPERTY SERVICES LTD,34616785,125166.0,HOME 03 - June.pdf.csv,1
+6/30/2020,Services Received - NHSTs,Hshs Clinic,EAST LONDON NHS FOUNDATION,34532940,124045.0,HOME 03 - June.pdf.csv,1
+6/30/2020,AUC Additions,Balance Sheet,"TRUST
+SOFTCAT PLC",34659246,120297.0,HOME 03 - June.pdf.csv,1
+6/30/2020,AUC Additions,Balance Sheet,SOFTCAT PLC,34756167,120297.0,HOME 03 - June.pdf.csv,1
+6/30/2020,AUC Additions,Balance Sheet,H&C CONTRACTS LTD,34601906,95615.0,HOME 03 - June.pdf.csv,1
+6/30/2020,Protective Clothing,COVID-19,BATES OFFICE SERVICES LTD - RQX,34677027,80000.0,HOME 03 - June.pdf.csv,1
+6/30/2020,AUC Additions,Balance Sheet,SUPPLY CHAIN COORDINATION,34504148,77828.0,HOME 03 - June.pdf.csv,1
+6/30/2020,NonNHS Trade Pybls Curr,Balance Sheet,"LIMITED
+SUPPLY CHAIN COORDINATION",34532971,76143.0,HOME 03 - June.pdf.csv,1
+6/30/2020,Computer Software/License,Clinical Information Systems,"LIMITED
+CERNER LTD",34760627,74454.0,HOME 03 - June.pdf.csv,1
+6/30/2020,Electricity,Homerton Energy,EDF ENERGY CUSTOMERS PLC,34594732,74343.0,HOME 03 - June.pdf.csv,1
+6/30/2020,Computer Software/License,Clinical Information Systems,SERVELEC HEALTHCARE LTD,34720206,73907.0,HOME 03 - June.pdf.csv,1
+6/30/2020,AUC Additions,Balance Sheet,WELCH ALLYN UK LTD,34750260,71530.0,HOME 03 - June.pdf.csv,1
+6/30/2020,Ext Contr Oth Hotel Srv,Domestic Contract,ISS MEDICLEAN LTD,34592658,69958.0,HOME 03 - June.pdf.csv,1
+6/30/2020,Ext Contr Oth Hotel Srv,Domestic Contract,ISS MEDICLEAN LTD,34592660,69958.0,HOME 03 - June.pdf.csv,1
+6/30/2020,Ext Contr Oth Hotel Srv,Domestic Contract,ISS MEDICLEAN LTD,34760645,69958.0,HOME 03 - June.pdf.csv,1
+6/30/2020,Ext Contr Domestics,Domestic Contract,ISS MEDICLEAN LTD,34592661,68192.0,HOME 03 - June.pdf.csv,1
+6/30/2020,Vaccines,COVID-19,GBUK HEALTHCARE,34622720,66960.0,HOME 03 - June.pdf.csv,1
+6/30/2020,Radio communications,Health and Safety,SKYGUARD LTD,34616916,63976.0,HOME 03 - June.pdf.csv,1
+6/30/2020,NonNHS Trade Pybls Curr,Balance Sheet,SUPPLY CHAIN COORDINATION,34532960,62549.0,HOME 03 - June.pdf.csv,1
+6/30/2020,Other Gen Supplies & Srv,Health and Safety,"LIMITED
+SYNERGY HEALTH (UK) LTD",34747775,62196.0,HOME 03 - June.pdf.csv,1
+6/30/2020,Electricity,Homerton Energy,EDF ENERGY CUSTOMERS PLC,34747755,62181.0,HOME 03 - June.pdf.csv,1
+6/30/2020,NonNHS Trade Pybls Curr,Balance Sheet,SUPPLY CHAIN COORDINATION,34684092,59554.0,HOME 03 - June.pdf.csv,1
+6/30/2020,AUC Additions,Balance Sheet,"LIMITED
+SUPPLY CHAIN COORDINATION",34504154,56781.0,HOME 03 - June.pdf.csv,1
+6/30/2020,AUC Additions,Balance Sheet,"LIMITED
+SUPPLY CHAIN COORDINATION",34504156,56781.0,HOME 03 - June.pdf.csv,1
+6/30/2020,Bldg/Eng Equip Maint Cont,St. Leonards - Estates,"LIMITED
+NHS PROPERTY SERVICES LTD",34563414,51670.0,HOME 03 - June.pdf.csv,1
+6/30/2020,Bldg/Eng Equip Maint Cont,St. Leonards - Estates,NHS PROPERTY SERVICES LTD,34616785,51670.0,HOME 03 - June.pdf.csv,1
+6/30/2020,FP10S,Outpatients,NHS BUSINESS SERVICES,34705646,51535.0,HOME 03 - June.pdf.csv,1
+6/30/2020,Services Received - NHSTs,Cardiac Dept,"AUTHORITY
+UNIVERSITY COLLEGE LONDON",34656181,50587.0,HOME 03 - June.pdf.csv,1
+6/30/2020,FP10S,Outpatients,NHS BUSINESS SERVICES,34675760,50163.0,HOME 03 - June.pdf.csv,1
+6/30/2020,FP10S,Outpatients,"AUTHORITY
+NHS BUSINESS SERVICES",34705645,50135.0,HOME 03 - June.pdf.csv,1
+6/30/2020,Computer Software/License,Clinical Coding,"AUTHORITY
+3M UNITED KINGDOM PLC",34697945,49129.0,HOME 03 - June.pdf.csv,1
+6/30/2020,FP10S,Outpatients,NHS BUSINESS SERVICES,34705649,48765.0,HOME 03 - June.pdf.csv,1
+6/30/2020,AUC Additions,Balance Sheet,"AUTHORITY
+MARDAV SOLUTIONS LTD",34815089,48762.0,HOME 03 - June.pdf.csv,1
+6/30/2020,Lease Rents,Slg-Retinal Screening,NHS PROPERTY SERVICES LTD,34532918,48702.0,HOME 03 - June.pdf.csv,1
+6/30/2020,Lease Rents,Slg-Retinal Screening,NHS PROPERTY SERVICES LTD,34623548,48702.0,HOME 03 - June.pdf.csv,1
+6/30/2020,FP10S,Outpatients,NHS BUSINESS SERVICES,34705644,47867.0,HOME 03 - June.pdf.csv,1
+6/30/2020,Rates,Sexual Health Estates,"AUTHORITY
+CITY OF LONDON",34599424,47790.0,HOME 03 - June.pdf.csv,1
+6/30/2020,NonNHS Trade Pybls Curr,Balance Sheet,SUPPLY CHAIN COORDINATION,34684093,47305.0,HOME 03 - June.pdf.csv,1
+6/30/2020,AUC Additions,Balance Sheet,"LIMITED
+WELCH ALLYN UK LTD",34749029,46772.0,HOME 03 - June.pdf.csv,1
+6/30/2020,Ext Contr Laundry,Domestic Contract,ISS MEDICLEAN LTD,34592658,46611.0,HOME 03 - June.pdf.csv,1
+6/30/2020,Ext Contr Laundry,Domestic Contract,ISS MEDICLEAN LTD,34592660,46611.0,HOME 03 - June.pdf.csv,1
+6/30/2020,Ext Contr Laundry,Domestic Contract,ISS MEDICLEAN LTD,34760645,46611.0,HOME 03 - June.pdf.csv,1
+6/30/2020,Miscellaneous Expenditure,COVID-19,FLOYD & SON,34616828,46000.0,HOME 03 - June.pdf.csv,1
+6/30/2020,Laboratory Chemicals,Chemical Pathology,ABBOTT LABORATORIES LTD,34642347,44434.0,HOME 03 - June.pdf.csv,1
+6/30/2020,Services Received - NHSTs,Cardiac Dept,UNIVERSITY COLLEGE LONDON,34656189,43372.0,HOME 03 - June.pdf.csv,1
+6/30/2020,Ext Contr Catering,Domestic Contract,ISS MEDICLEAN LTD,34592661,42588.0,HOME 03 - June.pdf.csv,1
+6/30/2020,Contr Premises Security,Domestic Contract,ISS MEDICLEAN LTD,34592658,42124.0,HOME 03 - June.pdf.csv,1
+6/30/2020,Contr Premises Security,Domestic Contract,ISS MEDICLEAN LTD,34592660,42124.0,HOME 03 - June.pdf.csv,1
+6/30/2020,Contr Premises Security,Domestic Contract,ISS MEDICLEAN LTD,34760645,42124.0,HOME 03 - June.pdf.csv,1
+6/30/2020,Radio communications,Health and Safety,SKYGUARD LTD,34524375,41985.0,HOME 03 - June.pdf.csv,1
+6/30/2020,Services Received - NHSTs,Paediatrics Sla,MOORFIELDS EYE HOSPITAL NHS,34642327,41772.0,HOME 03 - June.pdf.csv,1
+6/30/2020,Ext Contr Domestics,Domestic Contract,"FOUNDATION TRUST
+ISS MEDICLEAN LTD",34592657,40071.0,HOME 03 - June.pdf.csv,1
+6/30/2020,Vaccines,COVID-19,MY LAUNDRESS COMMERCIAL,34570092,39500.0,HOME 03 - June.pdf.csv,1
+6/30/2020,AUC Additions,Balance Sheet,"LTD
+OLYMPUS KEYMED",34818270,39042.0,HOME 03 - June.pdf.csv,1
+6/30/2020,Other Gen Supplies & Srv,Health and Safety,SYNERGY HEALTH (UK) LTD,34705665,38407.0,HOME 03 - June.pdf.csv,1
+6/30/2020,NonNHS Trade Pybls Curr,Balance Sheet,SUPPLY CHAIN COORDINATION,34684094,37070.0,HOME 03 - June.pdf.csv,1
+6/30/2020,Electricity,Homerton Energy,"LIMITED
+EDF ENERGY CUSTOMERS PLC",34599431,36415.0,HOME 03 - June.pdf.csv,1
+6/30/2020,Vaccines,COVID-19,ERS TRANSITION LTD,34532686,35723.0,HOME 03 - June.pdf.csv,1
+6/30/2020,Services Received - NHSTs,Cardiac Dept,BARTS HEALTH NHS TRUST,34747742,35175.0,HOME 03 - June.pdf.csv,1
+6/30/2020,AUC Additions,Balance Sheet,K2 MEDICAL SYSTEMS LTD,34556458,35000.0,HOME 03 - June.pdf.csv,1
+6/30/2020,Vaccines,COVID-19,MY LAUNDRESS COMMERCIAL,34587745,34845.0,HOME 03 - June.pdf.csv,1
+6/30/2020,AUC Additions,Balance Sheet,"LTD
+BAXTER HEALTHCARE LTD",34732039,33750.0,HOME 03 - June.pdf.csv,1
+6/30/2020,AUC Additions,Balance Sheet,H&C CONTRACTS LTD,34732614,32665.0,HOME 03 - June.pdf.csv,1
+6/30/2020,Postage & Carriage,Post Homerton,XEROX (UK) LTD,33603933,32475.0,HOME 03 - June.pdf.csv,1
+6/30/2020,Services Received - NHSTs,Employee Health,OHWORKS LTD,34675884,32071.0,HOME 03 - June.pdf.csv,1
+6/30/2020,Postage & Carriage,"Management Service
+Post Homerton",XEROX (UK) LTD,32979634,31868.0,HOME 03 - June.pdf.csv,1
+6/30/2020,Contr Premises Security,Domestic Contract,ISS MEDICLEAN LTD,34592657,30895.0,HOME 03 - June.pdf.csv,1
+6/30/2020,Contr Premises Security,Domestic Contract,ISS MEDICLEAN LTD,34592661,30895.0,HOME 03 - June.pdf.csv,1
+6/30/2020,"Books, Journals & Subscr",Trust Board,SALFORD ROYAL HOSPITALS NHS,34764187,30000.0,HOME 03 - June.pdf.csv,1
+6/30/2020,Computer Software/License,Clinical Information Systems,"FOUNDATION TRUST
+CERNER LTD",34760625,29879.0,HOME 03 - June.pdf.csv,1
+6/30/2020,Computer Software/License,Clinical Information Systems,CERNER LTD,34760631,29879.0,HOME 03 - June.pdf.csv,1
+6/30/2020,Vaccines,COVID-19,MY LAUNDRESS COMMERCIAL,34570061,29785.0,HOME 03 - June.pdf.csv,1
+6/30/2020,Lease Rents,Sexual Health Estates,"LTD
+CUMBRAE PROPERTIES (1963) LTD",34555821,28598.0,HOME 03 - June.pdf.csv,1
+6/30/2020,Postage & Carriage,Post Homerton,XEROX (UK) LTD,33913402,28562.0,HOME 03 - June.pdf.csv,1
+6/30/2020,Services Received - NHSTs,Cardiac Dept,BARTS HEALTH NHS TRUST,34656193,28206.0,HOME 03 - June.pdf.csv,1
+6/30/2020,Consultant,Opthalmology,MOORFIELDS EYE HOSPITAL NHS,34642327,27112.0,HOME 03 - June.pdf.csv,1
+6/30/2020,Stocks Raw Materials,Balance Sheet,"FOUNDATION TRUST
+ALLIANCE HEALTHCARE",34518096,26946.0,HOME 03 - June.pdf.csv,1
+6/30/2020,Vaccines,COVID-19,"DISTRIBUTION LTD
+MY LAUNDRESS COMMERCIAL",34570079,26565.0,HOME 03 - June.pdf.csv,1
+6/30/2020,Contr Estate Management,Domestic Contract,"LTD
+ISS MEDICLEAN LTD",34592658,26325.0,HOME 03 - June.pdf.csv,1
+6/30/2020,Contr Estate Management,Domestic Contract,ISS MEDICLEAN LTD,34592660,26325.0,HOME 03 - June.pdf.csv,1
+6/30/2020,Contr Estate Management,Domestic Contract,ISS MEDICLEAN LTD,34760645,26325.0,HOME 03 - June.pdf.csv,1
+6/30/2020,OthrIntngAst Additions,Balance Sheet,COMPUTACENTER (UK) LTD,34659254,25462.0,HOME 03 - June.pdf.csv,1
+6/30/2020,Bldg/Eng Equip Maint Cont,Lower Clapton - Estates,NHS PROPERTY SERVICES LTD,34623503,25238.0,HOME 03 - June.pdf.csv,1
+6/30/2020,Computer Software/License,Clinical Information Systems,INTERSYSTEMS,34601904,25064.0,HOME 03 - June.pdf.csv,1
+1/31/2021,Services Received -,Employee Health Management,OHWORKS LTD,36118566,34686.0,HOME 10 - January.pdf.csv,1
+1/31/2021,"NHSTs
+Surg Instruments","Service
+Hackney Diabetic Service",MEDTRONIC LTD,36592486,-46950.0,HOME 10 - January.pdf.csv,-1
+1/31/2021,"General
+Surg Instruments",Hackney Diabetic Service,MEDTRONIC LTD,36592486,-9390.0,HOME 10 - January.pdf.csv,-1
+1/31/2021,"General
+Services Received -",Virology,BARTS HEALTH NHS TRUST,36773328,28397.0,HOME 10 - January.pdf.csv,1
+1/31/2021,"NHSTs
+Gas",Homerton Energy,CORONA ENERGY RETAIL 4 LTD,36777308,5113.0,HOME 10 - January.pdf.csv,1
+1/31/2021,Gas,Homerton Energy,CORONA ENERGY RETAIL 4 LTD,36777308,30577.0,HOME 10 - January.pdf.csv,1
+1/31/2021,Computer Maintenance,It Client Support,INTOUCH WITH HEALTH LTD,36789828,2300.0,HOME 10 - January.pdf.csv,1
+1/31/2021,Computer Maintenance,It Client Support,INTOUCH WITH HEALTH LTD,36789828,15136.0,HOME 10 - January.pdf.csv,1
+1/31/2021,Computer Maintenance,It Client Support,INTOUCH WITH HEALTH LTD,36789828,4000.0,HOME 10 - January.pdf.csv,1
+1/31/2021,Computer Maintenance,It Client Support,INTOUCH WITH HEALTH LTD,36789828,4287.0,HOME 10 - January.pdf.csv,1
+1/31/2021,Postage & Carriage,Post Homerton,XEROX (UK) LTD,36792458,30506.0,HOME 10 - January.pdf.csv,1
+1/31/2021,Computer Maintenance,It Client Support,TRUSTMARQUE SOLUTIONS LTD,36792470,29879.0,HOME 10 - January.pdf.csv,1
+1/31/2021,Computer Maintenance,It Client Support,TRUSTMARQUE SOLUTIONS LTD,36792470,5975.0,HOME 10 - January.pdf.csv,1
+1/31/2021,Minor Works,Homerton Central Engineer,OBEN PROPERTY SERVICES LTD,36792477,40778.0,HOME 10 - January.pdf.csv,1
+1/31/2021,Services Received -,Histopathology,BARTS HEALTH NHS TRUST,36816969,182938.0,HOME 10 - January.pdf.csv,1
+1/31/2021,"NHSTs
+FP10S",Outpatients,NHS BUSINESS SERVICES AUTHORITY,36821644,28858.0,HOME 10 - January.pdf.csv,1
+1/31/2021,Services Received -,Neurophysiology,UNIVERSITY COLLEGE LONDON HOSPITALS,36821803,47962.0,HOME 10 - January.pdf.csv,1
+1/31/2021,"NHSTs
+NonNHS Trade Pybls",Balance Sheet,"NHS FOUNDATION TRUST
+SUPPLY CHAIN COORDINATION LIMITED",36833082,71969.0,HOME 10 - January.pdf.csv,1
+1/31/2021,"Curr
+Independent Sector",Ct Scanner,TELEMEDICINE CLINIC LTD,36835336,32321.0,HOME 10 - January.pdf.csv,1
+1/31/2021,Hospital Car Services,New Transport,ERS TRANSITION LTD,36835340,134757.0,HOME 10 - January.pdf.csv,1
+1/31/2021,AUC Additions,Balance Sheet,ADT FIRE & SECURITY PLC,36846950,49764.0,HOME 10 - January.pdf.csv,1
+1/31/2021,AUC Additions,Balance Sheet,ADT FIRE & SECURITY PLC,36846951,40235.0,HOME 10 - January.pdf.csv,1
+1/31/2021,NonNHS Trade Pybls,Balance Sheet,SUPPLY CHAIN COORDINATION LIMITED,36847807,100509.0,HOME 10 - January.pdf.csv,1
+1/31/2021,"Curr
+Other Transport Costs",Pathology,CITYSPRINT (UK) LTD,36850010,21374.0,HOME 10 - January.pdf.csv,1
+1/31/2021,Computer,Primary Care Psychology,UNIVERSITY OF YORK,36870648,25301.0,HOME 10 - January.pdf.csv,1
+1/31/2021,"Software/License
+Computer",Primary Care Psychology,UNIVERSITY OF YORK,36870648,5060.0,HOME 10 - January.pdf.csv,1
+1/31/2021,"Software/License
+Income tax - Current",Balance Sheet,INLAND REVENUE CIS,36877393,2417454.0,HOME 10 - January.pdf.csv,1
+1/31/2021,National Insurance -,Balance Sheet,INLAND REVENUE CIS,36877393,2856687.0,HOME 10 - January.pdf.csv,1
+1/31/2021,"Curr
+Shared Parental Leave",Balance Sheet,INLAND REVENUE CIS,36877393,-556.0,HOME 10 - January.pdf.csv,-1
+1/31/2021,Stat Adoption Pay - Curr,Balance Sheet,INLAND REVENUE CIS,36877393,-2041.0,HOME 10 - January.pdf.csv,-1
+1/31/2021,Statutory Mat Pay - Curr,Balance Sheet,INLAND REVENUE CIS,36877393,-85020.0,HOME 10 - January.pdf.csv,-1
+1/31/2021,Electricity,Homerton Energy,EDF ENERGY CUSTOMERS PLC,36878137,-9728.0,HOME 10 - January.pdf.csv,-1
+1/31/2021,Electricity,Homerton Energy,EDF ENERGY CUSTOMERS PLC,36878137,-58213.0,HOME 10 - January.pdf.csv,-1
+1/31/2021,Bldg/Eng Equip Maint,Slg-Retinal Screening,NHS PROPERTY SERVICES LTD,36881977,3488.0,HOME 10 - January.pdf.csv,1
+1/31/2021,"Cont
+Service Charge",Slg-Retinal Screening,NHS PROPERTY SERVICES LTD,36881977,28951.0,HOME 10 - January.pdf.csv,1
+1/31/2021,Bldg/Eng Equip Maint,Slg-Retinal Screening,NHS PROPERTY SERVICES LTD,36881981,434.0,HOME 10 - January.pdf.csv,1
+1/31/2021,"Cont
+Lease Rents",St. Leonards - Estates,NHS PROPERTY SERVICES LTD,36881981,48702.0,HOME 10 - January.pdf.csv,1
+1/31/2021,Lease Rents,St. Leonards - Estates,NHS PROPERTY SERVICES LTD,36881982,132999.0,HOME 10 - January.pdf.csv,1
+1/31/2021,Bldg/Eng Equip Maint,John Scott Health Centre - Estates,NHS PROPERTY SERVICES LTD,36881983,243.0,HOME 10 - January.pdf.csv,1
+1/31/2021,"Cont
+Lease Rents",John Scott Health Centre - Estates,NHS PROPERTY SERVICES LTD,36881983,28300.0,HOME 10 - January.pdf.csv,1
+1/31/2021,Service Charge,John Scott Health Centre - Estates,NHS PROPERTY SERVICES LTD,36881983,4876.0,HOME 10 - January.pdf.csv,1
+1/31/2021,Service Charge,Louis Freedman Centre - Estates,NHS PROPERTY SERVICES LTD,36881989,47069.0,HOME 10 - January.pdf.csv,1
+1/31/2021,Lease Rents,Louis Freedman Centre - Estates,NHS PROPERTY SERVICES LTD,36882003,43676.0,HOME 10 - January.pdf.csv,1
+1/31/2021,Bldg/Eng Equip Maint,John Scott Health Centre - Estates,NHS PROPERTY SERVICES LTD,36882008,11991.0,HOME 10 - January.pdf.csv,1
+1/31/2021,"Cont
+Service Charge",John Scott Health Centre - Estates,NHS PROPERTY SERVICES LTD,36882008,29401.0,HOME 10 - January.pdf.csv,1
+1/31/2021,Bldg/Eng Equip Maint,Lower Clapton - Estates,NHS PROPERTY SERVICES LTD,36882010,7573.0,HOME 10 - January.pdf.csv,1
+1/31/2021,"Cont
+Service Charge",Lower Clapton - Estates,NHS PROPERTY SERVICES LTD,36882010,17713.0,HOME 10 - January.pdf.csv,1
+1/31/2021,Lease Rents,Hackney Ark - Estates,COMMUNITY HEALTH PARTNERSHIPS LTD,36882020,18284.0,HOME 10 - January.pdf.csv,1
+1/31/2021,Lease Rents,Kenworthy Road - Estates,COMMUNITY HEALTH PARTNERSHIPS LTD,36882022,21857.0,HOME 10 - January.pdf.csv,1
+1/31/2021,Lease Rents,Kenworthy Road - Estates,COMMUNITY HEALTH PARTNERSHIPS LTD,36882022,4371.0,HOME 10 - January.pdf.csv,1
+1/31/2021,Service Charge,Kenworthy Road - Estates,COMMUNITY HEALTH PARTNERSHIPS LTD,36882022,2586.0,HOME 10 - January.pdf.csv,1
+1/31/2021,Service Charge,Kenworthy Road - Estates,COMMUNITY HEALTH PARTNERSHIPS LTD,36882022,517.0,HOME 10 - January.pdf.csv,1
+1/31/2021,Services Received -,Immunology,DOCTORS LABORATORY LTD (THE),36883667,30966.0,HOME 10 - January.pdf.csv,1
+1/31/2021,"NHSTs
+Services Received -",People Analytics and Systems,BARTS HEALTH NHS TRUST,36894997,69360.0,HOME 10 - January.pdf.csv,1
+1/31/2021,"NHSTs
+Laboratory Chemicals",Chemical Pathology,ABBOTT LABORATORIES LTD,36897714,210684.0,HOME 10 - January.pdf.csv,1
+1/31/2021,Laboratory Chemicals,Chemical Pathology,ABBOTT LABORATORIES LTD,36897714,42136.0,HOME 10 - January.pdf.csv,1
+1/31/2021,Furniture & Fittings,COVID-19,KORN WALL LTD T/A KWICKSCREEN,36898178,22400.0,HOME 10 - January.pdf.csv,1
+1/31/2021,Furniture & Fittings,COVID-19,KORN WALL LTD T/A KWICKSCREEN,36898178,4480.0,HOME 10 - January.pdf.csv,1
+1/31/2021,Services Received -,Employee Health Management,OHWORKS LTD,36909644,34686.0,HOME 10 - January.pdf.csv,1
+1/31/2021,"NHSTs
+NonNHS Trade Pybls","Service
+Balance Sheet",SUPPLY CHAIN COORDINATION LIMITED,36926481,115982.0,HOME 10 - January.pdf.csv,1
+1/31/2021,"Curr
+Computer",COVID Vaccinations,SYSTEM BOOKINGS LTD,36933447,21000.0,HOME 10 - January.pdf.csv,1
+1/31/2021,"Software/License
+Computer",COVID Vaccinations,SYSTEM BOOKINGS LTD,36933447,4200.0,HOME 10 - January.pdf.csv,1
+1/31/2021,"Software/License
+Laboratory Reagents",Molecular Lab,CHRYSTAL CONSULTING LTD,36942432,88351.0,HOME 10 - January.pdf.csv,1
+1/31/2021,Laboratory Reagents,Molecular Lab,CHRYSTAL CONSULTING LTD,36942432,17670.0,HOME 10 - January.pdf.csv,1
+1/31/2021,Services Received -,Bowel Cancer Screening Programme,BARTS HEALTH NHS TRUST,36946416,45203.0,HOME 10 - January.pdf.csv,1
+1/31/2021,"NHSTs
+Electricity",Homerton Energy,EDF ENERGY CUSTOMERS PLC,36946501,9729.0,HOME 10 - January.pdf.csv,1
+1/31/2021,Electricity,Homerton Energy,EDF ENERGY CUSTOMERS PLC,36946501,58221.0,HOME 10 - January.pdf.csv,1
+1/31/2021,Payroll Ded'ns N/S Curr,Balance Sheet,TUSKERDIRECT LTD,36958803,29402.0,HOME 10 - January.pdf.csv,1
+1/31/2021,Electricity,Homerton Energy,EDF ENERGY CUSTOMERS PLC,36958815,6879.0,HOME 10 - January.pdf.csv,1
+1/31/2021,Electricity,Homerton Energy,EDF ENERGY CUSTOMERS PLC,36958815,41163.0,HOME 10 - January.pdf.csv,1
+1/31/2021,Services Received -,Virology,BARTS HEALTH NHS TRUST,36962344,30252.0,HOME 10 - January.pdf.csv,1
+1/31/2021,"NHSTs
+NonNHS Trade Pybls",Balance Sheet,SUPPLY CHAIN COORDINATION LIMITED,36986000,103623.0,HOME 10 - January.pdf.csv,1
+1/31/2021,"Curr
+AUC Additions",Balance Sheet,INSIGHT DIRECT (UK) LTD,36986866,33975.0,HOME 10 - January.pdf.csv,1
+1/31/2021,AUC Additions,Balance Sheet,INSIGHT DIRECT (UK) LTD,36986866,6795.0,HOME 10 - January.pdf.csv,1
+1/31/2021,Gas,Homerton Energy,CORONA ENERGY RETAIL 4 LTD,37002401,6211.0,HOME 10 - January.pdf.csv,1
+1/31/2021,Gas,Homerton Energy,CORONA ENERGY RETAIL 4 LTD,37002401,37148.0,HOME 10 - January.pdf.csv,1
+1/31/2021,Ext Contr Domestics,Domestic Contract,ISS MEDICLEAN LTD,37002543,-96633.0,HOME 10 - January.pdf.csv,-1
+1/31/2021,Ext Contr Domestics,Domestic Contract,ISS MEDICLEAN LTD,37002554,-106971.0,HOME 10 - January.pdf.csv,-1
+1/31/2021,Electricity,Homerton Energy,EDF ENERGY CUSTOMERS PLC,37002589,-9805.0,HOME 10 - January.pdf.csv,-1
+1/31/2021,Electricity,Homerton Energy,EDF ENERGY CUSTOMERS PLC,37002589,-58684.0,HOME 10 - January.pdf.csv,-1
+1/31/2021,AUC Additions,Balance Sheet,TENWELL INNOVATIONS LTD,37012364,34204.0,HOME 10 - January.pdf.csv,1
+1/31/2021,FP10S,Outpatients,NHS BUSINESS SERVICES AUTHORITY,37026695,29179.0,HOME 10 - January.pdf.csv,1
+1/31/2021,NHS Local Creditors Adj,Balance Sheet,UNIVERSITY COLLEGE LONDON HOSPITALS,37027010,-25118.0,HOME 10 - January.pdf.csv,-1
+1/31/2021,Other Liabilities Local,Balance Sheet,"NHS FOUNDATION TRUST
+UNIVERSITY COLLEGE LONDON HOSPITALS",37027010,-4457.0,HOME 10 - January.pdf.csv,-1
+1/31/2021,"Adj
+Services Received -",Management/Specialists,"NHS FOUNDATION TRUST
+UNIVERSITY COLLEGE LONDON HOSPITALS",37027010,-3459.0,HOME 10 - January.pdf.csv,-1
+1/31/2021,"NHSTs
+AUC Additions",Balance Sheet,"NHS FOUNDATION TRUST
+LAKES JOIN GRANDLY LTD",37027302,59644.0,HOME 10 - January.pdf.csv,1
+1/31/2021,AUC Additions,Balance Sheet,LAKES JOIN GRANDLY LTD,37027315,40750.0,HOME 10 - January.pdf.csv,1
+1/31/2021,Services Received -,Employee Health Management,OHWORKS LTD,37028885,34686.0,HOME 10 - January.pdf.csv,1
+1/31/2021,"NHSTs
+Services Received -","Service
+Histopathology",BARTS HEALTH NHS TRUST,37039810,177878.0,HOME 10 - January.pdf.csv,1
+1/31/2021,"NHSTs
+AUC Additions",Balance Sheet,SUPPLY CHAIN COORDINATION LIMITED,37040817,22395.0,HOME 10 - January.pdf.csv,1
+1/31/2021,AUC Additions,Balance Sheet,SUPPLY CHAIN COORDINATION LIMITED,37040817,4479.0,HOME 10 - January.pdf.csv,1
+1/31/2021,AUC Additions,Balance Sheet,BAXTER HEALTHCARE LTD,37040819,22500.0,HOME 10 - January.pdf.csv,1
+1/31/2021,AUC Additions,Balance Sheet,BAXTER HEALTHCARE LTD,37040819,3250.0,HOME 10 - January.pdf.csv,1
+1/31/2021,AUC Additions,Balance Sheet,BAXTER HEALTHCARE LTD,37040819,5150.0,HOME 10 - January.pdf.csv,1
+1/31/2021,Med & Surg Equip Disp,Endoscopy,MEDTRONIC LTD,37040958,61300.0,HOME 10 - January.pdf.csv,1
+1/31/2021,AUC Additions,Balance Sheet,STRYKER UK LTD,37056514,32200.0,HOME 10 - January.pdf.csv,1
+1/31/2021,AUC Additions,Balance Sheet,STRYKER UK LTD,37056514,6440.0,HOME 10 - January.pdf.csv,1
+1/31/2021,Ext Contr Domestics,Domestic Contract,ISS MEDICLEAN LTD,37057903,874547.0,HOME 10 - January.pdf.csv,1
+1/31/2021,Phone Rental and Calls,Homerton Telephones,STANLEY SECURITY SOLUTIONS,37058199,32199.0,HOME 10 - January.pdf.csv,1
+1/31/2021,NonNHS Trade Pybls,Balance Sheet,SUPPLY CHAIN COORDINATION LIMITED,37058233,80501.0,HOME 10 - January.pdf.csv,1
+1/31/2021,"Curr
+Ext Contr Domestics",Domestic Contract,ISS MEDICLEAN LTD,37071409,910212.0,HOME 10 - January.pdf.csv,1
+1/31/2021,Other Public Sector,Trust Board,NHS TOWER HAMLETS CCG,37071411,50175.0,HOME 10 - January.pdf.csv,1
+1/31/2021,Electricity,Homerton Energy,EDF ENERGY CUSTOMERS PLC,37071422,10611.0,HOME 10 - January.pdf.csv,1
+1/31/2021,Electricity,Homerton Energy,EDF ENERGY CUSTOMERS PLC,37071422,63500.0,HOME 10 - January.pdf.csv,1
+1/31/2021,Water,Homerton Energy,CASTLE WATER LTD,37071435,59765.0,HOME 10 - January.pdf.csv,1
+1/31/2021,Other Public Sector,Trust Board,NHS TOWER HAMLETS CCG,37079120,50175.0,HOME 10 - January.pdf.csv,1
+1/31/2021,AUC Additions,Balance Sheet,LOGAN CONSTRUCTION (SE) LTD,37081835,364624.0,HOME 10 - January.pdf.csv,1
+7/31/2020,AUC Additions,Balance Sheet,BELMONT MEDICAL TECHNOLOGIES,34818284,39038.0,HOME 04 - July.pdf.csv,1
+7/31/2020,Hospital Car Services,New Transport,ERS TRANSITION LTD,34818297,134757.0,HOME 04 - July.pdf.csv,1
+7/31/2020,Contr Other External,School Nursing,THOMSON SCREENING SOLUTIONS LTD,34830470,28588.0,HOME 04 - July.pdf.csv,1
+7/31/2020,Lease Rents,St. Leonards - Estates,NHS PROPERTY SERVICES LTD,34844265,138869.0,HOME 04 - July.pdf.csv,1
+7/31/2020,FP10S,Outpatients,NHS BUSINESS SERVICES AUTHORITY,34844287,43486.0,HOME 04 - July.pdf.csv,1
+7/31/2020,Services Received -,Histopathology,BARTS HEALTH NHS TRUST,34854511,50436.0,HOME 04 - July.pdf.csv,1
+7/31/2020,"NHSTs
+Computer",Clinical Information,CERNER LTD,34855515,111617.0,HOME 04 - July.pdf.csv,1
+7/31/2020,"Software/License
+Computer","Systems
+Clinical Information",CERNER LTD,34855523,29879.0,HOME 04 - July.pdf.csv,1
+7/31/2020,"Software/License
+Computer","Systems
+Risk Management",DATIX LTD,34857438,57863.0,HOME 04 - July.pdf.csv,1
+7/31/2020,"Software/License
+Computer",Clinical Information,CERNER LTD,34873394,186582.0,HOME 04 - July.pdf.csv,1
+7/31/2020,"Software/License
+Computer","Systems
+Clinical Information",CERNER LTD,34873409,100073.0,HOME 04 - July.pdf.csv,1
+7/31/2020,"Software/License
+Computer","Systems
+Clinical Information",CERNER LTD,34873423,97518.0,HOME 04 - July.pdf.csv,1
+7/31/2020,"Software/License
+Contr Premises","Systems
+Domestic Contract",ISS MEDICLEAN LTD,34873431,30895.0,HOME 04 - July.pdf.csv,1
+7/31/2020,"Security
+Ext Contr Domestics",Domestic Contract,ISS MEDICLEAN LTD,34873431,51319.0,HOME 04 - July.pdf.csv,1
+7/31/2020,Electricity,Homerton Energy,EDF ENERGY CUSTOMERS PLC,34873534,73634.0,HOME 04 - July.pdf.csv,1
+7/31/2020,Services Received -,Employee Health,OHWORKS LTD,34873744,32071.0,HOME 04 - July.pdf.csv,1
+7/31/2020,"NHSTs
+Lease Rents","Management Service
+Hackney Ark - Estates",COMMUNITY HEALTH PARTNERSHIPS LTD,34873979,82074.0,HOME 04 - July.pdf.csv,1
+7/31/2020,Lease Rents,St. Leonards - Estates,NHS PROPERTY SERVICES LTD,34886950,32440.0,HOME 04 - July.pdf.csv,1
+7/31/2020,Lease Rents,St. Leonards - Estates,NHS PROPERTY SERVICES LTD,34886953,49136.0,HOME 04 - July.pdf.csv,1
+7/31/2020,Lease Rents,John Scott Health,NHS PROPERTY SERVICES LTD,34903334,28300.0,HOME 04 - July.pdf.csv,1
+7/31/2020,Lease Rents,"Centre - Estates
+Louis Freedman",NHS PROPERTY SERVICES LTD,34903344,43676.0,HOME 04 - July.pdf.csv,1
+7/31/2020,Lease Rents,"Centre - Estates
+St. Leonards - Estates",NHS PROPERTY SERVICES LTD,34903351,148624.0,HOME 04 - July.pdf.csv,1
+7/31/2020,Lease Rents,John Scott Health,NHS PROPERTY SERVICES LTD,34903372,41393.0,HOME 04 - July.pdf.csv,1
+7/31/2020,Service Charge,"Centre - Estates
+St. Leonards - Estates",NHS PROPERTY SERVICES LTD,34903385,189639.0,HOME 04 - July.pdf.csv,1
+7/31/2020,Service Charge,Louis Freedman,NHS PROPERTY SERVICES LTD,34903391,47069.0,HOME 04 - July.pdf.csv,1
+7/31/2020,Computer,"Centre - Estates
+Procurement",GENESIS AUTOMATION UK LTD,34903419,49500.0,HOME 04 - July.pdf.csv,1
+7/31/2020,"Software/License
+Services Received -",Immunology,DOCTORS LABORATORY LTD (THE),34913728,25466.0,HOME 04 - July.pdf.csv,1
+7/31/2020,"NHSTs
+AUC Additions",Balance Sheet,H&C CONTRACTS LTD,34926997,33214.0,HOME 04 - July.pdf.csv,1
+7/31/2020,Computer,Clinical Information,SERVELEC HEALTHCARE LTD,34933437,73907.0,HOME 04 - July.pdf.csv,1
+7/31/2020,"Software/License
+Consultant","Systems
+Opthalmology",MOORFIELDS EYE HOSPITAL NHS,34958173,27112.0,HOME 04 - July.pdf.csv,1
+7/31/2020,Services Received -,Paediatrics Sla,"FOUNDATION TRUST
+MOORFIELDS EYE HOSPITAL NHS",34958173,41772.0,HOME 04 - July.pdf.csv,1
+7/31/2020,"NHSTs
+Income tax - Current",Balance Sheet,"FOUNDATION TRUST
+INLAND REVENUE CIS",34969092,2298615.0,HOME 04 - July.pdf.csv,1
+7/31/2020,National Insurance -,Balance Sheet,INLAND REVENUE CIS,34969092,2767152.0,HOME 04 - July.pdf.csv,1
+7/16/2020,"Curr
+Services Received -",Virology,BARTS HEALTH NHS TRUST,34983625,28542.0,HOME 04 - July.pdf.csv,1
+7/31/2020,"NHSTs
+Lease Rents",Hackney Ark - Estates,COMMUNITY HEALTH PARTNERSHIPS LTD,34984112,98489.0,HOME 04 - July.pdf.csv,1
+7/31/2020,Lease Rents,Hackney Ark - Estates,COMMUNITY HEALTH PARTNERSHIPS LTD,34984113,98489.0,HOME 04 - July.pdf.csv,1
+7/31/2020,Laboratory Reagents,Chemical Pathology,ABBOTT LABORATORIES LTD,34984114,41312.0,HOME 04 - July.pdf.csv,1
+7/16/2020,Electricity,Homerton Energy,EDF ENERGY CUSTOMERS PLC,34984119,38266.0,HOME 04 - July.pdf.csv,1
+07/01/2020,Computer,Clinical Information,CERNER LTD,35004159,97518.0,HOME 04 - July.pdf.csv,1
+7/21/2020,"Software/License
+AUC Additions","Systems
+Balance Sheet",H&C CONTRACTS LTD,35027616,81877.0,HOME 04 - July.pdf.csv,1
+07/01/2020,Miscellaneous,Community Superhub,CITY & HACKNEY GP CONFEDERATION CIC,35066132,157015.0,HOME 04 - July.pdf.csv,1
+7/24/2020,"Expenditure
+Electricity",Homerton Energy,EDF ENERGY CUSTOMERS PLC,35066133,67933.0,HOME 04 - July.pdf.csv,1
+7/24/2020,Ext Contr Domestics,Domestic Contract,ISS MEDICLEAN LTD,35066138,594277.0,HOME 04 - July.pdf.csv,1
+7/24/2020,Vaccines,COVID-19,ISS MEDICLEAN LTD,35066144,213392.0,HOME 04 - July.pdf.csv,1
+7/24/2020,Contr Premises,Domestic Contract,ISS MEDICLEAN LTD,35066145,30895.0,HOME 04 - July.pdf.csv,1
+7/24/2020,"Security
+Ext Contr Domestics",Domestic Contract,ISS MEDICLEAN LTD,35066145,54477.0,HOME 04 - July.pdf.csv,1
+7/24/2020,Laboratory Reagents,Molecular Lab,CHRYSTAL CONSULTING LTD,35066746,40494.0,HOME 04 - July.pdf.csv,1
+7/24/2020,Med & Surg Equip,Endoscopy,SUPPLY CHAIN COORDINATION LIMITED,35066749,291785.0,HOME 04 - July.pdf.csv,1
+7/24/2020,"General
+Med & Surg Equip",Endoscopy,SUPPLY CHAIN COORDINATION LIMITED,35066749,58357.0,HOME 04 - July.pdf.csv,1
+7/27/2020,"General
+Vaccines",COVID-19,MY LAUNDRESS COMMERCIAL LTD,35089507,32563.0,HOME 04 - July.pdf.csv,1
+7/27/2020,Hospital Car Services,New Transport,ERS TRANSITION LTD,35090221,134757.0,HOME 04 - July.pdf.csv,1
+07/01/2020,Specialist Registrar,Reserves,ROYAL FREE LONDON NHS FOUNDATION,35112979,99700.0,HOME 04 - July.pdf.csv,1
+07/01/2020,Specialist Registrar,Reserves,"TRUST
+ROYAL FREE LONDON NHS FOUNDATION",35112987,93561.0,HOME 04 - July.pdf.csv,1
+7/29/2020,Computer,It Client Support,"TRUST
+APOGEE CORPORATION LTD",35115252,76875.0,HOME 04 - July.pdf.csv,1
+7/30/2020,"Maintenance
+AUC Additions",Balance Sheet,H&C CONTRACTS LTD,35118867,28215.0,HOME 04 - July.pdf.csv,1
+7/30/2020,Other Gen Supplies &,Health and Safety,SYNERGY HEALTH (UK) LTD,35119494,27887.0,HOME 04 - July.pdf.csv,1
+7/30/2020,"Srv
+Other Gen Supplies &",Health and Safety,SYNERGY HEALTH (UK) LTD,35119495,40176.0,HOME 04 - July.pdf.csv,1
+7/31/2020,"Srv
+Computer Hardware",COVID-19,DELL CORPORATION LTD,35121383,35000.0,HOME 04 - July.pdf.csv,1
+9/30/2020,AUC Additions,Balance Sheet,ANETIC AID LTD,34904014,55717.0,HOME 06 - September.pdf.csv,1
+9/30/2020,Services Received - NHSTs,Employee Health,OHWORKS LTD,35175346,41263.0,HOME 06 - September.pdf.csv,1
+9/30/2020,NonNHS Trade Pybls Curr,"Management Service
+Balance Sheet",SUPPLY CHAIN COORDINATION,35445388,54952.0,HOME 06 - September.pdf.csv,1
+9/30/2020,OthrIntngAst Additions,Balance Sheet,"LIMITED
+DELL CORPORATION LTD",35446325,113500.0,HOME 06 - September.pdf.csv,1
+9/30/2020,OthrIntngAst Additions,Balance Sheet,DELL CORPORATION LTD,35446326,32307.0,HOME 06 - September.pdf.csv,1
+9/30/2020,OthrIntngAst Additions,Balance Sheet,DELL CORPORATION LTD,35446327,32307.0,HOME 06 - September.pdf.csv,1
+9/30/2020,OthrIntngAst Additions,Balance Sheet,DELL CORPORATION LTD,35446328,113500.0,HOME 06 - September.pdf.csv,1
+9/30/2020,AUC Additions,Balance Sheet,FOREST GATE CONSTRUCTION,35447775,42667.0,HOME 06 - September.pdf.csv,1
+9/30/2020,Specialist Registrar,Reserves,"CO LTD
+ROYAL FREE LONDON NHS",35458290,88548.0,HOME 06 - September.pdf.csv,1
+9/30/2020,Contr Estate Management,Domestic Contract,"FOUNDATION TRUST
+ISS MEDICLEAN LTD",35458356,26325.0,HOME 06 - September.pdf.csv,1
+9/30/2020,Contr Premises Security,Domestic Contract,ISS MEDICLEAN LTD,35458356,42124.0,HOME 06 - September.pdf.csv,1
+9/30/2020,Ext Contr Catering,Domestic Contract,ISS MEDICLEAN LTD,35458356,197901.0,HOME 06 - September.pdf.csv,1
+9/30/2020,Ext Contr Domestics,Domestic Contract,ISS MEDICLEAN LTD,35458356,180474.0,HOME 06 - September.pdf.csv,1
+9/30/2020,Ext Contr Laundry,Domestic Contract,ISS MEDICLEAN LTD,35458356,46611.0,HOME 06 - September.pdf.csv,1
+9/30/2020,Ext Contr Oth Hotel Srv,Domestic Contract,ISS MEDICLEAN LTD,35458356,69958.0,HOME 06 - September.pdf.csv,1
+9/30/2020,Other Public Sector,Trust Board,NHS TOWER HAMLETS CCG,35458369,100350.0,HOME 06 - September.pdf.csv,1
+9/30/2020,"Books, Journals & Subscr",Trust Board,UCL PARTNERS,35458454,50000.0,HOME 06 - September.pdf.csv,1
+9/30/2020,Laboratory Chemicals,Chemical Pathology,ABBOTT LABORATORIES LTD,35461360,76010.0,HOME 06 - September.pdf.csv,1
+9/30/2020,Computer Software/License,Clinical Information Systems,CERNER LTD,35476729,29879.0,HOME 06 - September.pdf.csv,1
+9/30/2020,Computer Software/License,Clinical Information Systems,CERNER LTD,35476732,29879.0,HOME 06 - September.pdf.csv,1
+9/30/2020,X-Ray Equip Maint/Repair,Medical Electronics,SUPPLY CHAIN COORDINATION,35501642,81856.0,HOME 06 - September.pdf.csv,1
+9/30/2020,Lease Rents,Hackney Ark - Estates,"LIMITED
+COMMUNITY HEALTH",35501659,82074.0,HOME 06 - September.pdf.csv,1
+9/30/2020,Lease Rents,Sexual Health Estates,"PARTNERSHIPS LTD
+CUMBRAE PROPERTIES (1963)",35502425,28598.0,HOME 06 - September.pdf.csv,1
+9/30/2020,Services Received - NHSTs,Immunology,"LTD
+DOCTORS LABORATORY LTD",35502432,32438.0,HOME 06 - September.pdf.csv,1
+9/30/2020,NonNHS Trade Pybls Curr,Balance Sheet,"(THE)
+SUPPLY CHAIN COORDINATION",35503053,71602.0,HOME 06 - September.pdf.csv,1
+9/30/2020,AUC Additions,Balance Sheet,"LIMITED
+H&C CONTRACTS LTD",35524947,61837.0,HOME 06 - September.pdf.csv,1
+9/30/2020,AUC Additions,Balance Sheet,OLYMPUS KEYMED,35535738,302543.0,HOME 06 - September.pdf.csv,1
+9/30/2020,AUC Additions,Balance Sheet,OLYMPUS KEYMED,35535738,60508.0,HOME 06 - September.pdf.csv,1
+9/30/2020,Computer Software/License,Clinical Information Systems,CERNER LTD,35537047,97518.0,HOME 06 - September.pdf.csv,1
+9/30/2020,Computer Software/License,Clinical Information Systems,CERNER LTD,35537060,97518.0,HOME 06 - September.pdf.csv,1
+9/30/2020,Payroll Ded'ns N/S Curr,Balance Sheet,TUSKERDIRECT LTD,35537104,26806.0,HOME 06 - September.pdf.csv,1
+9/30/2020,NonNHS Trade Pybls Curr,Balance Sheet,SUPPLY CHAIN COORDINATION,35537160,75539.0,HOME 06 - September.pdf.csv,1
+9/30/2020,Other Gen Supplies & Srv,Health and Safety,"LIMITED
+SYNERGY HEALTH (UK) LTD",35537257,40151.0,HOME 06 - September.pdf.csv,1
+9/30/2020,Other Gen Supplies & Srv,Health and Safety,SYNERGY HEALTH (UK) LTD,35537260,37042.0,HOME 06 - September.pdf.csv,1
+9/30/2020,Other Gen Supplies & Srv,Health and Safety,SYNERGY HEALTH (UK) LTD,35537262,51801.0,HOME 06 - September.pdf.csv,1
+9/30/2020,Other Gen Supplies & Srv,Health and Safety,SYNERGY HEALTH (UK) LTD,35537264,46954.0,HOME 06 - September.pdf.csv,1
+9/30/2020,Specialist Registrar,Reserves,ROYAL FREE LONDON NHS,35537285,76176.0,HOME 06 - September.pdf.csv,1
+9/30/2020,Specialist Registrar,Reserves,"FOUNDATION TRUST
+ROYAL FREE LONDON NHS",35537286,86090.0,HOME 06 - September.pdf.csv,1
+9/30/2020,National Insurance - Curr,Balance Sheet,INLAND REVENUE CIS,35551730,2835938.0,HOME 06 - September.pdf.csv,1
+9/30/2020,Stocks Raw Materials,Balance Sheet,ALLIANCE HEALTHCARE,35554208,26946.0,HOME 06 - September.pdf.csv,1
+9/30/2020,AUC Additions,Balance Sheet,"DISTRIBUTION LTD
+SUPPLY CHAIN COORDINATION",35569421,42869.0,HOME 06 - September.pdf.csv,1
+9/30/2020,Services Received - NHSTs,Histopathology,"LIMITED
+BARTS HEALTH NHS TRUST",35572403,119631.0,HOME 06 - September.pdf.csv,1
+9/30/2020,Services Received - NHSTs,Virology,BARTS HEALTH NHS TRUST,35572413,28542.0,HOME 06 - September.pdf.csv,1
+9/30/2020,NonNHS Trade Pybls Curr,Balance Sheet,SUPPLY CHAIN COORDINATION,35584196,53340.0,HOME 06 - September.pdf.csv,1
+9/30/2020,NonNHS Trade Pybls Curr,Balance Sheet,"LIMITED
+SUPPLY CHAIN COORDINATION",35584320,85351.0,HOME 06 - September.pdf.csv,1
+9/30/2020,Services Received - NHSTs,Employee Health,"LIMITED
+OHWORKS LTD",35584336,34686.0,HOME 06 - September.pdf.csv,1
+9/30/2020,Electricity,"Management Service
+Homerton Energy",EDF ENERGY CUSTOMERS PLC,35601094,41712.0,HOME 06 - September.pdf.csv,1
+9/30/2020,AUC Additions,Balance Sheet,MAQUET LTD,35631263,51363.0,HOME 06 - September.pdf.csv,1
+9/30/2020,Stocks Raw Materials,Balance Sheet,ALLIANCE HEALTHCARE,35635172,29925.0,HOME 06 - September.pdf.csv,1
+9/30/2020,Hospitality,Unplanned Care,"DISTRIBUTION LTD
+LONDON BOROUGH OF",35637385,32467.0,HOME 06 - September.pdf.csv,1
+9/30/2020,AUC Additions,"Workstream (CCG Funded)
+Balance Sheet","HACKNEY
+CANON MEDICAL SYSTEMS LTD",35652733,106122.0,HOME 06 - September.pdf.csv,1
+9/30/2020,NonNHS Trade Pybls Curr,Balance Sheet,SUPPLY CHAIN COORDINATION,35666665,55255.0,HOME 06 - September.pdf.csv,1
+9/30/2020,NonNHS Trade Pybls Curr,Balance Sheet,"LIMITED
+SUPPLY CHAIN COORDINATION",35666691,80737.0,HOME 06 - September.pdf.csv,1
+9/30/2020,AUC Additions,Balance Sheet,"LIMITED
+B BRAUN MEDICAL LTD",35667114,25955.0,HOME 06 - September.pdf.csv,1
+9/30/2020,Vaccines,COVID-19,ISS MEDICLEAN LTD,35683464,231823.0,HOME 06 - September.pdf.csv,1
+9/30/2020,NonNHS Trade Pybls Curr,Balance Sheet,SUPPLY CHAIN COORDINATION,35696951,65905.0,HOME 06 - September.pdf.csv,1
+9/30/2020,Specialist Registrar,Reserves,"LIMITED
+ROYAL FREE LONDON NHS",35717260,76445.0,HOME 06 - September.pdf.csv,1
+9/30/2020,Specialist Registrar,Reserves,"FOUNDATION TRUST
+ROYAL FREE LONDON NHS",35717268,86890.0,HOME 06 - September.pdf.csv,1
+9/30/2020,Laboratory Test Kits,Chemical Pathology,"FOUNDATION TRUST
+ABBOTT LABORATORIES LTD",35723919,92697.0,HOME 06 - September.pdf.csv,1
+9/30/2020,Laboratory Test Kits,Chemical Pathology,ABBOTT LABORATORIES LTD,35723921,81420.0,HOME 06 - September.pdf.csv,1
+12/31/2020,Stocks Raw Materials,Balance Sheet,ALLIANCE HEALTHCARE DISTRIBUTION LTD,36481459,1620.0,HOME 09 - December.pdf.csv,1
+12/31/2020,Stocks Raw Materials,Balance Sheet,ALLIANCE HEALTHCARE DISTRIBUTION LTD,36481459,18.0,HOME 09 - December.pdf.csv,1
+12/31/2020,Stocks Raw Materials,Balance Sheet,ALLIANCE HEALTHCARE DISTRIBUTION LTD,36481459,20.0,HOME 09 - December.pdf.csv,1
+12/31/2020,Stocks Raw Materials,Balance Sheet,ALLIANCE HEALTHCARE DISTRIBUTION LTD,36481459,3.0,HOME 09 - December.pdf.csv,1
+12/31/2020,Stocks Raw Materials,Balance Sheet,ALLIANCE HEALTHCARE DISTRIBUTION LTD,36481459,36.0,HOME 09 - December.pdf.csv,1
+12/31/2020,Stocks Raw Materials,Balance Sheet,ALLIANCE HEALTHCARE DISTRIBUTION LTD,36481459,35.0,HOME 09 - December.pdf.csv,1
+12/31/2020,Stocks Raw Materials,Balance Sheet,ALLIANCE HEALTHCARE DISTRIBUTION LTD,36481459,19.0,HOME 09 - December.pdf.csv,1
+12/31/2020,Stocks Raw Materials,Balance Sheet,ALLIANCE HEALTHCARE DISTRIBUTION LTD,36481459,11317.0,HOME 09 - December.pdf.csv,1
+12/31/2020,Stocks Raw Materials,Balance Sheet,ALLIANCE HEALTHCARE DISTRIBUTION LTD,36481459,18000.0,HOME 09 - December.pdf.csv,1
+12/31/2020,Stocks Raw Materials,Balance Sheet,ALLIANCE HEALTHCARE DISTRIBUTION LTD,36481459,4968.0,HOME 09 - December.pdf.csv,1
+12/31/2020,Stocks Raw Materials,Balance Sheet,ALLIANCE HEALTHCARE DISTRIBUTION LTD,36481459,40.0,HOME 09 - December.pdf.csv,1
+12/31/2020,Stocks Raw Materials,Balance Sheet,ALLIANCE HEALTHCARE DISTRIBUTION LTD,36481459,4.0,HOME 09 - December.pdf.csv,1
+12/31/2020,Stocks Raw Materials,Balance Sheet,ALLIANCE HEALTHCARE DISTRIBUTION LTD,36481459,8.0,HOME 09 - December.pdf.csv,1
+12/31/2020,NonNHS Trade Pybls Curr,Balance Sheet,"HOSPITALS NHS TRUST
+SUPPLY CHAIN COORDINATION LIMITED",36487372,68593.0,HOME 09 - December.pdf.csv,1
+12/31/2020,NonNHS Trade Pybls Curr,Balance Sheet,SUPPLY CHAIN COORDINATION LIMITED,36487473,99843.0,HOME 09 - December.pdf.csv,1
+12/31/2020,Computer Maintenance,Foetal Medicine,HEALTHNETCONNECTIONS LTD,36488104,30202.0,HOME 09 - December.pdf.csv,1
+12/31/2020,Computer Maintenance,Foetal Medicine,HEALTHNETCONNECTIONS LTD,36488104,6040.0,HOME 09 - December.pdf.csv,1
+12/31/2020,Lease Rents,Sexual Health Estates,CUMBRAE PROPERTIES (1963) LTD,36510836,28598.0,HOME 09 - December.pdf.csv,1
+12/31/2020,Lease Rents,Sexual Health Estates,CUMBRAE PROPERTIES (1963) LTD,36510836,5719.0,HOME 09 - December.pdf.csv,1
+12/31/2020,Specialist Registrar,Reserves,ROYAL FREE LONDON NHS FOUNDATION,36512711,91390.0,HOME 09 - December.pdf.csv,1
+12/31/2020,Specialist Registrar,Reserves,"TRUST
+ROYAL FREE LONDON NHS FOUNDATION",36512724,87032.0,HOME 09 - December.pdf.csv,1
+12/31/2020,Specialist Registrar,Reserves,"TRUST
+ROYAL FREE LONDON NHS FOUNDATION",36512729,100741.0,HOME 09 - December.pdf.csv,1
+12/31/2020,Specialist Registrar,Reserves,"TRUST
+ROYAL FREE LONDON NHS FOUNDATION",36512736,98281.0,HOME 09 - December.pdf.csv,1
+12/31/2020,NonNHS Trade Pybls Curr,Balance Sheet,"TRUST
+SUPPLY CHAIN COORDINATION LIMITED",36512811,82405.0,HOME 09 - December.pdf.csv,1
+12/31/2020,Ext Contr Domestics,Domestic Contract,ISS MEDICLEAN LTD,36512821,-927099.0,HOME 09 - December.pdf.csv,-1
+12/31/2020,Specialist Registrar,Reserves,ROYAL FREE LONDON NHS FOUNDATION,36512892,98082.0,HOME 09 - December.pdf.csv,1
+12/31/2020,Laboratory Reagents,Molecular Lab,"TRUST
+CHRYSTAL CONSULTING LTD",36513054,65870.0,HOME 09 - December.pdf.csv,1
+12/31/2020,Laboratory Reagents,Molecular Lab,CHRYSTAL CONSULTING LTD,36513054,13174.0,HOME 09 - December.pdf.csv,1
+12/31/2020,Payroll Ded'ns N/S Curr,Balance Sheet,TUSKERDIRECT LTD,36524372,28025.0,HOME 09 - December.pdf.csv,1
+12/31/2020,Services Received - NHSTs,Immunology,DOCTORS LABORATORY LTD (THE),36543218,37758.0,HOME 09 - December.pdf.csv,1
+12/31/2020,Stocks Raw Materials,Balance Sheet,ALLIANCE HEALTHCARE DISTRIBUTION LTD,36543272,4620.0,HOME 09 - December.pdf.csv,1
+12/31/2020,Stocks Raw Materials,Balance Sheet,ALLIANCE HEALTHCARE DISTRIBUTION LTD,36543272,199.0,HOME 09 - December.pdf.csv,1
+12/31/2020,Stocks Raw Materials,Balance Sheet,ALLIANCE HEALTHCARE DISTRIBUTION LTD,36543272,76.0,HOME 09 - December.pdf.csv,1
+12/31/2020,Stocks Raw Materials,Balance Sheet,ALLIANCE HEALTHCARE DISTRIBUTION LTD,36543272,4.0,HOME 09 - December.pdf.csv,1
+12/31/2020,Stocks Raw Materials,Balance Sheet,ALLIANCE HEALTHCARE DISTRIBUTION LTD,36543272,17.0,HOME 09 - December.pdf.csv,1
+12/31/2020,Stocks Raw Materials,Balance Sheet,ALLIANCE HEALTHCARE DISTRIBUTION LTD,36543272,8083.0,HOME 09 - December.pdf.csv,1
+12/31/2020,Stocks Raw Materials,Balance Sheet,ALLIANCE HEALTHCARE DISTRIBUTION LTD,36543272,18000.0,HOME 09 - December.pdf.csv,1
+12/31/2020,Stocks Raw Materials,Balance Sheet,ALLIANCE HEALTHCARE DISTRIBUTION LTD,36543272,93.0,HOME 09 - December.pdf.csv,1
+12/31/2020,Stocks Raw Materials,Balance Sheet,ALLIANCE HEALTHCARE DISTRIBUTION LTD,36543272,2.0,HOME 09 - December.pdf.csv,1
+12/31/2020,Stocks Raw Materials,Balance Sheet,ALLIANCE HEALTHCARE DISTRIBUTION LTD,36543272,7.0,HOME 09 - December.pdf.csv,1
+12/31/2020,Stocks Raw Materials,Balance Sheet,ALLIANCE HEALTHCARE DISTRIBUTION LTD,36543272,2.0,HOME 09 - December.pdf.csv,1
+12/31/2020,Stocks Raw Materials,Balance Sheet,ALLIANCE HEALTHCARE DISTRIBUTION LTD,36543272,36.0,HOME 09 - December.pdf.csv,1
+12/31/2020,Stocks Raw Materials,Balance Sheet,ALLIANCE HEALTHCARE DISTRIBUTION LTD,36543272,35.0,HOME 09 - December.pdf.csv,1
+12/31/2020,Stocks Raw Materials,Balance Sheet,ALLIANCE HEALTHCARE DISTRIBUTION LTD,36543272,183.0,HOME 09 - December.pdf.csv,1
+12/31/2020,Stocks Raw Materials,Balance Sheet,ALLIANCE HEALTHCARE DISTRIBUTION LTD,36543272,415.0,HOME 09 - December.pdf.csv,1
+12/31/2020,Stocks Raw Materials,Balance Sheet,ALLIANCE HEALTHCARE DISTRIBUTION LTD,36543272,49.0,HOME 09 - December.pdf.csv,1
+12/31/2020,Stocks Raw Materials,Balance Sheet,ALLIANCE HEALTHCARE DISTRIBUTION LTD,36543272,92.0,HOME 09 - December.pdf.csv,1
+12/31/2020,Consultant,Comm. Paediatric Admin General,MOORFIELDS EYE HOSPITAL NHS,36564536,11531.0,HOME 09 - December.pdf.csv,1
+12/31/2020,Consultant,Opthalmology,"FOUNDATION TRUST
+MOORFIELDS EYE HOSPITAL NHS",36564536,27112.0,HOME 09 - December.pdf.csv,1
+12/31/2020,Services Received - NHSTs,Paediatrics Sla,"FOUNDATION TRUST
+MOORFIELDS EYE HOSPITAL NHS",36564536,41772.0,HOME 09 - December.pdf.csv,1
+12/31/2020,Electricity,Homerton Energy,"FOUNDATION TRUST
+EDF ENERGY CUSTOMERS PLC",36564537,9805.0,HOME 09 - December.pdf.csv,1
+12/31/2020,Electricity,Homerton Energy,EDF ENERGY CUSTOMERS PLC,36564537,58684.0,HOME 09 - December.pdf.csv,1
+12/31/2020,Income tax - Current,Balance Sheet,INLAND REVENUE CIS,36579974,2480629.0,HOME 09 - December.pdf.csv,1
+12/31/2020,National Insurance - Curr,Balance Sheet,INLAND REVENUE CIS,36579974,2917102.0,HOME 09 - December.pdf.csv,1
+12/31/2020,Shared Parental Leave,Balance Sheet,INLAND REVENUE CIS,36579974,-695.0,HOME 09 - December.pdf.csv,-1
+12/31/2020,Stat Adoption Pay - Curr,Balance Sheet,INLAND REVENUE CIS,36579974,-3525.0,HOME 09 - December.pdf.csv,-1
+12/31/2020,Statutory Mat Pay - Curr,Balance Sheet,INLAND REVENUE CIS,36579974,-82107.0,HOME 09 - December.pdf.csv,-1
+12/31/2020,NonNHS Trade Pybls Curr,Balance Sheet,SUPPLY CHAIN COORDINATION LIMITED,36591220,70457.0,HOME 09 - December.pdf.csv,1
+12/31/2020,Electricity,Homerton Energy,EDF ENERGY CUSTOMERS PLC,36610730,-9822.0,HOME 09 - December.pdf.csv,-1
+12/31/2020,Electricity,Homerton Energy,EDF ENERGY CUSTOMERS PLC,36610730,-58787.0,HOME 09 - December.pdf.csv,-1
+12/31/2020,Electricity,Homerton Energy,EDF ENERGY CUSTOMERS PLC,36610733,-9711.0,HOME 09 - December.pdf.csv,-1
+12/31/2020,Electricity,Homerton Energy,EDF ENERGY CUSTOMERS PLC,36610733,-58116.0,HOME 09 - December.pdf.csv,-1
+12/31/2020,Computer Software/License,Clinical Information Systems,SERVELEC HEALTHCARE LTD,36615574,73907.0,HOME 09 - December.pdf.csv,1
+12/31/2020,Computer Software/License,Clinical Information Systems,SERVELEC HEALTHCARE LTD,36615574,14781.0,HOME 09 - December.pdf.csv,1
+12/31/2020,Computer Software/License,Clinical Information Systems,SERVELEC HEALTHCARE LTD,36615586,73907.0,HOME 09 - December.pdf.csv,1
+12/31/2020,Computer Software/License,Clinical Information Systems,SERVELEC HEALTHCARE LTD,36615586,14781.0,HOME 09 - December.pdf.csv,1
+12/31/2020,Ext Contr Domestics,Domestic Contract,ISS MEDICLEAN LTD,36631668,927099.0,HOME 09 - December.pdf.csv,1
+12/31/2020,Electricity,Homerton Energy,EDF ENERGY CUSTOMERS PLC,36631680,9805.0,HOME 09 - December.pdf.csv,1
+12/31/2020,Electricity,Homerton Energy,EDF ENERGY CUSTOMERS PLC,36631680,58684.0,HOME 09 - December.pdf.csv,1
+12/31/2020,Electricity,Homerton Energy,EDF ENERGY CUSTOMERS PLC,36631792,9728.0,HOME 09 - December.pdf.csv,1
+12/31/2020,Electricity,Homerton Energy,EDF ENERGY CUSTOMERS PLC,36631792,58213.0,HOME 09 - December.pdf.csv,1
+12/31/2020,Electricity,Homerton Energy,EDF ENERGY CUSTOMERS PLC,36631850,9748.0,HOME 09 - December.pdf.csv,1
+12/31/2020,Electricity,Homerton Energy,EDF ENERGY CUSTOMERS PLC,36631850,58335.0,HOME 09 - December.pdf.csv,1
+12/31/2020,Independent Sector,Ct Scanner,TELEMEDICINE CLINIC LTD,36633314,28419.0,HOME 09 - December.pdf.csv,1
+12/31/2020,Stocks Raw Materials,Balance Sheet,JANSSEN CILAG LTD,36639342,12240.0,HOME 09 - December.pdf.csv,1
+12/31/2020,Stocks Raw Materials,Balance Sheet,JANSSEN CILAG LTD,36639342,13104.0,HOME 09 - December.pdf.csv,1
+12/31/2020,Stocks Raw Materials,Balance Sheet,JANSSEN CILAG LTD,36639342,860.0,HOME 09 - December.pdf.csv,1
+12/31/2020,Ext Contr Laundry,Domestic Contract,ISS MEDICLEAN LTD,36642158,33553.0,HOME 09 - December.pdf.csv,1
+12/31/2020,Other recvables - Current,Balance Sheet,SME HCI LTD,36642196,25970.0,HOME 09 - December.pdf.csv,1
+12/31/2020,Other Gen Supplies & Srv,Health and Safety,SYNERGY HEALTH (UK) LTD,36644322,47249.0,HOME 09 - December.pdf.csv,1
+12/31/2020,Other Gen Supplies & Srv,Health and Safety,SYNERGY HEALTH (UK) LTD,36644344,42822.0,HOME 09 - December.pdf.csv,1
+12/31/2020,Electricity,Homerton Energy,EDF ENERGY CUSTOMERS PLC,36644371,6544.0,HOME 09 - December.pdf.csv,1
+12/31/2020,Electricity,Homerton Energy,EDF ENERGY CUSTOMERS PLC,36644371,39195.0,HOME 09 - December.pdf.csv,1
+12/31/2020,Ext Contr Laundry,Domestic Contract,ISS MEDICLEAN LTD,36644430,-33553.0,HOME 09 - December.pdf.csv,-1
+12/31/2020,Stocks Raw Materials,Balance Sheet,GILEAD SCIENCES LTD,36661368,9820.0,HOME 09 - December.pdf.csv,1
+12/31/2020,Stocks Raw Materials,Balance Sheet,GILEAD SCIENCES LTD,36661368,6595.0,HOME 09 - December.pdf.csv,1
+12/31/2020,Stocks Raw Materials,Balance Sheet,GILEAD SCIENCES LTD,36661368,5875.0,HOME 09 - December.pdf.csv,1
+12/31/2020,Stocks Raw Materials,Balance Sheet,GILEAD SCIENCES LTD,36661368,5227.0,HOME 09 - December.pdf.csv,1
+12/31/2020,Stocks Raw Materials,Balance Sheet,GILEAD SCIENCES LTD,36661371,12276.0,HOME 09 - December.pdf.csv,1
+12/31/2020,Stocks Raw Materials,Balance Sheet,GILEAD SCIENCES LTD,36661371,8244.0,HOME 09 - December.pdf.csv,1
+12/31/2020,Stocks Raw Materials,Balance Sheet,GILEAD SCIENCES LTD,36661371,8712.0,HOME 09 - December.pdf.csv,1
+12/31/2020,Med & Surg Equip Hire,Integrated Comm Equip,LONDON BOROUGH OF HACKNEY,36679364,305155.0,HOME 09 - December.pdf.csv,1
+12/31/2020,Other Gen Supplies & Srv,Health and Safety,SYNERGY HEALTH (UK) LTD,36679387,77647.0,HOME 09 - December.pdf.csv,1
+12/31/2020,Other Gen Supplies & Srv,Health and Safety,SYNERGY HEALTH (UK) LTD,36679389,83340.0,HOME 09 - December.pdf.csv,1
+12/31/2020,Vaccines,COVID-19,ISS MEDICLEAN LTD,36679418,150336.0,HOME 09 - December.pdf.csv,1
+12/31/2020,AUC Additions,Balance Sheet,LOGAN CONSTRUCTION (SE) LTD,36682429,435705.0,HOME 09 - December.pdf.csv,1
+12/31/2020,Laboratory Chemicals,Chemical Pathology,ABBOTT LABORATORIES LTD,36694885,91428.0,HOME 09 - December.pdf.csv,1
+12/31/2020,Laboratory Chemicals,Chemical Pathology,ABBOTT LABORATORIES LTD,36694885,18417.0,HOME 09 - December.pdf.csv,1
+12/31/2020,Laboratory Chemicals,Chemical Pathology,ABBOTT LABORATORIES LTD,36694885,657.0,HOME 09 - December.pdf.csv,1
+12/31/2020,NonNHS Trade Pybls Curr,Balance Sheet,SUPPLY CHAIN COORDINATION LIMITED,36697876,99530.0,HOME 09 - December.pdf.csv,1
+12/31/2020,Stocks Raw Materials,Balance Sheet,ALLIANCE HEALTHCARE DISTRIBUTION LTD,36708324,838.0,HOME 09 - December.pdf.csv,1
+12/31/2020,Stocks Raw Materials,Balance Sheet,ALLIANCE HEALTHCARE DISTRIBUTION LTD,36708324,16.0,HOME 09 - December.pdf.csv,1
+12/31/2020,Stocks Raw Materials,Balance Sheet,ALLIANCE HEALTHCARE DISTRIBUTION LTD,36708324,18.0,HOME 09 - December.pdf.csv,1
+12/31/2020,Stocks Raw Materials,Balance Sheet,ALLIANCE HEALTHCARE DISTRIBUTION LTD,36708324,161.0,HOME 09 - December.pdf.csv,1
+12/31/2020,Stocks Raw Materials,Balance Sheet,ALLIANCE HEALTHCARE DISTRIBUTION LTD,36708324,26.0,HOME 09 - December.pdf.csv,1
+12/31/2020,Stocks Raw Materials,Balance Sheet,ALLIANCE HEALTHCARE DISTRIBUTION LTD,36708324,9188.0,HOME 09 - December.pdf.csv,1
+12/31/2020,Stocks Raw Materials,Balance Sheet,ALLIANCE HEALTHCARE DISTRIBUTION LTD,36708324,63.0,HOME 09 - December.pdf.csv,1
+12/31/2020,Stocks Raw Materials,Balance Sheet,ALLIANCE HEALTHCARE DISTRIBUTION LTD,36708324,34.0,HOME 09 - December.pdf.csv,1
+12/31/2020,Stocks Raw Materials,Balance Sheet,ALLIANCE HEALTHCARE DISTRIBUTION LTD,36708324,12.0,HOME 09 - December.pdf.csv,1
+12/31/2020,Stocks Raw Materials,Balance Sheet,ALLIANCE HEALTHCARE DISTRIBUTION LTD,36708324,11.0,HOME 09 - December.pdf.csv,1
+12/31/2020,Stocks Raw Materials,Balance Sheet,ALLIANCE HEALTHCARE DISTRIBUTION LTD,36708324,2.0,HOME 09 - December.pdf.csv,1
+12/31/2020,Stocks Raw Materials,Balance Sheet,ALLIANCE HEALTHCARE DISTRIBUTION LTD,36708324,10.0,HOME 09 - December.pdf.csv,1
+12/31/2020,Stocks Raw Materials,Balance Sheet,ALLIANCE HEALTHCARE DISTRIBUTION LTD,36708324,159.0,HOME 09 - December.pdf.csv,1
+12/31/2020,Stocks Raw Materials,Balance Sheet,ALLIANCE HEALTHCARE DISTRIBUTION LTD,36708324,7.0,HOME 09 - December.pdf.csv,1
+12/31/2020,Stocks Raw Materials,Balance Sheet,ALLIANCE HEALTHCARE DISTRIBUTION LTD,36708324,50.0,HOME 09 - December.pdf.csv,1
+12/31/2020,Stocks Raw Materials,Balance Sheet,ALLIANCE HEALTHCARE DISTRIBUTION LTD,36708324,13473.0,HOME 09 - December.pdf.csv,1
+12/31/2020,Stocks Raw Materials,Balance Sheet,ALLIANCE HEALTHCARE DISTRIBUTION LTD,36708324,15000.0,HOME 09 - December.pdf.csv,1
+12/31/2020,Stocks Raw Materials,Balance Sheet,ALLIANCE HEALTHCARE DISTRIBUTION LTD,36708324,12.0,HOME 09 - December.pdf.csv,1
+12/31/2020,Stocks Raw Materials,Balance Sheet,ALLIANCE HEALTHCARE DISTRIBUTION LTD,36708324,46.0,HOME 09 - December.pdf.csv,1
+12/31/2020,Stocks Raw Materials,Balance Sheet,ALLIANCE HEALTHCARE DISTRIBUTION LTD,36708324,18.0,HOME 09 - December.pdf.csv,1
+12/31/2020,Stocks Raw Materials,Balance Sheet,ALLIANCE HEALTHCARE DISTRIBUTION LTD,36708324,9.0,HOME 09 - December.pdf.csv,1
+12/31/2020,Stocks Raw Materials,Balance Sheet,ALLIANCE HEALTHCARE DISTRIBUTION LTD,36708324,35.0,HOME 09 - December.pdf.csv,1
+12/31/2020,Stocks Raw Materials,Balance Sheet,ALLIANCE HEALTHCARE DISTRIBUTION LTD,36708324,32.0,HOME 09 - December.pdf.csv,1
+12/31/2020,Stocks Raw Materials,Balance Sheet,ALLIANCE HEALTHCARE DISTRIBUTION LTD,36708324,475.0,HOME 09 - December.pdf.csv,1
+12/31/2020,Stocks Raw Materials,Balance Sheet,ALLIANCE HEALTHCARE DISTRIBUTION LTD,36708324,4.0,HOME 09 - December.pdf.csv,1
+12/31/2020,Stocks Raw Materials,Balance Sheet,ALLIANCE HEALTHCARE DISTRIBUTION LTD,36708324,58.0,HOME 09 - December.pdf.csv,1
+12/31/2020,Stocks Raw Materials,Balance Sheet,ALLIANCE HEALTHCARE DISTRIBUTION LTD,36708324,236.0,HOME 09 - December.pdf.csv,1
+12/31/2020,Payt Rec On A/C Susp <1Yr,Balance Sheet,NHS CITY AND HACKNEY CCG,36736257,31949.0,HOME 09 - December.pdf.csv,1
+12/31/2020,AUC Additions,Balance Sheet,CASTONS,36743328,36784.0,HOME 09 - December.pdf.csv,1
+12/31/2020,AUC Additions,Balance Sheet,CASTONS,36744574,28300.0,HOME 09 - December.pdf.csv,1
+12/31/2020,AUC Additions,Balance Sheet,CASTONS,36744574,5660.0,HOME 09 - December.pdf.csv,1
+12/31/2020,NonNHS Trade Pybls Curr,Balance Sheet,SUPPLY CHAIN COORDINATION LIMITED,36753456,106206.0,HOME 09 - December.pdf.csv,1
