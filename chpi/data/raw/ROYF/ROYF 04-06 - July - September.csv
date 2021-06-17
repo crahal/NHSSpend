@@ -1,4 +1,4 @@
-Dept Family,Organisation Name,Accounting Year,Period,Dater,Transaction Number,Supplier,VAT Registration Number,Expense Area,Expense type,Amount
+Dept Family,Organisation Name,Accounting Year,Period,Date,Transaction Number,Supplier,VAT Registration Number,Expense Area,Expense type,Amount
 Department of Health,Royal Free London NHS Foundation Trust,2020,4,01/07/2020,1393741,University College London,524371168,Rf:Cardiology,Other Non-Clinical Services,"224,000.00"
 Department of Health,Royal Free London NHS Foundation Trust,2020,4,01/07/2020,1426530,Siemens Financial Services Ltd,222438292,Rf:Radiology,Radiology Equipment,"31,560.55"
 Department of Health,Royal Free London NHS Foundation Trust,2020,4,01/07/2020,1430664,Philips Healthcare (Surrey),407850060,Tw:Patient Systems,Other Non-Clinical Supplies,"68,358.32"
