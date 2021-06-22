@@ -1,14 +1,16 @@
+<p align="center">
 <img src="https://github.com/crahal/NHSSpend/blob/master/papers/figures/matching_summary_header.png" width="900"/>
 
-##  :bar_chart: :chart_with_upwards_trend: NHSSpend: Tools and data for NHS procurement :chart_with_downwards_trend: :bar_chart:	
+## :bar_chart: NHSSpend: Tools and data for NHS procurement :chart_with_upwards_trend:
 
 ![coverage](https://img.shields.io/badge/Purpose-Research-yellow)
-[![Generic badge](https://img.shields.io/badge/Python-3.6-<red>.svg)](https://shields.io/)
+[![Generic badge](https://img.shields.io/badge/Python-3.6-red.svg)](https://shields.io/)
 [![Generic badge](https://img.shields.io/badge/License-MIT-blue.svg)](https://shields.io/)
 [![Generic badge](https://img.shields.io/badge/Maintained-Yes-brightgreen.svg)](https://shields.io/)
 [![Generic badge](https://img.shields.io/badge/BuildPassing-No-orange.svg)](https://shields.io/)
-![coverage](https://img.shields.io/badge/Rating-5\5-orange)
+![coverage](https://img.shields.io/badge/Data-£445bn-purple)
 ---
+</p>
 
 ## Introduction
 
