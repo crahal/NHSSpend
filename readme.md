@@ -1,8 +1,13 @@
 <img src="https://github.com/crahal/NHSSpend/blob/master/papers/figures/matching_summary_header.png" width="900"/>
 
-# NHSSpend
+##  :bar_chart: :chart_with_upwards_trend: NHSSpend: Tools and data for reconciling NHS procurement data :chart_with_downwards_trend: :bar_chart:	
 
-[![Generic badge](https://img.shields.io/badge/Python-3.6-<red>.svg)](https://shields.io/)  [![Generic badge](https://img.shields.io/badge/License-MIT-blue.svg)](https://shields.io/)  [![Generic badge](https://img.shields.io/badge/Maintained-Yes-green.svg)](https://shields.io/)[![Generic badge](https://img.shields.io/badge/BuildPassing-No-red.svg)](https://shields.io/)
+![coverage](https://img.shields.io/badge/Purpose-Research-yellow)
+[![Generic badge](https://img.shields.io/badge/Python-3.6-<red>.svg)](https://shields.io/)
+[![Generic badge](https://img.shields.io/badge/License-MIT-blue.svg)](https://shields.io/)
+[![Generic badge](https://img.shields.io/badge/Maintained-Yes-brightgreen.svg)](https://shields.io/)
+[![Generic badge](https://img.shields.io/badge/BuildPassing-No-orange.svg)](https://shields.io/)
+![coverage](https://img.shields.io/badge/Rating-5\5-orange)
 ---
 
 ## Introduction
