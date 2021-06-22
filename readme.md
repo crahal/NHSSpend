@@ -31,13 +31,13 @@ The data originates from one of two lists of recognised NHS institutions (Trusts
 
 The procurement data itself is provided under an [Open Government License](http://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/) (OGL). Guidance for publishing spend over £25,000 is published by [HM Treasury](https://www.gov.uk/government/publications/guidance-for-publishing-spend-over-25000).
 
-## Clean, reconciled data
-
-It is possible that you are reading this most interested in a copy of the output data! A link to the scraped, parsed, cleaned and reconciled can be found at [NHSSpend/data/data_final](https://github.com/crahal/NHSSpend/tree/master/data/data_final). Please see the readme.md in that subdirectory for information on each of the fields.
-
 ## Reconciliation
 
 The `es_configure.md` describes the reconciliation approach. These reconciliations are then manually verified and merged back into the procurement data.
+
+## Clean, Reconciled Data
+
+It is possible that you are reading this most interested in a copy of the output data! A link to the scraped, parsed, cleaned and reconciled can be found at [NHSSpend/data/data_final](https://github.com/crahal/NHSSpend/tree/master/data/data_final). Please see the readme.md in that subdirectory for information on each of the fields.
 
 ## Structure
 
