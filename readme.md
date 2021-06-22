@@ -1,6 +1,6 @@
 <img src="https://github.com/crahal/NHSSpend/blob/master/papers/figures/matching_summary_header.png" width="900"/>
 
-##  :bar_chart: :chart_with_upwards_trend: NHSSpend: Tools and data for reconciling NHS procurement data :chart_with_downwards_trend: :bar_chart:	
+##  :bar_chart: :chart_with_upwards_trend: NHSSpend: Tools and data for NHS procurement data :chart_with_downwards_trend: :bar_chart:	
 
 ![coverage](https://img.shields.io/badge/Purpose-Research-yellow)
 [![Generic badge](https://img.shields.io/badge/Python-3.6-<red>.svg)](https://shields.io/)
