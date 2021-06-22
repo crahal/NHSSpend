@@ -90,7 +90,7 @@ Repo structure is based on the ```tree``` [utility](https://en.wikipedia.org/wik
 
 ## Acknowledgements.
 
-This work was primarily funded by the [British Academy]. In addition to this, generous funding was provided by [John Mohan](https://www.birmingham.ac.uk/schools/social-policy/staff/profile.aspx?ReferenceId=75702) for the undertaking of a 'data audit' by Steve Barnard. An earlier 'proof of concept' of the project was funded by ESRC Grant ES/M010392/1 (PI [John Mohan](https://www.birmingham.ac.uk/schools/social-policy/staff/profile.aspx?ReferenceId=75702)) and undertaken at the [Third Sector Research Sector](https://www.thirdsector.co.uk/third-sector-research). Additional thanks are due to Max Hattersly, Ben Goodair and Yu Pei for all of their work on data verification.
+This work was primarily funded by the [British Academy]. In addition to this, generous funding was provided by [John Mohan](https://www.birmingham.ac.uk/schools/social-policy/staff/profile.aspx?ReferenceId=75702) for the undertaking of a 'data audit' by Steve Barnard. An earlier 'proof of concept' of the project was funded by ESRC Grant ES/M010392/1 (PI [John Mohan](https://www.birmingham.ac.uk/schools/social-policy/staff/profile.aspx?ReferenceId=75702)) and undertaken at the [Third Sector Research Sector](https://www.birmingham.ac.uk/research/tsrc/index.aspx). Additional thanks are due to Max Hattersly, Ben Goodair and Yu Pei for all of their work on data verification.
 
 ## Licensing
 
