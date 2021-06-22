@@ -1,4 +1,3 @@
-<p align="center">
 <img src="https://github.com/crahal/NHSSpend/blob/master/papers/figures/matching_summary_header.png" width="900"/>
 
 ## :bar_chart: NHSSpend: Tools and data for NHS procurement :chart_with_upwards_trend:
@@ -10,7 +9,6 @@
 [![Generic badge](https://img.shields.io/badge/BuildPassing-No-orange.svg)](https://shields.io/)
 ![coverage](https://img.shields.io/badge/Data-£445bn-purple)
 ---
-</p>
 
 ## Introduction
 
