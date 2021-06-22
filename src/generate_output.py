@@ -44,6 +44,7 @@ def build_top_company_df(pay_df, Year, data_path, metric):
 
 
 def build_top_company_suppliers(pay_df, d_path, filename, metric):
+    """ Who are the top company suppliers? """
     list_of_dfs = []
     ch_pay_df = pay_df[pay_df['match_type'].str.contains('Compan')]
     data_path = os.path.join(d_path, '..')
@@ -56,14 +57,8 @@ def build_top_company_suppliers(pay_df, d_path, filename, metric):
     df.to_csv(os.path.join(d_path, filename))
 
 
-
-
-
-
-
-
-
 def load_ccname(cc_path, norm_path):
+    """ load and normalise a frozen variant of the chairty commission data """
     cc_name = pd.read_csv(os.path.join(cc_path, 'extract_name.csv'),
                           warn_bad_lines=False, error_bad_lines=False)
     cc_regdate = pd.read_csv(os.path.join(cc_path,
@@ -88,7 +83,9 @@ def load_ccname(cc_path, norm_path):
     return cc_name
 
 
-def build_company_tables(pay_df, d_path, filename, orgtype, metric):
+def build_company_tables(pay_df, d_path, filename, orgtype):
+    """ build company table for shapefile merge"""
+
     trust_list = pd.read_excel(os.path.join(d_path, '..', 'data_support',
                                             orgtype+'_list.xls'))
     if orgtype=='trust':
@@ -133,7 +130,9 @@ def build_company_tables(pay_df, d_path, filename, orgtype, metric):
     df.to_csv(os.path.join(d_path, filename))
 
 
-def build_charity_tables(pay_df, d_path, filename, orgtype, metric):
+def build_charity_tables(pay_df, d_path, filename, orgtype):
+    """ build charity tables for shapefile merge"""
+
     trust_list = pd.read_excel(os.path.join(d_path, '..', 'data_support',
                                             orgtype+'_list.xls'))
     if orgtype=='trust':
@@ -245,10 +244,12 @@ def build_top_org_charity_df(pay_df, cc_pay_df, Year, trust_list, varname, metri
 
 
 def build_top_org_company_procurers(pay_df, d_path, filename, orgtype, metric):
+    """ build top company procurers"""
+
     trust_list = pd.read_excel(os.path.join(d_path, '..', 'data_support', orgtype+'_list.xls'))
-    if orgtype=='trust':
+    if orgtype == 'trust':
         varnames = ['trust name', 'NHS Trust']
-    elif orgtype=='ccg':
+    elif orgtype == 'ccg':
         varnames = ['ccg19nm', 'NHS CCG']
     trust_list = trust_list[[varnames[0], 'abrev']]
 #    cc_merge = pd.merge(cc_merge, trust_list, how='left', left_index=True, right_on='abrev')
@@ -272,7 +273,10 @@ def build_top_org_company_procurers(pay_df, d_path, filename, orgtype, metric):
 
 
 def build_top_org_charity_procurers(pay_df, d_path, filename, orgtype, metric):
-    trust_list = pd.read_excel(os.path.join(d_path, '..', 'data_support', orgtype+'_list.xls'))
+    """ Which organisations procure most from charities?"""
+
+    trust_list = pd.read_excel(os.path.join(d_path, '..',
+                                            'data_support', orgtype+'_list.xls'))
     if orgtype=='trust':
         varnames = ['trust name', 'NHS Trust']
     elif orgtype=='ccg':
@@ -331,6 +335,7 @@ def build_top_charity_df(pay_df, Year, data_path, metric):
 
 
 def build_top_charity_suppliers(pay_df, d_path, filename, metric):
+    """ Build the top charity suppliers for the dashboard """
     list_of_dfs = []
     cc_pay_df = pay_df[pay_df['match_type'].str.contains('Charity')]
     data_path = os.path.join(d_path, '..')
@@ -350,37 +355,52 @@ def transparency_score(num_files, days_last_trans, pc_pdfs, ease_scraping):
     ''' generating the transparency score for the ccg'''
 
 
-def output_for_dashboard(mergepath, dashboard):
-#    generate_coverage_dashboard_dataset(mergepath, dashboard)
-    print('cool, im getting here')
-    ccg_pay_df = pd.read_csv(os.path.join(mergepath, 'ccg_merged_with_recon.tsv'), sep='\t')
-    trust_pay_df = pd.read_csv(os.path.join(mergepath, 'trust_merged_with_recon.tsv'), sep='\t')
+def output_for_dashboard(finalpath, dashboard, mergepath):
+    """
+    A simple function for building the output for the dashboard
 
+    Parameters
+    ----------
+    first : file path
+        the location of the final data
+    second : file path
+        the output location of the dashboard data
+    Returns
+    -------
+    None
+    """
+#    generate_coverage_dashboard_dataset(mergepath, dashboard)
+    ccg_pay_df = pd.read_csv(os.path.join(finalpath, 'payments_ccg_final.csv'),
+                             index_col=0, low_memory=False)
+    trust_pay_df = pd.read_csv(os.path.join(finalpath, 'payments_trust_final.csv'),
+                               index_col=0, low_memory=False)
+    print('hello! test')
     build_top_charity_suppliers(ccg_pay_df, dashboard, 'ccg_top10_cc_byvalue.csv', 'Value (%)')
     build_top_charity_suppliers(trust_pay_df, dashboard, 'trust_top10_cc_byvalue.csv', 'Value (%)')
-    build_top_org_charity_procurers(ccg_pay_df, dashboard, 'ccg_top10_orgs_cc_byvalue.csv', 'ccg', 'Value (%)')
-    build_top_org_charity_procurers(trust_pay_df, dashboard, 'trust_top10_orgs_cc_byvalue.csv', 'trust', 'Value (%)')
-    build_charity_tables(ccg_pay_df, dashboard, 'ccg_table_cc_byvalue.csv', 'ccg', 'Value (%)')
-    build_charity_tables(trust_pay_df, dashboard, 'trust_table_cc_byvalue.csv', 'trust', 'Value (%)')
     build_top_charity_suppliers(ccg_pay_df, dashboard, 'ccg_top10_cc_bycount.csv', 'Count (%)')
     build_top_charity_suppliers(trust_pay_df, dashboard, 'trust_top10_cc_bycount.csv', 'Count (%)')
+    print('hello! test test')
+    build_top_org_charity_procurers(ccg_pay_df, dashboard, 'ccg_top10_orgs_cc_byvalue.csv', 'ccg', 'Value (%)')
+    build_top_org_charity_procurers(trust_pay_df, dashboard, 'trust_top10_orgs_cc_byvalue.csv', 'trust', 'Value (%)')
     build_top_org_charity_procurers(ccg_pay_df, dashboard, 'ccg_top10_orgs_cc_bycount.csv', 'ccg', 'Count (%)')
     build_top_org_charity_procurers(trust_pay_df, dashboard, 'trust_top10_orgs_cc_bycount.csv', 'trust', 'Count (%)')
-    build_charity_tables(ccg_pay_df, dashboard, 'ccg_table_cc_bycount.csv', 'ccg', 'Count (%)')
-    build_charity_tables(trust_pay_df, dashboard, 'trust_table_cc_bycount.csv', 'trust', 'Count (%)')
-
+    print('hello! test test test')
     build_top_org_company_procurers(ccg_pay_df, dashboard, 'ccg_top10_orgs_ch_byvalue.csv', 'ccg', 'Value (%)')
     build_top_org_company_procurers(trust_pay_df, dashboard, 'trust_top10_orgs_ch_byvalue.csv', 'trust', 'Value (%)')
     build_top_org_company_procurers(ccg_pay_df, dashboard, 'ccg_top10_orgs_ch_bycount.csv', 'ccg', 'Count (%)')
     build_top_org_company_procurers(trust_pay_df, dashboard, 'trust_top10_orgs_ch_bycount.csv', 'trust', 'Count (%)')
-    build_company_tables(ccg_pay_df, dashboard, 'ccg_table_ch_byvalue.csv', 'ccg', 'Value (%)')
-    build_company_tables(trust_pay_df, dashboard, 'trust_table_ch_byvalue.csv', 'trust', 'Value (%)')
-    build_company_tables(ccg_pay_df, dashboard, 'ccg_table_ch_bycount.csv', 'ccg', 'Count (%)')
-    build_company_tables(trust_pay_df, dashboard, 'trust_table_ch_bycount.csv', 'trust', 'Count (%)')
+    print('hello! test test test test')
     build_top_company_suppliers(ccg_pay_df, dashboard,  'ccg_top10_ch_byvalue.csv', 'Value (%)')
     build_top_company_suppliers(trust_pay_df, dashboard, 'trust_top10_ch_byvalue.csv', 'Value (%)')
     build_top_company_suppliers(ccg_pay_df, dashboard, 'ccg_top10_ch_bycount.csv', 'Count (%)')
     build_top_company_suppliers(trust_pay_df, dashboard, 'trust_top10_ch_bycount.csv', 'Count (%)')
+    print('hello! test test test test test')
+    build_charity_tables(ccg_pay_df, dashboard, 'ccg_table_cc.csv', 'ccg')
+    build_charity_tables(trust_pay_df, dashboard, 'trust_table_cc.csv', 'trust')
+    print('hello! test test test test test test')
+    build_company_tables(ccg_pay_df, dashboard, 'ccg_table_ch.csv', 'ccg')
+    build_company_tables(trust_pay_df, dashboard, 'trust_table_ch.csv', 'trust')
+
 
 def generate_coverage_dashboard_dataset(mergepath, dashboard):
     df = pd.read_csv(os.path.join(mergepath, 'merged_clean_spending.tsv'),
