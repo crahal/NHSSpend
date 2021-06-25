@@ -1,1 +1,1 @@
-Audit
+This is a subdirectory to hold the absolutely unbelievable work done by Steve Barnard in manually verifying ever line of possible suggested charity matches, and in 'eeking out' additional charity matches from the unmatched file.
