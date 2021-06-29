@@ -1,3 +1,4 @@
 [submodule "dashboard"]
 	path = dashboard
 	url = https://github.com/ianknowles/nhsspenddash.git
+	branch = nhsdash
