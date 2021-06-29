@@ -50,7 +50,6 @@ Repo structure is based on the ```tree``` [utility](https://en.wikipedia.org/wik
 │   │   ├ general_analysis_functions.py  
 │   │   ├ helper_functions.py  
 │   │   ├ charity_analysis_functions.py  
-│   └ dashboard  
 │   ├ scrape_and_parse_ccgs.py  
 │   ├ scrape_and_parse_trusts.py  
 │   ├ scraping_tools.py  
@@ -61,6 +60,7 @@ Repo structure is based on the ```tree``` [utility](https://en.wikipedia.org/wik
 │   ├ parsing_tools.py  
 │   ├ pdf_table_parser.py  
 │   ├ preconciliation.py  
+├ dashboard  
 ├ data  
 │   └ data_support/*  
 │   └ data_cc/*  
