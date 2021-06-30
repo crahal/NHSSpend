@@ -23,7 +23,7 @@ This is a subdirectory to hold the final outputs of the project. It is generated
     * `CharityRegNo`: An associated CharityRegNo from the Charity Commission data.
     * `CharitySubNo`: An associated CharitySubNo from the Charity Commission data.
     * `CharityNameNo`: An associated CharityNameNo from the Charity Commission data (but not from the audit)
-    * `audit_type`: Whether the match; be it 'CompanyName' or 'ChartityName' was determined either solely by the automatic reconciliation process ("1") or the audit process ("2: ")
+    * `audit_type`: Whether the match; be it 'CompanyName' or 'ChartityName' was determined either solely by the automatic reconciliation process and then reviewed ("1"), or via an extremely deep audit process ("2: " pertains to that done by Steve Barnard, and 3. to that done for Companies by Ben Goodair)
     * `CHnotes`: Notes on the charity (CharityName, not verif_match) as determined by the audit process
     * `CCnotes`: Notes on the company (CompanyName, not verif_match) as determined by the audit process
     * `isCIC`: Whether the supplier is a Community Interest Company
@@ -40,7 +40,7 @@ This is a subdirectory to hold the final outputs of the project. It is generated
     * `CompanyNumber`:
     * `CHnotes`: Notes on the charity (CharityName, not verif_match) as determined by the audit process
     * `isCIC`: Whether the supplier is a Community Interest Company
-    * `audit_type`: Whether the match; be it 'CompanyName' or 'ChartityName' was determined either solely by the automatic reconciliation process ("1") or the audit process ("2: ")
+    * `audit_type`: Whether the match; be it 'CompanyName' or 'ChartityName' was determined either solely by the automatic reconciliation process and then reviewed ("1"), or via an extremely deep audit process ("2: " pertains to that done by Steve Barnard, and 3. to that done for Companies by Ben Goodair)
     * `count`: The number of payments to this *query_string_n*
     * `amount`: The amount of procurement purchased from this *query_string_n*
     * `match_0_n`: The closed suggested (ElasticSearch) match to the `query_string_n` field
