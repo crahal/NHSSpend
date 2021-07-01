@@ -41,7 +41,7 @@ It is possible that you are reading this most interested in a copy of the output
 
 Repo structure is based on the ```tree``` [utility](https://en.wikipedia.org/wiki/Tree_%28Unix%29).
 
-├ readme.mdes_configure.md  
+├ readme.md
 ├ es_configure.md  
 ├ requirements.txt  
 ├ src  
