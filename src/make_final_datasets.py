@@ -4,7 +4,7 @@ import numpy as np
 from reconciliation import normalizer
 
 
-def build_in_audit(df, audit_df):
+def build_in_audit(df, audit_df, bg_audit):
     def get_audit_matchtype(row):
         """ Harmonize the matchtypes in the audit file"""
         if (row['isCharity'] == '1 charity') and (row['isCompany'] == '1 company') and (
@@ -114,6 +114,28 @@ def build_in_audit(df, audit_df):
         df['isCIC'] = np.where(df['query_string_n'] == row['query_string_n'],
                                row['isCIC'], df['isCIC'])
         df = df.replace(['nan', 'None'], np.nan)
+    for index, row in bg_audit.iterrows():
+        if (row['BG_Success_Binary'] == 0):
+            df['CompanyName'] = np.where(df['query_string_n'] == row['query_string_n'],
+                                         row['CompanyName'], df['CompanyName'])
+            df['CompanyNumber'] = np.where(df['query_string_n'] == row['query_string_n'],
+                                           row['CompanyNumber'], df['CompanyName'])
+            df['CHnotes'] = np.where(df['query_string_n'] == row['query_string_n'],
+                                     row['BG_Comments'], df['CHnotes'])
+            if row['CompanyName'] is np.nan:
+                df['match_type'] = np.where(df['query_string_n'] == row['query_string_n'],
+                                            'No Match', df['match_type'])
+                print('Finding an unsuccessful match by BG which is not a company')
+            else:
+                df['match_type'] = np.where(df['query_string_n'] == row['query_string_n'],
+                                            'Companies House', df['match_type'])
+                print('Finding an unsuccessful match by BG which is a company')
+        else:
+            df['CHnotes'] = np.where(df['query_string_n'] == row['query_string_n'],
+                                     row['BG_Comments'], df['CHnotes'])
+            print('Finding a successful match verified by BG')
+        df['audit_type'] = np.where(df['query_string_n'] == row['query_string_n'],
+                                    3, df['audit_type'])
     return df
 
 
@@ -175,7 +197,7 @@ def load_ch_name(ch_path, norm_path):
     return ch_df
 
 
-def make_final_dfs(in_df, audit_df, cc_name, ch_name, out_path, filename):
+def make_final_dfs(in_df, audit_df, bg_audit, cc_name, ch_name, out_path, filename):
     print('Working on building ' + str(filename))
     out_df = pd.merge(in_df, ch_name, how='left',
                       left_on='verif_match', right_on='company_norm')
@@ -189,11 +211,11 @@ def make_final_dfs(in_df, audit_df, cc_name, ch_name, out_path, filename):
     out_df = out_df.rename({'name': 'CharityName'}, axis=1)
     out_df = out_df.drop('company_norm', axis=1)
     out_df = out_df.drop('norm_name', axis=1)
-    out_df = build_in_audit(out_df, audit_df)
+    out_df = build_in_audit(out_df, audit_df, bg_audit)
     out_df.to_csv(os.path.join(out_path, filename))
     return out_df
 
-def load_audit(data_path, audit_file):
+def load_audit(data_path, audit_file, audit_file1):
     audit_df = pd.read_excel(os.path.join(data_path, audit_file))
     norm_file = os.path.join(data_path, 'norm_dict.tsv')
     norm_df = pd.read_csv(norm_file, sep='\t')
@@ -201,7 +223,9 @@ def load_audit(data_path, audit_file):
     audit_df['query_string_n'] = audit_df['supplier'].apply(lambda x: normalizer(x, norm_dict))
     audit_df['charregname_n'] = audit_df['charregname'].apply(lambda x: normalizer(x, norm_dict))
     audit_df['companyname_n'] = audit_df['companyname'].apply(lambda x: normalizer(x, norm_dict))
-    return audit_df
+    bg_audit_df = pd.read_csv(os.path.join(data_path, audit_file1))
+    bg_audit_df['companyname_n'] = bg_audit_df['CompanyName'].apply(lambda x: normalizer(x, norm_dict))
+    return audit_df, bg_audit_df
 
 
 def make_groupby_types(df, recon_df, sup_type, data_path, filename):
@@ -244,7 +268,7 @@ def make_groupby_types(df, recon_df, sup_type, data_path, filename):
                                  'query_string_n']].drop_duplicates(subset=['query_string_n']),
                              left_on='query_string_n', right_on='query_string_n',
                              how='left')
-    merged_df = pd.merge(merged_df, recon_df, how='left',
+    merged_df = pd.merge(merged_df, recon_df.drop_duplicates(subset=['query_string_n']), how='left',
                          left_on='query_string_n', right_on = 'query_string_n')
     merged_df.to_csv(os.path.join(data_path, 'data_final', filename))
 
@@ -261,23 +285,23 @@ def make_final_datasets():
     cc_name = load_ccname(cc_path, norm_path)
     ch_name = load_ch_name(ch_path, norm_path)
     #load and clean audit
-    audit_df = load_audit(support_path, 'audit_v3.xlsx')
+    audit_df, bg_audit = load_audit(support_path, 'audit_v3.xlsx', 'Unique_BG_companies_checks.csv')
     # make trust
     trust_pay_path = os.path.join(data_path, 'data_merge', 'trust_merged_with_recon.tsv')
     trust_pay_df = load_payments(trust_pay_path)
-    payments_trust_final = make_final_dfs(trust_pay_df, audit_df, cc_name, ch_name,
+    payments_trust_final = make_final_dfs(trust_pay_df, audit_df, bg_audit, cc_name, ch_name,
                                           os.path.join(data_path, 'data_final'),
                                           'payments_trust_final.csv')
     # make ccg
     ccg_pay_path = os.path.join(data_path, 'data_merge', 'ccg_merged_with_recon.tsv')
     ccg_pay_df = load_payments(ccg_pay_path)
-    payments_ccg_final = make_final_dfs(ccg_pay_df, audit_df, cc_name, ch_name,
+    payments_ccg_final = make_final_dfs(ccg_pay_df, audit_df, bg_audit, cc_name, ch_name,
                                         os.path.join(data_path, 'data_final'),
                                         'payments_ccg_final.csv')
     #make nhsengland
     nhsengland_pay_path = os.path.join(data_path, 'data_merge', 'nhsengland_merged_with_recon.tsv')
     nhsengland_pay_df = load_payments(nhsengland_pay_path)
-    payments_nhsengland_final = make_final_dfs(nhsengland_pay_df, audit_df, cc_name, ch_name,
+    payments_nhsengland_final = make_final_dfs(nhsengland_pay_df, audit_df, bg_audit, cc_name, ch_name,
                                                os.path.join(data_path, 'data_final'),
                                                'payments_nhsengland_final.csv')
 

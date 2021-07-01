@@ -158,7 +158,7 @@ def make_master_list(datapath, cc_path, ch_path, nhs_path):
                                     nhs_df['name'].tolist()))
     df = pd.DataFrame(data={"name": combined_unique_list})
     df['name'] = df['name'].str.strip()
-    df = df[df['name'].notnull()]    
+    df = df[df['name'].notnull()]
     df = df.sort_values(by=['name'], ascending=True)
     df.to_csv(os.path.join(datapath, 'data_masteringest',
                            'combined_unique_list.csv'), sep=',',
@@ -260,7 +260,7 @@ def setup_general_index(combi_uni_list_path):
     ''' set up the raw entity index for querying'''
     print("Setting up the 'general' Index")
     i = Index('general')
-#    i.delete()
+    i.delete()
     general_ingest(combi_uni_list_path)
 
 
@@ -268,7 +268,7 @@ def setup_general_norm_index(combi_uni_list_norm_path):
     ''' set up the normalized entity index for querying'''
     print("Setting up the 'general_norm' Index")
     i = Index('general_norm')
-    i.delete()
+#    i.delete()
     general_norm_ingest(combi_uni_list_norm_path)
 
 
@@ -287,5 +287,5 @@ if __name__ == "__main__":
                                            os.path.join('..', 'data')),
                                            cc_path, ch_filepath,
                                            nhs_filepath)
-#    setup_general_index(raw_path)
+    setup_general_index(raw_path)
     setup_general_norm_index(norm_path)

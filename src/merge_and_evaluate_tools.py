@@ -165,7 +165,7 @@ def evaluate_and_clean_merge(df, logpath, type):
         initial = df
         df['amount'] = pd.to_numeric(df['amount'], errors='coerce')
         df = df[~pd.isnull(df['amount'])]
-        df = df[df['amount'] >= 25000]
+        df = df[(df['amount'] >= 25000) | (df['amount'] <= -25000)]
         sumstats['droppedbelow25krows'] = len(initial) - len(df)
         the_file.write('Dropped ' + str(sumstats['droppedbelow25krows']) +
                        ' null, non-numeric and payment rows below £25k.\n')
@@ -478,8 +478,8 @@ def gen_df_for_verification(verif_df, recon_path):
 
 
 def clean_verif_in(verif_df, all_sups, data_path):
-    new_df = verif_df[verif_df['query_string_n'].isin(all_sups)]
     from rapidfuzz import process
+    new_df = verif_df[verif_df['query_string_n'].isin(all_sups)]
     new_df['best_lev_internal_score'] = np.nan
     new_df['best_lev_internal_match'] = np.nan
     matchlist = verif_df[verif_df['verif_match'] !=
@@ -519,8 +519,55 @@ def load_ccname(cc_path, norm_path):
     return cc_name
 
 
+#def incorporate_audit():
+    # deprecated
+    # print('Incorporating Audits')
+    # data_path = os.path.join(os.getcwd(), '..', 'data', 'data_support')
+    # verif_df = pd.read_csv(os.path.join(data_path, 'verif_df_in_pre_audit.csv'))
+    # audit_df = pd.read_excel(os.path.join(data_path, 'audit_v3.xlsx'))
+
+    # norm_file = os.path.join(data_path, 'norm_dict.tsv')
+    # norm_df = pd.read_csv(norm_file, sep='\t')
+    # norm_dict = dict(zip(norm_df['REPLACETHIS'], norm_df['WITHTHIS']))
+    # audit_df['query_string_n'] = audit_df['supplier'].apply(lambda x: normalizer(x, norm_dict))
+    # audit_df['charregname_n'] = audit_df['charregname'].apply(lambda x: normalizer(x, norm_dict))
+    # audit_df['companyname_n'] = audit_df['companyname'].apply(lambda x: normalizer(x, norm_dict))
+    # verif_df['audit_type'] = '1'
+    # verif_df['alt_name'] = np.nan
+    # for index, row in audit_df.iterrows():
+    #    if (row['charregname'] is not np.nan) and (row['companyname'] is not np.nan):
+    #        verif_df['verif_match'] = np.where(verif_df['query_string_n'] == row['query_string_n'],
+    #                                           row['charregname_n'],
+    #                                           verif_df['verif_match'])
+    #        audit_type = '2: CC: ' + row['matchcodeCC'] + ', CH: ' + row['matchcodeCH']
+    #        verif_df['audit_type'] = np.where(verif_df['query_string_n'] == row['query_string_n'],
+    #                                          audit_type,
+    #                                          verif_df['audit_type'])
+    #        verif_df['alt_name'] = np.where(verif_df['query_string_n'] == row['query_string_n'],
+    #                                        row['companyname_n'],
+    #                                        verif_df['alt_name'])
+    #    elif (row['charregname'] is not np.nan) and (row['companyname'] is np.nan):
+    #        verif_df['verif_match'] = np.where(verif_df['query_string_n'] == row['query_string_n'],
+    #                                           row['charregname_n'],
+    #                                           verif_df['verif_match'])
+    #        audit_type = '2: CC: ' + row['matchcodeCC']
+    #        verif_df['audit_type'] = np.where(verif_df['query_string_n'] == row['query_string_n'],
+    #                                          audit_type,
+    #                                          verif_df['audit_type'])
+    #    elif (row['charregname'] is np.nan) and (row['companyname'] is not np.nan):
+    #        verif_df['verif_match'] = np.where(verif_df['query_string_n'] == row['query_string_n'],
+    #                                           row['companyname_n'],
+    #                                           verif_df['verif_match'])
+    #        audit_type = '2: CH: ' + row['matchcodeCH']
+    #        verif_df['audit_type'] = np.where(verif_df['query_string_n'] == row['query_string_n'],
+    #                                          audit_type,
+    #                                          verif_df['audit_type'])
+    #    elif (row['charregname'] is np.nan) and (row['companyname'] is np.nan):
+    # verif_df.to_csv(os.path.join(data_path, 'verif_df_in.csv'))
+
+
 def merge_eval_recon(recon_path, norm_path, data_path, mergepath, logpath):
-    cc_path = os.path.join(data_path, 'data_cc')
+    #incorporate_audit()
     recon_short = build_reconciled_df(recon_path, norm_path)
     ch_df = pd.read_csv(os.path.join(data_path, 'data_ch', 'ch_uniq_norm.csv'))
     ch_set = set(ch_df['name_norm'].tolist())
@@ -550,6 +597,7 @@ def merge_eval_recon(recon_path, norm_path, data_path, mergepath, logpath):
                                      np.nan, verif_df['clean_lev'])
     verif_df['clean_lev'] = np.where(verif_df['verif_match'] == 'No Match',
                                      np.nan, verif_df['clean_lev'])
+    ### make the recon verified df here
     verif_df.to_csv(os.path.join(recon_path, 'recon_verified.tsv'),
                     sep='\t', index=False)
     evaluate_recon(verif_df, logpath, 'manual_verification')
@@ -574,42 +622,63 @@ def merge_eval_recon(recon_path, norm_path, data_path, mergepath, logpath):
                                             'amount': float, 'supplier': str,
                                             'file': str, 'expensearea': str,
                                             'expensetype': str})
+
+    nhsengland_raw_payments = pd.read_csv(os.path.join(mergepath,
+                                          'nhsengland_merged_clean_spending.tsv'),
+                                          index_col=None, encoding='latin-1', sep='\t',
+                                          engine='python', error_bad_lines=False,
+                                          dtype={'transactionnumber': str, 'date': str,
+                                                 'amount': float, 'supplier': str,
+                                                 'file': str, 'expensearea': str,
+                                                 'expensetype': str})
+
     ccg_merged = merge_matches_with_payments(verif_df[['query_string',
                                                        'query_string_n',
                                                        'verif_match',
-                                                       'match_type']],
+                                                       'match_type',
+                                                       ]],
                                              ccg_raw_payments, mergepath,
                                              'ccg_')
     trust_merged = merge_matches_with_payments(verif_df[['query_string',
                                                          'query_string_n',
                                                          'verif_match',
-                                                         'match_type']],
+                                                         'match_type',
+                                                         ]],
                                                trust_raw_payments, mergepath,
                                                'trust_')
+    nhsengland_merged = merge_matches_with_payments(verif_df[['query_string',
+                                                              'query_string_n',
+                                                              'verif_match',
+                                                              'match_type',
+                                                              ]],
+                                                    nhsengland_raw_payments, mergepath,
+                                                    'nhsengland_')
+
     all_sups = list(set(trust_merged['query_string_n'].tolist() +
-                        ccg_merged['query_string_n'].tolist()))
+                        ccg_merged['query_string_n'].tolist() +
+                        nhsengland_merged['query_string_n'].tolist()))
     if len(all_sups) != len(verif_df['query_string_n'].unique()):
         print('Length of verif_df != length unique supplier list')
     else:
         print('Phew! Length of verif_df == length unique supplier list')
-    cc_name = load_ccname(cc_path, norm_path)
-    verif_df = pd.merge(verif_df, cc_name[['regno', 'norm_name']], how='left',
-                        left_on = 'verif_match',
-                        right_on = 'norm_name')
-    verif_df = verif_df.drop('norm_name', 1)
-    verif_df.to_csv(os.path.join(data_path, 'data_support',
-                                 'verif_df_out.csv'))
-    verif_df = verif_df.sort_values(by='regno', ascending=False)
-    verif_df[['query_string',
-              'query_string_n',
-              'verif_match',
-              'match_type',
-              'regno']].to_csv(os.path.join(data_path, 'data_support',
-                                            'verif_df_out_JM.csv')
-                                            , index=False)
+#    cc_name = load_ccname(cc_path, norm_path)
+#    verif_df = pd.merge(verif_df, cc_name[['regno', 'norm_name']], how='left',
+#                        left_on = 'verif_match',
+#                        right_on = 'norm_name')
+#    verif_df = verif_df.drop('norm_name', 1)
+#    verif_df.to_csv(os.path.join(data_path, 'data_support',
+#                                 'verif_df_out.csv'))
+    #verif_df = verif_df.sort_values(by='regno', ascending=False)
+    #verif_df[['query_string',
+    #          'query_string_n',
+    #          'verif_match',
+    #          'match_type',
+    #          'regno']].to_csv(os.path.join(data_path, 'data_support',
+    #                                        'verif_df_out_JM.csv')
+    #                                        , index=False)
     verif_df_in = pd.read_csv(os.path.join(data_path, 'data_support',
                                            'verif_df_in.csv'), sep=',')
-    verif_df_noES = verif_df[verif_df['match_0_n'].isnull()]
-    verif_df_noES = verif_df_noES[['query_string_n', 'verif_match']]
-    verif_df_in = verif_df_in.append(verif_df_noES)
+    #verif_df_noES = verif_df[verif_df['match_0_n'].isnull()]
+    #verif_df_noES = verif_df_noES[['query_string_n', 'verif_match']]
+    #verif_df_in = verif_df_in.append(verif_df_noES)
     clean_verif_in(verif_df_in, all_sups, data_path)

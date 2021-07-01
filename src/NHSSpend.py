@@ -106,5 +106,5 @@ if __name__ == '__main__':
 #    reconcile_general(mergepath, reconcilepath, uniq_name)
 #    reconcile_general_norm(mergepath, reconcilepath, uniq_name, norm_path)
 #    merge_eval_recon(reconcilepath, norm_path, datapath, mergepath, logpath)
-#    make_final_datasets()
+    make_final_datasets()
     output_for_dashboard(finalpath, dashboardpath, mergepath)

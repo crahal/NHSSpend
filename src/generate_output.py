@@ -374,30 +374,30 @@ def output_for_dashboard(finalpath, dashboard, mergepath):
                              index_col=0, low_memory=False)
     trust_pay_df = pd.read_csv(os.path.join(finalpath, 'payments_trust_final.csv'),
                                index_col=0, low_memory=False)
-    print('hello! test')
+
     build_top_charity_suppliers(ccg_pay_df, dashboard, 'ccg_top10_cc_byvalue.csv', 'Value (%)')
     build_top_charity_suppliers(trust_pay_df, dashboard, 'trust_top10_cc_byvalue.csv', 'Value (%)')
     build_top_charity_suppliers(ccg_pay_df, dashboard, 'ccg_top10_cc_bycount.csv', 'Count (%)')
     build_top_charity_suppliers(trust_pay_df, dashboard, 'trust_top10_cc_bycount.csv', 'Count (%)')
-    print('hello! test test')
+
     build_top_org_charity_procurers(ccg_pay_df, dashboard, 'ccg_top10_orgs_cc_byvalue.csv', 'ccg', 'Value (%)')
     build_top_org_charity_procurers(trust_pay_df, dashboard, 'trust_top10_orgs_cc_byvalue.csv', 'trust', 'Value (%)')
     build_top_org_charity_procurers(ccg_pay_df, dashboard, 'ccg_top10_orgs_cc_bycount.csv', 'ccg', 'Count (%)')
     build_top_org_charity_procurers(trust_pay_df, dashboard, 'trust_top10_orgs_cc_bycount.csv', 'trust', 'Count (%)')
-    print('hello! test test test')
+
     build_top_org_company_procurers(ccg_pay_df, dashboard, 'ccg_top10_orgs_ch_byvalue.csv', 'ccg', 'Value (%)')
     build_top_org_company_procurers(trust_pay_df, dashboard, 'trust_top10_orgs_ch_byvalue.csv', 'trust', 'Value (%)')
     build_top_org_company_procurers(ccg_pay_df, dashboard, 'ccg_top10_orgs_ch_bycount.csv', 'ccg', 'Count (%)')
     build_top_org_company_procurers(trust_pay_df, dashboard, 'trust_top10_orgs_ch_bycount.csv', 'trust', 'Count (%)')
-    print('hello! test test test test')
+
     build_top_company_suppliers(ccg_pay_df, dashboard,  'ccg_top10_ch_byvalue.csv', 'Value (%)')
     build_top_company_suppliers(trust_pay_df, dashboard, 'trust_top10_ch_byvalue.csv', 'Value (%)')
     build_top_company_suppliers(ccg_pay_df, dashboard, 'ccg_top10_ch_bycount.csv', 'Count (%)')
     build_top_company_suppliers(trust_pay_df, dashboard, 'trust_top10_ch_bycount.csv', 'Count (%)')
-    print('hello! test test test test test')
+
     build_charity_tables(ccg_pay_df, dashboard, 'ccg_table_cc.csv', 'ccg')
     build_charity_tables(trust_pay_df, dashboard, 'trust_table_cc.csv', 'trust')
-    print('hello! test test test test test test')
+
     build_company_tables(ccg_pay_df, dashboard, 'ccg_table_ch.csv', 'ccg')
     build_company_tables(trust_pay_df, dashboard, 'trust_table_ch.csv', 'trust')
 

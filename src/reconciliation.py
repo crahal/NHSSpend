@@ -69,7 +69,8 @@ def reconcile_general(mergepath, reconcilepath, filename,  num_matches=5):
     ''' high level reconciliation function for raw names'''
     suppliers_ccg = pd.read_csv(os.path.join(mergepath, filename[0]), sep='\t')
     suppliers_trust = pd.read_csv(os.path.join(mergepath, filename[1]), sep='\t')
-    matchlist = suppliers_ccg["supplier"].tolist()+suppliers_trust["supplier"].tolist()
+    suppliers_nhsengland = pd.read_csv(os.path.join(mergepath, filename[2]), sep='\t')
+    matchlist = suppliers_ccg["supplier"].tolist()+suppliers_trust["supplier"].tolist()+suppliers_nhsengland["supplier"].tolist()
     matchlist = list(set(matchlist))
     company_responses = get_matches(matchlist, 'general', num_matches)
     save_path = os.path.join(reconcilepath, 'general_matches.csv')
@@ -87,7 +88,10 @@ def reconcile_general_norm(mergepath, reconcilepath, filename,
     suppliers_trust = pd.read_csv(os.path.join(mergepath, filename[1]), sep='\t')
     suppliers_trust['supplier'] = suppliers_trust['supplier'].\
         apply(lambda x: normalizer(x, norm_dict))
-    matchlist = suppliers_ccg["supplier"].tolist()+suppliers_trust["supplier"].tolist()
+    suppliers_nhsengland = pd.read_csv(os.path.join(mergepath, filename[2]), sep='\t')
+    suppliers_nhsengland['supplier'] = suppliers_nhsengland['supplier'].\
+        apply(lambda x: normalizer(x, norm_dict))
+    matchlist = suppliers_ccg["supplier"].tolist()+suppliers_trust["supplier"].tolist()+suppliers_nhsengland["supplier"].tolist()
     matchlist = list(set(matchlist))
     company_responses = get_matches(matchlist, 'general_norm', num_matches)
     save_path = os.path.join(reconcilepath, 'general_norm_matches.csv')
