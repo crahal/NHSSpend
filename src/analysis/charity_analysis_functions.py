@@ -1,7 +1,9 @@
-import pandas as pd
-from scipy import stats
 from geopandas import GeoDataFrame
 from geopandas import points_from_xy
+import geopandas as gpd
+import pysal.viz.mapclassify as mc
+import pandas as pd
+from scipy import stats
 import os
 import sys
 import matplotlib.pyplot as plt
@@ -13,23 +15,167 @@ from matplotlib.ticker import FormatStrFormatter
 from tempfile import NamedTemporaryFile
 from urllib.request import urlopen
 import matplotlib.colors as colors
-import pysal.viz.mapclassify as mc
 from matplotlib.colors import rgb2hex
 import nltk
 from nltk.tokenize import word_tokenize
 from nltk.stem.snowball import SnowballStemmer
 from nltk.probability import FreqDist
 from nltk.corpus import stopwords
-import geopandas as gpd
 from datetime import timedelta, date
 sys.path.append("..")
 import matplotlib.gridspec as gridspec
-mpl.font_manager._rebuild()
+#mpl.font_manager._rebuild()
 from reconciliation import normalizer
 
 np.warnings.filterwarnings('ignore')
 plt.rcParams['patch.edgecolor'] = 'k'
 plt.rcParams['patch.linewidth'] = 0.25
+
+
+def make_rolling_windows_top10(ccg_pay_df, trust_pay_df, nhsengland_pay_df,
+                               combined_pay_df, window):
+    daterange = pd.date_range(date(2013, 12, 1), date(2019, 10, 1), freq='d')
+    temp_df = pd.DataFrame(index=daterange, columns=['CCG_Amount_5',
+                                                     'Trust_Amount_5',
+                                                     'NHSEngland_Amount_5',
+                                                     'Combined_Amount_5',
+                                                     'CCG_Amount_10',
+                                                     'Trust_Amount_10',
+                                                     'NHSEngland_Amount_10',
+                                                     'Combined_Amount_10',
+                                                     'CCG_Amount_20',
+                                                     'Trust_Amount_20',
+                                                     'NHSEngland_Amount_20',
+                                                     'Combined_Amount_20'])
+    for single_date in daterange:
+        lower_bound = single_date - pd.Timedelta(window, unit='d')
+        ccg_90day_temp = ccg_pay_df[ccg_pay_df['date'].between(lower_bound,
+                                                               single_date,
+                                                               inclusive=False)]
+        trust_90day_temp = trust_pay_df[trust_pay_df['date'].between(lower_bound,
+                                                                     single_date,
+                                                                     inclusive=False)]
+        nhsengland_90day_temp = nhsengland_pay_df[nhsengland_pay_df['date'].between(lower_bound,
+                                                                                    single_date,
+                                                                                    inclusive=False)]
+        combined_90day_temp = combined_pay_df[combined_pay_df['date'].between(lower_bound,
+                                                                              single_date,
+                                                                              inclusive=False)]
+        charity_ccg = ccg_90day_temp[ccg_90day_temp['match_type'].str.contains('Charity')]
+        charity_ccg_groupby_sum = charity_ccg.groupby(['CharityRegNo'])['amount'].sum()
+        charity_ccg_groupby_sum = charity_ccg_groupby_sum.reset_index().sort_values(by = 'amount', ascending=False)
+        charity_ccg_groupby_sum = charity_ccg_groupby_sum.reset_index()
+        ccg_amount_5 = charity_ccg_groupby_sum['amount'][0:5].sum()/charity_ccg_groupby_sum['amount'].sum()
+        ccg_amount_10 = charity_ccg_groupby_sum['amount'][0:10].sum()/charity_ccg_groupby_sum['amount'].sum()
+        ccg_amount_20 = charity_ccg_groupby_sum['amount'][0:20].sum()/charity_ccg_groupby_sum['amount'].sum()
+#        charity_ccg_groupby_count = charity_ccg.groupby(['verif_match'])['amount'].count()
+#        charity_ccg_groupby_count = charity_ccg_groupby_count.sort_values(ascending=False)
+#        ccg_count = charity_ccg_groupby_count[0:5].sum()/charity_ccg_groupby_count.sum()
+
+        charity_trust = trust_90day_temp[trust_90day_temp['match_type'].str.contains('Charity')]
+        charity_trust_groupby_sum = charity_trust.groupby(['CharityRegNo'])['amount'].sum()
+        charity_trust_groupby_sum = charity_trust_groupby_sum.reset_index().sort_values(by = 'amount', ascending=False)
+        charity_trust_groupby_sum = charity_trust_groupby_sum.reset_index()
+        trust_amount_5 = charity_trust_groupby_sum['amount'][0:5].sum()/charity_trust_groupby_sum['amount'].sum()
+        trust_amount_10 = charity_trust_groupby_sum['amount'][0:10].sum()/charity_trust_groupby_sum['amount'].sum()
+        trust_amount_20 = charity_trust_groupby_sum['amount'][0:20].sum()/charity_trust_groupby_sum['amount'].sum()
+#        charity_trust_groupby_count = charity_trust.groupby(['verif_match'])['amount'].count()
+#        charity_trust_groupby_count = charity_trust_groupby_count.sort_values(ascending=False)
+#        trust_count = charity_trust_groupby_count[0:5].sum()/charity_trust_groupby_count.sum()
+
+        charity_nhsengland = nhsengland_90day_temp[nhsengland_90day_temp['match_type'].str.contains('Charity')]
+        charity_nhsengland_groupby_sum = charity_nhsengland.groupby(['CharityRegNo'])['amount'].sum()
+        charity_nhsengland_groupby_sum = charity_nhsengland_groupby_sum.reset_index().sort_values(by = 'amount', ascending=False)
+        charity_nhsengland_groupby_sum = charity_nhsengland_groupby_sum.reset_index()
+        nhsengland_amount_5 = charity_nhsengland_groupby_sum['amount'][0:5].sum()/charity_nhsengland_groupby_sum['amount'].sum()
+        nhsengland_amount_10 = charity_nhsengland_groupby_sum['amount'][0:10].sum()/charity_nhsengland_groupby_sum['amount'].sum()
+        nhsengland_amount_20 = charity_nhsengland_groupby_sum['amount'][0:20].sum()/charity_nhsengland_groupby_sum['amount'].sum()
+#        charity_nhsengland_groupby_count = charity_nhsengland.groupby(['verif_match'])['amount'].count()
+#        charity_nhsengland_groupby_count = charity_nhsengland_groupby_count.sort_values(ascending=False)
+#        nhsengland_count = charity_nhsengland_groupby_count[0:5].sum()/charity_nhsengland_groupby_count.sum()
+
+        charity_combined = combined_90day_temp[combined_90day_temp['match_type'].str.contains('Charity')]
+        charity_combined_groupby_sum = charity_combined.groupby(['CharityRegNo'])['amount'].sum()
+        charity_combined_groupby_sum = charity_combined_groupby_sum.reset_index().sort_values(by = 'amount', ascending=False)
+        charity_combined_groupby_sum = charity_combined_groupby_sum.reset_index()
+        combined_amount_5 = charity_combined_groupby_sum['amount'][0:5].sum()/charity_combined_groupby_sum['amount'].sum()
+        combined_amount_10 = charity_combined_groupby_sum['amount'][0:10].sum()/charity_combined_groupby_sum['amount'].sum()
+        combined_amount_20 = charity_combined_groupby_sum['amount'][0:20].sum()/charity_combined_groupby_sum['amount'].sum()
+#        charity_combined_groupby_count = charity_combined.groupby(['verif_match'])['amount'].count()
+#        charity_combined_groupby_count = charity_combined_groupby_count.sort_values(ascending=False)
+#        combined_count = charity_combined_groupby_count[0:5].sum()/charity_combined_groupby_count.sum()
+
+        #temp_df.at[single_date, 'CCG_Count'] = ccg_count
+        #temp_df.at[single_date, 'Trust_Count'] = trust_count
+        #temp_df.at[single_date, 'NHSEngland_Count'] = nhsengland_count
+        #temp_df.at[single_date, 'Combined_Count'] = combined_count
+        temp_df.at[single_date, 'CCG_Amount_5'] = ccg_amount_5
+        temp_df.at[single_date, 'Trust_Amount_5'] = trust_amount_5
+        temp_df.at[single_date, 'NHSEngland_Amount_5'] = nhsengland_amount_5
+        temp_df.at[single_date, 'Combined_Amount_5'] = combined_amount_5
+        temp_df.at[single_date, 'CCG_Amount_10'] = ccg_amount_10
+        temp_df.at[single_date, 'Trust_Amount_10'] = trust_amount_10
+        temp_df.at[single_date, 'NHSEngland_Amount_10'] = nhsengland_amount_10
+        temp_df.at[single_date, 'Combined_Amount_10'] = combined_amount_10
+        temp_df.at[single_date, 'CCG_Amount_20'] = ccg_amount_20
+        temp_df.at[single_date, 'Trust_Amount_20'] = trust_amount_20
+        temp_df.at[single_date, 'NHSEngland_Amount_20'] = nhsengland_amount_20
+        temp_df.at[single_date, 'Combined_Amount_20'] = combined_amount_20
+    return temp_df
+
+
+def plot_conc(figure_path, rolling_df_45_top10, rolling_df_90_top10,
+              rolling_df_180_top10, rolling_df_365_top10):
+    f, ((ax1, ax2), (ax3, ax4)) = plt.subplots(2, 2, figsize=(14, 9))
+    csfont = {'fontname': 'Helvetica'}
+    rolling_df_180_top10['CCG_Amount_5'].plot(ax=ax1, color='#d6604d', alpha=0.8)
+    rolling_df_180_top10['CCG_Amount_10'].plot(ax=ax1, color='#92c5de', alpha=0.8)
+    rolling_df_180_top10['CCG_Amount_20'].plot(ax=ax1, color='#2166ac', alpha=0.8)
+
+    rolling_df_180_top10['Trust_Amount_5'].plot(ax=ax2, color='#d6604d', alpha=0.8)
+    rolling_df_180_top10['Trust_Amount_10'].plot(ax=ax2, color='#92c5de', alpha=0.8)
+    rolling_df_180_top10['Trust_Amount_20'].plot(ax=ax2, color='#2166ac', alpha=0.8)
+
+    rolling_df_180_top10['NHSEngland_Amount_5'].plot(ax=ax3, color='#d6604d', alpha=0.8)
+    rolling_df_180_top10['NHSEngland_Amount_10'].plot(ax=ax3, color='#92c5de', alpha=0.8)
+    rolling_df_180_top10['NHSEngland_Amount_20'].plot(ax=ax3, color='#2166ac', alpha=0.8)
+
+    rolling_df_180_top10['Combined_Amount_5'].plot(ax=ax4, color='#d6604d', alpha=0.8)
+    rolling_df_180_top10['Combined_Amount_10'].plot(ax=ax4, color='#92c5de', alpha=0.8)
+    rolling_df_180_top10['Combined_Amount_20'].plot(ax=ax4, color='#2166ac', alpha=0.8)
+
+#    ax1.set_title('Concentration Ratio: CCGs', loc='center', size=16, y=1.01)
+    ax1.set_title('A.', loc='left', size=20, y=1.02)
+    #    ax2.set_title('Concentration Ratio: NHS Trusts', loc='center', size=16, y=1.01)
+    ax2.set_title('B.', loc='left', size=20, y=1.02)
+    #ax3.set_title('Concentration Ratio: NHS England', loc='center', size=16, y=1.01)
+    ax3.set_title('C.', loc='left', size=20, y=1.02)
+    #    ax4.set_title('Concentration Ratio: Combined', loc='center', size=16, y=1.01)
+    ax4.set_title('D.', loc='left', size=20, y=1.02)
+    ax1.set_ylabel('Concentration Ratio: CCGs', **csfont, size=13)
+    ax2.set_ylabel('Concentration Ratio: Trusts', **csfont, size=13)
+    ax3.set_ylabel('Concentration Ratio: NHS England', **csfont, size=13)
+    ax4.set_ylabel('Concentration Ratio: Combined', **csfont, size=13)
+
+
+    ax2.legend(loc='upper right', edgecolor=(0, 0, 0,1),
+               frameon=True, fontsize=10, labels=['Top Five Non-Profits',
+                                                   'Top Ten Non-Profits',
+                                                   'Top Twenty Non-Profits'],
+               facecolor='w', framealpha=1)
+    for ax in [ax1, ax2, ax3, ax4]:
+        ax.grid(linestyle='--', linewidth=0.5, alpha=0.35, color='#d3d3d3',zorder=0)
+#        ax.set_ylabel("Concentration Ratio", fontsize=12)
+    ax3.set_xlabel('Time')
+    ax4.set_xlabel('Time')
+    sns.despine()
+    plt.subplots_adjust(hspace=0.3, wspace=0.25)
+    plt.savefig(os.path.join(figure_path, 'concentrations.svg'),
+                bbox_inches='tight')
+    plt.savefig(os.path.join(figure_path, 'concentrations.pdf'),
+                bbox_inches='tight')
+    plt.savefig(os.path.join(figure_path, 'concentrations.png'),
+                bbox_inches='tight', dpi=800)
 
 
 def make_rolling_windows(ccg_pay_df, trust_pay_df, nhsengland_pay_df, window):
@@ -132,7 +278,7 @@ def plot_temporal(ts_ccg_annual, ts_trust_annual, ts_nhsengland_annual,
     ax8.legend(loc='upper right', edgecolor='k', frameon=False, fontsize=10, ncol=3)
     ax1.set_ylabel('Payments to Non-Profits')
     ax8.set_ylabel('Payments to Non-Profits')
-    ax1.set_ylim(0, 5)
+    ax1.set_ylim(0, 5.5)
 #    ax1.tick_params(labelbottom=False)
     for rect in rects1:
         height = rect.get_height()
@@ -217,22 +363,23 @@ def plot_temporal(ts_ccg_annual, ts_trust_annual, ts_nhsengland_annual,
     ax3.set_ylim(0.4, 1.4)
     ax6.set_ylim(0.4, 1.8)
     ax7.set_ylim(0.4, 1.6)
-    ax1.set_title('Number of payments across years', loc='center', size=titlesize-1, y=1.005)
-    ax1.set_title('A.', loc='left', size=titlesize-1)
-    ax2.set_title('Trusts: Count', loc='center', size=titlesize-3, y=1.005)
-    ax2.set_title('B.', loc='left', size=titlesize-1)
-    ax3.set_title('Trusts: Amount', loc='center', size=titlesize-3, y=1.005)
-    ax3.set_title('E.', loc='left', size=titlesize-1)
-    ax4.set_title('CCGs: Count', loc='center', size=titlesize-3, y=1.005)
-    ax4.set_title('C.', loc='left', size=titlesize-1)
-    ax5.set_title('CCGs: Amount', loc='center', size=titlesize-3, y=1.005)
-    ax5.set_title('F.', loc='left', size=titlesize-1)
-    ax6.set_title('NHS England: Count', loc='center', size=titlesize-3, y=1.005)
-    ax6.set_title('D.', loc='left', size=titlesize-1)
-    ax7.set_title('NHS England: Amount', loc='center', size=titlesize-3, y=1.005)
-    ax7.set_title('G.', loc='left', size=titlesize-1)
-    ax8.set_title('Value of payments across years', loc='center', size=titlesize-1, y=1.005)
-    ax8.set_title('H.', loc='left', size=titlesize)
+    ax8.set_ylim(0.0, 1.4)
+    #ax1.set_title('Number of payments across years', loc='center', size=titlesize-1, y=1.005)
+    ax1.set_title('A.', loc='left', size=titlesize-1, y=1.025)
+    #ax2.set_title('Trusts: Count', loc='center', size=titlesize-3, y=1.005)
+    ax2.set_title('B.', loc='left', size=titlesize-1, y=1.025)
+    #ax3.set_title('Trusts: Amount', loc='center', size=titlesize-3, y=1.005)
+    ax3.set_title('E.', loc='left', size=titlesize-1, y=1.025)
+    #ax4.set_title('CCGs: Count', loc='center', size=titlesize-3, y=1.005)
+    ax4.set_title('C.', loc='left', size=titlesize-1, y=1.025)
+    #ax5.set_title('CCGs: Amount', loc='center', size=titlesize-3, y=1.005)
+    ax5.set_title('F.', loc='left', size=titlesize-1, y=1.025)
+    #ax6.set_title('NHS England: Count', loc='center', size=titlesize-3, y=1.005)
+    ax6.set_title('D.', loc='left', size=titlesize-1, y=1.025)
+    #ax7.set_title('NHS England: Amount', loc='center', size=titlesize-3, y=1.005)
+    ax7.set_title('G.', loc='left', size=titlesize-1, y=1.025)
+    #ax8.set_title('Value of payments across years', loc='center', size=titlesize-1, y=1.005)
+    ax8.set_title('H.', loc='left', size=titlesize, y=1.025)
 
     for ax in [ax1, ax2, ax3, ax4, ax5, ax6, ax7, ax8]:
         sns.despine(ax=ax)
@@ -302,33 +449,34 @@ def make_inc_table(cc_path, norm_path, nhsengland_pay_df,
     cc_fin_2018 = cc_fin_2018[cc_fin_2018['fystart'] <= year + '-12-31']
     cc_fin_2018 = cc_fin_2018[cc_fin_2018['income'].notnull()]
     cc_fin_2018 = cc_fin_2018.groupby('regno')['income'].sum().reset_index()
-    merge = pd.merge(pd.concat([nhsengland_pay_df, trust_pay_df, ccg_pay_df],
-                                ignore_index=True), cc_name, how='left',
-                     left_on = 'verif_match', right_on='norm_name')
-    cc_fin_2018['inmerge'] = cc_fin_2018["regno"].isin(merge["regno"])
+    merge = pd.concat([nhsengland_pay_df, trust_pay_df, ccg_pay_df], ignore_index=True)
+#    merge = pd.merge(pd.concat([nhsengland_pay_df, trust_pay_df, ccg_pay_df],
+#                                ignore_index=True), cc_name, how='left',
+#                     left_on='CharityRegNo', right_on='regno')
+    cc_fin_2018['inmerge'] = cc_fin_2018["regno"].isin(merge["CharityRegNo"])
     cc_fin_2018_inmerge = cc_fin_2018[cc_fin_2018['inmerge']]
 
-    merge_byamount = merge.groupby('regno')['amount'].sum().reset_index()
+    merge_byamount = merge.groupby('CharityRegNo')['amount'].sum().reset_index()
     merge_2018 = pd.merge(merge_byamount, cc_fin_2018,
-                          how='left', left_on='regno', right_on='regno')
+                          how='left', left_on='CharityRegNo', right_on='regno')
     merge_2018 = merge_2018[merge_2018['income'].notnull()]
 
-    merge_bycount = merge.groupby(['regno'])['regno'].\
+    merge_bycount = merge.groupby(['CharityRegNo'])['CharityRegNo'].\
             count().reset_index(name="count")
     merge_2018_c = pd.merge(merge_bycount, cc_fin_2018,
-                          how='left', left_on='regno', right_on='regno')
+                          how='left', left_on='CharityRegNo', right_on='regno')
     merge_2018_c = merge_2018_c[merge_2018_c['income'].notnull()]
 
-    micro_amount =  merge_2018[merge_2018['income']<10000]['amount'].sum()
-    small_amount =  merge_2018[(merge_2018['income']>=10000) &
-                               (merge_2018['income']<=100000)]['amount'].sum()
-    med_amount =  merge_2018[(merge_2018['income']>=100000) &
-                             (merge_2018['income']<=1000000)]['amount'].sum()
-    large_amount =  merge_2018[(merge_2018['income']>=1000000) &
-                               (merge_2018['income']<=10000000)]['amount'].sum()
-    major_amount =  merge_2018[(merge_2018['income']>=10000000) &
-                               (merge_2018['income']<=100000000)]['amount'].sum()
-    supermajor_amount =  merge_2018[merge_2018['income']>100000000]['amount'].sum()
+    micro_amount = merge_2018[merge_2018['income'] < 10000]['amount'].sum()
+    small_amount = merge_2018[(merge_2018['income'] >= 10000) &
+                               (merge_2018['income'] <= 100000)]['amount'].sum()
+    med_amount = merge_2018[(merge_2018['income'] >= 100000) &
+                             (merge_2018['income'] <= 1000000)]['amount'].sum()
+    large_amount = merge_2018[(merge_2018['income'] >= 1000000) &
+                               (merge_2018['income'] <= 10000000)]['amount'].sum()
+    major_amount = merge_2018[(merge_2018['income'] >= 10000000) &
+                               (merge_2018['income'] <= 100000000)]['amount'].sum()
+    supermajor_amount =  merge_2018[merge_2018['income'] > 100000000]['amount'].sum()
     full_amount = merge_2018['amount'].sum()
 
 
@@ -490,8 +638,8 @@ def make_income_dists(nhsengland_pay_df, trust_pay_df, ccg_pay_df, cc_path, norm
     cc_fin = pd.read_csv(os.path.join(cc_path, 'extract_financial.csv'),
                          warn_bad_lines=False, error_bad_lines=False,
                          parse_dates=['fystart', 'fyend'])
-    print('We have ' + str(len(cc_name['regno'].unique())) + ' regnos in the ccew...')
-    print('But only ' + str(len(cc_fin['regno'].unique())) + ' regnos with income data!')
+    print('We have ' + str(len(cc_name[cc_name['regno'].notnull()]['regno'].unique())) + ' regnos in the ccew...')
+    print('We have ' + str(len(cc_fin[cc_fin['regno'].notnull()]['regno'].unique())) + ' regnos with income data!')
 
     cc_fin_post2012 = cc_fin[cc_fin['fystart'] >= '2012-01-01']
     cc_fin_post2012 = cc_fin[cc_fin['fystart'] < '2019-01-01']
@@ -504,15 +652,15 @@ def make_income_dists(nhsengland_pay_df, trust_pay_df, ccg_pay_df, cc_path, norm
     cc_fin_pre2012 = cc_fin_pre2012.groupby('regno')['income'].sum().reset_index()
 
     #make nhsengland df
-    nhseng_merge = pd.merge(nhsengland_pay_df, cc_name, how='left',
-                            left_on = 'verif_match', right_on='norm_name')
-    nhseng_byamount = nhseng_merge.groupby('regno')['amount'].sum().reset_index()
+    #nhseng_merge = pd.merge(nhsengland_pay_df, cc_name, how='left',
+    #                        left_on = 'verif_match', right_on='norm_name')
+    nhseng_byamount = nhsengland_pay_df.groupby('CharityRegNo')['amount'].sum().reset_index()
     nhseng_post2012 = pd.merge(nhseng_byamount, cc_fin_post2012,
-                               how='left', left_on='regno', right_on='regno')
+                               how='left', left_on='CharityRegNo', right_on='regno')
     nhseng_pre2012 = pd.merge(nhseng_byamount, cc_fin_pre2012,
-                              how='left', left_on='regno', right_on='regno')
+                              how='left', left_on='CharityRegNo', right_on='regno')
     print('We have ' +
-          str(len(nhseng_merge['regno'].unique())),
+          str(len(nhsengland_pay_df['CharityRegNo'].unique())) +
           ' regnos of NHS England data in total.')
     print('We have ' + str(len(nhseng_post2012[nhseng_post2012['income'].notnull()])) +
           ' rows of NHS England data with post-2012 income data')
@@ -520,42 +668,42 @@ def make_income_dists(nhsengland_pay_df, trust_pay_df, ccg_pay_df, cc_path, norm
           ' rows of NHS England data with pre-2012 income data')
 
     #make ccg df
-    ccg_merge = pd.merge(ccg_pay_df, cc_name, how='left',
-                         left_on = 'verif_match', right_on='norm_name')
-    ccg_byamount = ccg_merge.groupby('regno')['amount'].sum().reset_index()
+    #ccg_merge = pd.merge(ccg_pay_df, cc_name, how='left',
+    #                     left_on = 'verif_match', right_on='norm_name')
+    ccg_byamount = ccg_pay_df.groupby('CharityRegNo')['amount'].sum().reset_index()
     ccg_post2012 = pd.merge(ccg_byamount, cc_fin_post2012,
-                            how='left', left_on='regno', right_on='regno')
+                            how='left', left_on='CharityRegNo', right_on='regno')
     ccg_pre2012 = pd.merge(ccg_byamount, cc_fin_pre2012,
-                           how='left', left_on='regno', right_on='regno')
-    print('We have ' + str(len(ccg_merge['regno'].unique())),' regnos of CCG data in total.')
+                           how='left', left_on='CharityRegNo', right_on='regno')
+    print('We have ' + str(len(ccg_pay_df['CharityRegNo'].unique())) + ' regnos of CCG data in total.')
     print('We have ' + str(len(ccg_post2012[ccg_post2012['income'].notnull()])) +
           ' rows of CCG data with post-2012 income data')
     print('We have ' + str(len(ccg_pre2012[ccg_pre2012['income'].notnull()])) +
           ' rows of CCG data with pre-2012 income data')
 
     #trusts
-    trust_merge = pd.merge(trust_pay_df, cc_name, how='left',
-                         left_on = 'verif_match', right_on='norm_name')
-    trust_byamount = trust_merge.groupby('regno')['amount'].sum().reset_index()
+    #trust_merge = pd.merge(trust_pay_df, cc_name, how='left',
+    #                     left_on = 'verif_match', right_on='norm_name')
+    trust_byamount = trust_pay_df.groupby('CharityRegNo')['amount'].sum().reset_index()
     trust_post2012 = pd.merge(trust_byamount, cc_fin_post2012,
-                              how='left', left_on='regno', right_on='regno')
+                              how='left', left_on='CharityRegNo', right_on='regno')
     trust_pre2012 = pd.merge(trust_byamount, cc_fin_pre2012,
-                             how='left', left_on='regno', right_on='regno')
+                             how='left', left_on='CharityRegNo', right_on='regno')
     print('We have ' +
-          str(len(trust_merge['regno'].unique())),
+          str(len(trust_pay_df['CharityRegNo'].unique())),
           ' regnos of trust data in total.')
     print('We have ' + str(len(trust_post2012[trust_post2012['income'].notnull()])) +
           ' rows of trust data with post-2012 income data')
     print('We have ' + str(len(trust_pre2012[trust_pre2012['income'].notnull()])) +
           ' rows of trust data with pre-2012 income data')
 
-    # make the df for the uniform plots
-    cc_fin_pre2012['intrust'] = cc_fin_pre2012["regno"].isin(trust_merge["regno"])
-    cc_fin_pre2012['inccg'] = cc_fin_pre2012["regno"].isin(ccg_merge["regno"])
-    cc_fin_pre2012['innhseng'] = cc_fin_pre2012["regno"].isin(nhseng_merge["regno"])
-    cc_fin_post2012['intrust'] = cc_fin_post2012["regno"].isin(trust_merge["regno"])
-    cc_fin_post2012['inccg'] = cc_fin_post2012["regno"].isin(ccg_merge["regno"])
-    cc_fin_post2012['innhseng'] = cc_fin_post2012["regno"].isin(nhseng_merge["regno"])
+    # make the df for the uniform plots nhsengland_pay_df, trust_pay_df, ccg_pay_df
+    cc_fin_pre2012['intrust'] = cc_fin_pre2012["regno"].isin(trust_pay_df["CharityRegNo"])
+    cc_fin_pre2012['inccg'] = cc_fin_pre2012["regno"].isin(ccg_pay_df["CharityRegNo"])
+    cc_fin_pre2012['innhseng'] = cc_fin_pre2012["regno"].isin(nhsengland_pay_df["CharityRegNo"])
+    cc_fin_post2012['intrust'] = cc_fin_post2012["regno"].isin(trust_pay_df["CharityRegNo"])
+    cc_fin_post2012['inccg'] = cc_fin_post2012["regno"].isin(ccg_pay_df["CharityRegNo"])
+    cc_fin_post2012['innhseng'] = cc_fin_post2012["regno"].isin(nhsengland_pay_df["CharityRegNo"])
 
 
     titlesize = 15
@@ -577,13 +725,13 @@ def make_income_dists(nhsengland_pay_df, trust_pay_df, ccg_pay_df, cc_path, norm
     nhseng_array_post = np.log(nhseng_post2012[nhseng_post2012['income'].notnull()]['income']+1)
     ccfin_array_post = np.log(cc_fin_post2012[cc_fin_post2012['income'].notnull()]['income']+1)
 
-    sns.kdeplot(trust_array_post, ax=ax1, shade=True, alpha=0.25,lw=1.2,
+    sns.kdeplot(trust_array_post, ax=ax1, shade=True, alpha=0.15,lw=1.2,
                 bw=0.5, color='k', facecolor='#377eb8', legend=False)
-    sns.kdeplot(ccg_array_post, ax=ax2, shade=True, alpha=0.25, lw=1.2,
+    sns.kdeplot(ccg_array_post, ax=ax2, shade=True, alpha=0.15, lw=1.2,
                 bw=0.5, color='k', facecolor='#377eb8', legend=False)
-    sns.kdeplot(nhseng_array_post, ax=ax3, shade=True, alpha=0.25, lw=1.2,
+    sns.kdeplot(nhseng_array_post, ax=ax3, shade=True, alpha=0.15, lw=1.2,
                 bw=0.5, color='k', facecolor='#377eb8', legend=False)
-    sns.kdeplot(ccfin_array_post, ax=ax4, shade=True, alpha=0.25, lw=1.2,
+    sns.kdeplot(ccfin_array_post, ax=ax4, shade=True, alpha=0.15, lw=1.2,
                 bw=0.5, color='k', facecolor='#ff7f00', legend=False)
     ax1.spines['bottom'].set_visible(True)
     ax2.spines['bottom'].set_visible(True)
@@ -607,12 +755,13 @@ def make_income_dists(nhsengland_pay_df, trust_pay_df, ccg_pay_df, cc_path, norm
     ax1.set_xlabel('')
     ax2.set_xlabel('')
     ax3.set_xlabel('')
-    ax4.set_xlabel('Logarithm of cumulative income (+1)')
+    ax4.set_xlabel('Logarithm of cumulative income (+1): Post-2012')
     sns.despine(ax=ax1, left=True,bottom=False)
     sns.despine(ax=ax2, left=True,bottom=False)
     sns.despine(ax=ax3, left=True,bottom=False)
     sns.despine(ax=ax4, left=True,bottom=False)
     ax1.set_ylim(0,0.225)
+
     ax2.set_ylim(0,0.225)
     ax3.set_ylim(0,0.225)
     ax4.set_ylim(0,0.225)
@@ -624,8 +773,9 @@ def make_income_dists(nhsengland_pay_df, trust_pay_df, ccg_pay_df, cc_path, norm
     ax2.set_ylabel('Trusts')
     ax3.set_ylabel('NHS England')
     ax4.set_ylabel('CCEW')
-    ax1.set_title('Cumulative income distribution post-2012',
-                  **csfont, fontsize=titlesize, y=1.05)
+
+#    ax1.set_title('Cumulative income distribution post-2012',
+#                  **csfont, fontsize=titlesize, y=1.05)
     ax1.set_title('A.', **csfont, fontsize=titlesize+5, loc='left', y=1.025)
 
     trust_array_pre = np.log(trust_pre2012[trust_pre2012['income'].notnull()]['income']+1)
@@ -633,13 +783,13 @@ def make_income_dists(nhsengland_pay_df, trust_pay_df, ccg_pay_df, cc_path, norm
     nhseng_array_pre = np.log(nhseng_pre2012[nhseng_pre2012['income'].notnull()]['income']+1)
     ccfin_array_pre = np.log(cc_fin_pre2012[cc_fin_pre2012['income'].notnull()]['income']+1)
 
-    sns.kdeplot(trust_array_pre, ax=ax5, shade=True, alpha=0.25,lw=1.2,
+    sns.kdeplot(trust_array_pre, ax=ax5, shade=True, alpha=0.15,lw=1.2,
                 bw=0.5, color='k', facecolor='#377eb8', legend=False)
-    sns.kdeplot(ccg_array_pre, ax=ax6, shade=True, alpha=0.25, lw=1.2,
+    sns.kdeplot(ccg_array_pre, ax=ax6, shade=True, alpha=0.15, lw=1.2,
                 bw=0.5, color='k', facecolor='#377eb8', legend=False)
-    sns.kdeplot(nhseng_array_pre, ax=ax7, shade=True, alpha=0.25, lw=1.2,
+    sns.kdeplot(nhseng_array_pre, ax=ax7, shade=True, alpha=0.15, lw=1.2,
                 bw=0.5, color='k', facecolor='#377eb8', legend=False)
-    sns.kdeplot(ccfin_array_pre, ax=ax8, shade=True, alpha=0.25, lw=1.2,
+    sns.kdeplot(ccfin_array_pre, ax=ax8, shade=True, alpha=0.15, lw=1.2,
                 bw=0.5, color='k', facecolor='#ff7f00', legend=False)
     ax5.spines['bottom'].set_visible(True)
     ax6.spines['bottom'].set_visible(True)
@@ -664,7 +814,7 @@ def make_income_dists(nhsengland_pay_df, trust_pay_df, ccg_pay_df, cc_path, norm
     ax5.set_xlabel('')
     ax6.set_xlabel('')
     ax7.set_xlabel('')
-    ax8.set_xlabel('Logarithm of cumulative income (+1)')
+    ax8.set_xlabel('Logarithm of cumulative income (+1): Pre-2012')
     sns.despine(ax=ax5, left=True,bottom=False)
     sns.despine(ax=ax6, left=True,bottom=False)
     sns.despine(ax=ax7, left=True,bottom=False)
@@ -677,8 +827,8 @@ def make_income_dists(nhsengland_pay_df, trust_pay_df, ccg_pay_df, cc_path, norm
     ax6.set_xlim(0,25)
     ax7.set_xlim(0,25)
     ax8.set_xlim(0,25)
-    ax5.set_title('Cumulative income distribution pre-2012',
-                  **csfont, fontsize=titlesize, y=1.05)
+#    ax5.set_title('Cumulative income distribution pre-2012',
+#                  **csfont, fontsize=titlesize, y=1.05)
     ax5.set_title('B.', **csfont, fontsize=titlesize+5, loc='left', y=1.025)
 
     axy_mean = ccg_post2012[ccg_post2012['income'].notnull()]['income'].mean()
@@ -747,30 +897,31 @@ def make_income_dists(nhsengland_pay_df, trust_pay_df, ccg_pay_df, cc_path, norm
                 bbox_inches='tight')
 
 
-def make_obj_freq(cc_objects, cc_name, ccg_pay_df, trust_pay_df,
+def make_obj_freq(cc_objects, #cc_name,
+                  ccg_pay_df, trust_pay_df,
                   nhsengland_pay_df, figure_path):
     import nltk
     nltk.download('stopwords')
     nltk.download('punkt')
     csfont = {'fontname': 'Helvetica'}
     hfont = {'fontname': 'Helvetica'}
-    cc_name['regno'] = pd.to_numeric(cc_name['regno'], errors='coerce')
-    cc_name['subno'] = pd.to_numeric(cc_name['subno'], errors='coerce')
+    #cc_name['regno'] = pd.to_numeric(cc_name['regno'], errors='coerce')
+    #cc_name['subno'] = pd.to_numeric(cc_name['subno'], errors='coerce')
     cc_objects['regno'] = pd.to_numeric(cc_objects['regno'], errors='coerce')
-    cc_objects['subno'] = pd.to_numeric(cc_objects['subno'], errors='coerce')
-    cc_obj_merge = pd.merge(cc_objects, cc_name,
-                            how = 'left', left_on=['regno', 'subno'],
-                            right_on=['regno', 'subno'])
-    cc_obj_merge = cc_obj_merge[cc_obj_merge['norm_name'].notnull()]
-    cc_obj_merge = cc_obj_merge [cc_obj_merge['object'].notnull()]
-    cc_obj_merge['object']= cc_obj_merge['object'].astype(str).str.lower()
-    cc_obj_merge['intrusts'] = cc_obj_merge["norm_name"].isin(trust_pay_df ["verif_match"])
-    cc_obj_merge['inccgs'] = cc_obj_merge["norm_name"].isin(ccg_pay_df ["verif_match"])
-    cc_obj_merge['innhseng'] = cc_obj_merge["norm_name"].isin(nhsengland_pay_df ["verif_match"])
-    df_cc = freq_dist(cc_obj_merge, 'english')
-    df_trusts = freq_dist(cc_obj_merge[cc_obj_merge['intrusts']], 'english')
-    df_ccgs = freq_dist(cc_obj_merge[cc_obj_merge['inccgs']], 'english')
-    df_nhsengland = freq_dist(cc_obj_merge[cc_obj_merge['innhseng']], 'english')
+#    cc_objects['subno'] = pd.to_numeric(cc_objects['subno'], errors='coerce')
+#    cc_obj_merge = pd.merge(cc_objects, cc_name,
+#                            how='left', left_on=['regno', 'subno'],
+#                            right_on=['regno', 'subno'])
+#    cc_objects = cc_objects[cc_objects['norm_name'].notnull()]
+    cc_objects = cc_objects[cc_objects['object'].notnull()]
+    cc_objects['object'] = cc_objects['object'].astype(str).str.lower()
+    cc_objects['intrusts'] = cc_objects["regno"].isin(trust_pay_df ["CharityRegNo"])
+    cc_objects['inccgs'] = cc_objects["regno"].isin(ccg_pay_df ["CharityRegNo"])
+    cc_objects['innhseng'] = cc_objects["regno"].isin(nhsengland_pay_df ["CharityRegNo"])
+    df_cc = freq_dist(cc_objects, 'english')
+    df_trusts = freq_dist(cc_objects[cc_objects['intrusts']], 'english')
+    df_ccgs = freq_dist(cc_objects[cc_objects['inccgs']], 'english')
+    df_nhsengland = freq_dist(cc_objects[cc_objects['innhseng']], 'english')
     fig = plt.figure(figsize=(14,12))
     ax = fig.add_subplot(221, projection='polar')
     iN = len(df_cc['count'])
@@ -803,9 +954,9 @@ def make_obj_freq(cc_objects, cc_name, ccg_pay_df, trust_pay_df,
     ax.add_artist(circle)
     ax.plot((0, theta[0]), ( 0, arrCnts[0]-.175), color='k',linewidth=1, alpha=0.5, linestyle='--')
     ax.plot((0, theta[-1]), ( 0, arrCnts[-1]-.175), color='k',linewidth=1, alpha=0.5, linestyle='--')
-    ax.set_title('A.', loc='left', y=0.915,  **hfont, fontsize=22, x=-.15)
-    ax.set_title("Frequency distribution: Charity Commission 'objects'",
-                 loc='center',y=0.92, **hfont, fontsize=15)
+    ax.set_title('A.', loc='left', y=0.9,  **hfont, fontsize=22, x=-.15)
+#    ax.set_title("Frequency distribution: Charity Commission 'objects'",
+#                 loc='center',y=0.92, **hfont, fontsize=15)
 
 
 
@@ -840,9 +991,9 @@ def make_obj_freq(cc_objects, cc_name, ccg_pay_df, trust_pay_df,
     ax2.add_artist(circle)
     ax2.plot((0, theta[0]), ( 0, arrCnts[0]-.175), color='k',linewidth=1, alpha=0.5, linestyle='--')
     ax2.plot((0, theta[-1]), ( 0, arrCnts[-1]-.175), color='k',linewidth=1, alpha=0.5, linestyle='--')
-    ax2.set_title('B.', loc='left', y=0.915,  **hfont, fontsize=22, x=-.15)
-    ax2.set_title("Frequency distribution: NHS Trust 'objects'",
-                 loc='center',y=0.92, **hfont, fontsize=15)
+    ax2.set_title('B.', loc='left', y=0.9,  **hfont, fontsize=22, x=-.15)
+    #ax2.set_title("Frequency distribution: NHS Trust 'objects'",
+    #             loc='center',y=0.92, **hfont, fontsize=15)
 
 
     ax3 = fig.add_subplot(223, projection='polar')
@@ -875,9 +1026,9 @@ def make_obj_freq(cc_objects, cc_name, ccg_pay_df, trust_pay_df,
     ax3.add_artist(circle)
     ax3.plot((0, theta[0]), ( 0, arrCnts[0]-.175), color='k',linewidth=1, alpha=0.5, linestyle='--')
     ax3.plot((0, theta[-1]), ( 0, arrCnts[-1]-.175), color='k',linewidth=1, alpha=0.5, linestyle='--')
-    ax3.set_title('C.', loc='left', y=0.915,  **hfont, fontsize=22, x=-.15)
-    ax3.set_title("Frequency distribution: CCG 'objects'",
-                 loc='center',y=0.92, **hfont, fontsize=15)
+    ax3.set_title('C.', loc='left', y=0.9,  **hfont, fontsize=22, x=-.15)
+#    ax3.set_title("Frequency distribution: CCG 'objects'",
+#                 loc='center',y=0.92, **hfont, fontsize=15)
 
     ax4 = fig.add_subplot(224, projection='polar')
     iN = len(df_nhsengland['count'])
@@ -911,9 +1062,9 @@ def make_obj_freq(cc_objects, cc_name, ccg_pay_df, trust_pay_df,
     ax4.add_artist(circle)
     ax4.plot((0, theta[0]), ( 0, arrCnts[0]-.175), color='k',linewidth=1, alpha=0.5, linestyle='--')
     ax4.plot((0, theta[-1]), ( 0, arrCnts[-1]-.175), color='k',linewidth=1, alpha=0.5, linestyle='--')
-    ax4.set_title('D.', loc='left', y=0.915,  **hfont, fontsize=22, x=-.15)
-    ax4.set_title("Frequency distribution: NHS England 'objects'",
-                 loc='center',y=0.92, **hfont, fontsize=15)
+    ax4.set_title('D.', loc='left', y=0.9,  **hfont, fontsize=22, x=-.15)
+#    ax4.set_title("Frequency distribution: NHS England 'objects'",
+#                 loc='center',y=0.92, **hfont, fontsize=15)
 
     plt.subplots_adjust(left=-3, bottom=0.1, right=-2, top=1.01, wspace=0, hspace=0)
     plt.savefig(os.path.join(figure_path, 'freq_dist.pdf'), bbox_inches='tight')
@@ -976,7 +1127,7 @@ def more_or_less_by_age(cc_sup):
                                        method='spearman'))
 
 
-def make_monthly(pay_df, pay_df_cc, cc_name):
+def make_monthly(pay_df, pay_df_cc):
     split_date_cc = pay_df_cc['date'].astype(str).str.\
         split('-', expand=True)#.rename({'0', 'Year'}, axis=1)
     split_date_cc = split_date_cc.\
@@ -1002,7 +1153,7 @@ def make_monthly(pay_df, pay_df_cc, cc_name):
     return ts_plot
 
 
-def make_annual(pay_df, pay_df_cc, cc_name):
+def make_annual(pay_df, pay_df_cc):
     split_date_cc = pay_df_cc['date'].astype(str).str.\
         split('-', expand=True)
     split_date_cc = split_date_cc.\
@@ -1029,7 +1180,9 @@ def make_annual(pay_df, pay_df_cc, cc_name):
             ts_plot.loc[i] = np.nan
     return ts_plot
 
-def make_temporal_df(pay_df, pay_df_cc, icnpo_df, cc_name):
+def make_temporal_df(pay_df, pay_df_cc, icnpo_df
+                     #, cc_name):
+                     ):
     split_date_cc = pay_df_cc['date'].astype(str).str.\
         split('-', expand=True)#.rename({'0', 'Year'}, axis=1)
     split_date_cc = split_date_cc.\
@@ -1065,11 +1218,11 @@ def make_temporal_df(pay_df, pay_df_cc, icnpo_df, cc_name):
                 break
         if (year == 2020) and (month=='02'):
             break
-    pay_merge = pd.merge(pay_df_cc, cc_name, how='left',
-                         left_on='verif_match',
-                         right_on='norm_name')
-    pay_merge = pd.merge(pay_merge, icnpo_df, how='left',
-                         left_on='regno', right_on='regno')
+#    pay_merge = pd.merge(pay_df_cc, cc_name, how='left',
+#                         left_on='verif_match',
+#                         right_on='norm_name')
+    pay_merge = pd.merge(pay_df_cc, icnpo_df, how='left',
+                         left_on='CharityRegNo', right_on='regno')
     split_date_icnpo = pay_merge['date'].astype(str).str.\
         split('-', expand=True)#.rename({'0', 'Year'}, axis=1)
     split_date_icnpo = split_date_icnpo.rename(columns={0: 'Year',
@@ -1295,22 +1448,23 @@ def plot_heatmaps(ts_icnpo_plot_trust, ts_icnpo_plot_ccg,
 
 
 def class_groupings(pay_df_cc, pay_df_cc_ccg, pay_df_cc_trust,
-                    pay_df_cc_nhsengland, cc_name, cc_class, table_path):
+                    pay_df_cc_nhsengland, #cc_name,
+                    cc_class, table_path):
 
     # full dataframe
-    cc_count = pay_df_cc.groupby(['verif_match'])['verif_match'].\
+    cc_count = pay_df_cc.groupby(['CharityRegNo'])['CharityRegNo'].\
         count().reset_index(name="count")
-    cc_val = pay_df_cc.groupby(['verif_match'])['amount'].sum().reset_index()
-    cc_merge = pd.merge(cc_val, cc_count, how='left', on='verif_match')
-    cc_merge = pd.merge(cc_merge, cc_name, how='left',
-                        left_on='verif_match',
-                        right_on='norm_name')
-    cc_merge['regno'] = pd.to_numeric(cc_merge['regno'],
-                                      errors='coerce')
-    cc_merge['regno'] = cc_merge['regno'].astype(float)
+    cc_val = pay_df_cc.groupby(['CharityRegNo'])['amount'].sum().reset_index()
+    cc_merge = pd.merge(cc_val, cc_count, how='left', on='CharityRegNo')
+#    cc_merge = pd.merge(cc_merge, cc_name, how='left',
+#                        left_on='verif_match',
+#                        right_on='norm_name')
+    cc_merge['CharityRegNo'] = pd.to_numeric(cc_merge['CharityRegNo'],
+                                             errors='coerce')
+    cc_merge['CharityRegNo'] = cc_merge['CharityRegNo'].astype(float)
     cc_merge['amount'] = cc_merge['amount'].astype(int)
     cc_merge = pd.merge(cc_merge, cc_class, how='left',
-                        left_on='regno', right_on='regno')
+                        left_on='CharityRegNo', right_on='regno')
     cc_class_count = cc_merge.groupby(['classtext'])['classtext'].\
         count().reset_index(name="count")
     cc_class_val = cc_merge.groupby(['classtext'])['amount'].\
@@ -1318,26 +1472,26 @@ def class_groupings(pay_df_cc, pay_df_cc_ccg, pay_df_cc_trust,
     cc_class_count['count_pc'] = (cc_class_count['count'] /
                                   cc_class_count['count'].sum())*100
     cc_class_val['amount_pc'] = (cc_class_val['amount'] /
-                                   cc_class_val['amount'].sum())*100
+                                 cc_class_val['amount'].sum())*100
     class_merge = pd.merge(cc_class_count, cc_class_val, how='left',
                            left_on='classtext', right_on='classtext')
 
 
 
     #merge in ccgs
-    cc_count_ccg = pay_df_cc_ccg.groupby(['verif_match'])['verif_match'].\
+    cc_count_ccg = pay_df_cc_ccg.groupby(['CharityRegNo'])['CharityRegNo'].\
         count().reset_index(name="count")
-    cc_val_ccg = pay_df_cc_ccg.groupby(['verif_match'])['amount'].sum().reset_index()
-    cc_merge_ccg = pd.merge(cc_val_ccg, cc_count_ccg, how='left', on='verif_match')
-    cc_merge_ccg = pd.merge(cc_merge_ccg, cc_name, how='left',
-                            left_on='verif_match',
-                            right_on='norm_name')
-    cc_merge_ccg['regno'] = pd.to_numeric(cc_merge_ccg['regno'],
-                                          errors='coerce')
-    cc_merge_ccg['regno'] = cc_merge_ccg['regno'].astype(float)
+    cc_val_ccg = pay_df_cc_ccg.groupby(['CharityRegNo'])['amount'].sum().reset_index()
+    cc_merge_ccg = pd.merge(cc_val_ccg, cc_count_ccg, how='left', on='CharityRegNo')
+#    cc_merge_ccg = pd.merge(cc_merge_ccg, cc_name, how='left',
+#                            left_on='verif_match',
+#                            right_on='norm_name')
+    cc_merge_ccg['CharityRegNo'] = pd.to_numeric(cc_merge_ccg['CharityRegNo'],
+                                                 errors='coerce')
+    cc_merge_ccg['CharityRegNo'] = cc_merge_ccg['CharityRegNo'].astype(float)
     cc_merge_ccg['amount'] = cc_merge_ccg['amount'].astype(int)
     cc_merge_ccg = pd.merge(cc_merge_ccg, cc_class, how='left',
-                            left_on='regno', right_on='regno')
+                            left_on='CharityRegNo', right_on='regno')
     cc_class_count_ccg = cc_merge_ccg.groupby(['classtext'])['classtext'].\
         count().reset_index(name="count_ccg")
     cc_class_val_ccg = cc_merge_ccg.groupby(['classtext'])['amount'].\
@@ -1353,25 +1507,25 @@ def class_groupings(pay_df_cc, pay_df_cc_ccg, pay_df_cc_trust,
                                left_on='classtext', right_on='classtext')
 
     #merge in trusts
-    cc_count_trust = pay_df_cc_trust.groupby(['verif_match'])['verif_match'].\
+    cc_count_trust = pay_df_cc_trust.groupby(['CharityRegNo'])['CharityRegNo'].\
         count().reset_index(name="count")
-    cc_val_trust = pay_df_cc_trust.groupby(['verif_match'])['amount'].sum().reset_index()
-    cc_merge_trust = pd.merge(cc_val_trust, cc_count_trust, how='left', on='verif_match')
-    cc_merge_trust = pd.merge(cc_merge_trust, cc_name, how='left',
-                            left_on='verif_match',
-                            right_on='norm_name')
-    cc_merge_trust['regno'] = pd.to_numeric(cc_merge_trust['regno'],
-                                          errors='coerce')
-    cc_merge_trust['regno'] = cc_merge_trust['regno'].astype(float)
+    cc_val_trust = pay_df_cc_trust.groupby(['CharityRegNo'])['amount'].sum().reset_index()
+    cc_merge_trust = pd.merge(cc_val_trust, cc_count_trust, how='left', on='CharityRegNo')
+#    cc_merge_trust = pd.merge(cc_merge_trust, cc_name, how='left',
+#                            left_on='verif_match',
+#                            right_on='norm_name')
+    cc_merge_trust['CharityRegNo'] = pd.to_numeric(cc_merge_trust['CharityRegNo'],
+                                                   errors='coerce')
+    cc_merge_trust['CharityRegNo'] = cc_merge_trust['CharityRegNo'].astype(float)
     cc_merge_trust['amount'] = cc_merge_trust['amount'].astype(int)
     cc_merge_trust = pd.merge(cc_merge_trust, cc_class, how='left',
-                            left_on='regno', right_on='regno')
+                            left_on='CharityRegNo', right_on='regno')
     cc_class_count_trust = cc_merge_trust.groupby(['classtext'])['classtext'].\
         count().reset_index(name="count_trust")
     cc_class_val_trust = cc_merge_trust.groupby(['classtext'])['amount'].\
         sum().reset_index()
     cc_class_count_trust['count_pc_trust'] = (cc_class_count_trust['count_trust'] /
-                                          cc_class_count_trust['count_trust'].sum())*100
+                                              cc_class_count_trust['count_trust'].sum())*100
     cc_class_val_trust = cc_class_val_trust.rename({'amount':'amount_trust'}, axis=1)
     cc_class_val_trust['amount_pc_trust'] = (cc_class_val_trust['amount_trust'] /
                                          cc_class_val_trust['amount_trust'].sum())*100
@@ -1382,19 +1536,19 @@ def class_groupings(pay_df_cc, pay_df_cc_ccg, pay_df_cc_trust,
 
 
     #merge in nhsengland
-    cc_count_eng = pay_df_cc_nhsengland.groupby(['verif_match'])['verif_match'].\
+    cc_count_eng = pay_df_cc_nhsengland.groupby(['CharityRegNo'])['CharityRegNo'].\
         count().reset_index(name="count")
-    cc_val_eng = pay_df_cc_nhsengland.groupby(['verif_match'])['amount'].sum().reset_index()
-    cc_merge_eng = pd.merge(cc_val_eng, cc_count_eng, how='left', on='verif_match')
-    cc_merge_eng = pd.merge(cc_merge_eng, cc_name, how='left',
-                            left_on='verif_match',
-                            right_on='norm_name')
-    cc_merge_eng['regno'] = pd.to_numeric(cc_merge_eng['regno'],
-                                          errors='coerce')
-    cc_merge_eng['regno'] = cc_merge_eng['regno'].astype(float)
+    cc_val_eng = pay_df_cc_nhsengland.groupby(['CharityRegNo'])['amount'].sum().reset_index()
+    cc_merge_eng = pd.merge(cc_val_eng, cc_count_eng, how='left', on='CharityRegNo')
+#    cc_merge_eng = pd.merge(cc_merge_eng, cc_name, how='left',
+#                            left_on='verif_match',
+#                            right_on='norm_name')
+    cc_merge_eng['CharityRegNo'] = pd.to_numeric(cc_merge_eng['CharityRegNo'],
+                                                 errors='coerce')
+    cc_merge_eng['CharityRegNo'] = cc_merge_eng['CharityRegNo'].astype(float)
     cc_merge_eng['amount'] = cc_merge_eng['amount'].astype(int)
     cc_merge_eng = pd.merge(cc_merge_eng, cc_class, how='left',
-                            left_on='regno', right_on='regno')
+                            left_on='CharityRegNo', right_on='regno')
     cc_class_count_eng = cc_merge_eng.groupby(['classtext'])['classtext'].\
         count().reset_index(name="count_eng")
     cc_class_val_eng = cc_merge_eng.groupby(['classtext'])['amount'].\
@@ -1438,24 +1592,23 @@ def class_groupings(pay_df_cc, pay_df_cc_ccg, pay_df_cc_trust,
     class_merge.to_csv(os.path.join(table_path, 'class_table.csv'), index=False)
 
 
-def charity_age(cc_pay_df, cc_sup, cc_name, cc_class, figure_path):
+def charity_age(allcc_pay_df, cc_sup, cc_name, cc_class, figure_path):
     titlesize = 15
     csfont = {'fontname': 'Helvetica'}
     hfont = {'fontname': 'Helvetica'}
-    ccgdata_regdate = cc_sup[cc_sup['regdate'].notnull()].drop_duplicates(subset=['regno'])['regdate'].\
-        astype(str).str[0:4].astype(float)
-    cc_regdate = cc_name[cc_name['regdate'].notnull()].drop_duplicates(subset=['regno'])['regdate'].\
-        astype(str).str[0:4].astype(float)
-    cc_pay_df_with_cc = pd.merge(cc_pay_df, cc_name, how='left',
-                                 left_on='verif_match', right_on='norm_name')
-    cc_pay_classtext = pd.merge(cc_pay_df_with_cc, cc_class, how='left',
-                                  left_on='regno', right_on='regno')
+    cc_sup = pd.merge(cc_sup, cc_name, how='left', left_on='CharityRegNo', right_on='regno')
+    allsups_data_regdate = cc_sup[cc_sup['regdate'].notnull()]['regdate'].astype(str).str[0:4].astype(float)
+    cc_regdate = cc_name[cc_name['regdate'].notnull()]['regdate'].astype(str).str[0:4].astype(float)
+    allcc_pay_df_with_cc = pd.merge(allcc_pay_df, cc_name, how='left',
+                                    left_on='CharityRegNo', right_on='regno')
+    cc_pay_classtext = pd.merge(allcc_pay_df_with_cc, cc_class, how='left',
+                                 left_on='CharityRegNo', right_on='regno')
     cc_pay_adv = cc_pay_classtext[cc_pay_classtext['classtext']=='The Advancement Of Health Or Saving Of Lives']
 
-    cc_adv_date = cc_pay_adv[cc_pay_adv['regdate'].notnull()].drop_duplicates(subset=['regno'])['regdate'].\
+    cc_adv_date = cc_pay_adv[cc_pay_adv['regdate'].notnull()].drop_duplicates(subset=['regno_x'])['regdate'].\
         astype(str).str[0:4].astype(float)
     f, ((ax1, ax2), (ax3, ax4)) = plt.subplots(2, 2, figsize=(12, 10))
-    g = sns.distplot(ccgdata_regdate, ax=ax1, kde_kws={'gridsize': 500, 'color': '#377eb8'},
+    g = sns.distplot(allsups_data_regdate, ax=ax1, kde_kws={'gridsize': 500, 'color': '#377eb8'},
                      hist_kws={'color': '#377eb8', 'alpha': 0.25,
                                'edgecolor': 'k', 'linewidth':1},
                      label='NHS Suppliers',
@@ -1467,11 +1620,11 @@ def charity_age(cc_pay_df, cc_sup, cc_name, cc_class, figure_path):
     ax1.set_ylabel("Normalized Frequency", fontsize=12)
     ax1.set_xlabel("Charity Registration Year", fontsize=12)
 #    ax1.set_ylim(0, 0.048)
-    ax1.set_title('Distributions of Registration Years',
-                  **csfont, fontsize=titlesize, y=1.02)
-    ax1.set_title('A.', **csfont, fontsize=titlesize+5, loc='left', y=1.01)
+#    ax1.set_title('Distributions of Registration Years',
+#                  **csfont, fontsize=titlesize, y=1.02)
+    ax1.set_title('A.', **csfont, fontsize=titlesize+6, loc='left', y=1.02)
     sns.despine()
-    g.legend(loc='upper left', edgecolor='k', frameon=False, fontsize=10)
+    g.legend(loc='upper left', edgecolor='k', frameon=False, fontsize=12)
 
     a = cc_sup[cc_sup['regdate'].notnull()].drop_duplicates(subset=['regno'])['regdate'].\
         astype(str).str[0:4].astype(float)
@@ -1489,10 +1642,10 @@ def charity_age(cc_pay_df, cc_sup, cc_name, cc_class, figure_path):
                    fontsize=12)
     ax2.set_xlabel("All CC Registration Years",
                    fontsize=12)
-    ax2.set_title('Q-Q Plot of Registration Years',
-                  **csfont, fontsize=titlesize, y=1.02)
+#    ax2.set_title('Q-Q Plot of Registration Years',
+#                  **csfont, fontsize=titlesize, y=1.02)
     ax2.set_title('B.', loc='left',
-                  **csfont, fontsize=titlesize+5, y=1.01)
+                  **csfont, fontsize=titlesize+6, y=1.02)
 
     def ecdf(data):
         """ Compute ECDF """
@@ -1503,19 +1656,19 @@ def charity_age(cc_pay_df, cc_sup, cc_name, cc_class, figure_path):
 
     x1, y1 = ecdf(cc_regdate)
     ax3.plot(x1, y1, label='All Charity Commission', color='#d6604d', alpha=0.5, linewidth=2.25)
-    x2, y2 = ecdf(ccgdata_regdate)
+    x2, y2 = ecdf(allsups_data_regdate)
     ax3.plot(x2, y2, label='NHS Suppliers', color='#92c5de', alpha=0.5, linewidth=2.25)
     x3, y3 = ecdf(cc_adv_date)
     ax3.plot(x3, y3, label='Advancement of Health', color='#2166ac', alpha=0.5, linewidth=2.25)
     ax3.set_ylabel("Proportion of Data", fontsize=12)
     ax3.set_xlabel("Charity Registration Years", fontsize=12)
-    ax3.set_title('Empirical Cumulative Distribution',
-                  **csfont, fontsize=titlesize, y=1.02)
+#    ax3.set_title('Empirical Cumulative Distribution',
+#                  **csfont, fontsize=titlesize, y=1.02)
     ax3.set_title('C.', loc='left',
-                  **csfont, fontsize=titlesize+5, y=1.01)
+                  **csfont, fontsize=titlesize+7, y=1.02)
     ax3.legend(loc='upper left', edgecolor='k',
-               frameon=False, fontsize=10)
-    h = sns.distplot(ccgdata_regdate, ax=ax4, kde_kws={'gridsize': 500, 'color': '#377eb8'},
+               frameon=False, fontsize=12)
+    h = sns.distplot(allsups_data_regdate, ax=ax4, kde_kws={'gridsize': 500, 'color': '#377eb8'},
                      hist_kws={'color': '#377eb8', 'alpha': 0.25,
                                'edgecolor': 'k', 'linewidth':1}, label='NHS Suppliers',
                      bins=np.arange(1950, 2020, 3))
@@ -1525,19 +1678,20 @@ def charity_age(cc_pay_df, cc_sup, cc_name, cc_class, figure_path):
                      label='All Advancement of Health', bins=np.arange(1950, 2020, 3))
     ax4.set_ylabel("Normalized Frequency", fontsize=12)
     ax4.set_xlabel("Charity Registration Year", fontsize=12)
-    ax4.set_title('Comparison with Healthcare Charities',
-                  **csfont, fontsize=titlesize, y=1.02)
+#    ax4.set_title('Comparison with Healthcare Charities',
+#                  **csfont, fontsize=titlesize, y=1.02)
     ax4.set_title('D.',
-                  **csfont, fontsize=titlesize+5, loc='left', y=1.01)
-    h.legend(loc='upper left', edgecolor='k', frameon=False, fontsize=10)
+                  **csfont, fontsize=titlesize+6, loc='left', y=1.02)
+    h.legend(loc='upper left', edgecolor='k', frameon=False, fontsize=12)
     ax1.grid(linestyle='--', linewidth=0.5, alpha=0.35, color='#d3d3d3',zorder=0)
     ax2.grid(linestyle='--', linewidth=0.5, alpha=0.35, color='#d3d3d3',zorder=0)
     ax2.grid(linestyle='--', linewidth=0.5, alpha=0.35, color='#d3d3d3',zorder=0)
     ax3.grid(linestyle='--', linewidth=0.5, alpha=0.35, color='#d3d3d3',zorder=0)
-    sns.despine(ax=ax1, top=False, left=False, right=False, bottom=False)
-    sns.despine(ax=ax2, top=False, left=False, right=False, bottom=False)
-    sns.despine(ax=ax3, top=False, left=False, right=False, bottom=False)
-    sns.despine(ax=ax4, top=False, left=False, right=False, bottom=False)
+#    sns.despine(ax=ax1, top=False, left=False, right=False, bottom=False)
+#    sns.despine(ax=ax2, top=False, left=False, right=False, bottom=False)
+#    sns.despine(ax=ax3, top=False, left=False, right=False, bottom=False)
+#    sns.despine(ax=ax4, top=False, left=False, right=False, bottom=False)
+    sns.despine()
     plt.tight_layout()
     plt.savefig(os.path.join(figure_path, 'age_distributions.svg'),
                 bbox_inches='tight')
@@ -1670,7 +1824,9 @@ def plot_choropleths_trusts(support_path, shape_path, figure_path,
               edgecolor='k', frameon=False, fontsize=10)
     ee.xaxis.set_major_formatter(mtick.PercentFormatter(decimals=0))
     ee.set_xlabel("")
-
+    print('We have ' + str(len(gdf[gdf['pc_amount']!='No Data'])) + ' trusts in our dataset')
+    print('Of them, ' + str(len(gdf[(gdf['pc_amount']!='No Data') & (gdf['pc_amount']<2.5)])) + ' procure < 2.5% from CCEW by value')
+    print('Of them, ' + str(len(gdf[(gdf['pc_count']!='No Data') & (gdf['pc_count']<2.5)])) + ' procure < 2.5% from CCEW by count')
     count_array = gdf[gdf['pc_amount']!='No Data']['pc_amount'].astype(float)
     ff = sns.distplot(count_array, ax=ax4, kde_kws={'color': '#ffb94e', 'alpha':0.9,
                                                     'label':'KDE'},
@@ -1770,6 +1926,15 @@ def plot_choropleths_ccg(gdf, figure_path):
     ax2.set_title('B.', **csfont, fontsize=titlesize+8, loc='left', y=1)
 
     count_array = gdf[gdf['count_pc_cc']!='No Data']['count_pc_cc'].astype(float)
+
+    print('We have ' + str(len(gdf[gdf['amount_pc_cc']!='No Data'])) +
+          ' trusts in our dataset')
+    print('Of them, ' + str(len(gdf[(gdf['amount_pc_cc']!='No Data') &
+                               (gdf['amount_pc_cc']<2.5)])) +
+          ' procure < 2.5% from CCEW by value')
+    print('Of them, ' + str(len(gdf[(gdf['count_pc_cc']!='No Data') &
+                                    (gdf['count_pc_cc']<2.5)])) +
+          ' procure < 2.5% from CCEW by count')
     ee = sns.distplot(count_array, ax=ax3, kde_kws={'color': '#4e94ff', 'alpha':0.9,
                                                     'label':'KDE', 'linewidth': 1},
                       hist_kws={'color': '#4e94ff', 'alpha': 0.5,
@@ -1851,107 +2016,111 @@ def make_gdf(ccg_merged, shape_path, support_path):
     return gdf
 
 
-def build_charity_df(pay_df, cc_name, icnpo_df, cc_fin, data_path):
+def build_charity_df(pay_df, icnpo_df, cc_fin, data_path):
     cc_pay_df = pay_df[pay_df['match_type'].str.contains('Charity')]
-    cc_count = cc_pay_df.groupby(['verif_match'])['verif_match'].\
+    cc_count = cc_pay_df.groupby(['CharityRegNo'])['CharityRegNo'].\
         count().reset_index(name="count")
-    cc_val = cc_pay_df.groupby(['verif_match'])['amount'].sum().reset_index()
-    cc_merge = pd.merge(cc_val, cc_count, how='left', on='verif_match')
-    cc_merge = pd.merge(cc_merge, cc_name, how='left',
-                        left_on='verif_match',
-                        right_on='norm_name')
-    cc_merge['regno'] = pd.to_numeric(cc_merge['regno'],
-                                      errors='coerce')
-    cc_merge['regno'] = cc_merge['regno'].astype(float)
+    cc_val = cc_pay_df.groupby(['CharityRegNo'])['amount'].sum().reset_index()
+    cc_merge = pd.merge(cc_val, cc_count, how='left', on='CharityRegNo')
+    #cc_merge = pd.merge(cc_merge,
+    #                    cc_name[['regno', 'regdate', 'remdate']].drop_duplicates(subset=['regno']),
+    #                    how='left',
+    #                    left_on='CharityRegNo',
+    #                    right_on='regno')
+    cc_merge['CharityRegNo'] = pd.to_numeric(cc_merge['CharityRegNo'],
+                                             errors='coerce')
+    cc_merge['CharityRegNo'] = cc_merge['CharityRegNo'].astype(float)
     cc_merge['amount'] = cc_merge['amount'].astype(int)
-    cc_merge = pd.merge(cc_merge, icnpo_df, on=['regno'],
+    cc_merge = pd.merge(cc_merge, icnpo_df, left_on=['CharityRegNo'], right_on=['regno'],
                         how='left', indicator=False)
-    cc_sup = pd.merge(cc_merge, cc_fin, on=['regno'],
+    cc_sup = pd.merge(cc_merge, cc_fin, left_on=['CharityRegNo'], right_on=['regno'],
                       how='left', indicator=False)
-    missing_regno = len(cc_sup[cc_sup['regno'].isnull()])
+    missing_regno = len(cc_sup[cc_sup['CharityRegNo'].isnull()])
     print('We are missing ' + str(missing_regno) + ' registration numbers')
     print("Can't do anything about that...\n" +
           "This seems to be where two charities have the " +
           "same normalised name, and neither has been " +
           " removed from the register")
     print('This leaves us with ' +
-          str(len(cc_sup[cc_sup['regno'].notnull()])) +
+          str(len(cc_sup[cc_sup['CharityRegNo'].notnull()])) +
           ' charities with regnos.')
     missing_income = len(cc_sup[cc_sup['income'].isnull()])
     print('We are missing ' + str(missing_income) + ' incomes')
     print("Can't do anything about that...")
-    missing_icnpo_df = cc_sup[(cc_sup['icnpo_desc'].isnull()) & (cc_merge['regno'].notnull())]#[['verif_match', 'regno']]
+    missing_icnpo_df = cc_sup[(cc_sup['icnpo_desc'].isnull()) & (cc_merge['CharityRegNo'].notnull())]#[['verif_match', 'regno']]
     missing_icnpo = len(missing_icnpo_df)
     print('We are missing ' + str(missing_icnpo) + ' ICNPO numbers which have charity numbers')
     if missing_icnpo>0:
         print('The unmapped charities are in data\\support\\unmapped_icnpo.csv')
-        missing_icnpo_df[['verif_match', 'regno']].to_csv(os.path.join(data_path, 'data_support', 'unmapped_icnpo.csv'))
+        missing_icnpo_df[['CharityRegNo']].to_csv(os.path.join(data_path, 'data_support', 'unmapped_icnpo.csv'))
     return cc_pay_df, cc_sup
 
 
-def tabulate_charities(pay_df, cc_name, icnpo_df,
-                       cc_fin, tablepath, tablename):
+def tabulate_charities(pay_df, icnpo_df, cc_fin, tablepath, tablename, metric):
+    pay_df = pay_df[~pay_df['verif_match'].str.contains('FOUNDATION TRUST')]
     cc_df = pay_df[pay_df['match_type'].str.contains('Charity')]
-    cc_count = cc_df.groupby(['verif_match'])['verif_match'].\
+    cc_count = cc_df.groupby(['CharityRegNo'])['CharityRegNo'].\
                      count().reset_index(name="count")
-    cc_val = cc_df.groupby(['verif_match'])['amount'].sum().reset_index()
-    cc_merge = pd.merge(cc_val, cc_count, how='left', on='verif_match')
-    cc_merge = cc_merge[~cc_merge['verif_match'].\
-               str.contains('FOUNDATION TRUST')]
-    cc_merge = pd.merge(cc_merge, cc_name, how='left',
-                        left_on='verif_match', right_on='norm_name')
-    cc_merge['regno'] = pd.to_numeric(cc_merge['regno'], errors='coerce')
-    cc_merge = cc_merge[cc_merge['regno'].notnull()]
-    cc_merge['regno'] = cc_merge['regno'].astype(int)
+    cc_val = cc_df.groupby(['CharityRegNo'])['amount'].sum().reset_index()
+    cc_merge = pd.merge(cc_val, cc_count, how='left', on='CharityRegNo')
+
+#    cc_merge = pd.merge(cc_merge, cc_name, how='left',
+#                        left_on='CharityRegNo', right_on='regno')
+    cc_merge['CharityRegNo'] = pd.to_numeric(cc_merge['CharityRegNo'], errors='coerce')
+    cc_merge = cc_merge[cc_merge['CharityRegNo'].notnull()]
+    cc_merge['CharityRegNo'] = cc_merge['CharityRegNo'].astype(int)
     cc_merge['amount'] = cc_merge['amount'].astype(int)
-    cc_merge = pd.merge(cc_merge, icnpo_df, on=['regno'],
+    cc_merge = pd.merge(cc_merge, icnpo_df, left_on=['CharityRegNo'],
+                        right_on=['regno'],
                         how='left', indicator=False)
     cc_merge['ICNPO'] = cc_merge['ICNPO'].fillna(9999)
-    cc_merge = pd.merge(cc_merge, cc_fin, on=['regno'],
+    cc_merge = pd.merge(cc_merge, cc_fin,
+                        left_on=['CharityRegNo'], right_on=['regno'],
                         how='left', indicator=False)
     cc_merge = cc_merge[cc_merge['ICNPO'].notnull()]
     cc_merge['ICNPO'] = cc_merge['ICNPO'].astype(int)
-    cc_merge = cc_merge.drop(columns=['name', 'norm_name', 'subno',
-                                      'nameno', 'icnpo_desc', 'icnpo_group',
-                                      'remdate', 'remcode'])
+    cc_merge = cc_merge.drop(columns=[#'name', 'norm_name', 'subno',
+                                      #'nameno',
+                                      'icnpo_desc', 'icnpo_group',
+                                      #'remdate',
+                                      #'remcode'
+                                      'regno_x', 'regno_y'
+                                      ])
     #cc_merge = cc_merge.set_index('verif_match')
-    sorted_values = pd.merge(cc_name, cc_fin, how='left',
-                             left_on='regno', right_on='regno').\
-        sort_values(by='income', ascending=False)['norm_name'].reset_index()
-    sorted_values['norm_name']=sorted_values['norm_name'].str.strip()
+    sorted_values = cc_fin.sort_values(by='income', ascending=False)['regno'].reset_index()
     cc_merge['CC Rank'] = np.nan
-    cc_merge = cc_merge.sort_values(by='count', ascending=False)[0:10]
+    cc_merge = cc_merge.sort_values(by=metric, ascending=False)[0:10]
     for index, row in cc_merge.iterrows():
-        pos = sorted_values[sorted_values['norm_name']==row['verif_match']].index[0]
+        pos = sorted_values[sorted_values['regno'] == row['CharityRegNo']].index[0]
         cc_merge.at[index, 'CC Rank'] = int(pos)
-    cc_merge['regdate'] = pd.to_datetime(cc_merge['regdate']).dt.date
+    #cc_merge['regdate'] = pd.to_datetime(cc_merge['regdate']).dt.date
     cc_merge['CC Rank'] = cc_merge['CC Rank'].astype(int)
     print(cc_merge.to_string(index=False))
     cc_merge.to_csv(os.path.join(tablepath, tablename), index=False)
 
 def icnpo_groupings(pay_df, pay_df_ccg, pay_df_trust, pay_df_nhsengland,
-                    cc_name, icnpo_df, icnpo_lookup, table_path):
+                    icnpo_df, icnpo_lookup, table_path):
+    """This should be modularized"""
 
     ## full df
+    pay_df = pay_df[~pay_df['verif_match'].str.contains('FOUNDATION TRUST')]
     cc_df = pay_df[pay_df['match_type'].str.contains('Charity')]
-    cc_count = cc_df.groupby(['verif_match'])['verif_match'].\
+    cc_count = cc_df.groupby(['CharityRegNo'])['CharityRegNo'].\
                      count().reset_index(name="count")
-    cc_val = cc_df.groupby(['verif_match'])['amount'].sum().reset_index()
-    cc_merge = pd.merge(cc_val, cc_count, how='left', on='verif_match')
-    cc_merge = cc_merge[~cc_merge['verif_match'].\
-               str.contains('FOUNDATION TRUST')]
-    cc_merge = pd.merge(cc_merge, cc_name, how='left',
-                        left_on='verif_match', right_on='norm_name')
-    cc_merge['regno'] = pd.to_numeric(cc_merge['regno'], errors='coerce')
-    cc_merge = cc_merge[cc_merge['regno'].notnull()]
-    cc_merge['regno'] = cc_merge['regno'].astype(int)
+    cc_val = cc_df.groupby(['CharityRegNo'])['amount'].sum().reset_index()
+    cc_merge = pd.merge(cc_val, cc_count, how='left', on='CharityRegNo')
+    #cc_merge = pd.merge(cc_merge, cc_name, how='left',
+    #                    left_on='CharityRegNo', right_on='regno')
+    cc_merge['CharityRegNo'] = pd.to_numeric(cc_merge['CharityRegNo'], errors='coerce')
+    cc_merge = cc_merge[cc_merge['CharityRegNo'].notnull()]
+    cc_merge['CharityRegNo'] = cc_merge['CharityRegNo'].astype(int)
     cc_merge['amount'] = cc_merge['amount'].astype(int)
-    cc_merge = pd.merge(cc_merge, icnpo_df, on=['regno'],
+    cc_merge = pd.merge(cc_merge, icnpo_df, left_on = ['CharityRegNo'],
+                        right_on=['regno'],
                         how='left', indicator=False)
     cc_merge['ICNPO'] = cc_merge['ICNPO'].fillna(9999)
     cc_merge['ICNPO'] = cc_merge['ICNPO'].astype(int)
-    cc_merge = cc_merge.drop(columns=['name', 'norm_name', 'subno',
-                                      'nameno', 'regno', 'verif_match'])
+    #cc_merge = cc_merge.drop(columns=['norm_name'])
     amount_icnpo_pc = cc_merge.groupby(['ICNPO'])['amount'].sum().rename("amount")
     amount_icnpo_pc = amount_icnpo_pc.reset_index()
     amount_icnpo_pc['amount'] = (amount_icnpo_pc['amount']/
@@ -1964,26 +2133,32 @@ def icnpo_groupings(pay_df, pay_df_ccg, pay_df_trust, pay_df_nhsengland,
                               sum_icnpo_pc['amount'].sum())*100
 
     ## ccg df
+    pay_df_ccg = pay_df_ccg[~pay_df_ccg['verif_match'].str.contains('FOUNDATION TRUST')]
     cc_df_ccg = pay_df_ccg[pay_df_ccg['match_type'].str.contains('Charity')]
-    cc_count_ccg = cc_df_ccg.groupby(['verif_match'])['verif_match'].\
+    cc_count_ccg = cc_df_ccg.groupby(['CharityRegNo'])['CharityRegNo'].\
                      count().reset_index(name="count_ccg")
-    cc_val_ccg = cc_df_ccg.groupby(['verif_match'])['amount'].sum().reset_index()
+    cc_val_ccg = cc_df_ccg.groupby(['CharityRegNo'])['amount'].sum().reset_index()
     cc_val_ccg = cc_val_ccg.rename({'amount': 'amount_ccg'}, axis=1)
-    cc_merge_ccg = pd.merge(cc_val_ccg, cc_count_ccg, how='left', on='verif_match')
-    cc_merge_ccg = cc_merge_ccg[~cc_merge_ccg['verif_match'].\
-               str.contains('FOUNDATION TRUST')]
-    cc_merge_ccg = pd.merge(cc_merge_ccg, cc_name, how='left',
-                        left_on='verif_match', right_on='norm_name')
-    cc_merge_ccg['regno'] = pd.to_numeric(cc_merge_ccg['regno'], errors='coerce')
-    cc_merge_ccg = cc_merge_ccg[cc_merge_ccg['regno'].notnull()]
-    cc_merge_ccg['regno'] = cc_merge_ccg['regno'].astype(int)
+    cc_merge_ccg = pd.merge(cc_val_ccg, cc_count_ccg, how='left', on='CharityRegNo')
+
+    #cc_merge_ccg = pd.merge(cc_merge_ccg, cc_name, how='left',
+    #                    left_on='CharityRegNo', right_on='regno')
+
+    cc_merge_ccg['CharityRegNo'] = pd.to_numeric(cc_merge_ccg['CharityRegNo'], errors='coerce')
+    cc_merge_ccg = cc_merge_ccg[cc_merge_ccg['CharityRegNo'].notnull()]
+    cc_merge_ccg['CharityRegNo'] = cc_merge_ccg['CharityRegNo'].astype(int)
     cc_merge_ccg['amount_ccg'] = cc_merge_ccg['amount_ccg'].astype(int)
-    cc_merge_ccg = pd.merge(cc_merge_ccg, icnpo_df, on=['regno'],
+    cc_merge_ccg = pd.merge(cc_merge_ccg, icnpo_df, left_on=['CharityRegNo'],
+                            right_on=['regno'],
                             how='left', indicator=False)
     cc_merge_ccg['ICNPO'] = cc_merge_ccg['ICNPO'].fillna(9999)
     cc_merge_ccg['ICNPO'] = cc_merge_ccg['ICNPO'].astype(int)
-    cc_merge_ccg = cc_merge_ccg.drop(columns=['name', 'norm_name', 'subno',
-                                              'nameno', 'regno', 'verif_match'])
+    #cc_merge_ccg = cc_merge_ccg.drop(columns=[#'name',
+    #
+    #                                          'norm_name',
+    #                                          # 'subno',
+    #                                          #'nameno', 'regno', 'verif_match'
+    #                                          ])
     amount_icnpo_pc_ccg = cc_merge_ccg.groupby(['ICNPO'])['amount_ccg'].sum().rename("amount_ccg")
     amount_icnpo_pc_ccg = amount_icnpo_pc_ccg.reset_index()
     amount_icnpo_pc_ccg['amount_ccg'] = (amount_icnpo_pc_ccg['amount_ccg']/
@@ -1996,26 +2171,28 @@ def icnpo_groupings(pay_df, pay_df_ccg, pay_df_trust, pay_df_nhsengland,
                                       sum_icnpo_pc_ccg['amount_ccg'].sum())*100
 
     #trust_df
+    pay_df_trust = pay_df_trust[~pay_df_trust['verif_match'].str.contains('FOUNDATION TRUST')]
     cc_df_trust = pay_df_trust[pay_df_trust['match_type'].str.contains('Charity')]
-    cc_count_trust = cc_df_trust.groupby(['verif_match'])['verif_match'].\
+    cc_count_trust = cc_df_trust.groupby(['CharityRegNo'])['CharityRegNo'].\
                      count().reset_index(name="count_trust")
-    cc_val_trust = cc_df_trust.groupby(['verif_match'])['amount'].sum().reset_index()
+    cc_val_trust = cc_df_trust.groupby(['CharityRegNo'])['amount'].sum().reset_index()
     cc_val_trust = cc_val_trust.rename({'amount': 'amount_trust'}, axis=1)
-    cc_merge_trust = pd.merge(cc_val_trust, cc_count_trust, how='left', on='verif_match')
-    cc_merge_trust = cc_merge_trust[~cc_merge_trust['verif_match'].\
-               str.contains('FOUNDATION TRUST')]
-    cc_merge_trust = pd.merge(cc_merge_trust, cc_name, how='left',
-                        left_on='verif_match', right_on='norm_name')
-    cc_merge_trust['regno'] = pd.to_numeric(cc_merge_trust['regno'], errors='coerce')
-    cc_merge_trust = cc_merge_trust[cc_merge_trust['regno'].notnull()]
-    cc_merge_trust['regno'] = cc_merge_trust['regno'].astype(int)
+    cc_merge_trust = pd.merge(cc_val_trust, cc_count_trust, how='left', on='CharityRegNo')
+    #cc_merge_trust = pd.merge(cc_merge_trust, cc_name, how='left',
+    #                    left_on='verif_match', right_on='norm_name')
+    cc_merge_trust['CharityRegNo'] = pd.to_numeric(cc_merge_trust['CharityRegNo'], errors='coerce')
+    cc_merge_trust = cc_merge_trust[cc_merge_trust['CharityRegNo'].notnull()]
+    cc_merge_trust['CharityRegNo'] = cc_merge_trust['CharityRegNo'].astype(int)
     cc_merge_trust['amount_trust'] = cc_merge_trust['amount_trust'].astype(int)
-    cc_merge_trust = pd.merge(cc_merge_trust, icnpo_df, on=['regno'],
-                            how='left', indicator=False)
+    cc_merge_trust = pd.merge(cc_merge_trust, icnpo_df, left_on=['CharityRegNo'],
+                              right_on=['regno'],
+                              how = 'left', indicator=False)
     cc_merge_trust['ICNPO'] = cc_merge_trust['ICNPO'].fillna(9999)
     cc_merge_trust['ICNPO'] = cc_merge_trust['ICNPO'].astype(int)
-    cc_merge_trust = cc_merge_trust.drop(columns=['name', 'norm_name', 'subno',
-                                              'nameno', 'regno', 'verif_match'])
+#    cc_merge_trust = cc_merge_trust.drop(columns=[#'name',
+#                                                  'norm_name',
+#                                                  #'subno', 'nameno', 'regno', 'verif_match'
+#        ])
     amount_icnpo_pc_trust = cc_merge_trust.groupby(['ICNPO'])['amount_trust'].sum().rename("amount_trust")
     amount_icnpo_pc_trust = amount_icnpo_pc_trust.reset_index()
     amount_icnpo_pc_trust['amount_trust'] = (amount_icnpo_pc_trust['amount_trust']/
@@ -2028,34 +2205,33 @@ def icnpo_groupings(pay_df, pay_df_ccg, pay_df_trust, pay_df_nhsengland,
                                       sum_icnpo_pc_trust['amount_trust'].sum())*100
 
     #nhsengland_df
+    pay_df_trust = pay_df_trust[~pay_df_trust['verif_match'].str.contains('FOUNDATION TRUST')]
     cc_df_nhsengland = pay_df_nhsengland[pay_df_nhsengland['match_type'].str.contains('Charity')]
-    cc_count_nhsengland = cc_df_nhsengland.groupby(['verif_match'])['verif_match'].\
+    cc_count_nhsengland = cc_df_nhsengland.groupby(['CharityRegNo'])['CharityRegNo'].\
                      count().reset_index(name="count_eng")
-    cc_val_nhsengland = cc_df_nhsengland.groupby(['verif_match'])['amount'].sum().reset_index()
+    cc_val_nhsengland = cc_df_nhsengland.groupby(['CharityRegNo'])['amount'].sum().reset_index()
     cc_val_nhsengland = cc_val_nhsengland.rename({'amount': 'amount_eng'}, axis=1)
     cc_merge_nhsengland = pd.merge(cc_val_nhsengland, cc_count_nhsengland,
-                                   how='left', on='verif_match')
-    cc_merge_nhsengland = cc_merge_nhsengland[~cc_merge_nhsengland['verif_match'].\
-               str.contains('FOUNDATION TRUST')]
-    cc_merge_nhsengland = pd.merge(cc_merge_nhsengland, cc_name, how='left',
-                                   left_on='verif_match', right_on='norm_name')
-    cc_merge_nhsengland['regno'] = pd.to_numeric(cc_merge_nhsengland['regno'], errors='coerce')
-    cc_merge_nhsengland = cc_merge_nhsengland[cc_merge_nhsengland['regno'].notnull()]
-    cc_merge_nhsengland['regno'] = cc_merge_nhsengland['regno'].astype(int)
+                                   how='left', on='CharityRegNo')
+    #cc_merge_nhsengland = pd.merge(cc_merge_nhsengland, cc_name, how='left',
+    #                               left_on='CharityRegNo', right_on='regno')
+    cc_merge_nhsengland['regno'] = pd.to_numeric(cc_merge_nhsengland['CharityRegNo'], errors='coerce')
+    cc_merge_nhsengland = cc_merge_nhsengland[cc_merge_nhsengland['CharityRegNo'].notnull()]
+    cc_merge_nhsengland['CharityRegNo'] = cc_merge_nhsengland['CharityRegNo'].astype(int)
     cc_merge_nhsengland['amount_eng'] = cc_merge_nhsengland['amount_eng'].astype(int)
     cc_merge_nhsengland = pd.merge(cc_merge_nhsengland, icnpo_df, on=['regno'],
                                    how='left', indicator=False)
     cc_merge_nhsengland['ICNPO'] = cc_merge_nhsengland['ICNPO'].fillna(9999)
     cc_merge_nhsengland['ICNPO'] = cc_merge_nhsengland['ICNPO'].astype(int)
-    cc_merge_nhsengland = cc_merge_nhsengland.drop(columns=['name', 'norm_name', 'subno',
-                                                            'nameno', 'regno', 'verif_match'])
+#    cc_merge_nhsengland = cc_merge_nhsengland.drop(columns=['name', 'norm_name', 'subno',
+#                                                            'nameno', 'regno', 'verif_match'])
     amount_icnpo_pc_nhsengland = cc_merge_nhsengland.groupby(['ICNPO'])['amount_eng'].sum().rename("amount_eng")
     amount_icnpo_pc_nhsengland = amount_icnpo_pc_nhsengland.reset_index()
     amount_icnpo_pc_nhsengland['amount_eng'] = (amount_icnpo_pc_nhsengland['amount_eng']/
-                                                       amount_icnpo_pc_nhsengland['amount_eng'].sum())*100
+                                                amount_icnpo_pc_nhsengland['amount_eng'].sum())*100
     count_icnpo_pc_nhsengland = cc_merge_nhsengland.groupby(['ICNPO'])['ICNPO'].count().reset_index(name = "count_eng")
     count_icnpo_pc_nhsengland['count_eng'] = (count_icnpo_pc_nhsengland['count_eng']/
-                                                     count_icnpo_pc_nhsengland['count_eng'].sum())*100
+                                              count_icnpo_pc_nhsengland['count_eng'].sum())*100
     sum_icnpo_pc_nhsengland = cc_merge_nhsengland.groupby(['ICNPO'])['amount_eng'].sum().reset_index()
     sum_icnpo_pc_nhsengland['amount_eng'] = (sum_icnpo_pc_nhsengland['amount_eng']/
                                              sum_icnpo_pc_nhsengland['amount_eng'].sum())*100
@@ -2099,8 +2275,14 @@ def icnpo_groupings(pay_df, pay_df_ccg, pay_df_trust, pay_df_nhsengland,
 
 
 def load_ccname(cc_path, norm_path):
+    ex_char = pd.read_csv(os.path.join(cc_path, 'extract_charity.csv'),
+                             warn_bad_lines=False, error_bad_lines=False)
+    print('The percent of charities without an address: ',
+          len(ex_char[ex_char['postcode'].notnull()])/len(ex_char))
     cc_name = pd.read_csv(os.path.join(cc_path, 'extract_name.csv'),
                           warn_bad_lines=False, error_bad_lines=False)
+    print('The number of unique regnos in our database: ',
+          len(cc_name['regno'].unique()))
     cc_regdate = pd.read_csv(os.path.join(cc_path,
                                           'extract_registration.csv'),
                              parse_dates=['regdate', 'remdate'],
