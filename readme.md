@@ -92,11 +92,11 @@ This work was primarily funded by the [British Academy]. In addition to this, ge
 
 ## Licensing
 
-This code is made available under an MIT License.
+This code is made available under a GNU GENERAL PUBLIC LICENSE 3.0.
 
 ## TODO:
 
 * More docstrings
 * Publish related academic papers
 
-Last updated: 2020-06-22
+Last updated: 2021-07-01
