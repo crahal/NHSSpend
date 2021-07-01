@@ -7,7 +7,7 @@
 [![Generic badge](https://img.shields.io/badge/License-MIT-blue.svg)](https://shields.io/)
 [![Generic badge](https://img.shields.io/badge/Maintained-Yes-brightgreen.svg)](https://shields.io/)
 [![Generic badge](https://img.shields.io/badge/BuildPassing-No-orange.svg)](https://shields.io/)
-![coverage](https://img.shields.io/badge/Data-£445bn-purple)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.5054717.svg)](https://doi.org/10.5281/zenodo.5054717)
 ---
 
 ## Introduction
