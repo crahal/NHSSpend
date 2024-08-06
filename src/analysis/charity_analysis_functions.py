@@ -1,35 +1,106 @@
-from geopandas import GeoDataFrame
-from geopandas import points_from_xy
-import geopandas as gpd
-import pysal.viz.mapclassify as mc
-import pandas as pd
-from scipy import stats
 import os
 import sys
-import matplotlib.pyplot as plt
-import seaborn as sns
-import numpy as np
-import matplotlib as mpl
-import matplotlib.ticker as mtick
-from matplotlib.ticker import FormatStrFormatter
+import json
+import string
+import requests
+import datetime
+from datetime import timedelta, date
 from tempfile import NamedTemporaryFile
 from urllib.request import urlopen
+
+import numpy as np
+import pandas as pd
+import seaborn as sns
+import matplotlib as mpl
+import matplotlib.pyplot as plt
+import matplotlib.ticker as mtick
+import matplotlib.gridspec as gridspec
 import matplotlib.colors as colors
+from matplotlib.ticker import MaxNLocator
+from matplotlib.lines import Line2D
 from matplotlib.colors import rgb2hex
+
 import nltk
 from nltk.tokenize import word_tokenize
 from nltk.stem.snowball import SnowballStemmer
 from nltk.probability import FreqDist
 from nltk.corpus import stopwords
-from datetime import timedelta, date
-sys.path.append("..")
-import matplotlib.gridspec as gridspec
-#mpl.font_manager._rebuild()
-from reconciliation import normalizer
+from matplotlib.ticker import FuncFormatter
 
-np.warnings.filterwarnings('ignore')
+from scipy import stats
+import pysal.viz.mapclassify as mc
+
+from geopandas import GeoDataFrame
+from geopandas import points_from_xy
+import geopandas as gpd
+import statsmodels.api as sm
+
+csfont = {'fontname': 'Helvetica'}
+
+def normalizer(name, norm_dict={}):
+    ''' normalise entity names with manually curated dict'''
+    if isinstance(name, str):
+        name = name.upper()
+        for key, value in norm_dict.items():
+            name = name.replace(key, value)
+        name = name.replace(r"\(.*\)", "")
+        name = "".join(l for l in name if l not in string.punctuation)
+        name = ' '.join(name.split())
+        name = name.strip()
+        return name
+    else:
+        return None
+
+
+
+#np.warnings.filterwarnings('ignore')
 plt.rcParams['patch.edgecolor'] = 'k'
 plt.rcParams['patch.linewidth'] = 0.25
+
+
+def possibly_public(trust_pay_df, ccg_pay_df, nhsengland_pay_df):
+    trust_pay_df['data_type'] = 'Trusts'
+    ccg_pay_df['data_type'] = 'CCGs'
+    nhsengland_pay_df['data_type'] = 'NHS_Eng'
+    concat = pd.concat([trust_pay_df, ccg_pay_df, nhsengland_pay_df], ignore_index=True)
+
+    public = concat[['date', 'expensetype', 'expensearea', 'supplier', 'amount', 'data_type']].copy()
+
+    possible_substrings = ['council', 'municipality', 'local auth',
+                           'library', 'government', 'police',
+                           'department of', 'her majest', 'job centre']
+
+    public['Possibly_Public'] = 0
+
+    for term in possible_substrings:
+        public['is_' + term] = 0
+        public['Possibly_Public'] = np.where(public['supplier'].str.lower().str.contains(term), 1,
+                                             public['Possibly_Public'])
+        public['is_' + term] = np.where(public['supplier'].str.lower().str.contains(term), 1, public['is_' + term])
+        print('There are a total of {} strings containing: {}'.format(public['is_' + term].sum(), term))
+
+    print('There are a total of {} possibly public strings'.format(public['Possibly_Public'].sum()))
+    print('This is {}% of all payments'.format(np.round(public['Possibly_Public'].sum() / len(public) * 100, 2)))
+    print('The value of these payments is: ',
+          np.round(public[public['Possibly_Public']==1]['amount'].sum()))
+    print('As a percent, this represents: ',
+          np.round(public[public['Possibly_Public'] == 1]['amount'].sum()/
+                   public['amount'].sum()*100))
+    print('The mean value of these payments is: ',
+          np.round(public[public['Possibly_Public']==1]['amount'].mean()))
+    result_df = public[public['Possibly_Public'] == 1]['data_type'].value_counts().reset_index()
+    result_df.columns = ['data_type', 'count']
+    result_df['pc_all_public'] = result_df['count'] / result_df['count'].sum() * 100
+    result_df = result_df.set_index('data_type')
+
+    result_df.loc['CCGs', 'pc_within_type'] = np.round(result_df.loc['CCGs', 'count'] / len(ccg_pay_df) * 100, 2)
+    result_df.loc['Trusts', 'pc_within_type'] = np.round(result_df.loc['Trusts', 'count'] / len(trust_pay_df) * 100, 2)
+    result_df.loc['NHS_Eng', 'pc_within_type'] = np.round(
+        result_df.loc['NHS_Eng', 'count'] / len(nhsengland_pay_df) * 100, 2)
+
+    print(result_df.to_markdown(index=True))
+    print("\nThe most commonly seen 'Possibly Public' entities:")
+    print(public[public['Possibly_Public']==1]['supplier'].value_counts().head(5).to_markdown(index=True))
 
 
 def make_rolling_windows_top10(ccg_pay_df, trust_pay_df, nhsengland_pay_df,
@@ -51,16 +122,16 @@ def make_rolling_windows_top10(ccg_pay_df, trust_pay_df, nhsengland_pay_df,
         lower_bound = single_date - pd.Timedelta(window, unit='d')
         ccg_90day_temp = ccg_pay_df[ccg_pay_df['date'].between(lower_bound,
                                                                single_date,
-                                                               inclusive=False)]
+                                                               inclusive='neither')]
         trust_90day_temp = trust_pay_df[trust_pay_df['date'].between(lower_bound,
                                                                      single_date,
-                                                                     inclusive=False)]
+                                                                     inclusive='neither')]
         nhsengland_90day_temp = nhsengland_pay_df[nhsengland_pay_df['date'].between(lower_bound,
                                                                                     single_date,
-                                                                                    inclusive=False)]
+                                                                                    inclusive='neither')]
         combined_90day_temp = combined_pay_df[combined_pay_df['date'].between(lower_bound,
                                                                               single_date,
-                                                                              inclusive=False)]
+                                                                              inclusive='neither')]
         charity_ccg = ccg_90day_temp[ccg_90day_temp['match_type'].str.contains('Charity')]
         charity_ccg_groupby_sum = charity_ccg.groupby(['CharityRegNo'])['amount'].sum()
         charity_ccg_groupby_sum = charity_ccg_groupby_sum.reset_index().sort_values(by = 'amount', ascending=False)
@@ -126,50 +197,47 @@ def make_rolling_windows_top10(ccg_pay_df, trust_pay_df, nhsengland_pay_df,
 
 def plot_conc(figure_path, rolling_df_45_top10, rolling_df_90_top10,
               rolling_df_180_top10, rolling_df_365_top10):
-    f, ((ax1, ax2), (ax3, ax4)) = plt.subplots(2, 2, figsize=(14, 9))
+    f, ((ax1, ax2), (ax3, ax4)) = plt.subplots(2, 2, figsize=(13, 11))
     csfont = {'fontname': 'Helvetica'}
-    rolling_df_180_top10['CCG_Amount_5'].plot(ax=ax1, color='#d6604d', alpha=0.8)
-    rolling_df_180_top10['CCG_Amount_10'].plot(ax=ax1, color='#92c5de', alpha=0.8)
-    rolling_df_180_top10['CCG_Amount_20'].plot(ax=ax1, color='#2166ac', alpha=0.8)
+    colors = ['#41558c', '#E89818', '#CF202A']
+    color1 = colors[0]
+    color2 = colors[1]
+    color3 = colors[2]
+    rolling_df_180_top10['CCG_Amount_5'].plot(ax=ax1, color=color1, alpha=0.8)
+    rolling_df_180_top10['CCG_Amount_10'].plot(ax=ax1, color=color2, alpha=0.8)
+    rolling_df_180_top10['CCG_Amount_20'].plot(ax=ax1, color=color3, alpha=0.8)
 
-    rolling_df_180_top10['Trust_Amount_5'].plot(ax=ax2, color='#d6604d', alpha=0.8)
-    rolling_df_180_top10['Trust_Amount_10'].plot(ax=ax2, color='#92c5de', alpha=0.8)
-    rolling_df_180_top10['Trust_Amount_20'].plot(ax=ax2, color='#2166ac', alpha=0.8)
+    rolling_df_180_top10['Trust_Amount_5'].plot(ax=ax2, color=color1, alpha=0.8)
+    rolling_df_180_top10['Trust_Amount_10'].plot(ax=ax2, color=color2, alpha=0.8)
+    rolling_df_180_top10['Trust_Amount_20'].plot(ax=ax2, color=color3, alpha=0.8)
 
-    rolling_df_180_top10['NHSEngland_Amount_5'].plot(ax=ax3, color='#d6604d', alpha=0.8)
-    rolling_df_180_top10['NHSEngland_Amount_10'].plot(ax=ax3, color='#92c5de', alpha=0.8)
-    rolling_df_180_top10['NHSEngland_Amount_20'].plot(ax=ax3, color='#2166ac', alpha=0.8)
+    rolling_df_180_top10['NHSEngland_Amount_5'].plot(ax=ax3, color=color1, alpha=0.8)
+    rolling_df_180_top10['NHSEngland_Amount_10'].plot(ax=ax3, color=color2, alpha=0.8)
+    rolling_df_180_top10['NHSEngland_Amount_20'].plot(ax=ax3, color=color3, alpha=0.8)
 
-    rolling_df_180_top10['Combined_Amount_5'].plot(ax=ax4, color='#d6604d', alpha=0.8)
-    rolling_df_180_top10['Combined_Amount_10'].plot(ax=ax4, color='#92c5de', alpha=0.8)
-    rolling_df_180_top10['Combined_Amount_20'].plot(ax=ax4, color='#2166ac', alpha=0.8)
-
-#    ax1.set_title('Concentration Ratio: CCGs', loc='center', size=16, y=1.01)
-    ax1.set_title('A.', loc='left', size=20, y=1.02)
-    #    ax2.set_title('Concentration Ratio: NHS Trusts', loc='center', size=16, y=1.01)
-    ax2.set_title('B.', loc='left', size=20, y=1.02)
-    #ax3.set_title('Concentration Ratio: NHS England', loc='center', size=16, y=1.01)
-    ax3.set_title('C.', loc='left', size=20, y=1.02)
-    #    ax4.set_title('Concentration Ratio: Combined', loc='center', size=16, y=1.01)
-    ax4.set_title('D.', loc='left', size=20, y=1.02)
-    ax1.set_ylabel('Concentration Ratio: CCGs', **csfont, size=13)
-    ax2.set_ylabel('Concentration Ratio: Trusts', **csfont, size=13)
-    ax3.set_ylabel('Concentration Ratio: NHS England', **csfont, size=13)
-    ax4.set_ylabel('Concentration Ratio: Combined', **csfont, size=13)
-
-
+    rolling_df_180_top10['Combined_Amount_5'].plot(ax=ax4, color=color1, alpha=0.8)
+    rolling_df_180_top10['Combined_Amount_10'].plot(ax=ax4, color=color2, alpha=0.8)
+    rolling_df_180_top10['Combined_Amount_20'].plot(ax=ax4, color=color3, alpha=0.8)
+    ax1.set_title('a.', loc='left', size=21, y=1.02)
+    ax2.set_title('b.', loc='left', size=21, y=1.02)
+    ax3.set_title('c.', loc='left', size=21, y=1.02)
+    ax4.set_title('d.', loc='left', size=21, y=1.02)
+    ax1.set_ylabel('Concentration Ratio: CCGs', **csfont, size=14)
+    ax2.set_ylabel('Concentration Ratio: Trusts', **csfont, size=14)
+    ax3.set_ylabel('Concentration Ratio: NHS England', **csfont, size=14)
+    ax4.set_ylabel('Concentration Ratio: Combined', **csfont, size=14)
     ax2.legend(loc='upper right', edgecolor=(0, 0, 0,1),
-               frameon=True, fontsize=10, labels=['Top Five Non-Profits',
-                                                   'Top Ten Non-Profits',
-                                                   'Top Twenty Non-Profits'],
+               frameon=True, fontsize=11, labels=['Top 5 Non-Profits',
+                                                  'Top 10 Non-Profits',
+                                                  'Top 20 Non-Profits'],
                facecolor='w', framealpha=1)
-    for ax in [ax1, ax2, ax3, ax4]:
-        ax.grid(linestyle='--', linewidth=0.5, alpha=0.35, color='#d3d3d3',zorder=0)
-#        ax.set_ylabel("Concentration Ratio", fontsize=12)
-    ax3.set_xlabel('Time')
-    ax4.set_xlabel('Time')
+    legend = ax2.get_legend()
+    legend_frame = legend.get_frame()
+    legend_frame.set_linewidth(0.5)
+    ax3.set_xlabel('Time', **csfont, size=14)
+    ax4.set_xlabel('Time', **csfont, size=14)
     sns.despine()
-    plt.subplots_adjust(hspace=0.3, wspace=0.25)
+    plt.tight_layout(pad=3.5)
     plt.savefig(os.path.join(figure_path, 'concentrations.svg'),
                 bbox_inches='tight')
     plt.savefig(os.path.join(figure_path, 'concentrations.pdf'),
@@ -178,19 +246,27 @@ def plot_conc(figure_path, rolling_df_45_top10, rolling_df_90_top10,
                 bbox_inches='tight', dpi=800)
 
 
+
 def make_rolling_windows(ccg_pay_df, trust_pay_df, nhsengland_pay_df, window):
-    daterange = pd.date_range(date(2013, 12, 1), date(2019, 10, 1), freq='d')
+    if window == 365:
+        daterange = pd.date_range(date(2013, 12, 1), date(2019, 10, 1), freq='d')
+    elif window == 90:
+        daterange = pd.date_range(date(2013, 12, 1), date(2019, 10, 1), freq='d')
+
     temp_df = pd.DataFrame(index=daterange, columns=['CCG_Count',
                                                      'CCG_Amount',
                                                      'Trust_Count',
                                                      'Trust_Amount',
                                                      'NHSEngland_Count',
-                                                     'NHSEngland_Amount'])
+                                                     'NHSEngland_Amount',
+                                                     'All_Count',
+                                                     'All_Amount'])
+    comb_pay_df = pd.concat([ccg_pay_df, trust_pay_df, nhsengland_pay_df], ignore_index=True)
     for single_date in daterange:
         lower_bound = single_date - pd.Timedelta(window, unit='d')
         ccg_90day_temp = ccg_pay_df[ccg_pay_df['date'].between(lower_bound,
                                                                single_date,
-                                                               inclusive=False)]
+                                                               inclusive='neither')]
         ccg_90day_amount_cc = ccg_90day_temp[ccg_90day_temp['match_type'].\
                                              str.contains('Charity')]['amount'].sum()/\
                               ccg_90day_temp['amount'].sum()
@@ -199,7 +275,7 @@ def make_rolling_windows(ccg_pay_df, trust_pay_df, nhsengland_pay_df, window):
                               len(ccg_90day_temp)
         trust_90day_temp = trust_pay_df[trust_pay_df['date'].between(lower_bound,
                                                                      single_date,
-                                                                     inclusive=False)]
+                                                                     inclusive='neither')]
         trust_90day_amount_cc = trust_90day_temp[trust_90day_temp['match_type'].\
                                                  str.contains('Charity')]['amount'].sum()/\
                                 trust_90day_temp['amount'].sum()
@@ -208,33 +284,54 @@ def make_rolling_windows(ccg_pay_df, trust_pay_df, nhsengland_pay_df, window):
                                len(trust_90day_temp)
         nhsengland_90day_temp = nhsengland_pay_df[nhsengland_pay_df['date'].between(lower_bound,
                                                                                     single_date,
-                                                                                    inclusive=False)]
+                                                                                    inclusive='neither')]
         nhsengland_90day_amount_cc = nhsengland_90day_temp[nhsengland_90day_temp['match_type'].\
                                                            str.contains('Charity')]['amount'].sum()/\
                                      nhsengland_90day_temp['amount'].sum()
         nhsengland_90day_count_cc = len(nhsengland_90day_temp[nhsengland_90day_temp['match_type'].\
                                                               str.contains('Charity')])/\
                                     len(nhsengland_90day_temp)
+
+
+
+
+        comb_90day_temp = comb_pay_df[comb_pay_df['date'].between(lower_bound,
+                                                                  single_date,
+                                                                  inclusive='neither')]
+        comb_90day_amount_cc = comb_90day_temp[comb_90day_temp['match_type']. \
+            str.contains('Charity')]['amount'].sum() / \
+                                     comb_90day_temp['amount'].sum()
+        comb_90day_count_cc = len(comb_90day_temp[comb_90day_temp['match_type']. \
+                                        str.contains('Charity')]) / \
+                              len(comb_90day_temp)
+
+
         temp_df.at[single_date, 'CCG_Count'] = ccg_90day_count_cc*100
         temp_df.at[single_date, 'CCG_Amount'] = ccg_90day_amount_cc*100
         temp_df.at[single_date, 'Trust_Count'] = trust_90day_count_cc*100
         temp_df.at[single_date, 'Trust_Amount'] = trust_90day_amount_cc*100
         temp_df.at[single_date, 'NHSEngland_Count'] = nhsengland_90day_count_cc*100
         temp_df.at[single_date, 'NHSEngland_Amount'] = nhsengland_90day_amount_cc*100
+        temp_df.at[single_date, 'All_Amount'] = comb_90day_amount_cc*100
+        temp_df.at[single_date, 'All_Count'] = comb_90day_count_cc * 100
+        temp_df.at[single_date, 'CCG_Median'] = ccg_90day_temp['amount'].median()
+        temp_df.at[single_date, 'Trust_Median'] = trust_90day_temp['amount'].median()
+        temp_df.at[single_date, 'NHSEngland_Median'] = nhsengland_90day_temp['amount'].median()
+        temp_df.at[single_date, 'All_Median'] = comb_90day_temp['amount'].median()
     return temp_df
 
 
 def plot_temporal(ts_ccg_annual, ts_trust_annual, ts_nhsengland_annual,
                   rolling_df_45, rolling_df_365, figure_path):
 
-
+    import matplotlib.ticker as mtick
 #    ax3.plot(x1, y1, label='All Charity Commission', color='#d6604d', alpha=0.5, linewidth=2.25)
 #    x2, y2 = ecdf(ccgdata_regdate)
 #    ax3.plot(x2, y2, label='NHS Suppliers', color='#92c5de', alpha=0.5, linewidth=2.25)
 #    x3, y3 = ecdf(cc_adv_date)
 #    ax3.plot(x3, y3, label='Advancement of Health', color='#2166ac', alpha=0.5, linewidth=2.25)
 
-    color_list=['#377eb8', '#ffb94e', '#ffeda0']
+    colors = ['#41558c', '#E89818', '#CF202A']
     titlesize = 16
     csfont = {'fontname': 'Helvetica'}
     hfont = {'fontname': 'Helvetica'}
@@ -250,34 +347,36 @@ def plot_temporal(ts_ccg_annual, ts_trust_annual, ts_nhsengland_annual,
 
     width=0.225
     rects1 = ax1.bar(np.arange(len(ts_trust_annual)), ts_trust_annual['Count'],
-                     width, color=color_list[0], label='NHS Trusts', alpha=0.575, edgecolor='k',
-                     linewidth=0.75)
+                     width, color=colors[0], label='NHS Trusts', alpha=1, edgecolor='k',
+                     linewidth=1)
     rects2 = ax1.bar(np.arange(len(ts_ccg_annual))+width, ts_ccg_annual['Count'],
-                     width, color=color_list[1], label='CCGs', alpha=0.575, edgecolor='k',
-                     linewidth=0.75)
+                     width, color=colors[1], label='CCGs', alpha=1, edgecolor='k',
+                     linewidth=1)
     rectsX = ax1.bar(np.arange(len(ts_nhsengland_annual))+(2*width), ts_nhsengland_annual['Count'],
-                     width, color=color_list[2], label='NHS England', alpha=0.575, edgecolor='k',
-                     linewidth=0.75)
+                     width, color=colors[2], label='NHS England', alpha=1, edgecolor='k',
+                     linewidth=1)
     ax1.set_xticks(np.arange(len(ts_trust_annual)) + width)
     ax1.set_xticklabels(ts_trust_annual['Year'])
-    ax1.legend(loc='upper right', edgecolor='k', frameon=False, fontsize=10, ncol=1)
     rects3 = ax8.bar(np.arange(len(ts_trust_annual)), ts_trust_annual['Amount'],
-                     width, color=color_list[0], label='NHS Trusts', alpha=0.575, edgecolor='k',
-                     linewidth=0.75)
+                     width, color=colors[0], label='NHS Trusts', alpha=1, edgecolor='k',
+                     linewidth=1)
     rects4 = ax8.bar(np.arange(len(ts_ccg_annual))+width, ts_ccg_annual['Amount'],
-                     width, color=color_list[1], label='CCGs', alpha=0.575, edgecolor='k',
-                     linewidth=0.75)
+                     width, color=colors[1], label='CCGs', alpha=1, edgecolor='k',
+                     linewidth=1)
     rectsY = ax8.bar(np.arange(len(ts_nhsengland_annual))+(2*width), ts_nhsengland_annual['Amount'],
-                     width, color=color_list[2], label='NHS England', alpha=0.575, edgecolor='k',
-                     linewidth=0.75)
+                     width, color=colors[2], label='NHS England', alpha=1, edgecolor='k',
+                     linewidth=1)
 
     ax8.set_xticks(np.arange(len(ts_trust_annual)) + width)
     ax8.set_xticklabels(ts_trust_annual['Year'])
-    ax8.legend(loc='upper right', edgecolor='k', frameon=False, fontsize=10, ncol=1)
-    ax1.legend(loc='upper right', edgecolor='k', frameon=False, fontsize=10, ncol=3)
-    ax8.legend(loc='upper right', edgecolor='k', frameon=False, fontsize=10, ncol=3)
-    ax1.set_ylabel('Payments to Non-Profits')
-    ax8.set_ylabel('Payments to Non-Profits')
+    ax1.legend(loc='upper right', edgecolor='k', frameon=True, framealpha=1, fontsize=10, ncol=3)
+    ax8.legend(loc='upper right', edgecolor='k', frameon=True, framealpha=1, fontsize=10, ncol=3)
+
+    ax1.set_ylabel('Payments to Non-Profits', **csfont, fontsize=13)
+    ax2.set_ylabel('Payments to Non-Profits', **csfont, fontsize=13)
+    ax3.set_ylabel('Payments to Non-Profits', **csfont, fontsize=13)
+    ax8.set_ylabel('Payments to Non-Profits', **csfont, fontsize=13)
+
     ax1.set_ylim(0, 5.5)
 #    ax1.tick_params(labelbottom=False)
     for rect in rects1:
@@ -287,7 +386,7 @@ def plot_temporal(ts_ccg_annual, ts_trust_annual, ts_nhsengland_annual,
                         xytext=(0, 2),  # 3 points vertical offset
                         textcoords="offset points",
                         ha='center', va='bottom',
-                        fontsize=8)
+                        fontsize=7)
     for rect in rects2:
         height = rect.get_height()
         ax1.annotate(str(round(height,1))+'%',
@@ -295,7 +394,7 @@ def plot_temporal(ts_ccg_annual, ts_trust_annual, ts_nhsengland_annual,
                         xytext=(0, 2),  # 3 points vertical offset
                         textcoords="offset points",
                         ha='center', va='bottom',
-                        fontsize=8)
+                        fontsize=7)
     for rect in rectsX:
         height = rect.get_height()
         ax1.annotate(str(round(height,1))+'%',
@@ -303,7 +402,7 @@ def plot_temporal(ts_ccg_annual, ts_trust_annual, ts_nhsengland_annual,
                         xytext=(0, 2),  # 3 points vertical offset
                         textcoords="offset points",
                         ha='center', va='bottom',
-                        fontsize=8)
+                        fontsize=7)
 
     for rect in rects3:
         height = rect.get_height()
@@ -312,7 +411,7 @@ def plot_temporal(ts_ccg_annual, ts_trust_annual, ts_nhsengland_annual,
                         xytext=(0, 2),  # 3 points vertical offset
                         textcoords="offset points",
                         ha='center', va='bottom',
-                        fontsize=8)
+                        fontsize=7)
     for rect in rects4:
         height = rect.get_height()
         ax8.annotate(str(round(height,1))+'%',
@@ -320,7 +419,7 @@ def plot_temporal(ts_ccg_annual, ts_trust_annual, ts_nhsengland_annual,
                         xytext=(0, 2),  # 3 points vertical offset
                         textcoords="offset points",
                         ha='center', va='bottom',
-                        fontsize=8)
+                        fontsize=7)
     for rect in rectsY:
         height = rect.get_height()
         ax8.annotate(str(round(height,1))+'%',
@@ -328,64 +427,85 @@ def plot_temporal(ts_ccg_annual, ts_trust_annual, ts_nhsengland_annual,
                         xytext=(0, 2),  # 3 points vertical offset
                         textcoords="offset points",
                         ha='center', va='bottom',
-                        fontsize=8)
-    ax2.plot(rolling_df_45['Trust_Count'], color=color_list[0],
-             alpha=0.85, linewidth=0.85, label='45 Day Roll')
-    ax3.plot(rolling_df_45['Trust_Amount'], color=color_list[0],
-             alpha=0.85, linewidth=0.85, label='45 Day Roll')
-    ax4.plot(rolling_df_45['CCG_Count'], color=color_list[0],
-             alpha=0.85, linewidth=1.25, label='45 Day Roll')
-    ax5.plot(rolling_df_45['CCG_Amount'], color=color_list[0],
-             alpha=0.85, linewidth=1.25, label='45 Day Roll')
-    ax6.plot(rolling_df_45['NHSEngland_Count'], color=color_list[0],
-             alpha=0.85, linewidth=1.25, label='45 Day Roll')
-    ax7.plot(rolling_df_45['NHSEngland_Amount'], color=color_list[0],
-             alpha=0.85, linewidth=1.25, label='45 Day Roll')
+                        fontsize=7)
+    ax2.plot(rolling_df_45['Trust_Count'], color=colors[0],
+             alpha=1, linewidth=1, label='45 Day Roll')
+    ax3.plot(rolling_df_45['Trust_Amount'], color=colors[0],
+             alpha=1, linewidth=1, label='45 Day Roll')
+    ax4.plot(rolling_df_45['CCG_Count'], color=colors[0],
+             alpha=1, linewidth=1, label='45 Day Roll')
+    ax5.plot(rolling_df_45['CCG_Amount'], color=colors[0],
+             alpha=1, linewidth=1, label='45 Day Roll')
+    ax6.plot(rolling_df_45['NHSEngland_Count'], color=colors[0],
+             alpha=1, linewidth=1, label='45 Day Roll')
+    ax7.plot(rolling_df_45['NHSEngland_Amount'], color=colors[0],
+             alpha=1, linewidth=1, label='45 Day Roll')
 
 
-    ax2.plot(rolling_df_365['Trust_Count'], color=color_list[1],
-             alpha=0.9, linewidth=0.85, label='365 Day Roll')
-    ax3.plot(rolling_df_365['Trust_Amount'], color=color_list[1],
-             alpha=0.9, linewidth=0.85, label='365 Day Roll')
-    ax4.plot(rolling_df_365['CCG_Count'], color=color_list[1],
-             alpha=0.85, linewidth=1.25, label='365 Day Roll')
-    ax5.plot(rolling_df_365['CCG_Amount'], color=color_list[1],
-             alpha=0.85, linewidth=1.25, label='365 Day Roll')
-    ax6.plot(rolling_df_365['NHSEngland_Count'], color=color_list[1],
-             alpha=0.85, linewidth=1.25, label='365 Day Roll')
-    ax7.plot(rolling_df_365['NHSEngland_Amount'], color=color_list[1],
-             alpha=0.85, linewidth=1.25, label='365 Day Roll')
+    ax2.plot(rolling_df_365['Trust_Count'], color=colors[1],
+             alpha=1, linewidth=1, label='365 Day Roll')
+    ax3.plot(rolling_df_365['Trust_Amount'], color=colors[1],
+             alpha=1, linewidth=1, label='365 Day Roll')
+    ax4.plot(rolling_df_365['CCG_Count'], color=colors[1],
+             alpha=1, linewidth=1, label='365 Day Roll')
+    ax5.plot(rolling_df_365['CCG_Amount'], color=colors[1],
+             alpha=1, linewidth=1, label='365 Day Roll')
+    ax6.plot(rolling_df_365['NHSEngland_Count'], color=colors[1],
+             alpha=1, linewidth=1, label='365 Day Roll')
+    ax7.plot(rolling_df_365['NHSEngland_Amount'], color=colors[1],
+             alpha=1, linewidth=1, label='365 Day Roll')
 
-    for ax in [ax2, ax3, ax4, ax5, ax6, ax7]:
-        ax.legend(loc='upper right', edgecolor='k',
-                  frameon=False, fontsize=10)
-    ax2.set_ylim(1.2, 2.2)
-    ax3.set_ylim(0.4, 1.4)
-    ax6.set_ylim(0.4, 1.8)
-    ax7.set_ylim(0.4, 1.6)
+#    for ax in [ax2, ax3, ax4, ax5]:
+#        ax.legend(loc='upper right', edgecolor='k',
+#                  frameon=False, fontsize=10)
+#    for ax in [ax6, ax7]:
+#        ax.legend(loc='upper left', edgecolor='k',
+#                  frameon=False, fontsize=10)
+
+    ax6.legend(loc='upper left', edgecolor='k', frameon=True, fontsize=10, ncol=1)
+    legend = ax6.get_legend()
+    legend_frame = legend.get_frame()
+    legend_frame.set_linewidth(0.5)
+
+    legend = ax1.get_legend()
+    legend_frame = legend.get_frame()
+    legend_frame.set_linewidth(0.5)
+
+    legend = ax8.get_legend()
+    legend_frame = legend.get_frame()
+    legend_frame.set_linewidth(0.5)
+
+
+#    ax2.set_ylim(1.2, 2.2)
+#    ax3.set_ylim(0.4, 1.4)
+#    ax6.set_ylim(0.4, 1.8)
+#    ax7.set_ylim(0.4, 1.6)
     ax8.set_ylim(0.0, 1.4)
+
+    #ax8.set_xlim(-0.525, 8.5)
+    #ax1.set_xlim(-0.525, 8.5)
     #ax1.set_title('Number of payments across years', loc='center', size=titlesize-1, y=1.005)
-    ax1.set_title('A.', loc='left', size=titlesize-1, y=1.025)
+    ax1.set_title('a.', loc='left', size=titlesize-1, y=1.025, **csfont)
     #ax2.set_title('Trusts: Count', loc='center', size=titlesize-3, y=1.005)
-    ax2.set_title('B.', loc='left', size=titlesize-1, y=1.025)
+    ax2.set_title('b.', loc='left', size=titlesize-1, y=1.025, **csfont)
     #ax3.set_title('Trusts: Amount', loc='center', size=titlesize-3, y=1.005)
-    ax3.set_title('E.', loc='left', size=titlesize-1, y=1.025)
+    ax3.set_title('c.', loc='left', size=titlesize-1, y=1.025, **csfont)
     #ax4.set_title('CCGs: Count', loc='center', size=titlesize-3, y=1.005)
-    ax4.set_title('C.', loc='left', size=titlesize-1, y=1.025)
+    ax4.set_title('d.', loc='left', size=titlesize-1, y=1.025, **csfont)
     #ax5.set_title('CCGs: Amount', loc='center', size=titlesize-3, y=1.005)
-    ax5.set_title('F.', loc='left', size=titlesize-1, y=1.025)
     #ax6.set_title('NHS England: Count', loc='center', size=titlesize-3, y=1.005)
-    ax6.set_title('D.', loc='left', size=titlesize-1, y=1.025)
+    ax5.set_title('e.', loc='left', size=titlesize-1, y=1.025, **csfont)
+    ax6.set_title('f.', loc='left', size=titlesize-1, y=1.025, **csfont)
     #ax7.set_title('NHS England: Amount', loc='center', size=titlesize-3, y=1.005)
-    ax7.set_title('G.', loc='left', size=titlesize-1, y=1.025)
+    ax7.set_title('g.', loc='left', size=titlesize-1, y=1.025, **csfont)
     #ax8.set_title('Value of payments across years', loc='center', size=titlesize-1, y=1.005)
-    ax8.set_title('H.', loc='left', size=titlesize, y=1.025)
+    ax8.set_title('h.', loc='left', size=titlesize, y=1.025, **csfont)
 
     for ax in [ax1, ax2, ax3, ax4, ax5, ax6, ax7, ax8]:
         sns.despine(ax=ax)
         ax.yaxis.set_major_formatter(mtick.PercentFormatter(decimals=1))
         ax.yaxis.set_major_formatter(mtick.PercentFormatter(decimals=1))
-    plt.tight_layout()
+    plt.tight_layout(pad=2.5)
     plt.savefig(os.path.join(figure_path, 'payments_over_time.svg'),
                 bbox_inches='tight')
     plt.savefig(os.path.join(figure_path, 'payments_over_time.pdf'),
@@ -443,7 +563,7 @@ def make_inc_table(cc_path, norm_path, nhsengland_pay_df,
                    trust_pay_df, ccg_pay_df, year, outpath):
     cc_name = load_ccname(cc_path, norm_path)
     cc_fin = pd.read_csv(os.path.join(cc_path, 'extract_financial.csv'),
-                         warn_bad_lines=False, error_bad_lines=False,
+                         on_bad_lines='skip',
                          parse_dates=['fystart', 'fyend'])
     cc_fin_2018 = cc_fin[cc_fin['fystart'] >= year + '-01-01']
     cc_fin_2018 = cc_fin_2018[cc_fin_2018['fystart'] <= year + '-12-31']
@@ -632,11 +752,12 @@ def something_with_nuts1(support_path, trust_pay_df, shape_path):
 
 def make_income_dists(nhsengland_pay_df, trust_pay_df, ccg_pay_df, cc_path, norm_path, figure_path):
 
-    ## Income
+    color1='#41558c'
+    color2= '#E89818'
 
     cc_name = load_ccname(cc_path, norm_path)
     cc_fin = pd.read_csv(os.path.join(cc_path, 'extract_financial.csv'),
-                         warn_bad_lines=False, error_bad_lines=False,
+                         on_bad_lines='skip',
                          parse_dates=['fystart', 'fyend'])
     print('We have ' + str(len(cc_name[cc_name['regno'].notnull()]['regno'].unique())) + ' regnos in the ccew...')
     print('We have ' + str(len(cc_fin[cc_fin['regno'].notnull()]['regno'].unique())) + ' regnos with income data!')
@@ -698,18 +819,19 @@ def make_income_dists(nhsengland_pay_df, trust_pay_df, ccg_pay_df, cc_path, norm
           ' rows of trust data with pre-2012 income data')
 
     # make the df for the uniform plots nhsengland_pay_df, trust_pay_df, ccg_pay_df
-    cc_fin_pre2012['intrust'] = cc_fin_pre2012["regno"].isin(trust_pay_df["CharityRegNo"])
-    cc_fin_pre2012['inccg'] = cc_fin_pre2012["regno"].isin(ccg_pay_df["CharityRegNo"])
-    cc_fin_pre2012['innhseng'] = cc_fin_pre2012["regno"].isin(nhsengland_pay_df["CharityRegNo"])
-    cc_fin_post2012['intrust'] = cc_fin_post2012["regno"].isin(trust_pay_df["CharityRegNo"])
-    cc_fin_post2012['inccg'] = cc_fin_post2012["regno"].isin(ccg_pay_df["CharityRegNo"])
-    cc_fin_post2012['innhseng'] = cc_fin_post2012["regno"].isin(nhsengland_pay_df["CharityRegNo"])
-
+    cc_fin_pre2012 = cc_fin_pre2012.copy()
+    cc_fin_pre2012.loc[:, 'intrust'] = cc_fin_pre2012["regno"].isin(trust_pay_df["CharityRegNo"])
+    cc_fin_pre2012.loc[:, 'inccg'] = cc_fin_pre2012["regno"].isin(ccg_pay_df["CharityRegNo"])
+    cc_fin_pre2012.loc[:, 'innhseng'] = cc_fin_pre2012["regno"].isin(nhsengland_pay_df["CharityRegNo"])
+    cc_fin_post2012 = cc_fin_post2012.copy()
+    cc_fin_post2012.loc[:, 'intrust'] = cc_fin_post2012["regno"].isin(trust_pay_df["CharityRegNo"])
+    cc_fin_post2012.loc[:, 'inccg'] = cc_fin_post2012["regno"].isin(ccg_pay_df["CharityRegNo"])
+    cc_fin_post2012.loc[:, 'innhseng'] = cc_fin_post2012["regno"].isin(nhsengland_pay_df["CharityRegNo"])
 
     titlesize = 15
     csfont = {'fontname': 'Helvetica'}
     hfont = {'fontname': 'Helvetica'}
-    fig = plt.figure(constrained_layout=True, figsize=(12, 6))
+    fig = plt.figure(figsize=(12, 8))
     gs = gridspec.GridSpec(4,2)
     ax1 = fig.add_subplot(gs[0, 0])
     ax2 = fig.add_subplot(gs[1, 0])
@@ -725,14 +847,14 @@ def make_income_dists(nhsengland_pay_df, trust_pay_df, ccg_pay_df, cc_path, norm
     nhseng_array_post = np.log(nhseng_post2012[nhseng_post2012['income'].notnull()]['income']+1)
     ccfin_array_post = np.log(cc_fin_post2012[cc_fin_post2012['income'].notnull()]['income']+1)
 
-    sns.kdeplot(trust_array_post, ax=ax1, shade=True, alpha=0.15,lw=1.2,
-                bw=0.5, color='k', facecolor='#377eb8', legend=False)
-    sns.kdeplot(ccg_array_post, ax=ax2, shade=True, alpha=0.15, lw=1.2,
-                bw=0.5, color='k', facecolor='#377eb8', legend=False)
-    sns.kdeplot(nhseng_array_post, ax=ax3, shade=True, alpha=0.15, lw=1.2,
-                bw=0.5, color='k', facecolor='#377eb8', legend=False)
-    sns.kdeplot(ccfin_array_post, ax=ax4, shade=True, alpha=0.15, lw=1.2,
-                bw=0.5, color='k', facecolor='#ff7f00', legend=False)
+    sns.kdeplot(trust_array_post, ax=ax1, fill=True, alpha=0.6,lw=1,
+                bw_method=0.5, color='k', facecolor=color1, legend=False)
+    sns.kdeplot(ccg_array_post, ax=ax2, fill=True, alpha=0.6,lw=1,
+                bw_method=0.5, color='k', facecolor=color1, legend=False)
+    sns.kdeplot(nhseng_array_post, ax=ax3, fill=True, alpha=0.6,lw=1,
+                bw_method=0.5, color='k', facecolor=color1, legend=False)
+    sns.kdeplot(ccfin_array_post, ax=ax4, fill=True, alpha=0.6,lw=1,
+                bw_method=0.5, color='k', facecolor=color2, legend=False)
     ax1.spines['bottom'].set_visible(True)
     ax2.spines['bottom'].set_visible(True)
     ax3.spines['bottom'].set_visible(True)
@@ -755,7 +877,7 @@ def make_income_dists(nhsengland_pay_df, trust_pay_df, ccg_pay_df, cc_path, norm
     ax1.set_xlabel('')
     ax2.set_xlabel('')
     ax3.set_xlabel('')
-    ax4.set_xlabel('Logarithm of cumulative income (+1): Post-2012')
+    ax4.set_xlabel('Logarithm of cumulative income (+1): Post-2012', fontsize=14)
     sns.despine(ax=ax1, left=True,bottom=False)
     sns.despine(ax=ax2, left=True,bottom=False)
     sns.despine(ax=ax3, left=True,bottom=False)
@@ -769,28 +891,28 @@ def make_income_dists(nhsengland_pay_df, trust_pay_df, ccg_pay_df, cc_path, norm
     ax2.set_xlim(0,25)
     ax3.set_xlim(0,25)
     ax4.set_xlim(0,25)
-    ax1.set_ylabel('CCG')
-    ax2.set_ylabel('Trusts')
-    ax3.set_ylabel('NHS England')
-    ax4.set_ylabel('CCEW')
+    ax1.set_ylabel('CCG', fontsize=14)
+    ax2.set_ylabel('Trusts', fontsize=14)
+    ax3.set_ylabel('NHS England', fontsize=14)
+    ax4.set_ylabel('CCEW', fontsize=14)
 
 #    ax1.set_title('Cumulative income distribution post-2012',
 #                  **csfont, fontsize=titlesize, y=1.05)
-    ax1.set_title('A.', **csfont, fontsize=titlesize+5, loc='left', y=1.025)
+    ax1.set_title('a.', **csfont, fontsize=titlesize+5, loc='left', y=1.025)
 
     trust_array_pre = np.log(trust_pre2012[trust_pre2012['income'].notnull()]['income']+1)
     ccg_array_pre = np.log(ccg_pre2012[ccg_pre2012['income'].notnull()]['income']+1)
     nhseng_array_pre = np.log(nhseng_pre2012[nhseng_pre2012['income'].notnull()]['income']+1)
     ccfin_array_pre = np.log(cc_fin_pre2012[cc_fin_pre2012['income'].notnull()]['income']+1)
 
-    sns.kdeplot(trust_array_pre, ax=ax5, shade=True, alpha=0.15,lw=1.2,
-                bw=0.5, color='k', facecolor='#377eb8', legend=False)
-    sns.kdeplot(ccg_array_pre, ax=ax6, shade=True, alpha=0.15, lw=1.2,
-                bw=0.5, color='k', facecolor='#377eb8', legend=False)
-    sns.kdeplot(nhseng_array_pre, ax=ax7, shade=True, alpha=0.15, lw=1.2,
-                bw=0.5, color='k', facecolor='#377eb8', legend=False)
-    sns.kdeplot(ccfin_array_pre, ax=ax8, shade=True, alpha=0.15, lw=1.2,
-                bw=0.5, color='k', facecolor='#ff7f00', legend=False)
+    sns.kdeplot(trust_array_pre, ax=ax5, fill=True, alpha=0.6, lw=1,
+                bw_method=0.5, color='k', facecolor=color1, legend=False)
+    sns.kdeplot(ccg_array_pre, ax=ax6, fill=True, alpha=0.6,lw=1,
+                bw_method=0.5, color='k', facecolor=color1, legend=False)
+    sns.kdeplot(nhseng_array_pre, ax=ax7, fill=True, alpha=0.6,lw=1,
+                bw_method=0.5, color='k', facecolor=color1, legend=False)
+    sns.kdeplot(ccfin_array_pre, ax=ax8, fill=True, alpha=0.6,lw=1,
+                bw_method=0.5, color='k', facecolor=color2, legend=False)
     ax5.spines['bottom'].set_visible(True)
     ax6.spines['bottom'].set_visible(True)
     ax7.spines['bottom'].set_visible(True)
@@ -814,7 +936,7 @@ def make_income_dists(nhsengland_pay_df, trust_pay_df, ccg_pay_df, cc_path, norm
     ax5.set_xlabel('')
     ax6.set_xlabel('')
     ax7.set_xlabel('')
-    ax8.set_xlabel('Logarithm of cumulative income (+1): Pre-2012')
+    ax8.set_xlabel('Logarithm of cumulative income (+1): Pre-2012', fontsize=14)
     sns.despine(ax=ax5, left=True,bottom=False)
     sns.despine(ax=ax6, left=True,bottom=False)
     sns.despine(ax=ax7, left=True,bottom=False)
@@ -829,63 +951,63 @@ def make_income_dists(nhsengland_pay_df, trust_pay_df, ccg_pay_df, cc_path, norm
     ax8.set_xlim(0,25)
 #    ax5.set_title('Cumulative income distribution pre-2012',
 #                  **csfont, fontsize=titlesize, y=1.05)
-    ax5.set_title('B.', **csfont, fontsize=titlesize+5, loc='left', y=1.025)
+    ax5.set_title('b.', **csfont, fontsize=titlesize+5, loc='left', y=1.025)
 
     axy_mean = ccg_post2012[ccg_post2012['income'].notnull()]['income'].mean()
     axy_trimmed = stats.trim_mean(ccg_post2012[ccg_post2012['income'].notnull()]['income'], .1)
     axy_med = ccg_post2012[ccg_post2012['income'].notnull()]['income'].median()
-    ax1.annotate('Mean: £' + str(int(axy_mean/1000000)) + 'm', xy=(1, 0.175))
-    ax1.annotate('Median: £' + str(int(axy_med/1000000)) + 'm', xy=(1, 0.1475))
-    ax1.annotate('Trimmed Mean: £' + str(int(axy_trimmed/1000000)) + 'm', xy=(1, 0.12))
+    ax1.annotate('Mean: £' + str(int(axy_mean/1000000)) + 'm', xy=(1, 0.175), fontsize=13)
+    ax1.annotate('Median: £' + str(int(axy_med/1000000)) + 'm', xy=(1, 0.1475), fontsize=13)
+    ax1.annotate('Trimmed: £' + str(int(axy_trimmed/1000000)) + 'm', xy=(1, 0.12), fontsize=13)
 
     axy_mean = trust_post2012[trust_post2012['income'].notnull()]['income'].mean()
     axy_trimmed = stats.trim_mean(trust_post2012[trust_post2012['income'].notnull()]['income'], .1)
     axy_med = trust_post2012[trust_post2012['income'].notnull()]['income'].median()
-    ax2.annotate('Mean: £' + str(int(axy_mean/1000000)) + 'm', xy=(1, 0.175))
-    ax2.annotate('Median: £' + str(int(axy_med/1000000)) + 'm', xy=(1, 0.1475))
-    ax2.annotate('Trimmed Mean: £' + str(int(axy_trimmed/1000000)) + 'm', xy=(1, 0.12))
+    ax2.annotate('Mean: £' + str(int(axy_mean/1000000)) + 'm', xy=(1, 0.175), fontsize=13)
+    ax2.annotate('Median: £' + str(int(axy_med/1000000)) + 'm', xy=(1, 0.1475), fontsize=13)
+    ax2.annotate('Trimmed: £' + str(int(axy_trimmed/1000000)) + 'm', xy=(1, 0.12), fontsize=13)
 
     axy_mean = nhseng_post2012[nhseng_post2012['income'].notnull()]['income'].mean()
     axy_trimmed = stats.trim_mean(nhseng_post2012[nhseng_post2012['income'].notnull()]['income'], .1)
     axy_med = nhseng_post2012[nhseng_post2012['income'].notnull()]['income'].median()
-    ax3.annotate('Mean: £' + str(int(axy_mean/1000000)) + 'm', xy=(1, 0.175))
-    ax3.annotate('Median: £' + str(int(axy_med/1000000)) + 'm', xy=(1, 0.1475))
-    ax3.annotate('Trimmed Mean: £' + str(int(axy_trimmed/1000000)) + 'm', xy=(1, 0.12))
+    ax3.annotate('Mean: £' + str(int(axy_mean/1000000)) + 'm', xy=(1, 0.175), fontsize=13)
+    ax3.annotate('Median: £' + str(int(axy_med/1000000)) + 'm', xy=(1, 0.1475), fontsize=13)
+    ax3.annotate('Trimmed Mean: £' + str(int(axy_trimmed/1000000)) + 'm', xy=(1, 0.12), fontsize=13)
 
     axy_mean = cc_fin_post2012[cc_fin_post2012['income'].notnull()]['income'].mean()
     axy_trimmed = stats.trim_mean(cc_fin_post2012[cc_fin_post2012['income'].notnull()]['income'], .1)
     axy_med = cc_fin_post2012[cc_fin_post2012['income'].notnull()]['income'].median()
-    ax4.annotate('Mean: £' + str(int(axy_mean/1000000)) + 'm', xy=(1, 0.175))
-    ax4.annotate('Median: £' + str(int(axy_med/1000000)) + 'm', xy=(1, 0.1475))
-    ax4.annotate('Trimmed Mean: £' + str(int(axy_trimmed/1000000)) + 'm', xy=(1, 0.12))
+    ax4.annotate('Mean: £' + str(int(axy_mean/1000000)) + 'm', xy=(1, 0.175), fontsize=13)
+    ax4.annotate('Median: £' + str(int(axy_med/1000000)) + 'm', xy=(1, 0.1475), fontsize=13)
+    ax4.annotate('Trimmed: £' + str(int(axy_trimmed/1000000)) + 'm', xy=(1, 0.12), fontsize=13)
 
     axy_mean = ccg_pre2012[ccg_pre2012['income'].notnull()]['income'].mean()
     axy_trimmed = stats.trim_mean(ccg_pre2012[ccg_pre2012['income'].notnull()]['income'], .1)
     axy_med = ccg_pre2012[ccg_pre2012['income'].notnull()]['income'].median()
-    ax5.annotate('Mean: £' + str(int(axy_mean/1000000)) + 'm', xy=(1, 0.175))
-    ax5.annotate('Median: £' + str(int(axy_med/1000000)) + 'm', xy=(1, 0.1475))
-    ax5.annotate('Trimmed Mean: £' + str(int(axy_trimmed/1000000)) + 'm', xy=(1, 0.12))
+    ax5.annotate('Mean: £' + str(int(axy_mean/1000000)) + 'm', xy=(1, 0.175), fontsize=13)
+    ax5.annotate('Median: £' + str(int(axy_med/1000000)) + 'm', xy=(1, 0.1475), fontsize=13)
+    ax5.annotate('Trimmed: £' + str(int(axy_trimmed/1000000)) + 'm', xy=(1, 0.12), fontsize=13)
 
     axy_mean = trust_pre2012[trust_pre2012['income'].notnull()]['income'].mean()
     axy_trimmed = stats.trim_mean(trust_pre2012[trust_pre2012['income'].notnull()]['income'], .1)
     axy_med = trust_pre2012[trust_pre2012['income'].notnull()]['income'].median()
-    ax6.annotate('Mean: £' + str(int(axy_mean/1000000)) + 'm', xy=(1, 0.175))
-    ax6.annotate('Median: £' + str(int(axy_med/1000000)) + 'm', xy=(1, 0.1475))
-    ax6.annotate('Trimmed Mean: £' + str(int(axy_trimmed/1000000)) + 'm', xy=(1, 0.12))
+    ax6.annotate('Mean: £' + str(int(axy_mean/1000000)) + 'm', xy=(1, 0.175), fontsize=13)
+    ax6.annotate('Median: £' + str(int(axy_med/1000000)) + 'm', xy=(1, 0.1475), fontsize=13)
+    ax6.annotate('Trimmed: £' + str(int(axy_trimmed/1000000)) + 'm', xy=(1, 0.12), fontsize=13)
 
     axy_mean = nhseng_pre2012[nhseng_pre2012['income'].notnull()]['income'].mean()
     axy_trimmed = stats.trim_mean(nhseng_pre2012[nhseng_pre2012['income'].notnull()]['income'], .1)
     axy_med = nhseng_pre2012[nhseng_pre2012['income'].notnull()]['income'].median()
-    ax7.annotate('Mean: £' + str(int(axy_mean/1000000)) + 'm', xy=(1, 0.175))
-    ax7.annotate('Median: £' + str(int(axy_med/1000000)) + 'm', xy=(1, 0.1475))
-    ax7.annotate('Trimmed Mean: £' + str(int(axy_trimmed/1000000)) + 'm', xy=(1, 0.12))
+    ax7.annotate('Mean: £' + str(int(axy_mean/1000000)) + 'm', xy=(1, 0.175), fontsize=13)
+    ax7.annotate('Median: £' + str(int(axy_med/1000000)) + 'm', xy=(1, 0.1475), fontsize=13)
+    ax7.annotate('Trimmed: £' + str(int(axy_trimmed/1000000)) + 'm', xy=(1, 0.12), fontsize=13)
 
     axy_mean = cc_fin_pre2012[cc_fin_pre2012['income'].notnull()]['income'].mean()
     axy_trimmed = stats.trim_mean(cc_fin_pre2012[cc_fin_pre2012['income'].notnull()]['income'], .1)
     axy_med = cc_fin_pre2012[cc_fin_pre2012['income'].notnull()]['income'].median()
-    ax8.annotate('Mean: £' + str(int(axy_mean/1000000)) + 'm', xy=(1, 0.175))
-    ax8.annotate('Median: £' + str(int(axy_med/1000000)) + 'm', xy=(1, 0.1475))
-    ax8.annotate('Trimmed Mean: £' + str(int(axy_trimmed/1000000)) + 'm', xy=(1, 0.12))
+    ax8.annotate('Mean: £' + str(int(axy_mean/1000000)) + 'm', xy=(1, 0.175), fontsize=13)
+    ax8.annotate('Median: £' + str(int(axy_med/1000000)) + 'm', xy=(1, 0.1475), fontsize=13)
+    ax8.annotate('Trimmed: £' + str(int(axy_trimmed/1000000)) + 'm', xy=(1, 0.12), fontsize=13)
 
     plt.tight_layout()
     plt.subplots_adjust(hspace=0)
@@ -901,23 +1023,18 @@ def make_obj_freq(cc_objects, #cc_name,
                   ccg_pay_df, trust_pay_df,
                   nhsengland_pay_df, figure_path):
     import nltk
+    colors = ['#41558c', '#E89818', '#CF202A']
     nltk.download('stopwords')
     nltk.download('punkt')
     csfont = {'fontname': 'Helvetica'}
     hfont = {'fontname': 'Helvetica'}
-    #cc_name['regno'] = pd.to_numeric(cc_name['regno'], errors='coerce')
-    #cc_name['subno'] = pd.to_numeric(cc_name['subno'], errors='coerce')
     cc_objects['regno'] = pd.to_numeric(cc_objects['regno'], errors='coerce')
-#    cc_objects['subno'] = pd.to_numeric(cc_objects['subno'], errors='coerce')
-#    cc_obj_merge = pd.merge(cc_objects, cc_name,
-#                            how='left', left_on=['regno', 'subno'],
-#                            right_on=['regno', 'subno'])
-#    cc_objects = cc_objects[cc_objects['norm_name'].notnull()]
     cc_objects = cc_objects[cc_objects['object'].notnull()]
-    cc_objects['object'] = cc_objects['object'].astype(str).str.lower()
-    cc_objects['intrusts'] = cc_objects["regno"].isin(trust_pay_df ["CharityRegNo"])
-    cc_objects['inccgs'] = cc_objects["regno"].isin(ccg_pay_df ["CharityRegNo"])
-    cc_objects['innhseng'] = cc_objects["regno"].isin(nhsengland_pay_df ["CharityRegNo"])
+    cc_objects = cc_objects.copy()
+    cc_objects.loc[:, 'object'] = cc_objects['object'].astype(str).str.lower()
+    cc_objects.loc[:, 'intrusts'] = cc_objects["regno"].isin(trust_pay_df ["CharityRegNo"])
+    cc_objects.loc[:, 'inccgs'] = cc_objects["regno"].isin(ccg_pay_df ["CharityRegNo"])
+    cc_objects.loc[:, 'innhseng'] = cc_objects["regno"].isin(nhsengland_pay_df ["CharityRegNo"])
     df_cc = freq_dist(cc_objects, 'english')
     df_trusts = freq_dist(cc_objects[cc_objects['intrusts']], 'english')
     df_ccgs = freq_dist(cc_objects[cc_objects['inccgs']], 'english')
@@ -933,33 +1050,28 @@ def make_obj_freq(cc_objects, #cc_name,
     ax.set_theta_zero_location('W')
     ax.plot(theta, len(theta)*[1], alpha=0.5, color='k', linewidth=1, linestyle='--')
     bars = ax.plot(theta, arrCnts, alpha=1, linestyle='-', marker='o',
-                   color='#377eb8', markersize=7, markerfacecolor='w',
-                   markeredgecolor='#ff5148')
+                   color=colors[0], markersize=9, markerfacecolor='w',
+                   markeredgecolor=colors[2])
     plt.axis('off')
     rotations = np.rad2deg(theta)
     y0,y1 = ax.get_ylim()
     for x, bar, rotation, label in zip(theta, arrCnts, rotations, labs):
         offset = (bottom+bar)/(y1-y0)
         lab = ax.text(0, 0, label, transform=None,
-                      ha='center', va='center')
+                      ha='center', va='center', fontsize=10)
         renderer = ax.figure.canvas.get_renderer()
         bbox = lab.get_window_extent(renderer=renderer)
         invb = ax.transData.inverted().transform([[0,0],[bbox.width,0] ])
         lab.set_position((x,offset+(invb[1][0]-invb[0][0])))
         lab.set_transform(ax.get_xaxis_transform())
         lab.set_rotation(rotation)
-    ax.fill_between(theta, arrCnts, alpha=0.075, color='#4e94ff')
+    ax.fill_between(theta, arrCnts, alpha=0.075, color=colors[1])
     ax.fill_between(theta, len(theta)*[1], alpha=1, color='w')
     circle = plt.Circle((0.0, 0.0), 0.1, transform=ax.transData._b, color="k", alpha=0.3)
     ax.add_artist(circle)
     ax.plot((0, theta[0]), ( 0, arrCnts[0]-.175), color='k',linewidth=1, alpha=0.5, linestyle='--')
     ax.plot((0, theta[-1]), ( 0, arrCnts[-1]-.175), color='k',linewidth=1, alpha=0.5, linestyle='--')
-    ax.set_title('A.', loc='left', y=0.9,  **hfont, fontsize=22, x=-.15)
-#    ax.set_title("Frequency distribution: Charity Commission 'objects'",
-#                 loc='center',y=0.92, **hfont, fontsize=15)
-
-
-
+    ax.set_title('a.', loc='left', y=0.9,  **hfont, fontsize=22, x=-.15)
     ax2 = fig.add_subplot(222, projection='polar')
     iN = len(df_trusts['count'])
     arrCnts = np.array(df_trusts['count'])
@@ -970,32 +1082,28 @@ def make_obj_freq(cc_objects, #cc_name,
     ax2.set_theta_zero_location('W')
     ax2.plot(theta, len(theta)*[1], alpha=0.5, color='k', linewidth=1, linestyle='--')
     bars = ax2.plot(theta, arrCnts, alpha=1, linestyle='-', marker='o',
-                    color='#377eb8', markersize=7, markerfacecolor='w',
-                    markeredgecolor='#ff5148')
+                    color=colors[0], markersize=9, markerfacecolor='w',
+                    markeredgecolor=colors[2])
     plt.axis('off')
     rotations = np.rad2deg(theta)
     y0,y1 = ax2.get_ylim()
     for x, bar, rotation, label in zip(theta, arrCnts, rotations, labs):
         offset = (bottom+bar)/(y1-y0)
         lab = ax2.text(0, 0, label, transform=None,
-                      ha='center', va='center')
+                      ha='center', va='center', fontsize=10)
         renderer = ax2.figure.canvas.get_renderer()
         bbox = lab.get_window_extent(renderer=renderer)
         invb = ax2.transData.inverted().transform([[0,0],[bbox.width,0] ])
         lab.set_position((x,offset+(invb[1][0]-invb[0][0])))
         lab.set_transform(ax2.get_xaxis_transform())
         lab.set_rotation(rotation)
-    ax2.fill_between(theta, arrCnts, alpha=0.075, color='#4e94ff')
+    ax2.fill_between(theta, arrCnts, alpha=0.075, color=colors[1])
     ax2.fill_between(theta, len(theta)*[1], alpha=1, color='w')
     circle = plt.Circle((0.0, 0.0), 0.1, transform=ax2.transData._b, color="k", alpha=0.3)
     ax2.add_artist(circle)
     ax2.plot((0, theta[0]), ( 0, arrCnts[0]-.175), color='k',linewidth=1, alpha=0.5, linestyle='--')
     ax2.plot((0, theta[-1]), ( 0, arrCnts[-1]-.175), color='k',linewidth=1, alpha=0.5, linestyle='--')
-    ax2.set_title('B.', loc='left', y=0.9,  **hfont, fontsize=22, x=-.15)
-    #ax2.set_title("Frequency distribution: NHS Trust 'objects'",
-    #             loc='center',y=0.92, **hfont, fontsize=15)
-
-
+    ax2.set_title('b.', loc='left', y=0.9,  **hfont, fontsize=22, x=-.15)
     ax3 = fig.add_subplot(223, projection='polar')
     iN = len(df_ccgs['count'])
     arrCnts = np.array(df_ccgs['count'])
@@ -1006,30 +1114,28 @@ def make_obj_freq(cc_objects, #cc_name,
     ax3.set_theta_zero_location('W')
     ax3.plot(theta, len(theta)*[1], alpha=0.5, color='k', linewidth=1, linestyle='--')
     bars = ax3.plot(theta, arrCnts, alpha=1, linestyle='-', marker='o',
-                   color='#377eb8', markersize=7, markerfacecolor='w', markeredgecolor='#ff5148')
+                   color=colors[0], markersize=9, markerfacecolor='w',
+                    markeredgecolor=colors[2])
     plt.axis('off')
     rotations = np.rad2deg(theta)
     y0,y1 = ax3.get_ylim()
     for x, bar, rotation, label in zip(theta, arrCnts, rotations, labs):
         offset = (bottom+bar)/(y1-y0)
         lab = ax3.text(0, 0, label, transform=None,
-                      ha='center', va='center')
+                      ha='center', va='center', fontsize=10)
         renderer = ax3.figure.canvas.get_renderer()
         bbox = lab.get_window_extent(renderer=renderer)
         invb = ax3.transData.inverted().transform([[0,0],[bbox.width,0] ])
         lab.set_position((x,offset+(invb[1][0]-invb[0][0])))
         lab.set_transform(ax3.get_xaxis_transform())
         lab.set_rotation(rotation)
-    ax3.fill_between(theta, arrCnts, alpha=0.075, color='#4e94ff')
+    ax3.fill_between(theta, arrCnts, alpha=0.075, color=colors[1])
     ax3.fill_between(theta, len(theta)*[1], alpha=1, color='w')
     circle = plt.Circle((0.0, 0.0), 0.1, transform=ax3.transData._b, color="k", alpha=0.3)
     ax3.add_artist(circle)
     ax3.plot((0, theta[0]), ( 0, arrCnts[0]-.175), color='k',linewidth=1, alpha=0.5, linestyle='--')
     ax3.plot((0, theta[-1]), ( 0, arrCnts[-1]-.175), color='k',linewidth=1, alpha=0.5, linestyle='--')
-    ax3.set_title('C.', loc='left', y=0.9,  **hfont, fontsize=22, x=-.15)
-#    ax3.set_title("Frequency distribution: CCG 'objects'",
-#                 loc='center',y=0.92, **hfont, fontsize=15)
-
+    ax3.set_title('c.', loc='left', y=0.9,  **hfont, fontsize=22, x=-.15)
     ax4 = fig.add_subplot(224, projection='polar')
     iN = len(df_nhsengland['count'])
     arrCnts = np.array(df_nhsengland['count'])
@@ -1040,32 +1146,28 @@ def make_obj_freq(cc_objects, #cc_name,
     ax4.set_theta_zero_location('W')
     ax4.plot(theta, len(theta)*[1], alpha=0.5, color='k', linewidth=1, linestyle='--')
     bars = ax4.plot(theta, arrCnts, alpha=1, linestyle='-', marker='o',
-                   color='#377eb8', markersize=7, markerfacecolor='w', markeredgecolor='#ff5148')
+                   color=colors[0], markersize=9, markerfacecolor='w',
+                    markeredgecolor=colors[2])
     plt.axis('off')
     rotations = np.rad2deg(theta)
     y0,y1 = ax4.get_ylim()
     for x, bar, rotation, label in zip(theta, arrCnts, rotations, labs):
         offset = (bottom+bar)/(y1-y0)
         lab = ax4.text(0, 0, label, transform=None,
-                      ha='center', va='center')
+                      ha='center', va='center', fontsize=10)
         renderer = ax4.figure.canvas.get_renderer()
         bbox = lab.get_window_extent(renderer=renderer)
         invb = ax4.transData.inverted().transform([[0,0],[bbox.width,0] ])
         lab.set_position((x,offset+(invb[1][0]-invb[0][0])))
         lab.set_transform(ax4.get_xaxis_transform())
         lab.set_rotation(rotation)
-    ax4.fill_between(theta, arrCnts, alpha=0.075, color='#4e94ff')
+    ax4.fill_between(theta, arrCnts, alpha=0.075, color=colors[1])
     ax4.fill_between(theta, len(theta)*[1], alpha=1, color='w')
-    #for thet,cnt in zip(theta, arrCnts):
-    #    y= np.arange(-5,5,1)
     circle = plt.Circle((0.0, 0.0), 0.1, transform=ax4.transData._b, color="k", alpha=0.3)
     ax4.add_artist(circle)
     ax4.plot((0, theta[0]), ( 0, arrCnts[0]-.175), color='k',linewidth=1, alpha=0.5, linestyle='--')
     ax4.plot((0, theta[-1]), ( 0, arrCnts[-1]-.175), color='k',linewidth=1, alpha=0.5, linestyle='--')
-    ax4.set_title('D.', loc='left', y=0.9,  **hfont, fontsize=22, x=-.15)
-#    ax4.set_title("Frequency distribution: NHS England 'objects'",
-#                 loc='center',y=0.92, **hfont, fontsize=15)
-
+    ax4.set_title('d.', loc='left', y=0.9,  **hfont, fontsize=22, x=-.15)
     plt.subplots_adjust(left=-3, bottom=0.1, right=-2, top=1.01, wspace=0, hspace=0)
     plt.savefig(os.path.join(figure_path, 'freq_dist.pdf'), bbox_inches='tight')
     plt.savefig(os.path.join(figure_path, 'freq_dist.svg'), bbox_inches='tight')
@@ -1085,20 +1187,22 @@ def freq_dist(df, language):
     return df_fdist
 
 
+
 def more_or_less_by_age(cc_sup):
     print('Full sample:\n')
-    now = pd.Timestamp('now')
+    now = pd.Timestamp.now()
     cc_sup_age = cc_sup[cc_sup['regdate'].notnull()]
-    cc_sup_age['regdate'] = pd.to_datetime(cc_sup_age['regdate'],
-                                           format='%m%d%y')
-    cc_sup_age['age'] = (now - cc_sup_age['regdate']).astype('timedelta64[D]')
+    cc_sup_age = cc_sup_age.copy()
+    cc_sup_age.loc[:, 'regdate'] = pd.to_datetime(cc_sup_age['regdate'],
+                                                  format='%m%d%y')
+    cc_sup_age.loc[:, 'age'] = (now - cc_sup_age['regdate']).dt.days#.astype('timedelta64[D]')
     print('Correlation between age and amount: ',
           cc_sup_age['age'].corr(cc_sup_age['amount']))
     print('Correlation between age and count:',
           cc_sup_age['age'].corr(cc_sup_age['count']))
-    cc_sup_age['age_rank'] = cc_sup_age['age'].rank()
-    cc_sup_age['amount_rank'] = cc_sup_age['amount'].rank()
-    cc_sup_age['count_rank'] = cc_sup_age['count'].rank()
+    cc_sup_age.loc[:, 'age_rank'] = cc_sup_age['age'].rank()
+    cc_sup_age.loc[:, 'amount_rank'] = cc_sup_age['amount'].rank()
+    cc_sup_age.loc[:, 'count_rank'] = cc_sup_age['count'].rank()
     print('Correlation between age and amount by rank: ',
           cc_sup_age['age_rank'].corr(cc_sup_age['amount_rank'],
                                       method='spearman'))
@@ -1109,16 +1213,17 @@ def more_or_less_by_age(cc_sup):
     print('Companies registered before 2012:\n')
     cc_sup_age1 = cc_sup_age[(cc_sup_age['regdate'].dt.year < 2012) |
                              (cc_sup_age['regdate'].isnull())]
-    cc_sup_age1['regdate'] = pd.to_datetime(cc_sup_age1['regdate'],
-                                            format='%m%d%y')
-    cc_sup_age1['age'] = (now - cc_sup_age1['regdate']).astype('timedelta64[D]')
+    cc_sup_age1 = cc_sup_age1.copy()
+    cc_sup_age1.loc[:, 'regdate'] = pd.to_datetime(cc_sup_age1['regdate'],
+                                                   format='%m%d%y')
+    cc_sup_age1.loc[:, 'age'] = (now - cc_sup_age1['regdate']).dt.days#.astype('timedelta64[D]')
     print('Correlation between age and amount: ',
           cc_sup_age1['age'].corr(cc_sup_age1['amount']))
     print('Correlation between age and count:',
           cc_sup_age1['age'].corr(cc_sup_age1['count']))
-    cc_sup_age1['age_rank'] = cc_sup_age1['age'].rank()
-    cc_sup_age1['amount_rank'] = cc_sup_age1['amount'].rank()
-    cc_sup_age1['count_rank'] = cc_sup_age1['count'].rank()
+    cc_sup_age1.loc[:, 'age_rank'] = cc_sup_age1['age'].rank()
+    cc_sup_age1.loc[:, 'amount_rank'] = cc_sup_age1['amount'].rank()
+    cc_sup_age1.loc[:, 'count_rank'] = cc_sup_age1['count'].rank()
     print('Correlation betwen age and amount, by rank: ',
           cc_sup_age1['age_rank'].corr(cc_sup_age1['amount_rank'],
                                        method='spearman'))
@@ -1267,7 +1372,10 @@ def plot_heatmaps(ts_icnpo_plot_trust, ts_icnpo_plot_ccg,
     titlesize = 15
     sns.set_style('ticks')
     fig = plt.figure(constrained_layout=True, figsize=(16, 9))
-    gs = gridspec.GridSpec(2,4, width_ratios=[20,20,20,1], height_ratios=[1, 1])
+    gs = gridspec.GridSpec(2, 4,
+                           width_ratios=[20, 20, 20, 1],
+                           height_ratios=[1, 1],
+                           figure=fig)
     ax1 = fig.add_subplot(gs[0, 0:1])
     ax2 = fig.add_subplot(gs[0, 1:2])
     ax3 = fig.add_subplot(gs[0, 2:-1])
@@ -1286,7 +1394,8 @@ def plot_heatmaps(ts_icnpo_plot_trust, ts_icnpo_plot_ccg,
     ts_icnpo_plot_ccg['ICNPO'] = ts_icnpo_plot_ccg['ICNPO'].astype(int)
     ts_icnpo_plot_nhsengland['ICNPO'] = ts_icnpo_plot_nhsengland['ICNPO'].astype(float)
     ts_icnpo_plot_nhsengland = ts_icnpo_plot_nhsengland[ts_icnpo_plot_nhsengland['ICNPO'].notnull()]
-    ts_icnpo_plot_nhsengland['ICNPO'] = ts_icnpo_plot_nhsengland['ICNPO'].astype(int)
+    ts_icnpo_plot_nhsengland = ts_icnpo_plot_nhsengland.copy()
+    ts_icnpo_plot_nhsengland.loc[:, 'ICNPO'] = ts_icnpo_plot_nhsengland['ICNPO'].astype(int)
 
     heatmap_data_trust_count = pd.pivot_table(ts_icnpo_plot_trust,
                                               values='Count',
@@ -1438,7 +1547,6 @@ def plot_heatmaps(ts_icnpo_plot_trust, ts_icnpo_plot_ccg,
     sns.despine(ax=ax6, top=False, bottom=False, left=False, right=False)
     sns.despine(ax=ax7, top=False, bottom=False, left=False, right=False)
     fig.suptitle('')
-    plt.tight_layout(True)
     plt.savefig(os.path.join(figure_path, 'heatmaps.svg'),
                 bbox_inches='tight')
     plt.savefig(os.path.join(figure_path, 'heatmaps.pdf'),
@@ -1562,7 +1670,7 @@ def class_groupings(pay_df_cc, pay_df_cc_ccg, pay_df_cc_trust,
                                left_on='classtext', right_on='classtext')
     class_merge = pd.merge(class_merge, cc_class_val_eng, how='left',
                                left_on='classtext', right_on='classtext')
-
+    order_list = class_merge.sort_values(ascending=False, by='amount')['classtext'].to_list()
     class_merge = class_merge.drop('amount', axis=1)
     class_merge = class_merge.drop('amount_ccg', axis=1)
     class_merge = class_merge.drop('amount_trust', axis=1)
@@ -1583,16 +1691,21 @@ def class_groupings(pay_df_cc, pay_df_cc_ccg, pay_df_cc_trust,
 
     class_merge = class_merge.rename({'amount_pc_eng':'amo_eng'}, axis=1)
     class_merge = class_merge.rename({'count_pc_eng':'cou_eng'}, axis=1)
-
     class_merge = class_merge[['classtext',
                                'amo_ccg', 'cou_ccg',
                                'amo_tr', 'cou_tr',
                                'amo_eng', 'cou_eng']].round(2)
+    class_merge = class_merge.set_index('classtext')
+    class_merge = class_merge.reindex(order_list)
     print(class_merge)
-    class_merge.to_csv(os.path.join(table_path, 'class_table.csv'), index=False)
+    class_merge.to_csv(os.path.join(table_path, 'class_table.csv'))
 
 
 def charity_age(allcc_pay_df, cc_sup, cc_name, cc_class, figure_path):
+    colors = ['#41558c', '#E89818', '#CF202A']
+    color1 = colors[0]
+    color2 = colors[1]
+    color3 = colors[2]
     titlesize = 15
     csfont = {'fontname': 'Helvetica'}
     hfont = {'fontname': 'Helvetica'}
@@ -1607,24 +1720,20 @@ def charity_age(allcc_pay_df, cc_sup, cc_name, cc_class, figure_path):
 
     cc_adv_date = cc_pay_adv[cc_pay_adv['regdate'].notnull()].drop_duplicates(subset=['regno_x'])['regdate'].\
         astype(str).str[0:4].astype(float)
-    f, ((ax1, ax2), (ax3, ax4)) = plt.subplots(2, 2, figsize=(12, 10))
-    g = sns.distplot(allsups_data_regdate, ax=ax1, kde_kws={'gridsize': 500, 'color': '#377eb8'},
-                     hist_kws={'color': '#377eb8', 'alpha': 0.25,
-                               'edgecolor': 'k', 'linewidth':1},
+    f, ((ax1, ax2), (ax3, ax4)) = plt.subplots(2, 2, figsize=(12, 10.5))
+    g = sns.distplot(allsups_data_regdate, ax=ax1, kde_kws={'gridsize': 500, 'color': color1},
                      label='NHS Suppliers',
-                     bins=np.arange(1950, 2020, 3))
-    g = sns.distplot(cc_regdate, ax=ax1, kde_kws={'gridsize': 500, 'color': '#ff7f00'},
-                     hist_kws={'color': '#ff7f00', 'alpha': 0.25,
-                               'edgecolor': 'k', 'linewidth':1},
-                     label='All CC', bins=np.arange(1950, 2020, 3))
-    ax1.set_ylabel("Normalized Frequency", fontsize=12)
-    ax1.set_xlabel("Charity Registration Year", fontsize=12)
-#    ax1.set_ylim(0, 0.048)
-#    ax1.set_title('Distributions of Registration Years',
-#                  **csfont, fontsize=titlesize, y=1.02)
-    ax1.set_title('A.', **csfont, fontsize=titlesize+6, loc='left', y=1.02)
+                     hist=False)
+    g = sns.distplot(cc_regdate, ax=ax1, kde_kws={'gridsize': 500, 'color': color2},
+                     label='All CC',
+                     hist=False)
+    ax1.set_ylabel("Normalized Frequency", fontsize=14)
+    ax1.set_xlabel("Charity Registration Year", fontsize=14)
+    ax1.set_title('a.', **csfont, fontsize=titlesize+6, loc='left', y=1.02)
     sns.despine()
-    g.legend(loc='upper left', edgecolor='k', frameon=False, fontsize=12)
+    g.legend(loc='upper left', edgecolor='k', facecolor='w', frameon=True, fontsize=10, framealpha=1)
+
+
 
     a = cc_sup[cc_sup['regdate'].notnull()].drop_duplicates(subset=['regno'])['regdate'].\
         astype(str).str[0:4].astype(float)
@@ -1635,16 +1744,15 @@ def charity_age(allcc_pay_df, cc_sup, cc_name, cc_class, figure_path):
     qn_b = np.percentile(b, percs)
     x = np.linspace(np.min((qn_a.min(), qn_b.min())),
                     np.max((qn_a.max(), qn_b.max())))
-    ax2.plot(x, x, color='k', ls="--", alpha=0.5)
-    ax2.plot(qn_a, qn_b, ls="", marker="o", color='#377eb8', alpha=0.25,
-             markersize=12.5, fillstyle='full', markeredgecolor='#ff7f00')
+    ax2.plot(x, x, color='k', ls="--", alpha=0.75)
+    ax2.plot(qn_a, qn_b, ls="", marker="o", color=color1, alpha=1,
+             markersize=10, fillstyle='full', markeredgecolor='k',
+            linewidth=0.25)
     ax2.set_ylabel("NHS Supplier Registration Years",
-                   fontsize=12)
+                   fontsize=14)
     ax2.set_xlabel("All CC Registration Years",
-                   fontsize=12)
-#    ax2.set_title('Q-Q Plot of Registration Years',
-#                  **csfont, fontsize=titlesize, y=1.02)
-    ax2.set_title('B.', loc='left',
+                   fontsize=14)
+    ax2.set_title('b.', loc='left',
                   **csfont, fontsize=titlesize+6, y=1.02)
 
     def ecdf(data):
@@ -1655,44 +1763,44 @@ def charity_age(allcc_pay_df, cc_sup, cc_name, cc_class, figure_path):
         return(x, y)
 
     x1, y1 = ecdf(cc_regdate)
-    ax3.plot(x1, y1, label='All Charity Commission', color='#d6604d', alpha=0.5, linewidth=2.25)
-    x2, y2 = ecdf(allsups_data_regdate)
-    ax3.plot(x2, y2, label='NHS Suppliers', color='#92c5de', alpha=0.5, linewidth=2.25)
+    ax3.plot(x1, y1, label='All Charity Commission', color=color1, alpha=0.75, linewidth=1.5)
     x3, y3 = ecdf(cc_adv_date)
-    ax3.plot(x3, y3, label='Advancement of Health', color='#2166ac', alpha=0.5, linewidth=2.25)
-    ax3.set_ylabel("Proportion of Data", fontsize=12)
-    ax3.set_xlabel("Charity Registration Years", fontsize=12)
-#    ax3.set_title('Empirical Cumulative Distribution',
-#                  **csfont, fontsize=titlesize, y=1.02)
-    ax3.set_title('C.', loc='left',
+    ax3.plot(x3, y3, label='Advancement of Health', color=color3, alpha=0.75, linewidth=1.5)
+    ax3.set_ylabel("Proportion of Data", fontsize=14)
+    x2, y2 = ecdf(allsups_data_regdate)
+    ax3.plot(x2, y2, label='NHS Suppliers', color=color2, alpha=0.75, linewidth=1.5)
+    ax3.set_xlabel("Charity Registration Years", fontsize=14)
+    ax3.set_title('c.', loc='left',
                   **csfont, fontsize=titlesize+7, y=1.02)
-    ax3.legend(loc='upper left', edgecolor='k',
-               frameon=False, fontsize=12)
-    h = sns.distplot(allsups_data_regdate, ax=ax4, kde_kws={'gridsize': 500, 'color': '#377eb8'},
-                     hist_kws={'color': '#377eb8', 'alpha': 0.25,
-                               'edgecolor': 'k', 'linewidth':1}, label='NHS Suppliers',
-                     bins=np.arange(1950, 2020, 3))
-    h = sns.distplot(cc_adv_date, ax=ax4, kde_kws={'gridsize': 500, 'color': '#ff7f00'},
-                     hist_kws={'color': '#ff7f00', 'alpha': 0.25,
-                               'edgecolor': 'k', 'linewidth':1},
-                     label='All Advancement of Health', bins=np.arange(1950, 2020, 3))
-    ax4.set_ylabel("Normalized Frequency", fontsize=12)
-    ax4.set_xlabel("Charity Registration Year", fontsize=12)
-#    ax4.set_title('Comparison with Healthcare Charities',
-#                  **csfont, fontsize=titlesize, y=1.02)
-    ax4.set_title('D.',
+    ax3.legend(loc='upper left', edgecolor='k', facecolor='w', frameon=True, fontsize=10, framealpha=1)
+    h = sns.distplot(allsups_data_regdate, ax=ax4, kde_kws={'gridsize': 500, 'color': color1},
+                     label='NHS Suppliers',
+                     hist=False
+                    )
+    h = sns.distplot(cc_adv_date, ax=ax4, kde_kws={'gridsize': 500, 'color': color2},
+                     label='Advancement of Health',
+                     hist=False
+                    )
+    ax4.set_ylabel("Normalized Frequency", fontsize=14)
+    ax4.set_xlabel("Charity Registration Year", fontsize=14)
+    ax4.set_title('d.',
                   **csfont, fontsize=titlesize+6, loc='left', y=1.02)
-    h.legend(loc='upper left', edgecolor='k', frameon=False, fontsize=12)
+    h.legend(loc='upper left', edgecolor='k', facecolor='w', frameon=True, fontsize=10, framealpha=1)
     ax1.grid(linestyle='--', linewidth=0.5, alpha=0.35, color='#d3d3d3',zorder=0)
     ax2.grid(linestyle='--', linewidth=0.5, alpha=0.35, color='#d3d3d3',zorder=0)
-    ax2.grid(linestyle='--', linewidth=0.5, alpha=0.35, color='#d3d3d3',zorder=0)
     ax3.grid(linestyle='--', linewidth=0.5, alpha=0.35, color='#d3d3d3',zorder=0)
-#    sns.despine(ax=ax1, top=False, left=False, right=False, bottom=False)
-#    sns.despine(ax=ax2, top=False, left=False, right=False, bottom=False)
-#    sns.despine(ax=ax3, top=False, left=False, right=False, bottom=False)
-#    sns.despine(ax=ax4, top=False, left=False, right=False, bottom=False)
+    ax4.grid(linestyle='--', linewidth=0.5, alpha=0.35, color='#d3d3d3',zorder=0)
+    legend = ax1.get_legend()
+    legend_frame = legend.get_frame()
+    legend_frame.set_linewidth(0.5)
+    legend = ax3.get_legend()
+    legend_frame = legend.get_frame()
+    legend_frame.set_linewidth(0.5)
+    legend = ax4.get_legend()
+    legend_frame = legend.get_frame()
+    legend_frame.set_linewidth(0.5)
     sns.despine()
-    plt.tight_layout()
+    plt.tight_layout(pad=3.0)
     plt.savefig(os.path.join(figure_path, 'age_distributions.svg'),
                 bbox_inches='tight')
     plt.savefig(os.path.join(figure_path, 'age_distributions.png'),
@@ -1700,158 +1808,6 @@ def charity_age(allcc_pay_df, cc_sup, cc_name, cc_class, figure_path):
     plt.savefig(os.path.join(figure_path, 'age_distributions.pdf'),
                 bbox_inches='tight')
 
-
-def plot_choropleths_trusts(support_path, shape_path, figure_path,
-                           trust_pay_df, pay_df_cc):
-    csfont = {'fontname': 'Helvetica'}
-    hfont = {'fontname': 'Helvetica'}
-    titlesize = 15
-    trust_list = pd.read_excel(os.path.join(support_path, 'trust_list.xls'))
-    trust_list = trust_list[['Latitude','Longitude','abrev']]
-    total_count = trust_pay_df.groupby(['dept'])['dept'].\
-        count().reset_index(name="total_count")
-    total_val = trust_pay_df.groupby(['dept'])['amount'].sum().reset_index().\
-        rename({'amount': 'total_amount'}, axis=1)
-    trust_merge = pd.merge(total_count, total_val, how='left',
-                           left_on='dept', right_on='dept')
-
-    charity_count = pay_df_cc.groupby(['dept'])['dept'].\
-        count().reset_index(name="charity_count")
-    charity_val = pay_df_cc.groupby(['dept'])['amount'].sum().reset_index().\
-        rename({'amount': 'charity_amount'}, axis=1)
-    trust_merge = pd.merge(trust_merge, charity_count, how='left',
-                           left_on='dept', right_on='dept')
-    trust_merge = pd.merge(trust_merge, charity_val, how='left',
-                           left_on='dept', right_on='dept')
-    trust_merge['pc_amount'] = (trust_merge['charity_amount']/trust_merge['total_amount']) * 100
-    trust_merge['pc_count'] = (trust_merge['charity_count'] /trust_merge['total_count']) * 100
-    #merge in the list for latlongs
-    trust_merge = pd.merge(trust_merge, trust_list, how='left',
-                          left_on='dept', right_on = 'abrev')
-    trust_merge['Latitude'] = trust_merge['Latitude'].astype(float)
-    trust_merge['Longitude'] = trust_merge['Longitude'].astype(float)
-    trust_merge = trust_merge[trust_merge['total_count'] > 50]
-    gdf = GeoDataFrame(trust_merge,
-                       geometry=points_from_xy(trust_merge['Longitude'],
-                                               trust_merge['Latitude']),
-                       crs = 'EPSG:4326')
-    gdf = gdf[gdf['pc_count'].notnull()]
-    gdf['pc_count'] = gdf['pc_count'].astype(float)
-    gdf = gdf[gdf['pc_amount'].notnull()]
-    gdf['pc_amount'] = gdf['pc_amount'].astype(float)
-    gdf = gdf.to_crs('epsg:27700')
-
-    fig = plt.figure(figsize=(16, 16))
-    ax1 = plt.subplot2grid((20, 20), (0, 0), colspan=10, rowspan=17)
-    ax2 = plt.subplot2grid((20, 20), (0, 10), colspan=10, rowspan=17)
-    ax3 = plt.subplot2grid((20, 20), (17, 2), colspan=7, rowspan=3)
-    ax4 = plt.subplot2grid((20, 20), (17, 12), colspan=7, rowspan=3)
-
-    shapefile = os.path.join(shape_path,
-                             'Clinical_Commissioning_Group_CCG_IMD_2019_OSGB1936.shp')
-    shapefile = gpd.read_file(os.path.join(shape_path, shapefile))
-    shapefile = shapefile.to_crs(epsg=27700)
-    shapefile.plot(ax=ax1, color='white', edgecolor='black', linewidth=0.35);
-    shapefile.plot(ax=ax1, color='None', edgecolor='black', alpha=0.2);
-    markersize = gdf['pc_count'] / 5 * 200
-    k = 6
-    quantiles = mc.Quantiles(gdf.pc_count.dropna(), k=k)
-    gdf['pc_count_cat'] = quantiles.find_bin(gdf.pc_count).astype('str')
-    #gdf.loc[gdf.pc_amount.isnull(), 'pc_amount'] = 'No Data'
-    cmap = plt.cm.get_cmap('Blues', k+2)
-    cmap_list = [rgb2hex(cmap(i)) for i in range(cmap.N)][2:]
-    cmap_with_grey = colors.ListedColormap(cmap_list)
-    gdf.plot(column='pc_count_cat', edgecolor='k', cmap=cmap_with_grey,
-             legend=True, legend_kwds=dict(loc='center left',
-                                           bbox_to_anchor=(0.035, 0.5),
-                                           frameon=False, fontsize=titlesize-4),
-                 alpha=0.75, ax=ax1, markersize=markersize)
-    upper_bounds = quantiles.bins
-    bounds = []
-    for index, upper_bound in enumerate(upper_bounds):
-        if index == 0:
-            lower_bound = gdf.pc_amount.min()
-        else:
-            lower_bound = upper_bounds[index-1]
-        bound = str(f'{lower_bound:.1f}% - {upper_bound:.1f}%')
-        bounds.append(bound)
-    legend_labels = ax1.get_legend().get_texts()
-    for bound, legend_label in zip(bounds, legend_labels):
-        legend_label.set_text(bound)
-    ax1.axis('off')
-    ax1.set_title('Total Volume of Payments', **csfont, fontsize=titlesize+2,y=1.1)
-    ax1.set_title('A.', **csfont, fontsize=titlesize+8, loc='left', y=1)
-
-    shapefile.plot(ax=ax2, color='white', edgecolor='black', linewidth=0.35);
-    shapefile.plot(ax=ax2, color='None', edgecolor='black', alpha=0.2);
-    markersize = gdf['pc_amount'] / 5 * 200
-    k = 6
-    quantiles = mc.Quantiles(gdf.pc_amount.dropna(), k=k)
-    gdf['pc_amount_cat'] = quantiles.find_bin(gdf.pc_amount).astype('str')
-    #gdf.loc[gdf.pc_amount.isnull(), 'pc_amount'] = 'No Data'
-    cmap = plt.cm.get_cmap('OrRd', k+2)
-    cmap_list = [rgb2hex(cmap(i)) for i in range(cmap.N)][2:]
-    cmap_with_grey = colors.ListedColormap(cmap_list)
-    gdf.plot(column='pc_amount_cat', edgecolor='k', cmap=cmap_with_grey,
-             legend=True, legend_kwds=dict(loc='center left',
-                                           bbox_to_anchor=(0.035, 0.5),
-                                           frameon=False, fontsize=titlesize-4),
-                 alpha=0.75, ax=ax2, markersize=markersize)
-    upper_bounds = quantiles.bins
-    bounds = []
-    for index, upper_bound in enumerate(upper_bounds):
-        if index == 0:
-            lower_bound = gdf.pc_amount.min()
-        else:
-            lower_bound = upper_bounds[index-1]
-        bound = str(f'{lower_bound:.1f}% - {upper_bound:.1f}%')
-        bounds.append(bound)
-    legend_labels = ax2.get_legend().get_texts()
-    for bound, legend_label in zip(bounds, legend_labels):
-        legend_label.set_text(bound)
-    ax2.axis('off')
-    ax2.set_title('Cumulative Payment Amount', **csfont, fontsize=titlesize+2, y=1.1)
-    ax2.set_title('B.', **csfont, fontsize=titlesize+8, loc='left', y=1.0)
-
-    count_array = gdf[gdf['pc_count']!='No Data']['pc_count'].astype(float)
-    ee = sns.distplot(count_array, ax=ax3, kde_kws={'color': '#4e94ff', 'alpha':0.9,
-                                                    'label':'KDE'},
-                      hist_kws={'color': '#4e94ff', 'alpha': 0.5,
-                               'edgecolor': 'k', 'label': 'Histogram'},
-                      bins=20)
-    ee.set_xlim(0, None)
-    ee.legend(loc='upper right', bbox_to_anchor=(1, 1.3),
-              edgecolor='k', frameon=False, fontsize=10)
-    ee.xaxis.set_major_formatter(mtick.PercentFormatter(decimals=0))
-    ee.set_xlabel("")
-    print('We have ' + str(len(gdf[gdf['pc_amount']!='No Data'])) + ' trusts in our dataset')
-    print('Of them, ' + str(len(gdf[(gdf['pc_amount']!='No Data') & (gdf['pc_amount']<2.5)])) + ' procure < 2.5% from CCEW by value')
-    print('Of them, ' + str(len(gdf[(gdf['pc_count']!='No Data') & (gdf['pc_count']<2.5)])) + ' procure < 2.5% from CCEW by count')
-    count_array = gdf[gdf['pc_amount']!='No Data']['pc_amount'].astype(float)
-    ff = sns.distplot(count_array, ax=ax4, kde_kws={'color': '#ffb94e', 'alpha':0.9,
-                                                    'label':'KDE'},
-                      hist_kws={'color': '#ffb94e', 'alpha': 0.5,
-                               'edgecolor': 'k', 'label': 'Histogram'},
-                      bins=20)
-    ff.set_xlim(0, None)
-    ff.legend(loc='upper right', bbox_to_anchor=(1, 1.3),
-              edgecolor='k', frameon=False, fontsize=10)
-    ff.xaxis.set_major_formatter(mtick.PercentFormatter(decimals=0))
-    ff.set_xlabel("")
-
-    sns.despine()
-    plt.tight_layout()
-    fig.subplots_adjust(bottom=0.65, right=0.6)
-    plt.savefig(os.path.join(figure_path, 'choropleth_map_trusts.svg'),
-                bbox_inches='tight')
-    plt.savefig(os.path.join(figure_path, 'choropleth_map_trusts.pdf'),
-                bbox_inches='tight')
-    plt.savefig(os.path.join(figure_path, 'choropleth_map_trusts.png'),
-                bbox_inches='tight', dpi=600)
-    print('\nThe top 5 Trusts by %to VCS are: \n')
-    print(gdf[['dept', 'charity_amount',
-               'pc_amount', 'charity_count']].sort_values(by='pc_amount',
-                                                          ascending=False)[0:5])
 
 
 def plot_choropleths_ccg(gdf, figure_path):
@@ -1972,6 +1928,201 @@ def plot_choropleths_ccg(gdf, figure_path):
     print(gdf[['dept', 'amount_cc',
                'amount_pc_cc', 'count_cc']].sort_values(by='amount_pc_cc',
                                                         ascending=False)[0:5])
+
+
+def plot_choropleths_trusts(support_path, shape_path, figure_path,
+                           trust_pay_df, pay_df_cc):
+    csfont = {'fontname': 'Helvetica'}
+    hfont = {'fontname': 'Helvetica'}
+    titlesize = 15
+    colors3 = ['#41558c', '#E89818', '#CF202A']
+    trust_list = pd.read_excel(os.path.join(support_path, 'trust_list.xls'))
+    trust_list = trust_list[['Latitude','Longitude','abrev']]
+    total_count = trust_pay_df.groupby(['dept'])['dept'].\
+        count().reset_index(name="total_count")
+    total_val = trust_pay_df.groupby(['dept'])['amount'].sum().reset_index().\
+        rename({'amount': 'total_amount'}, axis=1)
+    trust_merge = pd.merge(total_count, total_val, how='left',
+                           left_on='dept', right_on='dept')
+
+    charity_count = pay_df_cc.groupby(['dept'])['dept'].\
+        count().reset_index(name="charity_count")
+    charity_val = pay_df_cc.groupby(['dept'])['amount'].sum().reset_index().\
+        rename({'amount': 'charity_amount'}, axis=1)
+    trust_merge = pd.merge(trust_merge, charity_count, how='left',
+                           left_on='dept', right_on='dept')
+    trust_merge = pd.merge(trust_merge, charity_val, how='left',
+                           left_on='dept', right_on='dept')
+    trust_merge['pc_amount'] = (trust_merge['charity_amount']/trust_merge['total_amount']) * 100
+    trust_merge['pc_count'] = (trust_merge['charity_count'] /trust_merge['total_count']) * 100
+    #merge in the list for latlongs
+    trust_merge = pd.merge(trust_merge, trust_list, how='left',
+                          left_on='dept', right_on = 'abrev')
+    trust_merge['Latitude'] = trust_merge['Latitude'].astype(float)
+    trust_merge['Longitude'] = trust_merge['Longitude'].astype(float)
+    trust_merge = trust_merge[trust_merge['total_count'] > 50]
+    gdf = GeoDataFrame(trust_merge,
+                       geometry=points_from_xy(trust_merge['Longitude'],
+                                               trust_merge['Latitude']),
+                       crs = 'EPSG:4326')
+    gdf = gdf[gdf['pc_count'].notnull()]
+    gdf['pc_count'] = gdf['pc_count'].astype(float)
+    gdf = gdf[gdf['pc_amount'].notnull()]
+    gdf['pc_amount'] = gdf['pc_amount'].astype(float)
+    gdf = gdf.to_crs('epsg:27700')
+
+    fig = plt.figure(figsize=(16, 16))
+    ax1 = plt.subplot2grid((20, 20), (0, 0), colspan=10, rowspan=17)
+    ax2 = plt.subplot2grid((20, 20), (0, 10), colspan=10, rowspan=17)
+    ax3 = plt.subplot2grid((20, 20), (17, 2), colspan=7, rowspan=3)
+    ax4 = plt.subplot2grid((20, 20), (17, 12), colspan=7, rowspan=3)
+
+    shapefile = os.path.join(shape_path,
+                             'Clinical_Commissioning_Group_CCG_IMD_2019_OSGB1936.shp')
+    shapefile = gpd.read_file(os.path.join(shape_path, shapefile))
+    shapefile = shapefile.to_crs(epsg=27700)
+    shapefile.plot(ax=ax1, color='white', edgecolor='black', linewidth=0.35);
+    shapefile.plot(ax=ax1, color='None', edgecolor='black', alpha=0.2);
+    markersize = gdf['pc_count'] / 5 * 200
+    k = 6
+    quantiles = mc.Quantiles(gdf.pc_count.dropna(), k=k)
+    gdf['pc_count_cat'] = quantiles.find_bin(gdf.pc_count).astype('str')
+    #gdf.loc[gdf.pc_amount.isnull(), 'pc_amount'] = 'No Data'
+    cmap = mpl.colors.LinearSegmentedColormap.from_list("", ['white', colors3[0]])
+    cmap_list = [rgb2hex(cmap(i)) for i in range(cmap.N)][2:]
+    cmap_with_grey = colors.ListedColormap(cmap_list)
+    gdf.plot(column='pc_count_cat', edgecolor='k', cmap=cmap_with_grey,
+             legend=True, legend_kwds=dict(loc='center left',
+                                           bbox_to_anchor=(0.0, 0.5),
+                                           frameon=True, fontsize=titlesize-4,
+                                           title='Payment Volume'),
+                 alpha=1, ax=ax1, markersize=markersize)
+    upper_bounds = quantiles.bins
+    bounds = []
+    for index, upper_bound in enumerate(upper_bounds):
+        if index == 0:
+            lower_bound = gdf.pc_amount.min()
+        else:
+            lower_bound = upper_bounds[index-1]
+        bound = str(f'{lower_bound:.1f}% - {upper_bound:.1f}%')
+        bounds.append(bound)
+    legend_labels = ax1.get_legend().get_texts()
+    for bound, legend_label in zip(bounds, legend_labels):
+        legend_label.set_text(bound)
+    ax1.axis('off')
+#    ax1.set_title('Total Volume of Payments', **csfont, fontsize=titlesize+2,y=1.1)
+    ax1.set_title('a.', **csfont, fontsize=titlesize+8, loc='left', y=0.95)
+
+    shapefile.plot(ax=ax2, color='white', edgecolor='black', linewidth=0.35);
+    shapefile.plot(ax=ax2, color='None', edgecolor='black', alpha=0.2);
+    markersize = gdf['pc_amount'] / 5 * 200
+    k = 6
+    quantiles = mc.Quantiles(gdf.pc_amount.dropna(), k=k)
+    gdf['pc_amount_cat'] = quantiles.find_bin(gdf.pc_amount).astype('str')
+    #gdf.loc[gdf.pc_amount.isnull(), 'pc_amount'] = 'No Data'
+    cmap = mpl.colors.LinearSegmentedColormap.from_list("", ['white', colors3[1]])
+    cmap_list = [rgb2hex(cmap(i)) for i in range(cmap.N)][2:]
+    cmap_with_grey = colors.ListedColormap(cmap_list)
+    gdf.plot(column='pc_amount_cat', edgecolor='k', cmap=cmap_with_grey,
+             legend=True, legend_kwds=dict(loc='center left',
+                                           bbox_to_anchor=(0.0, 0.5),
+                                           frameon=True, fontsize=titlesize-4,
+                                           title='Payment Amount'),
+                 alpha=1, ax=ax2, markersize=markersize)
+    upper_bounds = quantiles.bins
+    bounds = []
+    for index, upper_bound in enumerate(upper_bounds):
+        if index == 0:
+            lower_bound = gdf.pc_amount.min()
+        else:
+            lower_bound = upper_bounds[index-1]
+        bound = str(f'{lower_bound:.1f}% - {upper_bound:.1f}%')
+        bounds.append(bound)
+    legend_labels = ax2.get_legend().get_texts()
+    for bound, legend_label in zip(bounds, legend_labels):
+        legend_label.set_text(bound)
+    ax2.axis('off')
+#    ax2.set_title('Cumulative Payment Amount', **csfont, fontsize=titlesize+2, y=1.1)
+    ax2.set_title('b.', **csfont, fontsize=titlesize+8, loc='left', y=1.0)
+
+    count_array = gdf[gdf['pc_count']!='No Data']['pc_count'].astype(float)
+    ee = sns.distplot(count_array,
+                      ax=ax3,
+                      kde_kws={'color': colors3[1], 'alpha':1,
+                                                    'label':'KDE', 'linewidth': 1},
+                      hist_kws={'color': colors3[0], 'alpha': 1,
+                                'edgecolor': 'k', 'label': 'Histogram'},
+                      bins=20)
+    ee.set_xlim(0, None)
+    ee.legend(loc='upper right', bbox_to_anchor=(1, 1.3),
+              edgecolor='k', frameon=True, fontsize=10)
+    ee.xaxis.set_major_formatter(mtick.PercentFormatter(decimals=0))
+    ee.set_xlabel("")
+    print('We have ' + str(len(gdf[gdf['pc_amount']!='No Data'])) + ' trusts in our dataset')
+    print('Of them, ' + str(len(gdf[(gdf['pc_amount']!='No Data') & (gdf['pc_amount']<2.5)])) + ' procure < 2.5% from CCEW by value')
+    print('Of them, ' + str(len(gdf[(gdf['pc_count']!='No Data') & (gdf['pc_count']<2.5)])) + ' procure < 2.5% from CCEW by count')
+    count_array = gdf[gdf['pc_amount']!='No Data']['pc_amount'].astype(float)
+    ff = sns.distplot(count_array,
+                      ax=ax4,
+                      kde_kws={'color': colors3[0], 'alpha':1,
+                               'label':'KDE', 'linewidth': 1},
+                      hist_kws={'color': colors3[1], 'alpha': 1,
+                                'edgecolor': 'k', 'label': 'Histogram'},
+                      bins=20)
+    ff.set_xlim(0, None)
+    ff.legend(loc='upper right', bbox_to_anchor=(1, 1.3),
+              edgecolor='k', frameon=True, fontsize=10)
+    ff.xaxis.set_major_formatter(mtick.PercentFormatter(decimals=0))
+    ff.set_xlabel("")
+
+
+
+    legend = ax1.get_legend()
+    legend_frame = legend.get_frame()
+    legend_frame.set_linewidth(0.5)
+    legend_frame.set_edgecolor('k')
+
+
+    legend = ax2.get_legend()
+    legend_frame = legend.get_frame()
+    legend_frame.set_linewidth(0.5)
+    legend_frame.set_edgecolor('k')
+
+    legend = ee.get_legend()
+    legend_frame = legend.get_frame()
+    legend_frame.set_linewidth(0.5)
+    legend_frame.set_edgecolor('k')
+
+    legend = ff.get_legend()
+    legend_frame = legend.get_frame()
+    legend_frame.set_linewidth(0.5)
+    legend_frame.set_edgecolor('k')
+
+
+    for legend_handle in ax1.get_legend().legend_handles:
+        legend_handle.set_markeredgecolor('black')
+        legend_handle.set_markeredgewidth(0.5)
+
+    for legend_handle in ax2.get_legend().legend_handles:
+        legend_handle.set_markeredgecolor('black')
+        legend_handle.set_markeredgewidth(0.5)
+
+
+
+
+    sns.despine()
+    plt.tight_layout()
+    fig.subplots_adjust(bottom=0.65, right=0.6)
+    plt.savefig(os.path.join(figure_path, 'choropleth_map_trusts.svg'),
+                bbox_inches='tight')
+    plt.savefig(os.path.join(figure_path, 'choropleth_map_trusts.pdf'),
+                bbox_inches='tight')
+    plt.savefig(os.path.join(figure_path, 'choropleth_map_trusts.png'),
+                bbox_inches='tight', dpi=600)
+    print('\nThe top 5 Trusts by %to VCS are: \n')
+    print(gdf[['dept', 'charity_amount',
+               'pc_amount', 'charity_count']].sort_values(by='pc_amount',
+                                                          ascending=False)[0:5])
 
 
 def make_ccg_to_gdf(pay_df, pay_df_cc, support_path):
@@ -2242,10 +2393,10 @@ def icnpo_groupings(pay_df, pay_df_ccg, pay_df_trust, pay_df_nhsengland,
     icnpo_out = pd.merge(icnpo_out, count_icnpo_pc_ccg, how='left', left_on = 'icnpo',
                          right_on = 'ICNPO')
     icnpo_out = icnpo_out.rename({'ICNPO_y': 'ICNPO'}, axis=1)
-    icnpo_out = icnpo_out.drop('icnpo', 1)
+    icnpo_out = icnpo_out.drop(labels = 'icnpo', axis = 1)
     icnpo_out = pd.merge(icnpo_out, sum_icnpo_pc_ccg, how='left', on = 'ICNPO')
     icnpo_out = icnpo_out.rename({'ICNPO_y': 'ICNPO'}, axis=1)
-    icnpo_out = icnpo_out.drop('ICNPO_x', 1)
+    icnpo_out = icnpo_out.drop(labels = 'ICNPO_x', axis = 1)
     icnpo_out = pd.merge(icnpo_out, count_icnpo_pc_trust, how='left', left_on = 'ICNPO',
                          right_on = 'ICNPO')
     icnpo_out = icnpo_out.rename({'ICNPO_y': 'ICNPO'}, axis=1)
@@ -2276,17 +2427,17 @@ def icnpo_groupings(pay_df, pay_df_ccg, pay_df_trust, pay_df_nhsengland,
 
 def load_ccname(cc_path, norm_path):
     ex_char = pd.read_csv(os.path.join(cc_path, 'extract_charity.csv'),
-                             warn_bad_lines=False, error_bad_lines=False)
+                          on_bad_lines='skip', low_memory=False)
     print('The percent of charities without an address: ',
           len(ex_char[ex_char['postcode'].notnull()])/len(ex_char))
     cc_name = pd.read_csv(os.path.join(cc_path, 'extract_name.csv'),
-                          warn_bad_lines=False, error_bad_lines=False)
+                          on_bad_lines='skip')
     print('The number of unique regnos in our database: ',
           len(cc_name['regno'].unique()))
     cc_regdate = pd.read_csv(os.path.join(cc_path,
                                           'extract_registration.csv'),
                              parse_dates=['regdate', 'remdate'],
-                             warn_bad_lines=False, error_bad_lines=False)
+                             on_bad_lines='skip')
     cc_name = pd.merge(cc_name, cc_regdate, how='left',
                        left_on=['regno', 'subno'],
                        right_on=['regno', 'subno'])
@@ -2307,11 +2458,9 @@ def load_ccname(cc_path, norm_path):
 
 def load_ccclass(cc_path):
     cc_class = pd.read_csv(os.path.join(cc_path, 'extract_class.csv'),
-                           warn_bad_lines=False,
-                           error_bad_lines=False)
+                           on_bad_lines='skip')
     class_ref = pd.read_csv(os.path.join(cc_path, 'extract_class_ref.csv'),
-                            warn_bad_lines=False,
-                            error_bad_lines=False)
+                            on_bad_lines='skip')
     cc_class = pd.merge(cc_class, class_ref, how='left',
                         left_on='class', right_on='classno')
     cc_class = cc_class[cc_class['class'].notnull()]
@@ -2323,8 +2472,8 @@ def load_ccclass(cc_path):
 
 def load_ccfin(cc_path):
     cc_fin = pd.read_csv(os.path.join(cc_path, 'extract_financial.csv'),
-                                  warn_bad_lines=False, error_bad_lines=False,
-                                  parse_dates=['fystart', 'fyend'])
+                         on_bad_lines='skip',
+                         parse_dates=['fystart', 'fyend'])
     cc_fin = cc_fin[cc_fin['fystart'] > '2012-01-01']
     cc_fin = cc_fin[cc_fin['income'].notnull()]
     cc_fin = cc_fin.groupby('regno')['income'].sum().reset_index()
@@ -2338,3 +2487,613 @@ def load_icpno(support_path):
     icnpo_df = icnpo_df.drop(columns=['general_charities', 'icnpo', 'in_original_spec'])
     icnpo_df['regno'] = pd.to_numeric(icnpo_df['regno'], errors='coerce')
     return icnpo_df, icnpo_lookup
+
+
+def make_ET(merged_char, merged_notchar, data_type):
+    ET_counts_notchar = merged_notchar[merged_notchar['data_type']==data_type]['expensetype'].value_counts()
+    ET_counts_notchar.index = ET_counts_notchar.index.str.title()
+    ET_counts_notchar = ET_counts_notchar/ET_counts_notchar.sum()
+    ET_counts_notchar = ET_counts_notchar.reset_index()
+    ET_counts_notchar = ET_counts_notchar.rename({'count': 'count_notchar_' + data_type}, axis=1)
+    ET_counts_char = merged_char['expensetype'].value_counts()
+    ET_counts_char.index = ET_counts_char.index.str.title()
+    ET_counts_char = ET_counts_char/ET_counts_char.sum()
+    ET_counts_char = ET_counts_char.reset_index()
+    ET_counts_char = ET_counts_char.rename({'count': 'count_char_' + data_type}, axis=1)
+    ET_amount_notchar = merged_notchar.groupby(['expensetype'])['amount'].sum()
+    ET_amount_notchar.index = ET_amount_notchar.index.str.title()
+    ET_amount_notchar = ET_amount_notchar/ET_amount_notchar.sum()
+    ET_amount_notchar = ET_amount_notchar.reset_index()
+    ET_amount_notchar = ET_amount_notchar.rename({'amount': 'amount_notchar_' + data_type}, axis=1)
+    ET_amount_char = merged_char.groupby(['expensetype'])['amount'].sum()
+    ET_amount_char.index = ET_amount_char.index.str.title()
+    ET_amount_char = ET_amount_char/ET_amount_char.sum()
+    ET_amount_char = ET_amount_char.reset_index()
+    ET_amount_char = ET_amount_char.rename({'amount': 'amount_char_' + data_type}, axis=1)
+    ET = pd.merge(ET_counts_notchar, ET_counts_char,
+                  on='expensetype', how='inner')
+    ET = pd.merge(ET, ET_amount_notchar,
+                  on='expensetype', how='inner')
+    ET = pd.merge(ET, ET_amount_char,
+                  on='expensetype', how='inner')
+    return ET
+
+def make_expense_area(nhsengland_pay_df, trust_pay_df, ccg_pay_df, figure_path):
+    merged_df = pd.concat([nhsengland_pay_df, trust_pay_df, ccg_pay_df])
+    merged_df['expensetype'] = merged_df['expensetype'].str.title()
+    merged_df['expensetype'] = merged_df['expensetype'].str.strip()
+    merged_df = merged_df[merged_df['expensetype'].notnull()]
+    merged_df = merged_df[merged_df['expensetype']!='']
+    merged_char = merged_df[merged_df['match_type'].str.contains('Charity', regex=False)]
+    merged_notchar = merged_df[~merged_df['match_type'].str.contains('Charity', regex=False)]
+
+    ET_CCGs = make_ET(merged_char, merged_notchar, 'CCGs')
+    ET_NHSE = make_ET(merged_char, merged_notchar, 'NHS_Eng')
+    ET_Trusts = make_ET(merged_char, merged_notchar, 'Trusts')
+
+    f, ((ax1, ax2, ax3), (ax4, ax5, ax6)) = plt.subplots(2, 3, figsize=(16, 11.25))
+    colors = ['#001c54', '#E89818']
+    for df in [ET_Trusts, ET_CCGs, ET_NHSE]:
+        df['expensetype'] = df['expensetype'].str.replace('Improving Access To Psychological Therapies',
+                                                          'Improving Access to\nPsychological Therapies')
+        df['expensetype'] = df['expensetype'].str.replace('Commissioning - Non Acute',
+                                                          'Commissioning\n(Non Acute)')
+        df['expensetype'] = df['expensetype'].str.replace('Primary Care', 'Primary\nCare')
+        df['expensetype'] = df['expensetype'].str.replace('Specialised Commissioning',
+                                                          'Specialised\nCommissioning')
+        df['expensetype'] = df['expensetype'].str.replace('Primary\nCare & Secondary Dental',
+                                                          'Primary Care &\nSecondary Dental')
+        df['expensetype'] = df['expensetype'].str.replace('Nhs England Central Programme Costs',
+                                                          'NHS England Central\nProgramme Costs')
+        df['expensetype'] = df['expensetype'].str.replace('Community Services',
+                                                          'Community\nServices')
+        df['expensetype'] = df['expensetype'].str.replace('Balance Sheet',
+                                                          'Balance\nSheet')
+        df['expensetype'] = df['expensetype'].str.replace('Primary Care',
+                                                          'Primary\nCare')
+        df['expensetype'] = df['expensetype'].str.replace('Public Health',
+                                                          'Public\nHealth')
+        df['expensetype'] = df['expensetype'].str.replace('Ambulance Services',
+                                                          'Ambulance\nServices')
+        df['expensetype'] = df['expensetype'].str.replace('Planned Care',
+                                                          'Planned\nCare')
+        df['expensetype'] = df['expensetype'].str.replace('Social Care',
+                                                          'Social\nCare')
+        df['expensetype'] = df['expensetype'].str.replace('Out Of Hours',
+                                                          'Out Of\nHours')
+        df['expensetype'] = df['expensetype'].str.replace('Health And Justice',
+                                                          'Health And\nJustice')
+        df['expensetype'] = df['expensetype'].str.replace('Other (Including Central Programme)',
+                                                          'Other (Inc.\nCentral Programme)')
+        df['expensetype'] = df['expensetype'].str.replace('Nhs England Running Costs',
+                                                          'NHS England\nRunning Costs')
+        df['expensetype'] = df['expensetype'].str.replace('Health & Justice',
+                                                          'Health &\nJustice')
+        df['expensetype'] = df['expensetype'].str.replace('Primary\nCare &\nSecondary Dental',
+                                                          'Primary Care &\nSecondary Dental')
+        df['expensetype'] = df['expensetype'].str.replace('End Of Life',
+                                                          'End Of\nLife')
+        df['expensetype'] = df['expensetype'].str.replace('Nrp Management & Admin',
+                                                          'NRP Management\n& Admin',
+                                                          )
+        df['expensetype'] = df['expensetype'].str.replace('Fetal Medicine Serv Agreement',
+                                                          'Fetal Medicine\nServ Agreement')
+        df['expensetype'] = df['expensetype'].str.replace('Ncfp Contract',
+                                                          'NCFP Contract')
+        df['expensetype'] = df['expensetype'].str.replace('Iapt',
+                                                          'IAPT')
+        df['expensetype'] = df['expensetype'].str.replace('Nrp Management & Admin',
+                                                          'NRP Management\n& Admin')
+        df['expensetype'] = df['expensetype'].str.replace('Chc Adult Fully Funded',
+                                                          'CHC Adult\nFully Funded')
+        df['expensetype'] = df['expensetype'].str.replace('Mental Health Contracts',
+                                                          'Mental Health\nContracts')
+        df['expensetype'] = df['expensetype'].str.replace('Palliative Care',
+                                                          'Palliative\nCare')
+        df['expensetype'] = df['expensetype'].str.replace('Mental Health Services - Other',
+                                                          'Mental Health\nServices - Other')
+        df['expensetype'] = df['expensetype'].str.replace('Mental Health Services - Adults',
+                                                          'Mental Health\nServices - Adults')
+        df['expensetype'] = df['expensetype'].str.replace('Mental Health Contracts',
+                                                          'Mental Health\nContracts')
+        df['expensetype'] = df['expensetype'].str.replace('Acute Commissioning',
+                                                          'Acute\nCommissioning')
+        df['expensetype'] = df['expensetype'].str.replace('Prc Delegated Co-Commissioning',
+                                                          'PRC Delegated\nCo-Commissioning')
+        df['expensetype'] = df['expensetype'].str.replace('Local Enhanced Services',
+                                                          'Local Enhanced\nServices')
+        df['expensetype'] = df['expensetype'].str.replace('Secondary And Community Dental Care',
+                                                          'Secondary and\nCommunity Dental Care')
+    print(ET_Trusts)
+    ET_Trusts.sort_values(by='amount_notchar_Trusts',
+                          ascending=False)[0:12].iloc[::-1].plot.barh(x='expensetype',
+                                                                      y=["count_notchar_Trusts",
+                                                                         "amount_notchar_Trusts"],
+                                                                      ax=ax1,
+                                                                      legend=False,
+                                                                      edgecolor='k',
+                                                                      color = colors,
+                                                                      width=0.75)
+    ET_CCGs.sort_values(by='amount_notchar_CCGs',
+                        ascending=False)[0:12].iloc[::-1].plot.barh(x='expensetype',
+                                                                    y=["count_notchar_CCGs",
+                                                                       "amount_notchar_CCGs"],
+                                                                    ax=ax2,
+                                                                    legend=False,
+                                                                    edgecolor='k',
+                                                                    color = colors,
+                                                                    width=0.75)
+    ET_NHSE.sort_values(by='amount_notchar_NHS_Eng',
+                        ascending=False)[0:12].iloc[::-1].plot.barh(x='expensetype',
+                                                                    y=["count_notchar_NHS_Eng",
+                                                                       "amount_notchar_NHS_Eng"],
+                                                                    ax=ax3,
+                                                                    edgecolor='k',
+                                                                    color=colors,
+                                                                    legend=False,
+                                                                    width=0.75)
+    ET_Trusts.sort_values(by='amount_char_Trusts',
+                          ascending=False)[0:12].iloc[::-1].plot.barh(x='expensetype',
+                                                                      y=["count_char_Trusts",
+                                                                         "amount_char_Trusts"],
+                                                                      ax=ax4,
+                                                                      legend=False,
+                                                                      edgecolor='k',
+                                                                      color = colors,
+                                                                      width=0.75)
+    ET_CCGs.sort_values(by='amount_char_CCGs',
+                        ascending=False)[0:12].iloc[::-1].plot.barh(x='expensetype',
+                                                                    y=["count_char_CCGs",
+                                                                       "amount_char_CCGs"],
+                                                                    ax=ax5,
+                                                                    legend=False,
+                                                                    edgecolor='k',
+                                                                    color = colors,
+                                                                    width=0.75)
+    ET_NHSE.sort_values(by='amount_char_NHS_Eng',
+                        ascending=False)[0:12].iloc[::-1].plot.barh(x='expensetype',
+                                                                    y=["count_char_NHS_Eng",
+                                                                       "amount_char_NHS_Eng"],
+                                                                    ax=ax6,
+                                                                    edgecolor='k',
+                                                                    color = colors,
+                                                                    width=0.75)
+    ax1.set_ylabel('')
+    ax2.set_ylabel('')
+    ax3.set_ylabel('')
+    ax4.set_ylabel('')
+    ax5.set_ylabel('')
+    ax6.set_ylabel('')
+    ax1.set_title('a.', **csfont, fontsize=14, loc='left', y=1.0, x=-0.1)
+    ax2.set_title('b.', **csfont, fontsize=14, loc='left', y=1.0, x=-0.1)
+    ax3.set_title('c.', **csfont, fontsize=14, loc='left', y=1.0, x=-0.1)
+    ax4.set_title('d.', **csfont, fontsize=14, loc='left', y=1.0, x=-0.1)
+    ax5.set_title('e.', **csfont, fontsize=14, loc='left', y=1.0, x=-0.1)
+    ax6.set_title('f.', **csfont, fontsize=14, loc='left', y=1.0, x=-0.1)
+    from matplotlib.patches import Patch
+    legend_elements1 = [Patch(facecolor=colors[0], edgecolor=(0,0,0,1),
+                              label=r'Count'),
+                        Patch(facecolor=colors[1], edgecolor=(0,0,0,1),
+                              label=r'Amount (£)')]
+    leg = ax6.legend(handles=legend_elements1, loc='lower right', frameon=True,
+                     fontsize=10, framealpha=1, facecolor='w',
+                     edgecolor=(0, 0, 0, 1))
+    leg.get_frame().set_edgecolor((0, 0, 0, 1))
+    leg.get_frame().set_linewidth(0.75)
+    def percentage_formatter(x, pos):
+        return f"{x*100:.0f}%"
+    ax1.xaxis.set_major_formatter(FuncFormatter(percentage_formatter))
+    ax2.xaxis.set_major_formatter(FuncFormatter(percentage_formatter))
+    ax3.xaxis.set_major_formatter(FuncFormatter(percentage_formatter))
+    ax4.xaxis.set_major_formatter(FuncFormatter(percentage_formatter))
+    ax5.xaxis.set_major_formatter(FuncFormatter(percentage_formatter))
+    ax6.xaxis.set_major_formatter(FuncFormatter(percentage_formatter))
+    ax4.set_xlabel('Expense Area\n(Trusts)', fontsize=11)
+    ax5.set_xlabel('Expense Area\n(CCGs)', fontsize=11)
+    ax6.set_xlabel('Expense Area\n(NHS England)', fontsize=11)
+    sns.despine()
+    plt.tight_layout()
+    plt.savefig(os.path.join(figure_path, 'expense_area.svg'),
+                bbox_inches='tight')
+    plt.savefig(os.path.join(figure_path, 'expense_area.pdf'),
+                bbox_inches='tight')
+    plt.savefig(os.path.join(figure_path, 'expense_area.png'),
+                bbox_inches='tight')
+
+
+def make_sic(df, ch, label):
+    df = df[df['CompanyNumber'].notnull()]
+    df_ch = ch[ch[' CompanyNumber'].isin(df['CompanyNumber'])]
+    df_ch_long = pd.DataFrame(columns=['CompanyNumber', 'SIC'])
+    counter = 0
+    for index, row in df_ch.iterrows():
+        for SIC in range(1, 5):
+            sic_string = 'SICCode.SicText_' + str(int(SIC))
+            if type(row[sic_string]) is str:
+                df_ch_long.at[counter, 'CompanyNumber'] = row[' CompanyNumber']
+                df_ch_long.loc[counter, 'SIC'] = row[sic_string]
+                counter += 1
+    df_cn_count = (df['CompanyNumber'].value_counts()/len(df['amount'])*100).round(3).reset_index()
+    df_cn_amount = (df.groupby(['CompanyNumber'])['amount'].sum()/df['amount'].sum()*100).round(3).reset_index()
+    df_cn = pd.merge(df_cn_count, df_cn_amount, how='left', on='CompanyNumber')
+    df_merge = pd.merge(df_ch_long, df_cn, how='left', on='CompanyNumber')
+    df_merge_amount = df_merge.groupby(['SIC'])['count'].sum().reset_index()
+    df_merge_count = df_merge.groupby(['SIC'])['amount'].sum().reset_index()
+    df_merge = pd.merge(df_merge_amount, df_merge_count, how='left', on='SIC')
+    return df_merge.rename({'count': 'count_' + label,
+                            'amount': 'amount_' + label},
+                           axis=1)
+
+
+def make_sic_outer(merged_df, ch):
+    char_all = make_sic(merged_df[merged_df['match_type'].str.contains('Charit')], ch, 'char_all')
+    char_nhse = make_sic(merged_df[(merged_df['match_type'].str.contains('Charit')) &
+                                   (merged_df['data_type']=='NHS_Eng')], ch, 'char_nhse')
+    char_trusts = make_sic(merged_df[(merged_df['match_type'].str.contains('Charit')) &
+                                     (merged_df['data_type']=='Trusts')], ch, 'char_trusts')
+    char_ccgs = make_sic(merged_df[(merged_df['match_type'].str.contains('Charit')) &
+                                   (merged_df['data_type']=='CCGs')], ch, 'char_ccgs')
+
+
+    notchar_all = make_sic(merged_df[merged_df['match_type'].str.contains('Charit')==False], ch, 'notchar_all')
+    notchar_nhse = make_sic(merged_df[(merged_df['match_type'].str.contains('Charit')==False) &
+                                      (merged_df['data_type']=='NHS_Eng')], ch, 'notchar_nhse')
+    notchar_trusts = make_sic(merged_df[(merged_df['match_type'].str.contains('Charit')==False) &
+                                        (merged_df['data_type']=='Trusts')], ch, 'notchar_trusts')
+    notchar_ccgs = make_sic(merged_df[(merged_df['match_type'].str.contains('Charit')==False) &
+                                      (merged_df['data_type']=='CCGs')], ch, 'notchar_ccgs')
+
+    char_merge = pd.merge(char_all, char_nhse, how='left', on='SIC')
+    char_merge = pd.merge(char_merge, char_trusts, how='left', on='SIC')
+    char_merge = pd.merge(char_merge, char_ccgs, how='left', on='SIC')
+    char_merge = char_merge.sort_values(by='count_char_all', ascending=False)
+    char_merge.to_csv(os.path.join(os.getcwd(), '..', '..', 'papers', 'tables', 'sic_codes_charities.csv'),
+                      index=False)
+    print('Data on payments to Charities:')
+    print(char_merge[0:20])
+    print('*'*20)
+    notchar_merge = pd.merge(notchar_all, notchar_nhse, how='left', on='SIC')
+    notchar_merge = pd.merge(notchar_merge, notchar_trusts, how='left', on='SIC')
+    notchar_merge = pd.merge(notchar_merge, notchar_ccgs, how='left', on='SIC')
+    notchar_merge = notchar_merge.sort_values(by='count_notchar_all', ascending=False)
+    notchar_merge.to_csv(os.path.join(os.getcwd(), '..', '..', 'papers', 'tables', 'sic_codes_noncharities.csv'),
+                         index=False)
+    print('Data on payments not to Charities:')
+    print(notchar_merge[0:20])
+
+
+def convert_to_numeric(x):
+    """
+    Convert x values to numeric.
+
+    Parameters:
+        x (list): List of x values (datetime objects or numpy float64).
+
+    Returns:
+        list: List of numeric values.
+    """
+    if isinstance(x[0], (pd.Timestamp, np.datetime64)):
+        return [t.timestamp() for t in x]
+    elif isinstance(x[0], np.float64):
+        return x
+    else:
+        raise ValueError("Unsupported data type for x")
+
+def lowess_with_confidence_bounds(x, y, eval_x, N=500, conf_interval=0.99, lowess_kw=None):
+    """
+    Perform Lowess regression and determine a confidence interval by bootstrap resampling
+
+    Parameters:
+        x (list): List of x-values.
+        y (list): List of corresponding y-values.
+        eval_x (list): List of x-values at which to evaluate the smoothing.
+        N (int): Number of bootstrap resampling iterations.
+        conf_interval (float): Confidence interval level.
+        lowess_kw (dict): Keyword arguments for the statsmodels lowess function.
+
+    Returns:
+        tuple: A tuple containing smoothed values, lower bound, and upper bound of the confidence interval.
+    """
+    if lowess_kw is None:
+        lowess_kw = {}
+
+    # Convert x values to numeric
+    x_numeric = convert_to_numeric(x)
+    eval_x_numeric = convert_to_numeric(eval_x)
+
+    # Lowess smoothing on the original data
+    smoothed = sm.nonparametric.lowess(endog=y, exog=x_numeric, xvals=eval_x_numeric, **lowess_kw)
+
+    # Perform bootstrap resamplings and evaluate the smoothing
+    smoothed_values = np.empty((N, len(eval_x)))
+    for i in range(N):
+        sample_indices = np.random.choice(len(x), size=len(x), replace=True)
+        sampled_x = [x_numeric[idx] for idx in sample_indices]
+        sampled_y = [y[idx] for idx in sample_indices]
+
+        smoothed_values[i] = sm.nonparametric.lowess(endog=sampled_y, exog=sampled_x, xvals=eval_x_numeric, **lowess_kw)
+    # Get the confidence interval
+    sorted_values = np.sort(smoothed_values, axis=0)
+    bound = int(N * (1 - conf_interval) / 2)
+    bottom = sorted_values[bound - 1]
+    top = sorted_values[-bound]
+    return smoothed[:], bottom, top
+
+def ecdf(data):
+    """ Compute ECDF """
+    x = np.sort(data)
+    n = x.size
+    y = np.arange(1, n+1) / n
+    return(x, y)
+
+
+def plot_coverage(pay_df_cc_ccg, pay_df_cc_trust, pay_df_cc_nhsengland, rolling_df_45, figure_path):
+    # Number of entities seen and Median number of contracts
+    pay_df_cc_ccg = pay_df_cc_ccg[(pay_df_cc_ccg['date']>='2013-01-01') &
+                                  (pay_df_cc_ccg['date']<='2019-09-30')]
+    pay_df_cc_ccg = pay_df_cc_ccg.sort_values(by='date')
+    date_vec = pay_df_cc_ccg['date'].unique()
+    df_coverage_ccg = pd.DataFrame(columns=['number_suppliers'])
+    my_set = set()
+    for date in date_vec:
+        temp = pay_df_cc_ccg[pay_df_cc_ccg['date']==date]
+        my_set = my_set.union(set(list(temp['supplier'].unique())))
+        df_coverage_ccg.at[date, 'number_suppliers'] = len(my_set)
+
+    pay_df_cc_trust.loc[:, 'date'] = pd.to_datetime(pay_df_cc_trust['date']).apply(lambda x: x.date())
+    pay_df_cc_trust = pay_df_cc_trust[(pay_df_cc_trust['date']>=datetime.date(year=2013,month=1,day=1)) &
+                                      (pay_df_cc_trust['date']<=datetime.date(year=2019,month=9,day=30))]
+    pay_df_cc_trust = pay_df_cc_trust.sort_values(by='date')
+    date_vec = pay_df_cc_trust['date'].unique()
+    df_coverage_trust = pd.DataFrame(columns=['number_suppliers'])
+    my_set = set()
+    for date in date_vec:
+        temp = pay_df_cc_trust[pay_df_cc_trust['date']==date]
+        my_set = my_set.union(set(list(temp['supplier'].unique())))
+        df_coverage_trust.at[date, 'number_suppliers'] = len(my_set)
+    pay_df_cc_nhsengland = pay_df_cc_nhsengland[(pay_df_cc_nhsengland['date']>='2013-01-01') &
+                                                (pay_df_cc_nhsengland['date']<='2019-09-30')]
+    pay_df_cc_nhsengland = pay_df_cc_nhsengland.sort_values(by='date')
+    date_vec = pay_df_cc_nhsengland['date'].unique()
+    df_coverage_nhsengland = pd.DataFrame(columns=['number_suppliers'])
+    my_set = set()
+    for date in date_vec:
+        temp = pay_df_cc_nhsengland[pay_df_cc_nhsengland['date']==date]
+        my_set = my_set.union(set(list(temp['supplier'].unique())))
+        df_coverage_nhsengland.at[date, 'number_suppliers'] = len(my_set)
+    df_coverage_ccg.index = pd.to_datetime(df_coverage_ccg.index, format="%d-%m-%Y")#.dt.date
+    df_coverage_trust.index = pd.to_datetime(df_coverage_trust.index, format="%d-%m-%Y")#.dt.date
+    df_coverage_nhsengland.index = pd.to_datetime(df_coverage_nhsengland.index, format="%d-%m-%Y")#.dt.date
+    df_coverage_ccg['number_suppliers'] = df_coverage_ccg['number_suppliers']/df_coverage_ccg['number_suppliers'][-1]
+    df_coverage_trust['number_suppliers'] = df_coverage_trust['number_suppliers']/df_coverage_trust['number_suppliers'][-1]
+    df_coverage_nhsengland['number_suppliers'] = df_coverage_nhsengland['number_suppliers']/df_coverage_nhsengland['number_suppliers'][-1]#*100
+    csfont = {'fontname': 'Helvetica'}
+    colors = ['#41558c', '#E89818', '#CF202A']
+    color1 = colors[0]
+    color2 = colors[1]
+    color3 = colors[2]
+    fig = plt.figure(figsize=(14, 7))
+    gs = gridspec.GridSpec(3,2)
+    ax1 = fig.add_subplot(gs[:, 0])
+    ax2 = fig.add_subplot(gs[0, 1])
+    ax3 = fig.add_subplot(gs[1, 1])
+    ax4 = fig.add_subplot(gs[2, 1])
+    df_coverage_ccg.index = pd.to_datetime(df_coverage_ccg.index, format="%d-%m-%Y")#.dt.date
+    df_coverage_trust.index = pd.to_datetime(df_coverage_trust.index, format="%d-%m-%Y")#.dt.date
+    df_coverage_nhsengland.index = pd.to_datetime(df_coverage_nhsengland.index, format="%d-%m-%Y")#.dt.date
+    df_coverage_ccg['number_suppliers'] = df_coverage_ccg['number_suppliers']/df_coverage_ccg['number_suppliers'][-1]
+    df_coverage_trust['number_suppliers'] = df_coverage_trust['number_suppliers']/df_coverage_trust['number_suppliers'][-1]
+    df_coverage_nhsengland['number_suppliers'] = df_coverage_nhsengland['number_suppliers']/df_coverage_nhsengland['number_suppliers'][-1]#*100
+    ax1.step(df_coverage_ccg.index, df_coverage_ccg['number_suppliers'], color=color1)
+    ax1.step(df_coverage_trust.index, df_coverage_trust['number_suppliers'], color=color2)
+    ax1.step(df_coverage_nhsengland.index, df_coverage_nhsengland['number_suppliers'], color3)
+    ax2.plot(rolling_df_45.index, rolling_df_45['CCG_Median'],
+             color=color1)
+    ax3.plot(rolling_df_45.index, rolling_df_45['Trust_Median'],
+             color=color2)
+    ax4.plot(rolling_df_45.index, rolling_df_45['NHSEngland_Median'],
+             color=color3)
+    ax1.set_title('a.', loc='left', size=21, y=1.02)
+    ax2.set_title('b.', loc='left', size=21, y=1.02)
+    ax3.set_title('c.', loc='left', size=21, y=1.02)
+    ax4.set_title('d.', loc='left', size=21, y=1.02)
+    ax1.set_ylabel('Fraction Observed', **csfont, size=16)
+    ax2.set_ylabel('Median Value\n   (CCGs)   ', **csfont, size=16)
+    ax3.set_ylabel('Median Value\n (Trusts)  ', **csfont, size=16)
+    ax4.set_ylabel('Median Value\n(NHS England)', **csfont, size=16)
+    ax1.tick_params(axis='both', which='major', labelsize=14)
+    ax2.tick_params(axis='both', which='major', labelsize=14)
+    ax3.tick_params(axis='both', which='major', labelsize=14)
+    ax4.tick_params(axis='both', which='major', labelsize=14)
+    def currency_formatter(x, pos):
+        return f'£{x/1000:.0f}k'
+    ax2.yaxis.set_major_formatter(FuncFormatter(currency_formatter))
+    ax3.yaxis.set_major_formatter(FuncFormatter(currency_formatter))
+    ax4.yaxis.set_major_formatter(FuncFormatter(currency_formatter))
+    max_ticks = 3
+    ax2.yaxis.set_major_locator(MaxNLocator(nbins=max_ticks, integer=True))
+    ax3.yaxis.set_major_locator(MaxNLocator(nbins=max_ticks, integer=True))
+    ax4.yaxis.set_major_locator(MaxNLocator(nbins=max_ticks+1, integer=True))
+    ax1.set_ylim(-0.01, 1.01)
+    legend_elements = [(Line2D([0], [0], markersize=0,
+                               color=color1, label=r'CCGs', linestyle='-')),
+                        (Line2D([0], [0], markersize=0,
+                                color=color2, label=r'Trusts', linestyle='-')),
+                        (Line2D([0], [0], markersize=0,
+                                color=color3, label='NHS England', linestyle='-'))
+                      ]
+    leg = ax1.legend(handles=legend_elements, loc='upper left', frameon=True,
+                     fontsize=14, framealpha=1, facecolor='w',
+                     edgecolor='k', handletextpad=0.25)
+    leg.get_frame().set_linewidth(1)
+    plt.tight_layout()
+    sns.despine()
+    plt.savefig(os.path.join(figure_path, 'entry_and_value.svg'),
+                bbox_inches='tight')
+    plt.savefig(os.path.join(figure_path, 'entry_and_value.pdf'),
+                bbox_inches='tight')
+    plt.savefig(os.path.join(figure_path, 'entry_and_value.png'),
+                bbox_inches='tight', dpi=800)
+
+
+def load_token(path):
+    """
+    Simple function to load a hidden API token from
+    disk: It should live in the `tokens` sub-directory
+    :param path:    A filepath to a text file which contains
+                    an API on the first line of the file only.
+    :return:        The API key read in from the file
+    """
+    try:
+        print('API key read in successfully')
+        with open(path, 'r') as file:
+            return str(file.readline()).strip()
+    except FileNotFoundError:
+        print('API Token was not found')
+
+def make_companycategory(recomb, analysis_type):
+    recomb = recomb[recomb['CompanyNumber'].notnull()]
+    recomb_uniq_all = recomb.drop_duplicates(subset=['CompanyNumber'])
+    recomb_uniq_all = recomb_uniq_all['CompanyCategory'].value_counts()
+    recomb_uniq_all = pd.DataFrame(recomb_uniq_all)
+    recomb_uniq_all = recomb_uniq_all.reset_index()
+    recomb_uniq_all['Uniq. Freq. (%)'] = recomb_uniq_all['count']/\
+                                         recomb_uniq_all['count'].sum()*100
+    recomb_count_all = recomb['CompanyCategory'].value_counts()
+    recomb_count_all = pd.DataFrame(recomb_count_all)
+    recomb_count_all = recomb_count_all.reset_index()
+    print(recomb_count_all)
+    recomb_count_all['Pay Count (%)'] = recomb_count_all['count']/\
+                                        recomb_count_all['count'].sum()*100
+    recomb_amount_all = recomb.groupby(['CompanyCategory'])['amount'].sum()
+    recomb_amount_all = pd.DataFrame(recomb_amount_all)
+    recomb_amount_all = recomb_amount_all.reset_index()
+    recomb_amount_all = recomb_amount_all.rename({'amount': 'Pay Amount'},
+                                                 axis=1)
+    recomb_amount_all['Pay Amount (%)'] = recomb_amount_all['Pay Amount']/\
+                                          recomb_amount_all['Pay Amount'].sum()*100
+    holder = pd.merge(recomb_uniq_all,
+                      recomb_count_all,
+                      how='left',
+                      left_on='CompanyCategory',
+                      right_on='CompanyCategory')
+
+    holder = pd.merge(holder,
+                      recomb_amount_all,
+                      how='left',
+                      left_on='CompanyCategory',
+                      right_on='CompanyCategory')
+
+    holder.to_csv(os.path.join(os.getcwd(),
+                               '..',
+                               '..',
+                               'papers',
+                               'tables',
+                               'CompanyCategory_' + analysis_type + '.csv'),
+                  index=False)
+
+def load_token(path):
+    """
+    Simple function to load a hidden API token from
+    disk: It should live in the `tokens` sub-directory
+    :param path:    A filepath to a text file which contains
+                    an API on the first line of the file only.
+    :return:        The API key read in from the file
+    """
+    try:
+        print('API key read in successfully')
+        with open(path, 'r') as file:
+            return str(file.readline()).strip()
+    except FileNotFoundError:
+        print('API Token was not found')
+
+
+def make_ch_dict(comb_ch):
+    companynumber_set = set(comb_ch[comb_ch['CompanyCategory'].isnull()]['CompanyNumber'].unique())
+    api_key_path = os.path.join(os.getcwd(),
+                                '..',
+                                '..',
+                                'tokens',
+                                'ch_apikey')
+
+    APIKey = load_token(api_key_path)
+
+
+    import requests
+    import json
+    mydict = {}
+    for Company in companynumber_set:
+        CH_url = 'https://api.companieshouse.gov.uk/company/'
+        query = requests.get(CH_url + str(Company),
+                             auth=requests.auth.HTTPBasicAuth(APIKey, '')
+                            )
+        if query.status_code == 200:
+            query_json = json.loads(query.text)
+            if query_json['type'] == 'ltd':
+                mydict[Company] = 'Private Limited Company'
+            elif query_json['type'] == 'private-limited-guarant-nsc':
+                mydict[Company] = 'PRI/LTD BY GUAR/NSC (Private, limited by guarantee, no share capital)'
+            elif query_json['type'] == 'llp':
+                mydict[Company] = 'Limited Liability Partnership'
+            elif query_json['type'] == 'registered-society-non-jurisdictional':
+                mydict[Company] = 'Registered Society'
+            elif query_json['type'] == 'industrial-and-provident-society':
+                mydict[Company] = 'Industrial and Provident Society'
+            elif query_json['type'] == 'private-limited-guarant-nsc-limited-exemption':
+                mydict[Company] = "PRI/LBG/NSC (Private, Limited by guarantee, no share capital, use of 'Limited' exemption)"
+            elif query_json['type'] == 'converted-or-closed':
+                pass
+            else:
+                mydict[Company] = query_json['type']
+        elif (query.status_code == 404) or\
+        (query.status_code == 500):
+            finished_query = True
+        elif (int(query.headers['X-Ratelimit-Remain']) == 0) or \
+        (query.status_code == 429):
+            time.sleep(30)
+    return mydict
+
+
+def CIC_wrangling(stack1, stack2, CIC_payments):
+    recomb = pd.concat([stack1, stack2], ignore_index=True)
+    CIC_2013 = CIC_payments[(CIC_payments['date'] >= pd.Timestamp('2013-01-01')) &
+                            (CIC_payments['date'] <= pd.Timestamp('2013-12-31'))]['amount'].sum()
+    all_2013 = recomb[(recomb['date'] >= pd.Timestamp('2013-01-01')) &
+                      (recomb['date'] <= pd.Timestamp('2013-12-31'))]['amount'].sum()
+    print('Percent of all payments by value which go to CICs in 2013: ', CIC_2013/all_2013*100)
+
+    CIC_2014 = CIC_payments[(CIC_payments['date'] >= pd.Timestamp('2014-01-01')) &
+                            (CIC_payments['date'] <= pd.Timestamp('2014-12-31'))]['amount'].sum()
+    all_2014 = recomb[(recomb['date'] >= pd.Timestamp('2014-01-01')) &
+                      (recomb['date'] <= pd.Timestamp('2014-12-31'))]['amount'].sum()
+    print('Percent of all payments by value which go to CICs in 2014: ', CIC_2014/all_2014*100)
+
+    CIC_2015 = CIC_payments[(CIC_payments['date'] >= pd.Timestamp('2015-01-01')) &
+                            (CIC_payments['date'] <= pd.Timestamp('2015-12-31'))]['amount'].sum()
+    all_2015 = recomb[(recomb['date'] >= pd.Timestamp('2015-01-01')) &
+                      (recomb['date'] <= pd.Timestamp('2015-12-31'))]['amount'].sum()
+    print('Percent of all payments by value which go to CICs in 2015: ', CIC_2015/all_2015*100)
+
+    CIC_2016 = CIC_payments[(CIC_payments['date'] >= pd.Timestamp('2016-01-01')) &
+                            (CIC_payments['date'] <= pd.Timestamp('2016-12-31'))]['amount'].sum()
+    all_2016 = recomb[(recomb['date'] >= pd.Timestamp('2016-01-01')) &
+                      (recomb['date'] <= pd.Timestamp('2016-12-31'))]['amount'].sum()
+    print('Percent of all payments by value which go to CICs in 2016: ', CIC_2016/all_2016*100)
+
+    CIC_2017 = CIC_payments[(CIC_payments['date'] >= pd.Timestamp('2017-01-01')) &
+                            (CIC_payments['date'] <= pd.Timestamp('2017-12-31'))]['amount'].sum()
+    all_2017 = recomb[(recomb['date'] >= pd.Timestamp('2017-01-01')) &
+                      (recomb['date'] <= pd.Timestamp('2017-12-31'))]['amount'].sum()
+    print('Percent of all payments by value which go to CICs in 2017: ', CIC_2017/all_2017*100)
+
+    CIC_2018 = CIC_payments[(CIC_payments['date'] >= pd.Timestamp('2018-01-01')) &
+                            (CIC_payments['date'] <= pd.Timestamp('2018-12-31'))]['amount'].sum()
+    all_2018 = recomb[(recomb['date'] >= pd.Timestamp('2018-01-01')) &
+                      (recomb['date'] <= pd.Timestamp('2018-12-31'))]['amount'].sum()
+    print('Percent of all payments by value which go to CICs in 2018: ', CIC_2018/all_2018*100)
+
+    CIC_2019 = CIC_payments[(CIC_payments['date'] >= pd.Timestamp('2019-01-01')) &
+                            (CIC_payments['date'] <= pd.Timestamp('2019-12-31'))]['amount'].sum()
+    all_2019 = recomb[(recomb['date'] >= pd.Timestamp('2019-01-01')) &
+                      (recomb['date'] <= pd.Timestamp('2019-12-31'))]['amount'].sum()
+    print('Percent of all payments by value which go to CICs in 2019: ', CIC_2019/all_2019*100)
