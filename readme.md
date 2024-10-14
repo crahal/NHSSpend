@@ -1,4 +1,4 @@
-<img src="https://github.com/crahal/NHSSpend/blob/master/papers/figures/matching_summary_header.png" width="900"/>
+<img src="https://github.com/crahal/NHSSpend/blob/master/papers/figures/matching_summary_2.png" width="900"/>
 
 ## :bar_chart: NHSSpend: Tools and data for NHS procurement :chart_with_upwards_trend:
 
@@ -12,7 +12,17 @@
 
 ## Introduction
 
-This is a library to scrape and reconcile all payments made by a hiarcharcy of NHS institutions over time (c. 2010 to 2020). It is the final of three projects on public procurement data (the first two of which were [centgovspend](https://github.com/crahal/centgovspend) and [TSRC-NCVO-CSDP](https://github.com/crahal/TSRC-NCVO-CSDP)). Code for an interactive dashboard is found at src/dashboard with the help of [Ian M. Knowles](https://github.com/ianknowles). Links to open-access (OSF) versions of the two headline academic papers which use this dataset (`"The Role of Non-Profits in Public Health Service Provision: Evidence from 25,338 heterogeneous procurement datasets"` with [John Mohan](https://www.birmingham.ac.uk/schools/social-policy/staff/profile.aspx?ReferenceId=75702) and `"Is outsourcing healthcare services to the private sector associated with higher mortality rates? An observational analysis of privatisation in England's NHS, 2013-2020"` by [Ben Goodair](https://twitter.com/bengoodair?lang=en) and [Aaron Reeves](http://www.aaronreeves.org/team.html)) can be found [here](https://osf.io/download/61f1c837026ee60060b4f2e0/) and [here](https://www.thelancet.com/journals/lanpub/article/PIIS2468-2667(22)00133-5/). A full, build passing notebook for the first of these two papers can be found [here](https://github.com/crahal/NHSSpend/blob/master/src/analysis/charity_analysis_notebook.ipynb). If you would like to collaborate on related work, please don't hestiate to get in touch! Two spin-off repositories specifically for pdf-parsing and institutional data curation can be found [here](https://github.com/crahal/pdf_table_parser) and [here](https://github.com/crahal/institutional_data) respectively.
+This is a library to scrape and reconcile all payments made by a hiarcharcy of NHS institutions over time (c. 2010 to 2020). It is the final of three projects on public procurement data (the first two of which were [centgovspend](https://github.com/crahal/centgovspend) and [TSRC-NCVO-CSDP](https://github.com/crahal/TSRC-NCVO-CSDP)). Code for an interactive dashboard is found at src/dashboard with the help of [Ian M. Knowles](https://github.com/ianknowles). Links to open-access (OSF) versions of the two headline academic papers which use this dataset (`"The Role of Non-Profits in Public Health Service Provision: Evidence from 25,338 heterogeneous procurement datasets"` with [John Mohan](https://www.birmingham.ac.uk/schools/social-policy/staff/profile.aspx?ReferenceId=75702) and `"Is outsourcing healthcare services to the private sector associated with higher mortality rates? An observational analysis of privatisation in England's NHS, 2013-2020"` by [Ben Goodair](https://twitter.com/bengoodair?lang=en) and [Aaron Reeves](http://www.aaronreeves.org/team.html)) can be found [here](https://osf.io/download/61f1c837026ee60060b4f2e0/) and [here](https://www.thelancet.com/journals/lanpub/article/PIIS2468-2667(22)00133-5/). Please cite the former of these two papers as:
+
+Rahal, C. and Mohan, J. (2024), 'The role of the third sector in public health service provision: Evidence from 25,338 heterogeneous procurement datasets', *Journal of the Royal Statistical Society: Series A*, **0**, pp. 1-22. 
+
+A full, build passing notebook for the first of these two papers can be found [here](https://github.com/crahal/NHSSpend/blob/master/src/analysis/charity_analysis_notebook.ipynb). Kindly note that there is a minor typing error in the caption of Table 2; it should read:
+
+```
+"Top 10 institutions by procurement value mapped to the Charity Commission, ordered by the cumulative value of all contracts they receive (£Mn). Count refers to the number of payments made in our datasets. `Income' (£Mn) and `Rank' refer to their total income for the full years in the Charity Commission during our sample window.
+```
+
+If you would like to collaborate on related work, please don't hestiate to get in touch! Two spin-off repositories specifically for pdf-parsing and institutional data curation can be found [here](https://github.com/crahal/pdf_table_parser) and [here](https://github.com/crahal/institutional_data) respectively. Thanks again to [Ian M. Knowles](https://github.com/ianknowles) for his help with them. One of our next projects involves making a database of all third sector organisations. You can find the GitHub organisational repository for that [here](https://github.com/uk-third-sector-database).
 
 ## Pre-reqs
 
@@ -83,10 +93,10 @@ Repo structure is based on the ```tree``` [utility](https://en.wikipedia.org/wik
 
 ## Acknowledgements.
 
-The authors are grateful to comments on earlier versions of the work from Mark Exworthy, David Stuckler, Martin Mckee, Lucy Reynolds and James Rees. Technical research assistance provided by Ian Knowles. The origins of this work originate from a scoping and prototyping exercise funded by the ESRC (grant numbers ES/M010392/1 and latterly ES/X000524/1), with majority funding latterly and gratefully acknowledged from the British Academy and the Leverhulme Trust (Grant RC-2018-003), the Leverhulme Centre for Demographic Science (LCDS), and Nuffield College. Insightful comments were gratefully received from participants at the International Conference for Administrative Data Research, the Economic Insights team at the Office for National Statistics, the Spatial Unit at the Department for Levelling Up, the Government Data Science Community Meetup, two editors, and two anonymous referees. Additional thanks are due to Max Hattersly, Ben Goodair and Yu Pei for all of their work on data verification.
+The authors are grateful to comments on earlier versions of the work from [Mark Exworthy](https://www.birmingham.ac.uk/staff/profiles/social-policy/exworthy-mark, [David Stuckler](http://www.davidstuckler.com/), [Martin Mckee](https://www.lshtm.ac.uk/aboutus/people/mckee.martin), Lucy Reynolds and [James Rees](https://researchers.wlv.ac.uk/james.rees). Technical research assistance provided by [Ian M. Knowles](https://github.com/ianknowles). The origins of this work originate from a scoping and prototyping exercise funded by the ESRC (grant numbers ES/M010392/1 and latterly ES/X000524/1), with majority funding latterly and gratefully acknowledged from the British Academy and the Leverhulme Trust (Grant RC-2018-003), the Leverhulme Centre for Demographic Science (LCDS), and Nuffield College. Insightful comments were gratefully received from participants at the International Conference for Administrative Data Research, the Economic Insights team at the Office for National Statistics, the Spatial Unit at the Department for Levelling Up, the Government Data Science Community Meetup, two editors, and two anonymous referees. Additional thanks are due to Max Hattersly, Ben Goodair and Yu Pei for all of their work on data verification.
 
 ## Licensing
 
 This code is made available under a GNU GENERAL PUBLIC LICENSE 3.0.
 
-Last updated: 2024-07-28
+Last updated: 2024-10-14
